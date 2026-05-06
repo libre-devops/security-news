@@ -1,7 +1,97 @@
 {
-  "lastUpdated": "2026-05-05T13:51:49.356085+00:00",
-  "totalArticles": 267,
+  "lastUpdated": "2026-05-06T14:08:48.729432+00:00",
+  "totalArticles": 272,
   "articles": [
+    {
+      "title": "Building resilient networks for AI supercomputers",
+      "link": "https://techcommunity.microsoft.com/t5/azure-high-performance-computing/building-resilient-networks-for-ai-supercomputers/ba-p/4516919",
+      "published": "2026-05-06T11:34:34+00:00",
+      "summary": "By Valerie Cutts and Jithin Jose Last fall we introduced Fairwater, the world’s most powerful AI datacenter. Delivering a system of this scale required rethinking how Azure designs supercomputers, especially the scale-out network. Today, we are sharing more about the networking innovations that...",
+      "blog": "High Performance Computing",
+      "blogId": "azurehighperformancecomputingblog",
+      "author": "jithinjose"
+    },
+    {
+      "title": "Turning GitHub Copilot into a “Best Practices Coach” with Copilot Spaces + a Markdown Knowledge Base",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/turning-github-copilot-into-a-best-practices-coach-with-copilot/ba-p/4511567",
+      "published": "2026-05-06T07:00:00+00:00",
+      "summary": "Why Copilot Spaces + Markdown repos work so well When you ask Copilot generic questions (“How should we log errors?” “What’s our API versioning approach?”), the model will often respond with reasonable defaults. But reasonable defaults are not the same as your standards. Copilot Spaces solve the...",
+      "blog": "Azure Dev Community",
+      "blogId": "azuredevcommunityblog",
+      "author": "mohashaikh"
+    },
+    {
+      "title": "🚀 Modernizing Azure Landing Zone Deployments: From Terraform Scripts to GHCP-Driven Engineering",
+      "link": "https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/modernizing-azure-landing-zone-deployments-from-terraform/ba-p/4517168",
+      "published": "2026-05-06T06:05:20+00:00",
+      "summary": "The code nobody wants to write anymore Most Azure Landing Zone (ALZ) deployments we see today still follow the same pattern they did a few years ago. Engineers manually write Terraform modules, copy networking blocks from older repos, tweak management group hierarchies, and wire pipelines step by...",
+      "blog": "Azure Infrastructure",
+      "blogId": "azureinfrastructureblog",
+      "author": "gurkirat"
+    },
+    {
+      "title": "Operationalizing Responsible AI in Microsoft Foundry within Enterprise Network Boundaries",
+      "link": "https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/operationalizing-responsible-ai-in-microsoft-foundry-within/ba-p/4516869",
+      "published": "2026-05-06T05:23:44+00:00",
+      "summary": "Strategic Overview Deploying Microsoft Foundry within a VNet-integrated landing zone requires a thoughtful balance between innovation and enterprise-grade security, especially in highly regulated industries like banking. This architecture enforces Responsible AI (RAI) principles and robust content...",
+      "blog": "Azure Infrastructure",
+      "blogId": "azureinfrastructureblog",
+      "author": "Shruti9162"
+    },
+    {
+      "title": "Use Azure Container Registry as an Upstream Source for Artifact Cache",
+      "link": "https://techcommunity.microsoft.com/t5/azure-compute-blog/use-azure-container-registry-as-an-upstream-source-for-artifact/ba-p/4517102",
+      "published": "2026-05-05T23:29:10+00:00",
+      "summary": "In collaboration with:Luis Dieguez, Principal Software Engineering Manager, Azure Container RegistryAkash Singhal, Senior Software Engineer, Azure Container RegistryKiran Challa, Senior Software Engineer, Azure Container RegistryNathan Anderson, Senior Software Engineer, Azure Container...",
+      "blog": "Azure Compute",
+      "blogId": "azurecompute",
+      "author": "toddysm"
+    },
+    {
+      "title": "Public Preview: Migrate Availability Sets to Virtual Machine Scale Sets",
+      "link": "https://techcommunity.microsoft.com/t5/azure-compute-blog/public-preview-migrate-availability-sets-to-virtual-machine/ba-p/4517061",
+      "published": "2026-05-05T22:30:00+00:00",
+      "summary": "We're excited to announce the public preview of availability set to Virtual Machine Scale Set migration for Azure Virtual Machines. This new capability enables you to move your existing VMs from availability sets to Virtual Machine Scale Sets with Flexible orchestration—unlocking higher...",
+      "blog": "Azure Compute",
+      "blogId": "azurecompute",
+      "author": "micahmckittrick"
+    },
+    {
+      "title": "Better together with Azure WAF + Microsoft Defender for Storage + Defender for Azure SQL Databases",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/better-together-with-azure-waf-microsoft-defender-for-storage/ba-p/4517101",
+      "published": "2026-05-05T21:54:36+00:00",
+      "summary": "Authored by: Fernanda_Vela​ , saikishor​, Yura_Lee​ Reviewed by: YuriDiogenes​, Mohit_Kumar​, Amir_Dahan​, eitanbremler​ , Kitt_Weatherman​ Introduction Often, customers ask why additional workload protection is needed when a web application firewall is already in place. Azure Web Application...",
+      "blog": "Microsoft Defender for Cloud",
+      "blogId": "microsoftdefendercloudblog",
+      "author": "Yura_Lee"
+    },
+    {
+      "title": "Introducing OpenAI's newest chat model in Microsoft Foundry",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/introducing-openai-s-newest-chat-model-in-microsoft-foundry/ba-p/4516848",
+      "published": "2026-05-05T21:42:50+00:00",
+      "summary": "OpenAI's GPT-5.5 Instant (or Chat-latest in the API) begins rolling out in Microsoft Foundry today as GPT-chat-latest. Built on GPT-5.4 and GPT-5.3-chat, the new model delivers measurable gains in factual accuracy, tool calling, and response efficiency. These improvements translate directly into...",
+      "blog": "Azure AI Foundry",
+      "blogId": "azure-ai-foundry-blog",
+      "author": "Naomi Moneypenny"
+    },
+    {
+      "title": "Update host keys to use SFTP on Azure Blob Storage",
+      "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/update-host-keys-to-use-sftp-on-azure-blob-storage/ba-p/4515483",
+      "published": "2026-05-05T18:22:49+00:00",
+      "summary": "Update host keys to use SFTP on Azure Blob Storage Some Azure Storage users may receive periodically an alert informing to update host keys to use SFTP on Azure Blob Storage. This article describes the impact this will have on the SFTP blob service and what are the changes needed.Table of Content...",
+      "blog": "Azure PaaS",
+      "blogId": "azurepaasblog",
+      "author": "LuisFilipe"
+    },
+    {
+      "title": "Extending Sentinel Data Integration: Azure Blob Storage Support for CCF Connectors",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/extending-sentinel-data-integration-azure-blob-storage-support/ba-p/4516896",
+      "published": "2026-05-05T16:00:00+00:00",
+      "summary": "As organizations scale their security operations, the ability to ingest, process, and analyze high volumes of data reliably becomes increasingly critical. Microsoft Sentinel continues to expand its ecosystem through the Codeless Connector Framework (CCF), enabling ISVs to build and deliver...",
+      "blog": "Microsoft Sentinel",
+      "blogId": "microsoftsentinelblog",
+      "author": "JesseKopavi"
+    },
     {
       "title": "From Manual Backfills to Autonomous Pipelines: Building an LLM-Powered Backfill Agent on Azure",
       "link": "https://techcommunity.microsoft.com/t5/analytics-on-azure-blog/from-manual-backfills-to-autonomous-pipelines-building-an-llm/ba-p/4516777",
@@ -750,15 +840,6 @@
       "author": "JennyF"
     },
     {
-      "title": "Update host keys to use SFTP on Azure Blob Storage",
-      "link": "https://techcommunity.microsoft.com/t5/azure-paas-blog/update-host-keys-to-use-sftp-on-azure-blob-storage/ba-p/4515483",
-      "published": "2026-04-28T14:44:02+00:00",
-      "summary": "Update host keys to use SFTP on Azure Blob Storage Some Azure Storage users may have received an alert informing that Microsoft will change the public key, like this. This article describes the impact this will have on the SFTP blob service and what are the changes needed.On this article: What is...",
-      "blog": "Azure PaaS",
-      "blogId": "azurepaasblog",
-      "author": "LuisFilipe"
-    },
-    {
       "title": "Project Pavilion Presence at KubeCon EU 2026",
       "link": "https://techcommunity.microsoft.com/t5/linux-and-open-source-blog/project-pavilion-presence-at-kubecon-eu-2026/ba-p/4515518",
       "published": "2026-04-28T12:50:16+00:00",
@@ -885,15 +966,6 @@
       "author": "robcronin"
     },
     {
-      "title": "From Portal Edits to GitOps : Deploying Azure API Management Configuration with APIOps",
-      "link": "https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/from-portal-edits-to-gitops-deploying-azure-api-management/ba-p/4514975",
-      "published": "2026-04-27T07:45:35+00:00",
-      "summary": "Introduction Modern enterprise platforms are increasingly built around APIs, and Azure API Management (APIM) sits at the heart of these systems as the control plane for enforcing policies, managing access, and routing traffic. While APIM provides a powerful interface through the Azure portal, many...",
-      "blog": "Azure Infrastructure",
-      "blogId": "azureinfrastructureblog",
-      "author": "aloormahesh"
-    },
-    {
       "title": "Rethinking Data Modeling: How GitHub Copilot Is Changing the Way We Design Systems",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/rethinking-data-modeling-how-github-copilot-is-changing-the-way/ba-p/4509941",
       "published": "2026-04-27T07:00:00+00:00",
@@ -901,15 +973,6 @@
       "blog": "Azure Dev Community",
       "blogId": "azuredevcommunityblog",
       "author": "B_Manasa"
-    },
-    {
-      "title": "Azure AI Foundry vs Traditional ML Pipelines: What’s Different and Why It Matters",
-      "link": "https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/azure-ai-foundry-vs-traditional-ml-pipelines-what-s-different/ba-p/4508897",
-      "published": "2026-04-27T06:06:18+00:00",
-      "summary": "The Traditional ML Pipeline: What It Was Built For Traditional ML pipelines typically look like this: Data ingestion and preparation Model training (often batch‑oriented) Model validation and versioning Deployment via APIs or batch jobs Monitoring focused on accuracy and drift This approach worked...",
-      "blog": "Azure Infrastructure",
-      "blogId": "azureinfrastructureblog",
-      "author": "Parvathy_R_Pillai"
     },
     {
       "title": "How to Troubleshoot Azure Functions Service Bus Trigger Issues",
@@ -1659,15 +1722,6 @@
       "author": "AswiniSurendran"
     },
     {
-      "title": "⚡Foundry Toolkit for VS Code: A Deep Dive on GA",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/foundry-toolkit-for-vs-code-a-deep-dive-on-ga/ba-p/4509510",
-      "published": "2026-04-17T07:06:47+00:00",
-      "summary": "As we shared in the announcement, Microsoft Foundry Toolkit for Visual Studio Code is now generally available. In this deep dive, we walk through everything that’s in the GA release — from the rebrand and extension consolidation, to model experimentation, agent development, evaluations, and...",
-      "blog": "Azure Dev Community",
-      "blogId": "azuredevcommunityblog",
-      "author": "junjieli"
-    },
-    {
       "title": "New in Azure SRE Agent: Log Analytics and Application Insights Connectors",
       "link": "https://techcommunity.microsoft.com/t5/apps-on-azure-blog/new-in-azure-sre-agent-log-analytics-and-application-insights/ba-p/4509649",
       "published": "2026-04-17T02:14:28+00:00",
@@ -2008,15 +2062,6 @@
       "blog": "Azure AI Foundry",
       "blogId": "azure-ai-foundry-blog",
       "author": "sudarsan"
-    },
-    {
-      "title": "Simplifying Image Classification with Azure AutoML for Images: A Practical Guide",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/simplifying-image-classification-with-azure-automl-for-images-a/ba-p/4479632",
-      "published": "2026-04-14T14:03:39+00:00",
-      "summary": "1. The Challenge of Traditional Image Classification Anyone who has worked with computer vision knows the drill: you need to classify images, so you dive into TensorFlow or PyTorch, spend days architecting a convolutional neural network, experiment with dozens of hyperparameters, and hope your...",
-      "blog": "Azure AI Foundry",
-      "blogId": "azure-ai-foundry-blog",
-      "author": "Serge_Retkowsky"
     },
     {
       "title": "GA: DCasv6 and ECasv6 confidential VMs based on 4th Generation AMD EPYC™ processors",
