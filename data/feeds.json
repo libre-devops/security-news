@@ -1,7 +1,88 @@
 {
-  "lastUpdated": "2026-05-08T13:44:42.192487+00:00",
-  "totalArticles": 273,
+  "lastUpdated": "2026-05-09T13:15:01.122777+00:00",
+  "totalArticles": 271,
   "articles": [
+    {
+      "title": "Turning GitHub Copilot into a “Best Practices Coach” with Copilot Spaces + a Markdown Knowledge Base",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/turning-github-copilot-into-a-best-practices-coach-with-copilot/ba-p/4511567",
+      "published": "2026-05-09T10:14:47+00:00",
+      "summary": "Why Copilot Spaces + Markdown repos work so well When you ask Copilot generic questions (“How should we log errors?” “What’s our API versioning approach?”), the model will often respond with reasonable defaults. But reasonable defaults are not the same as your standards. Copilot Spaces solve the...",
+      "blog": "Azure Dev Community",
+      "blogId": "azuredevcommunityblog",
+      "author": "mohashaikh"
+    },
+    {
+      "title": "CHERIoT-Ibex: Closing the door on memory safety vulnerabilities with hardware-enforced protection",
+      "link": "https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/cheriot-ibex-closing-the-door-on-memory-safety-vulnerabilities/ba-p/4517904",
+      "published": "2026-05-09T05:08:11+00:00",
+      "summary": "Memory safety vulnerabilities—largely arising from widely used programming languages such as C and C++—remain a leading cause of exploitable software defects across systems, from embedded devices to cloud-scale infrastructure. In simple terms, memory safety ensures that software accesses only the...",
+      "blog": "Azure Infrastructure",
+      "blogId": "azureinfrastructureblog",
+      "author": "kunyanliu"
+    },
+    {
+      "title": "Generate Embeddings Function and External Model Object Support Are Now Generally Available in Azure SQL",
+      "link": "https://devblogs.microsoft.com/azure-sql/generate-embeddings-function-and-external-model-object-support-are-now-generally-available-in-azure-sql/",
+      "published": "2026-05-08T21:42:36+00:00",
+      "summary": "We are excited to announce the General Availability (GA) of AI_GENERATE_EMBEDDINGS and CREATE EXTERNAL MODEL in Azure SQL Database and Azure SQL Managed Instance. These two T-SQL features — CREATE EXTERNAL MODEL and AI_GENERATE_EMBEDDINGS — work together as a single, integrated pipeline for...",
+      "blog": "Azure SQL Dev Corner",
+      "blogId": "azuresqlblog",
+      "author": "Aaron Saidi"
+    },
+    {
+      "title": "Introducing the Azure Resource Manager MCP Server!",
+      "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/introducing-the-azure-resource-manager-mcp-server/ba-p/4517521",
+      "published": "2026-05-08T20:39:25+00:00",
+      "summary": "We're super excited to announce the public preview of the Azure Resource Manager MCP Server! This is a remote MCP server that provides tools to give AI agents first-class access to Azure infrastructure operations through Azure Resource Manager (ARM). AI agents can now be equipped with tools to...",
+      "blog": "Governance & Management",
+      "blogId": "azuregovernanceandmanagementblog",
+      "author": "stevenbucher"
+    },
+    {
+      "title": "Introducing DeepSeek V4 Flash and V4 Pro in Microsoft Foundry",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/introducing-deepseek-v4-flash-and-v4-pro-in-microsoft-foundry/ba-p/4515174",
+      "published": "2026-05-08T18:36:59+00:00",
+      "summary": "As AI adoption matures, the conversation is shifting from model capability to system design, how to orchestrate models that deliver the right balance of quality, speed, and cost. Today, we’re expanding the Microsoft Foundry model catalog with DeepSeek V4 Flash, and DeepSeek V4 Pro coming soon. It...",
+      "blog": "Azure AI Foundry",
+      "blogId": "azure-ai-foundry-blog",
+      "author": "RashaudSavage"
+    },
+    {
+      "title": "Inspektor Gadget Completes Its First Independent Security Audit",
+      "link": "https://techcommunity.microsoft.com/t5/linux-and-open-source-blog/inspektor-gadget-completes-its-first-independent-security-audit/ba-p/4517895",
+      "published": "2026-05-08T17:56:26+00:00",
+      "summary": "One thing I've learned working with Open Source software over the years is that the projects you can trust most are the ones willing to let someone else test and review. That's what's recently happened with Inspektor Gadget, the open source eBPF tool for Kubernetes observability and Linux host...",
+      "blog": "Linux & Open Source",
+      "blogId": "linuxandopensourceblog",
+      "author": "Brian Benz"
+    },
+    {
+      "title": "Introducing cert-manager for Azure Arc-enabled Kubernetes: now in Public Preview",
+      "link": "https://techcommunity.microsoft.com/t5/azure-arc-blog/introducing-cert-manager-for-azure-arc-enabled-kubernetes-now-in/ba-p/4514549",
+      "published": "2026-05-08T17:15:32+00:00",
+      "summary": "Today we’re releasing a public preview of cert-manager for Azure Arc-enabled Kubernetes. It’s an Arc extension that automates TLS certificate and trust bundle management for edge Kubernetes clusters. If you’re running Kubernetes at the edge: in factories, retail stores, remote sites, you’ve...",
+      "blog": "Azure Arc",
+      "blogId": "azurearcblog",
+      "author": "NicolasMondada"
+    },
+    {
+      "title": "Safely Migrating Terraform Managed Disks on Azure Using Stable Keys and Copilot",
+      "link": "https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/safely-migrating-terraform-managed-disks-on-azure-using-stable/ba-p/4517509",
+      "published": "2026-05-08T16:02:01+00:00",
+      "summary": "The Root Cause: Index-Based \"for_each\" Keys: Many Terraform modules flatten VM and disk definitions into a list and use the list index as the for_each key: for_each = { for index, sp in local.managed_disks : index => sp } This pattern looks harmless, but the index is not stable: Adding a disk to...",
+      "blog": "Azure Infrastructure",
+      "blogId": "azureinfrastructureblog",
+      "author": "shwetayadav"
+    },
+    {
+      "title": "Secure Medallion Architecture Pattern on Azure Databricks (Part II)",
+      "link": "https://techcommunity.microsoft.com/t5/analytics-on-azure-blog/secure-medallion-architecture-pattern-on-azure-databricks-part/ba-p/4491044",
+      "published": "2026-05-08T15:13:59+00:00",
+      "summary": "Disclaimer: The views in this article are my own and do not represent Microsoft or Databricks. This article is part of a series focused on deploying a secure Medallion Architecture. The series follows a top-down approach , beginning with a high-level architectural perspective and gradually drilling...",
+      "blog": "Analytics on Azure",
+      "blogId": "analyticsonazure",
+      "author": "mscagliola"
+    },
     {
       "title": "A New Chapter for Realtime AI: Reasoning, Translation, and Real-Time Transcription",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/a-new-chapter-for-realtime-ai-reasoning-translation-and-real/ba-p/4517124",
@@ -55,15 +136,6 @@
       "blog": "Analytics on Azure",
       "blogId": "analyticsonazure",
       "author": "Rafia_Aqil"
-    },
-    {
-      "title": "Introducing the Azure Resource Manager MCP Server!",
-      "link": "https://techcommunity.microsoft.com/t5/azure-governance-and-management/introducing-the-azure-resource-manager-mcp-server/ba-p/4517521",
-      "published": "2026-05-07T18:13:09+00:00",
-      "summary": "We're super excited to announce the public preview of the Azure Resource Manager MCP Server! This is a remote MCP server that provides tools to give AI agents first-class access to Azure infrastructure operations through Azure Resource Manager (ARM). AI agents can now be equipped with tools to...",
-      "blog": "Governance & Management",
-      "blogId": "azuregovernanceandmanagementblog",
-      "author": "stevenbucher"
     },
     {
       "title": "What’s New in Aspire 13.3",
@@ -244,24 +316,6 @@
       "blog": "Azure Cosmos DB Blog",
       "blogId": "cosmosdbblog",
       "author": "Sajeetharan Sinnathurai"
-    },
-    {
-      "title": "Introducing cert-manager for Azure Arc-enabled Kubernetes: now in Public Preview",
-      "link": "https://techcommunity.microsoft.com/t5/azure-arc-blog/introducing-cert-manager-for-azure-arc-enabled-kubernetes-now-in/ba-p/4514549",
-      "published": "2026-05-06T15:30:00+00:00",
-      "summary": "Today we’re releasing a public preview of cert-manager for Azure Arc-enabled Kubernetes. It’s an Arc extension that automates TLS certificate and trust bundle management for edge Kubernetes clusters. If you’re running Kubernetes at the edge: in factories, retail stores, remote sites, you’ve...",
-      "blog": "Azure Arc",
-      "blogId": "azurearcblog",
-      "author": "NicolasMondada"
-    },
-    {
-      "title": "Turning GitHub Copilot into a “Best Practices Coach” with Copilot Spaces + a Markdown Knowledge Base",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-developer-community/turning-github-copilot-into-a-best-practices-coach-with-copilot/ba-p/4511567",
-      "published": "2026-05-06T07:00:00+00:00",
-      "summary": "Why Copilot Spaces + Markdown repos work so well When you ask Copilot generic questions (“How should we log errors?” “What’s our API versioning approach?”), the model will often respond with reasonable defaults. But reasonable defaults are not the same as your standards. Copilot Spaces solve the...",
-      "blog": "Azure Dev Community",
-      "blogId": "azuredevcommunityblog",
-      "author": "mohashaikh"
     },
     {
       "title": "🚀 Modernizing Azure Landing Zone Deployments: From Terraform Scripts to GHCP-Driven Engineering",
@@ -678,15 +732,6 @@
       "author": "karautenMSFT"
     },
     {
-      "title": "Introducing DeepSeek V4 Flash and V4 Pro in Microsoft Foundry",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/introducing-deepseek-v4-flash-and-v4-pro-in-microsoft-foundry/ba-p/4515174",
-      "published": "2026-05-01T00:09:35+00:00",
-      "summary": "As AI adoption matures, the conversation is shifting from model capability to system design, how to orchestrate models that deliver the right balance of quality, speed, and cost. Today, we’re expanding the Microsoft Foundry model catalog with DeepSeek V4 Flash, and DeepSeek V4 Pro coming soon. It...",
-      "blog": "Azure AI Foundry",
-      "blogId": "azure-ai-foundry-blog",
-      "author": "RashaudSavage"
-    },
-    {
       "title": "Prompt flow is being retired",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/prompt-flow-is-being-retired/ba-p/4513587",
       "published": "2026-04-30T21:15:00+00:00",
@@ -1029,15 +1074,6 @@
       "author": "Swapnil Nagar"
     },
     {
-      "title": "HashiCorp Vault Integration with Terraform — Secure Secret Management",
-      "link": "https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/hashicorp-vault-integration-with-terraform-secure-secret/ba-p/4508444",
-      "published": "2026-04-28T17:55:27+00:00",
-      "summary": "Introduction When provisioning cloud infrastructure using Terraform, it is common to require sensitive values such as: Administrative credentials (usernames, passwords) API keys and tokens SSH keys Database connection strings Domain join credentials In most environments, these secrets are commonly:...",
-      "blog": "Azure Infrastructure",
-      "blogId": "azureinfrastructureblog",
-      "author": "singhshub"
-    },
-    {
       "title": "Architecting Cost-Aware LLM Workloads with Model Router in Microsoft Foundry",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-foundry-blog/architecting-cost-aware-llm-workloads-with-model-router-in/ba-p/4514440",
       "published": "2026-04-28T17:45:00+00:00",
@@ -1072,15 +1108,6 @@
       "blog": "Linux & Open Source",
       "blogId": "linuxandopensourceblog",
       "author": "lexinadolski"
-    },
-    {
-      "title": "Istio‑Based Weighted Traffic Management on AKS for Enterprise Workloads",
-      "link": "https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/istio-based-weighted-traffic-management-on-aks-for-enterprise/ba-p/4511520",
-      "published": "2026-04-28T12:23:21+00:00",
-      "summary": "Istio‑Based Weighted Traffic Management Pre-Requisites: AKS containers (internal pods, no Envoy sidecar) Istio Installed and Configured at AKS Cluster (Ingress Gateway–based traffic management) Section 1 — Overview & Why Istio Is Required In modern distributed systems, traffic control is no longer...",
-      "blog": "Azure Infrastructure",
-      "blogId": "azureinfrastructureblog",
-      "author": "Amreen"
     },
     {
       "title": "Welcome to Azure Cosmos DB Conf 2026",
@@ -2413,51 +2440,6 @@
       "blog": "Confidential Computing",
       "blogId": "azureconfidentialcomputingblog",
       "author": "wesback"
-    },
-    {
-      "title": "Auditing FIDO2 authentication for Windows Sign-in",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/auditing-fido2-authentication-for-windows-sign-in/ba-p/4509702",
-      "published": "2026-04-09T11:10:08+00:00",
-      "summary": "Hello everyone, my name is Liju and I am a Cloud Solutions Architect helping customers secure their cloud and hybrid identities. With this post, I would like to show how FIDO2 security key authentication for Windows sign‑in can be audited on client devices. Recently, a customer of mine asked how...",
-      "blog": "Core Infrastructure & Security",
-      "blogId": "coreinfrastructureandsecurityblog",
-      "author": "LijuV"
-    },
-    {
-      "title": "AI Inference on AKS enabled by Azure Arc: Generative AI using Triton and TensorRT‑LLM",
-      "link": "https://blog.aks.azure.com/2026/04/09/ai-inference-on-aks-arc-part-5",
-      "published": "2026-04-09T00:00:00+00:00",
-      "summary": "Run local edge generative AI by deploying Triton with the TensorRT-LLM backend on AKS enabled by Azure Arc to serve Qwen2.5 7B Instruct with GPU acceleration.",
-      "blog": "AKS Blog",
-      "blogId": "aksblog",
-      "author": "Microsoft"
-    },
-    {
-      "title": "Designing Reliable Health Check Endpoints for IIS Behind Azure Application Gateway",
-      "link": "https://techcommunity.microsoft.com/t5/azure-architecture-blog/designing-reliable-health-check-endpoints-for-iis-behind-azure/ba-p/4507938",
-      "published": "2026-04-08T23:18:05+00:00",
-      "summary": "Why Health Probes Matter in Azure Application Gateway Azure Application Gateway relies entirely on health probes to determine whether backend instances should receive traffic. If a probe: Receives a non‑200 response Times out Gets redirected Requires authentication …the backend is marked Unhealthy,...",
-      "blog": "Azure Architecture",
-      "blogId": "azurearchitectureblog",
-      "author": "AjaySingh_"
-    },
-    {
-      "title": "Introducing SQL MCP Server",
-      "link": "https://devblogs.microsoft.com/azure-sql/introducing-sql-mcp-server/",
-      "published": "2026-04-08T16:01:37+00:00",
-      "summary": "SQL MCP Server gives enterprises a secure, feature-rich way to enable agents to access data. This is accomplished without exposing the schema, risking consistency, or relying on fragile natural language parsing. SQL MCP Server is a feature of Data API builder, so deployments have a proven entity...",
-      "blog": "Azure SQL Dev Corner",
-      "blogId": "azuresqlblog",
-      "author": "Jerry Nixon"
-    },
-    {
-      "title": "Give your Foundry Agent Custom Tools with MCP Servers on Azure Functions",
-      "link": "https://devblogs.microsoft.com/azure-sdk/give-your-foundry-agent-custom-tools-with-mcp-servers-on-azure-functions/",
-      "published": "2026-04-08T15:00:50+00:00",
-      "summary": "Learn how to connect your MCP server hosted on Azure Functions to Microsoft Foundry agents. This post covers authentication options and setup steps to give your AI agent access to custom MCP tools. The post Give your Foundry Agent Custom Tools with MCP Servers on Azure Functions appeared first on...",
-      "blog": "Azure SDK Blog",
-      "blogId": "azuresdkblog",
-      "author": "Lily Ma"
     }
   ]
 }
