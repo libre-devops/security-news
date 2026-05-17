@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-05-16T13:19:17.933222+00:00",
-  "totalArticles": 264,
+  "lastUpdated": "2026-05-17T13:17:37.398068+00:00",
+  "totalArticles": 253,
   "articles": [
     {
       "title": "What's new in FinOps toolkit 14 – April 2026",
@@ -2278,105 +2278,6 @@
       "blog": "Azure Arc",
       "blogId": "azurearcblog",
       "author": "liranlyabock_microsoft"
-    },
-    {
-      "title": "Maintaining Azure Public IP Inventory by Retrieving Exact Deleted Public IP Using Activity Logs",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/maintaining-azure-public-ip-inventory-by-retrieving-exact/ba-p/4512403",
-      "published": "2026-04-17T12:10:31+00:00",
-      "summary": "Azure Activity Logs provide strong visibility into resource lifecycle operations across a subscription. Among these are lifecycle events related to Azure Public IP addresses, including creation and deletion. However, when a Public IP address is deleted, the corresponding delete operation in Azure...",
-      "blog": "Core Infrastructure & Security",
-      "blogId": "coreinfrastructureandsecurityblog",
-      "author": "AswiniSurendran"
-    },
-    {
-      "title": "Introducing the plugin marketplace for Azure API Center",
-      "link": "https://techcommunity.microsoft.com/t5/azure-integration-services-blog/introducing-the-plugin-marketplace-for-azure-api-center/ba-p/4512231",
-      "published": "2026-04-17T00:50:01+00:00",
-      "summary": "Today, we're excited to announce the public preview of the plugin marketplace endpoint for Azure API Center. This new capability makes it easier than ever for developers to discover and install AI plugins — including MCP servers and skills — directly from the tools they already use, like Claude...",
-      "blog": "Integrations on Azure",
-      "blogId": "integrationsonazureblog",
-      "author": "Sreekanth_Thirthala"
-    },
-    {
-      "title": "Control AI spend with per-application token rate limiting using Application Network and agentgateway",
-      "link": "https://blog.aks.azure.com/2026/04/17/appnet-agentgateway",
-      "published": "2026-04-17T00:00:00+00:00",
-      "summary": "Use Application Network identity and agentgateway to enforce per-application token rate limiting and control shared AI service spend on AKS.",
-      "blog": "AKS Blog",
-      "blogId": "aksblog",
-      "author": "Microsoft"
-    },
-    {
-      "title": "Best of Both Worlds for Agentic Refactoring: GitHub Copilot + MicroVMs via Docker Sandbox",
-      "link": "https://devblogs.microsoft.com/all-things-azure/best-of-both-worlds-for-agentic-refactoring-github-copilot-microvms-via-docker-sandbox/",
-      "published": "2026-04-16T22:09:53+00:00",
-      "summary": "Legacy codebases frequently contain hardcoded logic and complex build scripts that depend on specific filesystem structures, making them notoriously difficult to modernize in isolated environments. Docker Sandbox addresses this challenge through a bidirectional workspace sync that preserves the...",
-      "blog": "All Things Azure",
-      "blogId": "allthingsazure",
-      "author": "cindywang"
-    },
-    {
-      "title": "Introducing the Container Network Insights Agent for AKS: Now in Public Preview",
-      "link": "https://techcommunity.microsoft.com/t5/azure-networking-blog/introducing-the-container-network-insights-agent-for-aks-now-in/ba-p/4512197",
-      "published": "2026-04-16T21:05:45+00:00",
-      "summary": "We are thrilled to announce public preview of Container Network Insights Agent - Agentic AI network troubleshooting for your workloads running in Azure Kubernetes Service (AKS). The Challenge AKS networking is layered by design. Azure CNI, eBPF, Cilium, CoreDNS, NetworkPolicy, CiliumNetworkPolicy,...",
-      "blog": "Azure Networking",
-      "blogId": "azurenetworkingblog",
-      "author": "chandanAggarwal"
-    },
-    {
-      "title": "What’s New in Microsoft Foundry Fine-Tuning | April 2026",
-      "link": "https://devblogs.microsoft.com/foundry/whats-new-in-foundry-finetune-april-2026/",
-      "published": "2026-04-16T19:34:46+00:00",
-      "summary": "April 2026 brings three major Reinforcement Fine-Tuning updates: Global Training for o4-mini with lower per-token rates across 12+ regions, new GPT-4.1 model graders for richer reward signals, and a comprehensive RFT best practices guide to help you ship specialized models faster. The post What’s...",
-      "blog": "Microsoft Foundry Blog",
-      "blogId": "foundryblog",
-      "author": "Blanca Li"
-    },
-    {
-      "title": "Free Your Terminal with Detached Mode in Aspire 13.2",
-      "link": "https://devblogs.microsoft.com/aspire/aspire-detached-mode-and-process-management/",
-      "published": "2026-04-16T17:00:00+00:00",
-      "summary": "Aspire 13.2 brings detached mode to the CLI. Run your AppHost in the background, free your terminal, and let coding agents start, inspect, and manage your app without blocking. The post Free Your Terminal with Detached Mode in Aspire 13.2 appeared first on Aspire Blog.",
-      "blog": "Aspire Blog",
-      "blogId": "aspireblog",
-      "author": "James Newton-King"
-    },
-    {
-      "title": "App attach in Azure Virtual Desktop now supports Windows Server 2025 and Windows Server 2022",
-      "link": "https://techcommunity.microsoft.com/t5/azure-virtual-desktop-blog/app-attach-in-azure-virtual-desktop-now-supports-windows-server/ba-p/4511729",
-      "published": "2026-04-16T16:00:12+00:00",
-      "summary": "Managing applications in virtualized desktop and server environments has traditionally required IT teams to bake apps directly into base images, driving image sprawl, slower updates, and higher operational overhead. App attach in Azure Virtual Desktop changes that model by enabling applications to...",
-      "blog": "Azure Virtual Desktop",
-      "blogId": "azurevirtualdesktopblog",
-      "author": "Michelle_Moya"
-    },
-    {
-      "title": "From AI to .NET: 20 VS Live! Las Vegas Sessions You Can Watch Now",
-      "link": "https://devblogs.microsoft.com/visualstudio/from-ai-to-net-20-vs-live-las-vegas-sessions-you-can-watch-now/",
-      "published": "2026-04-16T15:00:04+00:00",
-      "summary": "In March 2026, developers came together at VS Live! Las Vegas for a full week of technical learning, hands-on exploration, and a lot of great conversations about where software development is headed next. From AI-assisted development to modern .NET, cloud-native apps, and developer productivity,...",
-      "blog": "Visual Studio Blog",
-      "blogId": "visualstudio",
-      "author": "Jim Harrer"
-    },
-    {
-      "title": "SQL Server enabled by Azure Arc Overview",
-      "link": "https://techcommunity.microsoft.com/t5/azure-arc-blog/sql-server-enabled-by-azure-arc-overview/ba-p/4496399",
-      "published": "2026-04-16T15:00:00+00:00",
-      "summary": "Table of Contents What is Azure Arc-enabled SQL Server? Connecting SQL Server to Azure Arc (4-step onboarding) Your SQL Server is Now in Azure (unified management) SQL Best Practices Assessment Monitoring and Governance Troubleshooting Guide Azure Arc Demo What You Can Learn from This Article This...",
-      "blog": "Azure Arc",
-      "blogId": "azurearcblog",
-      "author": "NaufalPrawironegoro"
-    },
-    {
-      "title": "How Granular Delegated Admin Privileges (GDAP) allows Sentinel customers to delegate access",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/how-granular-delegated-admin-privileges-gdap-allows-sentinel/ba-p/4503123",
-      "published": "2026-04-16T14:40:52+00:00",
-      "summary": "Simplifying Defender SIEM and XDR delegated access As Microsoft Sentinel and Defender converge into a unified experience, organizations face a fundamental challenge: the lack of a scalable, comprehensive, delegated access model that works seamlessly across Entra ID and Sentinel’s Azure Resource...",
-      "blog": "Microsoft Sentinel",
-      "blogId": "microsoftsentinelblog",
-      "author": "Yossi Basha"
     }
   ]
 }
