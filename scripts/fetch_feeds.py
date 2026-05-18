@@ -43,6 +43,7 @@ MAX_RSS_ITEMS = 100
 # Source configuration
 # ---------------------------------------------------------------------------
 
+
 @dataclass(frozen=True)
 class Source:
     id: str
@@ -128,6 +129,23 @@ SOURCES: List[Source] = [
         source_kind="techcommunity",
         board_id="microsoftdefenderforoffice365blog",
         category="Email Security",
+    ),
+    Source(
+        id="security_copilot",
+        name="Microsoft Security Copilot",
+        url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=SecurityCopilotBlog",
+        source_group="TechCommunity",
+        source_kind="techcommunity",
+        board_id="securitycopilot",
+        category="AI Security",
+    ),
+    Source(
+        id="ms_ai_blog",
+        name="Microsoft AI Blog",
+        url="https://blogs.microsoft.com/feed/",
+        source_group="Official Microsoft",
+        source_kind="rss",
+        category="AI",
     ),
     Source(
         id="core_infra_security",
@@ -258,6 +276,31 @@ PRODUCTS: Dict[str, Dict[str, Any]] = {
             (r"\bendpoint management\b", 1),
         ],
     },
+    "security-copilot": {
+        "name": "Microsoft Security Copilot",
+        "weight_threshold": 3,
+        "patterns": [
+            (r"\bmicrosoft security copilot\b", 5),
+            (r"\bsecurity copilot\b", 4),
+            (r"\bcopilot for security\b", 4),
+            (r"\bsecurity ai\b", 2),
+            (r"\bgenerative ai for security\b", 2),
+        ],
+    },
+    "ai-security": {
+        "name": "AI Security",
+        "weight_threshold": 2,
+        "patterns": [
+            (r"\bartificial intelligence security\b", 4),
+            (r"\bai security\b", 4),
+            (r"\bsecure ai\b", 2),
+            (r"\bmodel security\b", 2),
+            (r"\bprompt injection\b", 2),
+            (r"\bllm security\b", 3),
+            (r"\bgenerative ai\b", 1),
+            (r"\bfoundation model\b", 1),
+        ],
+    },
     "msrc": {
         "name": "Microsoft Security Response Center",
         "weight_threshold": 3,
@@ -333,6 +376,19 @@ DOMAINS: Dict[str, Dict[str, Any]] = {
             (r"\bsentinel\b", 4),
         ],
     },
+    "ai-security": {
+        "name": "AI Security",
+        "weight_threshold": 2,
+        "patterns": [
+            (r"\bai security\b", 4),
+            (r"\bartificial intelligence security\b", 4),
+            (r"\bprompt injection\b", 3),
+            (r"\bllm security\b", 3),
+            (r"\bmodel poisoning\b", 2),
+            (r"\bsecure ai\b", 2),
+            (r"\bgenerative ai\b", 1),
+        ],
+    },
     "threat-intelligence": {
         "name": "Threat Intelligence",
         "weight_threshold": 2,
@@ -395,6 +451,7 @@ DOMAINS: Dict[str, Dict[str, Any]] = {
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def clean_html(text: str) -> str:
     if not text:
@@ -515,19 +572,24 @@ def classify_domains(
         )
 
     if "defender-office" in product_ids:
-        domain_scores["email-security"] = max(
-            domain_scores.get("email-security", 0), 4
-        )
+        domain_scores["email-security"] = max(domain_scores.get("email-security", 0), 4)
 
     if "defender-cloud" in product_ids or "defender-cloud-apps" in product_ids:
-        domain_scores["cloud-security"] = max(
-            domain_scores.get("cloud-security", 0), 4
-        )
+        domain_scores["cloud-security"] = max(domain_scores.get("cloud-security", 0), 4)
 
     if "purview" in product_ids:
         domain_scores["governance-compliance"] = max(
             domain_scores.get("governance-compliance", 0), 4
         )
+
+    if "security-copilot" in product_ids:
+        domain_scores["ai-security"] = max(domain_scores.get("ai-security", 0), 4)
+        domain_scores["security-operations"] = max(
+            domain_scores.get("security-operations", 0), 2
+        )
+
+    if "ai-security" in product_ids:
+        domain_scores["ai-security"] = max(domain_scores.get("ai-security", 0), 4)
 
     if "msrc" in product_ids:
         domain_scores["vulnerability-management"] = max(
@@ -590,7 +652,7 @@ def fetch_feed(source: Source) -> List[dict]:
             return []
 
         articles = []
-        entries = feed.entries[:source.max_entries]
+        entries = feed.entries[: source.max_entries]
 
         for entry in entries:
             articles.append(normalize_entry(entry, source))
@@ -657,9 +719,9 @@ def generate_rss_feed(articles: List[dict]) -> None:
     SubElement(channel, "description").text = SITE_DESCRIPTION
     SubElement(channel, "generator").text = "Microsoft Security News Feed"
     SubElement(channel, "language").text = "en"
-    SubElement(channel, "lastBuildDate").text = datetime.now(
-        timezone.utc
-    ).strftime("%a, %d %b %Y %H:%M:%S GMT")
+    SubElement(channel, "lastBuildDate").text = datetime.now(timezone.utc).strftime(
+        "%a, %d %b %Y %H:%M:%S GMT"
+    )
 
     for article in articles[:MAX_RSS_ITEMS]:
         item = SubElement(channel, "item")
@@ -674,7 +736,9 @@ def generate_rss_feed(articles: List[dict]) -> None:
             for product in categories:
                 SubElement(item, "category").text = product["name"]
         else:
-            SubElement(item, "category").text = article.get("source_category", "Security")
+            SubElement(item, "category").text = article.get(
+                "source_category", "Security"
+            )
 
         # Add domains as extra categories too
         for domain in article.get("domains", []):

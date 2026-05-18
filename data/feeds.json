@@ -1,7 +1,7 @@
 {
   "site": "Microsoft Security News",
-  "lastUpdated": "2026-05-18T19:42:16.604973+00:00",
-  "totalArticles": 63,
+  "lastUpdated": "2026-05-18T19:49:02.544048+00:00",
+  "totalArticles": 71,
   "articles": [
     {
       "title": "Agent 365 connector: Monitor, hunt, and investigate AI agent activity in Microsoft Sentinel",
@@ -21,6 +21,11 @@
           "id": "sentinel",
           "name": "Microsoft Sentinel",
           "score": 9
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 2
         }
       ],
       "domains": [
@@ -28,6 +33,11 @@
           "id": "security-operations",
           "name": "Security Operations",
           "score": 5
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
         },
         {
           "id": "governance-compliance",
@@ -52,7 +62,9 @@
       ],
       "tags": [
         "Microsoft Sentinel",
+        "AI Security",
         "Security Operations",
+        "AI Security",
         "Governance / Compliance",
         "SIEM / XDR",
         "Endpoint Security",
@@ -1358,21 +1370,21 @@
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 2
         }
       ],
       "domains": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
         }
       ],
       "tags": [
-        "General Security",
-        "General Security"
+        "AI Security",
+        "AI Security"
       ]
     },
     {
@@ -1473,6 +1485,38 @@
         "Incident Response",
         "SIEM / XDR",
         "Security Operations"
+      ]
+    },
+    {
+      "title": "How Frontier Firms are rebuilding the operating model for the age of AI",
+      "link": "https://blogs.microsoft.com/blog/2026/05/05/how-frontier-firms-are-rebuilding-the-operating-model-for-the-age-of-ai/",
+      "published": "2026-05-05T10:00:01+00:00",
+      "summary": "Updated May 11, 2026: The post was updated to reflect that third-party plugins will be available starting May 12, 2026. Spend time with any software engineering team right now and you’ll see something worth paying attention to. Over the last few years, the way software gets built has moved through...",
+      "author": "Jared Spataro",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "domains": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security",
+        "General Security"
       ]
     },
     {
@@ -1788,9 +1832,9 @@
       "board_id": "coreinfrastructureandsecurityblog",
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 2
         }
       ],
       "domains": [
@@ -1798,6 +1842,11 @@
           "id": "vulnerability-management",
           "name": "Vulnerability Management",
           "score": 6
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
         },
         {
           "id": "identity-security",
@@ -1811,8 +1860,9 @@
         }
       ],
       "tags": [
-        "General Security",
+        "AI Security",
         "Vulnerability Management",
+        "AI Security",
         "Identity Security",
         "Endpoint Security"
       ]
@@ -1835,9 +1885,19 @@
           "id": "sentinel",
           "name": "Microsoft Sentinel",
           "score": 9
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 4
         }
       ],
       "domains": [
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
+        },
         {
           "id": "siem-xdr",
           "name": "SIEM / XDR",
@@ -1856,6 +1916,8 @@
       ],
       "tags": [
         "Microsoft Sentinel",
+        "Microsoft Security Copilot",
+        "AI Security",
         "SIEM / XDR",
         "Identity Security",
         "Security Operations"
@@ -2006,6 +2068,74 @@
       ]
     },
     {
+      "title": "Automating Phishing Email Triage with Microsoft Security Copilot",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-security-copilot-blog/automating-phishing-email-triage-with-microsoft-security-copilot/ba-p/4416559",
+      "published": "2026-04-29T03:50:49+00:00",
+      "summary": "This blog details automating phishing email triage using Azure Logic Apps, Azure Function Apps, and Microsoft Security Copilot. Deployable in under 10 minutes, this solution primarily analyzes email intent without relying on traditional indicators of compromise, accurately classifying benign/junk,...",
+      "author": "craigfreyman-msft",
+      "source": "Microsoft Security Copilot",
+      "source_id": "security_copilot",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "AI Security",
+      "board_id": "securitycopilot",
+      "products": [
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 12
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 9
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 9
+        }
+      ],
+      "domains": [
+        {
+          "id": "email-security",
+          "name": "Email Security",
+          "score": 9
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
+        },
+        {
+          "id": "siem-xdr",
+          "name": "SIEM / XDR",
+          "score": 4
+        },
+        {
+          "id": "security-operations",
+          "name": "Security Operations",
+          "score": 3
+        },
+        {
+          "id": "governance-compliance",
+          "name": "Governance / Compliance",
+          "score": 2
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Office 365",
+        "Microsoft Security Copilot",
+        "Microsoft Sentinel",
+        "Email Security",
+        "AI Security",
+        "SIEM / XDR",
+        "Security Operations",
+        "Governance / Compliance"
+      ]
+    },
+    {
       "title": "Monthly news - January 2026",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/monthly-news-january-2026/ba-p/4484885",
       "published": "2026-04-28T23:33:54+00:00",
@@ -2139,6 +2269,11 @@
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
           "score": 12
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 4
         }
       ],
       "domains": [
@@ -2146,6 +2281,11 @@
           "id": "email-security",
           "name": "Email Security",
           "score": 9
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
         },
         {
           "id": "security-operations",
@@ -2160,9 +2300,43 @@
       ],
       "tags": [
         "Microsoft Defender for Office 365",
+        "Microsoft Security Copilot",
         "Email Security",
+        "AI Security",
         "Security Operations",
         "Identity Security"
+      ]
+    },
+    {
+      "title": "Unlocking human ambition to drive business growth with AI",
+      "link": "https://blogs.microsoft.com/blog/2026/04/28/unlocking-human-ambition-to-drive-business-growth-with-ai/",
+      "published": "2026-04-28T17:34:47+00:00",
+      "summary": "As our customers progress toward becoming Frontier Firms, they are using AI not only to optimize how work gets done, but to reinvent their business on the promise of growth. Organizations can now unlock creativity, accelerate innovation and democratize intelligence by bringing Copilots and agents...",
+      "author": "Judson Althoff",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "domains": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security",
+        "General Security"
       ]
     },
     {
@@ -2289,6 +2463,70 @@
       "tags": [
         "Microsoft Defender for Endpoint",
         "Endpoint Security"
+      ]
+    },
+    {
+      "title": "Microsoft Sovereign Private Cloud scales to thousands of nodes with Azure Local",
+      "link": "https://blogs.microsoft.com/blog/2026/04/27/microsoft-sovereign-private-cloud-scales-to-thousands-of-nodes-with-azure-local/",
+      "published": "2026-04-27T16:00:03+00:00",
+      "summary": "Today, I am pleased to announce that Azure Local now scales to support deployments of up to thousands of servers within a single sovereign environment, allowing organizations to run much larger workloads locally across large-footprint datacenters, industrial environments and edge locations while...",
+      "author": "Douglas Phillips",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "domains": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security",
+        "General Security"
+      ]
+    },
+    {
+      "title": "The next phase of the Microsoft-OpenAI partnership",
+      "link": "https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/",
+      "published": "2026-04-27T13:00:02+00:00",
+      "summary": "Amended Agreement Provides Long-Term Clarity The rapid pace of innovation requires us to continue to evolve our partnership to benefit our customers and both companies. Today, we are announcing an amended agreement to simplify our partnership and the way we work together, grounded in flexibility,...",
+      "author": "Microsoft Corporate Blogs",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "domains": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security",
+        "General Security"
       ]
     },
     {
@@ -2498,6 +2736,208 @@
       ]
     },
     {
+      "title": "From alert overload to decisive action: How Security Copilot agents are transforming security and IT",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-security-copilot-blog/from-alert-overload-to-decisive-action-how-security-copilot/ba-p/4504213",
+      "published": "2026-04-21T22:55:44+00:00",
+      "summary": "Security and IT teams operate in a constant stream of alerts, incidents, and investigations. As environments expand across identities, endpoints, cloud, and data, the challenge becomes clear: identifying real risk quickly enough to act. Security Copilot agents bring AI directly into the flow of...",
+      "author": "Lizzie_Heinze",
+      "source": "Microsoft Security Copilot",
+      "source_id": "security_copilot",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "AI Security",
+      "board_id": "securitycopilot",
+      "products": [
+        {
+          "id": "entra",
+          "name": "Microsoft Entra",
+          "score": 9
+        },
+        {
+          "id": "intune",
+          "name": "Microsoft Intune",
+          "score": 9
+        },
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 9
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 9
+        },
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 4
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 4
+        }
+      ],
+      "domains": [
+        {
+          "id": "identity-security",
+          "name": "Identity Security",
+          "score": 8
+        },
+        {
+          "id": "endpoint-security",
+          "name": "Endpoint Security",
+          "score": 6
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
+        },
+        {
+          "id": "governance-compliance",
+          "name": "Governance / Compliance",
+          "score": 4
+        },
+        {
+          "id": "siem-xdr",
+          "name": "SIEM / XDR",
+          "score": 4
+        },
+        {
+          "id": "security-operations",
+          "name": "Security Operations",
+          "score": 4
+        },
+        {
+          "id": "email-security",
+          "name": "Email Security",
+          "score": 2
+        },
+        {
+          "id": "vulnerability-management",
+          "name": "Vulnerability Management",
+          "score": 2
+        }
+      ],
+      "tags": [
+        "Microsoft Entra",
+        "Microsoft Intune",
+        "Microsoft Purview",
+        "Microsoft Security Copilot",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Sentinel",
+        "Identity Security",
+        "Endpoint Security",
+        "Threat Intelligence",
+        "AI Security",
+        "Governance / Compliance",
+        "SIEM / XDR",
+        "Security Operations",
+        "Email Security",
+        "Vulnerability Management"
+      ]
+    },
+    {
+      "title": "Automate cybersecurity at scale with Microsoft Security Copilot agents",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-security-copilot-blog/automate-cybersecurity-at-scale-with-microsoft-security-copilot/ba-p/4394675",
+      "published": "2026-04-21T22:29:17+00:00",
+      "summary": "When we introduced Microsoft Security Copilot last year, we set out to transform the way defenders approach cybersecurity. As one of the industry's first generative AI solutions for security and IT teams, Security Copilot is empowering teams to catch what others miss, respond faster, and strengthen...",
+      "author": "Dorothy_Li",
+      "source": "Microsoft Security Copilot",
+      "source_id": "security_copilot",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "AI Security",
+      "board_id": "securitycopilot",
+      "products": [
+        {
+          "id": "intune",
+          "name": "Microsoft Intune",
+          "score": 10
+        },
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 10
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 9
+        },
+        {
+          "id": "entra",
+          "name": "Microsoft Entra",
+          "score": 5
+        }
+      ],
+      "domains": [
+        {
+          "id": "security-operations",
+          "name": "Security Operations",
+          "score": 6
+        },
+        {
+          "id": "governance-compliance",
+          "name": "Governance / Compliance",
+          "score": 5
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
+        },
+        {
+          "id": "identity-security",
+          "name": "Identity Security",
+          "score": 4
+        },
+        {
+          "id": "email-security",
+          "name": "Email Security",
+          "score": 2
+        },
+        {
+          "id": "endpoint-security",
+          "name": "Endpoint Security",
+          "score": 2
+        },
+        {
+          "id": "vulnerability-management",
+          "name": "Vulnerability Management",
+          "score": 2
+        }
+      ],
+      "tags": [
+        "Microsoft Intune",
+        "Microsoft Purview",
+        "Microsoft Security Copilot",
+        "Microsoft Entra",
+        "Security Operations",
+        "Governance / Compliance",
+        "Threat Intelligence",
+        "AI Security",
+        "Identity Security",
+        "Email Security",
+        "Endpoint Security",
+        "Vulnerability Management"
+      ]
+    },
+    {
       "title": "Security Copilot for SOC: bringing agentic AI to every defender",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/security-copilot-for-soc-bringing-agentic-ai-to-every-defender/ba-p/4470187",
       "published": "2026-04-21T19:32:47+00:00",
@@ -2515,6 +2955,11 @@
           "id": "defender-xdr",
           "name": "Microsoft Defender XDR",
           "score": 11
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 4
         },
         {
           "id": "sentinel",
@@ -2539,6 +2984,11 @@
           "score": 7
         },
         {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
+        },
+        {
           "id": "email-security",
           "name": "Email Security",
           "score": 2
@@ -2561,14 +3011,48 @@
       ],
       "tags": [
         "Microsoft Defender XDR",
+        "Microsoft Security Copilot",
         "Microsoft Sentinel",
         "Security Operations",
         "SIEM / XDR",
         "Threat Intelligence",
+        "AI Security",
         "Email Security",
         "Governance / Compliance",
         "Identity Security",
         "Incident Response"
+      ]
+    },
+    {
+      "title": "Accelerating Frontier Transformation with Microsoft partners",
+      "link": "https://blogs.microsoft.com/blog/2026/04/21/accelerating-frontier-transformation-with-microsoft-partners/",
+      "published": "2026-04-21T17:00:03+00:00",
+      "summary": "AI has moved quickly from experimentation to production. Customers want measurable business outcomes, along with security, governance and responsible AI built in from day one. Microsoft partners are a meaningful differentiator to deliver these objectives. They turn ideas into deployable solutions...",
+      "author": "Nicole Dezen",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "domains": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security",
+        "General Security"
       ]
     },
     {
