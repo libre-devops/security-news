@@ -8,7 +8,7 @@
 
     <meta
         name="description"
-        content="Daily aggregated Microsoft security news, advisories, and threat intelligence."
+        content="Daily aggregated Microsoft security news, advisories, threat intelligence, and product intelligence."
     >
 
     <!-- Open Graph -->
@@ -16,7 +16,7 @@
     <meta property="og:title" content="Microsoft Security News">
     <meta
         property="og:description"
-        content="Daily aggregated Microsoft security news, advisories, and threat intelligence."
+        content="Daily aggregated Microsoft security news, advisories, threat intelligence, and product intelligence."
     >
     <meta property="og:url" content="https://security.libredevops.org">
 
@@ -25,7 +25,7 @@
     <meta name="twitter:title" content="Microsoft Security News">
     <meta
         name="twitter:description"
-        content="Daily aggregated Microsoft security news, advisories, and threat intelligence."
+        content="Daily aggregated Microsoft security news, advisories, threat intelligence, and product intelligence."
     >
 
     <!-- PWA -->
@@ -92,7 +92,7 @@
             <div>
                 <h1>Microsoft Security News</h1>
                 <span class="subtitle">
-                    Daily Microsoft security news · advisories · threat intelligence
+                    Security intelligence dashboard · Microsoft ecosystem
                 </span>
             </div>
         </div>
@@ -103,7 +103,7 @@
                 <input
                     type="text"
                     id="search-input"
-                    placeholder="Search articles..."
+                    placeholder="Search products, domains, advisories..."
                     autocomplete="off"
                 >
             </div>
@@ -119,7 +119,7 @@
                 id="theme-toggle"
                 title="Toggle dark mode"
             >
-                🌙
+                ☀️
             </button>
         </div>
     </div>
@@ -130,11 +130,31 @@
     </div>
 </header>
 
+<!-- Product Filters -->
 <div class="filters">
+    <div class="filter-section-title">
+        <span>🛡️ Products</span>
+    </div>
+
     <div class="filter-scroll">
         <div class="filter-pills" id="filter-pills">
-            <button class="pill active" data-source="all">
-                All
+            <button class="pill active" data-product="all">
+                All Products
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Domain Filters -->
+<div class="filters">
+    <div class="filter-section-title">
+        <span>🎯 Security Domains</span>
+    </div>
+
+    <div class="filter-scroll">
+        <div class="filter-pills" id="domain-pills">
+            <button class="pill active" data-domain="all">
+                All Domains
             </button>
         </div>
     </div>
@@ -162,12 +182,12 @@
 
     <div id="loading" class="loading">
         <div class="loading-spinner"></div>
-        <p>Loading security feeds...</p>
+        <p>Loading Microsoft security intelligence feeds...</p>
     </div>
 
     <div id="no-results" class="no-results">
         <p>🔍 No articles found matching your criteria.</p>
-        <p>Try adjusting your filters or search terms.</p>
+        <p>Try adjusting your product/domain filters or search terms.</p>
     </div>
 
     <div
@@ -181,13 +201,13 @@
 <footer>
     <p>
         🛡️ Microsoft Security News &bull;
-        Updated daily via
+        Powered by
         <a
             href="https://github.com/libre-devops/microsoft-security-news"
             target="_blank"
             rel="noopener"
         >
-            GitHub Actions
+            Libre DevOps
         </a>
         &bull;
         <a
@@ -200,7 +220,8 @@
     </p>
 
     <p>
-        Unofficial community aggregation of public Microsoft security news.
+        Community aggregation of publicly available Microsoft security content.
+        Not affiliated with Microsoft.
     </p>
 </footer>
 
