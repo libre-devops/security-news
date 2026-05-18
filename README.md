@@ -1,39 +1,41 @@
-# ☁️ Azure News Feed
+# 🛡️ Microsoft Security News
 
-A daily-updated Azure blog aggregator hosted on GitHub Pages. Collects articles from Azure blogs and presents them in a clean, searchable interface — last 30 days only.
+A daily-updated Microsoft security news aggregator hosted on GitHub Pages. Collects security-focused articles, advisories, threat intelligence, and product updates from Microsoft security sources in a clean, searchable interface.
 
-**Live site:** [azurefeed.news](https://security.libredevops.org)
+**Live site:** [security.libredevops.org](https://security.libredevops.org)
 
 ## Features
 
-- 📰 **50 blog sources** — Azure, DevOps, Developer Tools, Data & AI, and more
-- 🔍 **Search & filter** — Find articles by keyword, blog category, or date range
-- ⭐ **Bookmarks** — Save articles for later (stored locally per browser)
-- 🌙 **Dark mode** — Easy on the eyes
-- 📱 **Responsive** — Works on desktop, tablet, and mobile
-- 🤖 **Auto-updated** — GitHub Actions fetches new articles daily at 7 AM EST (12 PM UTC)
-- 📅 **Last 30 days** — Keeps only recent articles for a lean, fast experience
+- 📰 **Security-focused aggregation** — Microsoft security blogs, advisories, research, and product updates
+- 🔍 **Search & filter** — Find articles by keyword, category, or date range
+- ⭐ **Bookmarks** — Save articles for later (stored locally in your browser)
+- 🌙 **Dark mode by default** — Security dashboards should be dark 😄
+- 📱 **Responsive design** — Works on desktop, tablet, and mobile
+- 🤖 **Auto-updated** — GitHub Actions fetches fresh content daily
+- 📅 **Recent content only** — Keeps the feed lean, fast, and relevant
+- 🔐 **Custom domain + HTTPS** — Hosted securely on GitHub Pages
 
-## Blog Sources
+## News Sources
 
-| Category | Blogs |
-|----------|-------|
-| **Compute** | Azure Compute, AKS, Azure Virtual Desktop, High Performance Computing |
-| **Data & AI** | Analytics on Azure, Azure Databricks, Oracle on Azure, Cosmos DB, Azure SQL, Microsoft Foundry |
-| **Infrastructure** | Azure Infrastructure, Azure Arc, Azure Stack, Azure Networking, Azure Storage |
-| **Architecture** | Azure Architecture, Customer Innovation, ISE Developer Blog |
-| **Apps & Platform** | Apps on Azure, Azure PaaS, Integrations, Messaging, Aspire, Azure SDK |
-| **Operations** | Governance & Management, Observability, FinOps, Azure Tools, Migration, Azure DevOps |
-| **Community** | Azure Dev Community, Azure Events, Linux & Open Source, All Things Azure, Microsoft Developers Blog, Azure Global Black Belt, Azure Citadel |
-| **Developer Tools** | Visual Studio, VS Code, Windows Command Line, Develop from the Cloud |
-| **Specialized** | Communication Services, Confidential Computing, Maps, Telecommunications, Planetary Computer |
+| Category | Sources |
+|----------|---------|
+| **Official Security Blogs** | Microsoft Security Blog, Microsoft Defender Blog, Microsoft Sentinel Blog, Microsoft Entra Blog |
+| **Threat Intelligence** | Microsoft Threat Intelligence, MSTIC research, Digital Defense reports |
+| **Security Advisories** | Microsoft Security Response Center (MSRC), CVE advisories, release notes |
+| **Identity & Access** | Entra, Conditional Access, Identity security announcements |
+| **Cloud Security** | Defender for Cloud, Azure security updates, cloud posture guidance |
+| **Endpoint Security** | Defender for Endpoint, attack surface reduction, endpoint detection updates |
+| **Email & Collaboration Security** | Defender for Office 365, Exchange security, phishing protection updates |
+| **SIEM / XDR / SOC** | Sentinel, Defender XDR, incident response guidance |
+| **Compliance & Governance** | Purview security/compliance updates, governance announcements |
+| **Research & Community** | Security engineering blogs, Microsoft technical security articles |
 
 ## Setup
 
 ### 1. Create the GitHub repository
 
 ```bash
-gh repo create azurenewsfeed --public --source=. --remote=origin
+gh repo create microsoft-security-news --public --source=. --remote=origin
 ```
 
 ### 2. Push the code
@@ -41,46 +43,135 @@ gh repo create azurenewsfeed --public --source=. --remote=origin
 ```bash
 git init
 git add .
-git commit -m "Initial commit - Azure News Feed"
-git push -u origin main
+git commit -m "Initial commit - Microsoft Security News"
+git push -u origin master
 ```
 
 ### 3. Enable GitHub Pages
 
-Go to **Settings → Pages → Source** and select **Deploy from a branch** → **main** → **/ (root)**.
+Go to:
 
-### 4. Trigger the first data fetch
+**Settings → Pages**
 
-Go to **Actions → Fetch Azure Blog Feeds → Run workflow** to populate the initial data.
+Set:
 
-### 5. Visit your site
+- **Source:** Deploy from a branch *(or GitHub Actions if using workflow deployment)*
+- **Branch:** `master`
+- **Folder:** `/ (root)`
 
-Your feed will be live at `https://security.libredevops.org`
+### 4. Configure custom domain
+
+Set:
+
+```text
+security.libredevops.org
+```
+
+Ensure your DNS contains:
+
+```dns
+CNAME security libre-devops.github.io
+```
+
+Wait for GitHub to provision TLS and enable HTTPS.
+
+### 5. Trigger first feed fetch
+
+Go to:
+
+**Actions → Fetch Microsoft Security Feeds → Run workflow**
+
+This will generate:
+
+```text
+data/feeds.json
+data/feed.xml
+```
+
+### 6. Visit your site
+
+```text
+https://security.libredevops.org
+```
+
+---
 
 ## Local Development
 
-To test the feed fetcher locally:
+Install dependencies:
 
 ```bash
 pip install -r scripts/requirements.txt
+```
+
+Run the feed fetcher:
+
+```bash
 python scripts/fetch_feeds.py
 ```
 
-Then serve the site:
+Serve locally:
 
 ```bash
 python -m http.server 8000
 ```
 
-Open [http://localhost:8000](http://localhost:8000) in your browser.
+Browse:
+
+```text
+http://localhost:8000
+```
+
+---
 
 ## How It Works
 
-1. **GitHub Actions** runs daily at 7 AM EST / 12 PM UTC (or manually)
-2. **Python script** fetches RSS feeds from all 50 Azure and Microsoft developer blogs
-3. Articles from the last 30 days are deduplicated, sorted, and saved to `data/feeds.json`
-4. The commit triggers **GitHub Pages** to redeploy
-5. The **static frontend** loads the JSON and renders the feed
+1. **GitHub Actions** runs daily (or manually)
+2. **Python feed fetcher** pulls RSS / Atom feeds from Microsoft security sources
+3. Articles are:
+   - normalized
+   - deduplicated
+   - categorised
+   - sorted by publish date
+4. Results are written to:
+
+```text
+data/feeds.json
+data/feed.xml
+```
+
+5. GitHub Pages publishes the updated static site
+6. The frontend loads JSON dynamically and renders the live news feed
+
+---
+
+## Tech Stack
+
+- **Python 3.14**
+- **feedparser**
+- **GitHub Actions**
+- **GitHub Pages**
+- **Vanilla JavaScript**
+- **Progressive Web App (PWA)**
+- **Service Worker caching**
+
+---
+
+## Roadmap
+
+Planned improvements:
+
+- [ ] More Microsoft security feed sources
+- [ ] CVE severity filtering
+- [ ] Product-based filtering (Sentinel / Defender / Entra / Purview)
+- [ ] Security alert digest mode
+- [ ] RSS subscription support
+- [ ] Email digest generation
+- [ ] Threat intelligence tagging
+- [ ] Search by product/workload
+- [ ] Optional vendor expansion (AWS / Google / CrowdStrike / Palo Alto)
+
+---
 
 ## License
 
