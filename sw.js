@@ -1,4 +1,4 @@
-const CACHE_NAME = "mssecnews-v4";
+const CACHE_NAME = "mssecnews-v5";
 
 const STATIC_ASSETS = [
   "/",
@@ -46,6 +46,10 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(event.request.url);
 
+  if (url.origin !== self.location.origin) {
+    return;
+  }
+
   const isFeedData =
     url.pathname.includes("/data/feeds.json") ||
     url.pathname.includes("/data/feed.xml");
@@ -53,9 +57,11 @@ self.addEventListener("fetch", (event) => {
   // Always fetch fresh feed content first
   if (isFeedData) {
     event.respondWith(
-      fetch(event.request)
+      fetch(event.request, {
+        cache: "no-store"
+      })
         .then((response) => {
-          if (response.ok) {
+          if (response && response.ok) {
             const clone = response.clone();
 
             caches.open(CACHE_NAME).then((cache) => {
@@ -71,7 +77,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Cache-first strategy for static site assets
+  // Cache-first for static assets
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) {
@@ -81,8 +87,8 @@ self.addEventListener("fetch", (event) => {
       return fetch(event.request)
         .then((response) => {
           if (
-            response.ok &&
-            url.origin === self.location.origin
+            response &&
+            response.ok
           ) {
             const clone = response.clone();
 
@@ -94,8 +100,7 @@ self.addEventListener("fetch", (event) => {
           return response;
         })
         .catch(() => {
-          // Optional offline fallback later
-          return caches.match("/index.html");
+          return caches.match("/index.html") || Response.error();
         });
     })
   );

@@ -6,6 +6,7 @@
   // ============================================================
   let articles = [];
   let filteredArticles = [];
+  let isLoading = false;
 
   let searchQuery = "";
   let sortBy = "date-desc";
@@ -24,11 +25,11 @@
     "defender-cloud-apps": "#C084FC",
     "defender-office": "#D8B4FE",
     "defender-cloud": "#6366F1",
-    "sentinel": "#4F46E5",
-    "entra": "#2563EB",
-    "purview": "#0891B2",
-    "intune": "#0D9488",
-    "msrc": "#DC2626",
+    sentinel: "#4F46E5",
+    entra: "#2563EB",
+    purview: "#0891B2",
+    intune: "#0D9488",
+    msrc: "#DC2626",
     "security-copilot": "#06B6D4",
     "ai-security": "#EC4899",
     "general-security": "#64748B",
@@ -67,6 +68,8 @@
   const toastEl = document.getElementById("toast");
   const bookmarksToggle = document.getElementById("bookmarks-toggle");
 
+  const escapeDiv = document.createElement("div");
+
   // ============================================================
   // Init
   // ============================================================
@@ -87,13 +90,56 @@
   }
 
   // ============================================================
+  // Theme
+  // ============================================================
+  function loadTheme() {
+    const saved = localStorage.getItem("mssecnews-theme") || "dark";
+
+    document.documentElement.setAttribute("data-theme", saved);
+
+    if (themeToggle) {
+      themeToggle.textContent = saved === "dark" ? "☀️" : "🌙";
+    }
+  }
+
+  function toggleTheme() {
+    const current =
+      document.documentElement.getAttribute("data-theme") || "dark";
+
+    const next = current === "dark" ? "light" : "dark";
+
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("mssecnews-theme", next);
+
+    themeToggle.textContent = next === "dark" ? "☀️" : "🌙";
+  }
+
+  // ============================================================
+  // Loading / UI State
+  // ============================================================
+  function showLoading(show) {
+    isLoading = show;
+    loadingEl.classList.toggle("visible", show);
+
+    if (show) {
+      noResultsEl.classList.remove("visible");
+    }
+  }
+
+  function showNoResults(show) {
+    noResultsEl.classList.toggle("visible", show);
+  }
+
+  // ============================================================
   // Data Loading
   // ============================================================
   async function loadData() {
     showLoading(true);
 
     try {
-      const response = await fetch("data/feeds.json");
+      const response = await fetch("data/feeds.json", {
+        cache: "no-store",
+      });
 
       if (!response.ok) {
         throw new Error("Failed to load feed data");
@@ -116,9 +162,9 @@
           <p>Run the feed workflow and refresh.</p>
         </div>
       `;
+    } finally {
+      showLoading(false);
     }
-
-    showLoading(false);
   }
 
   function updateHeaderStats(data) {
@@ -143,6 +189,81 @@
   // ============================================================
   // Filters
   // ============================================================
+  function applyFilters() {
+    let result = [...articles];
+
+    if (currentProduct !== "all") {
+      result = result.filter((article) =>
+        (article.products || []).some((p) => p.id === currentProduct)
+      );
+    }
+
+    if (currentDomain !== "all") {
+      result = result.filter((article) =>
+        (article.domains || []).some((d) => d.id === currentDomain)
+      );
+    }
+
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+
+      result = result.filter(
+        (article) =>
+          article.title?.toLowerCase().includes(q) ||
+          article.summary?.toLowerCase().includes(q) ||
+          article.source?.toLowerCase().includes(q) ||
+          article.author?.toLowerCase().includes(q) ||
+          article.source_group?.toLowerCase().includes(q)
+      );
+    }
+
+    const dateVal = dateFilter.value;
+
+    if (dateVal !== "all") {
+      const now = new Date();
+      const cutoff = new Date();
+
+      switch (dateVal) {
+        case "today":
+          cutoff.setHours(0, 0, 0, 0);
+          break;
+        case "week":
+          cutoff.setDate(now.getDate() - 7);
+          break;
+        case "month":
+          cutoff.setMonth(now.getMonth() - 1);
+          break;
+      }
+
+      result = result.filter(
+        (article) => new Date(article.published) >= cutoff
+      );
+    }
+
+    if (showBookmarksOnly) {
+      result = result.filter((article) => bookmarks.has(article.link));
+    }
+
+    switch (sortBy) {
+      case "date-asc":
+        result.sort((a, b) => new Date(a.published) - new Date(b.published));
+        break;
+
+      case "source":
+        result.sort((a, b) => a.source.localeCompare(b.source));
+        break;
+
+      default:
+        result.sort((a, b) => new Date(b.published) - new Date(a.published));
+    }
+
+    filteredArticles = result;
+
+    showingCount.textContent = `Showing ${result.length} of ${articles.length} articles`;
+
+    renderArticles();
+  }
+
   function renderProductFilters() {
     const counts = {};
 
@@ -180,8 +301,6 @@
   }
 
   function renderDomainFilters() {
-    if (!domainPills) return;
-
     const counts = {};
 
     articles.forEach((article) => {
@@ -218,104 +337,18 @@
   }
 
   // ============================================================
-  // Filtering Logic
-  // ============================================================
-  function applyFilters() {
-    let result = [...articles];
-
-    if (currentProduct !== "all") {
-      result = result.filter((article) =>
-        (article.products || []).some((p) => p.id === currentProduct)
-      );
-    }
-
-    if (currentDomain !== "all") {
-      result = result.filter((article) =>
-        (article.domains || []).some((d) => d.id === currentDomain)
-      );
-    }
-
-    if (searchQuery) {
-      const q = searchQuery.toLowerCase();
-
-      result = result.filter((article) =>
-        article.title.toLowerCase().includes(q) ||
-        article.summary.toLowerCase().includes(q) ||
-        article.source.toLowerCase().includes(q) ||
-        article.author.toLowerCase().includes(q) ||
-        article.source_group?.toLowerCase().includes(q)
-      );
-    }
-
-    const dateVal = dateFilter.value;
-
-    if (dateVal !== "all") {
-      const now = new Date();
-      const cutoff = new Date();
-
-      switch (dateVal) {
-        case "today":
-          cutoff.setHours(0, 0, 0, 0);
-          break;
-
-        case "week":
-          cutoff.setDate(now.getDate() - 7);
-          break;
-
-        case "month":
-          cutoff.setMonth(now.getMonth() - 1);
-          break;
-      }
-
-      result = result.filter(
-        (article) => new Date(article.published) >= cutoff
-      );
-    }
-
-    if (showBookmarksOnly) {
-      result = result.filter((article) =>
-        bookmarks.has(article.link)
-      );
-    }
-
-    switch (sortBy) {
-      case "date-asc":
-        result.sort(
-          (a, b) => new Date(a.published) - new Date(b.published)
-        );
-        break;
-
-      case "source":
-        result.sort((a, b) =>
-          a.source.localeCompare(b.source)
-        );
-        break;
-
-      default:
-        result.sort(
-          (a, b) => new Date(b.published) - new Date(a.published)
-        );
-    }
-
-    filteredArticles = result;
-
-    showingCount.textContent =
-      `Showing ${result.length} of ${articles.length} articles`;
-
-    renderArticles();
-  }
-
-  // ============================================================
   // Rendering
   // ============================================================
   function renderArticles() {
+    if (isLoading) return;
+
     if (!filteredArticles.length) {
       articlesGrid.innerHTML = "";
-      noResultsEl.classList.add("visible");
+      showNoResults(true);
       return;
     }
 
-    noResultsEl.classList.remove("visible");
+    showNoResults(false);
 
     articlesGrid.innerHTML = filteredArticles.map(renderCard).join("");
   }
@@ -325,35 +358,27 @@
 
     const date = new Date(article.published);
 
-    const dateStr = date.toLocaleDateString("en-GB", {
-      day: "numeric",
-      month: "short",
-      year: "numeric",
-    });
+    const dateStr = date.toLocaleDateString("en-GB");
 
     const productTags = (article.products || [])
-      .map((product) => {
-        const color = productColors[product.id] || "#64748B";
-
-        return `
-          <span class="blog-tag" style="background:${color}22;color:${color};">
-            ${escapeHtml(product.name)}
-          </span>
-        `;
-      })
+      .map(
+        (product) => `
+        <span class="blog-tag" style="background:${productColors[product.id] || "#64748B"}22;color:${productColors[product.id] || "#64748B"};">
+          ${escapeHtml(product.name)}
+        </span>
+      `
+      )
       .join("");
 
     const domainTags = (article.domains || [])
       .slice(0, 2)
-      .map((domain) => {
-        const color = domainColors[domain.id] || "#64748B";
-
-        return `
-          <span class="blog-tag" style="background:${color}22;color:${color};">
-            ${escapeHtml(domain.name)}
-          </span>
-        `;
-      })
+      .map(
+        (domain) => `
+        <span class="blog-tag" style="background:${domainColors[domain.id] || "#64748B"}22;color:${domainColors[domain.id] || "#64748B"};">
+          ${escapeHtml(domain.name)}
+        </span>
+      `
+      )
       .join("");
 
     return `
@@ -363,7 +388,6 @@
             ${productTags}
             ${domainTags}
           </div>
-
           <button
             class="bookmark-btn ${isBookmarked ? "bookmarked" : ""}"
             data-action="bookmark"
@@ -385,42 +409,11 @@
           <span>📅 ${dateStr}</span>
         </div>
 
-        <p class="article-summary">
-          ${escapeHtml(article.summary)}
-        </p>
+        <p class="article-summary">${escapeHtml(article.summary)}</p>
       </article>
     `;
   }
 
-  // ============================================================
-  // Theme
-  // ============================================================
-  function loadTheme() {
-    const saved =
-      localStorage.getItem("mssecnews-theme") || "dark";
-
-    document.documentElement.setAttribute("data-theme", saved);
-
-    themeToggle.textContent =
-      saved === "dark" ? "☀️" : "🌙";
-  }
-
-  function toggleTheme() {
-    const current =
-      document.documentElement.getAttribute("data-theme");
-
-    const next = current === "dark" ? "light" : "dark";
-
-    document.documentElement.setAttribute("data-theme", next);
-    localStorage.setItem("mssecnews-theme", next);
-
-    themeToggle.textContent =
-      next === "dark" ? "☀️" : "🌙";
-  }
-
-  // ============================================================
-  // Bookmarks
-  // ============================================================
   function toggleBookmark(link) {
     if (bookmarks.has(link)) {
       bookmarks.delete(link);
@@ -438,27 +431,14 @@
     applyFilters();
   }
 
-  // ============================================================
-  // Helpers
-  // ============================================================
-  function showLoading(show) {
-    loadingEl.classList.toggle("visible", show);
-  }
-
-  let toastTimeout;
-
   function showToast(message) {
-    clearTimeout(toastTimeout);
-
     toastEl.textContent = message;
     toastEl.classList.add("visible");
 
-    toastTimeout = setTimeout(() => {
+    setTimeout(() => {
       toastEl.classList.remove("visible");
     }, 2500);
   }
-
-  const escapeDiv = document.createElement("div");
 
   function escapeHtml(str) {
     if (!str) return "";
@@ -466,9 +446,6 @@
     return escapeDiv.innerHTML;
   }
 
-  // ============================================================
-  // Events
-  // ============================================================
   function setupEventListeners() {
     let debounce;
 
@@ -487,18 +464,11 @@
     });
 
     dateFilter.addEventListener("change", applyFilters);
-
     themeToggle.addEventListener("click", toggleTheme);
 
     bookmarksToggle.addEventListener("click", () => {
       showBookmarksOnly = !showBookmarksOnly;
-
       bookmarksToggle.classList.toggle("active", showBookmarksOnly);
-
-      bookmarksToggle.textContent = showBookmarksOnly
-        ? "⭐ Showing Bookmarks"
-        : "⭐ Bookmarks";
-
       applyFilters();
     });
 
@@ -506,45 +476,34 @@
       const pill = e.target.closest("[data-product]");
       if (!pill) return;
 
-      filterPills
-        .querySelectorAll(".pill")
-        .forEach((p) => p.classList.remove("active"));
+      filterPills.querySelectorAll(".pill").forEach((p) => {
+        p.classList.remove("active");
+      });
 
       pill.classList.add("active");
       currentProduct = pill.dataset.product;
       applyFilters();
     });
 
-    if (domainPills) {
-      domainPills.addEventListener("click", (e) => {
-        const pill = e.target.closest("[data-domain]");
-        if (!pill) return;
+    domainPills.addEventListener("click", (e) => {
+      const pill = e.target.closest("[data-domain]");
+      if (!pill) return;
 
-        domainPills
-          .querySelectorAll(".pill")
-          .forEach((p) => p.classList.remove("active"));
-
-        pill.classList.add("active");
-        currentDomain = pill.dataset.domain;
-        applyFilters();
+      domainPills.querySelectorAll(".pill").forEach((p) => {
+        p.classList.remove("active");
       });
-    }
+
+      pill.classList.add("active");
+      currentDomain = pill.dataset.domain;
+      applyFilters();
+    });
 
     articlesGrid.addEventListener("click", (e) => {
       const btn = e.target.closest("[data-action]");
       if (!btn) return;
 
       if (btn.dataset.action === "bookmark") {
-        toggleBookmark(
-          decodeURIComponent(btn.dataset.link)
-        );
-      }
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
-        e.preventDefault();
-        searchInput.focus();
+        toggleBookmark(decodeURIComponent(btn.dataset.link));
       }
     });
   }
