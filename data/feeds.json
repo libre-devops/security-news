@@ -1,646 +1,30 @@
 {
   "site": "Microsoft Security News",
-  "lastUpdated": "2026-05-19T09:54:22.581825+00:00",
-  "totalArticles": 71,
+  "lastUpdated": "2026-05-19T15:17:33.269964+00:00",
+  "totalArticles": 54,
   "articles": [
     {
-      "title": "CVE-2026-34872 An issue was discovered in Mbed TLS 3.5.x and 3.6.x through 3.6.5 and TF-PSA-Crypto 1.0. There is a lack of contributory behavior in FFDH due to improper input validation. Using finite-field Diffie-Hellman, the other party can force the shared secret into a small set of values (lack of contributory behavior). This is a problem for protocols that depend on contributory behavior (which is not the case for TLS). The attack can be carried by the peer, or depending on the protocol by an active network attacker (person in the middle).",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34872",
-      "published": "2026-05-19T08:48:06+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
+      "title": "Exposing Fox Tempest: A malware-signing service operation",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/19/exposing-fox-tempest-a-malware-signing-service-operation/",
+      "published": "2026-05-19T15:07:01+00:00",
+      "summary": "Fox Tempest is a financially motivated threat actor operating a malware‑signing‑as‑a‑service (MSaaS) used by other cybercriminals, including Vanilla Tempest and Storm groups, to more effectively distribute malicious code, including ransomware. The post Exposing Fox Tempest: A malware-signing...",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Advisories",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
           "score": 7
         }
       ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
       "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-34871 An issue was discovered in Mbed TLS before 3.6.6 and 4.x before 4.1.0 and TF-PSA-Crypto before 1.1.0. There is a Predictable Seed in a Pseudo-Random Number Generator (PRNG).",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34871",
-      "published": "2026-05-19T08:48:00+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-34873 An issue was discovered in Mbed TLS 3.5.0 through 4.0.0. Client impersonation can occur while resuming a TLS 1.3 session.",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34873",
-      "published": "2026-05-19T08:47:54+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2025-66442 In Mbed TLS through 4.0.0, there is a compiler-induced timing side channel (in RSA and CBC/ECB decryption) that only occurs with LLVM's select-optimize feature. TF-PSA-Crypto through 1.0.0 is also affected.",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-66442",
-      "published": "2026-05-19T08:47:48+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-25835 Mbed TLS before 3.6.6 and TF-PSA-Crypto before 1.1.0 misuse seeds in a Pseudo-Random Number Generator (PRNG).",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-25835",
-      "published": "2026-05-19T08:47:43+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-34876 An issue was discovered in Mbed TLS 3.x before 3.6.6. An out-of-bounds read vulnerability in mbedtls_ccm_finish() in library/ccm.c allows attackers to obtain adjacent CCM context data via invocation of the multipart CCM API with an oversized tag_len parameter. This is caused by missing validation of the tag_len parameter against the size of the internal 16-byte authentication buffer. The issue affects the public multipart CCM API in Mbed TLS 3.x, where mbedtls_ccm_finish() can be invoked directly by applications. In Mbed TLS 4.x versions prior to the fix, the same missing validation exists in the internal implementation; however, the function is not exposed as part of the public API. Exploitation requires application-level invocation of the multipart CCM API.",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34876",
-      "published": "2026-05-19T08:47:37+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-34874 An issue was discovered in Mbed TLS through 3.6.5 and 4.x through 4.0.0. There is a NULL pointer dereference in distinguished name parsing that allows an attacker to write to address 0.",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34874",
-      "published": "2026-05-19T08:47:32+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-3833 Gnutls: gnutls: policy bypass due to case-sensitive nameconstraints comparison",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3833",
-      "published": "2026-05-19T08:46:32+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-40170 ngtcp2 has a qlog transport parameter serialization stack buffer overflow",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-40170",
-      "published": "2026-05-19T08:44:38+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-34757 LIBPNG has a yse-after-free in png_set_PLTE, png_set_tRNS and png_set_hIST leading to corrupted chunk data and potential heap information disclosure",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-34757",
-      "published": "2026-05-19T08:43:29+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2025-8224 GNU Binutils BFD Library elf.c bfd_elf_get_str_section null pointer dereference",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-8224",
-      "published": "2026-05-19T08:42:54+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-3087 shutil.unpack_archive() doesn't check for Windows absolute paths in ZIPs",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3087",
-      "published": "2026-05-19T08:40:53+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-6357 pip self-update functionality can import newly installed modules after wheel installation",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-6357",
-      "published": "2026-05-19T08:40:45+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-41604 Apache Thrift: Swift Range crash in skip()",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41604",
-      "published": "2026-05-19T08:40:12+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-3219 pip doesn't reject concatenated ZIP and tar archives",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-3219",
-      "published": "2026-05-19T08:39:29+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-28808 ScriptAlias CGI targets bypass directory auth in inets httpd (mod_auth vs mod_cgi path mismatch)",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-28808",
-      "published": "2026-05-19T08:39:13+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2026-41080 libexpat before 2.8.0 uses insufficient entropy, and thus hash flooding can occur via a crafted XML document.",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-41080",
-      "published": "2026-05-19T08:39:01+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2025-1176 GNU Binutils ld elflink.c _bfd_elf_gc_mark_rsec heap-based overflow",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-1176",
-      "published": "2026-05-19T08:01:58+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2025-1178 GNU Binutils ld libbfd.c bfd_putl64 memory corruption",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-1178",
-      "published": "2026-05-19T08:01:52+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "CVE-2025-0665 eventfd double close",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-0665",
-      "published": "2026-05-19T08:01:31+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "msrc",
-          "name": "Microsoft Security Response Center",
-          "score": 7
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Security Response Center",
-        "Vulnerability Management"
+        "Threat Intelligence"
       ]
     },
     {
@@ -658,26 +42,12 @@
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 2
-        },
-        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
           "score": 2
         }
       ],
       "tags": [
-        "General Security",
-        "Identity Security",
         "Threat Intelligence"
       ]
     },
@@ -706,47 +76,9 @@
           "score": 2
         }
       ],
-      "domains": [
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 5
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 4
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 4
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 2
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 2
-        }
-      ],
       "tags": [
         "Microsoft Sentinel",
-        "AI Security",
-        "Security Operations",
-        "AI Security",
-        "Governance / Compliance",
-        "SIEM / XDR",
-        "Endpoint Security",
-        "Identity Security"
+        "AI Security"
       ]
     },
     {
@@ -769,15 +101,7 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
       "tags": [
-        "General Security",
         "General Security"
       ]
     },
@@ -801,22 +125,8 @@
           "score": 9
         }
       ],
-      "domains": [
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 6
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 2
-        }
-      ],
       "tags": [
-        "Microsoft Defender for Endpoint",
-        "Endpoint Security",
-        "Governance / Compliance"
+        "Microsoft Defender for Endpoint"
       ]
     },
     {
@@ -834,45 +144,19 @@
       "board_id": "coreinfrastructureandsecurityblog",
       "products": [
         {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 9
-        },
-        {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
           "score": 9
-        }
-      ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 4
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 4
         },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 4
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 2
+          "score": 5
         }
       ],
       "tags": [
-        "Microsoft Entra",
         "Microsoft Sentinel",
-        "Identity Security",
-        "SIEM / XDR",
-        "Threat Intelligence",
-        "Security Operations"
+        "Threat Intelligence"
       ]
     },
     {
@@ -893,18 +177,16 @@
           "id": "defender-endpoint",
           "name": "Microsoft Defender for Endpoint",
           "score": 11
-        }
-      ],
-      "domains": [
+        },
         {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 8
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 2
         }
       ],
       "tags": [
         "Microsoft Defender for Endpoint",
-        "Endpoint Security"
+        "Threat Intelligence"
       ]
     },
     {
@@ -927,16 +209,8 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 2
-        }
-      ],
       "tags": [
-        "General Security",
-        "Identity Security"
+        "General Security"
       ]
     },
     {
@@ -954,20 +228,12 @@
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "domains": [
-        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
           "score": 2
         }
       ],
       "tags": [
-        "General Security",
         "Threat Intelligence"
       ]
     },
@@ -991,16 +257,8 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 2
-        }
-      ],
       "tags": [
-        "General Security",
-        "Vulnerability Management"
+        "General Security"
       ]
     },
     {
@@ -1023,28 +281,8 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 3
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 2
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 2
-        }
-      ],
       "tags": [
-        "General Security",
-        "Identity Security",
-        "Endpoint Security",
-        "Governance / Compliance"
+        "General Security"
       ]
     },
     {
@@ -1062,63 +300,13 @@
       "board_id": "coreinfrastructureandsecurityblog",
       "products": [
         {
-          "id": "intune",
-          "name": "Microsoft Intune",
-          "score": 10
-        },
-        {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 9
-        }
-      ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 6
-        },
-        {
-          "id": "incident-response",
-          "name": "Incident Response",
-          "score": 5
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 4
-        },
-        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 4
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 2
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 2
-        },
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 2
+          "score": 5
         }
       ],
       "tags": [
-        "Microsoft Intune",
-        "Microsoft Entra",
-        "Identity Security",
-        "Incident Response",
-        "Governance / Compliance",
-        "Threat Intelligence",
-        "Endpoint Security",
-        "Security Operations",
-        "Vulnerability Management"
+        "Threat Intelligence"
       ]
     },
     {
@@ -1141,16 +329,8 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 2
-        }
-      ],
       "tags": [
-        "General Security",
-        "Security Operations"
+        "General Security"
       ]
     },
     {
@@ -1173,15 +353,7 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
       "tags": [
-        "General Security",
         "General Security"
       ]
     },
@@ -1205,15 +377,7 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
       "tags": [
-        "General Security",
         "General Security"
       ]
     },
@@ -1232,26 +396,12 @@
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "domains": [
-        {
-          "id": "incident-response",
-          "name": "Incident Response",
-          "score": 5
-        },
-        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
           "score": 2
         }
       ],
       "tags": [
-        "General Security",
-        "Incident Response",
         "Threat Intelligence"
       ]
     },
@@ -1275,16 +425,8 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 2
-        }
-      ],
       "tags": [
-        "General Security",
-        "Endpoint Security"
+        "General Security"
       ]
     },
     {
@@ -1309,88 +451,18 @@
         {
           "id": "purview",
           "name": "Microsoft Purview",
-          "score": 10
-        },
-        {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 5
-        }
-      ],
-      "domains": [
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 9
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 8
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 7
+          "score": 11
         },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 5
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 4
-        },
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 2
+          "score": 8
         }
       ],
       "tags": [
         "Microsoft Sentinel",
         "Microsoft Purview",
-        "Microsoft Entra",
-        "SIEM / XDR",
-        "Security Operations",
-        "Governance / Compliance",
-        "Threat Intelligence",
-        "Identity Security",
-        "Email Security"
-      ]
-    },
-    {
-      "title": "Active attack: Dirty Frag Linux vulnerability expands post-compromise risk",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/08/active-attack-dirty-frag-linux-vulnerability-expands-post-compromise-risk/",
-      "published": "2026-05-08T17:12:46+00:00",
-      "summary": "Dirty Frag is a newly disclosed Linux local privilege escalation vulnerability affecting kernel networking and memory-fragment handling components including esp4, esp6, and rxrpc. The vulnerability enables reliable escalation from an unprivileged user to root and may be leveraged after initial...",
-      "author": "Microsoft Defender Security Research Team",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "General Security",
-        "Vulnerability Management"
+        "Threat Intelligence"
       ]
     },
     {
@@ -1410,43 +482,17 @@
         {
           "id": "defender-cloud",
           "name": "Microsoft Defender for Cloud",
-          "score": 11
-        }
-      ],
-      "domains": [
-        {
-          "id": "cloud-security",
-          "name": "Cloud Security",
-          "score": 7
+          "score": 10
         },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
           "score": 7
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 4
-        },
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 2
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 2
         }
       ],
       "tags": [
         "Microsoft Defender for Cloud",
-        "Cloud Security",
-        "Threat Intelligence",
-        "Security Operations",
-        "Email Security",
-        "Identity Security"
+        "Threat Intelligence"
       ]
     },
     {
@@ -1469,28 +515,8 @@
           "score": 9
         }
       ],
-      "domains": [
-        {
-          "id": "incident-response",
-          "name": "Incident Response",
-          "score": 5
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 4
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 4
-        }
-      ],
       "tags": [
-        "Microsoft Sentinel",
-        "Incident Response",
-        "SIEM / XDR",
-        "Security Operations"
+        "Microsoft Sentinel"
       ]
     },
     {
@@ -1513,15 +539,7 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
       "tags": [
-        "General Security",
         "General Security"
       ]
     },
@@ -1545,46 +563,20 @@
           "score": 11
         },
         {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 5
-        }
-      ],
-      "domains": [
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 6
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 6
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 4
-        },
-        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 4
+          "score": 5
         },
         {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 3
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 2
         }
       ],
       "tags": [
         "Microsoft Sentinel",
-        "Microsoft Entra",
-        "SIEM / XDR",
-        "Security Operations",
-        "Identity Security",
         "Threat Intelligence",
-        "Governance / Compliance"
+        "Microsoft Purview"
       ]
     },
     {
@@ -1605,13 +597,6 @@
           "id": "defender-cloud",
           "name": "Microsoft Defender for Cloud",
           "score": 9
-        }
-      ],
-      "domains": [
-        {
-          "id": "cloud-security",
-          "name": "Cloud Security",
-          "score": 5
         },
         {
           "id": "threat-intelligence",
@@ -1621,7 +606,6 @@
       ],
       "tags": [
         "Microsoft Defender for Cloud",
-        "Cloud Security",
         "Threat Intelligence"
       ]
     },
@@ -1645,13 +629,13 @@
           "score": 11
         },
         {
-          "id": "defender-identity",
-          "name": "Microsoft Defender for Identity",
-          "score": 10
-        },
-        {
           "id": "defender-endpoint",
           "name": "Microsoft Defender for Endpoint",
+          "score": 9
+        },
+        {
+          "id": "defender-identity",
+          "name": "Microsoft Defender for Identity",
           "score": 9
         },
         {
@@ -1660,14 +644,9 @@
           "score": 9
         },
         {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 7
-        },
-        {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 5
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 6
         },
         {
           "id": "defender-cloud",
@@ -1675,70 +654,43 @@
           "score": 4
         },
         {
-          "id": "purview",
-          "name": "Microsoft Purview",
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
           "score": 4
-        }
-      ],
-      "domains": [
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 7
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 6
-        },
-        {
-          "id": "cloud-security",
-          "name": "Cloud Security",
-          "score": 5
-        },
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 5
-        },
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 4
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 4
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 4
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 2
         }
       ],
       "tags": [
         "Microsoft Defender XDR",
-        "Microsoft Defender for Identity",
         "Microsoft Defender for Endpoint",
+        "Microsoft Defender for Identity",
         "Microsoft Sentinel",
-        "Microsoft Defender for Office 365",
-        "Microsoft Entra",
-        "Microsoft Defender for Cloud",
         "Microsoft Purview",
-        "SIEM / XDR",
-        "Endpoint Security",
-        "Cloud Security",
-        "Vulnerability Management",
-        "Email Security",
-        "Governance / Compliance",
-        "Identity Security",
-        "Security Operations"
+        "Microsoft Defender for Cloud",
+        "Microsoft Defender for Office 365"
+      ]
+    },
+    {
+      "title": "Breaking the code: Multi-stage ‘code of conduct’ phishing campaign leads to AiTM token compromise",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/04/breaking-the-code-multi-stage-code-of-conduct-phishing-campaign-leads-to-aitm-token-compromise/",
+      "published": "2026-05-04T15:00:00+00:00",
+      "summary": "Microsoft Defender Research observed a large-scale credential theft campaign that exemplifies this trend, using code of conduct-themed lures, a multi-step attack chain, and legitimate email services to distribute fully authenticated messages from attacker-controlled domains. The post Breaking the...",
+      "author": "Microsoft Defender Security Research Team and Microsoft Threat Intelligence",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Threat Intelligence",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
       ]
     },
     {
@@ -1756,38 +708,36 @@
       "board_id": "coreinfrastructureandsecurityblog",
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 3
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 2
-        },
-        {
-          "id": "incident-response",
-          "name": "Incident Response",
-          "score": 2
-        },
-        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 2
+          "score": 3
         }
       ],
       "tags": [
-        "General Security",
-        "Identity Security",
-        "Endpoint Security",
-        "Incident Response",
+        "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "Email threat landscape: Q1 2026 trends and insights",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/04/30/email-threat-landscape-q1-2026-trends-and-insights/",
+      "published": "2026-04-30T15:00:00+00:00",
+      "summary": "In early 2026, email threats increased with a rise in credential phishing, QR code phishing, and CAPTCHA-gated campaigns, highlighted by Microsoft’s disruption of the Tycoon2FA phishing platform which led to a 15% volume decrease and shifts in threat actor tactics. The post Email threat landscape:...",
+      "author": "Microsoft Threat Intelligence and Microsoft Defender Security Research Team",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Threat Intelligence",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        }
+      ],
+      "tags": [
         "Threat Intelligence"
       ]
     },
@@ -1806,21 +756,13 @@
       "board_id": "azurenetworksecurityblog",
       "products": [
         {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 9
-        }
-      ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 6
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Microsoft Entra",
-        "Identity Security"
+        "General Security"
       ]
     },
     {
@@ -1843,34 +785,8 @@
           "score": 2
         }
       ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 6
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 3
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 2
-        }
-      ],
       "tags": [
-        "AI Security",
-        "Vulnerability Management",
-        "AI Security",
-        "Identity Security",
-        "Endpoint Security"
+        "AI Security"
       ]
     },
     {
@@ -1898,35 +814,9 @@
           "score": 4
         }
       ],
-      "domains": [
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 4
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 2
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 2
-        }
-      ],
       "tags": [
         "Microsoft Sentinel",
-        "Microsoft Security Copilot",
-        "AI Security",
-        "SIEM / XDR",
-        "Identity Security",
-        "Security Operations"
+        "Microsoft Security Copilot"
       ]
     },
     {
@@ -1946,55 +836,17 @@
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 12
-        },
-        {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 5
-        }
-      ],
-      "domains": [
-        {
-          "id": "email-security",
-          "name": "Email Security",
           "score": 9
-        },
-        {
-          "id": "incident-response",
-          "name": "Incident Response",
-          "score": 5
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 5
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 4
         },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 3
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
           "score": 2
         }
       ],
       "tags": [
         "Microsoft Defender for Office 365",
-        "Microsoft Entra",
-        "Email Security",
-        "Incident Response",
-        "Security Operations",
-        "Identity Security",
-        "Threat Intelligence",
-        "Endpoint Security"
+        "Threat Intelligence"
       ]
     },
     {
@@ -2017,28 +869,8 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 4
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 3
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 3
-        }
-      ],
       "tags": [
-        "General Security",
-        "Vulnerability Management",
-        "Identity Security",
-        "SIEM / XDR"
+        "General Security"
       ]
     },
     {
@@ -2056,20 +888,12 @@
       "board_id": "azurenetworksecurityblog",
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "domains": [
-        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 4
+          "score": 5
         }
       ],
       "tags": [
-        "General Security",
         "Threat Intelligence"
       ]
     },
@@ -2090,7 +914,7 @@
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 12
+          "score": 9
         },
         {
           "id": "security-copilot",
@@ -2103,42 +927,10 @@
           "score": 9
         }
       ],
-      "domains": [
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 9
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 4
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 3
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 2
-        }
-      ],
       "tags": [
         "Microsoft Defender for Office 365",
         "Microsoft Security Copilot",
-        "Microsoft Sentinel",
-        "Email Security",
-        "AI Security",
-        "SIEM / XDR",
-        "Security Operations",
-        "Governance / Compliance"
+        "Microsoft Sentinel"
       ]
     },
     {
@@ -2155,11 +947,6 @@
       "source_category": "XDR",
       "board_id": "microsoftthreatprotectionblog",
       "products": [
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 12
-        },
         {
           "id": "defender-xdr",
           "name": "Microsoft Defender XDR",
@@ -2186,41 +973,9 @@
           "score": 9
         },
         {
-          "id": "intune",
-          "name": "Microsoft Intune",
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
           "score": 9
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 4
-        }
-      ],
-      "domains": [
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 9
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 7
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 6
-        },
-        {
-          "id": "cloud-security",
-          "name": "Cloud Security",
-          "score": 5
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 5
         },
         {
           "id": "threat-intelligence",
@@ -2228,33 +983,20 @@
           "score": 5
         },
         {
-          "id": "identity-security",
-          "name": "Identity Security",
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
           "score": 4
-        },
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 2
         }
       ],
       "tags": [
-        "Microsoft Defender for Office 365",
         "Microsoft Defender XDR",
         "Microsoft Defender for Cloud",
         "Microsoft Defender for Cloud Apps",
         "Microsoft Defender for Endpoint",
         "Microsoft Defender for Identity",
-        "Microsoft Intune",
-        "Microsoft Sentinel",
-        "Email Security",
-        "SIEM / XDR",
-        "Endpoint Security",
-        "Cloud Security",
-        "Security Operations",
+        "Microsoft Defender for Office 365",
         "Threat Intelligence",
-        "Identity Security",
-        "Vulnerability Management"
+        "Microsoft Sentinel"
       ]
     },
     {
@@ -2274,7 +1016,7 @@
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 12
+          "score": 9
         },
         {
           "id": "security-copilot",
@@ -2282,35 +1024,9 @@
           "score": 4
         }
       ],
-      "domains": [
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 9
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 4
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 2
-        }
-      ],
       "tags": [
         "Microsoft Defender for Office 365",
-        "Microsoft Security Copilot",
-        "Email Security",
-        "AI Security",
-        "Security Operations",
-        "Identity Security"
+        "Microsoft Security Copilot"
       ]
     },
     {
@@ -2333,15 +1049,7 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
       "tags": [
-        "General Security",
         "General Security"
       ]
     },
@@ -2370,29 +1078,9 @@
           "score": 11
         }
       ],
-      "domains": [
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 10
-        },
-        {
-          "id": "incident-response",
-          "name": "Incident Response",
-          "score": 5
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 2
-        }
-      ],
       "tags": [
         "Microsoft Defender XDR",
-        "Microsoft Sentinel",
-        "SIEM / XDR",
-        "Incident Response",
-        "Security Operations"
+        "Microsoft Sentinel"
       ]
     },
     {
@@ -2410,33 +1098,13 @@
       "board_id": "coreinfrastructureandsecurityblog",
       "products": [
         {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 3
-        }
-      ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 4
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 3
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 2
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Microsoft Entra",
-        "Identity Security",
-        "Governance / Compliance",
-        "Endpoint Security"
+        "General Security"
       ]
     },
     {
@@ -2459,16 +1127,8 @@
           "score": 11
         }
       ],
-      "domains": [
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 8
-        }
-      ],
       "tags": [
-        "Microsoft Defender for Endpoint",
-        "Endpoint Security"
+        "Microsoft Defender for Endpoint"
       ]
     },
     {
@@ -2491,15 +1151,7 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
       "tags": [
-        "General Security",
         "General Security"
       ]
     },
@@ -2523,15 +1175,7 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
       "tags": [
-        "General Security",
         "General Security"
       ]
     },
@@ -2550,39 +1194,49 @@
       "board_id": "coreinfrastructureandsecurityblog",
       "products": [
         {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        },
+        {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
           "score": 4
         }
       ],
-      "domains": [
+      "tags": [
+        "Threat Intelligence",
+        "Microsoft Sentinel"
+      ]
+    },
+    {
+      "title": "From Oversharing to Enforcement: A Practical Guide to AI Data Security with Microsoft Purview",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/from-oversharing-to-enforcement-a-practical-guide-to-ai-data/ba-p/4513727",
+      "published": "2026-04-23T14:58:26+00:00",
+      "summary": "Why AI Changed the Data Security Problem AI does not create entirely new categories of risk—it supercharges existing ones. Traditional data leakage stems from ordinary behavior: sharing a document too broadly, sending an email to the wrong person, copying regulated data to an uncontrolled device....",
+      "author": "George Smyrlis",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
+      "products": [
         {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 4
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 13
         },
         {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 4
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 4
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 4
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 9
         }
       ],
       "tags": [
-        "Microsoft Sentinel",
-        "Governance / Compliance",
-        "SIEM / XDR",
-        "Security Operations",
-        "Threat Intelligence"
+        "Microsoft Purview",
+        "Microsoft Security Copilot"
       ]
     },
     {
@@ -2608,49 +1262,17 @@
           "id": "sentinel",
           "name": "Microsoft Sentinel",
           "score": 9
-        }
-      ],
-      "domains": [
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 8
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 7
         },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
           "score": 7
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 4
-        },
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 3
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 2
         }
       ],
       "tags": [
         "Microsoft Defender XDR",
         "Microsoft Sentinel",
-        "Security Operations",
-        "SIEM / XDR",
-        "Threat Intelligence",
-        "Endpoint Security",
-        "Email Security",
-        "Identity Security"
+        "Threat Intelligence"
       ]
     },
     {
@@ -2670,25 +1292,11 @@
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 12
-        }
-      ],
-      "domains": [
-        {
-          "id": "email-security",
-          "name": "Email Security",
           "score": 9
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 2
         }
       ],
       "tags": [
-        "Microsoft Defender for Office 365",
-        "Email Security",
-        "Governance / Compliance"
+        "Microsoft Defender for Office 365"
       ]
     },
     {
@@ -2706,39 +1314,13 @@
       "board_id": "microsoftsentinelblog",
       "products": [
         {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 9
-        },
-        {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
           "score": 9
         }
       ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 4
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 4
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 2
-        }
-      ],
       "tags": [
-        "Microsoft Entra",
-        "Microsoft Sentinel",
-        "Identity Security",
-        "SIEM / XDR",
-        "Security Operations"
+        "Microsoft Sentinel"
       ]
     },
     {
@@ -2756,24 +1338,19 @@
       "board_id": "securitycopilot",
       "products": [
         {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 9
-        },
-        {
-          "id": "intune",
-          "name": "Microsoft Intune",
-          "score": 9
-        },
-        {
           "id": "purview",
           "name": "Microsoft Purview",
-          "score": 9
+          "score": 13
         },
         {
           "id": "security-copilot",
           "name": "Microsoft Security Copilot",
           "score": 9
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
         },
         {
           "id": "defender-endpoint",
@@ -2786,69 +1363,12 @@
           "score": 4
         }
       ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 8
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 6
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 4
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 4
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 4
-        },
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 2
-        },
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 2
-        }
-      ],
       "tags": [
-        "Microsoft Entra",
-        "Microsoft Intune",
         "Microsoft Purview",
         "Microsoft Security Copilot",
-        "Microsoft Defender for Endpoint",
-        "Microsoft Sentinel",
-        "Identity Security",
-        "Endpoint Security",
         "Threat Intelligence",
-        "AI Security",
-        "Governance / Compliance",
-        "SIEM / XDR",
-        "Security Operations",
-        "Email Security",
-        "Vulnerability Management"
+        "Microsoft Defender for Endpoint",
+        "Microsoft Sentinel"
       ]
     },
     {
@@ -2866,14 +1386,9 @@
       "board_id": "securitycopilot",
       "products": [
         {
-          "id": "intune",
-          "name": "Microsoft Intune",
-          "score": 10
-        },
-        {
           "id": "purview",
           "name": "Microsoft Purview",
-          "score": 10
+          "score": 13
         },
         {
           "id": "security-copilot",
@@ -2881,66 +1396,15 @@
           "score": 9
         },
         {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 5
-        }
-      ],
-      "domains": [
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 6
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 5
-        },
-        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
           "score": 5
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 4
-        },
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 2
-        },
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 2
-        },
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 2
         }
       ],
       "tags": [
-        "Microsoft Intune",
         "Microsoft Purview",
         "Microsoft Security Copilot",
-        "Microsoft Entra",
-        "Security Operations",
-        "Governance / Compliance",
-        "Threat Intelligence",
-        "AI Security",
-        "Identity Security",
-        "Email Security",
-        "Endpoint Security",
-        "Vulnerability Management"
+        "Threat Intelligence"
       ]
     },
     {
@@ -2963,6 +1427,11 @@
           "score": 11
         },
         {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        },
+        {
           "id": "security-copilot",
           "name": "Microsoft Security Copilot",
           "score": 4
@@ -2973,60 +1442,11 @@
           "score": 4
         }
       ],
-      "domains": [
-        {
-          "id": "security-operations",
-          "name": "Security Operations",
-          "score": 8
-        },
-        {
-          "id": "siem-xdr",
-          "name": "SIEM / XDR",
-          "score": 7
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        },
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 2
-        },
-        {
-          "id": "governance-compliance",
-          "name": "Governance / Compliance",
-          "score": 2
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 2
-        },
-        {
-          "id": "incident-response",
-          "name": "Incident Response",
-          "score": 2
-        }
-      ],
       "tags": [
         "Microsoft Defender XDR",
-        "Microsoft Security Copilot",
-        "Microsoft Sentinel",
-        "Security Operations",
-        "SIEM / XDR",
         "Threat Intelligence",
-        "AI Security",
-        "Email Security",
-        "Governance / Compliance",
-        "Identity Security",
-        "Incident Response"
+        "Microsoft Security Copilot",
+        "Microsoft Sentinel"
       ]
     },
     {
@@ -3049,15 +1469,7 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
       "tags": [
-        "General Security",
         "General Security"
       ]
     },
@@ -3076,27 +1488,13 @@
       "board_id": "coreinfrastructureandsecurityblog",
       "products": [
         {
-          "id": "entra",
-          "name": "Microsoft Entra",
-          "score": 9
-        }
-      ],
-      "domains": [
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 8
-        },
-        {
-          "id": "email-security",
-          "name": "Email Security",
-          "score": 2
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Microsoft Entra",
-        "Identity Security",
-        "Email Security"
+        "General Security"
       ]
     },
     {
@@ -3119,54 +1517,32 @@
           "score": 1
         }
       ],
-      "domains": [
-        {
-          "id": "endpoint-security",
-          "name": "Endpoint Security",
-          "score": 2
-        },
-        {
-          "id": "identity-security",
-          "name": "Identity Security",
-          "score": 2
-        }
-      ],
       "tags": [
-        "General Security",
-        "Endpoint Security",
-        "Identity Security"
+        "General Security"
       ]
     },
     {
-      "title": "What Changed in RC4 with the January 2026 Windows Update and Why it is Important",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/what-changed-in-rc4-with-the-january-2026-windows-update-and-why/ba-p/4504732",
-      "published": "2026-04-19T14:11:51+00:00",
-      "summary": "In case you haven’t heard, RC4 is not secure and has been deprecated. In this article, I will discuss what changed with the January 2026 Windows Update and why it is important to start auditing and remediate RC4 usage is your environment. Starting with the January 13, 2026, Windows security...",
-      "author": "Elanor92",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
+      "title": "Priority Cleanup V2: Faster, Simpler Data Purging for Exchange Online",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/priority-cleanup-v2-faster-simpler-data-purging-for-exchange/ba-p/4503363",
+      "published": "2026-04-20T16:31:35+00:00",
+      "summary": "Enhancements Achieved with Exchange Priority Cleanup V2 Priority Cleanup (Use priority cleanup to expedite the permanent deletion of sensitive information from mailboxes | Microsoft Learn) was introduced to provide administrators with a powerful tool for permanently deleting mailbox content, even...",
+      "author": "Victor Legat",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
       "source_group": "TechCommunity",
       "source_kind": "techcommunity",
       "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "domains": [
-        {
-          "id": "vulnerability-management",
-          "name": "Vulnerability Management",
-          "score": 5
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
         }
       ],
       "tags": [
-        "General Security",
-        "Vulnerability Management"
+        "Microsoft Purview"
       ]
     }
   ]

@@ -1,248 +1,144 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
 
-    <title>Microsoft Security News</title>
+  <title>Microsoft Security News</title>
 
-    <meta
-        name="description"
-        content="Daily aggregated Microsoft security, AI security, threat intelligence, advisories, and product intelligence."
-    >
+  <meta
+    name="description"
+    content="Daily aggregated Microsoft security news, advisories, and threat intelligence."
+  />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Microsoft Security News">
-    <meta
-        property="og:description"
-        content="Daily aggregated Microsoft security, AI security, threat intelligence, advisories, and product intelligence."
-    >
-    <meta property="og:url" content="https://security.libredevops.org">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Microsoft Security News" />
+  <meta
+    property="og:description"
+    content="Daily aggregated Microsoft security news, advisories, and threat intelligence."
+  />
+  <meta property="og:url" content="https://security.libredevops.org" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Microsoft Security News">
-    <meta
-        name="twitter:description"
-        content="Daily aggregated Microsoft security, AI security, threat intelligence, advisories, and product intelligence."
-    >
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Microsoft Security News" />
+  <meta
+    name="twitter:description"
+    content="Daily aggregated Microsoft security news, advisories, and threat intelligence."
+  />
 
-    <!-- PWA -->
-    <meta name="theme-color" content="#2B0A3D">
-    <meta name="color-scheme" content="dark light">
-
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="icons/icon-192.png">
-    <link rel="icon" href="favicon.ico">
-
-    <!-- RSS autodiscovery -->
-    <link
-        rel="alternate"
-        type="application/rss+xml"
-        title="Microsoft Security News RSS Feed"
-        href="data/feed.xml"
-    >
-
-    <!-- Prevent theme flash -->
-    <script>
-        (() => {
-            const saved = localStorage.getItem("mssecnews-theme") || "dark";
-            document.documentElement.setAttribute("data-theme", saved);
-        })();
-    </script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWJ9GXBL0M"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag("js", new Date());
-        gtag("config", "G-DWJ9GXBL0M");
-    </script>
-
-    <!-- Microsoft Clarity -->
-    <script>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () {
-                (c[a].q = c[a].q || []).push(arguments);
-            };
-
-            t = l.createElement(r);
-            t.async = 1;
-            t.src = "https://www.clarity.ms/tag/" + i;
-
-            y = l.getElementsByTagName(r)[0];
-            y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "vub6kkd744");
-    </script>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-<header>
+  <header>
     <div class="header-content">
-        <div class="logo">
-            <img
-                src="security-libre-devops-black.png"
-                alt="Libre DevOps"
-                class="site-logo"
-            />
+      <div class="logo">
+        <img
+          src="security-libre-devops-white.png"
+          alt="Libre DevOps Security"
+          class="site-logo"
+        />
 
-            <div class="logo-text">
-                <h1>Microsoft Security News</h1>
-                <p class="subtitle">
-                    Security intelligence dashboard · Microsoft security, AI, and threat intelligence
-                </p>
-            </div>
-
-            <div class="logo-spacer"></div>
+        <div class="logo-text">
+          <h1>Microsoft Security News</h1>
+          <p class="subtitle">
+            Daily Microsoft security intelligence, threat insights, and product updates
+          </p>
         </div>
 
-        <div class="header-actions">
-            <div class="search-box">
-                <span class="search-icon">🔍</span>
-                <input
-                    type="text"
-                    id="search-input"
-                    placeholder="Search products, AI security, advisories, domains..."
-                    autocomplete="off"
-                >
-            </div>
+        <div class="logo-spacer"></div>
+      </div>
 
-            <a
-                href="data/feed.xml"
-                class="rss-button"
-                target="_blank"
-                rel="noopener"
-                title="Subscribe to RSS feed"
-            >
-                📡 RSS
-            </a>
-
-            <button
-                id="bookmarks-toggle"
-                title="Show bookmarked articles"
-            >
-                ⭐ Bookmarks
-            </button>
-
-            <button
-                id="theme-toggle"
-                title="Toggle dark mode"
-            >
-                ☀️
-            </button>
+      <div class="header-actions">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search articles, products, sources..."
+            autocomplete="off"
+          />
         </div>
-    </div>
 
-    <div class="stats-bar">
-        <span id="last-updated">Fetching latest security intelligence…</span>
-        <span id="total-count"></span>
-    </div>
-</header>
+        <button id="bookmarks-toggle" type="button">
+          ⭐ Bookmarks
+        </button>
 
-<!-- Product Filters -->
-<div class="filters">
-    <div class="filter-section-title">
-        <span>🛡️ Products</span>
+        <a
+          href="data/feed.xml"
+          class="rss-button"
+          target="_blank"
+          rel="noopener"
+        >
+          📡 RSS
+        </a>
+
+        <button id="theme-toggle" type="button" aria-label="Toggle theme">
+          ☀️
+        </button>
+      </div>
+
+      <div class="stats-bar">
+        <span id="total-count">0 articles</span>
+        <span id="showing-count">Showing 0 articles</span>
+        <span id="last-updated">Last updated: --</span>
+      </div>
     </div>
+  </header>
+
+  <!-- PRODUCT FILTERS ONLY -->
+  <section class="filters">
+    <div class="filter-section-title">Products</div>
 
     <div class="filter-scroll">
-        <div class="filter-pills" id="filter-pills">
-            <button class="pill active" data-product="all">
-                All Products
-            </button>
-        </div>
+      <div id="filter-pills" class="filter-pills">
+        <button class="pill active">Loading products...</button>
+      </div>
     </div>
-</div>
+  </section>
 
-<!-- Domain Filters -->
-<div class="filters">
-    <div class="filter-section-title">
-        <span>🎯 Security Domains</span>
-    </div>
-
-    <div class="filter-scroll">
-        <div class="filter-pills" id="domain-pills">
-            <button class="pill active" data-domain="all">
-                All Domains
-            </button>
-        </div>
-    </div>
-</div>
-
-<main>
+  <main>
     <div class="controls">
-        <span id="showing-count"></span>
+      <div></div>
 
-        <div class="controls-right">
-            <select id="date-filter">
-                <option value="all">All Time</option>
-                <option value="today">Today</option>
-                <option value="week">This Week</option>
-                <option value="month">This Month</option>
-            </select>
+      <div class="controls-right">
+        <select id="date-filter">
+          <option value="all">All Time</option>
+          <option value="today">Today</option>
+          <option value="week">Last 7 Days</option>
+          <option value="month">Last 30 Days</option>
+        </select>
 
-            <select id="sort-by">
-                <option value="date-desc">Newest First</option>
-                <option value="date-asc">Oldest First</option>
-                <option value="source">By Source</option>
-            </select>
-        </div>
+        <select id="sort-by">
+          <option value="date-desc">Newest First</option>
+          <option value="date-asc">Oldest First</option>
+          <option value="source">Source A–Z</option>
+        </select>
+      </div>
     </div>
 
-    <div id="loading" class="loading">
-        <div class="loading-spinner"></div>
-        <p>Loading Microsoft security intelligence feeds...</p>
+    <div id="loading" class="loading visible">
+      <div class="loading-spinner"></div>
+      <p>Loading Microsoft security intelligence feeds...</p>
     </div>
 
     <div id="no-results" class="no-results">
-        <p>🔍 No articles found matching your criteria.</p>
-        <p>Try adjusting your product or domain filters, or broadening your search.</p>
+      <p>🔍 No articles found matching your criteria.</p>
+      <p>Try adjusting your filters or broadening your search.</p>
     </div>
 
-    <div
-        class="articles-grid"
-        id="articles-grid"
-    ></div>
-</main>
+    <section id="articles-grid" class="articles-grid"></section>
+  </main>
 
-<div class="toast" id="toast"></div>
+  <div id="toast" class="toast"></div>
 
-<footer>
-    <p>
-        🛡️ Microsoft Security News &bull;
-        Powered by
-        <a
-            href="https://github.com/libre-devops/microsoft-security-news"
-            target="_blank"
-            rel="noopener"
-        >
-            Libre DevOps
-        </a>
-        &bull;
-        <a
-            href="data/feed.xml"
-            target="_blank"
-            rel="noopener"
-        >
-            📡 RSS Feed
-        </a>
-    </p>
-
-    <p>
-        Community aggregation of publicly available Microsoft security, AI security, and threat intelligence content.
-        Not affiliated with Microsoft.
-    </p>
-</footer>
-
-<script src="js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

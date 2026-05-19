@@ -218,6 +218,9 @@ header {
   max-width: 1440px;
   margin: 0 auto;
   overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 
 .filter-pills {

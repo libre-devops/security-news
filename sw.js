@@ -1,4 +1,4 @@
-const CACHE_NAME = "mssecnews-v8";
+const CACHE_NAME = "mssecnews-v9";
 
 const STATIC_ASSETS = [
   "/",

@@ -1,9 +1,6 @@
 (function () {
   "use strict";
 
-  // ============================================================
-  // State
-  // ============================================================
   let articles = [];
   let filteredArticles = [];
   let isLoading = false;
@@ -11,7 +8,6 @@
   let searchQuery = "";
   let sortBy = "date-desc";
   let currentProduct = "all";
-  let currentDomain = "all";
   let showBookmarksOnly = false;
 
   const bookmarks = new Set(
@@ -26,33 +22,13 @@
     "defender-office": "#D8B4FE",
     "defender-cloud": "#6366F1",
     sentinel: "#4F46E5",
-    entra: "#2563EB",
     purview: "#0891B2",
-    intune: "#0D9488",
-    msrc: "#DC2626",
     "security-copilot": "#06B6D4",
-    "ai-security": "#EC4899",
-    "general-security": "#64748B",
-  };
-
-  const domainColors = {
-    "identity-security": "#2563EB",
-    "endpoint-security": "#9333EA",
-    "email-security": "#D97706",
-    "cloud-security": "#0891B2",
-    "siem-xdr": "#4F46E5",
     "threat-intelligence": "#DC2626",
-    "incident-response": "#B91C1C",
-    "governance-compliance": "#0F766E",
-    "vulnerability-management": "#EA580C",
-    "security-operations": "#7C3AED",
     "ai-security": "#EC4899",
     "general-security": "#64748B",
   };
 
-  // ============================================================
-  // DOM
-  // ============================================================
   const articlesGrid = document.getElementById("articles-grid");
   const loadingEl = document.getElementById("loading");
   const noResultsEl = document.getElementById("no-results");
@@ -61,7 +37,6 @@
   const dateFilter = document.getElementById("date-filter");
   const themeToggle = document.getElementById("theme-toggle");
   const filterPills = document.getElementById("filter-pills");
-  const domainPills = document.getElementById("domain-pills");
   const showingCount = document.getElementById("showing-count");
   const lastUpdated = document.getElementById("last-updated");
   const totalCount = document.getElementById("total-count");
@@ -70,9 +45,6 @@
 
   const escapeDiv = document.createElement("div");
 
-  // ============================================================
-  // Init
-  // ============================================================
   async function init() {
     loadTheme();
     registerServiceWorker();
@@ -80,18 +52,12 @@
     await loadData();
   }
 
-  // ============================================================
-  // Service Worker
-  // ============================================================
   function registerServiceWorker() {
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js").catch(console.error);
     }
   }
 
-  // ============================================================
-  // Theme
-  // ============================================================
   function loadTheme() {
     const saved = localStorage.getItem("mssecnews-theme") || "dark";
 
@@ -114,9 +80,6 @@
     themeToggle.textContent = next === "dark" ? "☀️" : "🌙";
   }
 
-  // ============================================================
-  // Loading / UI State
-  // ============================================================
   function showLoading(show) {
     isLoading = show;
     loadingEl.classList.toggle("visible", show);
@@ -130,9 +93,6 @@
     noResultsEl.classList.toggle("visible", show);
   }
 
-  // ============================================================
-  // Data Loading
-  // ============================================================
   async function loadData() {
     showLoading(true);
 
@@ -149,14 +109,10 @@
 
       articles = data.articles || [];
 
-      // Must call showLoading(false) before applyFilters() so that
-      // isLoading is false when renderArticles() runs, otherwise the
-      // isLoading guard causes it to return early and cards never render.
       showLoading(false);
 
       updateHeaderStats(data);
       renderProductFilters();
-      renderDomainFilters();
       applyFilters();
     } catch (err) {
       showLoading(false);
@@ -191,21 +147,12 @@
     }
   }
 
-  // ============================================================
-  // Filters
-  // ============================================================
   function applyFilters() {
     let result = [...articles];
 
     if (currentProduct !== "all") {
       result = result.filter((article) =>
         (article.products || []).some((p) => p.id === currentProduct)
-      );
-    }
-
-    if (currentDomain !== "all") {
-      result = result.filter((article) =>
-        (article.domains || []).some((d) => d.id === currentDomain)
       );
     }
 
@@ -232,9 +179,11 @@
         case "today":
           cutoff.setHours(0, 0, 0, 0);
           break;
+
         case "week":
           cutoff.setDate(now.getDate() - 7);
           break;
+
         case "month":
           cutoff.setMonth(now.getMonth() - 1);
           break;
@@ -264,7 +213,8 @@
 
     filteredArticles = result;
 
-    showingCount.textContent = `Showing ${result.length} of ${articles.length} articles`;
+    showingCount.textContent =
+      `Showing ${result.length} of ${articles.length} articles`;
 
     renderArticles();
   }
@@ -305,45 +255,6 @@
     filterPills.innerHTML = html;
   }
 
-  function renderDomainFilters() {
-    const counts = {};
-
-    articles.forEach((article) => {
-      (article.domains || []).forEach((domain) => {
-        if (!counts[domain.id]) {
-          counts[domain.id] = {
-            name: domain.name,
-            count: 0,
-          };
-        }
-
-        counts[domain.id].count++;
-      });
-    });
-
-    let html = `
-      <button class="pill active" data-domain="all">
-        All Domains <span class="count">${articles.length}</span>
-      </button>
-    `;
-
-    Object.entries(counts)
-      .sort((a, b) => a[1].name.localeCompare(b[1].name))
-      .forEach(([id, domain]) => {
-        html += `
-          <button class="pill" data-domain="${id}">
-            ${escapeHtml(domain.name)}
-            <span class="count">${domain.count}</span>
-          </button>
-        `;
-      });
-
-    domainPills.innerHTML = html;
-  }
-
-  // ============================================================
-  // Rendering
-  // ============================================================
   function renderArticles() {
     if (isLoading) return;
 
@@ -360,27 +271,16 @@
 
   function renderCard(article) {
     const isBookmarked = bookmarks.has(article.link);
-
     const date = new Date(article.published);
-
     const dateStr = date.toLocaleDateString("en-GB");
 
     const productTags = (article.products || [])
       .map(
         (product) => `
-        <span class="blog-tag" style="background:${productColors[product.id] || "#64748B"}22;color:${productColors[product.id] || "#64748B"};">
+        <span class="blog-tag"
+          style="background:${productColors[product.id] || "#64748B"}22;
+                 color:${productColors[product.id] || "#64748B"};">
           ${escapeHtml(product.name)}
-        </span>
-      `
-      )
-      .join("");
-
-    const domainTags = (article.domains || [])
-      .slice(0, 2)
-      .map(
-        (domain) => `
-        <span class="blog-tag" style="background:${domainColors[domain.id] || "#64748B"}22;color:${domainColors[domain.id] || "#64748B"};">
-          ${escapeHtml(domain.name)}
         </span>
       `
       )
@@ -391,8 +291,8 @@
         <div class="card-header">
           <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
             ${productTags}
-            ${domainTags}
           </div>
+
           <button
             class="bookmark-btn ${isBookmarked ? "bookmarked" : ""}"
             data-action="bookmark"
@@ -487,19 +387,6 @@
 
       pill.classList.add("active");
       currentProduct = pill.dataset.product;
-      applyFilters();
-    });
-
-    domainPills.addEventListener("click", (e) => {
-      const pill = e.target.closest("[data-domain]");
-      if (!pill) return;
-
-      domainPills.querySelectorAll(".pill").forEach((p) => {
-        p.classList.remove("active");
-      });
-
-      pill.classList.add("active");
-      currentDomain = pill.dataset.domain;
       applyFilters();
     });
 
