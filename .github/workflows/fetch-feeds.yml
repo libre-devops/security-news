@@ -9,19 +9,25 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: microsoft-security-news-feed
   cancel-in-progress: true
 
 jobs:
-  fetch-feeds:
-    name: Fetch and Publish Feeds
+  build-and-deploy:
+    name: Fetch, Publish and Deploy
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout repository
@@ -51,8 +57,19 @@ jobs:
 
           if git diff --staged --quiet; then
             echo "No feed changes detected."
-            exit 0
+          else
+            git commit -m "🛡️ Update Microsoft security feeds - $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
           fi
 
-          git commit -m "🛡️ Update Microsoft security feeds - $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
