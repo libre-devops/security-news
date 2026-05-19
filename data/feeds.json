@@ -1,32 +1,8 @@
 {
   "site": "Microsoft Security News",
-  "lastUpdated": "2026-05-19T15:17:33.269964+00:00",
-  "totalArticles": 54,
+  "lastUpdated": "2026-05-19T15:24:46.497205+00:00",
+  "totalArticles": 53,
   "articles": [
-    {
-      "title": "Exposing Fox Tempest: A malware-signing service operation",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/19/exposing-fox-tempest-a-malware-signing-service-operation/",
-      "published": "2026-05-19T15:07:01+00:00",
-      "summary": "Fox Tempest is a financially motivated threat actor operating a malware‑signing‑as‑a‑service (MSaaS) used by other cybercriminals, including Vanilla Tempest and Storm groups, to more effectively distribute malicious code, including ransomware. The post Exposing Fox Tempest: A malware-signing...",
-      "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ]
-    },
     {
       "title": "How Storm-2949 turned a compromised identity into a cloud-wide breach",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/05/18/storm-2949-turned-compromised-identity-into-cloud-wide-breach/",
@@ -52,36 +28,6 @@
       ]
     },
     {
-      "title": "Agent 365 connector: Monitor, hunt, and investigate AI agent activity in Microsoft Sentinel",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/agent-365-connector-monitor-hunt-and-investigate-ai-agent/ba-p/4520836",
-      "published": "2026-05-18T16:05:15+00:00",
-      "summary": "As enterprises scale the use of AI agents, SOC teams need visibility into AI agent behavior. The Agent 365 connector, now in public preview, streams rich agent telemetry from Agent 365 into Microsoft Sentinel data lake. Agent activity, such as agent data exposure or access drift, is surfaced...",
-      "author": "RGupta",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 9
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 2
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "AI Security"
-      ]
-    },
-    {
       "title": "How to better protect your growing business in an AI-powered world",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/05/18/how-to-better-protect-your-growing-business-in-an-ai-powered-world/",
       "published": "2026-05-18T16:00:00+00:00",
@@ -103,30 +49,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Introducing selective response actions for high-value assets in Microsoft Defender",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-selective-response-actions-for-high-value-assets-in/ba-p/4512175",
-      "published": "2026-05-18T15:50:40+00:00",
-      "summary": "Deploying Microsoft Defender on high-value assets (HVAs) such as domain controllers, ADFS servers, and other Tier-0 systems, requires a thoughtful approach to balance strong protection with operational stability. Given the powerful response capabilities available, organizations often seek greater...",
-      "author": "amibarayev",
-      "source": "Microsoft Defender for Endpoint",
-      "source_id": "defender_endpoint",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Endpoint Security",
-      "board_id": "microsoftdefenderatpblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint"
       ]
     },
     {
@@ -466,6 +388,30 @@
       ]
     },
     {
+      "title": "Active attack: Dirty Frag Linux vulnerability expands post-compromise risk",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/08/active-attack-dirty-frag-linux-vulnerability-expands-post-compromise-risk/",
+      "published": "2026-05-08T17:12:46+00:00",
+      "summary": "Dirty Frag is a newly disclosed Linux local privilege escalation vulnerability affecting kernel networking and memory-fragment handling components including esp4, esp6, and rxrpc. The vulnerability enables reliable escalation from an unprivileged user to root and may be leveraged after initial...",
+      "author": "Microsoft Defender Security Research Team",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
       "title": "Better together with Azure WAF + Microsoft Defender for Storage + Defender for Azure SQL Databases",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/better-together-with-azure-waf-microsoft-defender-for-storage/ba-p/4517101",
       "published": "2026-05-06T17:22:23+00:00",
@@ -577,6 +523,30 @@
         "Microsoft Sentinel",
         "Threat Intelligence",
         "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "Introducing selective response actions for high-value assets in Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-selective-response-actions-for-high-value-assets-in/ba-p/4512175",
+      "published": "2026-05-04T16:55:21+00:00",
+      "summary": "Deploying Microsoft Defender on high-value assets (HVAs) such as domain controllers, ADFS servers, and other Tier-0 systems, requires a thoughtful approach to balance strong protection with operational stability. Given the powerful response capabilities available, organizations often seek greater...",
+      "author": "amibarayev",
+      "source": "Microsoft Defender for Endpoint",
+      "source_id": "defender_endpoint",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Endpoint Security",
+      "board_id": "microsoftdefenderatpblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint"
       ]
     },
     {
