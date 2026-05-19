@@ -1,8 +1,46 @@
 {
   "site": "Microsoft Security News",
-  "lastUpdated": "2026-05-18T20:05:17.451141+00:00",
+  "lastUpdated": "2026-05-19T03:57:18.397639+00:00",
   "totalArticles": 71,
   "articles": [
+    {
+      "title": "How Storm-2949 turned a compromised identity into a cloud-wide breach",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/18/storm-2949-turned-compromised-identity-into-cloud-wide-breach/",
+      "published": "2026-05-18T22:42:50+00:00",
+      "summary": "Storm-2949 turned stolen credentials into a cloud-wide breach, moving from identity compromise to large-scale data theft without using malware. This incident shows how threat actors can exploit trusted systems to operate undetected. The post How Storm-2949 turned a compromised identity into a...",
+      "author": "Microsoft Defender Security Research Team",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "domains": [
+        {
+          "id": "identity-security",
+          "name": "Identity Security",
+          "score": 2
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 2
+        }
+      ],
+      "tags": [
+        "General Security",
+        "Identity Security",
+        "Threat Intelligence"
+      ]
+    },
     {
       "title": "Agent 365 connector: Monitor, hunt, and investigate AI agent activity in Microsoft Sentinel",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/agent-365-connector-monitor-hunt-and-investigate-ai-agent/ba-p/4520836",
@@ -1353,38 +1391,6 @@
       "tags": [
         "General Security",
         "Vulnerability Management"
-      ]
-    },
-    {
-      "title": "When prompts become shells: RCE vulnerabilities in AI agent frameworks",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/07/prompts-become-shells-rce-vulnerabilities-ai-agent-frameworks/",
-      "published": "2026-05-07T20:22:39+00:00",
-      "summary": "New research exposes how prompt injection in AI agent frameworks can lead to remote code execution. Learn how these vulnerabilities work, what’s impacted, and how to secure your agents. The post When prompts become shells: RCE vulnerabilities in AI agent frameworks appeared first on Microsoft...",
-      "author": "Microsoft Defender Security Research Team, Uri Oren, Amit Eliahu and Dor Edry",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 2
-        }
-      ],
-      "domains": [
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "AI Security",
-        "AI Security"
       ]
     },
     {
