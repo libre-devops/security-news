@@ -1,144 +1,190 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-  />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Security-Policy"
+          content="
+      default-src 'self';
+      script-src  'self';
+      style-src   'self';
+      img-src     'self' data:;
+      connect-src 'self';
+      object-src  'none';
+      base-uri    'self';
+      form-action 'self';
+      frame-ancestors 'none';
+    "
+    />
 
-  <title>Microsoft Security News</title>
 
-  <meta
-    name="description"
-    content="Daily aggregated Microsoft security news, advisories, and threat intelligence."
-  />
+    <meta name="referrer" content="no-referrer"/>
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Microsoft Security News" />
-  <meta
-    property="og:description"
-    content="Daily aggregated Microsoft security news, advisories, and threat intelligence."
-  />
-  <meta property="og:url" content="https://security.libredevops.org" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Microsoft Security News" />
-  <meta
-    name="twitter:description"
-    content="Daily aggregated Microsoft security news, advisories, and threat intelligence."
-  />
+    <title>Security News</title>
 
-  <link rel="manifest" href="manifest.json" />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta
+            name="description"
+            content="Daily aggregated public security news, advisories, threat intelligence, cloud security bulletins, and security product updates."
+    />
+
+    <meta
+            name="keywords"
+            content="security news, cybersecurity news, threat intelligence, microsoft security, aws security, google cloud security, splunk security, cisa advisories, ncsc, security bulletins"
+    />
+
+    <meta name="theme-color" content="#2b0a3d"/>
+
+    <link rel="canonical" href="https://security.libredevops.org"/>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Security News"/>
+    <meta property="og:title" content="Security News"/>
+    <meta property="og:description"
+          content="Daily aggregated public security news, advisories, threat intelligence, cloud security bulletins, and security product updates."/>
+    <meta property="og:url" content="https://security.libredevops.org"/>
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Security News"/>
+    <meta name="twitter:site" content="@LibreDevOps"/>
+    <meta name="twitter:description"
+          content="Daily aggregated public security news, advisories, threat intelligence, cloud security bulletins, and security product updates."/>
+
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+
+    <script>
+        (function () {
+            var saved = localStorage.getItem("securitynews-theme");
+            var theme = saved === "light" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+    </script>
 </head>
 
 <body>
-  <header>
+<header>
     <div class="header-content">
-      <div class="logo">
-        <img
-          src="security-libre-devops-white.png"
-          alt="Libre DevOps Security"
-          class="site-logo"
-        />
+        <div class="logo">
+            <img
+                    src="security-libre-devops-white.png"
+                    alt="Libre DevOps Security"
+                    class="site-logo"
+            />
 
-        <div class="logo-text">
-          <h1>Microsoft Security News</h1>
-          <p class="subtitle">
-            Daily Microsoft security intelligence, threat insights, and product updates
-          </p>
+            <div class="logo-text">
+                <h1>Security News</h1>
+                <p class="subtitle">
+                    Daily security intelligence, advisories, threat research, and vendor security updates
+                </p>
+            </div>
+
+            <div class="logo-spacer"></div>
         </div>
 
-        <div class="logo-spacer"></div>
-      </div>
+        <div class="header-actions">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input
+                        id="search-input"
+                        type="text"
+                        placeholder="Search articles, vendors, products, advisories..."
+                        autocomplete="off"
+                        aria-label="Search security articles"
+                />
+            </div>
 
-      <div class="header-actions">
-        <div class="search-box">
-          <span class="search-icon">🔍</span>
-          <input
-            id="search-input"
-            type="text"
-            placeholder="Search articles, products, sources..."
-            autocomplete="off"
-          />
+            <button
+                    id="bookmarks-toggle"
+                    type="button"
+                    aria-label="Toggle bookmarked articles"
+            >
+                ⭐ Bookmarks
+            </button>
+
+            <a
+                    href="data/feed.xml"
+                    class="rss-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open RSS feed"
+            >
+                📡 RSS
+            </a>
+
+            <button
+                    id="theme-toggle"
+                    type="button"
+                    aria-label="Toggle theme"
+            >
+                ☀️
+            </button>
         </div>
 
-        <button id="bookmarks-toggle" type="button">
-          ⭐ Bookmarks
-        </button>
-
-        <a
-          href="data/feed.xml"
-          class="rss-button"
-          target="_blank"
-          rel="noopener"
-        >
-          📡 RSS
-        </a>
-
-        <button id="theme-toggle" type="button" aria-label="Toggle theme">
-          ☀️
-        </button>
-      </div>
-
-      <div class="stats-bar">
-        <span id="total-count">0 articles</span>
-        <span id="showing-count">Showing 0 articles</span>
-        <span id="last-updated">Last updated: --</span>
-      </div>
+        <div class="stats-bar">
+            <span id="total-count">0 articles</span>
+            <span id="showing-count">Showing 0 articles</span>
+            <span id="last-updated">Last updated: --</span>
+        </div>
     </div>
-  </header>
+</header>
 
-  <!-- PRODUCT FILTERS ONLY -->
-  <section class="filters">
-    <div class="filter-section-title">Products</div>
+<section class="filters">
+    <div class="filter-section-title">Categories</div>
 
     <div class="filter-scroll">
-      <div id="filter-pills" class="filter-pills">
-        <button class="pill active">Loading products...</button>
-      </div>
+        <div id="filter-pills" class="filter-pills">
+            <button class="pill active">Loading categories...</button>
+        </div>
     </div>
-  </section>
+</section>
 
-  <main>
+<main>
     <div class="controls">
-      <div></div>
+        <div></div>
 
-      <div class="controls-right">
-        <select id="date-filter">
-          <option value="all">All Time</option>
-          <option value="today">Today</option>
-          <option value="week">Last 7 Days</option>
-          <option value="month">Last 30 Days</option>
-        </select>
+        <div class="controls-right">
+            <select id="date-filter" aria-label="Filter by date">
+                <option value="all">All Time</option>
+                <option value="today">Today</option>
+                <option value="week">Last 7 Days</option>
+                <option value="month">Last 30 Days</option>
+            </select>
 
-        <select id="sort-by">
-          <option value="date-desc">Newest First</option>
-          <option value="date-asc">Oldest First</option>
-          <option value="source">Source A–Z</option>
-        </select>
-      </div>
+            <select id="sort-by" aria-label="Sort articles">
+                <option value="date-desc">Newest First</option>
+                <option value="date-asc">Oldest First</option>
+                <option value="source">Source A–Z</option>
+                <option value="vendor">Vendor A–Z</option>
+            </select>
+        </div>
     </div>
 
     <div id="loading" class="loading visible">
-      <div class="loading-spinner"></div>
-      <p>Loading Microsoft security intelligence feeds...</p>
+        <div class="loading-spinner"></div>
+        <p>Loading security intelligence feeds...</p>
     </div>
 
     <div id="no-results" class="no-results">
-      <p>🔍 No articles found matching your criteria.</p>
-      <p>Try adjusting your filters or broadening your search.</p>
+        <p>🔍 No articles found matching your criteria.</p>
+        <p>Try adjusting your filters, search terms, or broadening the date range.</p>
     </div>
 
     <section id="articles-grid" class="articles-grid"></section>
-  </main>
+</main>
 
-  <div id="toast" class="toast"></div>
-
-  <script src="js/app.js"></script>
+<div id="toast" class="toast"></div>
+<script
+        src="js/app.js"
+        defer
+        integrity="sha384-TjqfBPtiE9ECZ4qP67dhpyqmUGCRSApRwW2xFJYnAXCR6P4ouYXfLOa4cDNCsyK3"
+        crossorigin="anonymous"
+></script>
 </body>
 </html>

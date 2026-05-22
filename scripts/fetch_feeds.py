@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Microsoft Security News Feed Fetcher
+Security News Feed Fetcher
 """
 
 from __future__ import annotations
@@ -11,14 +11,16 @@ import re
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from html import unescape
-from typing import Any, Dict, List, Optional, Set, Tuple
-from xml.etree.ElementTree import Element, SubElement, tostring
+from typing import Any, Dict, List, Optional, Tuple
+from xml.etree.ElementTree import Element, SubElement, tostring  # nosec B405
 
 import feedparser
 
-SITE_NAME = "Microsoft Security News"
+SITE_NAME = "Security News"
 SITE_URL = "https://security.libredevops.org"
-SITE_DESCRIPTION = "Aggregated Microsoft security news and advisories"
+SITE_DESCRIPTION = (
+    "Aggregated public security news, advisories, and threat intelligence"
+)
 
 MAX_ARTICLE_AGE_DAYS = 30
 MAX_RSS_ITEMS = 100
@@ -30,10 +32,10 @@ class Source:
     id: str
     name: str
     url: str
-    vendor: str = "Microsoft"
-    source_group: str = "Official Microsoft"
+    vendor: str = "Security"
+    source_group: str = "Official"
     source_kind: str = "rss"
-    default_author: str = "Microsoft"
+    default_author: str = "Security Vendor"
     category: str = "Security"
     board_id: Optional[str] = None
     max_entries: int = 25
@@ -44,12 +46,18 @@ SOURCES: List[Source] = [
         id="mssecurity",
         name="Microsoft Security Blog",
         url="https://www.microsoft.com/security/blog/feed/",
+        vendor="Microsoft",
+        default_author="Microsoft",
+        source_group="Official Microsoft",
         category="Security Blog",
     ),
     Source(
         id="msrc",
         name="Microsoft Security Response Center",
         url="https://api.msrc.microsoft.com/update-guide/rss",
+        vendor="Microsoft",
+        default_author="Microsoft",
+        source_group="Official Microsoft",
         category="Advisories",
         max_entries=20,
     ),
@@ -57,6 +65,8 @@ SOURCES: List[Source] = [
         id="sentinel",
         name="Microsoft Sentinel",
         url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog",
+        vendor="Microsoft",
+        default_author="Microsoft",
         source_group="TechCommunity",
         source_kind="techcommunity",
         board_id="microsoftsentinelblog",
@@ -66,6 +76,8 @@ SOURCES: List[Source] = [
         id="defender_xdr",
         name="Microsoft Defender XDR",
         url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftthreatprotectionblog",
+        vendor="Microsoft",
+        default_author="Microsoft",
         source_group="TechCommunity",
         source_kind="techcommunity",
         board_id="microsoftthreatprotectionblog",
@@ -75,6 +87,8 @@ SOURCES: List[Source] = [
         id="defender_cloud",
         name="Microsoft Defender for Cloud",
         url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftdefendercloudblog",
+        vendor="Microsoft",
+        default_author="Microsoft",
         source_group="TechCommunity",
         source_kind="techcommunity",
         board_id="microsoftdefendercloudblog",
@@ -84,6 +98,8 @@ SOURCES: List[Source] = [
         id="defender_endpoint",
         name="Microsoft Defender for Endpoint",
         url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftdefenderatpblog",
+        vendor="Microsoft",
+        default_author="Microsoft",
         source_group="TechCommunity",
         source_kind="techcommunity",
         board_id="microsoftdefenderatpblog",
@@ -93,6 +109,8 @@ SOURCES: List[Source] = [
         id="defender_identity",
         name="Microsoft Defender for Identity",
         url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=azureadvancedthreatprotection",
+        vendor="Microsoft",
+        default_author="Microsoft",
         source_group="TechCommunity",
         source_kind="techcommunity",
         board_id="azureadvancedthreatprotection",
@@ -102,6 +120,8 @@ SOURCES: List[Source] = [
         id="defender_office",
         name="Microsoft Defender for Office 365",
         url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftdefenderforoffice365blog",
+        vendor="Microsoft",
+        default_author="Microsoft",
         source_group="TechCommunity",
         source_kind="techcommunity",
         board_id="microsoftdefenderforoffice365blog",
@@ -111,6 +131,8 @@ SOURCES: List[Source] = [
         id="security_copilot",
         name="Microsoft Security Copilot",
         url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=SecurityCopilotBlog",
+        vendor="Microsoft",
+        default_author="Microsoft",
         source_group="TechCommunity",
         source_kind="techcommunity",
         board_id="securitycopilot",
@@ -120,12 +142,17 @@ SOURCES: List[Source] = [
         id="threat_intel",
         name="Microsoft Threat Intelligence",
         url="https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/",
+        vendor="Microsoft",
+        default_author="Microsoft",
+        source_group="Official Microsoft",
         category="Threat Intelligence",
     ),
     Source(
         id="purview",
         name="Microsoft Purview",
         url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoft-purview-blog",
+        vendor="Microsoft",
+        default_author="Microsoft",
         source_group="TechCommunity",
         source_kind="techcommunity",
         board_id="microsoftpurviewblog",
@@ -135,12 +162,17 @@ SOURCES: List[Source] = [
         id="ms_ai_blog",
         name="Microsoft AI Blog",
         url="https://blogs.microsoft.com/feed/",
+        vendor="Microsoft",
+        default_author="Microsoft",
+        source_group="Official Microsoft",
         category="AI",
     ),
     Source(
         id="core_infra_security",
         name="Core Infrastructure & Security",
         url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog",
+        vendor="Microsoft",
+        default_author="Microsoft",
         source_group="TechCommunity",
         source_kind="techcommunity",
         board_id="coreinfrastructureandsecurityblog",
@@ -150,10 +182,62 @@ SOURCES: List[Source] = [
         id="network_security",
         name="Azure Network Security",
         url="https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=azurenetworksecurityblog",
+        vendor="Microsoft",
+        default_author="Microsoft",
         source_group="TechCommunity",
         source_kind="techcommunity",
         board_id="azurenetworksecurityblog",
         category="Network Security",
+    ),
+    Source(
+        id="aws_security",
+        name="AWS Security Bulletins",
+        url="https://aws.amazon.com/security/security-bulletins/rss/feed/",
+        vendor="AWS",
+        default_author="Amazon Web Services",
+        source_group="Official AWS",
+        category="Security Advisories",
+        max_entries=25,
+    ),
+    Source(
+        id="gcp_security",
+        name="Google Cloud Security Bulletins",
+        url="https://docs.cloud.google.com/feeds/google-cloud-security-bulletins.xml?_gl=1%2Awukgu3%2A_ga%2AMTA3NTQxODIzOS4xNzc5NDg1Nzc4%2A_ga_WH2QY8WWF5%2AczE3Nzk0ODU3NzckbzEkZzEkdDE3Nzk0ODU3NzckajYwJGwwJGgw",
+        vendor="Google Cloud",
+        default_author="Google Cloud",
+        source_group="Official Google Cloud",
+        category="Security Advisories",
+        max_entries=25,
+    ),
+    Source(
+        id="splunk_security",
+        name="Splunk Security Advisories",
+        url="https://advisory.splunk.com/feed.xml",
+        vendor="Splunk",
+        default_author="Splunk",
+        source_group="Official Splunk",
+        category="Security Advisories",
+        max_entries=25,
+    ),
+    Source(
+        id="cisa_security",
+        name="CISA Cybersecurity Advisories",
+        url="https://www.cisa.gov/cybersecurity-advisories/all.xml",
+        vendor="CISA",
+        default_author="CISA",
+        source_group="Official CISA",
+        category="Security Advisories",
+        max_entries=20,
+    ),
+    Source(
+        id="ncsc_security",
+        name="NCSC Security Feed",
+        url="https://www.ncsc.gov.uk/api/1/services/v1/all-rss-feed.xml",
+        vendor="NCSC",
+        default_author="NCSC",
+        source_group="Official NCSC",
+        category="Security Advisories",
+        max_entries=15,
     ),
 ]
 
@@ -161,107 +245,145 @@ SOURCES: List[Source] = [
 PRODUCTS: Dict[str, Dict[str, Any]] = {
     "defender-xdr": {
         "name": "Microsoft Defender XDR",
-        "weight_threshold": 3,
+        "weight_threshold": 4,
         "patterns": [
-            (r"\bmicrosoft defender xdr\b", 5),
-            (r"\bdefender xdr\b", 4),
-            (r"\bxdr\b", 2),
+            (r"\bmicrosoft defender xdr\b", 6),
+            (r"\bdefender xdr\b", 5),
         ],
     },
     "defender-endpoint": {
         "name": "Microsoft Defender for Endpoint",
-        "weight_threshold": 3,
+        "weight_threshold": 4,
         "patterns": [
-            (r"\bmicrosoft defender for endpoint\b", 5),
-            (r"\bdefender for endpoint\b", 4),
-            (r"\bmde\b", 2),
-            (r"\bedr\b", 1),
+            (r"\bmicrosoft defender for endpoint\b", 6),
+            (r"\bdefender for endpoint\b", 5),
+            (r"\bmde\b", 3),
         ],
     },
     "defender-identity": {
         "name": "Microsoft Defender for Identity",
-        "weight_threshold": 3,
+        "weight_threshold": 4,
         "patterns": [
-            (r"\bmicrosoft defender for identity\b", 5),
-            (r"\bdefender for identity\b", 4),
-            (r"\bmdi\b", 2),
+            (r"\bmicrosoft defender for identity\b", 6),
+            (r"\bdefender for identity\b", 5),
+            (r"\bmdi\b", 3),
         ],
     },
     "defender-cloud-apps": {
         "name": "Microsoft Defender for Cloud Apps",
-        "weight_threshold": 3,
+        "weight_threshold": 4,
         "patterns": [
-            (r"\bmicrosoft defender for cloud apps\b", 5),
-            (r"\bdefender for cloud apps\b", 4),
-            (r"\bmdca\b", 2),
+            (r"\bmicrosoft defender for cloud apps\b", 6),
+            (r"\bdefender for cloud apps\b", 5),
+            (r"\bmdca\b", 3),
         ],
     },
     "defender-office": {
         "name": "Microsoft Defender for Office 365",
-        "weight_threshold": 3,
+        "weight_threshold": 4,
         "patterns": [
-            (r"\bmicrosoft defender for office 365\b", 5),
-            (r"\bdefender for office 365\b", 4),
+            (r"\bmicrosoft defender for office 365\b", 6),
+            (r"\bdefender for office 365\b", 5),
         ],
     },
     "defender-cloud": {
         "name": "Microsoft Defender for Cloud",
-        "weight_threshold": 3,
+        "weight_threshold": 4,
         "patterns": [
-            (r"\bmicrosoft defender for cloud\b", 5),
-            (r"\bdefender for cloud\b", 4),
-            (r"\bcspm\b", 1),
+            (r"\bmicrosoft defender for cloud\b", 6),
+            (r"\bdefender for cloud\b", 5),
         ],
     },
     "sentinel": {
         "name": "Microsoft Sentinel",
-        "weight_threshold": 3,
+        "weight_threshold": 4,
         "patterns": [
-            (r"\bmicrosoft sentinel\b", 5),
+            (r"\bmicrosoft sentinel\b", 6),
             (r"\bsentinel\b", 4),
-            (r"\bsiem\b", 2),
-            (r"\bsoar\b", 2),
         ],
     },
     "security-copilot": {
         "name": "Microsoft Security Copilot",
-        "weight_threshold": 3,
+        "weight_threshold": 4,
         "patterns": [
-            (r"\bmicrosoft security copilot\b", 5),
-            (r"\bsecurity copilot\b", 4),
-        ],
-    },
-    "threat-intelligence": {
-        "name": "Threat Intelligence",
-        "weight_threshold": 2,
-        "patterns": [
-            (r"\bthreat intelligence\b", 5),
-            (r"\bthreat actor\b", 3),
-            (r"\bmalware\b", 2),
-            (r"\bransomware\b", 2),
-            (r"\bapt\b", 2),
-            (r"\bcampaign\b", 1),
+            (r"\bmicrosoft security copilot\b", 6),
+            (r"\bsecurity copilot\b", 5),
         ],
     },
     "purview": {
         "name": "Microsoft Purview",
-        "weight_threshold": 2,
+        "weight_threshold": 3,
         "patterns": [
-            (r"\bmicrosoft purview\b", 5),
-            (r"\bpurview\b", 4),
-            (r"\bdlp\b", 2),
-            (r"\binsider risk\b", 2),
-            (r"\bdata governance\b", 2),
+            (r"\bmicrosoft purview\b", 6),
+            (r"\bpurview\b", 5),
+        ],
+    },
+    "aws-security": {
+        "name": "AWS Security",
+        "weight_threshold": 3,
+        "patterns": [
+            (r"\baws\b", 4),
+            (r"\bamazon web services\b", 5),
+            (r"\baws security\b", 5),
+        ],
+    },
+    "gcp-security": {
+        "name": "Google Cloud Security",
+        "weight_threshold": 3,
+        "patterns": [
+            (r"\bgoogle cloud\b", 5),
+            (r"\bgcp\b", 4),
+            (r"\bgoogle cloud security\b", 6),
+        ],
+    },
+    "splunk-security": {
+        "name": "Splunk Security",
+        "weight_threshold": 3,
+        "patterns": [
+            (r"\bsplunk\b", 5),
+            (r"\bsplunk advisory\b", 6),
+            (r"\bsplunk security advisory\b", 7),
+        ],
+    },
+    "cisa-advisories": {
+        "name": "CISA Advisories",
+        "weight_threshold": 3,
+        "patterns": [
+            (r"\bcisa\b", 6),
+            (r"\bcisa advisory\b", 7),
+            (r"\bknown exploited vulnerabilities\b", 5),
+            (r"\bkev\b", 4),
+        ],
+    },
+    "ncsc-guidance": {
+        "name": "NCSC Guidance",
+        "weight_threshold": 3,
+        "patterns": [
+            (r"\bncsc\b", 6),
+            (r"\bnational cyber security centre\b", 7),
+        ],
+    },
+    "threat-intelligence": {
+        "name": "Threat Intelligence",
+        "weight_threshold": 3,
+        "patterns": [
+            (r"\bthreat intelligence\b", 5),
+            (r"\bmalware\b", 3),
+            (r"\bransomware\b", 3),
+            (r"\bapt\b", 3),
+            (r"\bthreat actor\b", 3),
+            (r"\bcampaign\b", 2),
         ],
     },
     "ai-security": {
         "name": "AI Security",
-        "weight_threshold": 2,
+        "weight_threshold": 3,
         "patterns": [
-            (r"\bai security\b", 4),
-            (r"\bllm security\b", 3),
-            (r"\bprompt injection\b", 2),
-            (r"\bgenerative ai\b", 1),
+            (r"\bai security\b", 5),
+            (r"\bllm security\b", 4),
+            (r"\bprompt injection\b", 4),
+            (r"\bmodel poisoning\b", 4),
+            (r"\bagentic\b", 2),
         ],
     },
     "general-security": {
@@ -542,7 +664,7 @@ def main():
     print(f"Raw fetched         : {dedupe_stats['raw_total']}")
     print(f"Final unique        : {dedupe_stats['unique_total']}")
     print(f"Duplicates removed  : {dedupe_stats['duplicates_removed']}")
-    print(f"Older than 30 days    : {dedupe_stats['expired_removed']}")
+    print(f"Older than 30 days   : {dedupe_stats['expired_removed']}")
     print("=" * 60)
 
     generate_diff(previous_articles, articles)

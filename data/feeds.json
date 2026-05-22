@@ -1,8 +1,74 @@
 {
-  "site": "Microsoft Security News",
-  "lastUpdated": "2026-05-22T19:53:36.157209+00:00",
-  "totalArticles": 52,
+  "site": "Security News",
+  "lastUpdated": "2026-05-22T22:02:53.649653+00:00",
+  "totalArticles": 132,
   "articles": [
+    {
+      "title": "Redefining Security for an AI Driven World",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/redefining-security-for-an-ai-driven-world/ba-p/4521961",
+      "published": "2026-05-22T21:14:55+00:00",
+      "summary": "Vendors are being challenged to help customers address these challenges not as a point-solution vendor but as an end-to-end security and AI platform partner. By integrating identity, data governance, threat protection, and AI services into a unified ecosystem, Microsoft can deliver coordinated...",
+      "author": "edgarus71",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 11
+        },
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 11
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "AI Security",
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Cloud",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Purview",
+        "Microsoft Security Copilot",
+        "Threat Intelligence",
+        "Microsoft Sentinel"
+      ]
+    },
     {
       "title": "Microsoft recognized as a Leader in The Forrester Wave™ for Workforce Identity Security Platforms",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/05/22/microsoft-recognized-as-a-leader-in-the-forrester-wave-for-workforce-identity-security-platforms/",
@@ -52,6 +118,30 @@
       ]
     },
     {
+      "title": "CVE-2026-9255 - Tool Execution Without Authorization via Piped Stdin in Kiro CLI",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-035-aws/",
+      "published": "2026-05-22T16:42:15+00:00",
+      "summary": "Bulletin ID: 2026-035-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 05/22/2026 09:45 AM PDT Description: Kiro CLI is a command-line AI coding assistant that enables developers to interact with AI models to execute code, manage files, and run shell commands. We...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
       "title": "Microsoft Security success stories: How St. Luke’s and ManpowerGroup are securing AI foundations",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/05/22/microsoft-security-success-stories-how-st-lukes-and-manpowergroup-are-securing-ai-foundations/",
       "published": "2026-05-22T16:00:00+00:00",
@@ -76,27 +166,27 @@
       ]
     },
     {
-      "title": "What Changed in RC4 with the January 2026 Windows Update and Why it is Important",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/what-changed-in-rc4-with-the-january-2026-windows-update-and-why/ba-p/4504732",
-      "published": "2026-05-22T14:40:47+00:00",
-      "summary": "In case you haven’t heard, RC4 is not secure and has been deprecated. In this article, I will discuss what changed with the January 2026 Windows Update and why it is important to start auditing and remediate RC4 usage is your environment. Starting with the January 13, 2026, Windows security...",
-      "author": "Elanor92",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/05/22/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-05-22T12:00:00+00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-9082 Drupal Core SQL Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
         }
       ],
       "tags": [
-        "General Security"
+        "CISA Advisories"
       ]
     },
     {
@@ -121,6 +211,150 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "ABB B&R Automation Studio",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-03",
+      "published": "2026-05-21T12:00:00+00:00",
+      "summary": "View CSAF Summary ABB became aware of vulnerability in the product versions listed as affected in the advisory. An update is available that replaces an outdated third-party component. Although no successful exploitation was observed during testing of the affected B&R products, the identified...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "ABB Terra AC Wallbox",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-05",
+      "published": "2026-05-21T12:00:00+00:00",
+      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited this vulnerability could cause the pollution of heap memory which potentially takes remote control of the product and performs a write operation to...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "ABB B&R PCs",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-02",
+      "published": "2026-05-21T12:00:00+00:00",
+      "summary": "View CSAF Summary ABB became aware of vulnerability in the product versions listed as affected in the advisory. An update is now available that addresses and remediates the vulnerability. A network attacker could exploit the vulnerabilities to execute remote code, initiate DoS attacks, conduct DNS...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/05/21/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-05-21T12:00:00+00:00",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-34291 Langflow Origin Validation Error Vulnerability CVE-2026-34926 Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability These types of...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "ABB B&R Automation Runtime",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-04",
+      "published": "2026-05-21T12:00:00+00:00",
+      "summary": "View CSAF Summary An update is available that resolves a vulnerability identified by B&Rs internal security analysis in the product versions listed as affected in this advisory. An attacker who successfully exploited these vulnerabilities could take over a remote session or execute code in the...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Hitachi Energy GMS600",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-01",
+      "published": "2026-05-21T12:00:00+00:00",
+      "summary": "View CSAF Summary Hitachi Energy is aware of the vulnerability, CVE-2022-4304 in the OSS component OpenSSL, that affects the GMS600 versions that are listed below. An attacker successfully exploiting this vulnerability could send trial messages to the server and record the time taken to process...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
       ]
     },
     {
@@ -162,12 +396,18 @@
       "board_id": null,
       "products": [
         {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        },
+        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 2
+          "score": 3
         }
       ],
       "tags": [
+        "AWS Security",
         "Threat Intelligence"
       ]
     },
@@ -196,6 +436,684 @@
       ]
     },
     {
+      "title": "GCP-2026-034",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-034",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-05-20Description Description Severity Notes A vulnerability was found in Apigee where the IntegrationRegion parameter in the SetIntegrationRequest policy lacks validation, allowing for Server-Side Request Forgery (SSRF) and service account token exfiltration. The issue arises when...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-033",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-033",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-05-14Description Description Severity Notes A container breakout vulnerability CVE-2026-46300 has been found in the Linux kernel, known as Fragnesia. It allows an unprivileged local attacker to escalate to root on the host. For instructions and more details, see the following...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-032",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-032",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-05-12Description Description Severity Notes AMD has identified a hardware-level vulnerability in Zen 2 microarchitecture processors (including EPYC and Ryzen series) involving potential corruption within the micro-operation (OP) cache. Under specific conditions, this issue...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-031",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-031",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-05-12Description Description Severity Notes Researchers discovered a vulnerability in AMD firmware that, due to missing protection, could allow a malicious hypervisor to execute arbitrary code on the AMD Secure Processor (ASP). This allows for the escalation of Memory Mapped I/O...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-030",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-030",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-05-11Updated: 2026-05-20Description Description Severity Notes 2026-05-20 Update: Added CVE-2026-43500 and added CVE IDs to exploit paths. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS and Ubuntu...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-029",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-029",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-05-07Description Description Severity Notes Microsoft is updating the Secure Boot certificates originally issued in 2011 to ensure Windows devices continue to verify trusted boot software. These older certificates begin expiring in June 2026. Devices that haven't received the newer...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-028",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-028",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-05-05Description Description Severity Notes CVE-2026-31431, also known as \"Copy Fail,\" is a high-severity local privilege escalation (LPE) vulnerability in the Linux kernel that allows an unprivileged user to gain root access. Disclosed in late April 2026, it stems from a logic flaw...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-027",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-027",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-05-01Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23351 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-026",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-026",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-04-30Updated: 2026-05-04Description Description Severity Notes 2026-05-04 Update: Added patch versions for GKE. A vulnerability in the Linux kernel (CVE-2026-31431) allows an unprivileged local attacker to write to the system page cache, potentially leading to local privilege...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-025",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-025",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-04-30Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23274 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-024",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-024",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-04-28Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS and Ubuntu nodes: CVE-2025-38248 For instructions and more details, see the following bulletins: GKE...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-023",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-023",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-04-28Updated: 2026-05-07Description Description Severity Notes 2026-05-07 Update: Added patch versions for Ubuntu node pools on GKE The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes:...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-022",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-022",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-04-16Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23209 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-021",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-021",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-04-14Description Description Severity Notes AMD reported a vulnerability in its firmware that could have allowed a malicious hypervisor to direct the IOMMU to write into the guest memory of AMD SEV-SNP enabled instances, compromising guest data integrity. Google rolled out a...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-020",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-020",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-04-14Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23231 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-019",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-019",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-04-14Description Description Severity Notes Researchers discovered a vulnerability in AMD firmware that could allow a malicious hypervisor to alter BIOS settings and Memory Mapped I/O (MMIO) routing configurations, compromising the confidentiality and integrity of Confidential VMs...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-018",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-018",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-04-07Updated: 2026-04-15Description Description Severity Notes 2026-04-15 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23111...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-017",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-017",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-04-02Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23273 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-016",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-016",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-03-27Updated: 2026-03-31Description Description Severity Notes 2026-03-31 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2025-38616...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-015",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-015",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-03-27Description Description Severity Notes The following vulnerability was discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23268. For more information, see the Compute Engine security bulletin: High CVE-2026-23268",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-014",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-014",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-03-14Updated: 2026-03-25Description Description Severity Notes 2026-03-25 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2025-38678...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-013",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-013",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-03-11Description Description Severity Notes The following vulnerabilities were discovered in Envoy Proxy: CVE-2026-26311 CVE-2026-26309 CVE-2026-26310 CVE-2026-26308 CVE-2026-26330 The following vulnerabilities were discovered in Istio: CVE-2026-31837 CVE-2026-31838 For instructions...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-012",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-012",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-02-20Description Description Severity Notes In Google Cloud Vertex AI, a vulnerability involving predictable bucket naming was identified in Vertex AI Experiments from version 1.21.0 up to (but not including) 1.133.0. What should I do? No customer action is needed for mitigation....",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-011",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-011",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-02-20Description Description Severity Notes A stored Cross-site Scripting (XSS) vulnerability in _genai/_evals_visualization was identified in Google google-cloud-aiplatform (Vertex AI Python SDK Visualization) on Exclusively-Hosted-Service. What should I do? Customers will need to...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-010",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-010",
+      "published": "2026-05-20T15:26:59+00:00",
+      "summary": "Published: 2026-02-13Description Description Severity Notes A vulnerability was identified in the Apigee platform that could have allowed a malicious actor with administrative or developer-level permissions in their own Apigee environment to elevate privileges and access cross-tenant data....",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
       "title": "Introducing RAMPART and Clarity: Open source tools to bring safety into Agent development workflow",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/05/20/introducing-rampart-and-clarity-open-source-tools-to-bring-safety-into-agent-development-workflow/",
       "published": "2026-05-20T15:00:00+00:00",
@@ -220,6 +1138,390 @@
       ]
     },
     {
+      "title": "CISA Adds Seven Known Exploited Vulnerabilities to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/05/20/cisa-adds-seven-known-exploited-vulnerabilities-catalog",
+      "published": "2026-05-20T12:00:00+00:00",
+      "summary": "CISA has added seven new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2008-4250 Microsoft Windows Buffer Overflow Vulnerability CVE-2009-1537 Microsoft DirectX NULL Byte Overwrite Vulnerability CVE-2009-3459 Adobe Acrobat and...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "SVD-2026-0516: Third-Party Package Updates in Splunk Add-on for Tomcat App - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0516",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk Add-on for Tomcat App version 3.3.1 and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0515: Third-Party Package Updates in Splunk User Behavior Analytics - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0515",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk User Behavior Analytics versions 5.4.5, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0514: Third-Party Package Updates in Splunk AppDynamics Machine Agent - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0514",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk AppDynamics Machine Agent version 26.4.0, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0513: Third-Party Package Updates in Splunk AppDynamics Java Agent - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0513",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk AppDynamics Java Agent version 26.4.0, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0512: Third-Party Package Updates in Splunk AppDynamics Private Synthetic Agent (PSA) - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0512",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk AppDynamics Private Synthetic Agent version 26.4.0, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0511: Third-Party Package Updates in Splunk AppDynamics Python Agent - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0511",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk AppDynamics Python Agent version 26.4.1, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0510: Third-Party Package Updates in Splunk AppDynamics Cluster Agent - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0510",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk AppDynamics Cluster Agent version 26.4.0, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0509: Third-Party Package Updates in Splunk AppDynamics Database Agent - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0509",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk AppDynamics Database Agent version 26.4.0, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0508: Third-Party Package Updates in Splunk AppDynamics Analytics Agent - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0508",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk AppDynamics Analytics Agent version 26.4.0, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0507: Third-Party Package Updates in Splunk AppDynamics Apache Web Server Agent - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0507",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk AppDynamics Apache Web Server Agent version 25.11.1, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0506: Third-Party Package Updates in Splunk Universal Forwarder - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0506",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk Universal Forwarder versions 9.4.11, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0505: Third-Party Package Updates in Splunk Enterprise - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0505",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk Enterprise versions 10.2.3, 10.0.6, 9.4.11, 9.3.12, and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0504: Denial of Service through coldToFrozen.sh Script in Splunk Enterprise",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0504",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "In Splunk Enterprise versions below 10.2.2, 10.0.5, 9.4.11, and 9.3.12, a low-privileged user that does not hold the ‘admin’ or ‘power’ Splunk roles could cause a Denial of Service by exploiting the coldToFrozen.sh script in the splunk_archiver app to rename critical Splunk directories, making the...",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0503: Sensitive Information Disclosure through Log Files in Splunk Enterprise",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0503",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "In Splunk Enterprise versions below 10.2.2 and 10.0.5, and Splunk Cloud Platform versions below 10.3.2512.8, 10.2.2510.11, 10.1.2507.21, and 10.0.2503.13, a user with a role that has access to the _internal index could view session cookies and response bodies that contain sensitive data.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-0502: Improper Access Control through Role Inheritance in Splunk AI Toolkit app",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0502",
+      "published": "2026-05-20T00:00:00+00:00",
+      "summary": "In Splunk AI Toolkit versions below 5.7.3, a low-privileged user that does not hold the ‘admin’ or ‘power’ roles could access confidential data that was restricted through srchFilter configurations on custom roles.The app contains an authorize.conf configuration file with a srchFilter entry that...",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
       "title": "Public preview: Expanded coverage and unified management for SQL VA Express Configuration",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/public-preview-expanded-coverage-and-unified-management-for-sql/ba-p/4514652",
       "published": "2026-05-19T21:11:13+00:00",
@@ -236,7 +1538,7 @@
         {
           "id": "defender-cloud",
           "name": "Microsoft Defender for Cloud",
-          "score": 9
+          "score": 11
         }
       ],
       "tags": [
@@ -260,11 +1562,131 @@
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 7
+          "score": 9
         }
       ],
       "tags": [
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "Siemens RUGGEDCOM APE1808 Devices",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-02",
+      "published": "2026-05-19T12:00:00+00:00",
+      "summary": "View CSAF Summary A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "ABB CoreSense HM and CoreSense M10",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-01",
+      "published": "2026-05-19T12:00:00+00:00",
+      "summary": "View CSAF Summary An update is available that resolves vulnerability in the product versions listed as affected in this advisory. A path traversal vulnerability in these products can allow unauthenticated users to gain access to restricted directories. Exploiting this vulnerability can lead to...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "ScadaBR",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-03",
+      "published": "2026-05-19T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to perform unauthenticated remote code execution. The following versions of ScadaBR are affected: ScadaBR 1.2.0 (CVE-2026-8602, CVE-2026-8603, CVE-2026-8604, CVE-2026-8605) CVSS Vendor Equipment...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Kieback & Peter DDC Building Controllers",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-05",
+      "published": "2026-05-19T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to take control of the victim's browser. The following versions of Kieback & Peter DDC Building Controllers are affected: DDC4002 <=1.12.14 (CVE-2026-4293) DDC4100 <=1.12.14 (CVE-2026-4293) DDC4200 <=1.12.14...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "ZKTeco CCTV Cameras",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-04",
+      "published": "2026-05-19T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could result in information disclosure, including capture of camera account credentials. The following versions of ZKTeco CCTV Cameras are affected: SSC335-GC2063-Face-0b77 Solution CVSS Vendor Equipment Vulnerabilities v3 9.1 ZKTeco...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
       ]
     },
     {
@@ -284,11 +1706,35 @@
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 2
+          "score": 3
         }
       ],
       "tags": [
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "CVE-2026-8838 - Remote Code Execution in amazon-redshift-python-driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-033-aws/",
+      "published": "2026-05-18T20:27:07+00:00",
+      "summary": "Bulletin ID: 2026-033-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 05/18/2026 13:45 PM PDT Description: amazon-redshift-python-driver is the official Python connector for Amazon Redshift. We identified a code injection issue in versions 2.1.13 and earlier that could...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
       ]
     },
     {
@@ -308,12 +1754,12 @@
         {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
-          "score": 9
+          "score": 10
         },
         {
           "id": "ai-security",
           "name": "AI Security",
-          "score": 2
+          "score": 4
         }
       ],
       "tags": [
@@ -362,7 +1808,7 @@
         {
           "id": "defender-endpoint",
           "name": "Microsoft Defender for Endpoint",
-          "score": 9
+          "score": 11
         }
       ],
       "tags": [
@@ -386,7 +1832,7 @@
         {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
-          "score": 9
+          "score": 10
         },
         {
           "id": "threat-intelligence",
@@ -397,6 +1843,150 @@
       "tags": [
         "Microsoft Sentinel",
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "CVE-2026-8686 - Heap out-of-bounds read in coreMQTT MQTT5 property parsing",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-032-aws/",
+      "published": "2026-05-15T19:10:10+00:00",
+      "summary": "Bulletin ID: 2026-032-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 05/15/2026 11:45 AM PDT Description: coreMQTT is a lightweight MQTT client library for embedded devices. We identified CVE-2026-8686, an issue where missing bounds validation in the MQTT v5.0 SUBACK...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 & CVE-2026-8597)",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/",
+      "published": "2026-05-15T19:02:12+00:00",
+      "summary": "Bulletin ID: 2026-031-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 05/14/2026 13:00 PM PDT Description: Amazon SageMaker Python SDK is an open-source library for training and deploying machine learning models on Amazon SageMaker. The ModelBuilder component...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/05/15/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-05-15T12:00:00+00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-42897 Microsoft Exchange Server Cross-Site Scripting Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Thinking carefully before adopting agentic AI",
+      "link": "https://www.ncsc.gov.uk/blogs/thinking-carefully-before-adopting-agentic-ai",
+      "published": "2026-05-15T12:00:00+00:00",
+      "summary": "When it comes to using agentic AI, make sure you can walk before you run.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "Ongoing updates on Copy.fail and variants",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-030-aws/",
+      "published": "2026-05-14T20:52:36+00:00",
+      "summary": "Bulletin ID: 2026-030-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 05/13/2026 10:00 PM PDT This is an ongoing issue. This bulletin will be updated as more information becomes available. Description: AWS is aware of the copy.fail or DirtyFrag class of issues - a set...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Fragnesia Local Privilege Escalation report via ESP-in-TCP in the Linux Kernel",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-029-aws/",
+      "published": "2026-05-14T20:52:35+00:00",
+      "summary": "Bulletin ID: 2026-029-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 05/13/2026 18:45 PM PDT This is an ongoing issue. Information is subject to change. Please refer to our Security Bulletin (ID: 2026-030-AWS) for the most updated patching information. Description:...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
       ]
     },
     {
@@ -416,12 +2006,12 @@
         {
           "id": "defender-endpoint",
           "name": "Microsoft Defender for Endpoint",
-          "score": 11
+          "score": 14
         },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 2
+          "score": 3
         }
       ],
       "tags": [
@@ -446,11 +2036,167 @@
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 7
+          "score": 8
         }
       ],
       "tags": [
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "Siemens gWAP",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-01",
+      "published": "2026-05-14T12:00:00+00:00",
+      "summary": "View CSAF Summary Siemens gPROMS Web Applications Publisher (gWAP) is affected by a remote code execution vulnerability introduced through a third-party component, namely the Axios HTTP client library. The vulnerability stems from a specific \"Gadget\" attack chain that allows prototype pollution in...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "CISA Advisories",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Siemens SIMATIC",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-10",
+      "published": "2026-05-14T12:00:00+00:00",
+      "summary": "View CSAF Summary SIMATIC CN 4100 contains multiple vulnerabilities which could potentially lead to a compromise in availability, integrity and confidentiality. Siemens has released a new version for SIMATIC CN 4100 and recommends to update to the latest version. The following versions of Siemens...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "CISA Advisories",
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "Siemens Ruggedcom Rox",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-12",
+      "published": "2026-05-14T12:00:00+00:00",
+      "summary": "View CSAF Summary Ruggedcom Rox contains an input validation vulnerability in the Scheduler functionality that could allow an authenticated remote attacker to execute arbitrary commands with root privileges on the underlying operating system. Siemens has released new versions for the affected...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Siemens Ruggedcom Rox",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-16",
+      "published": "2026-05-14T12:00:00+00:00",
+      "summary": "View CSAF Summary Ruggedcom Rox before v2.17.1 contain multiple third-party vulnerabilities. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Ruggedcom Rox are affected: RUGGEDCOM ROX MX5000...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Siemens Simcenter Femap",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-05",
+      "published": "2026-05-14T12:00:00+00:00",
+      "summary": "View CSAF Summary Simcenter Femap is affected by heap based buffer overflow vulnerability in Datakit library that could be triggered when the application reads files in IPT format. If a user is tricked to open a malicious file with the affected application, an attacker could leverage the...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Universal Robots Polyscope 5",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-17",
+      "published": "2026-05-14T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to bypass authentication and execute code. The following versions of Universal Robots Polyscope 5 are affected: Polyscope 5 <5.25.1 CVSS Vendor Equipment Vulnerabilities v3 9.8 Universal Robots Universal...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
       ]
     },
     {
@@ -502,6 +2248,30 @@
       ]
     },
     {
+      "title": "SVD-2026-0501: Third-Party Package Updates in Splunk/Splunk Docker - May 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0501",
+      "published": "2026-05-13T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in the “splunk/splunk” Docker image with image tags 10.2.2, 10.0.5, 9.4.10, 9.3.11 and “latest”.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
       "title": "Undermining the trust boundary: Investigating a stealthy intrusion through third-party compromise",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/05/12/undermining-the-trust-boundary-investigating-a-stealthy-intrusion-through-third-party-compromise/",
       "published": "2026-05-12T15:00:00+00:00",
@@ -518,7 +2288,7 @@
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 7
+          "score": 8
         }
       ],
       "tags": [
@@ -564,25 +2334,79 @@
       "board_id": "microsoftsentinelblog",
       "products": [
         {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 13
-        },
-        {
           "id": "purview",
           "name": "Microsoft Purview",
           "score": 11
         },
         {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 8
+          "score": 10
+        },
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
         }
       ],
       "tags": [
-        "Microsoft Sentinel",
         "Microsoft Purview",
-        "Threat Intelligence"
+        "Microsoft Sentinel",
+        "Threat Intelligence",
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "10 questions to ask when using AI models to find vulnerabilities",
+      "link": "https://www.ncsc.gov.uk/blogs/10-questions-ask-using-ai-models-find-vulnerabilities",
+      "published": "2026-05-11T12:00:00+00:00",
+      "summary": "Using Artificial Intelligence to find vulnerabilities can bring added security considerations.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-028-aws/",
+      "published": "2026-05-08T18:42:35+00:00",
+      "summary": "Bulletin ID: 2026-028-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/05/08 11:30 AM PDT Description: Amazon Redshift JDBC Driver is a Type 4 JDBC driver that provides database connectivity through the standard JDBC application program interfaces (APIs). We...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
       ]
     },
     {
@@ -602,12 +2426,12 @@
         {
           "id": "defender-cloud",
           "name": "Microsoft Defender for Cloud",
-          "score": 10
+          "score": 11
         },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 7
+          "score": 8
         }
       ],
       "tags": [
@@ -632,7 +2456,7 @@
         {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
-          "score": 9
+          "score": 10
         }
       ],
       "tags": [
@@ -680,7 +2504,7 @@
         {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
-          "score": 11
+          "score": 10
         },
         {
           "id": "threat-intelligence",
@@ -688,15 +2512,15 @@
           "score": 5
         },
         {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 2
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
         }
       ],
       "tags": [
         "Microsoft Sentinel",
         "Threat Intelligence",
-        "Microsoft Purview"
+        "AWS Security"
       ]
     },
     {
@@ -716,16 +2540,28 @@
         {
           "id": "defender-cloud",
           "name": "Microsoft Defender for Cloud",
-          "score": 9
+          "score": 11
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 4
         },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 2
+          "score": 3
         }
       ],
       "tags": [
         "Microsoft Defender for Cloud",
+        "AWS Security",
+        "Google Cloud Security",
         "Threat Intelligence"
       ]
     },
@@ -751,31 +2587,36 @@
         {
           "id": "defender-endpoint",
           "name": "Microsoft Defender for Endpoint",
-          "score": 9
+          "score": 11
         },
         {
           "id": "defender-identity",
           "name": "Microsoft Defender for Identity",
-          "score": 9
+          "score": 11
         },
         {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
-          "score": 9
-        },
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 6
+          "score": 10
         },
         {
           "id": "defender-cloud",
           "name": "Microsoft Defender for Cloud",
-          "score": 4
+          "score": 5
         },
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
+          "score": 5
+        },
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 5
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
           "score": 4
         }
       ],
@@ -784,9 +2625,10 @@
         "Microsoft Defender for Endpoint",
         "Microsoft Defender for Identity",
         "Microsoft Sentinel",
-        "Microsoft Purview",
         "Microsoft Defender for Cloud",
-        "Microsoft Defender for Office 365"
+        "Microsoft Defender for Office 365",
+        "Microsoft Purview",
+        "AWS Security"
       ]
     },
     {
@@ -806,7 +2648,7 @@
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 6
+          "score": 7
         }
       ],
       "tags": [
@@ -835,6 +2677,30 @@
       ],
       "tags": [
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "Preparing for a ‘vulnerability patch wave’",
+      "link": "https://www.ncsc.gov.uk/blogs/prepare-for-vulnerability-patch-wave",
+      "published": "2026-05-01T12:00:00+00:00",
+      "summary": "Organisations must act now to prepare for a wave of patches that will address decades of technical debt.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
       ]
     },
     {
@@ -902,11 +2768,59 @@
         {
           "id": "ai-security",
           "name": "AI Security",
-          "score": 2
+          "score": 4
         }
       ],
       "tags": [
         "AI Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-7424 - Integer Underflow in DHCPv6 Sub-Option Parser in FreeRTOS-Plus-TCP",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-022-aws/",
+      "published": "2026-04-29T19:30:04+00:00",
+      "summary": "Bulletin ID: 2026-022-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/29 12:20 PM PDT Description: FreeRTOS-Plus-TCP is an open-source, scalable TCP/IP stack for FreeRTOS. We identified CVE-2026-7424, where an integer underflow issue in the DHCPv6 sub-option...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
+      "published": "2026-04-29T19:25:28+00:00",
+      "summary": "Bulletin ID: 2026-021-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/29 12:00 PM PDT Description: FreeRTOS-Plus-TCP is a scalable, open source, and thread-safe TCP/IP stack for FreeRTOS. - CVE-2026-7422: Insufficient packet validation in the IPv4 and IPv6...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
       ]
     },
     {
@@ -926,12 +2840,12 @@
         {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
-          "score": 9
+          "score": 10
         },
         {
           "id": "security-copilot",
           "name": "Microsoft Security Copilot",
-          "score": 4
+          "score": 5
         }
       ],
       "tags": [
@@ -956,12 +2870,12 @@
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 9
+          "score": 11
         },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 2
+          "score": 3
         }
       ],
       "tags": [
@@ -1034,17 +2948,17 @@
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 9
+          "score": 11
         },
         {
           "id": "security-copilot",
           "name": "Microsoft Security Copilot",
-          "score": 9
+          "score": 11
         },
         {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
-          "score": 9
+          "score": 10
         }
       ],
       "tags": [
@@ -1075,27 +2989,27 @@
         {
           "id": "defender-cloud",
           "name": "Microsoft Defender for Cloud",
-          "score": 9
+          "score": 11
         },
         {
           "id": "defender-cloud-apps",
           "name": "Microsoft Defender for Cloud Apps",
-          "score": 9
+          "score": 11
         },
         {
           "id": "defender-endpoint",
           "name": "Microsoft Defender for Endpoint",
-          "score": 9
+          "score": 11
         },
         {
           "id": "defender-identity",
           "name": "Microsoft Defender for Identity",
-          "score": 9
+          "score": 11
         },
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 9
+          "score": 11
         },
         {
           "id": "threat-intelligence",
@@ -1136,12 +3050,12 @@
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 9
+          "score": 11
         },
         {
           "id": "security-copilot",
           "name": "Microsoft Security Copilot",
-          "score": 4
+          "score": 5
         }
       ],
       "tags": [
@@ -1195,7 +3109,7 @@
         {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
-          "score": 11
+          "score": 10
         }
       ],
       "tags": [
@@ -1228,6 +3142,30 @@
       ]
     },
     {
+      "title": "CVE-2026-7191- Arbitrary Code Execution via Sandbox Bypass in QnABot on AWS",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-020-aws/",
+      "published": "2026-04-27T20:21:23+00:00",
+      "summary": "Bulletin ID: 2026-020-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/27 13:15 PM PDT Description: QnABot on AWS is an open-source solution that provides a multi-channel, multi-language conversational interface powered by Amazon Lex, Amazon OpenSearch Service,...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
       "title": "Assess Secure Boot status with Microsoft Defender",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/assess-secure-boot-status-with-microsoft-defender/ba-p/4510356",
       "published": "2026-04-27T16:38:22+00:00",
@@ -1244,7 +3182,7 @@
         {
           "id": "defender-endpoint",
           "name": "Microsoft Defender for Endpoint",
-          "score": 11
+          "score": 14
         }
       ],
       "tags": [
@@ -1300,6 +3238,30 @@
       ]
     },
     {
+      "title": "Could your choice of metrics be harming your SOC?",
+      "link": "https://www.ncsc.gov.uk/blogs/could-your-choice-of-metrics-be-harming-your-soc",
+      "published": "2026-04-27T12:00:00+00:00",
+      "summary": "Poor metrics can render a well-intentioned security operation centre entirely ineffective.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
       "title": "Designing Outbound Connectivity for \"Private Subnets\" in Azure",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/designing-outbound-connectivity-for-quot-private-subnets-quot-in/ba-p/4514258",
       "published": "2026-04-23T21:28:09+00:00",
@@ -1346,17 +3308,167 @@
         {
           "id": "purview",
           "name": "Microsoft Purview",
-          "score": 13
+          "score": 11
         },
         {
           "id": "security-copilot",
           "name": "Microsoft Security Copilot",
-          "score": 9
+          "score": 11
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 5
         }
       ],
       "tags": [
         "Microsoft Purview",
-        "Microsoft Security Copilot"
+        "Microsoft Security Copilot",
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "Supporting AI adoption for UK cyber defence",
+      "link": "https://www.ncsc.gov.uk/blogs/supporting-ai-adoption-for-uk-cyber-defence",
+      "published": "2026-04-23T12:00:00+00:00",
+      "summary": "Adopting AI will require time, the development of new capabilities and careful oversight.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "Executive Summary: Defending against China-nexus covert networks of compromised devices",
+      "link": "https://www.ncsc.gov.uk/news/executive-summary-defending-against-china-nexus-covert-networks-of-compromised-devices",
+      "published": "2026-04-23T12:00:00+00:00",
+      "summary": "Organisations should map and baseline their edge device traffic, especially VPN and remote access connections, and adopt dynamic threat feed filtering that includes known covert network indicators.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "Defending against China-nexus covert networks of compromised devices",
+      "link": "https://www.ncsc.gov.uk/news/defending-against-china-nexus-covert-networks-of-compromised-devices",
+      "published": "2026-04-23T12:00:00+00:00",
+      "summary": "Explaining the widespread shift in tactics, techniques and procedures (TTPs) towards networks of compromised infrastructure, and how to defend against it",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "Passkeys are more secure than traditional ways to log in",
+      "link": "https://www.ncsc.gov.uk/blogs/passkeys-are-more-secure-than-traditional-ways-to-log-in",
+      "published": "2026-04-23T12:00:00+00:00",
+      "summary": "Passkeys offer a more usable, secure replacement for passwords and are already supported by most modern devices.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "NCSC: Leave passwords in the past - passkeys are the future",
+      "link": "https://www.ncsc.gov.uk/news/ncsc-leave-passwords-in-the-past-passkeys-are-the-future",
+      "published": "2026-04-23T12:00:00+00:00",
+      "summary": "Passkeys are the more secure and user-friendly login method and should be the default authentication option for consumers.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "International cyber agencies share fresh advice to defend against China-linked covert networks",
+      "link": "https://www.ncsc.gov.uk/news/international-cyber-agencies-fresh-advice-defend-against-china-linked-covert-networks",
+      "published": "2026-04-23T12:00:00+00:00",
+      "summary": "New advisory highlights how to defend against attacker tactics believed to be used by China-linked actors to hide malicious cyber activity.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
       ]
     },
     {
@@ -1381,18 +3493,30 @@
         {
           "id": "sentinel",
           "name": "Microsoft Sentinel",
-          "score": 9
+          "score": 10
         },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 7
+          "score": 8
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 4
         }
       ],
       "tags": [
         "Microsoft Defender XDR",
         "Microsoft Sentinel",
-        "Threat Intelligence"
+        "Threat Intelligence",
+        "AWS Security",
+        "Google Cloud Security"
       ]
     },
     {
@@ -1412,35 +3536,11 @@
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 9
+          "score": 11
         }
       ],
       "tags": [
         "Microsoft Defender for Office 365"
-      ]
-    },
-    {
-      "title": "Microsoft Sentinel MCP Server with external AI models (Claude) for natural language investigations",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/microsoft-sentinel-mcp-server-with-external-ai-models-claude-for/ba-p/4507013",
-      "published": "2026-04-22T21:35:29+00:00",
-      "summary": "Security teams are increasingly exploring how AI assistants support them in investigating incidents, asking questions, and exploring their data. At the same time, controlling how data is accessed remains critical. Today, we’re sharing how Sentinel can support a third-party AI assistant like Claude...",
-      "author": "mcasgrain",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel"
       ]
     }
   ]

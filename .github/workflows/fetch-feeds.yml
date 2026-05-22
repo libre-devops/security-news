@@ -1,4 +1,4 @@
-name: Update Microsoft Security News Feed
+name: Update Security News Feed
 
 on:
   schedule:
@@ -69,6 +69,38 @@ jobs:
           else
             git commit -m "🛡️ Update Microsoft security feeds - $(date -u '+%Y-%m-%d %H:%M UTC')"
             git push
+          fi
+
+      - name: Patch sw.js cache version and index.html SRI hash
+        run: |
+          # --- sw.js: bump CACHE_NAME with the current short commit SHA -------
+          # Using the short SHA means every deploy gets a unique cache name,
+          # forcing browsers to evict stale/tampered cached assets on activate.
+          SHORT_SHA=$(git rev-parse --short HEAD)
+          CACHE_VERSION="securitynews-${SHORT_SHA}"
+
+          sed -i "s|securitynews-v[^\"]*|${CACHE_VERSION}|g" sw.js
+
+          if grep -q "\"${CACHE_VERSION}\"" sw.js; then
+            echo "✅ sw.js cache version patched to: ${CACHE_VERSION}"
+          else
+            echo "❌ sw.js cache version patch failed — aborting deployment"
+            exit 1
+          fi
+
+          # --- index.html: regenerate SRI hash for app.js --------------------
+          HASH=$(openssl dgst -sha384 -binary js/app.js | openssl base64 -A)
+          SRI="sha384-${HASH}"
+
+          echo "Generated SRI hash: ${SRI}"
+
+          sed -i "s|integrity=\"sha384-[^\"]*\"|integrity=\"${SRI}\"|g" index.html
+
+          if grep -q "integrity=\"${SRI}\"" index.html; then
+            echo "✅ SRI hash successfully patched into index.html"
+          else
+            echo "❌ SRI patch failed — aborting deployment"
+            exit 1
           fi
 
       - name: Configure GitHub Pages

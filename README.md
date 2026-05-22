@@ -1,160 +1,239 @@
-# 🛡️ Microsoft Security News
+# 🛡️ Security News
 
-A lightweight Microsoft security intelligence aggregator that collects public Microsoft security content into a single searchable feed.
+A vendor-agnostic public cybersecurity intelligence aggregator that collects security advisories, threat intelligence, research, and product security updates into a single fast, searchable feed.
 
-Built for security engineers, defenders, cloud architects, SOC analysts, and anyone who got tired of checking a dozen Microsoft blogs manually.
+Built for security engineers, defenders, cloud architects, SOC analysts, incident responders, and anyone tired of manually checking a dozen vendor security portals every day.
 
-**Live site:** https://security.libredevops.org
-
-**RSS feed:** https://security.libredevops.org/data/feed.xml
+**🌐 Live site:** https://security.libredevops.org
+**📡 RSS feed:** https://security.libredevops.org/data/feed.xml
 
 ---
 
 ## Features
 
-- 📰 **Aggregated Microsoft security intelligence**
-  Collects Microsoft security content from official public feeds including:
+* 📰 **Multi-vendor security aggregation**
+  Collects public cybersecurity content from major security vendors, advisory feeds, threat intelligence sources, and public security authorities.
 
-  - Microsoft Security Blog
-  - Microsoft Security Response Center
-  - Microsoft Threat Intelligence
-  - Microsoft Sentinel
-  - Microsoft Defender XDR
-  - Microsoft Defender for Endpoint
-  - Microsoft Defender for Identity
-  - Microsoft Defender for Office 365
-  - Microsoft Defender for Cloud
-  - Microsoft Security Copilot
-  - Microsoft Purview
-  - Microsoft AI Blog
-  - Azure Network Security
-  - Core Infrastructure & Security
+* 🔍 **Fast full-text search**
+  Search across:
 
-- 🔍 **Fast search**
-  Search across article titles, summaries, sources, and tagged products
+  * article titles
+  * summaries
+  * vendors
+  * sources
+  * categories
+  * threat intelligence content
 
-- 🏷️ **Dynamic product categorisation**
-  Automatically classifies articles into:
+* 🏷️ **Automatic categorisation**
+  Dynamically classifies content into security product and intelligence categories.
 
-  - Microsoft Sentinel
-  - Microsoft Defender XDR
-  - Microsoft Defender for Endpoint
-  - Microsoft Defender for Identity
-  - Microsoft Defender for Office 365
-  - Microsoft Defender for Cloud
-  - Microsoft Security Copilot
-  - Microsoft Purview
-  - Threat Intelligence
-  - AI Security
-  - General Security
+* ⭐ **Bookmarks**
+  Save articles locally in browser storage for later review.
 
-- ⭐ **Bookmarks**
-  Save articles locally in browser storage
+* 🌙 **Theme support**
+  Dark and light mode support.
 
-- 🌙 **Theme support**
-  Dark mode and light mode support
+* 📱 **Responsive UI**
+  Optimised for desktop, tablet, and mobile.
 
-- 📱 **Responsive design**
-  Desktop, tablet, and mobile support
+* 📡 **RSS output**
+  Consume the aggregated feed externally:
 
-- 📡 **RSS feed support**
-  Subscribe externally:
+```text
+https://security.libredevops.org/data/feed.xml
+```
 
-  ```text
-  https://security.libredevops.org/data/feed.xml
-  ```
+* ⚡ **Progressive Web App (PWA)**
+  Installable with offline caching support.
 
-- ⚡ **Progressive Web App**
-  Installable application with service worker caching
+* 🤖 **Automated updates**
+  Feed ingestion and deployment runs every 6 hours.
 
-- 🤖 **Automated updates**
-  GitHub Actions refreshes content every 6 hours
-
-- 📊 **Pipeline observability**
+* 📊 **Pipeline observability**
   Tracks:
 
-  - feed changes
-  - newly added articles
-  - removed articles
-  - duplicate removal
-  - retention filtering
+  * newly added articles
+  * removed articles
+  * duplicate article removal
+  * stale content expiry
+  * feed diff summaries
 
-- 🔐 **Hosted securely**
-  GitHub Pages with custom domain and HTTPS
+* 🔐 **Security-hardened frontend**
+  Includes:
+
+  * strict Content Security Policy (CSP)
+  * Referrer Policy
+  * DOM-safe rendering
+  * URL protocol allowlisting
+  * service worker validation
+  * feed sanitisation
+  * defensive localStorage handling
+  * same-origin cache enforcement
+
+* 🌍 **Static hosting**
+  No backend. No accounts. No cookies. No tracking.
+
+---
+
+## Current Source Coverage
+
+### Microsoft
+
+#### Core Security
+
+* Microsoft Security Blog
+* Microsoft Security Response Center (MSRC)
+* Microsoft Threat Intelligence
+
+#### Defender Ecosystem
+
+* Microsoft Defender XDR
+* Microsoft Defender for Endpoint
+* Microsoft Defender for Identity
+* Microsoft Defender for Office 365
+* Microsoft Defender for Cloud
+
+#### Security Operations
+
+* Microsoft Sentinel
+* Azure Network Security
+* Core Infrastructure & Security
+
+#### AI / Governance
+
+* Microsoft Security Copilot
+* Microsoft Purview
+* Microsoft AI Blog
+
+---
+
+### Cloud Vendors
+
+* AWS Security Bulletins
+* Google Cloud Security Bulletins
+
+---
+
+### Security Vendors
+
+* Splunk Security Advisories
+
+---
+
+### Public Security Authorities
+
+* CISA Advisories / KEV / Alerts
+* UK NCSC Guidance / Alerts
 
 ---
 
 ## Architecture
 
 ```text
-Microsoft RSS / Atom Feeds
-          ↓
+Public RSS / Atom / XML Feeds
+            │
+            ▼
 Python Feed Aggregator
-          ↓
-Normalisation
-Classification
-Deduplication
-Retention Filtering
-Diff Analysis
-          ↓
-feeds.json + RSS XML
-          ↓
+            │
+            ▼
+Validation / Parsing
+            │
+            ├── Normalisation
+            ├── Categorisation
+            ├── Deduplication
+            ├── Retention Filtering
+            ├── Feed Diff Analysis
+            └── RSS Regeneration
+            │
+            ▼
+Generated Outputs
+    ├── data/feeds.json
+    └── data/feed.xml
+            │
+            ▼
 GitHub Actions CI/CD
-          ↓
-GitHub Pages
-          ↓
-Frontend (Vanilla JS + PWA)
+            │
+            ▼
+GitHub Pages Deployment
+            │
+            ▼
+Security-Hardened Static Frontend
+(Vanilla JS + CSS + HTML + PWA)
 ```
 
 ---
 
-## Source Coverage
+## Security Design
 
-### Core Microsoft Security
-- Microsoft Security Blog
-- Microsoft Security Response Center (MSRC)
-- Microsoft Threat Intelligence
+Although this is a static public website, it has been deliberately hardened.
 
-### Defender Ecosystem
-- Microsoft Defender XDR
-- Microsoft Defender for Endpoint
-- Microsoft Defender for Identity
-- Microsoft Defender for Office 365
-- Microsoft Defender for Cloud
+### Frontend protections
 
-### Security Operations
-- Microsoft Sentinel
-- Core Infrastructure & Security
-- Azure Network Security
+Implemented protections include:
 
-### AI / Data Security
-- Microsoft Security Copilot
-- Microsoft Purview
-- Microsoft AI Blog
+* Strict Content Security Policy
+* Referrer Policy
+* safe DOM rendering (`createElement`, `textContent`)
+* URL protocol allowlisting (`http` / `https`)
+* bookmark validation
+* defensive localStorage parsing
+* product/category allowlisting
+* service worker cache validation
+* same-origin request enforcement
+* safe offline fallback behaviour
+
+### Feed protections
+
+Feed ingestion includes:
+
+* external feed validation
+* malformed entry rejection
+* feed sanitisation
+* article truncation guards
+* deduplication logic
+* stale content expiry
+* defensive XML generation
+
+### Privacy
+
+This project:
+
+* does not require accounts
+* does not use cookies
+* does not track visitors
+* does not store personal data
+* does not require authentication
 
 ---
 
 ## Local Development
 
-Install dependencies:
+### Install dependencies
 
 ```bash
 pip install -r scripts/requirements.txt
 ```
 
-Generate feed data:
+### Generate feed data
 
 ```bash
 python scripts/fetch_feeds.py
 ```
 
-Serve locally:
+This generates:
+
+```text
+data/feeds.json
+data/feed.xml
+```
+
+### Run locally
 
 ```bash
 python -m http.server 8000
 ```
 
-Browse:
+Browse to:
 
 ```text
 http://localhost:8000
@@ -164,131 +243,126 @@ http://localhost:8000
 
 ## Deployment
 
-Deployment is fully automated via GitHub Actions.
+Deployment is automated through GitHub Actions.
 
-Refresh cadence:
+### Schedule
 
-```text
-Every 6 hours (UTC)
-```
+Runs every 6 hours:
 
-Cron schedule:
-
-```yaml
+```cron
 0 */6 * * *
 ```
 
-Pipeline workflow:
+### Pipeline flow
 
-1. Fetch public Microsoft security feeds
-2. Normalise feed content
-3. Apply product classification
-4. Deduplicate articles
-5. Remove content older than retention threshold
-6. Compare against previous feed state
-7. Generate:
-   - `data/feeds.json`
-   - `data/feed.xml`
-8. Publish static site to GitHub Pages
+Each run:
 
----
-
-## Setup
-
-### Create repository
-
-```bash
-gh repo create microsoft-security-news --public --source=. --remote=origin
-```
-
-### Push code
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git push -u origin master
-```
-
-### Configure GitHub Pages
-
-Repository settings:
-
-```text
-Settings → Pages
-```
-
-Deployment source:
-
-```text
-GitHub Actions
-```
-
-### Configure custom domain
-
-Set:
-
-```text
-security.libredevops.org
-```
-
-DNS:
-
-```dns
-CNAME security libre-devops.github.io
-```
-
-Wait for GitHub TLS provisioning.
-
-### Initial run
-
-Run workflow manually:
-
-```text
-Actions → Update Microsoft Security News Feed → Run workflow
-```
+1. Fetch public feeds
+2. Validate and parse content
+3. Categorise articles
+4. Deduplicate overlapping entries
+5. Remove stale content
+6. Compare against previous state
+7. Generate JSON + RSS output
+8. Publish pipeline summary
+9. Commit updated feed data
+10. Deploy static site
 
 ---
 
 ## Technology Stack
 
-- Python 3.14
-- feedparser
-- GitHub Actions
-- GitHub Pages
-- Vanilla JavaScript
-- HTML5 / CSS3
-- Progressive Web App
-- Service Worker caching
+### Backend
+
+* Python 3.14
+* feedparser
+* defusedxml
+
+### Frontend
+
+* Vanilla JavaScript
+* HTML5
+* CSS3
+* Progressive Web App (PWA)
+* Service Workers
+
+### Platform
+
+* GitHub Actions
+* GitHub Pages
+* Custom domain + HTTPS
+
+---
+
+## Security Tooling
+
+Recommended scanning:
+
+### Python
+
+```bash
+bandit -r scripts
+pip-audit
+```
+
+### Frontend
+
+```bash
+semgrep --config=auto .
+```
 
 ---
 
 ## Roadmap
 
-Potential future improvements:
+Potential future expansion:
 
-- [ ] Additional Microsoft security sources
-- [ ] Smarter advisory ingestion
-- [ ] Severity-based MSRC filtering
-- [ ] Microsoft 365 roadmap integration
-- [ ] Public Microsoft service health feeds
-- [ ] Optional vendor expansion
-  - AWS
-  - Google Cloud
-  - Palo Alto
-  - CrowdStrike
-- [ ] Threat campaign highlighting
-- [ ] Digest / summary mode
-- [ ] Email subscriptions
-- [ ] Internal tenant integrations (private mode)
+### Vendors
+
+* CrowdStrike
+* Palo Alto Networks
+* Cisco Talos
+* Mandiant
+* Elastic Security
+* Tenable
+* Qualys
+* Rapid7
+
+### Intelligence
+
+* CVE enrichment
+* CVSS scoring
+* EPSS scoring
+* exploit intelligence overlays
+* vendor severity normalisation
+
+### Features
+
+* advanced filtering
+* JSON API
+* daily digest mode
+* saved views
+* notifications
+* alert subscriptions
+
+### Private Mode
+
+Potential future support for authenticated feeds:
+
+* Microsoft Message Center
+* Microsoft Service Health
+* tenant-specific advisory ingestion
+* enterprise private feeds
 
 ---
 
 ## Inspiration / Attribution
 
-Project concept inspired by Ricardo Martins’ excellent Azure feed aggregator:
+Inspired by Ricardo Martins’ excellent Azure feed aggregator:
 
 https://azurefeed.news
+
+The original concept evolved into a broader public cybersecurity intelligence platform.
 
 ---
 
