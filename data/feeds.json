@@ -1,74 +1,8 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-05-23T03:38:50.759674+00:00",
-  "totalArticles": 132,
+  "lastUpdated": "2026-05-23T08:25:04.899054+00:00",
+  "totalArticles": 131,
   "articles": [
-    {
-      "title": "Redefining Security for an AI Driven World",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/redefining-security-for-an-ai-driven-world/ba-p/4521961",
-      "published": "2026-05-22T21:14:55+00:00",
-      "summary": "Vendors are being challenged to help customers address these challenges not as a point-solution vendor but as an end-to-end security and AI platform partner. By integrating identity, data governance, threat protection, and AI services into a unified ecosystem, Microsoft can deliver coordinated...",
-      "author": "edgarus71",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 11
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        },
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 11
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "AI Security",
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Cloud",
-        "Microsoft Defender for Endpoint",
-        "Microsoft Purview",
-        "Microsoft Security Copilot",
-        "Threat Intelligence",
-        "Microsoft Sentinel"
-      ]
-    },
     {
       "title": "Microsoft recognized as a Leader in The Forrester Wave™ for Workforce Identity Security Platforms",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/05/22/microsoft-recognized-as-a-leader-in-the-forrester-wave-for-workforce-identity-security-platforms/",
@@ -154,6 +88,30 @@
       "vendor": "Microsoft",
       "source_category": "Security Blog",
       "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "What Changed in RC4 with the January 2026 Windows Update and Why it is Important",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/what-changed-in-rc4-with-the-january-2026-windows-update-and-why/ba-p/4504732",
+      "published": "2026-05-22T14:40:47+00:00",
+      "summary": "In case you haven’t heard, RC4 is not secure and has been deprecated. In this article, I will discuss what changed with the January 2026 Windows Update and why it is important to start auditing and remediate RC4 usage is your environment. Starting with the January 13, 2026, Windows security...",
+      "author": "Elanor92",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
       "products": [
         {
           "id": "general-security",
@@ -3517,30 +3475,6 @@
         "Threat Intelligence",
         "AWS Security",
         "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "Declutter and Defend: Reducing promotional mail noise with Microsoft Defender",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/declutter-and-defend-reducing-promotional-mail-noise-with/ba-p/4511732",
-      "published": "2026-04-23T03:59:21+00:00",
-      "summary": "Enterprise inboxes are overwhelmed with graymail — legitimate, bulk email like newsletters, vendor promotions, and product updates that isn't malicious but buries the messages that matter. When high volumes of these mails land in the inbox, it crowds out priority communications and can dull...",
-      "author": "FaithEbenezerOquong",
-      "source": "Microsoft Defender for Office 365",
-      "source_id": "defender_office",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Email Security",
-      "board_id": "microsoftdefenderforoffice365blog",
-      "products": [
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Office 365"
       ]
     }
   ]
