@@ -1,8 +1,56 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-05-28T10:11:34.190944+00:00",
+  "lastUpdated": "2026-05-28T16:09:01.463577+00:00",
   "totalArticles": 118,
   "articles": [
+    {
+      "title": "The Gentlemen ransomware: Dissecting a self-propagating Go encryptor",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/28/the-gentlemen-ransomware-dissecting-a-self-propagating-go-encryptor/",
+      "published": "2026-05-28T15:00:00+00:00",
+      "summary": "Microsoft Threat Intelligence presents a comprehensive analysis of The Gentlemen, a Go-based ransomware deployed by affiliates of Storm-2697 that combines per-file ephemeral key encryption with an aggressive self-propagation module to deploy itself across an entire network using series of...",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "How to Manage RC4 Hardening – Definitive Guide",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/how-to-manage-rc4-hardening-definitive-guide/ba-p/4515923",
+      "published": "2026-05-28T12:20:17+00:00",
+      "summary": "How to Manage RC4 Hardening – Definitive Guide This article is a technical continuation of the RC4 deprecation / Kerberos hardening work I covered in my previous article last month. If you already went through the “why” (risk of RC4, what changes Microsoft is rolling out, and the high-level...",
+      "author": "Elanor92",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "GCP-2026-028",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-028",
@@ -1930,30 +1978,6 @@
       ]
     },
     {
-      "title": "How Storm-2949 turned a compromised identity into a cloud-wide breach",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/18/storm-2949-turned-compromised-identity-into-cloud-wide-breach/",
-      "published": "2026-05-18T22:42:50+00:00",
-      "summary": "Storm-2949 turned stolen credentials into a cloud-wide breach, moving from identity compromise to large-scale data theft without using malware. This incident shows how threat actors can exploit trusted systems to operate undetected. The post How Storm-2949 turned a compromised identity into a...",
-      "author": "Microsoft Defender Security Research Team",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ]
-    },
-    {
       "title": "CVE-2026-8838 - Remote Code Execution in amazon-redshift-python-driver",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-033-aws/",
       "published": "2026-05-18T20:27:07+00:00",
@@ -2917,30 +2941,6 @@
       "tags": [
         "Microsoft Defender for Office 365",
         "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "How to Manage RC4 Hardening – Definitive Guide",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/how-to-manage-rc4-hardening-definitive-guide/ba-p/4515923",
-      "published": "2026-04-29T15:59:22+00:00",
-      "summary": "How to Manage RC4 Hardening – Definitive Guide This article is a technical continuation of the RC4 deprecation / Kerberos hardening work I covered in my previous article last month. If you already went through the “why” (risk of RC4, what changes Microsoft is rolling out, and the high-level...",
-      "author": "Elanor92",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
