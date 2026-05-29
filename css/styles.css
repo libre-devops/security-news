@@ -52,6 +52,9 @@ body {
   color: var(--text-primary);
   min-height: 100vh;
   line-height: 1.6;
+  /* Guard against any child overflowing horizontally and pulling the page
+     wider than the viewport, which leaves a blank strip beside the header. */
+  overflow-x: hidden;
 }
 
 /* ===== Header ===== */
@@ -351,6 +354,10 @@ main {
   border-radius: var(--radius-md);
   padding: 1.2rem;
   transition: all var(--transition);
+  /* Allow the card to shrink below its content's intrinsic width inside the
+     grid track; without this a long unbreakable token (URL, hash) widens the
+     track and overflows the page on Chrome mobile. */
+  min-width: 0;
 }
 
 .article-card:hover {
@@ -391,6 +398,7 @@ main {
   font-size: 1.05rem;
   font-weight: 700;
   margin: 0.8rem 0 0.5rem;
+  overflow-wrap: anywhere;
 }
 
 .article-title a {
@@ -411,12 +419,14 @@ main {
   color: var(--text-tertiary);
   margin-bottom: 0.75rem;
   line-height: 1.4;
+  overflow-wrap: anywhere;
 }
 
 .article-summary {
   color: var(--text-secondary);
   font-size: 0.92rem;
   line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 /* ===== Toast ===== */
