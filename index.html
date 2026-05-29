@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Security-Policy"
           content="
       default-src 'self';
-      script-src  'self';
+      script-src  'self' 'sha256-8hoMaND3srk56hM6g9HjgkBSQddZJXI46A8OoRoJJpA=';
       style-src   'self';
       img-src     'self' data:;
       connect-src 'self';
@@ -59,13 +59,10 @@
     <link rel="icon" href="favicon.ico"/>
     <link rel="stylesheet" href="css/styles.css"/>
 
-    <script>
-        (function () {
-            var saved = localStorage.getItem("securitynews-theme");
-            var theme = saved === "light" ? "light" : "dark";
-            document.documentElement.setAttribute("data-theme", theme);
-        })();
-    </script>
+    <!-- Inline theme bootstrap: applies the saved theme before first paint to
+         avoid a flash. Whitelisted in the CSP above by its sha256 hash, so it
+         must stay byte-identical to that hash — regenerate the hash if edited. -->
+    <script>(function(){var s=localStorage.getItem("securitynews-theme");document.documentElement.setAttribute("data-theme",s==="light"?"light":"dark");})();</script>
 </head>
 
 <body>
@@ -104,6 +101,7 @@
                     id="bookmarks-toggle"
                     type="button"
                     aria-label="Toggle bookmarked articles"
+                    aria-pressed="false"
             >
                 ⭐ Bookmarks
             </button>
@@ -183,7 +181,7 @@
 <script
         src="js/app.js"
         defer
-        integrity="sha384-TjqfBPtiE9ECZ4qP67dhpyqmUGCRSApRwW2xFJYnAXCR6P4ouYXfLOa4cDNCsyK3"
+        integrity="sha384-FHmVFta4SqpKkHPohMLRTFQjmeURqRbFM96FaG9v7x8s5Scs9ZpRJsbLpLIIfb8d"
         crossorigin="anonymous"
 ></script>
 </body>

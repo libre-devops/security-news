@@ -3,7 +3,7 @@
 // ---------------------------------------------------------------------------
 // Cache config
 // ---------------------------------------------------------------------------
-const CACHE_NAME = "securitynews-v5";
+const CACHE_NAME = "securitynews-v6";
 
 // Maximum age to retain a cached feed response (24 hours).
 // Feed entries older than this are evicted on activate.
@@ -17,7 +17,6 @@ const STATIC_ASSETS = [
   "/sw.js",
   "/manifest.json",
   "/favicon.ico",
-  "/security-libre-devops-black.png",
   "/security-libre-devops-white.png",
   "/icons/icon-192.png",
   "/icons/icon-512.png",

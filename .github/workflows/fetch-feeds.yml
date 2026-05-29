@@ -71,7 +71,7 @@ jobs:
             git push
           fi
 
-      - name: Patch sw.js cache version and index.html SRI hash
+      - name: Patch sw.js cache version, index.html SRI and CSP hashes
         run: |
           # --- sw.js: bump CACHE_NAME with the current short commit SHA -------
           # Using the short SHA means every deploy gets a unique cache name,
@@ -103,13 +103,48 @@ jobs:
             exit 1
           fi
 
+          # --- index.html: regenerate CSP hash for the inline theme script ----
+          # The inline theme bootstrap is whitelisted in the CSP by its sha256.
+          # Recompute it from the live script body so editing that script can
+          # never silently ship a CSP that blocks it (which would break theming
+          # and log a violation). Mirrors the SRI patch above.
+          SCRIPT_BODY=$(grep -oP '(?<=<script>).*?(?=</script>)' index.html | head -1)
+
+          if [ -z "${SCRIPT_BODY}" ]; then
+            echo "❌ Could not extract inline theme script body — aborting deployment"
+            exit 1
+          fi
+
+          CSP_HASH="sha256-$(printf '%s' "${SCRIPT_BODY}" | openssl dgst -sha256 -binary | openssl base64 -A)"
+
+          echo "Generated CSP script hash: ${CSP_HASH}"
+
+          sed -i "s|'sha256-[A-Za-z0-9+/=]*'|'${CSP_HASH}'|g" index.html
+
+          if grep -q "'${CSP_HASH}'" index.html; then
+            echo "✅ CSP script hash successfully patched into index.html"
+          else
+            echo "❌ CSP hash patch failed — aborting deployment"
+            exit 1
+          fi
+
+      - name: Stage site for deploy
+        run: |
+          # Publish only what the live site serves. This keeps .git/, scripts/,
+          # .github/, docs and the unused source logos out of the Pages artifact.
+          # Runs after the patch step so the patched sw.js/index.html are staged.
+          rm -rf _site
+          mkdir -p _site
+          cp index.html sw.js manifest.json favicon.ico security-libre-devops-white.png _site/
+          cp -r css js data icons _site/
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: .
+          path: _site
 
       - name: Deploy Pages
         id: deployment

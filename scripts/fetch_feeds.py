@@ -8,6 +8,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import socket
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from html import unescape
@@ -25,6 +26,11 @@ SITE_DESCRIPTION = (
 MAX_ARTICLE_AGE_DAYS = 30
 MAX_RSS_ITEMS = 100
 DATA_FILE = "data/feeds.json"
+
+# Per-request socket timeout (seconds). feedparser uses urllib under the hood,
+# which has no default timeout — without this a single hung feed would stall
+# the whole run until the CI job-level timeout kills it.
+FEED_TIMEOUT_SECONDS = 20
 
 
 @dataclass(frozen=True)
@@ -500,7 +506,7 @@ def generate_diff(previous: List[dict], current: List[dict]) -> None:
 
         added_articles = sorted(
             [current_map[key] for key in added],
-            key=lambda x: x["published"],
+            key=lambda x: x.get("published", ""),
             reverse=True,
         )
 
@@ -512,7 +518,7 @@ def generate_diff(previous: List[dict], current: List[dict]) -> None:
 
         removed_articles = sorted(
             [previous_map[key] for key in removed],
-            key=lambda x: x["published"],
+            key=lambda x: x.get("published", ""),
             reverse=True,
         )
 
@@ -647,6 +653,10 @@ def main():
     print("=" * 60)
     print(SITE_NAME)
     print("=" * 60)
+
+    # Apply a network timeout to every feed fetch so one slow source can't
+    # stall the entire run.
+    socket.setdefaulttimeout(FEED_TIMEOUT_SECONDS)
 
     previous_articles = load_previous_articles()
     articles = []

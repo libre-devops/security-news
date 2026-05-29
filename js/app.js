@@ -66,9 +66,6 @@
     const toastEl = document.getElementById("toast");
     const bookmarksToggle = document.getElementById("bookmarks-toggle");
 
-    // Single reusable element for HTML escaping — never used for rendering.
-    const escapeDiv = document.createElement("div");
-
     // ---------------------------------------------------------------------------
     // Initialisation
     // ---------------------------------------------------------------------------
@@ -548,15 +545,6 @@
     }
 
     // ---------------------------------------------------------------------------
-    // Utility — HTML escaping (kept for any legacy call-sites)
-    // ---------------------------------------------------------------------------
-    function escapeHtml(str) {
-        if (!str) return "";
-        escapeDiv.textContent = str;
-        return escapeDiv.innerHTML;
-    }
-
-    // ---------------------------------------------------------------------------
     // Event listeners
     // ---------------------------------------------------------------------------
     function setupEventListeners() {
@@ -581,6 +569,7 @@
         bookmarksToggle.addEventListener("click", () => {
             showBookmarksOnly = !showBookmarksOnly;
             bookmarksToggle.classList.toggle("active", showBookmarksOnly);
+            bookmarksToggle.setAttribute("aria-pressed", String(showBookmarksOnly));
             applyFilters();
         });
 
