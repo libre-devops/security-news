@@ -1,8 +1,104 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-05-29T15:49:41.869425+00:00",
-  "totalArticles": 114,
+  "lastUpdated": "2026-05-29T20:31:45.869551+00:00",
+  "totalArticles": 111,
   "articles": [
+    {
+      "title": "Microsoft is named a Leader in the 2026 Gartner® Magic Quadrant™ for Endpoint Protection",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/29/microsoft-is-named-a-leader-in-the-2026-gartner-magic-quadrant-for-endpoint-protection/",
+      "published": "2026-05-29T16:00:00+00:00",
+      "summary": "Microsoft is named a Leader in the 2026 Gartner® Magic Quadrant™ for Endpoint Protection. The post Microsoft is named a Leader in the 2026 Gartner® Magic Quadrant™ for Endpoint Protection appeared first on Microsoft Security Blog.",
+      "author": "Rob Lefferts",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "What’s new in Microsoft Sentinel: May 2026",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-may-2026/ba-p/4523419",
+      "published": "2026-05-29T16:00:00+00:00",
+      "summary": "Welcome to the May edition of What's new in Microsoft Sentinel. This month’s updates focus on unified role-based access control (RBAC), ecosystem breadth, AI-agent security, and high-assurance identity. RBAC and row-level scoping are now generally available, giving security teams a single, granular...",
+      "author": "Sowmys",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 5
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Purview",
+        "Microsoft Sentinel",
+        "Microsoft Defender XDR",
+        "Threat Intelligence",
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/05/29/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-05-29T12:00:00+00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-0257 Palo Alto Networks PAN-OS Authentication Bypass Vulnerability This type of vulnerability is a frequent attack vectors for malicious cyber actors and...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
     {
       "title": "Azure DDoS Protection & Azure WAF: A Layered Defense for Modern DDoS Attacks",
       "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/azure-ddos-protection-azure-waf-a-layered-defense-for-modern/ba-p/4523745",
@@ -124,30 +220,6 @@
       ]
     },
     {
-      "title": "Schnieider Electric EcoStruxure Machine Expert HVAC",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-07",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcostruxureTM Machine Expert HVAC product. The [EcostruxureTM Machine Expert HVAC](https://www.se.com/ww/en/download/document/EcoStruxureME_HVAC/) product is a programming software for Modicon M171-M172 logic controllers....",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
       "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-02",
       "published": "2026-05-28T12:00:00+00:00",
@@ -200,6 +272,30 @@
       "link": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-148-01",
       "published": "2026-05-28T12:00:00+00:00",
       "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to read and write arbitrary handle values and change clinical readings, which could result in taking control of the device and lead to patient harm. The following versions of Fourth Frontier Frontier X Mobile...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Schnieider Electric EcoStruxure Machine Expert HVAC",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-07",
+      "published": "2026-05-28T12:00:00+00:00",
+      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcostruxureTM Machine Expert HVAC product. The [EcostruxureTM Machine Expert HVAC](https://www.se.com/ww/en/download/document/EcoStruxureME_HVAC/) product is a programming software for Modicon M171-M172 logic controllers....",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -829,30 +925,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/05/22/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "published": "2026-05-22T12:00:00+00:00",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-9082 Drupal Core SQL Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
       ]
     },
     {
@@ -1609,30 +1681,6 @@
       ],
       "tags": [
         "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "Introducing RAMPART and Clarity: Open source tools to bring safety into Agent development workflow",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/20/introducing-rampart-and-clarity-open-source-tools-to-bring-safety-into-agent-development-workflow/",
-      "published": "2026-05-20T15:00:00+00:00",
-      "summary": "The AI systems shipping inside enterprises today are fundamentally different from the ones we were building even two years ago, because they have moved well past answering questions and into accessing your email, retrieving records from your CRM, writing and executing code, and taking actions on...",
-      "author": "Ram Shankar Siva Kumar",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
@@ -2899,114 +2947,6 @@
       ],
       "tags": [
         "AI Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-7424 - Integer Underflow in DHCPv6 Sub-Option Parser in FreeRTOS-Plus-TCP",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-022-aws/",
-      "published": "2026-04-29T19:30:04+00:00",
-      "summary": "Bulletin ID: 2026-022-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/29 12:20 PM PDT Description: FreeRTOS-Plus-TCP is an open-source, scalable TCP/IP stack for FreeRTOS. We identified CVE-2026-7424, where an integer underflow issue in the DHCPv6 sub-option...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
-      "published": "2026-04-29T19:25:28+00:00",
-      "summary": "Bulletin ID: 2026-021-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/29 12:00 PM PDT Description: FreeRTOS-Plus-TCP is a scalable, open source, and thread-safe TCP/IP stack for FreeRTOS. - CVE-2026-7422: Insufficient packet validation in the IPv4 and IPv6...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "Use Data Wrangler to Streamline Your Microsoft Sentinel data lake Notebook Development",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/use-data-wrangler-to-streamline-your-microsoft-sentinel-data/ba-p/4490214",
-      "published": "2026-04-29T19:18:17+00:00",
-      "summary": "One of the many exciting features of the Microsoft Sentinel data lake is a built-in advanced analytics engine, powered by Apache Spark. This Spark cluster has access to data that is within Sentinel data lake, and can work with this data through Jupyter notebooks in Visual Studio Code. As with any...",
-      "author": "David Hoerster",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Microsoft Security Copilot"
-      ]
-    },
-    {
-      "title": "Granular email content access with unified RBAC – now the default for new Defender tenants",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/granular-email-content-access-with-unified-rbac-now-the-default/ba-p/4505344",
-      "published": "2026-04-29T16:00:00+00:00",
-      "summary": "Email investigations are a key part of detecting and responding to phishing and malware. As security workflows continue to evolve, there is an increasing need to align email content visibility more closely with specific roles and scenarios, such as Tier‑1 analysis or specialized workflows like...",
-      "author": "VipulPandey",
-      "source": "Microsoft Defender for Office 365",
-      "source_id": "defender_office",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Email Security",
-      "board_id": "microsoftdefenderforoffice365blog",
-      "products": [
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Office 365",
-        "Threat Intelligence"
       ]
     }
   ]
