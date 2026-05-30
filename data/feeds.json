@@ -1,8 +1,32 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-05-29T20:31:45.869551+00:00",
-  "totalArticles": 111,
+  "lastUpdated": "2026-05-30T03:49:04.221872+00:00",
+  "totalArticles": 109,
   "articles": [
+    {
+      "title": "Malicious npm packages abuse dependency confusion to profile developer environments",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/29/33-malicious-npm-packages-abuse-dependency-confusion-profile-developer-environments/",
+      "published": "2026-05-30T00:06:20+00:00",
+      "summary": "A dependency confusion campaign leveraged 33 malicious npm packages to collect reconnaissance data from developer and build environments. This report details the attack chain, observed tradecraft, and detection opportunities to help organizations identify and disrupt related activity. The post...",
+      "author": "Microsoft Defender Security Research Team",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Microsoft is named a Leader in the 2026 Gartner® Magic Quadrant™ for Endpoint Protection",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/05/29/microsoft-is-named-a-leader-in-the-2026-gartner-magic-quadrant-for-endpoint-protection/",
@@ -25,54 +49,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "What’s new in Microsoft Sentinel: May 2026",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-may-2026/ba-p/4523419",
-      "published": "2026-05-29T16:00:00+00:00",
-      "summary": "Welcome to the May edition of What's new in Microsoft Sentinel. This month’s updates focus on unified role-based access control (RBAC), ecosystem breadth, AI-agent security, and high-assurance identity. RBAC and row-level scoping are now generally available, giving security teams a single, granular...",
-      "author": "Sowmys",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 5
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        },
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Purview",
-        "Microsoft Sentinel",
-        "Microsoft Defender XDR",
-        "Threat Intelligence",
-        "Google Cloud Security"
       ]
     },
     {
@@ -1003,30 +979,6 @@
       "tags": [
         "AWS Security",
         "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "Securing the gaming culture of cultures",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/20/securing-the-gaming-culture-of-cultures/",
-      "published": "2026-05-20T16:00:00+00:00",
-      "summary": "Read about the unique challenges and rewards of securing gaming platforms and how to better protect gaming communities. The post Securing the gaming culture of cultures appeared first on Microsoft Security Blog.",
-      "author": "Aaron Zollman",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
@@ -2923,30 +2875,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Hardening OpenClaw on AKS: Mitigating Container Escapes with Kata microVM Isolation",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/hardening-openclaw-on-aks-mitigating-container-escapes-with-kata/ba-p/4516030",
-      "published": "2026-04-30T01:57:02+00:00",
-      "summary": "What is OpenClaw, and what security challenges does it pose with container escapes? OpenClaw is an open-source autonomous AI agent designed for power users and developers to automate tasks, such as managing emails, files, and scheduling via chat apps like WhatsApp or Telegram. While OpenClaw...",
-      "author": "jianshn",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "AI Security"
       ]
     }
   ]
