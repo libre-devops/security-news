@@ -1,12 +1,78 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-01T11:43:37.098213+00:00",
-  "totalArticles": 110,
+  "lastUpdated": "2026-06-01T17:49:22.103489+00:00",
+  "totalArticles": 111,
   "articles": [
+    {
+      "title": "How Microsoft Defender used predictive shielding to proactively disrupt a ransomware attack",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-microsoft-defender-used-predictive-shielding-to-proactively/ba-p/4519498",
+      "published": "2026-06-01T17:16:47+00:00",
+      "summary": "Modern ransomware attacks are increasingly designed to blend in with normal IT operations, using trusted administrative tools to quietly weaken defenses and distribute malicious payloads at scale. In a recent real‑world incident, a human‑operated ransomware actor attempted to do exactly that by...",
+      "author": "AvivSharon",
+      "source": "Microsoft Defender for Endpoint",
+      "source_id": "defender_endpoint",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Endpoint Security",
+      "board_id": "microsoftdefenderatpblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 14
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint",
+        "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "Now Generally Available: Microsoft Defender for open source relational databases on AWS RDS",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/now-generally-available-microsoft-defender-for-open-source/ba-p/4514651",
+      "published": "2026-06-01T17:11:16+00:00",
+      "summary": "Securing multicloud databases to help reduce risks Open‑source (OSS) relational databases are becoming increasingly critical and increasingly targeted in organization of all sizes. As organizations adopt multicloud architectures, these databases often run across Azure and Amazon Web Services (AWS),...",
+      "author": "lisetteranga",
+      "source": "Microsoft Defender for Cloud",
+      "source_id": "defender_cloud",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Cloud Security",
+      "board_id": "microsoftdefendercloudblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Cloud",
+        "AWS Security"
+      ]
+    },
     {
       "title": "What’s new in Microsoft Sentinel: May 2026",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-may-2026/ba-p/4523419",
-      "published": "2026-06-01T09:57:18+00:00",
+      "published": "2026-06-01T12:48:52+00:00",
       "summary": "Welcome to the May edition of What's new in Microsoft Sentinel. This month’s updates focus on unified role-based access control (RBAC), ecosystem breadth, AI-agent security, and high-assurance identity. RBAC and row-level scoping are now generally available, giving security teams a single, granular...",
       "author": "Sowmys",
       "source": "Microsoft Sentinel",
@@ -49,6 +115,30 @@
         "Microsoft Defender XDR",
         "Threat Intelligence",
         "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/06/01/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-06-01T12:00:00+00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2024-21182 Oracle WebLogic Server Unspecified Vulnerability This type of vulnerability is a frequent attack vectors for malicious cyber actors and poses...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
       ]
     },
     {
@@ -292,6 +382,30 @@
       ]
     },
     {
+      "title": "MacGregor Voyage Data Recorder (VDR) G4e",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-01",
+      "published": "2026-05-28T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker gaining administrator access to the device. The following versions of MacGregor Voyage Data Recorder (VDR) G4e are affected: MacGregor Voyage Data Recorder (VDR) G4e <V5.250 CVSS Vendor Equipment...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
       "title": "ABB EIBPORT",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-03",
       "published": "2026-05-28T12:00:00+00:00",
@@ -388,10 +502,34 @@
       ]
     },
     {
-      "title": "Schnieider Electric EcoStruxure Machine Expert HVAC",
+      "title": "Schneider Electric EcoStruxure Machine Expert HVAC",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-07",
       "published": "2026-05-28T12:00:00+00:00",
       "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcostruxureTM Machine Expert HVAC product. The [EcostruxureTM Machine Expert HVAC](https://www.se.com/ww/en/download/document/EcoStruxureME_HVAC/) product is a programming software for Modicon M171-M172 logic controllers....",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "KMW CCTV Security Cameras",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-06",
+      "published": "2026-05-28T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability may grant full unauthorized access to camera feeds and settings. The following versions of KMW CCTV Security Cameras are affected: KM-IP521 IPCAM_V4.04.91.230307 KM-IP421 IPCAM_V4.04.53.210416 CVSS Vendor Equipment Vulnerabilities v3...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -482,54 +620,6 @@
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-08",
       "published": "2026-05-28T12:00:00+00:00",
       "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain administrator rights or execute code on the affected device. The following versions of XCharge C6 are affected: C6 CVSS Vendor Equipment Vulnerabilities v3 9.8 XCharge XCharge C6 Download of Code...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "KMW CCTV Security Cameras",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-06",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability may grant full unauthorized access to camera feeds and settings. The following versions of KMW CCTV Security Cameras are affected: KM-IP521 IPCAM_V4.04.91.230307 KM-IP421 IPCAM_V4.04.53.210416 CVSS Vendor Equipment Vulnerabilities v3...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "MacGregor Voyage Data Recorder (VDR) G4e",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-01",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker gaining administrator access to the device. The following versions of MacGregor Voyage Data Recorder (VDR) G4e are affected: MacGregor Voyage Data Recorder (VDR) G4e <V5.250 CVSS Vendor Equipment...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -670,54 +760,6 @@
       ]
     },
     {
-      "title": "Eppendorf BioFlo 320",
-      "link": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-146-01",
-      "published": "2026-05-26T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to gain full access to functionality and data with the bioreactor. The following versions of Eppendorf BioFlo 320 are affected: BioFlo 320 Bioreactor vers:all/* CVSS Vendor Equipment Vulnerabilities v3 9.8...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "ABB Ability Camera Connect",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-05",
-      "published": "2026-05-26T12:00:00+00:00",
-      "summary": "View CSAF Summary ABB is aware of public reports of vulnerabilities in a 3rd party component VLC media player Version 2.2.4 which was delivered together with the installation package of Camera Connect Version 1.5.0.14 and below. An update is available that resolves a privately reported outdated 3rd...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
       "title": "ABB B&R Automation Runtime DoS Vulnerability in System Diagnostics Manager (SDM)",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-04",
       "published": "2026-05-26T12:00:00+00:00",
@@ -746,6 +788,54 @@
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-06",
       "published": "2026-05-26T12:00:00+00:00",
       "summary": "View CSAF Summary ABB became aware of an internally discovered vulnerability in the MConfig product versions listed as affected in the advisory. An attacker with access to local networks who successfully exploits vulnerability could have access to application’s sensitive information. ABB strongly...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Eppendorf BioFlo 320",
+      "link": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-146-01",
+      "published": "2026-05-26T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to gain full access to functionality and data with the bioreactor. The following versions of Eppendorf BioFlo 320 are affected: BioFlo 320 Bioreactor vers:all/* CVSS Vendor Equipment Vulnerabilities v3 9.8...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "ABB Ability Camera Connect",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-05",
+      "published": "2026-05-26T12:00:00+00:00",
+      "summary": "View CSAF Summary ABB is aware of public reports of vulnerabilities in a 3rd party component VLC media player Version 2.2.4 which was delivered together with the installation package of Camera Connect Version 1.5.0.14 and below. An update is available that resolves a privately reported outdated 3rd...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -818,30 +908,6 @@
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-01",
       "published": "2026-05-26T12:00:00+00:00",
       "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited this vulnerability could cause the pollution of heap memory which potentially takes remote control of the product and performs a write operation to...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "ABB Ability Zenon Remote Transport Vulnerability (Update A)",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-03",
-      "published": "2026-05-26T12:00:00+00:00",
-      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. The vulnerability enables unauthorized access to the Reboot OS function within the Remote Transport Service, allowing an attacker to trigger a system reboot without the required...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -2389,36 +2455,6 @@
       ],
       "tags": [
         "AWS Security"
-      ]
-    },
-    {
-      "title": "How Microsoft Defender used predictive shielding to proactively disrupt a ransomware attack",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-microsoft-defender-used-predictive-shielding-to-proactively/ba-p/4519498",
-      "published": "2026-05-14T17:01:07+00:00",
-      "summary": "Modern ransomware attacks are increasingly designed to blend in with normal IT operations, using trusted administrative tools to quietly weaken defenses and distribute malicious payloads at scale. In a recent real‑world incident, a human‑operated ransomware actor attempted to do exactly that by...",
-      "author": "AvivSharon",
-      "source": "Microsoft Defender for Endpoint",
-      "source_id": "defender_endpoint",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Endpoint Security",
-      "board_id": "microsoftdefenderatpblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 14
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint",
-        "Threat Intelligence"
       ]
     },
     {
