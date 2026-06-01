@@ -1,8 +1,56 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-01T04:27:32.739025+00:00",
+  "lastUpdated": "2026-06-01T11:43:37.098213+00:00",
   "totalArticles": 110,
   "articles": [
+    {
+      "title": "What’s new in Microsoft Sentinel: May 2026",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-may-2026/ba-p/4523419",
+      "published": "2026-06-01T09:57:18+00:00",
+      "summary": "Welcome to the May edition of What's new in Microsoft Sentinel. This month’s updates focus on unified role-based access control (RBAC), ecosystem breadth, AI-agent security, and high-assurance identity. RBAC and row-level scoping are now generally available, giving security teams a single, granular...",
+      "author": "Sowmys",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 5
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Purview",
+        "Microsoft Sentinel",
+        "Microsoft Defender XDR",
+        "Threat Intelligence",
+        "Google Cloud Security"
+      ]
+    },
     {
       "title": "Type Confusion in V8 in Google Chrome prior to 142.0.7444.59 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-13230",
@@ -121,54 +169,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "What’s new in Microsoft Sentinel: May 2026",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-may-2026/ba-p/4523419",
-      "published": "2026-05-29T16:00:00+00:00",
-      "summary": "Welcome to the May edition of What's new in Microsoft Sentinel. This month’s updates focus on unified role-based access control (RBAC), ecosystem breadth, AI-agent security, and high-assurance identity. RBAC and row-level scoping are now generally available, giving security teams a single, granular...",
-      "author": "Sowmys",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 5
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        },
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Purview",
-        "Microsoft Sentinel",
-        "Microsoft Defender XDR",
-        "Threat Intelligence",
-        "Google Cloud Security"
       ]
     },
     {
