@@ -1,8 +1,74 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-02T20:54:23.078346+00:00",
-  "totalArticles": 112,
+  "lastUpdated": "2026-06-03T04:40:37.242735+00:00",
+  "totalArticles": 111,
   "articles": [
+    {
+      "title": "The end of patching era for containers: Microsoft Defender for Cloud expands hardened image support",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/the-end-of-patching-era-for-containers-microsoft-defender-for/ba-p/4524798",
+      "published": "2026-06-02T22:53:19+00:00",
+      "summary": "Why hardened images are becoming the new baseline for container image security Container security is evolving beyond vulnerability scanning alone. Across the ecosystem - spanning container platforms, registries, and software supply chain tooling - customers are increasingly adopting hardened...",
+      "author": "Yulia_Zhurbinsky",
+      "source": "Microsoft Defender for Cloud",
+      "source_id": "defender_cloud",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Cloud Security",
+      "board_id": "microsoftdefendercloudblog",
+      "products": [
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Cloud",
+        "Microsoft Defender for Endpoint"
+      ]
+    },
+    {
+      "title": "Start Secure, Stay Secure: How Microsoft is Closing the Gap from Code to Runtime",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/start-secure-stay-secure-how-microsoft-is-closing-the-gap-from/ba-p/4524580",
+      "published": "2026-06-02T21:22:01+00:00",
+      "summary": "Modern software applications composed of hundreds of artifacts, multiple programing languages, and cloud infrastructure provide an extensive attack surface that only continues to expand in the era of AI. According to Microsoft Threat Intelligence and industry research, threat actors are also...",
+      "author": "JasonWeber",
+      "source": "Microsoft Defender for Cloud",
+      "source_id": "defender_cloud",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Cloud Security",
+      "board_id": "microsoftdefendercloudblog",
+      "products": [
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 7
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Cloud",
+        "Threat Intelligence",
+        "AI Security"
+      ]
+    },
     {
       "title": "AI alone won’t change your business. The system running it will.",
       "link": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
@@ -52,36 +118,6 @@
       ]
     },
     {
-      "title": "The next frontier in endpoint security: Securing local AI agents with Microsoft Defender",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/the-next-frontier-in-endpoint-security-securing-local-ai-agents/ba-p/4524651",
-      "published": "2026-06-02T17:51:58+00:00",
-      "summary": "AI agents are now doing real work on the endpoint — reading files, running commands, browsing the web, and acting on behalf of the users they run under. That same power is also what makes them dangerous: agents act on whatever content they take in, and much of it comes from outside the user's...",
-      "author": "Eitan_Shteinberg",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "AWS Security"
-      ]
-    },
-    {
       "title": "Microsoft Build 2026: Securing code, agents, and models across the development lifecycle",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/",
       "published": "2026-06-02T17:15:18+00:00",
@@ -103,42 +139,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Start Secure, Stay Secure: How Microsoft is Closing the Gap from Code to Runtime",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/start-secure-stay-secure-how-microsoft-is-closing-the-gap-from/ba-p/4524580",
-      "published": "2026-06-02T17:15:00+00:00",
-      "summary": "Modern software applications composed of hundreds of artifacts, multiple programing languages, and cloud infrastructure provide an extensive attack surface that only continues to expand in the era of AI. According to Microsoft Threat Intelligence and industry research, threat actors are also...",
-      "author": "JasonWeber",
-      "source": "Microsoft Defender for Cloud",
-      "source_id": "defender_cloud",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Cloud Security",
-      "board_id": "microsoftdefendercloudblog",
-      "products": [
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Cloud",
-        "Threat Intelligence",
-        "AI Security"
       ]
     },
     {
@@ -2973,30 +2973,6 @@
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
           "score": 7
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "Purpose For Your PKI (Practical PKI Part 3)",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/purpose-for-your-pki-practical-pki-part-3/ba-p/4512518",
-      "published": "2026-05-04T04:00:00+00:00",
-      "summary": "My name is Ron Arestia, and I am a Security Researcher with Microsoft’s Detection and Response Team (DART). We respond to customer cybersecurity incidents to assist with containment and recovery from threat actors. In this brief blog post, we will discuss the “why” behind your PKI. This is part 3...",
-      "author": "RonArestia",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
         }
       ],
       "tags": [
