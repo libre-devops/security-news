@@ -1,8 +1,32 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-03T16:57:53.087294+00:00",
+  "lastUpdated": "2026-06-03T21:20:05.083273+00:00",
   "totalArticles": 110,
   "articles": [
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/06/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-06-03T12:00:00+00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-45247 Mirasvit Full Page Cache Warmer Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
     {
       "title": "Designing Cloud Landing Zones by Traffic Flow: A Defence‑in‑Depth, DMZ‑First Architecture",
       "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/designing-cloud-landing-zones-by-traffic-flow-a-defence-in-depth/ba-p/4524280",
@@ -580,54 +604,6 @@
       ]
     },
     {
-      "title": "KMW CCTV Security Cameras",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-06",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability may grant full unauthorized access to camera feeds and settings. The following versions of KMW CCTV Security Cameras are affected: KM-IP521 IPCAM_V4.04.91.230307 KM-IP421 IPCAM_V4.04.53.210416 CVSS Vendor Equipment Vulnerabilities v3...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "ABB EIBPORT",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-03",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. A firmware update is available that resolves these privately reported vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
       "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-02",
       "published": "2026-05-28T12:00:00+00:00",
@@ -700,6 +676,30 @@
       ]
     },
     {
+      "title": "ABB EIBPORT",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-03",
+      "published": "2026-05-28T12:00:00+00:00",
+      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. A firmware update is available that resolves these privately reported vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
       "title": "Schneider Electric EcoStruxure Machine Expert HVAC",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-07",
       "published": "2026-05-28T12:00:00+00:00",
@@ -724,58 +724,10 @@
       ]
     },
     {
-      "title": "MacGregor Voyage Data Recorder (VDR) G4e",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-01",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker gaining administrator access to the device. The following versions of MacGregor Voyage Data Recorder (VDR) G4e are affected: MacGregor Voyage Data Recorder (VDR) G4e <V5.250 CVSS Vendor Equipment...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
       "title": "CP Plus 8 Ch. Network Video Recorder",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-05",
       "published": "2026-05-28T12:00:00+00:00",
       "summary": "View CSAF Summary Successful exploitation of this vulnerability allows an attacker's malicious script to execute in the browser of any authenticated user or administrator who accesses the affected interface. This could lead to compromise of user sessions, execution of unauthorized actions with the...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "XCharge C6",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-08",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain administrator rights or execute code on the affected device. The following versions of XCharge C6 are affected: C6 CVSS Vendor Equipment Vulnerabilities v3 9.8 XCharge XCharge C6 Download of Code...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -835,6 +787,78 @@
         "Threat Intelligence",
         "AWS Security",
         "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "MacGregor Voyage Data Recorder (VDR) G4e",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-01",
+      "published": "2026-05-28T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker gaining administrator access to the device. The following versions of MacGregor Voyage Data Recorder (VDR) G4e are affected: MacGregor Voyage Data Recorder (VDR) G4e <V5.250 CVSS Vendor Equipment...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "KMW CCTV Security Cameras",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-06",
+      "published": "2026-05-28T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability may grant full unauthorized access to camera feeds and settings. The following versions of KMW CCTV Security Cameras are affected: KM-IP521 IPCAM_V4.04.91.230307 KM-IP421 IPCAM_V4.04.53.210416 CVSS Vendor Equipment Vulnerabilities v3...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "XCharge C6",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-08",
+      "published": "2026-05-28T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain administrator rights or execute code on the affected device. The following versions of XCharge C6 are affected: C6 CVSS Vendor Equipment Vulnerabilities v3 9.8 XCharge XCharge C6 Download of Code...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
       ]
     },
     {
@@ -958,10 +982,34 @@
       ]
     },
     {
-      "title": "ABB LVS MConfig",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-06",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/05/26/cisa-adds-one-known-exploited-vulnerability-catalog",
       "published": "2026-05-26T12:00:00+00:00",
-      "summary": "View CSAF Summary ABB became aware of an internally discovered vulnerability in the MConfig product versions listed as affected in the advisory. An attacker with access to local networks who successfully exploits vulnerability could have access to application’s sensitive information. ABB strongly...",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-48172 LiteSpeed cPanel Plugin Privilege Escalation Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "ABB Ability Camera Connect",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-05",
+      "published": "2026-05-26T12:00:00+00:00",
+      "summary": "View CSAF Summary ABB is aware of public reports of vulnerabilities in a 3rd party component VLC media player Version 2.2.4 which was delivered together with the installation package of Camera Connect Version 1.5.0.14 and below. An update is available that resolves a privately reported outdated 3rd...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -1006,10 +1054,10 @@
       ]
     },
     {
-      "title": "ABB Ability Camera Connect",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-05",
+      "title": "ABB LVS MConfig",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-06",
       "published": "2026-05-26T12:00:00+00:00",
-      "summary": "View CSAF Summary ABB is aware of public reports of vulnerabilities in a 3rd party component VLC media player Version 2.2.4 which was delivered together with the installation package of Camera Connect Version 1.5.0.14 and below. An update is available that resolves a privately reported outdated 3rd...",
+      "summary": "View CSAF Summary ABB became aware of an internally discovered vulnerability in the MConfig product versions listed as affected in the advisory. An attacker with access to local networks who successfully exploits vulnerability could have access to application’s sensitive information. ABB strongly...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -1023,54 +1071,6 @@
           "id": "cisa-advisories",
           "name": "CISA Advisories",
           "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "Eppendorf BioFlo 320",
-      "link": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-146-01",
-      "published": "2026-05-26T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to gain full access to functionality and data with the bioreactor. The following versions of Eppendorf BioFlo 320 are affected: BioFlo 320 Bioreactor vers:all/* CVSS Vendor Equipment Vulnerabilities v3 9.8...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/05/26/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "published": "2026-05-26T12:00:00+00:00",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-48172 LiteSpeed cPanel Plugin Privilege Escalation Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
         }
       ],
       "tags": [
