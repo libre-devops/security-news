@@ -1,8 +1,56 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-03T04:40:37.242735+00:00",
-  "totalArticles": 111,
+  "lastUpdated": "2026-06-03T11:07:24.392726+00:00",
+  "totalArticles": 113,
   "articles": [
+    {
+      "title": "Designing Cloud Landing Zones by Traffic Flow: A Defence‑in‑Depth, DMZ‑First Architecture",
+      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/designing-cloud-landing-zones-by-traffic-flow-a-defence-in-depth/ba-p/4524280",
+      "published": "2026-06-03T07:18:18+00:00",
+      "summary": "As enterprises adopt Microsoft Azure for large‑scale and regulated workloads, security architecture must be driven by traffic trust boundaries and inspection intent, not connectivity alone. Regulatory frameworks consistently require a clear separation between Internet‑untrusted and private...",
+      "author": "AvanishYadav",
+      "source": "Azure Network Security",
+      "source_id": "network_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Network Security",
+      "board_id": "azurenetworksecurityblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel"
+      ]
+    },
+    {
+      "title": "Preinstall to persistence: Inside the Red Hat npm Miasma credential-stealing campaign",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/02/preinstall-persistence-inside-red-hat-npm-miasma-credential-stealing-campaign/",
+      "published": "2026-06-03T04:45:06+00:00",
+      "summary": "A large-scale npm supply chain attack compromised over 90 versions of @redhat-cloud-services packages, silently infecting CI/CD environments and developer systems. The malicious code steals credentials from GitHub, cloud platforms, and local machines, then spreads like a worm by republishing...",
+      "author": "Microsoft Defender Security Research Team",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "The end of patching era for containers: Microsoft Defender for Cloud expands hardened image support",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/the-end-of-patching-era-for-containers-microsoft-defender-for/ba-p/4524798",
@@ -115,6 +163,36 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "The next frontier in endpoint security: Securing local AI agents with Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/the-next-frontier-in-endpoint-security-securing-local-ai-agents/ba-p/4524651",
+      "published": "2026-06-02T17:51:58+00:00",
+      "summary": "AI agents are now doing real work on the endpoint — reading files, running commands, browsing the web, and acting on behalf of the users they run under. That same power is also what makes them dangerous: agents act on whatever content they take in, and much of it comes from outside the user's...",
+      "author": "Eitan_Shteinberg",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "AWS Security"
       ]
     },
     {
@@ -1143,30 +1221,6 @@
       "published": "2026-05-22T16:00:00+00:00",
       "summary": "How Frontier firms secure AI at scale: read how Microsoft customers embed governance, identity, and cloud security to make protection an enabler of AI growth. The post Microsoft Security success stories: How St. Luke’s and ManpowerGroup are securing AI foundations appeared first on Microsoft...",
       "author": "Steve Dispensa",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "What’s new in Microsoft Security: May 2026",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/21/whats-new-in-microsoft-security-may-2026/",
-      "published": "2026-05-21T16:00:00+00:00",
-      "summary": "Microsoft Security’s latest updates extend visibility, control, and protection across expanding ecosystems as organizations accelerate AI adoption. The post What’s new in Microsoft Security: May 2026 appeared first on Microsoft Security Blog.",
-      "author": "Alym Rayani",
       "source": "Microsoft Security Blog",
       "source_id": "mssecurity",
       "source_group": "Official Microsoft",
