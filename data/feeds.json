@@ -1,8 +1,62 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-08T04:23:11.392690+00:00",
-  "totalArticles": 129,
+  "lastUpdated": "2026-06-08T11:04:38.226359+00:00",
+  "totalArticles": 130,
   "articles": [
+    {
+      "title": "The Worm in the Supply Chain: How Defender for Endpoint and Sentinel for SAP BTP Caught Shai-Hulud",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/the-worm-in-the-supply-chain-how-defender-for-endpoint-and/ba-p/4526246",
+      "published": "2026-06-08T10:52:16+00:00",
+      "summary": "On 29 April 2026, malicious versions of multiple SAP ecosystem npm packages were briefly published, creating a supply-chain exposure for SAP Cloud Application Programming (CAP) development environments and CI/CD pipelines. For a brief window that morning, affected developers have executed a...",
+      "author": "MartinPankraz",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint",
+        "Microsoft Sentinel",
+        "Microsoft Security Copilot",
+        "Threat Intelligence",
+        "AWS Security",
+        "Google Cloud Security"
+      ]
+    },
     {
       "title": "Enhancements to Device Status API & Logged-In User Email in Endpoint DLP",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/enhancements-to-device-status-api-logged-in-user-email-in/ba-p/4512046",
