@@ -1,8 +1,194 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-09T15:12:58.463362+00:00",
-  "totalArticles": 131,
+  "lastUpdated": "2026-06-09T20:11:19.208801+00:00",
+  "totalArticles": 132,
   "articles": [
+    {
+      "title": "Reconstructing AI activity in investigations",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/09/reconstructing-ai-activity-investigations/",
+      "published": "2026-06-09T17:35:06+00:00",
+      "summary": "Learn how to investigate AI activity in Microsoft 365 Copilot and Azure AI services using a structured, telemetry-driven approach. This playbook helps security teams reconstruct events, assess data exposure, and detect potential threats faster. The post Reconstructing AI activity in investigations...",
+      "author": "Phillip Misner and Microsoft AI Red Team",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Defender now monitors RPC activity",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-now-monitors-rpc-activity/ba-p/4523368",
+      "published": "2026-06-09T16:55:28+00:00",
+      "summary": "Remote procedure call (RPC) is a protocol commonly abused by attackers that allows functions implemented in a separate process, and potentially on a remote machine, to be called as if they were local. Many core Windows and Active Directory capabilities are built on or make use of RPC, which makes...",
+      "author": "EdanZwick",
+      "source": "Microsoft Defender for Endpoint",
+      "source_id": "defender_endpoint",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Endpoint Security",
+      "board_id": "microsoftdefenderatpblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint"
+      ]
+    },
+    {
+      "title": "Elevate your telemetry using custom data collection in Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/elevate-your-telemetry-using-custom-data-collection-in-microsoft/ba-p/4512530",
+      "published": "2026-06-09T16:00:00+00:00",
+      "summary": "At Ignite in November, we announced that Microsoft Defender is now the only endpoint protection solution that allows data-hungry security teams to meet specific telemetry needs by optimizing their data collection right within the Defender portal, without the need to rely on fragmented and siloed...",
+      "author": "Theo_Cohen",
+      "source": "Microsoft Defender for Endpoint",
+      "source_id": "defender_endpoint",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Endpoint Security",
+      "board_id": "microsoftdefenderatpblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Sentinel",
+        "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/06/09/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+      "published": "2026-06-09T12:00:00+00:00",
+      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-7473 Arista Extensible Operating System Incomplete Comparison with Missing Factors Vulnerability CVE-2026-11645 Google Chromium V8 Out-of-Bounds Read and...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Siemens KACO Blueplanet Inverters",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-02",
+      "published": "2026-06-09T12:00:00+00:00",
+      "summary": "View CSAF Summary KACO blueplanet Inverters contain multiple vulnerabilities that could allow an attacker to derive the credentials from the devices serial number and misuse them to gain unauthorized access. KACO new energy GmbH has released new versions for several affected products and recommends...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Schneider Electric EcoStruxure Panel Server",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-03",
+      "published": "2026-06-09T12:00:00+00:00",
+      "summary": "View CSAF Summary Schneider Electric is aware of its vulnerability in its EcoStruxure Panel Server offer. The EcoStruxure Panel Server is a high performance, modular gateway with enhanced cybersecurity that provides easy and fast connections to multiple concurrent edge control or cloud...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Schneider Electric Modicon Network Managed Switches",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-01",
+      "published": "2026-06-09T12:00:00+00:00",
+      "summary": "View CSAF Summary Schneider Electric is aware of a RADIUS protocol vulnerability affecting its Modicon Network Managed Switch product. The Modicon Network Managed Switch product provides connectivity for multiple Ethernet devices, network management, enhanced cyber security and more advanced...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
     {
       "title": "GCP-2026-035",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-035",
@@ -679,30 +865,6 @@
       ],
       "tags": [
         "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "Microsoft Defender now monitors RPC activity",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-now-monitors-rpc-activity/ba-p/4523368",
-      "published": "2026-06-08T18:16:45+00:00",
-      "summary": "Remote procedure call (RPC) is a protocol commonly abused by attackers that allows functions implemented in a separate process, and potentially on a remote machine, to be called as if they were local. Many core Windows and Active Directory capabilities are built on or make use of RPC, which makes...",
-      "author": "EdanZwick",
-      "source": "Microsoft Defender for Endpoint",
-      "source_id": "defender_endpoint",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Endpoint Security",
-      "board_id": "microsoftdefenderatpblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint"
       ]
     },
     {
@@ -1714,10 +1876,10 @@
       ]
     },
     {
-      "title": "B&R PPT30 Operating System",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-03",
+      "title": "Hitachi Energy ITT600 Explorer",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-02",
       "published": "2026-06-04T12:00:00+00:00",
-      "summary": "View CSAF Summary B&R is aware of a vulnerability in the product versions listed as affected in the advisory. An attacker who successfully exploits this vulnerability could make the OPC-UA server of the product inaccessible. The following versions of B&R PPT30 Operating System are affected: PPT30...",
+      "summary": "View CSAF Summary Hitachi Energy is aware of vulnerabilities that affect ITT600 Explorer product versions listed in this document. These vulnerabilities can be exploited to carry out Denial of Service (DoS) attack on the product. The vulnerabilities only affect Hitachi Energy Integrated Testing...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -1738,10 +1900,10 @@
       ]
     },
     {
-      "title": "Hitachi Energy ITT600 Explorer",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-02",
+      "title": "B&R PPT30 Operating System",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-03",
       "published": "2026-06-04T12:00:00+00:00",
-      "summary": "View CSAF Summary Hitachi Energy is aware of vulnerabilities that affect ITT600 Explorer product versions listed in this document. These vulnerabilities can be exploited to carry out Denial of Service (DoS) attack on the product. The vulnerabilities only affect Hitachi Energy Integrated Testing...",
+      "summary": "View CSAF Summary B&R is aware of a vulnerability in the product versions listed as affected in the advisory. An attacker who successfully exploits this vulnerability could make the OPC-UA server of the product inaccessible. The following versions of B&R PPT30 Operating System are affected: PPT30...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -2392,34 +2554,10 @@
       ]
     },
     {
-      "title": "ABB Busch-Welcome 2 Wire Door Opener Actuator",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-04",
+      "title": "ABB EIBPORT",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-03",
       "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited this vulnerability could gain physical, unauthorized access to a Building where the product is installed The following versions of ABB Busch-Welcome 2...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "CP Plus 8 Ch. Network Video Recorder",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-05",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability allows an attacker's malicious script to execute in the browser of any authenticated user or administrator who accesses the affected interface. This could lead to compromise of user sessions, execution of unauthorized actions with the...",
+      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. A firmware update is available that resolves these privately reported vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -2444,6 +2582,30 @@
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-07",
       "published": "2026-05-28T12:00:00+00:00",
       "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcostruxureTM Machine Expert HVAC product. The [EcostruxureTM Machine Expert HVAC](https://www.se.com/ww/en/download/document/EcoStruxureME_HVAC/) product is a programming software for Modicon M171-M172 logic controllers....",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "CP Plus 8 Ch. Network Video Recorder",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-05",
+      "published": "2026-05-28T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability allows an attacker's malicious script to execute in the browser of any authenticated user or administrator who accesses the affected interface. This could lead to compromise of user sessions, execution of unauthorized actions with the...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -2506,102 +2668,6 @@
       ]
     },
     {
-      "title": "XCharge C6",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-08",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain administrator rights or execute code on the affected device. The following versions of XCharge C6 are affected: C6 CVSS Vendor Equipment Vulnerabilities v3 9.8 XCharge XCharge C6 Download of Code...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "KMW CCTV Security Cameras",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-06",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability may grant full unauthorized access to camera feeds and settings. The following versions of KMW CCTV Security Cameras are affected: KM-IP521 IPCAM_V4.04.91.230307 KM-IP421 IPCAM_V4.04.53.210416 CVSS Vendor Equipment Vulnerabilities v3...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "MacGregor Voyage Data Recorder (VDR) G4e",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-01",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker gaining administrator access to the device. The following versions of MacGregor Voyage Data Recorder (VDR) G4e are affected: MacGregor Voyage Data Recorder (VDR) G4e <V5.250 CVSS Vendor Equipment...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-02",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could result in an attacker gaining administrator access to the device. The following versions of Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter are affected: USR-W610 RS232/485 to Wi-Fi/Ethernet...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
       "title": "Organize your multitenant view with Tenant Groups in Microsoft Defender",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/organize-your-multitenant-view-with-tenant-groups-in-microsoft/ba-p/4522992",
       "published": "2026-05-27T16:00:00+00:00",
@@ -2647,30 +2713,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "From poisoned search results to GPU mining: A cryptojacking campaign abusing ScreenConnect and Microsoft .NET utilities",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/26/poisoned-search-results-gpu-mining-cryptojacking-campaign-abusing-screenconnect-microsoft-net-utilities/",
-      "published": "2026-05-26T21:35:34+00:00",
-      "summary": "Microsoft exposes a cryptojacking campaign using SEO poisoning and ScreenConnect to target high-performance PCs, with malicious sites also surfaced through AI chatbots. The post From poisoned search results to GPU mining: A cryptojacking campaign abusing ScreenConnect and Microsoft .NET utilities...",
-      "author": "Microsoft Defender Experts and Microsoft Defender Security Research Team",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
