@@ -1,8 +1,722 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-09T20:11:19.208801+00:00",
-  "totalArticles": 132,
+  "lastUpdated": "2026-06-10T04:06:07.300837+00:00",
+  "totalArticles": 135,
   "articles": [
+    {
+      "title": "Extend Microsoft Purview data protection to AWS Bedrock agents for cross-cloud AI governance",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/extend-microsoft-purview-data-protection-to-aws-bedrock-agents/ba-p/4525984",
+      "published": "2026-06-09T21:17:12+00:00",
+      "summary": "Organizations are moving fast with AI, and many of those AI workloads are not staying in one cloud. A team might use Microsoft 365 and Microsoft Purview for governance and in addition to Microsoft Foundry they may still choose to run an AI agent on AWS Bedrock or on the Google Cloud Platform. The...",
+      "author": "Inwafula",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 5
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Purview",
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-036",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-036",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-06-09Description Description Severity Notes ARM has announced CVE-2025-10263, an architectural issue affecting some Arm cores which allows an attacker to bypass translation stages or GPT protections under certain conditions. This vulnerability allows an attacker at a lower exception...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-035",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-035",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-06-08Description Description Severity Notes A vulnerability was found in Envoy where HTTP/2 downstream request processing allow an unauthenticated remote client to trigger excessive memory consumption, potentially resulting in OOM termination of the Envoy process and denial of...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-034",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-034",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-05-20Description Description Severity Notes A vulnerability was found in Apigee where the IntegrationRegion parameter in the SetIntegrationRequest policy lacks validation, allowing for Server-Side Request Forgery (SSRF) and service account token exfiltration. The issue arises when...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-033",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-033",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-05-14Description Description Severity Notes A container breakout vulnerability CVE-2026-46300 has been found in the Linux kernel, known as Fragnesia. It allows an unprivileged local attacker to escalate to root on the host. For instructions and more details, see the following...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-032",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-032",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-05-12Description Description Severity Notes AMD has identified a hardware-level vulnerability in Zen 2 microarchitecture processors (including EPYC and Ryzen series) involving potential corruption within the micro-operation (OP) cache. Under specific conditions, this issue...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-031",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-031",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-05-12Description Description Severity Notes Researchers discovered a vulnerability in AMD firmware that, due to missing protection, could allow a malicious hypervisor to execute arbitrary code on the AMD Secure Processor (ASP). This allows for the escalation of Memory Mapped I/O...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-030",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-030",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-05-11Updated: 2026-05-20Description Description Severity Notes 2026-05-20 Update: Added CVE-2026-43500 and added CVE IDs to exploit paths. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS and Ubuntu...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-029",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-029",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-05-07Description Description Severity Notes Microsoft is updating the Secure Boot certificates originally issued in 2011 to ensure Windows devices continue to verify trusted boot software. These older certificates begin expiring in June 2026. Devices that haven't received the newer...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-028",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-028",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-05-05Updated: 2026-05-27Description Description Severity Notes CVE-2026-31431, also known as \"Copy Fail,\" is a high-severity local privilege escalation (LPE) vulnerability in the Linux kernel that allows an unprivileged user to gain root access. Disclosed in late April 2026, it...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-027",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-027",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-05-01Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23351 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-026",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-026",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-04-30Updated: 2026-05-04Description Description Severity Notes 2026-05-04 Update: Added patch versions for GKE. A vulnerability in the Linux kernel (CVE-2026-31431) allows an unprivileged local attacker to write to the system page cache, potentially leading to local privilege...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-025",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-025",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-04-30Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23274 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-024",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-024",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-04-28Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS and Ubuntu nodes: CVE-2025-38248 For instructions and more details, see the following bulletins: GKE...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-023",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-023",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-04-28Updated: 2026-05-07Description Description Severity Notes 2026-05-07 Update: Added patch versions for Ubuntu node pools on GKE The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes:...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-022",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-022",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-04-16Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23209 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-021",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-021",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-04-14Description Description Severity Notes AMD reported a vulnerability in its firmware that could have allowed a malicious hypervisor to direct the IOMMU to write into the guest memory of AMD SEV-SNP enabled instances, compromising guest data integrity. Google rolled out a...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-020",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-020",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-04-14Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23231 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-019",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-019",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-04-14Description Description Severity Notes Researchers discovered a vulnerability in AMD firmware that could allow a malicious hypervisor to alter BIOS settings and Memory Mapped I/O (MMIO) routing configurations, compromising the confidentiality and integrity of Confidential VMs...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-018",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-018",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-04-07Updated: 2026-04-15Description Description Severity Notes 2026-04-15 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23111...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-017",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-017",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-04-02Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23273 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-016",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-016",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-03-27Updated: 2026-03-31Description Description Severity Notes 2026-03-31 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2025-38616...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-015",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-015",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-03-27Description Description Severity Notes The following vulnerability was discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23268. For more information, see the Compute Engine security bulletin: High CVE-2026-23268",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-014",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-014",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-03-14Updated: 2026-03-25Description Description Severity Notes 2026-03-25 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2025-38678...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-013",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-013",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-03-11Description Description Severity Notes The following vulnerabilities were discovered in Envoy Proxy: CVE-2026-26311 CVE-2026-26309 CVE-2026-26310 CVE-2026-26308 CVE-2026-26330 The following vulnerabilities were discovered in Istio: CVE-2026-31837 CVE-2026-31838 For instructions...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-012",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-012",
+      "published": "2026-06-09T18:41:49+00:00",
+      "summary": "Published: 2026-02-20Description Description Severity Notes In Google Cloud Vertex AI, a vulnerability involving predictable bucket naming was identified in Vertex AI Experiments from version 1.21.0 up to (but not including) 1.133.0. What should I do? No customer action is needed for mitigation....",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
     {
       "title": "Reconstructing AI activity in investigations",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/06/09/reconstructing-ai-activity-investigations/",
@@ -91,6 +805,78 @@
         "Microsoft Defender for Endpoint",
         "Microsoft Sentinel",
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-10984 Inappropriate implementation in Accessibility",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-10984",
+      "published": "2026-06-09T14:00:57+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see Google Chrome Releases for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-11291 Policy bypass in Android Autofill",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11291",
+      "published": "2026-06-09T14:00:37+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see Google Chrome Releases for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-11178 Policy bypass in WebView",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11178",
+      "published": "2026-06-09T14:00:35+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see Google Chrome Releases for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -187,684 +973,6 @@
       ],
       "tags": [
         "CISA Advisories"
-      ]
-    },
-    {
-      "title": "GCP-2026-035",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-035",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-06-08Description Description Severity Notes A vulnerability was found in Envoy where HTTP/2 downstream request processing allow an unauthenticated remote client to trigger excessive memory consumption, potentially resulting in OOM termination of the Envoy process and denial of...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-034",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-034",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-05-20Description Description Severity Notes A vulnerability was found in Apigee where the IntegrationRegion parameter in the SetIntegrationRequest policy lacks validation, allowing for Server-Side Request Forgery (SSRF) and service account token exfiltration. The issue arises when...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-033",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-033",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-05-14Description Description Severity Notes A container breakout vulnerability CVE-2026-46300 has been found in the Linux kernel, known as Fragnesia. It allows an unprivileged local attacker to escalate to root on the host. For instructions and more details, see the following...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-032",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-032",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-05-12Description Description Severity Notes AMD has identified a hardware-level vulnerability in Zen 2 microarchitecture processors (including EPYC and Ryzen series) involving potential corruption within the micro-operation (OP) cache. Under specific conditions, this issue...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-031",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-031",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-05-12Description Description Severity Notes Researchers discovered a vulnerability in AMD firmware that, due to missing protection, could allow a malicious hypervisor to execute arbitrary code on the AMD Secure Processor (ASP). This allows for the escalation of Memory Mapped I/O...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-030",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-030",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-05-11Updated: 2026-05-20Description Description Severity Notes 2026-05-20 Update: Added CVE-2026-43500 and added CVE IDs to exploit paths. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS and Ubuntu...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-029",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-029",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-05-07Description Description Severity Notes Microsoft is updating the Secure Boot certificates originally issued in 2011 to ensure Windows devices continue to verify trusted boot software. These older certificates begin expiring in June 2026. Devices that haven't received the newer...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-028",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-028",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-05-05Updated: 2026-05-27Description Description Severity Notes CVE-2026-31431, also known as \"Copy Fail,\" is a high-severity local privilege escalation (LPE) vulnerability in the Linux kernel that allows an unprivileged user to gain root access. Disclosed in late April 2026, it...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-027",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-027",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-05-01Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23351 For instructions and more details, see the following bulletins: GKE security bulletin...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-026",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-026",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-04-30Updated: 2026-05-04Description Description Severity Notes 2026-05-04 Update: Added patch versions for GKE. A vulnerability in the Linux kernel (CVE-2026-31431) allows an unprivileged local attacker to write to the system page cache, potentially leading to local privilege...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-025",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-025",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-04-30Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23274 For instructions and more details, see the following bulletins: GKE security bulletin...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-024",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-024",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-04-28Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS and Ubuntu nodes: CVE-2025-38248 For instructions and more details, see the following bulletins: GKE...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-023",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-023",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-04-28Updated: 2026-05-07Description Description Severity Notes 2026-05-07 Update: Added patch versions for Ubuntu node pools on GKE The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes:...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-022",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-022",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-04-16Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23209 For instructions and more details, see the following bulletins: GKE security bulletin...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-021",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-021",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-04-14Description Description Severity Notes AMD reported a vulnerability in its firmware that could have allowed a malicious hypervisor to direct the IOMMU to write into the guest memory of AMD SEV-SNP enabled instances, compromising guest data integrity. Google rolled out a...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-020",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-020",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-04-14Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23231 For instructions and more details, see the following bulletins: GKE security bulletin...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-019",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-019",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-04-14Description Description Severity Notes Researchers discovered a vulnerability in AMD firmware that could allow a malicious hypervisor to alter BIOS settings and Memory Mapped I/O (MMIO) routing configurations, compromising the confidentiality and integrity of Confidential VMs...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-018",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-018",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-04-07Updated: 2026-04-15Description Description Severity Notes 2026-04-15 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23111...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-017",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-017",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-04-02Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23273 For instructions and more details, see the following bulletins: GKE security bulletin...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-016",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-016",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-03-27Updated: 2026-03-31Description Description Severity Notes 2026-03-31 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2025-38616...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-015",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-015",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-03-27Description Description Severity Notes The following vulnerability was discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23268. For more information, see the Compute Engine security bulletin: High CVE-2026-23268",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-014",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-014",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-03-14Updated: 2026-03-25Description Description Severity Notes 2026-03-25 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2025-38678...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-013",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-013",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-03-11Description Description Severity Notes The following vulnerabilities were discovered in Envoy Proxy: CVE-2026-26311 CVE-2026-26309 CVE-2026-26310 CVE-2026-26308 CVE-2026-26330 The following vulnerabilities were discovered in Istio: CVE-2026-31837 CVE-2026-31838 For instructions...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-012",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-012",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-02-20Description Description Severity Notes In Google Cloud Vertex AI, a vulnerability involving predictable bucket naming was identified in Vertex AI Experiments from version 1.21.0 up to (but not including) 1.133.0. What should I do? No customer action is needed for mitigation....",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-011",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-011",
-      "published": "2026-06-08T18:42:41+00:00",
-      "summary": "Published: 2026-02-20Description Description Severity Notes A stored Cross-site Scripting (XSS) vulnerability in _genai/_evals_visualization was identified in Google google-cloud-aiplatform (Vertex AI Python SDK Visualization) on Exclusively-Hosted-Service. What should I do? Customers will need to...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
       ]
     },
     {
@@ -997,42 +1105,6 @@
       "tags": [
         "Microsoft Defender for Endpoint",
         "Microsoft Purview"
-      ]
-    },
-    {
-      "title": "Extend Microsoft Purview data protection to AWS Bedrock agents for cross-cloud AI governance",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/extend-microsoft-purview-data-protection-to-aws-bedrock-agents/ba-p/4525984",
-      "published": "2026-06-05T19:32:44+00:00",
-      "summary": "Organizations are moving fast with AI, and many of those AI workloads are not staying in one cloud. A team might use Microsoft 365 and Microsoft Purview for governance and in addition to Microsoft Foundry they may still choose to run an AI agent on AWS Bedrock or on the Google Cloud Platform. The...",
-      "author": "Inwafula",
-      "source": "Microsoft Purview",
-      "source_id": "purview",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Data Security",
-      "board_id": "microsoftpurviewblog",
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        },
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 5
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Purview",
-        "Google Cloud Security",
-        "AWS Security"
       ]
     },
     {
