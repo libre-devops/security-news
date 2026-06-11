@@ -1,8 +1,32 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-11T04:19:21.503787+00:00",
+  "lastUpdated": "2026-06-11T10:43:28.178661+00:00",
   "totalArticles": 140,
   "articles": [
+    {
+      "title": "At-Scale Failure Reporting for Azure Update Manager",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/at-scale-failure-reporting-for-azure-update-manager/ba-p/4527378",
+      "published": "2026-06-11T06:32:42+00:00",
+      "summary": "Introduction Azure Update Manager simplifies patching across Azure virtual machines and Azure Arc-enabled servers by providing a centralized platform for patch assessment and installation. However, as environments scale, a key challenge emerges—efficiently identifying and troubleshooting patch...",
+      "author": "rajeshkumar30",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Turn specs into evals for any agent with ASSERT",
       "link": "https://commandline.microsoft.com/assert-written-intent-executable-evals/",
@@ -25,30 +49,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Introducing scheduled antivirus scans on Microsoft Defender Linux",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-scheduled-antivirus-scans-on-microsoft-defender/ba-p/4524578",
-      "published": "2026-06-10T16:00:00+00:00",
-      "summary": "Security teams rely on scheduled scans to ensure consistent coverage across devices, detect dormant or missed threats, and meet compliance requirements. However, managing scans on Linux has traditionally required custom scripts and cron-based setups, which can be hard to scale and maintain. That’s...",
-      "author": "Rutuja_dange",
-      "source": "Microsoft Defender for Endpoint",
-      "source_id": "defender_endpoint",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Endpoint Security",
-      "board_id": "microsoftdefenderatpblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint"
       ]
     },
     {
