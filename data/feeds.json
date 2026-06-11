@@ -1,8 +1,128 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-11T10:43:28.178661+00:00",
-  "totalArticles": 140,
+  "lastUpdated": "2026-06-11T16:10:00.413919+00:00",
+  "totalArticles": 142,
   "articles": [
+    {
+      "title": "Reduce unnecessary internet exposure with Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/reduce-unnecessary-internet-exposure-with-microsoft-defender/ba-p/4525654",
+      "published": "2026-06-11T16:00:00+00:00",
+      "summary": "In today’s threat landscape, internet exposure, i.e. devices that allow inbound connectivity from the public internet, continues to be a major vector for initial access and compromise. Devices that are exposed to the public internet can significantly increase an organization’s attack surface,...",
+      "author": "hadarshindler",
+      "source": "Microsoft Defender for Endpoint",
+      "source_id": "defender_endpoint",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Endpoint Security",
+      "board_id": "microsoftdefenderatpblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint"
+      ]
+    },
+    {
+      "title": "Analyse Intune Diagnostics Logs with GitHub Copilot",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/analyse-intune-diagnostics-logs-with-github-copilot/ba-p/4527500",
+      "published": "2026-06-11T12:15:59+00:00",
+      "summary": "Hello everyone! I’m Stefan Röll, Cloud Solution Architect at Microsoft Germany for Cloud Endpoints. I work closely with IT Admins to improve their experience with everything around Intune, W365 and Windows. I know that troubleshooting an issue can be time consuming and challenging. In this blog I...",
+      "author": "StefanRöll",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Yarbo Android/iOS Mobile Application and Cloud Infrastructure",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-01",
+      "published": "2026-06-11T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to obtain hard-coded credentials, gain access to telemetry data, and potentially send operational commands to the robot fleet. The following versions of Yarbo Android/iOS Mobile Application and Cloud...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Naxclow IoT Platform",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-02",
+      "published": "2026-06-11T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to impersonate devices, intercept or manipulate communications, harvest sensitive credentials at scale, or gain unauthorized access. The following versions of Naxclow IoT Platform are affected: Smart Doorbell...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
+      "title": "Brickcom Cameras",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-03",
+      "published": "2026-06-11T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow a remote unauthenticated attacker to gain unauthorized access to live video feeds, retrieve sensitive visual information from affected premises, and obtain administrative control of the device. The following versions of...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
     {
       "title": "At-Scale Failure Reporting for Azure Update Manager",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/at-scale-failure-reporting-for-azure-update-manager/ba-p/4527378",
@@ -49,6 +169,30 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Introducing scheduled antivirus scans on Microsoft Defender Linux",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-scheduled-antivirus-scans-on-microsoft-defender/ba-p/4524578",
+      "published": "2026-06-10T16:00:00+00:00",
+      "summary": "Security teams rely on scheduled scans to ensure consistent coverage across devices, detect dormant or missed threats, and meet compliance requirements. However, managing scans on Linux has traditionally required custom scripts and cron-based setups, which can be hard to scale and maintain. That’s...",
+      "author": "Rutuja_dange",
+      "source": "Microsoft Defender for Endpoint",
+      "source_id": "defender_endpoint",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Endpoint Security",
+      "board_id": "microsoftdefenderatpblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint"
       ]
     },
     {
@@ -2140,6 +2284,30 @@
       ]
     },
     {
+      "title": "Hitachi Energy ITT600 Explorer",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-02",
+      "published": "2026-06-04T12:00:00+00:00",
+      "summary": "View CSAF Summary Hitachi Energy is aware of vulnerabilities that affect ITT600 Explorer product versions listed in this document. These vulnerabilities can be exploited to carry out Denial of Service (DoS) attack on the product. The vulnerabilities only affect Hitachi Energy Integrated Testing...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ]
+    },
+    {
       "title": "NAVTOR NavBox",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-01",
       "published": "2026-06-04T12:00:00+00:00",
@@ -2164,10 +2332,10 @@
       ]
     },
     {
-      "title": "Hitachi Energy MACH HiDraw",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-05",
+      "title": "B&R PPT30 Operating System",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-03",
       "published": "2026-06-04T12:00:00+00:00",
-      "summary": "View CSAF Summary Hitachi Energy is aware of a buffer overflow vulnerability that affects MACH HiDraw product versions listed in this document. Successful exploitation of this vulnerability could lead to a buffer overflow condition, potentially resulting in application outages (denial of service)...",
+      "summary": "View CSAF Summary B&R is aware of a vulnerability in the product versions listed as affected in the advisory. An attacker who successfully exploits this vulnerability could make the OPC-UA server of the product inaccessible. The following versions of B&R PPT30 Operating System are affected: PPT30...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -2212,34 +2380,10 @@
       ]
     },
     {
-      "title": "Hitachi Energy ITT600 Explorer",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-02",
+      "title": "Hitachi Energy MACH HiDraw",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-05",
       "published": "2026-06-04T12:00:00+00:00",
-      "summary": "View CSAF Summary Hitachi Energy is aware of vulnerabilities that affect ITT600 Explorer product versions listed in this document. These vulnerabilities can be exploited to carry out Denial of Service (DoS) attack on the product. The vulnerabilities only affect Hitachi Energy Integrated Testing...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "B&R PPT30 Operating System",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-03",
-      "published": "2026-06-04T12:00:00+00:00",
-      "summary": "View CSAF Summary B&R is aware of a vulnerability in the product versions listed as affected in the advisory. An attacker who successfully exploits this vulnerability could make the OPC-UA server of the product inaccessible. The following versions of B&R PPT30 Operating System are affected: PPT30...",
+      "summary": "View CSAF Summary Hitachi Energy is aware of a buffer overflow vulnerability that affects MACH HiDraw product versions listed in this document. Successful exploitation of this vulnerability could lead to a buffer overflow condition, potentially resulting in application outages (denial of service)...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -2578,30 +2722,6 @@
       ]
     },
     {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/06/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "published": "2026-06-02T12:00:00+00:00",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2022-0492 Linux Kernel Improper Authentication Vulnerability CVE-2025-48595 Android Framework Integer Overflow Vulnerability These types of vulnerabilities are...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
       "title": "CISA and Partners Urge Hardening Automatic Tank Gauge Systems",
       "link": "https://www.cisa.gov/resources-tools/resources/cisa-and-partners-urge-hardening-automatic-tank-gauge-systems",
       "published": "2026-06-02T12:00:00+00:00",
@@ -2629,6 +2749,30 @@
       "tags": [
         "CISA Advisories",
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/06/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-06-02T12:00:00+00:00",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2022-0492 Linux Kernel Improper Authentication Vulnerability CVE-2025-48595 Android Framework Integer Overflow Vulnerability These types of vulnerabilities are...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
       ]
     },
     {
@@ -2890,10 +3034,10 @@
       ]
     },
     {
-      "title": "ABB EIBPORT",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-03",
+      "title": "MacGregor Voyage Data Recorder (VDR) G4e",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-01",
       "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary ABB is aware of vulnerabilities in the product versions listed as affected in the advisory. A firmware update is available that resolves these privately reported vulnerabilities in the product versions listed as affected in the advisory. An attacker who successfully exploited...",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could result in an attacker gaining administrator access to the device. The following versions of MacGregor Voyage Data Recorder (VDR) G4e are affected: MacGregor Voyage Data Recorder (VDR) G4e <V5.250 CVSS Vendor Equipment...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -2911,96 +3055,6 @@
       ],
       "tags": [
         "CISA Advisories"
-      ]
-    },
-    {
-      "title": "Schneider Electric EcoStruxure Machine Expert HVAC",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-07",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcostruxureTM Machine Expert HVAC product. The [EcostruxureTM Machine Expert HVAC](https://www.se.com/ww/en/download/document/EcoStruxureME_HVAC/) product is a programming software for Modicon M171-M172 logic controllers....",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "CP Plus 8 Ch. Network Video Recorder",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-05",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability allows an attacker's malicious script to execute in the browser of any authenticated user or administrator who accesses the affected interface. This could lead to compromise of user sessions, execution of unauthorized actions with the...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ]
-    },
-    {
-      "title": "Supply Chain Compromises Impact Nx Console and GitHub Repositories",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/05/28/supply-chain-compromises-impact-nx-console-and-github-repositories",
-      "published": "2026-05-28T12:00:00+00:00",
-      "summary": "CISA is prioritizing the response to multiple emerging software supply chain intrusion campaigns targeting developer ecosystems Continuous Integration/Continuous Development (CI/CD) pipelines. These recent incidents, including the GitHub compromise via a malicious Nx Console Visual Studio Code (VS...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 5
-        },
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "CISA Advisories",
-        "Threat Intelligence",
-        "AWS Security",
-        "Google Cloud Security"
       ]
     },
     {
@@ -3675,30 +3729,6 @@
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
           "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "Undermining the trust boundary: Investigating a stealthy intrusion through third-party compromise",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/05/12/undermining-the-trust-boundary-investigating-a-stealthy-intrusion-through-third-party-compromise/",
-      "published": "2026-05-12T15:00:00+00:00",
-      "summary": "Microsoft Incident Response investigated an attack operated through legitimate and trusted administrative mechanisms to blend seamlessly into routine operations and remain undetected demonstrating that intrusions have increasingly avoided using noisy exploits, obvious malware, or custom tooling,...",
-      "author": "Microsoft Incident Response",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
         }
       ],
       "tags": [
