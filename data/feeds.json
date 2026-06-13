@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-12T20:15:44.418776+00:00",
-  "totalArticles": 142,
+  "lastUpdated": "2026-06-13T04:10:27.502621+00:00",
+  "totalArticles": 141,
   "articles": [
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -487,7 +487,7 @@
       "title": "SVD-2026-0603: Unauthenticated Arbitrary File Creation and Truncation in a PostgreSQL Sidecar Service Endpoint in Splunk Enterprise",
       "link": "https://advisory.splunk.com//advisories/SVD-2026-0603",
       "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.2.4 and 10.0.7, and Splunk Cloud Platform versions below 10.4.2604.3 and 10.2.2510.14, an unauthenticated user could create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.The vulnerability exists because the PostgreSQL sidecar...",
+      "summary": "In Splunk Enterprise versions below 10.2.4 and 10.0.7, an unauthenticated user could create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.The vulnerability exists because the PostgreSQL sidecar service endpoint lacks authentication controls, allowing any...",
       "author": "Splunk",
       "source": "Splunk Security Advisories",
       "source_id": "splunk_security",
@@ -3709,30 +3709,6 @@
       ],
       "tags": [
         "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "TLS Certificate Pinning and Best Practices in Azure Open-Source Relational Databases",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/tls-certificate-pinning-and-best-practices-in-azure-open-source/ba-p/4519531",
-      "published": "2026-05-14T00:53:22+00:00",
-      "summary": "TLS certificate pinning in Azure Database for PostgreSQL and MySQL Transport Layer Security (TLS) encrypts data in transit between client applications and the server and authenticates the service endpoint in client-server authentication. Azure Database server certificates are issued by well-known...",
-      "author": "TameikaL",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     }
   ]
