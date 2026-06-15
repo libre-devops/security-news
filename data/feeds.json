@@ -1,8 +1,38 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-15T04:50:40.921750+00:00",
-  "totalArticles": 139,
+  "lastUpdated": "2026-06-15T12:24:29.978332+00:00",
+  "totalArticles": 140,
   "articles": [
+    {
+      "title": "Automating Daily MDE Compliance Monitoring Across Azure VMs",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-daily-mde-compliance-monitoring-across-azure-vms/ba-p/4528274",
+      "published": "2026-06-15T11:52:45+00:00",
+      "summary": "The Problem We’re Solving Most security teams have no automated way to know when a VM silently falls out of MDE coverage, whether because the agent stopped, the VM was newly provisioned without onboarding, or the device stopped reporting. This Logic App closes that gap and puts the right...",
+      "author": "SayanRoy",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 14
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint",
+        "Microsoft Sentinel"
+      ]
+    },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "link": "https://www.cisa.gov/news-events/alerts/2026/06/12/cisa-adds-one-known-exploited-vulnerability-catalog",
