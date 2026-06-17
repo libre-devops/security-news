@@ -1,8 +1,92 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-16T20:56:31.876816+00:00",
-  "totalArticles": 156,
+  "lastUpdated": "2026-06-17T04:28:05.275677+00:00",
+  "totalArticles": 157,
   "articles": [
+    {
+      "title": "Closing the loop on container security: From code to runtime in the AI era",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/closing-the-loop-on-container-security-from-code-to-runtime-in/ba-p/4528599",
+      "published": "2026-06-16T23:15:21+00:00",
+      "summary": "Containers are the backbone of modern cloud-native apps — and increasingly, the infrastructure powering AI, from AI assistants to a new wave of intelligent agents. They also blur the line between build, deploy, and runtime: a single code change can become a running workload in minutes. A...",
+      "author": "mahersko",
+      "source": "Microsoft Defender for Cloud",
+      "source_id": "defender_cloud",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Cloud Security",
+      "board_id": "microsoftdefendercloudblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 4
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Cloud",
+        "AWS Security",
+        "Google Cloud Security",
+        "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "Transform your security operation with a unified experience in Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/transform-your-security-operation-with-a-unified-experience-in/ba-p/4527932",
+      "published": "2026-06-16T16:00:00+00:00",
+      "summary": "Co-authored with Lizet Pena, Caroline Mutua, Alvin Kua and Marco Sudahl Security operations teams today are being asked to do more than ever: respond faster, manage increasing data volumes, reduce operational complexity, stay ahead of evolving threats, and balance cost and efficiency. That’s why...",
+      "author": "Mohit_Kumar1",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel",
+        "Microsoft Security Copilot",
+        "Threat Intelligence"
+      ]
+    },
     {
       "title": "Achieving success with AI",
       "link": "https://blogs.microsoft.com/blog/2026/06/16/achieving-success-with-ai/",
@@ -4039,36 +4123,6 @@
       ],
       "tags": [
         "Microsoft Defender for Endpoint"
-      ]
-    },
-    {
-      "title": "Build a Local Microsoft Sentinel Triage Agent in VS Code (Copilot + MCP)",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/build-a-local-microsoft-sentinel-triage-agent-in-vs-code-copilot/ba-p/4520486",
-      "published": "2026-05-18T04:28:02+00:00",
-      "summary": "Modern SOC work is not limited by data—it’s limited by the friction of collecting it. This post shows a local-first workflow that lets you investigate Microsoft Sentinel incidents from inside VS Code using GitHub Copilot Chat for reasoning and a small, deterministic MCP toolset for evidence...",
-      "author": "absharan",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Threat Intelligence"
       ]
     }
   ]
