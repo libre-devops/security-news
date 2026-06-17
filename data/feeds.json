@@ -1,21 +1,21 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-17T11:04:32.572352+00:00",
+  "lastUpdated": "2026-06-17T15:43:25.610195+00:00",
   "totalArticles": 158,
   "articles": [
     {
-      "title": "Closing the loop on container security: From code to runtime in the AI era",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/closing-the-loop-on-container-security-from-code-to-runtime-in/ba-p/4528599",
-      "published": "2026-06-16T23:15:21+00:00",
-      "summary": "Containers are the backbone of modern cloud-native apps — and increasingly, the infrastructure powering AI, from AI assistants to a new wave of intelligent agents. They also blur the line between build, deploy, and runtime: a single code change can become a running workload in minutes. A...",
-      "author": "mahersko",
-      "source": "Microsoft Defender for Cloud",
-      "source_id": "defender_cloud",
+      "title": "Securing the invisible workforce",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/securing-the-invisible-workforce/ba-p/4528611",
+      "published": "2026-06-17T12:35:52+00:00",
+      "summary": "Non-human identities are now the majority of the identity estate in most enterprises. Service principals access organizational resources across SharePoint, Azure, and Microsoft 365, Service accounts run critical business processes on-premises, OAuth apps move data across SaaS boundaries, and AI...",
+      "author": "Nagaraj Venkatesh",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
       "source_group": "TechCommunity",
       "source_kind": "techcommunity",
       "vendor": "Microsoft",
-      "source_category": "Cloud Security",
-      "board_id": "microsoftdefendercloudblog",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
       "products": [
         {
           "id": "defender-xdr",
@@ -23,32 +23,80 @@
           "score": 11
         },
         {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        },
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 4
-        },
-        {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 3
+          "score": 5
         }
       ],
       "tags": [
         "Microsoft Defender XDR",
-        "Microsoft Defender for Cloud",
-        "AWS Security",
-        "Google Cloud Security",
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "NCSC CEO: Hostile states linked to three-quarters of cyber attacks affecting UK's critical systems",
+      "link": "https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks",
+      "published": "2026-06-17T12:00:00+00:00",
+      "summary": "Dr Richard Horne highlighted the scale of cyber threats against the UK’s critical infrastructure at RUSI’s Annual Security Lecture.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "Security Copilot RBAC for Embedded Experience in Unified Security Platform",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/security-copilot-rbac-for-embedded-experience-in-unified/ba-p/4528833",
+      "published": "2026-06-17T11:10:30+00:00",
+      "summary": "Introduction The evolution of Security Operations Centers (SOC) is increasingly driven by AI-powered capabilities that improve efficiency, accuracy, and response time. Microsoft Security Copilot represents a significant advancement in this space by embedding AI-driven assistance directly within...",
+      "author": "SantoshPargi",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 11
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Security Copilot",
+        "Threat Intelligence",
+        "Microsoft Sentinel"
       ]
     },
     {
@@ -277,54 +325,6 @@
       ],
       "tags": [
         "CISA Advisories"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-11639 Use after free in Compositing",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11639",
-      "published": "2026-06-16T02:13:45+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-11635 Use after free in Bluetooth",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-11635",
-      "published": "2026-06-16T02:13:40+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
