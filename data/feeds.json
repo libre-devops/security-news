@@ -1,36 +1,54 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-17T20:19:10.408952+00:00",
-  "totalArticles": 158,
+  "lastUpdated": "2026-06-18T04:21:45.229471+00:00",
+  "totalArticles": 155,
   "articles": [
     {
-      "title": "Microsoft Defender for Office 365 Plan 1 is now rolling out to Microsoft 365 E3 and Office 365 E3",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/microsoft-defender-for-office-365-plan-1-is-now-rolling-out-to/ba-p/4527287",
-      "published": "2026-06-17T18:44:08+00:00",
-      "summary": "Starting today, Microsoft Defender for Office 365 Plan 1 is rolling out to customers with Microsoft 365 E3/G3 and Office 365 E3/G3 licenses, with rollout expected to complete in August 2026. For security teams, this means added protection against phishing, malware, and malicious links across email...",
-      "author": "VipulPandey",
-      "source": "Microsoft Defender for Office 365",
-      "source_id": "defender_office",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
+      "title": "Crypto Clipper uses Tor and worm-like propagation for persistence and control",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/17/crypto-clipper-uses-tor-worm-like-propagation-for-persistence-control/",
+      "published": "2026-06-17T23:11:43+00:00",
+      "summary": "Microsoft Threat Intelligence analyzed a cryptocurrency clipper campaign that combines clipboard theft, wallet replacement, Tor-based communications, and worm-like propagation. Beyond stealing cryptocurrency transactions, the malware establishes persistent access and enables follow-on activity...",
+      "author": "Microsoft Defender Security Research Team and Microsoft Defender Experts",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Email Security",
-      "board_id": "microsoftdefenderforoffice365blog",
+      "source_category": "Security Blog",
+      "board_id": null,
       "products": [
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        },
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 3
+          "score": 10
         }
       ],
       "tags": [
-        "Microsoft Defender for Office 365",
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "Beyond the benchmark: Advancing security at AI speed",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/17/beyond-the-benchmark-advancing-security-at-ai-speed/",
+      "published": "2026-06-17T19:30:00+00:00",
+      "summary": "Read how Microsoft Security has advanced its agentic vulnerability detection system, codename MDASH, integrating into real-world workflows across Windows, Azure, and identity systems. The post Beyond the benchmark: Advancing security at AI speed appeared first on Microsoft Security Blog.",
+      "author": "Taesoo Kim",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -79,78 +97,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Anatomy of the change",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/anatomy-of-the-change/ba-p/4527934",
-      "published": "2026-06-17T16:00:00+00:00",
-      "summary": "Co-authored with Lizet Pena, Caroline Mutua, Alvin Kua and Marco Sudahl Incidents, alerts, correlation, and data—what actually changes with the new platform, and why it works in your favor. When you open Microsoft Sentinel in Microsoft Defender for the first time, the shift feels immediate:...",
-      "author": "Mohit_Kumar1",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 5
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Threat Intelligence",
-        "Microsoft Defender XDR",
-        "Microsoft Security Copilot"
-      ]
-    },
-    {
-      "title": "Introducing New Additions to Microsoft Sentinel Normalization and ASIM",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/introducing-new-additions-to-microsoft-sentinel-normalization/ba-p/4524584",
-      "published": "2026-06-17T15:00:00+00:00",
-      "summary": "TL;DR: New ASIM parsers for Azure Firewall, Key Vault, AWS CloudTrail (EC2, S3, IAM), and 10+ third-party products. Two new schemas — Asset Entities and AI Agent Events. Plus changelogs on GitHub and a heads-up on an upcoming breaking change in ProcessEvent parsers. What's New Security teams deal...",
-      "author": "derricklee",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "AWS Security"
       ]
     },
     {
@@ -3418,30 +3364,6 @@
       ]
     },
     {
-      "title": "Preinstall to persistence: Inside the Red Hat npm Miasma credential-stealing campaign",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/02/preinstall-persistence-inside-red-hat-npm-miasma-credential-stealing-campaign/",
-      "published": "2026-06-03T04:45:06+00:00",
-      "summary": "A large-scale npm supply chain attack compromised over 90 versions of @redhat-cloud-services packages, silently infecting CI/CD environments and developer systems. The malicious code steals credentials from GitHub, cloud platforms, and local machines, then spreads like a worm by republishing...",
-      "author": "Microsoft Defender Security Research Team",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
       "title": "The end of patching era for containers: Microsoft Defender for Cloud expands hardened image support",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/the-end-of-patching-era-for-containers-microsoft-defender-for/ba-p/4524798",
       "published": "2026-06-02T22:53:19+00:00",
@@ -3583,30 +3505,6 @@
       "tags": [
         "Microsoft Defender XDR",
         "AWS Security"
-      ]
-    },
-    {
-      "title": "Microsoft Build 2026: Securing code, agents, and models across the development lifecycle",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/",
-      "published": "2026-06-02T17:15:18+00:00",
-      "summary": "Discover how Microsoft enables fast, secure AI development with MDASH and new security capabilities. The post Microsoft Build 2026: Securing code, agents, and models across the development lifecycle appeared first on Microsoft Security Blog.",
-      "author": "Aleš Holeček",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
