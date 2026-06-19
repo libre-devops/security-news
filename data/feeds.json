@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-19T04:49:05.192543+00:00",
-  "totalArticles": 118,
+  "lastUpdated": "2026-06-19T10:43:48.572012+00:00",
+  "totalArticles": 121,
   "articles": [
     {
       "title": "Issue with containerd CRI Plugin - CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, CVE-2026-47262",
@@ -730,6 +730,72 @@
       ]
     },
     {
+      "title": "Check This Out! (CTO!) Guide (May/June 2026)",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/check-this-out-cto-guide-may-june-2026/ba-p/4529349",
+      "published": "2026-06-18T21:36:23+00:00",
+      "summary": "Member: TysonPaul | Microsoft Community Hub Triggering Azure Functions from Blob Storage Using Event Grid Team Blog: Core Infrastructure and Security Author: AndrewCoughlin Published: 05/11/2026 Summary: The article explains how to trigger Azure Functions from Blob Storage events using Azure Event...",
+      "author": "TysonPaul",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "AI Security"
+      ]
+    },
+    {
+      "title": "Microsoft Security Copilot: AI-Driven Security Operations at Greater Scale",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/microsoft-security-copilot-ai-driven-security-operations-at/ba-p/4528912",
+      "published": "2026-06-18T20:49:10+00:00",
+      "summary": "At its core, Security Copilot is built to enhance every facet of security operations at machine speed. It translates a vast array of inputs (Microsoft’s cloud-scale telemetry, threat intelligence feeds, security best practices, and enterprise-specific data) into tailored recommendations and...",
+      "author": "edgarus71",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        }
+      ],
+      "tags": [
+        "Microsoft Purview",
+        "Microsoft Security Copilot",
+        "Microsoft Sentinel",
+        "Threat Intelligence"
+      ]
+    },
+    {
       "title": "New Forrester study shows customers who unified with Microsoft Security benefited from 124% ROI",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/06/18/new-forrester-study-shows-customers-who-unified-with-microsoft-security-benefited-from-124-roi/",
       "published": "2026-06-18T19:36:08+00:00",
@@ -784,10 +850,70 @@
       ]
     },
     {
-      "title": "Alert: NCSC issues advice following global targeting of Fortinet firewalls and VPN gateways",
-      "link": "https://www.ncsc.gov.uk/news/advice-following-global-targeting-of-fortinet-firewalls-and-vpn-gateways",
+      "title": "Detection and automation, reimagined",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/detection-and-automation-reimagined/ba-p/4527933",
+      "published": "2026-06-18T16:00:00+00:00",
+      "summary": "Co-authored with Lizet Pena, Caroline Mutua, Alvin Kua and Marco Sudahl How analytics rules, playbooks, workbooks, and hunting evolve in Defender—and why the new toolbelt makes detection engineering faster, automation richer, and hunting genuinely cross-platform. If you build detections for a...",
+      "author": "Mohit_Kumar1",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 7
+        },
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 5
+        },
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 5
+        },
+        {
+          "id": "defender-identity",
+          "name": "Microsoft Defender for Identity",
+          "score": 5
+        },
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 5
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel",
+        "Threat Intelligence",
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Defender for Identity",
+        "Microsoft Defender for Office 365",
+        "Microsoft Security Copilot"
+      ]
+    },
+    {
+      "title": "The 'vibe coding spectrum' approach to AI-assisted software development",
+      "link": "https://www.ncsc.gov.uk/blogs/the-vibe-coding-spectrum-approach-to-ai-assisted-software-development",
       "published": "2026-06-18T12:00:00+00:00",
-      "summary": "Organisations using Fortinet services are being urged to take action following a campaign affecting firewalls and VPN gateways.",
+      "summary": "Different code deserves different levels of oversight, so calibrate your approach to ‘vibe coding’ accordingly.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -808,10 +934,10 @@
       ]
     },
     {
-      "title": "The 'vibe coding spectrum' approach to AI-assisted software development",
-      "link": "https://www.ncsc.gov.uk/blogs/the-vibe-coding-spectrum-approach-to-ai-assisted-software-development",
+      "title": "Alert: NCSC issues advice following global targeting of Fortinet firewalls and VPN gateways",
+      "link": "https://www.ncsc.gov.uk/news/advice-following-global-targeting-of-fortinet-firewalls-and-vpn-gateways",
       "published": "2026-06-18T12:00:00+00:00",
-      "summary": "Different code deserves different levels of oversight, so calibrate your approach to ‘vibe coding’ accordingly.",
+      "summary": "Organisations using Fortinet services are being urged to take action following a campaign affecting firewalls and VPN gateways.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
