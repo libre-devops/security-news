@@ -1,20 +1,20 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-22T12:12:01.466599+00:00",
-  "totalArticles": 120,
+  "lastUpdated": "2026-06-22T20:52:44.324689+00:00",
+  "totalArticles": 121,
   "articles": [
     {
-      "title": "Powering the next wave of AI: Expanding capacity with our new datacenter in Pecos",
-      "link": "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/",
-      "published": "2026-06-22T12:06:39+00:00",
-      "summary": "Today, Microsoft is announcing one of the largest single capacity additions in our history. In Pecos, Texas, we will build a new datacenter campus, expanding our global datacenter capacity by approximately 2 gigawatts (GW) to meet strong and sustained customer demand for AI and cloud services...",
-      "author": "Noelle Walsh",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
+      "title": "Guarding AI memory",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/22/guarding-ai-memory/",
+      "published": "2026-06-22T19:07:28+00:00",
+      "summary": "What happens when threat actors target what AI remembers? Microsoft breaks down the risks and the defenses. The post Guarding AI memory appeared first on Microsoft Security Blog.",
+      "author": "Natalie Isak and Sarah Cooley",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "AI",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
@@ -28,10 +28,34 @@
       ]
     },
     {
+      "title": "One intrusion, two cyberattackers: Uncovering parallel threat activity",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/22/one-intrusion-two-cyberattackers-uncovering-parallel-threat-activity/",
+      "published": "2026-06-22T16:00:00+00:00",
+      "summary": "Ransomware case reveals two parallel threat actors, blending tactics and evasion—showing why isolated signals can often miss modern, overlapping cyberattacks. The post One intrusion, two cyberattackers: Uncovering parallel threat activity appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Incident Response",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ]
+    },
+    {
       "title": "GCP-2026-037",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-037",
-      "published": "2026-06-19T20:59:35+00:00",
-      "summary": "Published: 2026-06-18Updated: 2026-06-19Description Description Severity Notes 2026-06-19 Update: Added GKE patch versions containing the fixes for Container-Optimized OS node images for minor versions from 1.30 to 1.34. Patches for Ubuntu node images and for minor version 1.35 and 1.36 for...",
+      "published": "2026-06-22T14:39:38+00:00",
+      "summary": "Published: 2026-06-18Updated: 2026-06-20Description Description Severity Notes 2026-06-20 Update: Added GKE patch versions containing the fixes for Container-Optimized OS node images for minor versions 1.35 and 1.36. Patches for Ubuntu node images are still pending and in progress. 2026-06-19...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
       "source_id": "gcp_security",
@@ -54,7 +78,7 @@
     {
       "title": "GCP-2026-036",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-036",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-06-09Description Description Severity Notes ARM has announced CVE-2025-10263, an architectural issue affecting some Arm cores which lets an attacker bypass translation stages or GPT protections under certain conditions. This vulnerability lets an attacker at a lower exception level...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -78,7 +102,7 @@
     {
       "title": "GCP-2026-035",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-035",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-06-08Description Description Severity Notes A vulnerability was found in Envoy where HTTP/2 downstream request processing allow an unauthenticated remote client to trigger excessive memory consumption, potentially resulting in OOM termination of the Envoy process and denial of...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -102,7 +126,7 @@
     {
       "title": "GCP-2026-034",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-034",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-05-20Description Description Severity Notes A vulnerability was found in Apigee where the IntegrationRegion parameter in the SetIntegrationRequest policy lacks validation, allowing for Server-Side Request Forgery (SSRF) and service account token exfiltration. The issue arises when...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -126,7 +150,7 @@
     {
       "title": "GCP-2026-033",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-033",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-05-14Description Description Severity Notes A container breakout vulnerability CVE-2026-46300 has been found in the Linux kernel, known as Fragnesia. It allows an unprivileged local attacker to escalate to root on the host. For instructions and more details, see the following...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -156,7 +180,7 @@
     {
       "title": "GCP-2026-032",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-032",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-05-12Description Description Severity Notes AMD has identified a hardware-level vulnerability in Zen 2 microarchitecture processors (including EPYC and Ryzen series) involving potential corruption within the micro-operation (OP) cache. Under specific conditions, this issue...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -180,7 +204,7 @@
     {
       "title": "GCP-2026-031",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-031",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-05-12Description Description Severity Notes Researchers discovered a vulnerability in AMD firmware that, due to missing protection, could allow a malicious hypervisor to execute arbitrary code on the AMD Secure Processor (ASP). This allows for the escalation of Memory Mapped I/O...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -204,7 +228,7 @@
     {
       "title": "GCP-2026-030",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-030",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-05-11Updated: 2026-05-20Description Description Severity Notes 2026-05-20 Update: Added CVE-2026-43500 and added CVE IDs to exploit paths. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS and Ubuntu...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -234,7 +258,7 @@
     {
       "title": "GCP-2026-029",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-029",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-05-07Description Description Severity Notes Microsoft is updating the Secure Boot certificates originally issued in 2011 to ensure Windows devices continue to verify trusted boot software. These older certificates begin expiring in June 2026. Devices that haven't received the newer...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -258,7 +282,7 @@
     {
       "title": "GCP-2026-028",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-028",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-05-05Updated: 2026-05-27Description Description Severity Notes CVE-2026-31431, also known as \"Copy Fail,\" is a high-severity local privilege escalation (LPE) vulnerability in the Linux kernel that allows an unprivileged user to gain root access. Disclosed in late April 2026, it...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -282,7 +306,7 @@
     {
       "title": "GCP-2026-027",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-027",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-05-01Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23351 For instructions and more details, see the following bulletins: GKE security bulletin...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -312,7 +336,7 @@
     {
       "title": "GCP-2026-026",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-026",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-04-30Updated: 2026-05-04Description Description Severity Notes 2026-05-04 Update: Added patch versions for GKE. A vulnerability in the Linux kernel (CVE-2026-31431) allows an unprivileged local attacker to write to the system page cache, potentially leading to local privilege...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -342,7 +366,7 @@
     {
       "title": "GCP-2026-025",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-025",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-04-30Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23274 For instructions and more details, see the following bulletins: GKE security bulletin...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -372,7 +396,7 @@
     {
       "title": "GCP-2026-024",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-024",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-04-28Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS and Ubuntu nodes: CVE-2025-38248 For instructions and more details, see the following bulletins: GKE...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -402,7 +426,7 @@
     {
       "title": "GCP-2026-023",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-023",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-04-28Updated: 2026-05-07Description Description Severity Notes 2026-05-07 Update: Added patch versions for Ubuntu node pools on GKE The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes:...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -432,7 +456,7 @@
     {
       "title": "GCP-2026-022",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-022",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-04-16Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23209 For instructions and more details, see the following bulletins: GKE security bulletin...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -462,7 +486,7 @@
     {
       "title": "GCP-2026-021",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-021",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-04-14Description Description Severity Notes AMD reported a vulnerability in its firmware that could have allowed a malicious hypervisor to direct the IOMMU to write into the guest memory of AMD SEV-SNP enabled instances, compromising guest data integrity. Google rolled out a...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -486,7 +510,7 @@
     {
       "title": "GCP-2026-020",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-020",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-04-14Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23231 For instructions and more details, see the following bulletins: GKE security bulletin...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -516,7 +540,7 @@
     {
       "title": "GCP-2026-019",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-019",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-04-14Description Description Severity Notes Researchers discovered a vulnerability in AMD firmware that could allow a malicious hypervisor to alter BIOS settings and Memory Mapped I/O (MMIO) routing configurations, compromising the confidentiality and integrity of Confidential VMs...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -540,7 +564,7 @@
     {
       "title": "GCP-2026-018",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-018",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-04-07Updated: 2026-04-15Description Description Severity Notes 2026-04-15 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23111...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -570,7 +594,7 @@
     {
       "title": "GCP-2026-017",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-017",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-04-02Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23273 For instructions and more details, see the following bulletins: GKE security bulletin...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -600,7 +624,7 @@
     {
       "title": "GCP-2026-016",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-016",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-03-27Updated: 2026-03-31Description Description Severity Notes 2026-03-31 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2025-38616...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -630,7 +654,7 @@
     {
       "title": "GCP-2026-015",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-015",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-03-27Description Description Severity Notes The following vulnerability was discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23268. For more information, see the Compute Engine security bulletin: High CVE-2026-23268",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -654,7 +678,7 @@
     {
       "title": "GCP-2026-014",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-014",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-03-14Updated: 2026-03-25Description Description Severity Notes 2026-03-25 Update: Added patch versions for Ubuntu nodes with GKE. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2025-38678...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -684,7 +708,7 @@
     {
       "title": "GCP-2026-013",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-013",
-      "published": "2026-06-19T20:59:35+00:00",
+      "published": "2026-06-22T14:39:38+00:00",
       "summary": "Published: 2026-03-11Description Description Severity Notes The following vulnerabilities were discovered in Envoy Proxy: CVE-2026-26311 CVE-2026-26309 CVE-2026-26310 CVE-2026-26308 CVE-2026-26330 The following vulnerabilities were discovered in Istio: CVE-2026-31837 CVE-2026-31838 For instructions...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -703,6 +727,54 @@
       ],
       "tags": [
         "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "Powering the next wave of AI: Expanding capacity with our new datacenter in Pecos",
+      "link": "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/",
+      "published": "2026-06-22T12:06:39+00:00",
+      "summary": "Today, Microsoft is announcing one of the largest single capacity additions in our history. In Pecos, Texas, we will build a new datacenter campus, expanding our global datacenter capacity by approximately 2 gigawatts (GW) to meet strong and sustained customer demand for AI and cloud services...",
+      "author": "Noelle Walsh",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "The AI shift in cyber risk: why leaders must act now",
+      "link": "https://www.ncsc.gov.uk/news/the-ai-shift-in-cyber-risk-why-leaders-must-act-now",
+      "published": "2026-06-22T12:00:00+00:00",
+      "summary": "",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
       ]
     },
     {
@@ -1672,30 +1744,6 @@
       ]
     },
     {
-      "title": "Turn specs into evals for any agent with ASSERT",
-      "link": "https://commandline.microsoft.com/assert-written-intent-executable-evals/",
-      "published": "2026-06-10T16:00:00+00:00",
-      "summary": "Adaptive Spec-driven Scoring for Evaluation and Regression Testing (ASSERT) is an open-source framework for converting natural language behavior requirements into executable evaluations of AI models and agents. The post Turn specs into evals for any agent with ASSERT appeared first on Microsoft...",
-      "author": "Mehrnoosh Sameki, Sandeep Atluri, Minsoo Thigpen and Abby Palia",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
       "title": "Introducing scheduled antivirus scans on Microsoft Defender Linux",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-scheduled-antivirus-scans-on-microsoft-defender/ba-p/4524578",
       "published": "2026-06-10T16:00:00+00:00",
@@ -2041,30 +2089,6 @@
         "Microsoft Purview",
         "Google Cloud Security",
         "AWS Security"
-      ]
-    },
-    {
-      "title": "Reconstructing AI activity in investigations",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/09/reconstructing-ai-activity-investigations/",
-      "published": "2026-06-09T17:35:06+00:00",
-      "summary": "Learn how to investigate AI activity in Microsoft 365 Copilot and Azure AI services using a structured, telemetry-driven approach. This playbook helps security teams reconstruct events, assess data exposure, and detect potential threats faster. The post Reconstructing AI activity in investigations...",
-      "author": "Phillip Misner and Microsoft AI Red Team",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
