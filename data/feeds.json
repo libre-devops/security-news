@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-26T19:54:57.617565+00:00",
-  "totalArticles": 136,
+  "lastUpdated": "2026-06-27T03:50:22.717195+00:00",
+  "totalArticles": 137,
   "articles": [
     {
       "title": "Chromium: CVE-2026-13038 Use after free in Autofill",
@@ -340,41 +340,11 @@
       ]
     },
     {
-      "title": "The next frontier in endpoint security: Securing local AI agents with Microsoft Defender",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/the-next-frontier-in-endpoint-security-securing-local-ai-agents/ba-p/4524651",
-      "published": "2026-06-26T17:49:18+00:00",
-      "summary": "AI agents are now doing real work on the endpoint — reading files, running commands, browsing the web, and acting on behalf of the users they run under. That same power is also what makes them dangerous: agents act on whatever content they take in, and much of it comes from outside the user's...",
-      "author": "Eitan_Shteinberg",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "AWS Security"
-      ]
-    },
-    {
       "title": "Photo ZIP campaign targeting hospitality industry delivers Node.js implant for persistent access",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/06/25/photo-zip-campaign-targeting-hospitality-industry-delivers-node-js-implant-persistent-access/",
       "published": "2026-06-25T22:30:29+00:00",
       "summary": "Microsoft Threat Intelligence identified an active multi-stage intrusion campaign targeting hospitality organizations in Europe and Asia. The campaign uses photo-themed ZIP archives and fake image shortcut files to deliver a persistent Node.js implant and evade detection. The post Photo ZIP...",
-      "author": "Microsoft Defender Security Research Team",
+      "author": "Microsoft Defender Security Research Team and Parth Jomadkar",
       "source": "Microsoft Security Blog",
       "source_id": "mssecurity",
       "source_group": "Official Microsoft",
@@ -1045,6 +1015,48 @@
       "tags": [
         "Google Cloud Security",
         "AWS Security"
+      ]
+    },
+    {
+      "title": "The governance shift: RBAC, URBAC, data lake, and MSSP",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/the-governance-shift-rbac-urbac-data-lake-and-mssp/ba-p/4528607",
+      "published": "2026-06-25T20:11:19+00:00",
+      "summary": "Co-authored with Lizet Pena, Caroline Mutua, Alvin Kua and Marco Sudahl Governance is the silent dependency every transition trips on. Read about how roles, data tiering, and multi-tenant operations evolve in Defender, and why each change unlocks something your old model could not. Detection...",
+      "author": "Mohit_Kumar1",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Sentinel",
+        "Microsoft Security Copilot",
+        "Threat Intelligence"
       ]
     },
     {
@@ -3505,6 +3517,36 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "The next frontier in endpoint security: Securing local AI agents with Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/the-next-frontier-in-endpoint-security-securing-local-ai-agents/ba-p/4524651",
+      "published": "2026-06-02T17:51:58+00:00",
+      "summary": "AI agents are now doing real work on the endpoint — reading files, running commands, browsing the web, and acting on behalf of the users they run under. That same power is also what makes them dangerous: agents act on whatever content they take in, and much of it comes from outside the user's...",
+      "author": "Eitan_Shteinberg",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "AWS Security"
       ]
     },
     {
