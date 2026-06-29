@@ -1,8 +1,32 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-29T15:53:38.189610+00:00",
+  "lastUpdated": "2026-06-29T20:03:43.653960+00:00",
   "totalArticles": 121,
   "articles": [
+    {
+      "title": "Chromium extension uses AI‑related branding to redirect browser search",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/29/chromium-extension-uses-airelated-branding-redirect-browser-search/",
+      "published": "2026-06-29T16:27:46+00:00",
+      "summary": "A malicious Chromium-based extension that spoofs the AI-powered answer engine Perplexity AI redirects browser search traffic using MV3 APIs and intermediary infrastructure. The post Chromium extension uses AI‑related branding to redirect browser search appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Defender Security Research Team",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Authenticating AWS Workloads to Azure Functions using Workload Identity Federation",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/authenticating-aws-workloads-to-azure-functions-using-workload/ba-p/4531603",
@@ -1341,30 +1365,6 @@
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
           "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "Crypto Clipper uses Tor and worm-like propagation for persistence and control",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/17/crypto-clipper-uses-tor-worm-like-propagation-for-persistence-control/",
-      "published": "2026-06-17T23:11:43+00:00",
-      "summary": "Microsoft Threat Intelligence analyzed a cryptocurrency clipper campaign that combines clipboard theft, wallet replacement, Tor-based communications, and worm-like propagation. Beyond stealing cryptocurrency transactions, the malware establishes persistent access and enables follow-on activity...",
-      "author": "Microsoft Defender Security Research Team and Microsoft Defender Experts",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 10
         }
       ],
       "tags": [
