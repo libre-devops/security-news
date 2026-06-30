@@ -1,8 +1,38 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-30T09:45:20.375750+00:00",
+  "lastUpdated": "2026-06-30T14:26:50.947917+00:00",
   "totalArticles": 122,
   "articles": [
+    {
+      "title": "The next frontier in endpoint security: Securing local AI agents with Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/the-next-frontier-in-endpoint-security-securing-local-ai-agents/ba-p/4524651",
+      "published": "2026-06-30T03:19:36+00:00",
+      "summary": "AI agents are now doing real work on the endpoint — reading files, running commands, browsing the web, and acting on behalf of the users they run under. That same power is also what makes them dangerous: agents act on whatever content they take in, and much of it comes from outside the user's...",
+      "author": "Eitan_Shteinberg",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "AWS Security"
+      ]
+    },
     {
       "title": "CVE-2026-13762 and CVE-2026-13763 - Issue with HTTP/2 multi-frame request body inspection in AWS WAF",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-048-aws/",
@@ -121,36 +151,6 @@
       "tags": [
         "AWS Security",
         "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "The next frontier in endpoint security: Securing local AI agents with Microsoft Defender",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/the-next-frontier-in-endpoint-security-securing-local-ai-agents/ba-p/4524651",
-      "published": "2026-06-26T17:49:18+00:00",
-      "summary": "AI agents are now doing real work on the endpoint — reading files, running commands, browsing the web, and acting on behalf of the users they run under. That same power is also what makes them dangerous: agents act on whatever content they take in, and much of it comes from outside the user's...",
-      "author": "Eitan_Shteinberg",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "AWS Security"
       ]
     },
     {
