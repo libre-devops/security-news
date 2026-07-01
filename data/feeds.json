@@ -1,8 +1,56 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-01T14:44:43.534925+00:00",
-  "totalArticles": 129,
+  "lastUpdated": "2026-07-01T20:01:11.270501+00:00",
+  "totalArticles": 127,
   "articles": [
+    {
+      "title": "CVE-2026-13769 – Insecure file permissions in AWS CLI",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-049-aws/",
+      "published": "2026-07-01T18:45:24+00:00",
+      "summary": "Bulletin ID: 2026-049-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/01/2026 11:45 AM PDT Description: The AWS Command Line Interface (AWS CLI) is a unified tool for managing AWS services from the command line. We identified CVE-2026-13769 in AWS CLI on Unix-like...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Microsoft named a leader in the Frost Radar for cloud and application runtime security",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/01/microsoft-named-a-leader-in-the-frost-radar-for-cloud-and-application-runtime-security/",
+      "published": "2026-07-01T16:00:00+00:00",
+      "summary": "Frost & Sullivan names Microsoft a leader as cloud and application security converge into unified, runtime risk reduction. The post Microsoft named a leader in the Frost Radar for cloud and application runtime security appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Security Team",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Building more resilient CNI: what industry pen testers told us",
       "link": "https://www.ncsc.gov.uk/blogs/building-more-resilient-cni-what-industry-pen-testers-told-us",
@@ -94,6 +142,30 @@
       ]
     },
     {
+      "title": "SVD-2026-0701: Third-Party Package Updates in Python for Scientific Computing - July 2026",
+      "link": "https://advisory.splunk.com//advisories/SVD-2026-0701",
+      "published": "2026-07-01T00:00:00+00:00",
+      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Python for Scientific Computing version 4.3.2 and higher.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
       "title": "Accelerating the quantum-safe timeline",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/06/30/microsoft-advances-quantum-safe-security-as-the-risk-timeline-shifts/",
       "published": "2026-06-30T19:00:00+00:00",
@@ -115,42 +187,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Microsoft Defender for Cloud expands multicloud coverage across AWS and Google Cloud",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/microsoft-defender-for-cloud-expands-multicloud-coverage-across/ba-p/4532200",
-      "published": "2026-06-30T17:36:56+00:00",
-      "summary": "Organizations are building and running applications across multiple cloud platforms and hybrid environments to move faster, improve resilience, and choose the services that best fit each workload. But that flexibility also changes how teams need to manage exposure. A risk may start with an...",
-      "author": "donnalee",
-      "source": "Microsoft Defender for Cloud",
-      "source_id": "defender_cloud",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Cloud Security",
-      "board_id": "microsoftdefendercloudblog",
-      "products": [
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 5
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Cloud",
-        "Google Cloud Security",
-        "AWS Security"
       ]
     },
     {
@@ -1381,30 +1417,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "One intrusion, two cyberattackers: Uncovering parallel threat activity",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/22/one-intrusion-two-cyberattackers-uncovering-parallel-threat-activity/",
-      "published": "2026-06-22T16:00:00+00:00",
-      "summary": "Ransomware case reveals two parallel threat actors, blending tactics and evasion—showing why isolated signals can often miss modern, overlapping cyberattacks. The post One intrusion, two cyberattackers: Uncovering parallel threat activity appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Incident Response",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
       ]
     },
     {
@@ -3262,30 +3274,6 @@
       ]
     },
     {
-      "title": "CVE-2025-6031 - Insecure device pairing in end-of-life Amazon Cloud Cam",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/aws-2025-013/",
-      "published": "2026-06-05T19:19:25+00:00",
-      "summary": "Scope: Amazon Content Type: Informational Publication Date: 2025/06/12 10:30 AM PDT Description Amazon Cloud Cam is a home security camera that was deprecated on December 2, 2022, is end of life, and is no longer actively supported. When a user powers on the Amazon Cloud Cam, the device attempts to...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "Microsoft Defender for Cloud Customer Newsletter",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/microsoft-defender-for-cloud-customer-newsletter/ba-p/4525656",
       "published": "2026-06-04T18:30:12+00:00",
@@ -3553,72 +3541,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "How Microsoft Defender used predictive shielding to proactively disrupt a ransomware attack",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/how-microsoft-defender-used-predictive-shielding-to-proactively/ba-p/4519498",
-      "published": "2026-06-01T17:16:47+00:00",
-      "summary": "Modern ransomware attacks are increasingly designed to blend in with normal IT operations, using trusted administrative tools to quietly weaken defenses and distribute malicious payloads at scale. In a recent real‑world incident, a human‑operated ransomware actor attempted to do exactly that by...",
-      "author": "AvivSharon",
-      "source": "Microsoft Defender for Endpoint",
-      "source_id": "defender_endpoint",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Endpoint Security",
-      "board_id": "microsoftdefenderatpblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 14
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint",
-        "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "Now Generally Available: Microsoft Defender for open source relational databases on AWS RDS",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/now-generally-available-microsoft-defender-for-open-source/ba-p/4514651",
-      "published": "2026-06-01T17:11:16+00:00",
-      "summary": "Securing multicloud databases to help reduce risks Open‑source (OSS) relational databases are becoming increasingly critical and increasingly targeted in organization of all sizes. As organizations adopt multicloud architectures, these databases often run across Azure and Amazon Web Services (AWS),...",
-      "author": "lisetteranga",
-      "source": "Microsoft Defender for Cloud",
-      "source_id": "defender_cloud",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Cloud Security",
-      "board_id": "microsoftdefendercloudblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Cloud",
-        "AWS Security"
       ]
     }
   ]
