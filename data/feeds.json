@@ -1,8 +1,110 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-06-30T20:03:22.984227+00:00",
-  "totalArticles": 123,
+  "lastUpdated": "2026-07-01T04:15:01.908050+00:00",
+  "totalArticles": 127,
   "articles": [
+    {
+      "title": "Accelerating the quantum-safe timeline",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/30/microsoft-advances-quantum-safe-security-as-the-risk-timeline-shifts/",
+      "published": "2026-06-30T19:00:00+00:00",
+      "summary": "We’re accelerating quantum-safe readiness—and sharing what organizations can do now to transition earlier and with confidence. The post Accelerating the quantum-safe timeline appeared first on Microsoft Security Blog.",
+      "author": "Mark Russinovich",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Defender for Cloud expands multicloud coverage across AWS and Google Cloud",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/microsoft-defender-for-cloud-expands-multicloud-coverage-across/ba-p/4532200",
+      "published": "2026-06-30T17:36:56+00:00",
+      "summary": "Organizations are building and running applications across multiple cloud platforms and hybrid environments to move faster, improve resilience, and choose the services that best fit each workload. But that flexibility also changes how teams need to manage exposure. A risk may start with an...",
+      "author": "donnalee",
+      "source": "Microsoft Defender for Cloud",
+      "source_id": "defender_cloud",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Cloud Security",
+      "board_id": "microsoftdefendercloudblog",
+      "products": [
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 5
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Cloud",
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "What’s new in Microsoft Sentinel: June 2026",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-june-2026/ba-p/4531902",
+      "published": "2026-06-30T16:43:18+00:00",
+      "summary": "Welcome back to What's new in Microsoft Sentinel. In June, Sentinel SIEM’s Advanced Security Information Model (ASIM) broadens its normalization, so one analytic rule can reach more sources with less per-source work and, additionally, two new ASIM schemas can now bring asset inventory and AI agent...",
+      "author": "TomerBrand",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel",
+        "Microsoft Security Copilot",
+        "Threat Intelligence",
+        "AWS Security"
+      ]
+    },
     {
       "title": "​​What’s new in Microsoft Security: June 2026",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/06/30/whats-new-in-microsoft-security-june-2026/",
@@ -25,6 +127,84 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Behind the Build with Gigamon: Enriching Microsoft Sentinel with Network-Derived Telemetry",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/behind-the-build-with-gigamon-enriching-microsoft-sentinel-with/ba-p/4530360",
+      "published": "2026-06-30T16:00:00+00:00",
+      "summary": "Behind the Build is an ongoing series spotlighting standout Microsoft partner collaborations. Each edition dives into the technical and strategic decisions that shape real-world integrations—highlighting engineering excellence, innovation, and the shared customer value created through partnership....",
+      "author": "Natee_Pretikul",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel"
+      ]
+    },
+    {
+      "title": "The AI-first SOC: Copilot, UEBA, threat intelligence, and SOC optimization",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/the-ai-first-soc-copilot-ueba-threat-intelligence-and-soc/ba-p/4528609",
+      "published": "2026-06-30T16:00:00+00:00",
+      "summary": "Co-authored with Lizet Pena, Caroline Mutua, Alvin Kua and Marco Sudahl The portal change was the easy part. The real upside is the operating model it unlocks—generative AI in every workflow, behavioral analytics across hybrid and multi-cloud, native threat intelligence, and SOC optimization...",
+      "author": "Mohit_Kumar1",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "defender-identity",
+          "name": "Microsoft Defender for Identity",
+          "score": 14
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Identity",
+        "Microsoft Security Copilot",
+        "Microsoft Sentinel",
+        "Threat Intelligence",
+        "AWS Security",
+        "Google Cloud Security"
       ]
     },
     {
@@ -110,7 +290,7 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/06/29/chromium-extension-uses-airelated-branding-redirect-browser-search/",
       "published": "2026-06-29T16:27:46+00:00",
       "summary": "A malicious Chromium-based extension that spoofs the AI-powered answer engine Perplexity AI redirects browser search traffic using MV3 APIs and intermediary infrastructure. The post Chromium extension uses AI‑related branding to redirect browser search appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Defender Security Research Team",
+      "author": "Microsoft Defender Security Research Team and Microsoft Defender Experts",
       "source": "Microsoft Security Blog",
       "source_id": "mssecurity",
       "source_group": "Official Microsoft",
@@ -1207,30 +1387,6 @@
       ],
       "tags": [
         "AWS Security"
-      ]
-    },
-    {
-      "title": "AutoJack: How a single page can RCE the host running your AI agent",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/18/autojack-single-page-rce-host-running-ai-agent/",
-      "published": "2026-06-19T00:17:54+00:00",
-      "summary": "AutoJack is a novel exploit chain showing how a single malicious webpage can turn an AI browsing agent into a remote code execution vector on the host machine. By abusing trust in localhost, missing authentication, and unsafe parameter handling, attackers can trigger arbitrary process execution...",
-      "author": "Microsoft Defender Security Research Team",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
