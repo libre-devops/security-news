@@ -1,8 +1,86 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-08T14:23:16.493154+00:00",
+  "lastUpdated": "2026-07-08T19:38:04.704199+00:00",
   "totalArticles": 111,
   "articles": [
+    {
+      "title": "Defending the Inbox Against Prompt Injection Attacks",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/defending-the-inbox-against-prompt-injection-attacks/ba-p/4534636",
+      "published": "2026-07-08T18:16:22+00:00",
+      "summary": "AI assistants are quickly becoming part of everyday work—summarizing emails, drafting responses, triaging requests, and even potentially acting across connected business systems. As email becomes an automated input to AI systems, it can also become a new attack surface. Attackers no longer need to...",
+      "author": "nithinnara",
+      "source": "Microsoft Defender for Office 365",
+      "source_id": "defender_office",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Email Security",
+      "board_id": "microsoftdefenderforoffice365blog",
+      "products": [
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 11
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Office 365",
+        "AI Security"
+      ]
+    },
+    {
+      "title": "Protecting Microsoft at AI speed: How SFI proactively hardens our cloud",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/08/protecting-microsoft-at-ai-speed-how-sfi-proactively-hardens-our-cloud/",
+      "published": "2026-07-08T17:00:00+00:00",
+      "summary": "At Microsoft we encompass these security requirements, along with threat knowledge, and operational frameworks in our Secure Future Initiative (SFI), to guide what a well-defended cloud service looks like. But defining the requirements is only the start. Meeting the requirements means continuously...",
+      "author": "Salim Chawro",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Defender now integrates with Dragos, Forescout, & Armis for OT Security",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/microsoft-defender-now-integrates-with-dragos-forescout-armis/ba-p/4534936",
+      "published": "2026-07-08T13:08:36+00:00",
+      "summary": "Co-author(s): Amit Cohen and Hadar ShindlerOperational technology (OT) environments are unlike anything else in cybersecurity. The systems that run our factories, power grids, water treatment plants, pipelines, and transportation networks weren’t built with modern threats in mind — and they can’t...",
+      "author": "Caroline_Lee",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR"
+      ]
+    },
     {
       "title": "Cyber Shield: The path to an agentic AI future for cyber defence",
       "link": "https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence",
@@ -784,30 +862,6 @@
       "vendor": "Microsoft",
       "source_category": "Security Operations",
       "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-14125 Uninitialized Use in ANGLE",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14125",
-      "published": "2026-07-03T14:00:54+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
       "products": [
         {
           "id": "general-security",
@@ -1663,30 +1717,6 @@
       ],
       "tags": [
         "Microsoft Sentinel"
-      ]
-    },
-    {
-      "title": "CNAPP evolution: How Microsoft aligns with leading cloud risk management platforms",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/24/cnapp-evolution-how-microsoft-aligns-with-leading-cloud-risk-management-platforms/",
-      "published": "2026-06-24T18:00:00+00:00",
-      "summary": "Learn how CNAPP platforms are helping organizations prioritize exploitable risks, reduce exposure, and operationalize security across the application lifecycle. The post CNAPP evolution: How Microsoft aligns with leading cloud risk management platforms appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Security Team",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
@@ -3042,30 +3072,6 @@
         "Microsoft Defender XDR",
         "Microsoft Defender for Endpoint",
         "Microsoft Sentinel",
-        "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "AI brands as bait: How threat actors are using the AI hype in social engineering",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/08/ai-brands-as-bait-how-threat-actors-are-using-the-ai-hype-in-social-engineering/",
-      "published": "2026-06-08T16:00:00+00:00",
-      "summary": "As threat actors operationalize AI to accelerate attacks, they are also leveraging the wider global interest around AI itself as a social engineering lure. The post AI brands as bait: How threat actors are using the AI hype in social engineering appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Threat Intelligence and Microsoft Defender Security Research Team",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
         "Threat Intelligence"
       ]
     }
