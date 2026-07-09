@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-09T15:17:55.420742+00:00",
-  "totalArticles": 111,
+  "lastUpdated": "2026-07-09T19:51:19.131171+00:00",
+  "totalArticles": 107,
   "articles": [
     {
       "title": "GigaWiper: Anatomy of a destructive backdoor assembled from multiple malware",
@@ -9,18 +9,18 @@
       "published": "2026-07-09T15:00:00+00:00",
       "summary": "GigaWiper is a destructive backdoor that combines multiple wiping and ransomware-like capabilities into a single operational platform. This blog analyzes how the malware incorporates code from several previously separate malware families and provides guidance to help defenders detect and defend...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 11
+          "score": 6
         }
       ],
       "tags": [
@@ -103,30 +103,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Microsoft Defender now integrates with Dragos, Forescout, & Armis for OT Security",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/microsoft-defender-now-integrates-with-dragos-forescout-armis/ba-p/4534936",
-      "published": "2026-07-08T13:08:36+00:00",
-      "summary": "Co-author(s): Amit Cohen and Hadar ShindlerOperational technology (OT) environments are unlike anything else in cybersecurity. The systems that run our factories, power grids, water treatment plants, pipelines, and transportation networks weren’t built with modern threats in mind — and they can’t...",
-      "author": "Caroline_Lee",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR"
       ]
     },
     {
@@ -1672,30 +1648,6 @@
       ]
     },
     {
-      "title": "Microsoft a Leader in The Forrester Wave™ for Endpoint Management Platforms",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/25/microsoft-a-leader-in-the-forrester-wave-for-endpoint-management-platforms/",
-      "published": "2026-06-25T16:00:00+00:00",
-      "summary": "Microsoft named a Leader in the Forrester Wave™: Endpoint Management Platforms, Q2 2026, with the highest scores in the current offering and strategy categories. The post Microsoft a Leader in The Forrester Wave™ for Endpoint Management Platforms appeared first on Microsoft Security Blog.",
-      "author": "Jason Roszak",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
       "title": "A guide to innovating threat hunting with Microsoft Sentinel custom graph",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/a-guide-to-innovating-threat-hunting-with-microsoft-sentinel/ba-p/4530287",
       "published": "2026-06-24T18:06:41+00:00",
@@ -3007,72 +2959,6 @@
         "Microsoft Purview",
         "Google Cloud Security",
         "AWS Security"
-      ]
-    },
-    {
-      "title": "Microsoft Defender now monitors RPC activity",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-now-monitors-rpc-activity/ba-p/4523368",
-      "published": "2026-06-09T16:55:28+00:00",
-      "summary": "Remote procedure call (RPC) is a protocol commonly abused by attackers that allows functions implemented in a separate process, and potentially on a remote machine, to be called as if they were local. Many core Windows and Active Directory capabilities are built on or make use of RPC, which makes...",
-      "author": "EdanZwick",
-      "source": "Microsoft Defender for Endpoint",
-      "source_id": "defender_endpoint",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Endpoint Security",
-      "board_id": "microsoftdefenderatpblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint"
-      ]
-    },
-    {
-      "title": "Elevate your telemetry using custom data collection in Microsoft Defender",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/elevate-your-telemetry-using-custom-data-collection-in-microsoft/ba-p/4512530",
-      "published": "2026-06-09T16:00:00+00:00",
-      "summary": "At Ignite in November, we announced that Microsoft Defender is now the only endpoint protection solution that allows data-hungry security teams to meet specific telemetry needs by optimizing their data collection right within the Defender portal, without the need to rely on fragmented and siloed...",
-      "author": "Theo_Cohen",
-      "source": "Microsoft Defender for Endpoint",
-      "source_id": "defender_endpoint",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Endpoint Security",
-      "board_id": "microsoftdefenderatpblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Endpoint",
-        "Microsoft Sentinel",
-        "Threat Intelligence"
       ]
     }
   ]
