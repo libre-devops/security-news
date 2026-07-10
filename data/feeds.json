@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-09T19:51:19.131171+00:00",
-  "totalArticles": 107,
+  "lastUpdated": "2026-07-10T03:40:33.567521+00:00",
+  "totalArticles": 95,
   "articles": [
     {
       "title": "GigaWiper: Anatomy of a destructive backdoor assembled from multiple malware",
@@ -103,6 +103,30 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Defender now integrates with Dragos, Forescout, & Armis for OT Security",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/microsoft-defender-now-integrates-with-dragos-forescout-armis/ba-p/4534936",
+      "published": "2026-07-08T13:08:36+00:00",
+      "summary": "Co-author(s): Amit Cohen and Hadar ShindlerOperational technology (OT) environments are unlike anything else in cybersecurity. The systems that run our factories, power grids, water treatment plants, pipelines, and transportation networks weren’t built with modern threats in mind — and they can’t...",
+      "author": "Caroline_Lee",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR"
       ]
     },
     {
@@ -2635,330 +2659,6 @@
       ],
       "tags": [
         "Microsoft Defender for Endpoint"
-      ]
-    },
-    {
-      "title": "SVD-2026-0612: Third-Party Package Updates in Splunk SOAR - June 2026",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0612",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk SOAR version 8.5.0, and higher.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0611: Log Injection through HTTP Request Paths in Splunk SOAR",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0611",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk SOAR (Security Orchestration, Automation, and Response) versions below 8.5.0, an unauthenticated attacker could inject American National Standards Institute (ANSI) escape codes into SOAR application log files through specially crafted HTTP request paths, which a terminal emulator might...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0610: Third-Party Package Updates in Splunk Enterprise - June 2026",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0610",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk Enterprise versions 10.4.0, 10.2.4, 10.0.7, 9.4.12, 9.3.13, and higher.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0609: Improper Access Control in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0609",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.2.4 and 10.0.7, and Splunk Cloud Platform versions below 10.4.2604.0, 10.3.2512.12, 10.2.2510.15, 10.1.2507.23, 10.0.2503.14, and 9.3.2411.131, a user who holds a Splunk role that contains the high-privilege capability edit_saved_search_owner could reassign...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0608: Stored Cross-Site Scripting (XSS) through Classic Dashboard in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0608",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, and Splunk Cloud Platform versions below 10.3.2512.11, 10.2.2510.15, 10.1.2507.23, and 9.3.2411.132, a low-privileged user that does not hold the “admin” or “power” Splunk roles could store a malicious script in a classic...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0607: Improper Input Validation through Classic Dashboard CSS in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0607",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, and Splunk Cloud Platform versions below 10.3.2512.13, 10.2.2510.15, 10.1.2507.23, and 9.3.2411.132, a low-privileged user that does not hold the “admin” or “power” Splunk roles could craft a classic dashboard that exfiltrates...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0606: Improper Input Validation through Protocol-Relative URL in Classic Dashboards in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0606",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, and Splunk Cloud Platform versions below 10.3.2512.13, 10.2.2510.15, 10.1.2507.23, and 9.3.2411.132, a low-privileged user that does not hold the ‘admin’ or ‘power’ Splunk roles could cause data exfiltration through classic...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0605: Improper Input Validation through Classic Dashboards in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0605",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, and Splunk Cloud Platform versions below 10.3.2512.13, 10.2.2510.15, 10.1.2507.23, and 9.3.2411.132, a low-privileged user that does not hold the “admin” or “power” Splunk roles could craft a malicious classic dashboard that...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0604: Information Disclosure through External Content Restriction Bypass in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0604",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, and Splunk Cloud Platform versions below 10.3.2512.13, 10.2.2510.15, 10.1.2507.23, and 9.3.2411.132, a low-privileged user that does not hold the ‘admin’ or ‘power’ Splunk roles could craft a malicious classic dashboard that...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0603: Unauthenticated Arbitrary File Creation and Truncation in a PostgreSQL Sidecar Service Endpoint in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0603",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.2.4 and 10.0.7, an unauthenticated user could create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.The vulnerability exists because the PostgreSQL sidecar service endpoint lacks authentication controls, allowing any...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0602: Server-Side Request Forgery (SSRF) through Dashboard Studio PDF Export in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0602",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, and Splunk Cloud Platform versions below 10.4.2604.3, 10.3.2512.12, 10.2.2510.14, 10.1.2507.22, and 9.3.2411.132, a low-privileged user that does not hold the “admin” or “power” Splunk roles could send server-side requests to...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0601: Remote Code Execution through Deserialization of Untrusted Data in Splunk Secure Gateway",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0601",
-      "published": "2026-06-10T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform versions below 10.3.2512.12, 10.2.2510.14, 10.1.2507.22, and 9.3.2411.132, and Splunk Secure Gateway versions below 3.10.6, 3.9.20, and 3.8.67, a low-privileged user that does not hold the ‘admin’ or...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "Extend Microsoft Purview data protection to AWS Bedrock agents for cross-cloud AI governance",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/extend-microsoft-purview-data-protection-to-aws-bedrock-agents/ba-p/4525984",
-      "published": "2026-06-09T21:17:12+00:00",
-      "summary": "Organizations are moving fast with AI, and many of those AI workloads are not staying in one cloud. A team might use Microsoft 365 and Microsoft Purview for governance and in addition to Microsoft Foundry they may still choose to run an AI agent on AWS Bedrock or on the Google Cloud Platform. The...",
-      "author": "Inwafula",
-      "source": "Microsoft Purview",
-      "source_id": "purview",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Data Security",
-      "board_id": "microsoftpurviewblog",
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        },
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 5
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Purview",
-        "Google Cloud Security",
-        "AWS Security"
       ]
     }
   ]
