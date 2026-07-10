@@ -1,8 +1,56 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-10T14:35:34.464823+00:00",
+  "lastUpdated": "2026-07-10T19:38:01.882012+00:00",
   "totalArticles": 97,
   "articles": [
+    {
+      "title": "Securing our future: July 2026 progress report on Microsoft’s Secure Future Initiative",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/10/securing-our-future-july-2026-progress-report-on-microsofts-secure-future-initiative/",
+      "published": "2026-07-10T16:00:00+00:00",
+      "summary": "Microsoft’s latest Secure Future Initiative report outlines progress on secure foundations, AI-powered defense, and future-ready cybersecurity. The post Securing our future: July 2026 progress report on Microsoft’s Secure Future Initiative appeared first on Microsoft Security Blog.",
+      "author": "Salim Chawro",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "When Arc Goes Silent: Turning Visibility Gaps into SOC Action",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/when-arc-goes-silent-turning-visibility-gaps-into-soc-action/ba-p/4535711",
+      "published": "2026-07-10T12:07:15+00:00",
+      "summary": "Hybrid blind spots rarely announce themselves. They appear when an Azure Arc-enabled server drops out, health signals go stale, and the SOC loses confidence in monitoring coverage. This playbook uses Microsoft Sentinel and Logic Apps to turn that noise into one clear daily signal the team can act...",
+      "author": "absharan",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel"
+      ]
+    },
     {
       "title": "Azure DDoS Protection & Azure WAF: A Layered Defense for Modern DDoS Attacks",
       "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/azure-ddos-protection-azure-waf-a-layered-defense-for-modern/ba-p/4523745",
@@ -1654,30 +1702,6 @@
       ]
     },
     {
-      "title": "Photo ZIP campaign targeting hospitality industry delivers Node.js implant for persistent access",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/25/photo-zip-campaign-targeting-hospitality-industry-delivers-node-js-implant-persistent-access/",
-      "published": "2026-06-25T22:30:29+00:00",
-      "summary": "Microsoft Threat Intelligence identified an active multi-stage intrusion campaign targeting hospitality organizations in Europe and Asia. The campaign uses photo-themed ZIP archives and fake image shortcut files to deliver a persistent Node.js implant and evade detection. The post Photo ZIP...",
-      "author": "Microsoft Defender Security Research Team, Microsoft Defender Experts and Parth Jomadkar",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ]
-    },
-    {
       "title": "The governance shift: RBAC, URBAC, data lake, and MSSP",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/the-governance-shift-rbac-urbac-data-lake-and-mssp/ba-p/4528607",
       "published": "2026-06-25T20:11:19+00:00",
@@ -2683,30 +2707,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Introducing scheduled antivirus scans on Microsoft Defender Linux",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-scheduled-antivirus-scans-on-microsoft-defender/ba-p/4524578",
-      "published": "2026-06-10T16:00:00+00:00",
-      "summary": "Security teams rely on scheduled scans to ensure consistent coverage across devices, detect dormant or missed threats, and meet compliance requirements. However, managing scans on Linux has traditionally required custom scripts and cron-based setups, which can be hard to scale and maintain. That’s...",
-      "author": "Rutuja_dange",
-      "source": "Microsoft Defender for Endpoint",
-      "source_id": "defender_endpoint",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Endpoint Security",
-      "board_id": "microsoftdefenderatpblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint"
       ]
     }
   ]
