@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-14T13:52:20.766668+00:00",
-  "totalArticles": 102,
+  "lastUpdated": "2026-07-14T19:24:45.645439+00:00",
+  "totalArticles": 96,
   "articles": [
     {
       "title": "Defending SaaS-based applications against ShinyHunters OAuth abuse",
@@ -76,9 +76,33 @@
       ]
     },
     {
+      "title": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
+      "published": "2026-07-13T17:00:00+00:00",
+      "summary": "Microsoft Entra ID makes passkeys the default sign-in experience and introduces a new model for SMS and voice authentication. Read about how to prepare. The post Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID appeared first on Microsoft Security Blog.",
+      "author": "Nadim Abdo",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
       "title": "Building toward an Agentic SOC: A Portable, Autonomous Malware Investigation Agent",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/building-toward-an-agentic-soc-a-portable-autonomous-malware/ba-p/4526872",
-      "published": "2026-07-13T19:09:25+00:00",
+      "published": "2026-07-13T16:00:00+00:00",
       "summary": "Modern Security Operations Centers are not short on tools. They are short on continuity. Analysts jump from alert consoles to data exploration, from enrichment to investigation, and from evidence gathering to response—often across multiple interfaces and disconnected workflows. A single malware...",
       "author": "absharan",
       "source": "Microsoft Sentinel",
@@ -115,30 +139,6 @@
         "Microsoft Sentinel",
         "Microsoft Security Copilot",
         "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/13/microsoft-entra-id-security-updates-passkeys-are-the-default-authentication-method-in-entra-id/",
-      "published": "2026-07-13T17:00:00+00:00",
-      "summary": "Microsoft Entra ID makes passkeys the default sign-in experience and introduces a new model for SMS and voice authentication. Read about how to prepare. The post Microsoft Entra ID security updates: Passkeys are the default authentication method in Entra ID appeared first on Microsoft Security Blog.",
-      "author": "Nadim Abdo",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
@@ -814,150 +814,6 @@
       "vendor": "Microsoft",
       "source_category": "Network Security",
       "board_id": "azurenetworksecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-14428 Insufficient validation of untrusted input in Dawn",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14428",
-      "published": "2026-07-11T22:41:38+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-13777 Insufficient validation of untrusted input in iOSWeb",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13777",
-      "published": "2026-07-11T22:39:58+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-14396 Out of bounds read in ANGLE",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14396",
-      "published": "2026-07-11T22:39:53+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-13778 Use after free in WebUSB",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13778",
-      "published": "2026-07-11T22:39:26+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-14395 Out of bounds write in V8",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14395",
-      "published": "2026-07-11T22:37:40+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-14394 Use after free in V8",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14394",
-      "published": "2026-07-11T22:37:39+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
       "products": [
         {
           "id": "general-security",
