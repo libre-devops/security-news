@@ -1,92 +1,8 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-15T02:45:17.138122+00:00",
+  "lastUpdated": "2026-07-15T08:20:31.500296+00:00",
   "totalArticles": 96,
   "articles": [
-    {
-      "title": "Hunting Local AI Tools on macOS with Microsoft Defender for Endpoint",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/hunting-local-ai-tools-on-macos-with-microsoft-defender-for/ba-p/4536965",
-      "published": "2026-07-14T16:42:42+00:00",
-      "summary": "AI tooling is moving fast. Developers are running models locally, agents are spinning up local servers, and frameworks are adding new ways to extend the endpoint with skills, tools, and memory. That creates a useful productivity surface, but it also presents new challenges for security and...",
-      "author": "Vytas_Boyev",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 14
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 5
-        },
-        {
-          "id": "defender-cloud-apps",
-          "name": "Microsoft Defender for Cloud Apps",
-          "score": 5
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 4
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint",
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Cloud",
-        "Microsoft Defender for Cloud Apps",
-        "AI Security",
-        "Microsoft Sentinel",
-        "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "Microsoft Defender now integrates with Dragos, Forescout, & Armis for OT Security",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/microsoft-defender-now-integrates-with-dragos-forescout-armis/ba-p/4534936",
-      "published": "2026-07-14T13:46:58+00:00",
-      "summary": "Co-author(s): Amit Cohen and Hadar ShindlerOperational technology (OT) environments are unlike anything else in cybersecurity. The systems that run our factories, power grids, water treatment plants, pipelines, and transportation networks weren’t built with modern threats in mind — and they can’t...",
-      "author": "Caroline_Lee",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR"
-      ]
-    },
     {
       "title": "Defending SaaS-based applications against ShinyHunters OAuth abuse",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/13/defending-saas-based-applications-against-shinyhunters-oauth-abuse/",
@@ -157,6 +73,48 @@
         "Microsoft Defender XDR",
         "AWS Security",
         "Microsoft Sentinel"
+      ]
+    },
+    {
+      "title": "Building toward an Agentic SOC: A Portable, Autonomous Malware Investigation Agent",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/building-toward-an-agentic-soc-a-portable-autonomous-malware/ba-p/4526872",
+      "published": "2026-07-13T19:09:25+00:00",
+      "summary": "Modern Security Operations Centers are not short on tools. They are short on continuity. Analysts jump from alert consoles to data exploration, from enrichment to investigation, and from evidence gathering to response—often across multiple interfaces and disconnected workflows. A single malware...",
+      "author": "absharan",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint",
+        "Microsoft Sentinel",
+        "Microsoft Security Copilot",
+        "Threat Intelligence"
       ]
     },
     {
@@ -1039,6 +997,30 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Defender now integrates with Dragos, Forescout, & Armis for OT Security",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/microsoft-defender-now-integrates-with-dragos-forescout-armis/ba-p/4534936",
+      "published": "2026-07-08T13:08:36+00:00",
+      "summary": "Co-author(s): Amit Cohen and Hadar ShindlerOperational technology (OT) environments are unlike anything else in cybersecurity. The systems that run our factories, power grids, water treatment plants, pipelines, and transportation networks weren’t built with modern threats in mind — and they can’t...",
+      "author": "Caroline_Lee",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR"
       ]
     },
     {
@@ -2212,10 +2194,10 @@
       ]
     },
     {
-      "title": "Alert: NCSC issues advice following global targeting of Fortinet firewalls and VPN gateways",
-      "link": "https://www.ncsc.gov.uk/news/advice-following-global-targeting-of-fortinet-firewalls-and-vpn-gateways",
+      "title": "The 'vibe coding spectrum' approach to AI-assisted software development",
+      "link": "https://www.ncsc.gov.uk/blogs/the-vibe-coding-spectrum-approach-to-ai-assisted-software-development",
       "published": "2026-06-18T12:00:00+00:00",
-      "summary": "Organisations using Fortinet services are being urged to take action following a campaign affecting firewalls and VPN gateways.",
+      "summary": "Different code deserves different levels of oversight, so calibrate your approach to ‘vibe coding’ accordingly.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -2236,10 +2218,10 @@
       ]
     },
     {
-      "title": "The 'vibe coding spectrum' approach to AI-assisted software development",
-      "link": "https://www.ncsc.gov.uk/blogs/the-vibe-coding-spectrum-approach-to-ai-assisted-software-development",
+      "title": "Alert: NCSC issues advice following global targeting of Fortinet firewalls and VPN gateways",
+      "link": "https://www.ncsc.gov.uk/news/advice-following-global-targeting-of-fortinet-firewalls-and-vpn-gateways",
       "published": "2026-06-18T12:00:00+00:00",
-      "summary": "Different code deserves different levels of oversight, so calibrate your approach to ‘vibe coding’ accordingly.",
+      "summary": "Organisations using Fortinet services are being urged to take action following a campaign affecting firewalls and VPN gateways.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
