@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-16T08:19:50.003375+00:00",
-  "totalArticles": 103,
+  "lastUpdated": "2026-07-16T14:01:34.239121+00:00",
+  "totalArticles": 105,
   "articles": [
     {
       "title": "Unpacking the AsyncAPI npm supply chain compromise and import-time payload delivery",
@@ -73,6 +73,54 @@
       ],
       "tags": [
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "Announcing the ASIM Parser Creation Agentic Experience",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/announcing-the-asim-parser-creation-agentic-experience/ba-p/4532266",
+      "published": "2026-07-15T16:00:00+00:00",
+      "summary": "Creating high-quality ASIM parsers has always required deep knowledge about source data and ASIM schemas, careful KQL design, and repeated validation cycles. That process is meaningful to understand the whole Sentinel ecosystem, but it can be slow when you are starting from raw source data and...",
+      "author": "derricklee",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel"
+      ]
+    },
+    {
+      "title": "New Privileged Token Context Telemetry Boosts Advanced Hunting in Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/new-privileged-token-context-telemetry-boosts-advanced-hunting/ba-p/4528613",
+      "published": "2026-07-15T16:00:00+00:00",
+      "summary": "In brief: Defenders can now easily identify logons involving high-privilege identities or special logon flags to better hunt threats and fine-tune detections. When a user logs on, Windows’ Local Security Authority (LSA) constructs an access token that represents the user’s security context for that...",
+      "author": "TalTzhori",
+      "source": "Microsoft Defender for Endpoint",
+      "source_id": "defender_endpoint",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Endpoint Security",
+      "board_id": "microsoftdefenderatpblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint"
       ]
     },
     {
