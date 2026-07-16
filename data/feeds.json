@@ -1,8 +1,80 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-16T14:01:34.239121+00:00",
-  "totalArticles": 105,
+  "lastUpdated": "2026-07-16T19:17:31.679316+00:00",
+  "totalArticles": 104,
   "articles": [
+    {
+      "title": "CVE-2026-15895: OS command injection in jsii-diff in AWS jsii",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-057-aws/",
+      "published": "2026-07-16T17:35:31+00:00",
+      "summary": "Bulletin ID: 2026-057-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/15/2026 12:00 PM PDT Description: jsii-diff is a command line tool to compare the API differences between two jsii assemblies, and report errors if there are backwards-incompatible changes to the...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-15737 - Sensitive content disclosure via OpenTelemetry spans in AgentCore Python SDK",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-058-aws/",
+      "published": "2026-07-16T17:09:05+00:00",
+      "summary": "Bulletin ID: 2026-058-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/16/2026 10:15 AM PDT Description: Bedrock AgentCore Python SDK (bedrock-agentcore) is an open-source Python library that provides client tools for building AI agents on the Amazon Bedrock...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Least privilege for AI agents: Identity, access, and tool binding",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/16/least-privilege-for-ai-agents-identity-access-and-tool-binding/",
+      "published": "2026-07-16T16:00:00+00:00",
+      "summary": "As AI agents become more autonomous, strong identity, access, and auditing controls are critical to keeping them secure. The post Least privilege for AI agents: Identity, access, and tool binding appeared first on Microsoft Security Blog.",
+      "author": "Yesenia Yser and Toby Kohlenberg",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Unpacking the AsyncAPI npm supply chain compromise and import-time payload delivery",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/15/unpacking-asyncapi-npm-supply-chain-compromise-import-time-payload-delivery/",
@@ -1732,30 +1804,6 @@
       ]
     },
     {
-      "title": "Microsoft named a leader in the Frost Radar for cloud and application runtime security",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/01/microsoft-named-a-leader-in-the-frost-radar-for-cloud-and-application-runtime-security/",
-      "published": "2026-07-01T16:00:00+00:00",
-      "summary": "Frost & Sullivan names Microsoft a leader as cloud and application security converge into unified, runtime risk reduction. The post Microsoft named a leader in the Frost Radar for cloud and application runtime security appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Security Team",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
       "title": "Building more resilient CNI: what industry pen testers told us",
       "link": "https://www.ncsc.gov.uk/blogs/building-more-resilient-cni-what-industry-pen-testers-told-us",
       "published": "2026-07-01T12:00:00+00:00",
@@ -2518,10 +2566,10 @@
       ]
     },
     {
-      "title": "Alert: NCSC issues advice following global targeting of Fortinet firewalls and VPN gateways",
-      "link": "https://www.ncsc.gov.uk/news/advice-following-global-targeting-of-fortinet-firewalls-and-vpn-gateways",
+      "title": "The 'vibe coding spectrum' approach to AI-assisted software development",
+      "link": "https://www.ncsc.gov.uk/blogs/the-vibe-coding-spectrum-approach-to-ai-assisted-software-development",
       "published": "2026-06-18T12:00:00+00:00",
-      "summary": "Organisations using Fortinet services are being urged to take action following a campaign affecting firewalls and VPN gateways.",
+      "summary": "Different code deserves different levels of oversight, so calibrate your approach to ‘vibe coding’ accordingly.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -2542,10 +2590,10 @@
       ]
     },
     {
-      "title": "The 'vibe coding spectrum' approach to AI-assisted software development",
-      "link": "https://www.ncsc.gov.uk/blogs/the-vibe-coding-spectrum-approach-to-ai-assisted-software-development",
+      "title": "Alert: NCSC issues advice following global targeting of Fortinet firewalls and VPN gateways",
+      "link": "https://www.ncsc.gov.uk/news/advice-following-global-targeting-of-fortinet-firewalls-and-vpn-gateways",
       "published": "2026-06-18T12:00:00+00:00",
-      "summary": "Different code deserves different levels of oversight, so calibrate your approach to ‘vibe coding’ accordingly.",
+      "summary": "Organisations using Fortinet services are being urged to take action following a campaign affecting firewalls and VPN gateways.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -2875,90 +2923,6 @@
         "AWS Security",
         "Google Cloud Security",
         "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "Announcing Public Preview: Agent Identities Asset Connector for Microsoft Sentinel",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/announcing-public-preview-agent-identities-asset-connector-for/ba-p/4527960",
-      "published": "2026-06-16T17:00:01+00:00",
-      "summary": "As organizations accelerate adoption of AI agents across Microsoft 365 and enterprise environments, security teams face a fundamental shift: Agents are becoming first-class identities and securing them requires understanding both their behavior and their identity context. We are excited to announce...",
-      "author": "Krishna_Sagar_B_V",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel"
-      ]
-    },
-    {
-      "title": "Transform your security operation with a unified experience in Defender",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/transform-your-security-operation-with-a-unified-experience-in/ba-p/4527932",
-      "published": "2026-06-16T16:00:00+00:00",
-      "summary": "Co-authored with Lizet Pena, Caroline Mutua, Alvin Kua and Marco Sudahl Security operations teams today are being asked to do more than ever: respond faster, manage increasing data volumes, reduce operational complexity, stay ahead of evolving threats, and balance cost and efficiency. That’s why...",
-      "author": "Mohit_Kumar1",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Microsoft Security Copilot",
-        "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "Achieving success with AI",
-      "link": "https://blogs.microsoft.com/blog/2026/06/16/achieving-success-with-ai/",
-      "published": "2026-06-16T15:00:02+00:00",
-      "summary": "The two most important elements in any AI solution are Intelligence + Trust. I first made this statement in November at our Ignite conference and my conviction is strengthened by every conversation I have with customers. Through my travels, three consistent topics are being raised when considering...",
-      "author": "Judson Althoff",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "AI",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     }
   ]
