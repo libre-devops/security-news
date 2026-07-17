@@ -1,8 +1,32 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-16T19:17:31.679316+00:00",
-  "totalArticles": 104,
+  "lastUpdated": "2026-07-17T02:54:14.798440+00:00",
+  "totalArticles": 101,
   "articles": [
+    {
+      "title": "ACR Stealer: Two observed intrusion chains amid increased threat activity",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/16/acr-stealer-two-observed-intrusion-chains-amid-increased-threat-activity/",
+      "published": "2026-07-16T23:12:02+00:00",
+      "summary": "From late April 2026 to mid-June 2026, Microsoft Defender Experts observed increased ACR Stealer activity across customer environments. These campaigns are successfully using ClickFix lures to steal browser credentials, authentication tokens, and sensitive documents from enterprise environments....",
+      "author": "Microsoft Security Research and Balaji Venkatesh S",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "CVE-2026-15895: OS command injection in jsii-diff in AWS jsii",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-057-aws/",
@@ -1654,30 +1678,6 @@
       ]
     },
     {
-      "title": "Improving security posture across the Microsoft partner ecosystem",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/02/improving-security-posture-across-the-microsoft-partner-ecosystem/",
-      "published": "2026-07-02T16:00:00+00:00",
-      "summary": "Read how Microsoft strengthens partner ecosystem security with CSP vetting, least privilege access, monitoring, and risk management best practices. The post Improving security posture across the Microsoft partner ecosystem appeared first on Microsoft Security Blog.",
-      "author": "Raji Dani",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
       "title": "Microsoft Frontier Company: AI engineering that amplifies and protects your intelligence",
       "link": "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/",
       "published": "2026-07-02T12:59:05+00:00",
@@ -2827,102 +2827,6 @@
         "Microsoft Security Copilot",
         "Threat Intelligence",
         "Microsoft Sentinel"
-      ]
-    },
-    {
-      "title": "SVD-2026-0614: OS Command Injection in the btool Configuration Helper in Splunk AI Toolkit",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0614",
-      "published": "2026-06-17T00:00:00+00:00",
-      "summary": "In Splunk AI Toolkit versions below 5.7.4, a user who holds the “admin” Splunk role could execute arbitrary OS commands on the host running the Splunk Enterprise instance. The vulnerability is possible because of an unsafe shell execution pattern in the btool configuration helper, which constructs...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0613: Insecure Default Domain Allowlist in Splunk AI Toolkit",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0613",
-      "published": "2026-06-17T00:00:00+00:00",
-      "summary": "In Splunk AI Toolkit versions below 5.7.4, a low-privileged user that does not hold the “admin” or “power” Splunk roles could cause the Splunk AI Toolkit to make outbound requests over HTTP to a server that an attacker controls, which could allow for data exfiltration. The vulnerability exists...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "Closing the loop on container security: From code to runtime in the AI era",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/closing-the-loop-on-container-security-from-code-to-runtime-in/ba-p/4528599",
-      "published": "2026-06-16T23:15:21+00:00",
-      "summary": "Containers are the backbone of modern cloud-native apps — and increasingly, the infrastructure powering AI, from AI assistants to a new wave of intelligent agents. They also blur the line between build, deploy, and runtime: a single code change can become a running workload in minutes. A...",
-      "author": "mahersko",
-      "source": "Microsoft Defender for Cloud",
-      "source_id": "defender_cloud",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Cloud Security",
-      "board_id": "microsoftdefendercloudblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        },
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 4
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Cloud",
-        "AWS Security",
-        "Google Cloud Security",
-        "Threat Intelligence"
       ]
     }
   ]
