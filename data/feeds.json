@@ -1,8 +1,692 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-22T14:03:46.359925+00:00",
+  "lastUpdated": "2026-07-22T19:25:39.818239+00:00",
   "totalArticles": 91,
   "articles": [
+    {
+      "title": "Defending the Inbox Against Prompt Injection Attacks",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/defending-the-inbox-against-prompt-injection-attacks/ba-p/4534636",
+      "published": "2026-07-22T18:50:10+00:00",
+      "summary": "AI assistants are quickly becoming part of everyday work—summarizing emails, drafting responses, triaging requests, and even potentially acting across connected business systems. As email becomes an automated input to AI systems, it can also become a new attack surface. Attackers no longer need to...",
+      "author": "nithinnara",
+      "source": "Microsoft Defender for Office 365",
+      "source_id": "defender_office",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Email Security",
+      "board_id": "microsoftdefenderforoffice365blog",
+      "products": [
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 11
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Office 365",
+        "AI Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-049",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-049",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-07-22Description Description Severity Notes A reflected Cross-Site Scripting (XSS) vulnerability was discovered in Google Cloud Looker. An attacker could craft a malicious URL that, when opened by an authenticated administrator, would allow the attacker to execute arbitrary scripts...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-048",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-048",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-07-13Description Description Severity Notes A privilege escalation vulnerability was addressed in Developer Connect. Previously, for GitLab Enterprise and Bitbucket Data Center connections, when Secret Manager secrets were retrieved, permissions were checked against the Developer...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-047",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-047",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-07-13Description Description Severity Notes A Missing Authorization vulnerability was discovered in repositories in BigQuery, Dataform, and Colab Enterprise. What should I do? No customer action is required. Google has already applied mitigations to all impacted products and...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-046",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-046",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-07-06Description Description Severity Notes A virtualization vulnerability has been identified in the KVM x86 shadow paging and nested virtualization configurations. Because an attacker operating a virtual machine with nested virtualization could escape hypervisor boundary isolation...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-045",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-045",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-29Description Description Severity Notes A vulnerability was detected in Envoy Proxy where blocked QPACK decoding can cause a Denial-of-Service Attack against the HTTP/3 stack. For instructions and more details, see the Cloud Service Mesh security bulletin. High...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-044",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-044",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-25Description Description Severity Notes A vulnerability was detected in Application Integration's JavaScript task, which was using the Rhino JavaScript engine. This only impacted tasks published before January 2025. For details and instructions, see the Application Integration...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-043",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-043",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-24Description Description Severity Notes A vulnerability was found in Firebase Studio where the GetSignedGcsUrl RPC allowed authenticated users to list buckets and download deployment source code of other tenants. No action is required to mitigate this vulnerability as the fix...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-042",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-042",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-24Description Description Severity Notes A privilege escalation vulnerability was addressed in Cloud Build. Previously, for GitLab Enterprise and Bitbucket Data Center connections, when Secret Manager secrets were retrieved, permissions were checked against the Cloud Build...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-041",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-041",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-24Description Description Severity Notes A recent security investigation was conducted regarding log4j vulnerabilities (CVE-2026-34480 and CVE-2026-34477) reported in Apigee Edge for Private Cloud. Google has determined that Apigee Edge for Private Cloud is not vulnerable to...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-040",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-040",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-23Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-47692 CVE-2026-47207 CVE-2026-47205 CVE-2026-47220 CVE-2026-47221...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-039",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-039",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-22Description Description Severity Notes A vulnerability in Cloud Logging could have allowed attackers to hijack log sink destinations by recreating the target Cloud Storage bucket in a project controlled by the attacker. This issue could have resulted in the continuous routing...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-038",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-038",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-22Description Description Severity Notes A vulnerability was found in App Engine where the GetDashboardAppStats GraphQL private API operation in the Google Cloud console leaked cross-tenant request logs. No action is required. This vulnerability has been fixed. High CVE-2026-8934",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-037",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-037",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-18Updated: 2026-06-20Description Description Severity Notes 2026-06-20 Update: Added GKE patch versions containing the fixes for Container-Optimized OS node images for minor versions 1.35 and 1.36. Patches for Ubuntu node images are still pending and in progress. 2026-06-19...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-036",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-036",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-09Description Description Severity Notes ARM has announced CVE-2025-10263, an architectural issue affecting some Arm cores which lets an attacker bypass translation stages or GPT protections under certain conditions. This vulnerability lets an attacker at a lower exception level...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-035",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-035",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-06-08Description Description Severity Notes A vulnerability was found in Envoy where HTTP/2 downstream request processing allow an unauthenticated remote client to trigger excessive memory consumption, potentially resulting in OOM termination of the Envoy process and denial of...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-034",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-034",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-05-20Description Description Severity Notes A vulnerability was found in Apigee where the IntegrationRegion parameter in the SetIntegrationRequest policy lacks validation, allowing for Server-Side Request Forgery (SSRF) and service account token exfiltration. The issue arises when...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-033",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-033",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-05-14Updated: 2026-07-16Description Description Severity Notes 2026-07-16 Update: The following versions of GKE are updated with code to fix this vulnerability on Ubuntu. Upgrade your Ubuntu node pools to the following versions or later: 1.30.14-gke.2710000 1.31.14-gke.2116000...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-032",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-032",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-05-12Description Description Severity Notes AMD has identified a hardware-level vulnerability in Zen 2 microarchitecture processors (including EPYC and Ryzen series) involving potential corruption within the micro-operation (OP) cache. Under specific conditions, this issue...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-031",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-031",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-05-12Description Description Severity Notes Researchers discovered a vulnerability in AMD firmware that, due to missing protection, could allow a malicious hypervisor to execute arbitrary code on the AMD Secure Processor (ASP). This allows for the escalation of Memory Mapped I/O...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-030",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-030",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-05-11Updated: 2026-06-24Description Description Severity Notes 2026-06-24 Update: Added patch versions for GKE. 2026-05-20 Update: Added CVE-2026-43500 and added CVE IDs to exploit paths. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-029",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-029",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-05-07Description Description Severity Notes Microsoft is updating the Secure Boot certificates originally issued in 2011 to ensure Windows devices continue to verify trusted boot software. These older certificates begin expiring in June 2026. Devices that haven't received the newer...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-028",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-028",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-05-05Updated: 2026-05-27Description Description Severity Notes CVE-2026-31431, also known as \"Copy Fail,\" is a high-severity local privilege escalation (LPE) vulnerability in the Linux kernel that allows an unprivileged user to gain root access. Disclosed in late April 2026, it...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-027",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-027",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-05-01Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23351 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-026",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-026",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-04-30Updated: 2026-05-04Description Description Severity Notes 2026-05-04 Update: Added patch versions for GKE. A vulnerability in the Linux kernel (CVE-2026-31431) allows an unprivileged local attacker to write to the system page cache, potentially leading to local privilege...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-025",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-025",
+      "published": "2026-07-22T16:14:36+00:00",
+      "summary": "Published: 2026-04-30Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23274 For instructions and more details, see the following bulletins: GKE security bulletin...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "Google Cloud Security",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Real world incident response: Microsoft and AXA XL strengthen cyber resilience",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/22/real-world-incident-response-microsoft-and-axa-xl-strengthen-cyber-resilience/",
+      "published": "2026-07-22T16:00:00+00:00",
+      "summary": "Our collaboration with AXA XL brings Microsoft Incident Response services directly to cyber insurance policyholders, helping organizations coordinate technical, business, and insurance decisions. The post Real world incident response: Microsoft and AXA XL strengthen cyber resilience appeared first...",
+      "author": "Aarti Borkar",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Powering America’s Genesis Mission: Microsoft’s commitment to scientific discovery",
       "link": "https://blogs.microsoft.com/blog/2026/07/22/powering-americas-genesis-mission-microsofts-commitment-to-scientific-discovery/",
@@ -808,642 +1492,6 @@
       ]
     },
     {
-      "title": "GCP-2026-048",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-048",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-07-13Description Description Severity Notes A privilege escalation vulnerability was addressed in Developer Connect. Previously, for GitLab Enterprise and Bitbucket Data Center connections, when Secret Manager secrets were retrieved, permissions were checked against the Developer...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-047",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-047",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-07-13Description Description Severity Notes A Missing Authorization vulnerability was discovered in repositories in BigQuery, Dataform, and Colab Enterprise. What should I do? No customer action is required. Google has already applied mitigations to all impacted products and...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-046",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-046",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-07-06Description Description Severity Notes A virtualization vulnerability has been identified in the KVM x86 shadow paging and nested virtualization configurations. Because an attacker operating a virtual machine with nested virtualization could escape hypervisor boundary isolation...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-045",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-045",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-29Description Description Severity Notes A vulnerability was detected in Envoy Proxy where blocked QPACK decoding can cause a Denial-of-Service Attack against the HTTP/3 stack. For instructions and more details, see the Cloud Service Mesh security bulletin. High...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-044",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-044",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-25Description Description Severity Notes A vulnerability was detected in Application Integration's JavaScript task, which was using the Rhino JavaScript engine. This only impacted tasks published before January 2025. For details and instructions, see the Application Integration...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-043",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-043",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-24Description Description Severity Notes A vulnerability was found in Firebase Studio where the GetSignedGcsUrl RPC allowed authenticated users to list buckets and download deployment source code of other tenants. No action is required to mitigate this vulnerability as the fix...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-042",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-042",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-24Description Description Severity Notes A privilege escalation vulnerability was addressed in Cloud Build. Previously, for GitLab Enterprise and Bitbucket Data Center connections, when Secret Manager secrets were retrieved, permissions were checked against the Cloud Build...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-041",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-041",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-24Description Description Severity Notes A recent security investigation was conducted regarding log4j vulnerabilities (CVE-2026-34480 and CVE-2026-34477) reported in Apigee Edge for Private Cloud. Google has determined that Apigee Edge for Private Cloud is not vulnerable to...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-040",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-040",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-23Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-47692 CVE-2026-47207 CVE-2026-47205 CVE-2026-47220 CVE-2026-47221...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-039",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-039",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-22Description Description Severity Notes A vulnerability in Cloud Logging could have allowed attackers to hijack log sink destinations by recreating the target Cloud Storage bucket in a project controlled by the attacker. This issue could have resulted in the continuous routing...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-038",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-038",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-22Description Description Severity Notes A vulnerability was found in App Engine where the GetDashboardAppStats GraphQL private API operation in the Google Cloud console leaked cross-tenant request logs. No action is required. This vulnerability has been fixed. High CVE-2026-8934",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-037",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-037",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-18Updated: 2026-06-20Description Description Severity Notes 2026-06-20 Update: Added GKE patch versions containing the fixes for Container-Optimized OS node images for minor versions 1.35 and 1.36. Patches for Ubuntu node images are still pending and in progress. 2026-06-19...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-036",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-036",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-09Description Description Severity Notes ARM has announced CVE-2025-10263, an architectural issue affecting some Arm cores which lets an attacker bypass translation stages or GPT protections under certain conditions. This vulnerability lets an attacker at a lower exception level...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-035",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-035",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-06-08Description Description Severity Notes A vulnerability was found in Envoy where HTTP/2 downstream request processing allow an unauthenticated remote client to trigger excessive memory consumption, potentially resulting in OOM termination of the Envoy process and denial of...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-034",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-034",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-05-20Description Description Severity Notes A vulnerability was found in Apigee where the IntegrationRegion parameter in the SetIntegrationRequest policy lacks validation, allowing for Server-Side Request Forgery (SSRF) and service account token exfiltration. The issue arises when...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-033",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-033",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-05-14Description Description Severity Notes A container breakout vulnerability CVE-2026-46300 has been found in the Linux kernel, known as Fragnesia. It allows an unprivileged local attacker to escalate to root on the host. For instructions and more details, see the following...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-032",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-032",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-05-12Description Description Severity Notes AMD has identified a hardware-level vulnerability in Zen 2 microarchitecture processors (including EPYC and Ryzen series) involving potential corruption within the micro-operation (OP) cache. Under specific conditions, this issue...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-031",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-031",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-05-12Description Description Severity Notes Researchers discovered a vulnerability in AMD firmware that, due to missing protection, could allow a malicious hypervisor to execute arbitrary code on the AMD Secure Processor (ASP). This allows for the escalation of Memory Mapped I/O...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-030",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-030",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-05-11Updated: 2026-06-24Description Description Severity Notes 2026-06-24 Update: Added patch versions for GKE. 2026-05-20 Update: Added CVE-2026-43500 and added CVE IDs to exploit paths. The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-029",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-029",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-05-07Description Description Severity Notes Microsoft is updating the Secure Boot certificates originally issued in 2011 to ensure Windows devices continue to verify trusted boot software. These older certificates begin expiring in June 2026. Devices that haven't received the newer...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-028",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-028",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-05-05Updated: 2026-05-27Description Description Severity Notes CVE-2026-31431, also known as \"Copy Fail,\" is a high-severity local privilege escalation (LPE) vulnerability in the Linux kernel that allows an unprivileged user to gain root access. Disclosed in late April 2026, it...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-027",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-027",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-05-01Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23351 For instructions and more details, see the following bulletins: GKE security bulletin...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-026",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-026",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-04-30Updated: 2026-05-04Description Description Severity Notes 2026-05-04 Update: Added patch versions for GKE. A vulnerability in the Linux kernel (CVE-2026-31431) allows an unprivileged local attacker to write to the system page cache, potentially leading to local privilege...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-025",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-025",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-04-30Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS nodes: CVE-2026-23274 For instructions and more details, see the following bulletins: GKE security bulletin...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-024",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-024",
-      "published": "2026-07-13T15:33:57+00:00",
-      "summary": "Published: 2026-04-28Description Description Severity Notes The following vulnerabilities were discovered in the Linux kernel that can lead to a privilege escalation on Container-Optimized OS and Ubuntu nodes: CVE-2025-38248 For instructions and more details, see the following bulletins: GKE...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "Google Cloud Security",
-        "AWS Security"
-      ]
-    },
-    {
       "title": "UK and Allies urge critical sectors to improve defences against Russian intelligence targeting",
       "link": "https://www.ncsc.gov.uk/news/uk-and-allies-urge-critical-sectors-to-improve-defences-against-russian-intelligence-targeting",
       "published": "2026-07-13T12:00:00+00:00",
@@ -1609,60 +1657,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Defending the Inbox Against Prompt Injection Attacks",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/defending-the-inbox-against-prompt-injection-attacks/ba-p/4534636",
-      "published": "2026-07-08T18:16:22+00:00",
-      "summary": "AI assistants are quickly becoming part of everyday work—summarizing emails, drafting responses, triaging requests, and even potentially acting across connected business systems. As email becomes an automated input to AI systems, it can also become a new attack surface. Attackers no longer need to...",
-      "author": "nithinnara",
-      "source": "Microsoft Defender for Office 365",
-      "source_id": "defender_office",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Email Security",
-      "board_id": "microsoftdefenderforoffice365blog",
-      "products": [
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Office 365",
-        "AI Security"
-      ]
-    },
-    {
-      "title": "Protecting Microsoft at AI speed: How SFI proactively hardens our cloud",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/08/protecting-microsoft-at-ai-speed-how-sfi-proactively-hardens-our-cloud/",
-      "published": "2026-07-08T17:00:00+00:00",
-      "summary": "At Microsoft we encompass these security requirements, along with threat knowledge, and operational frameworks in our Secure Future Initiative (SFI), to guide what a well-defended cloud service looks like. But defining the requirements is only the start. Meeting the requirements means continuously...",
-      "author": "Salim Chawro",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
