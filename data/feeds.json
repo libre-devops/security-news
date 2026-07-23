@@ -1,8 +1,164 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-23T14:09:38.555150+00:00",
-  "totalArticles": 91,
+  "lastUpdated": "2026-07-23T19:23:37.766343+00:00",
+  "totalArticles": 94,
   "articles": [
+    {
+      "title": "CVE-2026-16756 - Allocation of resources without limits in the default aws-smithy-http-server serve() path allows unauthenticated Slowloris denial of service",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-064-aws/",
+      "published": "2026-07-23T18:39:11+00:00",
+      "summary": "Bulletin ID: 2026-064-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/23/2026 11:30 AM PDT Description: Smithy-RS is a Rust code generation and runtime framework that generates HTTP clients and servers from Smithy interface definitions, powering the AWS SDK for Rust...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Azure Lighthouse: Bring Your Partner In, Without Letting Their Identities In (part 2 of 3)",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/azure-lighthouse-bring-your-partner-in-without-letting-their/ba-p/4529852",
+      "published": "2026-07-23T15:40:21+00:00",
+      "summary": "See part 1 – Implementing Azure Lighthouse: A Technical Guide for Service Providers and Enterprises (part 1 of 2) See part 3 – Should You Use the New Microsoft Entra Tenant Governance or Azure Lighthouse? (part 3 of 3) The three traditional ways in, and what each leaves behind When a provider needs...",
+      "author": "Preston_Romney",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Cloud",
+        "Microsoft Sentinel"
+      ]
+    },
+    {
+      "title": "Understanding Microsoft 365 Copilot Risk Surface and Mitigations",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/understanding-microsoft-365-copilot-risk-surface-and-mitigations/ba-p/4538712",
+      "published": "2026-07-23T15:37:20+00:00",
+      "summary": "It’s a shift that carries important security implications organizations should understand before scaling deployment. Customers with Microsoft 365 E5 licensing may already have access to many of the tools that can help identify and reduce Copilot-related risk, but licensing alone does not reduce...",
+      "author": "AtilGurcan",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "Email threat landscape: Q2 2026 trends and insights",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
+      "published": "2026-07-23T15:00:00+00:00",
+      "summary": "In the second quarter of 2026, the continuing effects of Microsoft’s disruption of the Tycoon2FA phishing platform contributed to sustained declines in several major phishing techniques, while threat actors expanded into Teams-based social engineering and employed increasingly automated and...",
+      "author": "Microsoft Threat Intelligence and Microsoft Defender Security Research Team",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Should You Use the New Microsoft Entra Tenant Governance or Azure Lighthouse? (part 3 of 3)",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/should-you-use-the-new-microsoft-entra-tenant-governance-or/ba-p/4532297",
+      "published": "2026-07-23T12:00:00+00:00",
+      "summary": "In Part 1 we built Azure Lighthouse the technical way. In Part 2, \"Bring Your Partner In, Without Letting Their Identities In,\" we made the security case for it: let a service provider operate a customer's Azure resources without creating any identity in the customer's tenant. This third part...",
+      "author": "Preston_Romney",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Sentinel"
+      ]
+    },
+    {
+      "title": "UK and partners expose Russian state-supported actors for new ‘zero-click’ phishing campaign targeting Western organisations",
+      "link": "https://www.ncsc.gov.uk/news/uk-and-partners-expose-russian-state-supported-actors-for-new-zero-click-phishing-campaign",
+      "published": "2026-07-23T12:00:00+00:00",
+      "summary": "GCHQ’s National Cyber Security Centre and international partners issue warning as ‘LAUNDRY BEAR’ cyber threat group exposed for targeted phishing campaign",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 13
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
     {
       "title": "Defending the Inbox Against Prompt Injection Attacks",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/defending-the-inbox-against-prompt-injection-attacks/ba-p/4534636",
@@ -781,36 +937,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Azure Lighthouse: Bring Your Partner In, Without Letting Their Identities In (part 2 of 3)",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/azure-lighthouse-bring-your-partner-in-without-letting-their/ba-p/4529852",
-      "published": "2026-07-20T12:00:00+00:00",
-      "summary": "See part 1 – Implementing Azure Lighthouse: A Technical Guide for Service Providers and Enterprises (part 1 of 2) See part 3 – Should You Use the New Microsoft Entra Tenant Governance or Azure Lighthouse? (part 3 of 3) [to be published on 7/23/26] The three traditional ways in, and what each leaves...",
-      "author": "Preston_Romney",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Cloud",
-        "Microsoft Sentinel"
       ]
     },
     {
@@ -1617,18 +1743,18 @@
       "published": "2026-07-09T15:00:00+00:00",
       "summary": "GigaWiper, also tracked as BLUERABBIT, is a destructive backdoor that combines multiple wiping and ransomware-like capabilities into a single operational platform. This blog analyzes how the malware incorporates code from several previously separate malware families and provides guidance to help...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 6
+          "score": 11
         }
       ],
       "tags": [
@@ -2415,54 +2541,6 @@
       "published": "2026-06-24T12:01:13+00:00",
       "summary": "As demand for cloud and AI services continues to grow, datacenters are becoming more essential than ever. Communities also want to better understand how this infrastructure affects local resources, particularly water. At Microsoft, water stewardship has been a priority since our first datacenter...",
       "author": "Judy Priest, CVP and CTO of Cloud Operations & Innovation and Steve Solomon, VP Datacenter Engineering",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "AI",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-12957 and CVE-2026-12958 - Issues in Language Servers for AWS and Amazon Q Developer Plugins",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-047-aws/",
-      "published": "2026-06-23T16:11:40+00:00",
-      "summary": "Bulletin ID: 2026-047-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 06/23/2026 09:30 AM PDT Description: Language Servers for AWS provide the underlying language-server runtime that powers Amazon Q Developer's AI coding assistance across its IDE plugins (Visual...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "Rethinking cloud operations with agentic observability",
-      "link": "https://blogs.microsoft.com/blog/2026/06/23/rethinking-cloud-operations-with-agentic-observability/",
-      "published": "2026-06-23T15:45:05+00:00",
-      "summary": "Cloud operations are entering a new era as AI-driven and autonomous agents become a larger part of modern software systems. As software becomes increasingly agentic, the challenge is no longer just managing greater scale and complexity. Operators must also contend with systems that evolve faster,...",
-      "author": "Brendan Burns",
       "source": "Microsoft AI Blog",
       "source_id": "ms_ai_blog",
       "source_group": "Official Microsoft",
