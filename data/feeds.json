@@ -1,6 +1,6 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-24T08:32:05.933396+00:00",
+  "lastUpdated": "2026-07-24T13:52:15.516138+00:00",
   "totalArticles": 93,
   "articles": [
     {
@@ -52,6 +52,60 @@
       ]
     },
     {
+      "title": "Azure Lighthouse: Bring Your Partner In, Without Letting Their Identities In (part 2 of 3)",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/azure-lighthouse-bring-your-partner-in-without-letting-their/ba-p/4529852",
+      "published": "2026-07-23T15:40:21+00:00",
+      "summary": "See part 1 – Implementing Azure Lighthouse: A Technical Guide for Service Providers and Enterprises (part 1 of 2) See part 3 – Should You Use the New Microsoft Entra Tenant Governance or Azure Lighthouse? (part 3 of 3) The three traditional ways in, and what each leaves behind When a provider needs...",
+      "author": "Preston_Romney",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Cloud",
+        "Microsoft Sentinel"
+      ]
+    },
+    {
+      "title": "Understanding Microsoft 365 Copilot Risk Surface and Mitigations",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/understanding-microsoft-365-copilot-risk-surface-and-mitigations/ba-p/4538712",
+      "published": "2026-07-23T15:37:20+00:00",
+      "summary": "It’s a shift that carries important security implications organizations should understand before scaling deployment. Customers with Microsoft 365 E5 licensing may already have access to many of the tools that can help identify and reduce Copilot-related risk, but licensing alone does not reduce...",
+      "author": "AtilGurcan",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
       "title": "Email threat landscape: Q2 2026 trends and insights",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
       "published": "2026-07-23T15:00:00+00:00",
@@ -73,6 +127,36 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Should You Use the New Microsoft Entra Tenant Governance or Azure Lighthouse? (part 3 of 3)",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/should-you-use-the-new-microsoft-entra-tenant-governance-or/ba-p/4532297",
+      "published": "2026-07-23T12:00:00+00:00",
+      "summary": "In Part 1 we built Azure Lighthouse the technical way. In Part 2, \"Bring Your Partner In, Without Letting Their Identities In,\" we made the security case for it: let a service provider operate a customer's Azure resources without creating any identity in the customer's tenant. This third part...",
+      "author": "Preston_Romney",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Sentinel"
       ]
     },
     {
@@ -877,36 +961,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Azure Lighthouse: Bring Your Partner In, Without Letting Their Identities In (part 2 of 3)",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/azure-lighthouse-bring-your-partner-in-without-letting-their/ba-p/4529852",
-      "published": "2026-07-20T12:00:00+00:00",
-      "summary": "See part 1 – Implementing Azure Lighthouse: A Technical Guide for Service Providers and Enterprises (part 1 of 2) See part 3 – Should You Use the New Microsoft Entra Tenant Governance or Azure Lighthouse? (part 3 of 3) [to be published on 7/23/26] The three traditional ways in, and what each leaves...",
-      "author": "Preston_Romney",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Cloud",
-        "Microsoft Sentinel"
       ]
     },
     {
@@ -2479,54 +2533,6 @@
       ],
       "tags": [
         "Microsoft Sentinel"
-      ]
-    },
-    {
-      "title": "StealC and Amadey: Breaking down infostealers and the cybercrime services that deliver them",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/06/24/stealc-and-amadey-breaking-down-infostealers-and-the-cybercrime-services-that-deliver-them/",
-      "published": "2026-06-24T12:30:00+00:00",
-      "summary": "On June 24, 2026, Microsoft’s Digital Crimes Unit (DCU) facilitated the takedown, suspension, and blocking of domains that formed the backbone of the StealC and Amadey infrastructure. This blog is a technical breakdown of StealC and Amadey. The post StealC and Amadey: Breaking down infostealers and...",
-      "author": "Microsoft Threat Intelligence, Microsoft Defender Security Research Team and Microsoft Digital Crimes Unit",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "Inside Microsoft’s two-decade push to cut water intensity while scaling for growth",
-      "link": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
-      "published": "2026-06-24T12:01:13+00:00",
-      "summary": "As demand for cloud and AI services continues to grow, datacenters are becoming more essential than ever. Communities also want to better understand how this infrastructure affects local resources, particularly water. At Microsoft, water stewardship has been a priority since our first datacenter...",
-      "author": "Judy Priest, CVP and CTO of Cloud Operations & Innovation and Steve Solomon, VP Datacenter Engineering",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "AI",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     }
   ]
