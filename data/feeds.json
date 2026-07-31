@@ -1,8 +1,62 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-07-31T14:16:09.359407+00:00",
+  "lastUpdated": "2026-07-31T19:39:09.845363+00:00",
   "totalArticles": 91,
   "articles": [
+    {
+      "title": "Detecting CVE-2026-54121 (Certighost) with Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/detecting-cve-2026-54121-certighost-with-microsoft-defender/ba-p/4542861",
+      "published": "2026-07-31T17:41:07+00:00",
+      "summary": "What is CVE-2026-54121? CVE-2026-54121 is an authentication-bypass vulnerability in Active Directory Certificate Services that allows an attacker to obtain certificates for arbitrary domain computer accounts, including Domain Controllers. A valid Domain Controller certificate enables escalation to...",
+      "author": "EdanZwick",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-identity",
+          "name": "Microsoft Defender for Identity",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Identity"
+      ]
+    },
+    {
+      "title": "Incomplete fix for CVE-2025-4318 code injection in Amazon @aws-amplify/codegen-ui-react",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-066-aws/",
+      "published": "2026-07-31T17:20:33+00:00",
+      "summary": "Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
     {
       "title": "Securing Enterprise AI Agents with Microsoft Sentinel",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/securing-enterprise-ai-agents-with-microsoft-sentinel/ba-p/4542583",
@@ -49,6 +103,78 @@
         "Microsoft Sentinel",
         "AI Security",
         "Microsoft Security Copilot"
+      ]
+    },
+    {
+      "title": "Domain controller showing \"Not ready for migration\"",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-identity/domain-controller-showing-quot-not-ready-for-migration-quot/m-p/4542534#M4327",
+      "published": "2026-07-30T20:52:18+00:00",
+      "summary": "I want to get the MDI sensor upgraded to v3 on our domain controllers. When I go into Settings > Sensors, two of our DCs are listed as \"Ready for migration\", but the third says \"Not ready for migration\".As far as I can tell, this DC meets all the prerequisites listed at Migrate from sensor v2.x to...",
+      "author": "RyanSteele-CoV",
+      "source": "Microsoft Defender for Identity",
+      "source_id": "defender_identity",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Identity Security",
+      "board_id": "azureadvancedthreatprotection",
+      "products": [
+        {
+          "id": "defender-identity",
+          "name": "Microsoft Defender for Identity",
+          "score": 14
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Identity"
+      ]
+    },
+    {
+      "title": "Built to Protect: The Architecture Behind Codename MDASH",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/built-to-protect-the-architecture-behind-codename-mdash/ba-p/4541662",
+      "published": "2026-07-30T18:45:00+00:00",
+      "summary": "Information Table Defender Foundations RegionalOperation AI & DataContainment ResponsibleGovernance Built as a production Microsoft Security service, not an isolated research system. Operates alongside Microsoft Defender in the clouds and regions customers already use. Designed to keep source,...",
+      "author": "JasonWeber",
+      "source": "Microsoft Defender for Cloud",
+      "source_id": "defender_cloud",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Cloud Security",
+      "board_id": "microsoftdefendercloudblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 7
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Cloud",
+        "Microsoft Sentinel",
+        "Threat Intelligence",
+        "AI Security"
       ]
     },
     {
@@ -1426,30 +1552,6 @@
       ]
     },
     {
-      "title": "CVE-2026-15737 - Sensitive content disclosure via OpenTelemetry spans in AgentCore Python SDK",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-058-aws/",
-      "published": "2026-07-16T17:09:05+00:00",
-      "summary": "Bulletin ID: 2026-058-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/16/2026 10:15 AM PDT Description: Bedrock AgentCore Python SDK (bedrock-agentcore) is an open-source Python library that provides client tools for building AI agents on the Amazon Bedrock...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "Least privilege for AI agents: Identity, access, and tool binding",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/16/least-privilege-for-ai-agents-identity-access-and-tool-binding/",
       "published": "2026-07-16T16:00:00+00:00",
@@ -2287,84 +2389,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-13769 – Insecure file permissions in AWS CLI",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-049-aws/",
-      "published": "2026-07-01T18:45:24+00:00",
-      "summary": "Bulletin ID: 2026-049-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/01/2026 11:45 AM PDT Description: The AWS Command Line Interface (AWS CLI) is a unified tool for managing AWS services from the command line. We identified CVE-2026-13769 in AWS CLI on Unix-like...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "Behind the Build with Gigamon: Enriching Microsoft Sentinel with Network-Derived Telemetry",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/behind-the-build-with-gigamon-enriching-microsoft-sentinel-with/ba-p/4530360",
-      "published": "2026-07-01T17:51:59+00:00",
-      "summary": "Behind the Build is an ongoing series spotlighting standout Microsoft partner collaborations. Each edition dives into the technical and strategic decisions that shape real-world integrations—highlighting engineering excellence, innovation, and the shared customer value created through partnership....",
-      "author": "Natee_Pretikul",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel"
-      ]
-    },
-    {
-      "title": "Now generally available: Serverless posture coverage in Microsoft Defender CSPM",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/now-generally-available-serverless-posture-coverage-in-microsoft/ba-p/4532353",
-      "published": "2026-07-01T16:00:48+00:00",
-      "summary": "Serverless workloads are a foundation of modern application development, powering everything from low-code and no-code solutions to AI applications and agentic workflows. Development teams use functions, app services, containers, APIs, and event-driven infrastructure to move quickly, scale on...",
-      "author": "donnalee",
-      "source": "Microsoft Defender for Cloud",
-      "source_id": "defender_cloud",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Cloud Security",
-      "board_id": "microsoftdefendercloudblog",
-      "products": [
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Cloud",
-        "AWS Security"
       ]
     }
   ]
