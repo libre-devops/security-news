@@ -1,8 +1,80 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-04T19:41:26.374688+00:00",
-  "totalArticles": 91,
+  "lastUpdated": "2026-08-05T02:47:34.661304+00:00",
+  "totalArticles": 94,
   "articles": [
+    {
+      "title": "ChainDrop supply chain compromise: Anatomy of a self-propagating worm",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/",
+      "published": "2026-08-04T23:46:41+00:00",
+      "summary": "A credential-stealing worm hidden in more than 400 compromised npm packages automatically spread across software ecosystems by republishing malicious updates. This analysis details the attack chain, affected environments, and practical guidance for detection, hunting, and remediation. The post...",
+      "author": "Microsoft Security Research, Ravikant Tiwari, Sagar Patil and Suriyaraj Natarajan",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-18656 & CVE-2026-18657 - Issue with Kiro IDE and CLI - Executable Resolution from Untrusted Project Directory on Windows",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-074-aws/",
+      "published": "2026-08-04T19:43:11+00:00",
+      "summary": "Bulletin ID: 2026-074-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/04/2026 12:30 PM PDT Description: Kiro is an agentic IDE and command-line interface users install on their desktop. We identified CVE-2026-18656 and CVE-2026-18657, an issue where an uncontrolled...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Advance Zero Trust for AI: New tools and guidance to secure AI agents and DevSecOps",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/04/advance-zero-trust-for-ai-new-tools-and-guidance-to-secure-ai-agents-and-devsecops/",
+      "published": "2026-08-04T18:30:00+00:00",
+      "summary": "Microsoft expands its Zero Trust for AI strategy to enhance security for AI and DevSecOps environments with new tools and guidance. The post Advance Zero Trust for AI: New tools and guidance to secure AI agents and DevSecOps appeared first on Microsoft Security Blog.",
+      "author": "Ron Pessner",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "128 Seconds to disruption: Microsoft Defender stops ransomware at QNET",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/08/04/129-seconds-disruption-microsoft-defender-stops-ransomware-qnet/",
@@ -52,6 +124,36 @@
       ]
     },
     {
+      "title": "NCSC statement in response to recent incidents resulting from frontier AI evaluations",
+      "link": "https://www.ncsc.gov.uk/news/ncsc-statement-in-response-to-recent-incidents-resulting-from-frontier-ai-evaluations",
+      "published": "2026-08-04T12:00:00+00:00",
+      "summary": "A statement from Ollie Whitehouse, Chief Technology Officer at the NCSC, on AI security following recent incidents.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "NCSC Guidance",
+        "AI Security"
+      ]
+    },
+    {
       "title": "Check This Out! (CTO!) Guide (August 2026)",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/check-this-out-cto-guide-august-2026/ba-p/4543597",
       "published": "2026-08-03T19:03:30+00:00",
@@ -85,6 +187,36 @@
         "Microsoft Defender for Endpoint",
         "Microsoft Defender XDR",
         "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "Microsoft Defender for Cloud Customer Newsletter",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/microsoft-defender-for-cloud-customer-newsletter/ba-p/4543596",
+      "published": "2026-08-03T18:50:45+00:00",
+      "summary": "*This will be the last monthly MDC newsletter. To keep up with the latest, please visit: What's new in MDC What's new in Defender for Cloud? Multiple container security features are now Generally Available: Container-level misconfiguration recommendations for Kubernetes, Upgrade AKS version...",
+      "author": "Yura_Lee",
+      "source": "Microsoft Defender for Cloud",
+      "source_id": "defender_cloud",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Cloud Security",
+      "board_id": "microsoftdefendercloudblog",
+      "products": [
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Cloud",
+        "AI Security"
       ]
     },
     {
@@ -1540,30 +1672,6 @@
       ]
     },
     {
-      "title": "CVE-2026-16317 and CVE-2026-16318: Issues with s2n-tls: an open-source implementation of the TLS/SSL protocols",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-062-aws/",
-      "published": "2026-07-21T20:19:37+00:00",
-      "summary": "Bulletin ID: 2026-062-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/21/2026 13:15 PM PDT Description: s2n-tls is an open source C99 implementation of the TLS/SSL protocol. We have identified two distinct issues: - CVE-2026-16317: Silent Drop of TLS 1.3 Encrypted...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "Microsoft expands Azure AI and HPC infrastructure with AMD",
       "link": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
       "published": "2026-07-20T13:00:02+00:00",
@@ -1612,51 +1720,27 @@
       ]
     },
     {
-      "title": "Microsoft at Black Hat USA 2026: Defending trust in the age of AI and supply chain attacks",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/17/microsoft-at-black-hat-usa-2026-defending-trust-in-the-age-of-ai-and-supply-chain-attacks/",
-      "published": "2026-07-17T16:00:00+00:00",
-      "summary": "Join Microsoft Security at Black Hat USA 2026 for supply chain research, hands-on security experiences, expert conversations, and our reception. The post Microsoft at Black Hat USA 2026: Defending trust in the age of AI and supply chain attacks appeared first on Microsoft Security Blog.",
-      "author": "Elliot Volkman",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
       "title": "ACR Stealer: Two observed intrusion chains amid increased threat activity",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/16/acr-stealer-two-observed-intrusion-chains-amid-increased-threat-activity/",
       "published": "2026-07-16T23:12:02+00:00",
       "summary": "From late April 2026 to mid-June 2026, Microsoft Defender Experts observed increased ACR Stealer activity across customer environments. These campaigns are successfully using ClickFix lures to steal browser credentials, authentication tokens, and sensitive documents from enterprise environments....",
       "author": "Microsoft Security Research and Balaji Venkatesh S",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
         }
       ],
       "tags": [
-        "General Security"
+        "Threat Intelligence"
       ]
     },
     {
