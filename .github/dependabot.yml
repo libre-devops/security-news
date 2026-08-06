@@ -1,0 +1,35 @@
+version: 2
+updates:
+  # pip - the feed fetcher's dependencies. requirements.txt lives in scripts/,
+  # so the directory is /scripts, not /. Minor and patch are grouped into one
+  # PR per week; majors get individual PRs so they can be reviewed separately.
+  - package-ecosystem: pip
+    directory: /scripts
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/London
+    groups:
+      minor-and-patch:
+        patterns: ["*"]
+        update-types: [minor, patch]
+    open-pull-requests-limit: 5
+    labels:
+      - dependencies
+
+  # GitHub Actions - group all updates together.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "06:00"
+      timezone: Europe/London
+    groups:
+      actions:
+        patterns: ["*"]
+    open-pull-requests-limit: 3
+    labels:
+      - dependencies
+      - github-actions
