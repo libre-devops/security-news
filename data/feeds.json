@@ -1,8 +1,92 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-05T19:40:22.609142+00:00",
-  "totalArticles": 93,
+  "lastUpdated": "2026-08-06T02:50:39.063479+00:00",
+  "totalArticles": 96,
   "articles": [
+    {
+      "title": "Monthly News-August 2026",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/monthly-news-august-2026/ba-p/4544388",
+      "published": "2026-08-05T22:15:47+00:00",
+      "summary": "Microsoft DefenderMonthly news - August 2026 Edition This is our monthly \"What's new\" blog post, summarizing product updates and various new assets we released over the past month across our Defender products. In this edition, we are looking at all the goodness from July 2026. We are now including...",
+      "author": "EdFisher",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 11
+        },
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 11
+        },
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 5
+        },
+        {
+          "id": "defender-cloud-apps",
+          "name": "Microsoft Defender for Cloud Apps",
+          "score": 5
+        },
+        {
+          "id": "defender-identity",
+          "name": "Microsoft Defender for Identity",
+          "score": 5
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "AI Security",
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Defender for Office 365",
+        "Microsoft Purview",
+        "Microsoft Sentinel",
+        "Microsoft Defender for Cloud",
+        "Microsoft Defender for Cloud Apps",
+        "Microsoft Defender for Identity",
+        "Microsoft Security Copilot",
+        "AWS Security"
+      ]
+    },
     {
       "title": "​​Microsoft named a Leader in the KuppingerCole Leadership Compass for Cloud Native Application Protection Platforms (CNAPP)",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/08/05/microsoft-named-a-leader-in-the-kuppingercole-leadership-compass-for-cloud-native-application-protection-platforms-cnapp/",
@@ -25,6 +109,60 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Public Preview: Nested API Support Comes to Microsoft Sentinel CCF",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/public-preview-nested-api-support-comes-to-microsoft-sentinel/ba-p/4537026",
+      "published": "2026-08-05T16:00:00+00:00",
+      "summary": "Microsoft Sentinel continues to evolve its capabilities to support an expanding ecosystem of partners and data integrations. Recent innovations include the Codeless Connector Framework (CCF) Push feature, the new Sentinel connector builder agent, and the CCF expansion to pull data from Azure...",
+      "author": "Robert_Moriarty",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel",
+        "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "Building a CCF Nested API Pull Connector: A Technical Lab Walkthrough",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/building-a-ccf-nested-api-pull-connector-a-technical-lab/ba-p/4537027",
+      "published": "2026-08-05T16:00:00+00:00",
+      "summary": "This post walks through building a Microsoft Sentinel Codeless Connector Framework (CCF) RestApiPoller connector that uses the nested API polling pattern. The nested pattern exists for a specific reason: many enterprise APIs do not return enriched records from a single call. Instead, they use a...",
+      "author": "Robert_Moriarty",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel"
       ]
     },
     {
