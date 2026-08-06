@@ -1,0 +1,52 @@
+name: CodeQL
+
+on:
+  push:
+    branches: [master]
+    # The feed job commits to master every 6 hours. Those commits only ever
+    # touch data/, so skip them here - the weekly scan still covers everything.
+    paths-ignore:
+      - 'data/**'
+  pull_request:
+    branches: [master]
+  schedule:
+    # Weekly full scan - Monday 03:00 UTC
+    - cron: '0 3 * * 1'
+
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    strategy:
+      fail-fast: false
+      matrix:
+        # javascript-typescript: js/app.js and sw.js
+        # python: scripts/fetch_feeds.py
+        # actions: the workflows themselves - this one patches files and pushes
+        language: [javascript-typescript, python, actions]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v4
+        with:
+          languages: ${{ matrix.language }}
+          # security-and-quality catches both vuln patterns and bad practices
+          queries: security-and-quality
+
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v4
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v4
+        with:
+          category: /language:${{ matrix.language }}
