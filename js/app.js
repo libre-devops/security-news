@@ -25,6 +25,13 @@
     const MAX_SUMMARY_LENGTH = 2000; // guard against absurdly long feed content
     const MAX_TITLE_LENGTH = 500;
 
+    // Full post bodies (currently only Message Center carries one) are shown in
+    // the expand dialog. Capped here as well as in the feed pipeline, so a
+    // tampered feeds.json still can't push an unbounded string into the DOM.
+    const MAX_BODY_LENGTH = 20000;
+    const MAX_LINKS = 15;
+    const MAX_LINK_LABEL_LENGTH = 200;
+
     const productColors = {
         "defender-xdr": "#7C3AED",
         "defender-endpoint": "#9333EA",
@@ -43,6 +50,7 @@
         "cisa-advisories": "#B91C1C",
         "ncsc-guidance": "#0F766E",
         "general-security": "#64748B",
+        "message-center": "#0EA5E9",
     };
 
     // Allowlist of valid product IDs — rejects unexpected values injected via
@@ -65,6 +73,9 @@
     const totalCount = document.getElementById("total-count");
     const toastEl = document.getElementById("toast");
     const bookmarksToggle = document.getElementById("bookmarks-toggle");
+    const articleDialog = document.getElementById("article-dialog");
+    const dialogBody = document.getElementById("dialog-body");
+    const dialogClose = document.getElementById("dialog-close");
 
     // ---------------------------------------------------------------------------
     // Initialisation
@@ -196,6 +207,22 @@
             author: truncate(article.author || "", 200),
             vendor: truncate(article.vendor || "", 200),
             published: article.published || "",
+            // The full post body, plain text only. The pipeline strips markup
+            // before it ever reaches here and the dialog renders it with
+            // textContent, so there is no path from feed content into HTML.
+            body: truncate(typeof article.body === "string" ? article.body : "", MAX_BODY_LENGTH),
+            // Links lifted out of the body. Each one is re-checked here rather
+            // than trusted from the feed, because these become real anchors.
+            links: (Array.isArray(article.links) ? article.links : [])
+                .filter((l) => l && typeof l.url === "string" && isSafeUrl(l.url))
+                .slice(0, MAX_LINKS)
+                .map((l) => ({
+                    url: l.url,
+                    label: truncate(
+                        typeof l.label === "string" && l.label ? l.label : l.url,
+                        MAX_LINK_LABEL_LENGTH
+                    ),
+                })),
             // Filter products to known IDs so rogue product IDs can't be used
             // to inject unexpected values into data-* attributes or inline styles.
             products: (Array.isArray(article.products) ? article.products : [])
@@ -471,7 +498,129 @@
         summary.textContent = article.summary;
 
         card.append(cardHeader, h3, meta, summary);
+
+        // --- expand ---
+        // Only shown when the article actually carries a full body. Most sources
+        // are RSS with nothing beyond the summary, so an expand button on those
+        // would promise more than it could deliver.
+        if (article.body) {
+            const expandBtn = document.createElement("button");
+            expandBtn.className = "expand-btn";
+            expandBtn.dataset.action = "expand";
+            expandBtn.dataset.link = article.link;
+            expandBtn.setAttribute("aria-label", `Read the full post: ${article.title}`);
+            expandBtn.textContent = "Read full post";
+            card.appendChild(expandBtn);
+        }
+
         return card;
+    }
+
+    // ---------------------------------------------------------------------------
+    // Full post dialog
+    // ---------------------------------------------------------------------------
+
+    /**
+     * Renders the whole post into the dialog. Every string goes in via
+     * textContent and every URL through isSafeUrl, so nothing from the feed is
+     * ever parsed as markup.
+     */
+    function openArticleDialog(article) {
+        if (!articleDialog || !dialogBody) return;
+
+        dialogBody.innerHTML = "";
+
+        // Tags, matching the card so the dialog reads as the same object.
+        const tags = document.createElement("div");
+        tags.className = "dialog-tags";
+        (article.products || []).forEach((product) => {
+            const color = productColors[product.id] || "#64748B";
+            const tag = document.createElement("span");
+            tag.className = "blog-tag";
+            tag.style.background = `${color}22`;
+            tag.style.color = color;
+            tag.style.border = `1px solid ${color}44`;
+            tag.textContent = product.name;
+            tags.appendChild(tag);
+        });
+
+        const heading = document.createElement("h2");
+        heading.className = "dialog-title";
+        heading.textContent = article.title;
+
+        const date = new Date(article.published);
+        const meta = document.createElement("div");
+        meta.className = "article-meta";
+        [
+            `🏢 ${article.vendor || "Security"}`,
+            `📰 ${article.source}`,
+            `📅 ${isNaN(date.getTime()) ? "Unknown date" : date.toLocaleDateString("en-GB")}`,
+        ].forEach((text) => {
+            const span = document.createElement("span");
+            span.textContent = text;
+            meta.appendChild(span);
+        });
+
+        // Body, one paragraph per blank line so a wall of text stays readable.
+        const body = document.createElement("div");
+        body.className = "dialog-text";
+        article.body
+            .split(/\n\s*\n|(?<=\.)\s{2,}/)
+            .map((part) => part.trim())
+            .filter(Boolean)
+            .forEach((part) => {
+                const p = document.createElement("p");
+                p.textContent = part;
+                body.appendChild(p);
+            });
+
+        dialogBody.append(tags, heading, meta, body);
+
+        // Links lifted out of the original post, already scheme-checked twice.
+        if (article.links && article.links.length) {
+            const linkHeading = document.createElement("h3");
+            linkHeading.className = "dialog-subheading";
+            linkHeading.textContent = "Links in this post";
+
+            const list = document.createElement("ul");
+            list.className = "dialog-links";
+            article.links.forEach((link) => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.href = link.url;
+                a.target = "_blank";
+                a.rel = "noopener noreferrer";
+                a.textContent = link.label;
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+
+            dialogBody.append(linkHeading, list);
+        }
+
+        // The canonical source, kept last and labelled honestly: a Message
+        // Center permalink only opens for someone with admin access to the
+        // tenant it was published to.
+        const sourceLink = document.createElement("a");
+        sourceLink.className = "dialog-source-link";
+        sourceLink.href = article.link;
+        sourceLink.target = "_blank";
+        sourceLink.rel = "noopener noreferrer";
+        // Keyed off the product id rather than the source name: the id is
+        // allowlisted, so a source rename cannot silently mislabel the link.
+        const isMessageCentre = (article.products || []).some(
+            (p) => p.id === "message-center"
+        );
+        sourceLink.textContent = isMessageCentre
+            ? "Open in the Microsoft 365 admin centre (tenant admins only)"
+            : "Open the original post";
+        dialogBody.appendChild(sourceLink);
+
+        articleDialog.showModal();
+    }
+
+    function closeArticleDialog() {
+        if (articleDialog && articleDialog.open) articleDialog.close();
     }
 
     // ---------------------------------------------------------------------------
@@ -598,8 +747,37 @@
             if (btn.dataset.action === "bookmark") {
                 // Read link directly from dataset — no decodeURIComponent needed.
                 toggleBookmark(btn.dataset.link);
+                return;
+            }
+
+            if (btn.dataset.action === "expand") {
+                // Look the article up by its link rather than stashing an index,
+                // so re-filtering between render and click can't open the wrong
+                // post. The already-sanitised object is what gets rendered.
+                const article = filteredArticles.find(
+                    (a) => a.link === btn.dataset.link
+                );
+                if (article) openArticleDialog(article);
             }
         });
+
+        if (dialogClose) {
+            dialogClose.addEventListener("click", closeArticleDialog);
+        }
+
+        if (articleDialog) {
+            // Click on the backdrop (the dialog element itself, outside the
+            // inner panel) closes it, matching what people expect from a modal.
+            articleDialog.addEventListener("click", (e) => {
+                if (e.target === articleDialog) closeArticleDialog();
+            });
+
+            // Drop the rendered post on close so a stale one is never briefly
+            // visible when the dialog is reopened.
+            articleDialog.addEventListener("close", () => {
+                if (dialogBody) dialogBody.innerHTML = "";
+            });
+        }
     }
 
     // ---------------------------------------------------------------------------

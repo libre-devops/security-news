@@ -178,6 +178,19 @@
 </main>
 
 <div id="toast" class="toast"></div>
+
+<!--
+  Full post viewer. Native <dialog> so focus trapping, Escape to close and the
+  backdrop come from the platform rather than hand-rolled JS. The content is
+  built entirely by app.js with DOM methods, so nothing from the feed is ever
+  parsed as markup.
+-->
+<dialog id="article-dialog" class="article-dialog" aria-labelledby="dialog-body">
+    <div class="dialog-panel">
+        <button id="dialog-close" class="dialog-close" type="button" aria-label="Close">×</button>
+        <div id="dialog-body" class="dialog-body"></div>
+    </div>
+</dialog>
 <script
         src="js/app.js"
         defer
