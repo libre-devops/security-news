@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-08T12:55:04.375955+00:00",
-  "totalArticles": 91,
+  "lastUpdated": "2026-08-08T16:31:26.038082+00:00",
+  "totalArticles": 142,
   "articles": [
     {
       "title": "GCP-2026-052",
@@ -616,6 +616,114 @@
       ]
     },
     {
+      "title": "Microsoft Entra: Windows Hello for Business and macOS Platform SSO as standalone MFA factors",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450134",
+      "published": "2026-08-07T21:56:16.503000+00:00",
+      "summary": "[What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication scenarios.Today, WHfB and macOS PSSO can satisfy MFA requirements during primary sign-in,...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1450134",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Entra: Users can register a passkey or passwordless sign-in as their first multifactor authentication method",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450133",
+      "published": "2026-08-07T21:55:51.123000+00:00",
+      "summary": "[What and why]Users will soon be able to register a passkey as their first multifactor authentication method. Previously, people had to set up an alternate MFA method like SMS or Voice before they could add a passkey (FIDO2), Windows Hello for Business, macOS Platform SSO. That extra step pushed...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1450133",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Adaptive scopes add lifecycle status evaluation controls for recipients and site owners",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450128",
+      "published": "2026-08-07T21:53:17.473000+00:00",
+      "summary": "[What and why]Microsoft Purview is introducing lifecycle status evaluation controls for adaptive scopes. This update gives administrators explicit control over whether active, inactive, and soft-deleted recipients and site owners are included in adaptive scope membership.With this change, newly...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1450128",
+      "services": [
+        "Microsoft Purview"
+      ],
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Information Protection-Auto-labeling per-policy coverage report",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568935",
+      "published": "2026-08-07T21:45:15+00:00",
+      "summary": "For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
       "title": "Smarter signals, broader coverage: UEBA anomalies on top of Behaviors layer and new data sources",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/smarter-signals-broader-coverage-ueba-anomalies-on-top-of/ba-p/4544384",
       "published": "2026-08-07T20:14:53+00:00",
@@ -712,6 +820,102 @@
       ]
     },
     {
+      "title": "(Updated) Microsoft Purview: Migration tool in Unified Catalog to migrate classic glossary terms",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1280564",
+      "published": "2026-08-07T16:24:57.780000+00:00",
+      "summary": "Updated August 7, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience. [Introduction]Data Governance Admins and Data Stewards can use a built‑in migration tool in Microsoft Purview Unified Catalog to migrate classic glossary terms, associated...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1280564",
+      "services": [
+        "Microsoft Purview"
+      ],
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "(Updated) Microsoft Defender for Office 365: AIR Investigation Experience Improvements",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1431377",
+      "published": "2026-08-06T16:32:14.393000+00:00",
+      "summary": "Updated August 6, 2026: We have updated the timeline. Thank you for your patience. [What and Why:] Microsoft is enhancing the Automated Investigation and Response (AIR) experience in Microsoft Defender for Office 365 by introducing a manual refresh capability and simplifying investigation naming...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1431377",
+      "services": [
+        "Microsoft Defender XDR"
+      ],
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Office 365"
+      ]
+    },
+    {
+      "title": "(Updated) Microsoft Defender for Office 365: Localized default mark and notify email template",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1387578",
+      "published": "2026-08-05T23:14:51.317000+00:00",
+      "summary": "Updated August 5, 2026: We have updated the content. Thank you for your patience. [What and Why]Microsoft Defender for Office 365 is introducing localization support for the default “Mark and notify” email template used in admin review and automated notification flows for user-reported...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1387578",
+      "services": [
+        "Microsoft Defender XDR"
+      ],
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Office 365"
+      ]
+    },
+    {
       "title": "Monthly News-August 2026",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/monthly-news-august-2026/ba-p/4544388",
       "published": "2026-08-05T22:15:47+00:00",
@@ -796,6 +1000,76 @@
       ]
     },
     {
+      "title": "Microsoft Teams: Report security concerns in Teams meetings",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1446794",
+      "published": "2026-08-05T17:04:00.820000+00:00",
+      "summary": "[What and why]Microsoft Teams is introducing a new Report a meeting capability that allows meeting participants to report suspicious, malicious, or potentially fraudulent activity directly from Teams meetings.This feature helps organizations identify and investigate threats such as phishing,...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1446794",
+      "services": [
+        "Microsoft Teams",
+        "Microsoft Defender XDR"
+      ],
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Office 365"
+      ]
+    },
+    {
+      "title": "Microsoft Teams: Users can report security concerns in group calls",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1447673",
+      "published": "2026-08-05T17:03:37.913000+00:00",
+      "summary": "[What and why]We're introducing a new security reporting capability in Microsoft Teams that allows users to report suspicious group calls directly from their call history. This feature helps organizations identify and investigate potential scams, impersonation attempts, unwanted external calls, and...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1447673",
+      "services": [
+        "Microsoft Teams",
+        "Microsoft Defender XDR"
+      ],
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Office 365"
+      ]
+    },
+    {
       "title": "​​Microsoft named a Leader in the KuppingerCole Leadership Compass for Cloud Native Application Protection Platforms (CNAPP)",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/08/05/microsoft-named-a-leader-in-the-kuppingercole-leadership-compass-for-cloud-native-application-protection-platforms-cnapp/",
       "published": "2026-08-05T16:30:00+00:00",
@@ -868,6 +1142,58 @@
       ]
     },
     {
+      "title": "[Launched] Generally Available: Explicit proxy in Azure Firewall",
+      "link": "https://azure.microsoft.com/updates?id=568825",
+      "published": "2026-08-05T14:54:08+00:00",
+      "summary": "Azure Firewall explicit proxy is now generally available. Explicit proxy enables customers to configure applications and browsers to send HTTP and HTTPS traffic directly to Azure Firewall using proxy settings, providing an alternative to route-based traff",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Entra: Migrate GitHub Actions federated identity credentials to immutable subjects",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1447671",
+      "published": "2026-08-05T00:22:38.830000+00:00",
+      "summary": "[What and why]GitHub Actions now supports an immutable OpenID Connect (OIDC) subject format that includes immutable repository and owner IDs. This format reduces subject recycling risks associated with Microsoft Entra federated identity credentials (FICs) that rely on mutable repository and owner...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1447671",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
       "title": "ChainDrop supply chain compromise: Anatomy of a self-propagating worm",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/",
       "published": "2026-08-04T23:46:41+00:00",
@@ -892,6 +1218,30 @@
       ]
     },
     {
+      "title": "Microsoft Purview: Adaptive Scope evaluation control with recipient and site owner lifecycle status",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568785",
+      "published": "2026-08-04T22:45:42+00:00",
+      "summary": "Microsoft Purview Adaptive Scopes will provide administrators with explicit control over lifecycle-state evaluation for recipients and site owners, helping ensure policy targeting and scope membership remain aligned with organizational requirements.GA date: October CY2026Preview date: September...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
       "title": "CVE-2026-18656 & CVE-2026-18657 - Issue with Kiro IDE and CLI - Executable Resolution from Untrusted Project Directory on Windows",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-074-aws/",
       "published": "2026-08-04T19:43:11+00:00",
@@ -913,6 +1263,30 @@
       ],
       "tags": [
         "AWS Security"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: Perimeter link feature in network security perimeter",
+      "link": "https://azure.microsoft.com/updates?id=568837",
+      "published": "2026-08-04T18:30:09+00:00",
+      "summary": "Perimeter link (cross-perimeter connectivity) is a network security perimeter capability that allows trusted resources in two different network security perimeters to securely communicate with each other using Managed Identity (MSI), without requiring add",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -988,6 +1362,34 @@
       ]
     },
     {
+      "title": "(Updated) Microsoft Entra ID SSPR will require registered authentication methods starting November 9, 2026",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1325414",
+      "published": "2026-08-04T16:34:28.880000+00:00",
+      "summary": "Updated August 4, 2026: We have updated the timeline. Thank you for your patience. [What and Why]You’re receiving this message because your organization uses Microsoft Entra ID Self-Service Password Reset (SSPR).Currently, SSPR may allow users to verify their identity using contact information...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1325414",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
       "title": "NCSC statement in response to recent incidents resulting from frontier AI evaluations",
       "link": "https://www.ncsc.gov.uk/news/ncsc-statement-in-response-to-recent-incidents-resulting-from-frontier-ai-evaluations",
       "published": "2026-08-04T12:00:00+00:00",
@@ -1015,6 +1417,30 @@
       "tags": [
         "NCSC Guidance",
         "AI Security"
+      ]
+    },
+    {
+      "title": "[Launched] Generally Available: Trusted Launch as Default",
+      "link": "https://azure.microsoft.com/updates?id=568600",
+      "published": "2026-08-03T19:56:26+00:00",
+      "summary": "Trusted Launch as Default (TLaD) is now generally available for new Azure Gen2 virtual machines and virtual machine scale sets. TLaD automatically enables Secure Boot and vTPM for supported deployments, helping customers establish a stronger security base",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -1084,6 +1510,40 @@
       ]
     },
     {
+      "title": "(Updated) Microsoft Defender for Office 365: Enhancing how we handle promotional mail",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1279093",
+      "published": "2026-08-03T16:39:35.413000+00:00",
+      "summary": "Updated August 3, 2026: We have updated the timeline. Thank you for your patience. [Introduction]We are enhancing how Microsoft Defender for Office 365 identifies and manages promotional email. Promotional messages will be tagged as “promotions” (previously “Bulk” in preview) and can be moved...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1279093",
+      "services": [
+        "Microsoft Defender XDR"
+      ],
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Office 365"
+      ]
+    },
+    {
       "title": "CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
       "published": "2026-07-31T21:01:37+00:00",
@@ -1135,6 +1595,34 @@
       "tags": [
         "Microsoft Defender XDR",
         "Microsoft Defender for Identity"
+      ]
+    },
+    {
+      "title": "Microsoft Entra ID: Retirement of custom CSS positioning properties in custom branding",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1435782",
+      "published": "2026-07-31T17:35:58.477000+00:00",
+      "summary": "[What and Why]To align with Microsoft's Secure Future Initiative (SFI) and its focus on identity security and phishing resistance, Microsoft is enhancing Microsoft Entra custom branding to support more secure, reliable, and consistent sign in experiences. Beginning in October 2026, Microsoft Entra...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1435782",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -1261,6 +1749,30 @@
       ],
       "tags": [
         "Microsoft Defender for Identity"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: Symmetric keys on Azure Key Vault Premium",
+      "link": "https://azure.microsoft.com/updates?id=566746",
+      "published": "2026-07-30T18:57:18+00:00",
+      "summary": "We’re announcing symmetric keys on Azure Key Vault Premium are now available in public preview. This preview enables customers and partners to evaluate symmetric encryption capabilities using the oct-HSM key type and the Advanced Encryption Standard (AES)",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -1420,6 +1932,198 @@
       ]
     },
     {
+      "title": "Microsoft Purview: Data Loss Prevention - SLA Based Alert Reporting Dashboard",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568372",
+      "published": "2026-07-28T22:43:45+00:00",
+      "summary": "Out-of-box MTTA/MTTD/MTTR SLA Alert Reporting dashboard showing past trends, Top SITs getting exposed via DLP alerts generated. Customers can define their custom SLAs for high, med and low severity alerts and get access to dashboard showing operational performance and SLA metrics. GA date:...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Data Loss Prevention - Rule-based tagging and auto-resolution of alerts based on business needs of the customer.",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568371",
+      "published": "2026-07-28T22:43:45+00:00",
+      "summary": "Alert auto-resolution & tagging rules let you tell DLP, in advance, how to handle predictable alerts. You define a rule once, and from then on DLP applies it automatically to every new alert: ● Resolve alerts you don't need to see - e.g., Low-severity alerts for mail sent only to your trusted...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Information Protection - Sensitivity Labels for Microsoft Entra Security Groups",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568217",
+      "published": "2026-07-28T22:43:45+00:00",
+      "summary": "Apply sensitivity labels to Microsoft Entra cloud security groups to extend the classification and governance you already use for Microsoft 365 groups. The same labels you publish in the Microsoft Purview portal and configure for groups and sites apply automatically to cloud security groups, with...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-13037 Use after free in WebView",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13037",
+      "published": "2026-07-28T22:03:49+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-13032 Use after free in WebGL",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13032",
+      "published": "2026-07-28T22:03:48+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-13030 Uninitialized Use in GPU",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13030",
+      "published": "2026-07-28T22:03:47+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-13028 Use after free in WebGL",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13028",
+      "published": "2026-07-28T22:03:44+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: Azure Enclave",
+      "link": "https://azure.microsoft.com/updates?id=568377",
+      "published": "2026-07-28T18:51:02+00:00",
+      "summary": "Announcing the public preview of Azure Enclave for Microsoft Azure, Azure Government, Azure Government Secret, and Azure Government Top Secret. Azure Enclave helps streamline the deployment and management of isolated cloud environments for sensitive workl",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
       "title": "Looking back on Microsoft’s FY26: From AI experimentation to Frontier Transformation",
       "link": "https://blogs.microsoft.com/blog/2026/07/28/looking-back-on-microsofts-fy26-from-ai-experimentation-to-frontier-transformation/",
       "published": "2026-07-28T16:00:10+00:00",
@@ -1465,6 +2169,30 @@
       ],
       "tags": [
         "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "[Launched] Generally Available: HTTP header insertion in Azure Firewall",
+      "link": "https://azure.microsoft.com/updates?id=568115",
+      "published": "2026-07-27T16:54:36+00:00",
+      "summary": "Azure Firewall now supports HTTP header insertion, enabling organizations to add or overwrite HTTP/HTTPS request headers directly from Azure Firewall application rules. This capability helps customers enforce security controls, support tenant restriction",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -1540,6 +2268,102 @@
       ]
     },
     {
+      "title": "Chromium: CVE-2026-16807 Out of bounds write in Codecs",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16807",
+      "published": "2026-07-25T07:29:54+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-16806 Use after free in WebMCP",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16806",
+      "published": "2026-07-25T07:29:52+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-16805 Use after free in Blink",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16805",
+      "published": "2026-07-25T07:29:51+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-16804 Use after free in Input",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-16804",
+      "published": "2026-07-25T07:29:49+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
       "title": "CVE-2026-16796 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-065-aws/",
       "published": "2026-07-23T20:14:18+00:00",
@@ -1585,6 +2409,30 @@
       ],
       "tags": [
         "AWS Security"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: Azure DDoS Protection custom policy",
+      "link": "https://azure.microsoft.com/updates?id=568063",
+      "published": "2026-07-23T16:47:24+00:00",
+      "summary": "Azure DDoS Protection custom policy is now in public preview. This capability provides per-resource control over DDoS mitigation thresholds for protected Standard Load Balancer frontend IP configurations. Customers can configure fixed inbound detection th",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -1798,6 +2646,84 @@
       ]
     },
     {
+      "title": "Microsoft Purview: Data Loss Prevention - Data Security for non-Microsoft connected apps",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568075",
+      "published": "2026-07-21T22:37:32+00:00",
+      "summary": "Microsoft Purview Data Loss Prevention and Information Protection Auto-labeling capabilities now extend to non-Microsoft connected apps (e.g., Google Workspace, Box, Dropbox, Salesforce, ServiceNow, Amazon Web Services, and Cisco Webex). The conditions and actions supported for each of these...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Purview",
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: Protect sensitive generative AI telemetry in Application Insights and Microsoft Foundry",
+      "link": "https://azure.microsoft.com/updates?id=567594",
+      "published": "2026-07-20T15:09:43+00:00",
+      "summary": "Azure Monitor Application Insights now stores generative AI content in a dedicated GenAIContent table (AppGenAIContent in Log Analytics), making it possible to apply newly available access controls to sensitive AI telemetry. Because Application Insights p",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "[Launched] Generally Available: IPv6 support for Azure VPN Gateway",
+      "link": "https://azure.microsoft.com/updates?id=567847",
+      "published": "2026-07-20T14:59:26+00:00",
+      "summary": "IPv6 support for Azure VPN Gateway enables customers to run IPv6 inner traffic through VPN tunnels in a dual‑stack configuration. IPv6 is supported on all production SKU gateways that use standard public IPs.IPv6 inner traffic can be configured for both n",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
       "title": "Microsoft expands Azure AI and HPC infrastructure with AMD",
       "link": "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/",
       "published": "2026-07-20T13:00:02+00:00",
@@ -1822,6 +2748,198 @@
       ]
     },
     {
+      "title": "Chromium: CVE-2026-15905 Use after free in Aura",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15905",
+      "published": "2026-07-18T00:42:44+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-15904 Use after free in Ozone",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15904",
+      "published": "2026-07-18T00:42:43+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-15903 Out of bounds read and write in V8",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15903",
+      "published": "2026-07-18T00:42:41+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-15902 Use after free in Cast",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15902",
+      "published": "2026-07-18T00:42:40+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-15901 Use after free in Network",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15901",
+      "published": "2026-07-18T00:42:39+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-15900 Use after free in GPU",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15900",
+      "published": "2026-07-18T00:42:38+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-15899 Use after free in CameraCapture",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-15899",
+      "published": "2026-07-18T00:42:35+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Information Protection - Auto-labeling scale increase for SharePoint and OneDrive",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=567890",
+      "published": "2026-07-17T22:12:56+00:00",
+      "summary": "We are increasing the maximum auto-labeling capacity for SharePoint and OneDrive from 100,000 up to 500,000 files per tenant per day. This helps organizations label and protect more of their data at rest, faster, closing labeling gaps across existing content. With sensitivity labels and protection...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
       "title": "CVE-2026-12283 - Issue with Athena Federated Query Synapse Connector",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-059-aws/",
       "published": "2026-07-17T19:09:51+00:00",
@@ -1843,6 +2961,54 @@
       ],
       "tags": [
         "AWS Security"
+      ]
+    },
+    {
+      "title": "[Launched] Public Preview: Azure Functions Support for PowerShell 7.6",
+      "link": "https://azure.microsoft.com/updates?id=567651",
+      "published": "2026-07-17T17:44:00+00:00",
+      "summary": "Azure Functions support for PowerShell 7.6 is now available in preview. You can now develop apps using PowerShell 7.6 locally and deploy them to Azure Functions plans. Learn more: What's new in PowerShell 7.6 Azure Functions PowerShell versions and their",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "[Launched] Generally Available: Encryption in Transit for Azure Files NFS Shares in Azure Kubernetes Service (AKS)",
+      "link": "https://azure.microsoft.com/updates?id=567787",
+      "published": "2026-07-17T14:54:09+00:00",
+      "summary": "Azure Kubernetes Service (AKS) now generally supports Encryption in Transit (EiT) for Azure Files NFS v4.1 volumes through the Azure File CSI driver. With EiT enabled, data transferred between AKS workloads and Azure Files NFS shares is encrypted using TL",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -2182,6 +3348,30 @@
       ]
     },
     {
+      "title": "[In preview] Public Preview: Azure Front Door edge actions",
+      "link": "https://azure.microsoft.com/updates?id=567402",
+      "published": "2026-07-14T20:03:32+00:00",
+      "summary": "Announcing the public preview of Azure Front Door edge actions (serverless compute at the edge).With edge actions, customers can execute lightweight JavaScript functions during Azure Front Door request processing to make real-time decisions closer to user",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
       "title": "Hunting Local AI Tools on macOS with Microsoft Defender for Endpoint",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/hunting-local-ai-tools-on-macos-with-microsoft-defender-for/ba-p/4536965",
       "published": "2026-07-14T16:42:42+00:00",
@@ -2239,6 +3429,30 @@
         "AI Security",
         "Microsoft Sentinel",
         "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "ADV990001 Latest Servicing Stack Updates",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/ADV990001",
+      "published": "2026-07-14T14:00:00+00:00",
+      "summary": "Advisory updated to announce new versions of Servicing Stack Updates are available. Please see the FAQ for details.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -2404,6 +3618,126 @@
       ]
     },
     {
+      "title": "Chromium: CVE-2026-14428 Insufficient validation of untrusted input in Dawn",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14428",
+      "published": "2026-07-11T22:41:38+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-13777 Insufficient validation of untrusted input in iOSWeb",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13777",
+      "published": "2026-07-11T22:39:58+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-13778 Use after free in WebUSB",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13778",
+      "published": "2026-07-11T22:39:26+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-14394 Use after free in V8",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-14394",
+      "published": "2026-07-11T22:37:39+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Retirement: Support for Python-2.7; 3.8 and PowerShell- 7.1; 7.2 will be retired on September 30, 2026",
+      "link": "https://azure.microsoft.com/updates?id=567556",
+      "published": "2026-07-10T21:33:34+00:00",
+      "summary": "Starting October 1, 2026, the specified runtime versions Python 2.7, Python 3.8, and PowerShell 7.1 & 7.2. will no longer be supported by Automation. Runbooks using these versions may continue to run but will not receive security updates, bug fixes, or o",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
       "title": "When Arc Goes Silent: Turning Visibility Gaps into SOC Action",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/when-arc-goes-silent-turning-visibility-gaps-into-soc-action/ba-p/4535711",
       "published": "2026-07-10T12:07:15+00:00",
@@ -2445,30 +3779,6 @@
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
           "score": 7
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "GigaWiper: Anatomy of a destructive backdoor assembled from multiple malware",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/09/gigawiper-anatomy-of-a-destructive-backdoor-assembled-from-multiple-malware/",
-      "published": "2026-07-09T15:00:00+00:00",
-      "summary": "GigaWiper, also tracked as BLUERABBIT, is a destructive backdoor that combines multiple wiping and ransomware-like capabilities into a single operational platform. This blog analyzes how the malware incorporates code from several previously separate malware families and provides guidance to help...",
-      "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 11
         }
       ],
       "tags": [
