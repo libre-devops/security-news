@@ -46,6 +46,16 @@ jobs:
           pip install -r scripts/requirements.txt
 
       - name: Fetch Microsoft security feeds
+        env:
+          # Message Center is the one source that needs credentials. These are identifiers, not
+          # secrets, so they are Actions variables. They are deliberately not AZURE_CLIENT_ID or
+          # AZURE_TENANT_ID: those exist as ORG variables for the CI identity, and a repository
+          # variable of the same name would shadow them and break the Terraform pipeline.
+          #
+          # When they are unset (or consent has not been granted yet) fetch_feeds.py logs and skips
+          # that one source, so the site still builds from the public feeds.
+          MESSAGE_CENTER_CLIENT_ID: ${{ vars.MESSAGE_CENTER_CLIENT_ID }}
+          MESSAGE_CENTER_TENANT_ID: ${{ vars.MESSAGE_CENTER_TENANT_ID }}
         run: |
           python scripts/fetch_feeds.py | tee feed-output.log
 

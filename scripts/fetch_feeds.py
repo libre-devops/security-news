@@ -9,6 +9,10 @@ import json
 import os
 import re
 import socket
+import subprocess  # nosec B404
+import urllib.error
+import urllib.parse
+import urllib.request
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from html import unescape
@@ -32,6 +36,26 @@ DATA_FILE = "data/feeds.json"
 # the whole run until the CI job-level timeout kills it.
 FEED_TIMEOUT_SECONDS = 20
 
+# Microsoft Graph, for the Message Center. It is the one source with no feed of
+# any kind: no RSS, no Atom, no anonymous endpoint. Everything else here is a
+# public feed that needs no credentials at all.
+GRAPH_MESSAGE_CENTER_URL = (
+    "https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages"
+)
+GRAPH_RESOURCE = "https://graph.microsoft.com"
+GRAPH_SCOPE = f"{GRAPH_RESOURCE}/.default"
+GRAPH_PAGE_SIZE = 100
+
+# Message Center posts are only readable in the admin centre, by someone with
+# admin access to the tenant they were published to. There is no public
+# permalink, so this link is a pointer for the maintainer rather than something
+# a general reader can follow.
+MESSAGE_CENTER_LINK = "https://admin.microsoft.com/#/MessageCenter/:/messages/"
+
+# The audience GitHub must mint its OIDC token for. It has to match the audience
+# on the federated identity credential in terraform/main.tf.
+ENTRA_TOKEN_AUDIENCE = "api://AzureADTokenExchange"
+
 
 @dataclass(frozen=True)
 class Source:
@@ -45,6 +69,19 @@ class Source:
     category: str = "Security"
     board_id: Optional[str] = None
     max_entries: int = 25
+
+    # Category filters, matched case-insensitively against an entry's own
+    # categories: the <category> elements of an RSS item, or the services a
+    # Message Center post applies to. Empty include_categories means keep
+    # everything; otherwise an entry must carry at least one listed category.
+    # exclude_categories always wins.
+    #
+    # This exists because the broad Microsoft feeds are not security feeds. The
+    # M365 roadmap publishes every Outlook, Teams and OneDrive change alongside
+    # the handful worth showing here, so an unfiltered source would bury the
+    # site. Filters run BEFORE max_entries, or the cut would starve them.
+    include_categories: Tuple[str, ...] = ()
+    exclude_categories: Tuple[str, ...] = ()
 
 
 SOURCES: List[Source] = [
@@ -194,6 +231,80 @@ SOURCES: List[Source] = [
         source_kind="techcommunity",
         board_id="azurenetworksecurityblog",
         category="Network Security",
+    ),
+    # Roadmap and service update feeds. Both are change announcements rather
+    # than security news, so both are filtered hard: the roadmap publishes over
+    # 1800 items covering every Outlook, Teams and OneDrive tweak, of which only
+    # a small tail is relevant here. Copilot is deliberately not on the
+    # allowlist; it is the single largest category and almost none of it is
+    # security. The ?filters= parameter these APIs advertise is ignored server
+    # side (it returns the identical item count), so filtering has to be ours.
+    Source(
+        id="m365_roadmap",
+        name="Microsoft 365 Roadmap",
+        url="https://www.microsoft.com/releasecommunications/api/v1/m365/rss",
+        vendor="Microsoft",
+        default_author="Microsoft",
+        source_group="Official Microsoft",
+        category="Roadmap",
+        max_entries=30,
+        include_categories=(
+            "Microsoft Defender XDR",
+            "Microsoft Defender for Endpoint",
+            "Microsoft Defender for Office 365",
+            "Microsoft Defender for Identity",
+            "Microsoft Defender for Cloud Apps",
+            "Microsoft Sentinel",
+            "Microsoft Purview",
+            "Microsoft Entra",
+            "Microsoft Intune",
+        ),
+    ),
+    Source(
+        id="azure_updates",
+        name="Azure Service Updates",
+        url="https://www.microsoft.com/releasecommunications/api/v2/azure/rss",
+        vendor="Microsoft",
+        default_author="Microsoft",
+        source_group="Official Microsoft",
+        category="Service Updates",
+        max_entries=25,
+        include_categories=(
+            "Security",
+            "Compliance",
+            "Identity",
+            "Microsoft Defender for Cloud",
+            "Microsoft Sentinel",
+            "Microsoft Entra ID",
+            "Azure Firewall",
+            "Azure Key Vault",
+        ),
+    ),
+    # The only authenticated source. See fetch_message_center: when no token can
+    # be obtained it logs and returns nothing, so a credential problem degrades
+    # the site to its public feeds rather than failing the run.
+    Source(
+        id="message_center",
+        name="Microsoft 365 Message Center",
+        url=GRAPH_MESSAGE_CENTER_URL,
+        vendor="Microsoft",
+        default_author="Microsoft",
+        source_group="Official Microsoft",
+        source_kind="graph",
+        category="Service Announcements",
+        max_entries=40,
+        include_categories=(
+            "Microsoft Defender XDR",
+            "Microsoft 365 Defender",
+            "Microsoft Defender for Endpoint",
+            "Microsoft Defender for Office 365",
+            "Microsoft Defender for Identity",
+            "Microsoft Defender for Cloud Apps",
+            "Microsoft Sentinel",
+            "Microsoft Purview",
+            "Microsoft Entra",
+            "Microsoft Intune",
+        ),
     ),
     Source(
         id="aws_security",
@@ -556,25 +667,326 @@ def normalize_entry(entry: Any, source: Source) -> Optional[dict]:
     }
 
 
+def entry_categories(entry: Any) -> List[str]:
+    """The <category> terms on a feed entry, as plain strings."""
+    return [
+        (tag.get("term") or "").strip()
+        for tag in (entry.get("tags") or [])
+        if (tag.get("term") or "").strip()
+    ]
+
+
+def passes_category_filter(source: Source, categories: List[str]) -> bool:
+    """Whether an entry's own categories satisfy the source's filters."""
+    if not source.include_categories and not source.exclude_categories:
+        return True
+
+    lowered = {category.lower() for category in categories}
+
+    if any(excluded.lower() in lowered for excluded in source.exclude_categories):
+        return False
+
+    if not source.include_categories:
+        return True
+
+    return any(included.lower() in lowered for included in source.include_categories)
+
+
 def fetch_feed(source: Source) -> List[dict]:
     print(f"Fetching: {source.name}")
 
     try:
         feed = feedparser.parse(source.url)
         articles = []
+        filtered_out = 0
 
-        for entry in feed.entries[: source.max_entries]:
+        # Filter first, slice second. Doing it the other way round would cut the
+        # newest max_entries items and then filter what survived, so a broad
+        # feed like the roadmap would usually yield nothing at all.
+        for entry in feed.entries:
+            if not passes_category_filter(source, entry_categories(entry)):
+                filtered_out += 1
+                continue
+
             article = normalize_entry(entry, source)
             if article:
                 articles.append(article)
 
+            if len(articles) >= source.max_entries:
+                break
+
         print(f"  Found {len(articles)} articles")
         print(f"  Feed contains {len(feed.entries)} raw entries")
+        if filtered_out:
+            print(f"  Filtered out {filtered_out} entries by category")
         return articles
 
     except Exception as ex:
         print(f"  Error fetching {source.name}: {ex}")
         return []
+
+
+def http_json(
+    url: str,
+    *,
+    data: Optional[bytes] = None,
+    headers: Optional[Dict[str, str]] = None,
+) -> dict:
+    """A small JSON HTTP helper, so the Graph path needs no extra dependency."""
+    request = urllib.request.Request(  # nosec B310
+        url,
+        data=data,
+        headers=headers or {},
+        method="POST" if data else "GET",
+    )
+
+    if not url.lower().startswith("https://"):
+        raise ValueError(f"Refusing to call a non-HTTPS URL: {url}")
+
+    with urllib.request.urlopen(  # nosec B310
+        request, timeout=FEED_TIMEOUT_SECONDS
+    ) as response:
+        return json.load(response)
+
+
+def github_oidc_token() -> Optional[str]:
+    """The GitHub Actions OIDC token, when running inside Actions."""
+    request_url = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_URL")
+    request_token = os.environ.get("ACTIONS_ID_TOKEN_REQUEST_TOKEN")
+
+    if not request_url or not request_token:
+        return None
+
+    url = f"{request_url}&audience={urllib.parse.quote(ENTRA_TOKEN_AUDIENCE)}"
+
+    payload = http_json(url, headers={"Authorization": f"Bearer {request_token}"})
+    return payload.get("value")
+
+
+def entra_token_from_github_oidc() -> Optional[str]:
+    """
+    Exchange the GitHub OIDC token for a Graph token, the client credentials
+    flow with a client assertion. No client secret is involved: the assertion IS
+    the credential, and it is minted per job and expires in minutes.
+    """
+    client_id = os.environ.get("MESSAGE_CENTER_CLIENT_ID")
+    tenant_id = os.environ.get("MESSAGE_CENTER_TENANT_ID")
+
+    if not client_id or not tenant_id:
+        return None
+
+    assertion = github_oidc_token()
+    if not assertion:
+        return None
+
+    body = urllib.parse.urlencode(
+        {
+            "client_id": client_id,
+            "scope": GRAPH_SCOPE,
+            "grant_type": "client_credentials",
+            "client_assertion_type": (
+                "urn:ietf:params:oauth:client-assertion-type:jwt-bearer"
+            ),
+            "client_assertion": assertion,
+        }
+    ).encode()
+
+    payload = http_json(
+        f"https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/token",
+        data=body,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+    )
+    return payload.get("access_token")
+
+
+def entra_token_from_azure_cli() -> Optional[str]:
+    """
+    Local development fallback: borrow the signed-in user's Graph token from the
+    Azure CLI, so `just feeds` works on a laptop after `az login` without any
+    app registration involvement.
+    """
+    try:
+        result = subprocess.run(  # nosec B603 B607
+            [
+                "az",
+                "account",
+                "get-access-token",
+                "--resource",
+                GRAPH_RESOURCE,
+                "--output",
+                "json",
+            ],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            check=False,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+
+    if result.returncode != 0:
+        return None
+
+    try:
+        return json.loads(result.stdout).get("accessToken")
+    except json.JSONDecodeError:
+        return None
+
+
+def graph_access_token() -> Optional[str]:
+    """
+    A Graph token, by whichever route is available. Returns None rather than
+    raising: the Message Center is one source among many, so losing it should
+    cost the site that section, not the whole run.
+    """
+    explicit = os.environ.get("MESSAGE_CENTER_ACCESS_TOKEN")
+    if explicit:
+        print("  Using MESSAGE_CENTER_ACCESS_TOKEN from the environment")
+        return explicit
+
+    try:
+        federated = entra_token_from_github_oidc()
+        if federated:
+            print("  Authenticated by GitHub Actions federated identity")
+            return federated
+    except (urllib.error.URLError, ValueError, KeyError) as ex:
+        print(f"  Federated identity exchange failed: {ex}")
+
+    cli = entra_token_from_azure_cli()
+    if cli:
+        print("  Authenticated by the Azure CLI (local development)")
+        return cli
+
+    return None
+
+
+def parse_graph_datetime(value: str) -> str:
+    """
+    Graph timestamps to the isoformat the rest of the pipeline expects.
+    Graph emits up to seven fractional-second digits, which fromisoformat
+    rejects (it accepts three or six), so they are trimmed before parsing.
+    """
+    text = (value or "").strip().replace("Z", "+00:00")
+    text = re.sub(r"(\.\d{6})\d+", r"\1", text)
+
+    try:
+        parsed = datetime.fromisoformat(text)
+    except ValueError:
+        return datetime.now(timezone.utc).isoformat()
+
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+
+    return parsed.isoformat()
+
+
+def normalize_message(message: dict, source: Source) -> Optional[dict]:
+    """Turn one Graph serviceAnnouncement message into an article."""
+    message_id = (message.get("id") or "").strip()
+    title = clean_html(message.get("title") or "Untitled")
+
+    if not message_id:
+        return None
+
+    body = (message.get("body") or {}).get("content") or ""
+    summary_raw = clean_html(body)
+    services = [service for service in (message.get("services") or []) if service]
+
+    published = parse_graph_datetime(
+        message.get("lastModifiedDateTime") or message.get("startDateTime") or ""
+    )
+
+    # The services a post applies to are the strongest classification signal it
+    # carries, so they are fed to the classifier alongside the body text.
+    products = classify_products(
+        title, f"{summary_raw} {' '.join(services)}", source.name
+    )
+
+    return {
+        "title": title,
+        "link": f"{MESSAGE_CENTER_LINK}{message_id}",
+        "published": published,
+        "summary": truncate(summary_raw),
+        "author": source.default_author,
+        "source": source.name,
+        "source_id": source.id,
+        "source_group": source.source_group,
+        "source_kind": source.source_kind,
+        "vendor": source.vendor,
+        "source_category": source.category,
+        "board_id": source.board_id,
+        "message_id": message_id,
+        "services": services,
+        "products": products,
+        "tags": [product["name"] for product in products],
+    }
+
+
+def fetch_message_center(source: Source) -> List[dict]:
+    """
+    Message Center, over Graph. Unlike every other source this one is
+    authenticated and tenant scoped, so it is also the only one that can fail
+    for reasons that have nothing to do with the network.
+    """
+    print(f"Fetching: {source.name}")
+
+    token = graph_access_token()
+    if not token:
+        print("  No Graph token available, skipping the Message Center.")
+        print("  Locally: az login. In Actions: set the MESSAGE_CENTER_* variables.")
+        return []
+
+    since = (
+        datetime.now(timezone.utc) - timedelta(days=MAX_ARTICLE_AGE_DAYS)
+    ).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    query = urllib.parse.urlencode(
+        {
+            "$filter": f"lastModifiedDateTime ge {since}",
+            "$top": str(GRAPH_PAGE_SIZE),
+            "$orderby": "lastModifiedDateTime desc",
+        }
+    )
+
+    try:
+        payload = http_json(
+            f"{source.url}?{query}",
+            headers={"Authorization": f"Bearer {token}"},
+        )
+    except urllib.error.HTTPError as ex:
+        detail = (
+            "forbidden: has ServiceMessage.Read.All been consented?"
+            if ex.code == 403
+            else ex.reason
+        )
+        print(f"  Error fetching {source.name}: HTTP {ex.code} ({detail})")
+        return []
+    except (urllib.error.URLError, ValueError) as ex:
+        print(f"  Error fetching {source.name}: {ex}")
+        return []
+
+    messages = payload.get("value") or []
+    articles = []
+    filtered_out = 0
+
+    for message in messages:
+        if not passes_category_filter(source, message.get("services") or []):
+            filtered_out += 1
+            continue
+
+        article = normalize_message(message, source)
+        if article:
+            articles.append(article)
+
+        if len(articles) >= source.max_entries:
+            break
+
+    print(f"  Found {len(articles)} articles")
+    print(f"  Message Center returned {len(messages)} raw messages")
+    if filtered_out:
+        print(f"  Filtered out {filtered_out} messages by service")
+
+    return articles
 
 
 def deduplicate_articles(articles: List[dict]) -> Tuple[List[dict], dict]:
@@ -662,7 +1074,10 @@ def main():
     articles = []
 
     for source in SOURCES:
-        articles.extend(fetch_feed(source))
+        if source.source_kind == "graph":
+            articles.extend(fetch_message_center(source))
+        else:
+            articles.extend(fetch_feed(source))
 
     articles.sort(key=lambda x: x["published"], reverse=True)
 

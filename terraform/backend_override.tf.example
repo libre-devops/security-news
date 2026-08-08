@@ -1,0 +1,9 @@
+# Local development only. Copy to backend_override.tf (gitignored) to use local state instead of
+# the azurerm backend, so you can plan without remote backend access. Re-run `terraform init`
+# after adding it. Do not commit it, and do not apply from local state: the pipeline owns the real
+# state, and applying from a local copy would fork it.
+terraform {
+  backend "local" {
+    path = "terraform.tfstate.local"
+  }
+}

@@ -6,3 +6,15 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .idea
+
+# Terraform. The lock file is deliberately NOT ignored: it pins provider checksums, so it is
+# committed per the Libre DevOps Terraform standard.
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/*.tfvars
+terraform/*.tfvars.json
+terraform/*_override.tf
+terraform/override.tf
+terraform/crash.log
+terraform/tfplan*
