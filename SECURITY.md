@@ -2,7 +2,6 @@
 
 ## Supported Versions
 
-<<<<<<< docs/security-policy
 Only the currently deployed site, built from `master` and published to
 https://security.libredevops.org, receives security updates.
 
