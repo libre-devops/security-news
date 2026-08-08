@@ -52,13 +52,28 @@ GRAPH_PAGE_SIZE = 100
 # a general reader can follow.
 MESSAGE_CENTER_LINK = "https://admin.microsoft.com/#/MessageCenter/:/messages/"
 
-# Because that link is useless to anyone without admin access to the tenant, the
-# full post body travels with the article so the site can show it inline. Stored
+# Post bodies travel with the article so the site can show them inline. Stored
 # as PLAIN TEXT, never HTML: the front end renders everything with textContent,
 # and shipping markup would hand upstream feed content a route into the DOM.
 # Any links in the body are extracted separately and re-rendered as anchors
 # after a scheme check.
-MAX_BODY_LENGTH = 6000
+#
+# Most feeds carry far more than the card shows: the Tech Community boards and
+# CISA put the whole post in <summary>, and the Microsoft blogs put it in
+# <content:encoded>, all of which was previously read and thrown away.
+MAX_BODY_LENGTH = 2500
+
+# Message Center gets a longer cap because it is the only source whose link does
+# not work for a reader: an admin centre permalink needs tenant admin access. If
+# its body is cut short the rest is unreachable, whereas every RSS article keeps
+# a working link to its full text.
+MAX_MESSAGE_BODY_LENGTH = 6000
+
+# Below this there is nothing worth expanding to, since the card already shows a
+# 300 character summary. Keeps a Read More button off articles (MSRC, NCSC,
+# Azure updates) whose feeds carry barely more than a headline.
+MIN_BODY_LENGTH = 400
+
 MAX_BODY_LINKS = 12
 
 # The audience GitHub must mint its OIDC token for. It has to match the audience
@@ -656,6 +671,20 @@ def generate_diff(previous: List[dict], current: List[dict]) -> None:
     print("=" * 60)
 
 
+def entry_body_html(entry: Any) -> str:
+    """
+    The richest markup an entry offers. content:encoded when the feed populates
+    it (the Microsoft blogs put the whole article there), otherwise the summary,
+    which for the Tech Community boards and CISA is already the entire post.
+    """
+    content = entry.get("content")
+
+    if isinstance(content, list) and content and content[0].get("value"):
+        return content[0]["value"]
+
+    return entry.get("summary", "") or ""
+
+
 def normalize_entry(entry: Any, source: Source) -> Optional[dict]:
     title = clean_html(entry.get("title", "Untitled"))
     summary_raw = clean_html(entry.get("summary", ""))
@@ -666,7 +695,10 @@ def normalize_entry(entry: Any, source: Source) -> Optional[dict]:
     summary = truncate(summary_raw)
     products = classify_products(title, summary_raw, source.name)
 
-    return {
+    body_html = entry_body_html(entry)
+    body_text = clean_html(body_html)
+
+    article = {
         "title": title,
         "link": entry.get("link", ""),
         "published": parse_date(entry),
@@ -682,6 +714,14 @@ def normalize_entry(entry: Any, source: Source) -> Optional[dict]:
         "products": products,
         "tags": [p["name"] for p in products],
     }
+
+    # Only attach a body when it genuinely adds to the summary already on the
+    # card, so Read More never opens to the same text the reader just read.
+    if len(body_text) >= MIN_BODY_LENGTH:
+        article["body"] = truncate(body_text, MAX_BODY_LENGTH)
+        article["links"] = extract_links(body_html)
+
+    return article
 
 
 def entry_categories(entry: Any) -> List[str]:
@@ -974,7 +1014,7 @@ def normalize_message(message: dict, source: Source) -> Optional[dict]:
         "services": services,
         # The whole post as plain text, so the site can show it inline rather
         # than sending readers to an admin centre they cannot open.
-        "body": truncate(summary_raw, MAX_BODY_LENGTH),
+        "body": truncate(summary_raw, MAX_MESSAGE_BODY_LENGTH),
         "links": extract_links(body),
         "products": products,
         "tags": [product["name"] for product in products],
