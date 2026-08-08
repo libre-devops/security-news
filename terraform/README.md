@@ -81,10 +81,14 @@ az ad signed-in-user show --query id -o tsv
 ### Consent is not in the pipeline, deliberately
 
 `grant_admin_consent` defaults to **false**, so the stack requests `ServiceMessage.Read.All` but
-does not consent to it. Granting a Graph application role requires `AppRoleAssignment.ReadWrite.All`,
-and that permission lets its holder assign **any** app role of **any** API to **any** principal,
-including granting itself directory write. Handing that to the shared org CI identity, which every
-repository in the org can use, would turn a workflow-file change into a tenant escalation path.
+does not consent to it. Granting a Graph application role is tenant-wide admin consent, and the
+preference here is that consent stays a deliberate human act rather than something that happens as
+a side effect of a merge.
+
+This is a policy choice rather than a technical limit. The org CI identity already holds
+`AppRoleAssignment.ReadWrite.All`, alongside `RoleManagement.ReadWrite.Directory` and
+`Directory.ReadWrite.All`, so flipping this to `true` would work and would grant the pipeline
+nothing it cannot already do.
 
 So consent is a one-off human act. After the first apply, run what
 `terraform output grant_admin_consent_commands` prints, as someone who holds the permission:
