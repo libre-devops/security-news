@@ -354,6 +354,11 @@ main {
   border-radius: var(--radius-md);
   padding: 1.2rem;
   transition: all var(--transition);
+  /* Column flexbox so the Read More button can be pushed to the bottom of the
+     card with margin-top:auto, instead of floating wherever the summary happens
+     to end. */
+  display: flex;
+  flex-direction: column;
   /* Allow the card to shrink below its content's intrinsic width inside the
      grid track; without this a long unbreakable token (URL, hash) widens the
      track and overflows the page on Chrome mobile. */
@@ -427,6 +432,9 @@ main {
   font-size: 0.92rem;
   line-height: 1.55;
   overflow-wrap: anywhere;
+  /* Explicit, so a full card (where margin-top:auto resolves to zero) still
+     keeps the button clear of the text. */
+  margin-bottom: 1rem;
 }
 
 /* ===== Toast ===== */
@@ -594,7 +602,13 @@ main {
 --------------------------------------------------------------------------- */
 
 .expand-btn {
-  margin-top: 1rem;
+  /* Pinned to the bottom left of the card. Grid tracks already stretch cards in
+     a row to equal height, so with the card as a column flexbox `margin-top:
+     auto` eats the leftover space and every button lands on the same baseline
+     regardless of how long its summary runs. align-self stops it stretching to
+     the full card width. */
+  margin-top: auto;
+  align-self: flex-start;
   padding: 0.5rem 1rem;
   font-size: 0.85rem;
   font-weight: 600;

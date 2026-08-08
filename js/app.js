@@ -508,8 +508,8 @@
             expandBtn.className = "expand-btn";
             expandBtn.dataset.action = "expand";
             expandBtn.dataset.link = article.link;
-            expandBtn.setAttribute("aria-label", `Read the full post: ${article.title}`);
-            expandBtn.textContent = "Read full post";
+            expandBtn.setAttribute("aria-label", `Read more: ${article.title}`);
+            expandBtn.textContent = "Read More";
             card.appendChild(expandBtn);
         }
 
