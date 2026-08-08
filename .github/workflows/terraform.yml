@@ -63,4 +63,9 @@ jobs:
           arm-subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
           firewall-storage-account-name: ${{ secrets.TFSTATE_STORAGE_ACCOUNT }}
           firewall-storage-resource-group: ${{ secrets.TFSTATE_RESOURCE_GROUP }}
-          terraform-init-extra-args-json: '["-reconfigure","-upgrade","-backend-config=resource_group_name=${{ secrets.TFSTATE_RESOURCE_GROUP }}","-backend-config=storage_account_name=${{ secrets.TFSTATE_STORAGE_ACCOUNT }}","-backend-config=container_name=${{ secrets.TFSTATE_BLOB_CONTAINER }}"]'
+          # The state key is pinned rather than left to the action's auto-computed one. That key is
+          # derived from the folder layout, which resolves differently here (GitHub nests the repo
+          # inside a directory of the same name) than on a laptop, so an auto key would quietly
+          # give CI and local two separate states, and two application registrations. The justfile
+          # pins the same value.
+          terraform-init-extra-args-json: '["-reconfigure","-upgrade","-backend-config=resource_group_name=${{ secrets.TFSTATE_RESOURCE_GROUP }}","-backend-config=storage_account_name=${{ secrets.TFSTATE_STORAGE_ACCOUNT }}","-backend-config=container_name=${{ secrets.TFSTATE_BLOB_CONTAINER }}","-backend-config=key=security-news-message-center.tfstate"]'
