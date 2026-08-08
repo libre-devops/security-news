@@ -1,3 +1,9 @@
+variable "additional_owner_object_ids" {
+  description = "Extra Entra object ids to own the application and its service principal, alongside whoever applied. Worth setting at least one human: applied from the pipeline the applier is the org CI service principal, so without this the application appears under nobody's owned applications and needs a directory role to touch in the portal."
+  type        = set(string)
+  default     = []
+}
+
 variable "env" {
   description = "Suffix: environment code used in the application name. The feed job runs against the live site, so this defaults to prd."
   type        = string

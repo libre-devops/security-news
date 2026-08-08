@@ -34,6 +34,11 @@ locals {
   } : {}
 
   federated_subjects = merge(local.github_subjects, local.github_immutable_subjects)
+
+  # Whoever applies, plus anyone named explicitly. The applier differs by path: a human locally, the
+  # org CI service principal from the pipeline. Keeping the applier in the set means the pipeline can
+  # always manage what it created; additional_owner_object_ids is how a human stays able to as well.
+  owners = setunion([data.azuread_client_config.current.object_id], var.additional_owner_object_ids)
 }
 
 data "azuread_client_config" "current" {}
@@ -55,8 +60,8 @@ module "message_center_spn" {
       sign_in_audience = "AzureADMyOrg"
       notes            = "Managed by Terraform in libre-devops/security-news (terraform/). Read only, no credentials: the sole credential is a GitHub Actions federated identity."
 
-      owners                   = [data.azuread_client_config.current.object_id]
-      service_principal_owners = [data.azuread_client_config.current.object_id]
+      owners                   = local.owners
+      service_principal_owners = local.owners
       service_principal_tags   = ["security-news", "message-center"]
 
       # Application roles, not delegated scopes: the feed job runs unattended on a schedule, so

@@ -67,6 +67,17 @@ Auth is OIDC through the org CI identity (`AZURE_CLIENT_ID`, `AZURE_TENANT_ID`,
 Fork pull requests are skipped rather than failed: GitHub issues them no OIDC token, so they could
 never authenticate.
 
+### Ownership
+
+The application is owned by whoever applied, which from the pipeline means the **org CI service
+principal**, not you. Set `additional_owner_object_ids` to your own object id as well, otherwise the
+application shows up under nobody's owned applications and needs a directory role to touch in the
+portal:
+
+```bash
+az ad signed-in-user show --query id -o tsv
+```
+
 ### Consent is not in the pipeline, deliberately
 
 `grant_admin_consent` defaults to **false**, so the stack requests `ServiceMessage.Read.All` but
