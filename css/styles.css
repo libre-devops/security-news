@@ -158,6 +158,7 @@ header {
 /* ===== Buttons ===== */
 #bookmarks-toggle,
 #theme-toggle,
+#github-link,
 .rss-button {
   border: 1px solid rgba(255, 255, 255, 0.18);
   background: rgba(255, 255, 255, 0.08);
@@ -175,15 +176,40 @@ header {
   text-decoration: none;
 }
 
-#theme-toggle {
+#theme-toggle,
+#github-link {
   width: 52px;
   height: 52px;
   border-radius: 50%;
   font-size: 1.4rem;
 }
 
+/* The anchor needs explicit centring that the button gets for free. */
+#github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* The logo is a grid item; the anchor wrapping it must not change that layout,
+   only make the image clickable. */
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.logo-link:focus-visible,
+#github-link:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
 #bookmarks-toggle:hover,
 #theme-toggle:hover,
+#github-link:hover,
 .rss-button:hover {
   background: rgba(255, 255, 255, 0.16);
 }
