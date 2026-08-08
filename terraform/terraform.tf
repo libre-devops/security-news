@@ -7,4 +7,9 @@ terraform {
       version = ">= 3.0.0, < 4.0.0"
     }
   }
+
+  # Deliberately empty: the backend is configured at init time by the terraform-azure action, from
+  # the org TFSTATE_* secrets. For local work, copy backend_override.tf.example to
+  # backend_override.tf (gitignored) to fall back to local state.
+  backend "azurerm" {}
 }

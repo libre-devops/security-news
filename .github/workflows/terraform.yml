@@ -1,0 +1,66 @@
+name: Terraform
+
+# Plan and apply the Message Center workload identity in terraform/, through the estate's
+# libre-devops/terraform-azure action against the shared remote state. Plans automatically on any
+# pull request that touches the stack; applies only on a manual dispatch with apply ticked, so
+# nothing reaches Entra ID without someone asking for it.
+#
+# Auth is OIDC via the org CI identity (the AZURE_* org variables), never a client secret. State
+# lives in the org's firewalled tfstate account (the TFSTATE_* org secrets), so there is no local
+# state and drift is visible on the next plan.
+
+on:
+  pull_request:
+    paths:
+      - "terraform/**"
+      - ".github/workflows/terraform.yml"
+
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: Apply the plan. Leave unticked to plan only.
+        type: boolean
+        default: false
+
+permissions:
+  id-token: write
+  contents: read
+
+# Terraform state takes a blob lease, so never let two runs overlap. Not cancel-in-progress: killing
+# a run mid-apply would leave the lease held and the next run blocked.
+concurrency:
+  group: terraform-message-center
+  cancel-in-progress: false
+
+jobs:
+  terraform:
+    name: ${{ (github.event_name == 'workflow_dispatch' && inputs.apply) && 'Plan and apply' || 'Plan' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    # A pull request from a fork is issued no OIDC token, so it could never authenticate. Skip it
+    # rather than fail the check red on an outside contribution that happens to touch terraform/.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.pull_request.head.repo.full_name == github.repository
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Terraform
+        uses: libre-devops/terraform-azure@v1
+        with:
+          terraform-code-location: .
+          terraform-stack-to-run-json: '["terraform"]'
+          terraform-workspace: prd
+          run-terraform-init: true
+          run-terraform-validate: true
+          run-terraform-plan: true
+          run-terraform-apply: ${{ github.event_name == 'workflow_dispatch' && inputs.apply }}
+          arm-client-id: ${{ vars.AZURE_CLIENT_ID }}
+          arm-tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          arm-subscription-id: ${{ vars.AZURE_SUBSCRIPTION_ID }}
+          firewall-storage-account-name: ${{ secrets.TFSTATE_STORAGE_ACCOUNT }}
+          firewall-storage-resource-group: ${{ secrets.TFSTATE_RESOURCE_GROUP }}
+          terraform-init-extra-args-json: '["-reconfigure","-upgrade","-backend-config=resource_group_name=${{ secrets.TFSTATE_RESOURCE_GROUP }}","-backend-config=storage_account_name=${{ secrets.TFSTATE_STORAGE_ACCOUNT }}","-backend-config=container_name=${{ secrets.TFSTATE_BLOB_CONTAINER }}"]'

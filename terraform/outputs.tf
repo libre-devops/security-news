@@ -1,5 +1,5 @@
 output "application_client_id" {
-  description = "The application (client) id. Not a secret: publish it as the AZURE_CLIENT_ID Actions variable, see github_variable_commands."
+  description = "The application (client) id. Not a secret: publish it as the MESSAGE_CENTER_CLIENT_ID Actions variable, see github_variable_commands."
   value       = module.message_center_spn.client_ids[local.spn_name]
 }
 
@@ -19,15 +19,15 @@ output "federated_credential_subjects" {
 }
 
 output "github_variable_commands" {
-  description = "The two Actions variables the feed workflow reads. Neither is a secret (a client id and a tenant id are identifiers, not credentials), so they are variables rather than secrets and are safe to show in run logs."
+  description = "The two Actions variables the feed workflow reads. Neither is a secret (a client id and a tenant id are identifiers, not credentials), so they are variables rather than secrets and are safe to show in run logs. They are deliberately NOT called AZURE_CLIENT_ID and AZURE_TENANT_ID: those already exist as ORG variables for the CI identity, and a repository variable of the same name silently shadows the org one, which would break this repository's own Terraform pipeline."
   value = [
-    "gh variable set AZURE_CLIENT_ID --repo ${var.github_org}/${var.github_repo} --body ${module.message_center_spn.client_ids[local.spn_name]}",
-    "gh variable set AZURE_TENANT_ID --repo ${var.github_org}/${var.github_repo} --body ${data.azuread_client_config.current.tenant_id}",
+    "gh variable set MESSAGE_CENTER_CLIENT_ID --repo ${var.github_org}/${var.github_repo} --body ${module.message_center_spn.client_ids[local.spn_name]}",
+    "gh variable set MESSAGE_CENTER_TENANT_ID --repo ${var.github_org}/${var.github_repo} --body ${data.azuread_client_config.current.tenant_id}",
   ]
 }
 
 output "grant_admin_consent_commands" {
-  description = "The az CLI alternative to grant_admin_consent: one tenant-wide admin consent grant per requested Graph application role, ready to run by someone holding AppRoleAssignment.ReadWrite.All. Only needed when grant_admin_consent is false."
+  description = "One tenant-wide admin consent grant per requested Graph application role, ready to run by someone holding AppRoleAssignment.ReadWrite.All. This is the normal path: grant_admin_consent defaults to false so the pipeline never holds that permission, and consent stays a deliberate one-off human act. Run these once after the first apply."
   value = [
     for role in var.graph_application_roles : join(" ", [
       "az rest --method POST",
@@ -43,6 +43,6 @@ output "service_principal_object_id" {
 }
 
 output "tenant_id" {
-  description = "Tenant the application belongs to. Not a secret: publish it as the AZURE_TENANT_ID Actions variable."
+  description = "Tenant the application belongs to. Not a secret: publish it as the MESSAGE_CENTER_TENANT_ID Actions variable."
   value       = data.azuread_client_config.current.tenant_id
 }

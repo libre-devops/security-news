@@ -16,9 +16,9 @@ Pages, so there is no Azure infrastructure behind it.
 One application registration and its service principal, named to the Libre DevOps convention
 (`svp-${short}-${loc}-${env}-mc-001`, so `svp-ldo-uks-prd-mc-001` by default), carrying:
 
-- The `ServiceMessage.Read.All` Microsoft Graph **application** role, with tenant-wide admin consent
-  granted by default. Application rather than delegated because the feed job runs unattended on a
-  schedule, with no signed-in user.
+- A request for the `ServiceMessage.Read.All` Microsoft Graph **application** role. Application
+  rather than delegated because the feed job runs unattended on a schedule, with no signed-in user.
+  The request is managed here; the consent is not (see below).
 - Federated identity credentials trusting GitHub Actions OIDC from `libre-devops/security-news`.
 
 There is **no client secret and no certificate**, by design. The federated credentials are the only
@@ -50,36 +50,63 @@ If a run ever does fail with `AADSTS7002131`, compare the subject in the run log
 
 ## Applying
 
-State is local and auth is Azure CLI user auth, matching the other single-tenant helper stacks in
-this estate. This is applied by hand, occasionally, and is not wired into CI.
+Through the pipeline, like everything else in the estate. `.github/workflows/terraform.yml` runs
+the `libre-devops/terraform-azure` action against the shared remote state:
+
+- **Plan** happens automatically on any pull request touching `terraform/**`.
+- **Apply** happens only on a manual dispatch with the `apply` input ticked:
 
 ```bash
-az login
-terraform -chdir=terraform init
-terraform -chdir=terraform plan
-terraform -chdir=terraform apply
+gh workflow run terraform.yml --repo libre-devops/security-news -f apply=true
 ```
 
-The applier needs:
+Auth is OIDC through the org CI identity (`AZURE_CLIENT_ID`, `AZURE_TENANT_ID`,
+`AZURE_SUBSCRIPTION_ID` org variables) and state lives in the org's firewalled tfstate account
+(`TFSTATE_*` org secrets). No local state, no client secret, and drift shows up on the next plan.
 
-- `Application.ReadWrite.All`, or the Application Administrator role, to create the registration.
-- `AppRoleAssignment.ReadWrite.All`, or Privileged Role Administrator, **when
-  `grant_admin_consent` is true** (the default). Granting a Graph application role is tenant-wide
-  admin consent, which is a privileged action.
+Fork pull requests are skipped rather than failed: GitHub issues them no OIDC token, so they could
+never authenticate.
 
-If you cannot consent yourself, apply with `-var 'grant_admin_consent=false'`. The roles are still
-requested on the application, and the `grant_admin_consent_commands` output prints ready-to-run
-`az rest` commands for whoever can grant them.
+### Consent is not in the pipeline, deliberately
+
+`grant_admin_consent` defaults to **false**, so the stack requests `ServiceMessage.Read.All` but
+does not consent to it. Granting a Graph application role requires `AppRoleAssignment.ReadWrite.All`,
+and that permission lets its holder assign **any** app role of **any** API to **any** principal,
+including granting itself directory write. Handing that to the shared org CI identity, which every
+repository in the org can use, would turn a workflow-file change into a tenant escalation path.
+
+So consent is a one-off human act. After the first apply, run what
+`terraform output grant_admin_consent_commands` prints, as someone who holds the permission:
+
+```bash
+az rest --method POST \
+  --url https://graph.microsoft.com/v1.0/servicePrincipals/<sp-object-id>/appRoleAssignments \
+  --body '{"principalId":"<sp-object-id>","resourceId":"<graph-sp-object-id>","appRoleId":"<role-id>"}'
+```
+
+Terraform does not manage that grant, so it will not fight you over it or try to remove it. If you
+would rather manage it here, set `grant_admin_consent = true` and apply interactively as someone
+who already holds the permission.
+
+### Local plans
+
+For a local plan without touching the shared state, copy `backend_override.tf.example` to
+`backend_override.tf` (gitignored) and re-run `terraform init`. Plan only: applying from a local
+state file would fork the real one.
 
 ## After applying
 
-Publish the two identifiers the workflow needs. Neither is a secret, so they are Actions **variables**
-rather than secrets, and the `terraform output github_variable_commands` output prints both commands:
+Publish the two identifiers the feed workflow needs. Neither is a secret, so they are Actions
+**variables**, and `terraform output github_variable_commands` prints both:
 
 ```bash
-gh variable set AZURE_CLIENT_ID --repo libre-devops/security-news --body <application_client_id>
-gh variable set AZURE_TENANT_ID --repo libre-devops/security-news --body <tenant_id>
+gh variable set MESSAGE_CENTER_CLIENT_ID --repo libre-devops/security-news --body <application_client_id>
+gh variable set MESSAGE_CENTER_TENANT_ID --repo libre-devops/security-news --body <tenant_id>
 ```
+
+They are **not** called `AZURE_CLIENT_ID` and `AZURE_TENANT_ID` on purpose. Those already exist as
+org variables for the CI identity, and a repository variable of the same name silently shadows the
+org one, which would break this repository's own Terraform pipeline.
 
 `fetch-feeds.yml` already sets `id-token: write`, so no permission change is needed there.
 

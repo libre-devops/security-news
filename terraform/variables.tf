@@ -35,9 +35,9 @@ variable "github_repo" {
 }
 
 variable "grant_admin_consent" {
-  description = "Grant the requested Graph application roles in this stack. Each grant IS tenant-wide admin consent, so the applier needs AppRoleAssignment.ReadWrite.All. Set false to request the roles without consenting, then use the grant_admin_consent_commands output."
+  description = "Grant the requested Graph application roles from this stack. Defaults to false because granting one IS tenant-wide admin consent, which needs AppRoleAssignment.ReadWrite.All: a permission that lets its holder assign ANY app role of ANY API to ANY principal, including granting itself directory write. That is not something the shared org CI identity should carry, so the pipeline requests the roles and a human consents once using the grant_admin_consent_commands output. Set true only when applying interactively as someone who already holds it."
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "graph_application_roles" {
