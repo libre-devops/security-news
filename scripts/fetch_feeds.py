@@ -52,6 +52,15 @@ GRAPH_PAGE_SIZE = 100
 # a general reader can follow.
 MESSAGE_CENTER_LINK = "https://admin.microsoft.com/#/MessageCenter/:/messages/"
 
+# Because that link is useless to anyone without admin access to the tenant, the
+# full post body travels with the article so the site can show it inline. Stored
+# as PLAIN TEXT, never HTML: the front end renders everything with textContent,
+# and shipping markup would hand upstream feed content a route into the DOM.
+# Any links in the body are extracted separately and re-rendered as anchors
+# after a scheme check.
+MAX_BODY_LENGTH = 6000
+MAX_BODY_LINKS = 12
+
 # The audience GitHub must mint its OIDC token for. It has to match the audience
 # on the federated identity credential in terraform/main.tf.
 ENTRA_TOKEN_AUDIENCE = "api://AzureADTokenExchange"
@@ -508,6 +517,14 @@ PRODUCTS: Dict[str, Dict[str, Any]] = {
         "weight_threshold": 1,
         "patterns": [],
     },
+    # Assigned by source rather than by text matching, so it is a reliable "this
+    # came from the Message Center" marker rather than a guess. The unreachable
+    # threshold keeps the classifier from ever awarding it on wording alone.
+    "message-center": {
+        "name": "Microsoft Message Center",
+        "weight_threshold": 999,
+        "patterns": [],
+    },
 }
 
 
@@ -880,6 +897,35 @@ def parse_graph_datetime(value: str) -> str:
     return parsed.isoformat()
 
 
+def extract_links(html: str) -> List[dict]:
+    """
+    Pull the anchors out of a Message Center body so they survive the strip to
+    plain text. Only http(s) is kept, and the label is stripped of markup, so
+    what reaches the front end is a plain label and a scheme-checked URL.
+    """
+    links: List[dict] = []
+    seen = set()
+
+    for href, label in re.findall(
+        r"<a\s[^>]*href=[\"']([^\"']+)[\"'][^>]*>(.*?)</a>",
+        html or "",
+        re.IGNORECASE | re.DOTALL,
+    ):
+        url = unescape(href).strip()
+
+        if not url.lower().startswith(("http://", "https://")) or url in seen:
+            continue
+
+        seen.add(url)
+        text = clean_html(label) or url
+        links.append({"label": truncate(text, 120), "url": url})
+
+        if len(links) >= MAX_BODY_LINKS:
+            break
+
+    return links
+
+
 def normalize_message(message: dict, source: Source) -> Optional[dict]:
     """Turn one Graph serviceAnnouncement message into an article."""
     message_id = (message.get("id") or "").strip()
@@ -897,10 +943,19 @@ def normalize_message(message: dict, source: Source) -> Optional[dict]:
     )
 
     # The services a post applies to are the strongest classification signal it
-    # carries, so they are fed to the classifier alongside the body text.
+    # carries, so they are fed to the classifier alongside the body text. The
+    # Message Center marker is then prepended by hand: it is a fact about where
+    # the post came from, not something to infer from its wording.
     products = classify_products(
         title, f"{summary_raw} {' '.join(services)}", source.name
     )
+    products = [
+        {
+            "id": "message-center",
+            "name": PRODUCTS["message-center"]["name"],
+            "score": 10,
+        }
+    ] + [product for product in products if product["id"] != "general-security"]
 
     return {
         "title": title,
@@ -917,6 +972,10 @@ def normalize_message(message: dict, source: Source) -> Optional[dict]:
         "board_id": source.board_id,
         "message_id": message_id,
         "services": services,
+        # The whole post as plain text, so the site can show it inline rather
+        # than sending readers to an admin centre they cannot open.
+        "body": truncate(summary_raw, MAX_BODY_LENGTH),
+        "links": extract_links(body),
         "products": products,
         "tags": [product["name"] for product in products],
     }

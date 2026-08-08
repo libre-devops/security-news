@@ -583,3 +583,148 @@ main {
   border-color: var(--brand-primary);
   color: white;
 }
+/* ---------------------------------------------------------------------------
+   Full post viewer
+
+   Only articles carrying a complete body (currently Microsoft Message Center
+   posts) get an expand button, because a Message Center permalink only opens
+   for someone with tenant admin access. Showing the post inline is the point.
+   Uses the native <dialog>, so focus trapping and Escape come from the
+   platform. Both themes are driven by the existing custom properties.
+--------------------------------------------------------------------------- */
+
+.expand-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.expand-btn:hover {
+  border-color: var(--brand-accent);
+  color: var(--brand-accent);
+}
+
+.expand-btn:focus-visible {
+  outline: 2px solid var(--brand-accent);
+  outline-offset: 2px;
+}
+
+.article-dialog {
+  padding: 0;
+  border: none;
+  background: transparent;
+  max-width: min(760px, 92vw);
+  max-height: 88vh;
+  overflow: visible;
+}
+
+.article-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(2px);
+}
+
+.dialog-panel {
+  position: relative;
+  max-height: 88vh;
+  overflow-y: auto;
+  padding: 2rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.dialog-close {
+  position: sticky;
+  top: 0;
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-family: inherit;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.dialog-close:hover {
+  color: var(--text-primary);
+  border-color: var(--brand-accent);
+}
+
+.dialog-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.dialog-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+  line-height: 1.35;
+  color: var(--text-primary);
+}
+
+.dialog-text {
+  margin-top: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.dialog-text p {
+  margin: 0 0 1rem;
+}
+
+.dialog-subheading {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.dialog-links {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.dialog-links li {
+  margin-bottom: 0.4rem;
+}
+
+.dialog-links a,
+.dialog-source-link {
+  color: var(--brand-accent);
+  overflow-wrap: anywhere;
+}
+
+.dialog-source-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .dialog-panel {
+    padding: 1.25rem;
+  }
+
+  .dialog-title {
+    font-size: 1.2rem;
+  }
+}
