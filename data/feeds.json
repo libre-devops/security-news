@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-09T07:01:29.337238+00:00",
-  "totalArticles": 141,
+  "lastUpdated": "2026-08-09T12:57:30.567819+00:00",
+  "totalArticles": 140,
   "articles": [
     {
       "title": "GCP-2026-052",
@@ -5714,37 +5714,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "When Arc Goes Silent: Turning Visibility Gaps into SOC Action",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/when-arc-goes-silent-turning-visibility-gaps-into-soc-action/ba-p/4535711",
-      "published": "2026-07-10T12:07:15+00:00",
-      "summary": "Hybrid blind spots rarely announce themselves. They appear when an Azure Arc-enabled server drops out, health signals go stale, and the SOC loses confidence in monitoring coverage. This playbook uses Microsoft Sentinel and Logic Apps to turn that noise into one clear daily signal the team can act...",
-      "author": "absharan",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel"
-      ],
-      "body": "Hybrid blind spots rarely announce themselves. They appear when an Azure Arc-enabled server drops out, health signals go stale, and the SOC loses confidence in monitoring coverage. This playbook uses Microsoft Sentinel and Logic Apps to turn that noise into one clear daily signal the team can act on. The problem: too much noise, not enough assurance One unhealthy server, one alert, one more email—at scale, that does not help the SOC. What leaders need is assurance: where visibility is weakening, which systems matter, and when action is needed. The use case: daily assurance for hybrid monitoring coverage The use case is simple: identify Arc-enabled servers that stay unhealthy beyond a set threshold, such as 30 minutes, and send one consolidated summary each day. For a CISO, this improves assurance. For a SOC Manager, it cuts noise and helps teams prioritize faster. Solution overview: simple automation, stronger operational signal The workflow runs on a schedule, queries Log Analytics, filters Arc health issues, formats the results into a clean HTML report, and sends a single email through Office 365 Outlook. The outcome is not more telemetry—it is a better operational signal. Prerequisites One or more Azure Arc-enabled servers connected to Azure. Azure Monitor Agent installed and sending heartbeat data to a Log Analytics workspace. Microsoft Sentinel enabled on the target workspace if the playbook is being used as part of SOC operations. A Logic App with permissions to run the query and send email through Office 365 Outlook. A reviewed threshold, recipient list, and notification cadence aligned to your operating model. How the workflow creates decision-ready visibility In practice, this becomes a daily control: check Arc health, isolate persistent issues, and route one concise summary to the right teams. That gives the SOC a cleaner way to review monitoring gaps before they become bigger operational problems. Why this matters to a CISO and SOC Manager For security leadership, this is about confidence. If Arc health degrades on systems tied to monitoring, policy, or data collection, the risk is not just technical—it is a visibility gap. This playbook helps surface that gap early and in a form teams can act on quickly. Three practical scenarios where this playbook delivers value Reduce SOC noise.Replace scattered alerts with one daily summary. Strengthen executive assurance.Highlight persistent blind spots before they turn into escalations. Improve team...",
-      "links": [
-        {
-          "label": "microsoft-security-operations-toolkit/Microsoft Sentinel/Automation/Playbooks/AzureArcServerMonitoring.playbook.json at...",
-          "url": "https://github.com/Abhishek-Sharan/microsoft-security-operations-toolkit/blob/1e3aeff329e0d9b1d7caf2e4bfbc8476dfdb2ff2/Microsoft%20Sentinel/Automation/Playbooks/AzureArcServerMonitoring.playbook.json"
-        }
       ]
     }
   ]
