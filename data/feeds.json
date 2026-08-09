@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-08T18:41:37.774353+00:00",
-  "totalArticles": 142,
+  "lastUpdated": "2026-08-09T01:59:09.891660+00:00",
+  "totalArticles": 141,
   "articles": [
     {
       "title": "GCP-2026-052",
@@ -5746,32 +5746,6 @@
           "url": "https://github.com/Abhishek-Sharan/microsoft-security-operations-toolkit/blob/1e3aeff329e0d9b1d7caf2e4bfbc8476dfdb2ff2/Microsoft%20Sentinel/Automation/Playbooks/AzureArcServerMonitoring.playbook.json"
         }
       ]
-    },
-    {
-      "title": "Azure DDoS Protection & Azure WAF: A Layered Defense for Modern DDoS Attacks",
-      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/azure-ddos-protection-azure-waf-a-layered-defense-for-modern/ba-p/4523745",
-      "published": "2026-07-09T21:33:51+00:00",
-      "summary": "Introduction: The Need for Layered DDoS Defense Organizations today operate in an environment where Distributed Denial of Service (DDoS) attacks continue to evolve across both network and application layers. To help organizations build resilient, internet-facing applications and services, Microsoft...",
-      "author": "saikishor",
-      "source": "Azure Network Security",
-      "source_id": "network_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Network Security",
-      "board_id": "azurenetworksecurityblog",
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "Introduction: The Need for Layered DDoS Defense Organizations today operate in an environment where Distributed Denial of Service (DDoS) attacks continue to evolve across both network and application layers. To help organizations build resilient, internet-facing applications and services, Microsoft Azure provides a comprehensive and layered set of protections designed to address different types of DDoS threats. These capabilities range from platform-level defenses through Azure Infrastructure Protection, dedicated Layer 3/4 DDoS mitigation through Azure DDOS Protection and application-layer protections through Azure Web Application Protection (WAF). Together, these services form a defense-in-depth strategy that helps organizations strengthen availability, improve resilience, and protect critical applications from both large-scale network attacks and sophisticated application-layer threats. This blog explores how these services work together to deliver comprehensive DDoS protection across modern cloud environments. Understanding DDoS at Different Layers: Network vs. Application Not all DDoS attacks are alike. Broadly speaking, network-layer (Layer 3/4) DDoS attacks try to flood a network or transport layer with traffic – for example, overwhelming a server or network connection with a massive volume of packets (think UDP floods, SYN floods, or amplification attacks). These aim to saturate the available bandwidth or crash network devices, knocking entire services offline. On the other hand, application-layer (Layer 7) DDoS attacks strike at the application itself – typically using HTTP(S) requests that appear legitimate but are maliciously crafted. For instance, a botnet might repeatedly hit a search API or login page with valid-looking requests that each trigger expensive operations (database queries, authentication processes, etc.). In short, network-layer DDoS attacks target the plumbing of your infrastructure (bandwidth, network connectivity), whereas application-layer DDoS attacks target the brains of your application (the code and logic handling requests). Because these attack vectors are different, defending against them requires different tools and tactics. Azure’s approach to DDoS defense embraces this reality with a layered model, where each security layer specializes in stopping certain types of attacks and complements the others. Azure’s multi-layered DDoS Protection Strategy Azure provides three main layers of DDoS protection: Azure’s...",
-      "links": []
     }
   ]
 }
