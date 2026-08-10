@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-09T18:45:57.313603+00:00",
-  "totalArticles": 140,
+  "lastUpdated": "2026-08-10T02:03:51.021632+00:00",
+  "totalArticles": 138,
   "articles": [
     {
       "title": "GCP-2026-052",
@@ -984,51 +984,6 @@
       ]
     },
     {
-      "title": "Microsoft Purview: Adaptive scopes add lifecycle status evaluation controls for recipients and site owners",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450128",
-      "published": "2026-08-07T21:53:17.473000+00:00",
-      "summary": "[What and why]Microsoft Purview is introducing lifecycle status evaluation controls for adaptive scopes. This update gives administrators explicit control over whether active, inactive, and soft-deleted recipients and site owners are included in adaptive scope membership.With this change, newly...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1450128",
-      "services": [
-        "Microsoft Purview"
-      ],
-      "body": "[What and why]Microsoft Purview is introducing lifecycle status evaluation controls for adaptive scopes. This update gives administrators explicit control over whether active, inactive, and soft-deleted recipients and site owners are included in adaptive scope membership.With this change, newly created adaptive scopes will evaluate only active recipients and site owners by default. Administrators can configure adaptive scopes to include inactive and/or soft-deleted recipients and site owners when needed.This update also adds support for ISO 8601 duration values for selected date attributes in the adaptive scope advanced query builder.This message is associated with Microsoft 365 Roadmap ID 568785.[Rollout schedule]Public Preview: Beginning in mid-September 2026 and expected to complete in early October 2026General Availability (Worldwide): Beginning in mid-October 2026 and expected to complete in mid-November 2026[Impact on your organization]Who is affectedMicrosoft Purview administrators who create or manage adaptive scopes.Organizations that use adaptive scopes for Microsoft Purview policy targeting.Platforms and servicesMicrosoft PurviewAdaptive ScopesWhat will happenExisting adaptive scopes will continue to function as they do today and will not be automatically modified as part of this rollout.For newly created adaptive scopes:Active recipients and site owners will be evaluated by default.Inactive and soft-deleted recipients or site owners will not be included unless explicitly configured by an administrator.Administrators will also have the option to update existing adaptive scopes to use explicit lifecycle status evaluation criteria for recipients and site owners.Additionally, adaptive scopes will support ISO 8601 duration values for certain date-based attributes in the advanced query builder.[Action required and recommendations]No action is required before rollout.We recommend that administrators:Review current adaptive scope configurations and governance requirements.Determine whether inactive or soft-deleted recipients and site owners should be included in future adaptive scope definitions.Update adaptive scope creation processes and documentation, if applicable, to account for the new lifecycle status settings.Learn more(to be updated closer to general availability): Adaptive scopes | Microsoft Purview | Microsoft Learn[Compliance considerations]No compliance considerations have been identified.",
-      "links": [
-        {
-          "label": "568785",
-          "url": "https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=568785"
-        },
-        {
-          "label": "Adaptive scopes | Microsoft Purview | Microsoft Learn",
-          "url": "https://learn.microsoft.com/purview/purview-adaptive-scopes"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        },
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center",
-        "Microsoft Purview"
-      ]
-    },
-    {
       "title": "Microsoft Purview: Information Protection-Auto-labeling per-policy coverage report",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568935",
       "published": "2026-08-07T21:45:15+00:00",
@@ -1231,153 +1186,6 @@
       ]
     },
     {
-      "title": "(Updated) Microsoft Purview: Migration tool in Unified Catalog to migrate classic glossary terms",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1280564",
-      "published": "2026-08-07T16:24:57.780000+00:00",
-      "summary": "Updated August 7, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience. [Introduction]Data Governance Admins and Data Stewards can use a built‑in migration tool in Microsoft Purview Unified Catalog to migrate classic glossary terms, associated...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1280564",
-      "services": [
-        "Microsoft Purview"
-      ],
-      "body": "Updated August 7, 2026: We have decided not to move forward with this change at this time. We apologize for any inconvenience. [Introduction]Data Governance Admins and Data Stewards can use a built‑in migration tool in Microsoft Purview Unified Catalog to migrate classic glossary terms, associated term templates, and asset and column relationships into Unified Catalog. After migration, glossary terms can be managed in Unified Catalog and associated with business concepts and data assets.This message is associated with Microsoft 365 Roadmap ID 558683.[When this will happen]Public Preview: We will begin rolling out in late April 2026 and expect to complete by late April 2026.General Availability (Worldwide): We have decided not to move forward with this change at this time. We apologize for any inconvenience. [How this affects your organization]Who is affectedData Governance AdminsData StewardsOrganizations using classic glossary terms in Microsoft Purview, along with Unified CatalogWhat will happenAdmins can choose to use the built‑in migration tool to migrate classic glossary terms to Unified Catalog.Migration includes:Classic glossary termsAssociated term templatesAsset and column relationshipsAdmins who do not need migration can skip the process and use glossary terms only in Unified Catalog.In both cases, classic glossary terms will become read‑only.After migration or switching, Unified Catalog glossary terms can be used to curate assets and columns.[What you can do to prepare]Determine whether your organization uses classic glossary terms.Decide whether to:Migrate classic glossary terms to Unified Catalog, orAbandon classic glossary terms and use Unified Catalog glossary terms only.If you choose migration:Review the detailed migration documentation.Plan and execute the migration when your organization is ready for all required steps.Links to detailed migration documentation will be added to the Unified Catalog glossary terms overview documentation when the feature enters public preview.[Compliance considerations]QuestionAnswerDoes the change alter how existing customer data is processed, stored, or accessed?Yes. Classic glossary terms, associated term templates, and asset and column relationships may be migrated and stored in Microsoft Purview Unified Catalog instead of the classic glossary location.Does the change include an admin control?Yes. Data Governance Admins choose whether to migrate classic glossary terms using the built‑in migration tool or skip migration and switch to Unified Catalog glossary terms.",
-      "links": [
-        {
-          "label": "558683",
-          "url": "https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=558683"
-        },
-        {
-          "label": "Unified Catalog glossary terms overview documentation",
-          "url": "https://learn.microsoft.com/purview/unified-catalog-glossary-terms"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        },
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center",
-        "Microsoft Purview"
-      ]
-    },
-    {
-      "title": "(Updated) Microsoft Defender for Office 365: AIR Investigation Experience Improvements",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1431377",
-      "published": "2026-08-06T16:32:14.393000+00:00",
-      "summary": "Updated August 6, 2026: We have updated the timeline. Thank you for your patience. [What and Why:] Microsoft is enhancing the Automated Investigation and Response (AIR) experience in Microsoft Defender for Office 365 by introducing a manual refresh capability and simplifying investigation naming...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1431377",
-      "services": [
-        "Microsoft Defender XDR"
-      ],
-      "body": "Updated August 6, 2026: We have updated the timeline. Thank you for your patience. [What and Why:] Microsoft is enhancing the Automated Investigation and Response (AIR) experience in Microsoft Defender for Office 365 by introducing a manual refresh capability and simplifying investigation naming conventions. These changes improve portal performance, reduce unnecessary network activity, and support data minimization principles by removing email subjects and User Principal Names (UPNs) from investigation names. [Rollout Schedule:] General Availability (Worldwide): Beginning in mid-August 2026 (previously late July) and expected to complete by late August 2026 [Impact on Your Organization:] Who is affected: Security Operations Center (SOC) analysts Security administrators Incident responders Organizations using Microsoft Defender for Office 365 Plan 2 / E5 and AIR Platforms/Services: Microsoft Defender portal Microsoft Defender for Office 365 Automated Investigation and Response (AIR) What will happen: Manual refresh replaces auto-refresh: The AIR Investigations page will no longer refresh automatically. A new Refresh button will be available on the Investigations page. Analysts must manually refresh the page to obtain the latest investigation status and details. This change is enabled by default as part of the service update. Improved page responsiveness and reduced background network calls are expected. Simplified investigation names: Investigation names for Manual and User-Reported will no longer include email subject lines Generic investigation names will be displayed instead, such as: Email investigation for 'Network message Id\" User reported message as malicious \"Network message Id\" Existing investigation history and results remain unchanged. No changes to existing capabilities Investigation triggers remain unchanged. Detection logic remains unchanged. Automated remediation actions remain unchanged. Threat Explorer functionality remains unchanged. Email & Collaboration reports remain unchanged. Historical investigation records remain available. [Action Required/Recommendations:] No mandatory administrative configuration is required. Recommended actions: Review SOC workflows that rely on automatic refresh behavior. Inform security analysts that investigation status updates now require use of the new Refresh button. Review automation, runbooks, scripts, dashboards, or integrations that may parse investigation names. Update internal SOPs, analyst guides, and training materials that reference investigation names containing email subjects. Communicate the naming convention change to help desk and security teams prior to rollout. Validate any custom reporting processes that may depend on previous investigation naming formats. Learn more: Details and results of AIR in Defender for Office 365 Plan 2 - Microsoft Defender for Office 365 | Microsoft Learn (will be updated before rollout) [Compliance Considerations:] Area Explanation Existing customer data processing/access Investigation names will no longer expose email subjects, supporting data minimization and changing how investigation-related data is presented to administrators. Admin monitoring and reporting Organizations may need to update reporting, operational procedures, and investigation workflows that reference investigation names.",
-      "links": [
-        {
-          "label": "Details and results of AIR in Defender for Office 365 Plan 2 - Microsoft Defender for Office 365 | Microsoft Learn",
-          "url": "https://learn.microsoft.com/defender-office-365/air-view-investigation-results#view-investigation-details-from-air-in-defender-for-office-365-plan-2"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center",
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Office 365"
-      ]
-    },
-    {
-      "title": "(Updated) Microsoft Defender for Office 365: Localized default mark and notify email template",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1387578",
-      "published": "2026-08-05T23:14:51.317000+00:00",
-      "summary": "Updated August 5, 2026: We have updated the content. Thank you for your patience. [What and Why]Microsoft Defender for Office 365 is introducing localization support for the default “Mark and notify” email template used in admin review and automated notification flows for user-reported...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1387578",
-      "services": [
-        "Microsoft Defender XDR"
-      ],
-      "body": "Updated August 5, 2026: We have updated the content. Thank you for your patience. [What and Why]Microsoft Defender for Office 365 is introducing localization support for the default “Mark and notify” email template used in admin review and automated notification flows for user-reported messages.This update ensures that users receive notification emails in their preferred language based on their Outlook settings, improving clarity and understanding of review outcomes. This helps improve engagement and supports stronger security practices.This message is associated with Microsoft 365 Roadmap ID 557558.[Rollout Schedule]General Availability Worldwide: Rollout begins in June 2026 and is expected to complete by late July 2026.GCC, GCC High, DoD: Rollout begins in mid-July 2026 and is expected to complete by late July 2026.[Impact on Your Organization]Who is affectedOrganizations using Microsoft Defender for Office 365Admins and users participating in user-reported message workflowsApplies only when the default notification template is usedPlatforms/ServicesMicrosoft Defender for Office 365Microsoft 365 Defender portal (web)Exchange OnlineWhat will happenDefault “Mark and notify” email templates will be localized.Notifications will be delivered in the user’s preferred language based on Outlook settings.Feature is enabled by default when auto-notification is turned on.Notifications will have consistent formatting and messaging across supported languages.No changes to message verdicts or classification logic.No changes to automated investigation behavior.No changes to custom notification templates configured by admins in the user reported settings page.Default 'safe' message template will also use softer, clearer wording while continuing to advise users to exercise caution:This email doesn’t appear harmful. But you should always handle suspicious emails with caution.The safe-message template will also advise users to:Contact the sender through another channel to confirm the message’s validity.Avoid links and attachments in unsolicited emails from unfamiliar senders.Screenshot 1 - Before localization view: Screenshot 1 - Localized template view: Screenshot 2 - Default safe message:[Action Required/Recommendations]No action is required.You may consider the following:Inform users that notification emails may now appear in their preferred language.Review notification settings in Microsoft Defender: Settings > Email and collaboration > User reported settings.Update internal documentation or helpdesk guidance if this workflow is documented.Learn more: Notify users about admin submitted messages to Microsoft - Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft | Microsoft Defender for Office 365 | Microsoft Defender | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "557558",
-          "url": "https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=557558"
-        },
-        {
-          "label": "settings",
-          "url": "https://security.microsoft.com/securitysettings/userSubmission"
-        },
-        {
-          "label": "Notify users about admin submitted messages to Microsoft - Use the Submissions page to submit suspected spam, phish,...",
-          "url": "https://learn.microsoft.com/defender-office-365/submissions-admin#notify-users-about-admin-submitted-messages-to-microsoft"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center",
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Office 365"
-      ]
-    },
-    {
       "title": "Monthly News-August 2026",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/monthly-news-august-2026/ba-p/4544388",
       "published": "2026-08-05T22:15:47+00:00",
@@ -1510,101 +1318,6 @@
           "label": "Investigate a domain",
           "url": "https://learn.microsoft.com/en-us/defender-for-identity/investigate-domain"
         }
-      ]
-    },
-    {
-      "title": "Microsoft Teams: Report security concerns in Teams meetings",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1446794",
-      "published": "2026-08-05T17:04:00.820000+00:00",
-      "summary": "[What and why]Microsoft Teams is introducing a new Report a meeting capability that allows meeting participants to report suspicious, malicious, or potentially fraudulent activity directly from Teams meetings.This feature helps organizations identify and investigate threats such as phishing,...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1446794",
-      "services": [
-        "Microsoft Teams",
-        "Microsoft Defender XDR"
-      ],
-      "body": "[What and why]Microsoft Teams is introducing a new Report a meeting capability that allows meeting participants to report suspicious, malicious, or potentially fraudulent activity directly from Teams meetings.This feature helps organizations identify and investigate threats such as phishing, impersonation, scams, and other suspicious behavior. Reported meeting information can help security teams assess potential threats and take appropriate action.[Rollout schedule]Targeted Release: Beginning in early August 2026General Availability (Worldwide): Beginning in early October 2026[Impact on your organization]Who is affectedUsers who participate in Microsoft Teams meetings on Windows, Mac, and webPlatforms and servicesMicrosoft TeamsMicrosoft Defender portalTeams admin centerWhat will happenA new Report a meeting option will be available from:The More actions (...) menu during an active meeting: The meeting chat header for scheduled and ad hoc meetings: Users can report suspected phishing attempts, impersonation, social engineering activity, scams, or other security concerns directly from Teams.Relevant meeting metadata and limited contextual information will be collected to support investigation and remediation activities.Information associated with reported meetings will be available for investigation by administrators.Organizations with Microsoft Defender for Office 365 Plan 1, Plan 2, or Microsoft Defender XDR can review detailed reported meeting submissions in the Microsoft Defender portal.Information about user-submitted reports will also be available in the Teams admin center under Protection reports > User-reported security submissions.Administrators can investigate reported meetings and take actions according to their organization's security processes and policies.The Report a meeting capability is enabled by default.[Action required and recommendations]Review your organization's security investigation and response processes before rollout.Recommended actions:Review Microsoft Defender user reporting settings and ensure your reporting workflows align with organizational requirements.If your organization uses Microsoft Defender for Office 365 or Microsoft Defender XDR, verify that Teams meeting reporting is configured appropriately so detailed reported meeting submissions are available to security investigators in the Microsoft Defender portal.Inform users about the new Report a meeting capability and when it should be used.Update internal security awareness materials and incident response procedures, as needed.Verify that security administrators responsible for reviewing reports have appropriate access to the Microsoft Defender portal or Teams admin center.[Compliance considerations]QuestionAnswerDoes this change store new customer data?Yes. When users submit a meeting security report, relevant meeting metadata and limited contextual information are collected and stored to support investigation and remediation activities.Does this change alter how existing customer data is processed, stored, or accessed?Yes. Reported meeting information is processed and made available through Microsoft Defender and Teams admin experiences to support security investigations.Does this change provide a new way for users, tenants, or subscriptions to communicate?Yes. Users can submit security reports directly from Teams meetings and meeting chats, creating a new reporting channel between users and organizational security administrators.Does this change alter how admins monitor, report on, or demonstrate compliance activities?Yes. Administrators can review and investigate user-submitted meeting security reports in the Microsoft Defender portal and Teams admin center, providing additional visibility into security-related events.Does this change include an admin control?Yes. Administrators can configure reporting and investigation settings in the Microsoft Defender portal to enable access to detailed meeting security reports.Does this change allow users to enable or disable the feature themselves?Yes. Users can choose whether to submit a security report for a meeting by using the new Report a meeting option in Teams.",
-      "links": [],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center",
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Office 365"
-      ]
-    },
-    {
-      "title": "Microsoft Teams: Users can report security concerns in group calls",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1447673",
-      "published": "2026-08-05T17:03:37.913000+00:00",
-      "summary": "[What and why]We're introducing a new security reporting capability in Microsoft Teams that allows users to report suspicious group calls directly from their call history. This feature helps organizations identify and investigate potential scams, impersonation attempts, unwanted external calls, and...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1447673",
-      "services": [
-        "Microsoft Teams",
-        "Microsoft Defender XDR"
-      ],
-      "body": "[What and why]We're introducing a new security reporting capability in Microsoft Teams that allows users to report suspicious group calls directly from their call history. This feature helps organizations identify and investigate potential scams, impersonation attempts, unwanted external calls, and other security concerns that occur during group calling experiences.Reported call information can be reviewed by administrators in Microsoft Teams admin center and, when configured, in Microsoft Defender.[Rollout schedule]Targeted Release: Beginning in early August 2026General Availability (Worldwide): Beginning in early October 2026[Impact on your organization]Who is affectedUsers who make or receive group calls in Microsoft TeamsTeams administrators and security administrators responsible for investigating reported security concernsPlatforms and servicesMicrosoft Teams for WindowsMicrosoft Teams for MacMicrosoft Teams for webMicrosoft Teams admin centerMicrosoft Defender portal (when licensed and configured)What will happenA new Report a call option will be available for group calls in Teams call history: Users can select More options (...) next to a group call and choose Report a call.Relevant call metadata and limited contextual information will be securely submitted to the organization and Microsoft for analysis.Security teams can review detailed reported call submissions in the Microsoft Defender portal when the organization has Microsoft Defender for Office 365 Plan 1, Microsoft Defender for Office 365 Plan 2, or Microsoft Defender XDR.Administrators can review user-reported security submissions in Teams admin center under Analytics & reports > Protection reports > User-reported security submissions.Administrators can investigate reported calls and take appropriate action based on organizational security processes.This feature is enabled by default in Teams clients.[Action required and recommendations]Review whether your organization wants to use Microsoft Defender for enhanced investigation capabilities.Recommended actions:Verify that user reporting is enabled in the Microsoft Defender portal if you want detailed reported call submissions to appear there. Without this, detailed reported calls will not appear in the Defender portal.Review access permissions for security teams that will investigate reported submissions.Inform users about the new Report a call option and provide guidance on when it should be used, such as:Suspected scamsImpersonation attemptsUnwanted external callsOther suspicious calling activityReview reporting data in Teams admin center if your organization does not use Microsoft Defender.Learn moreEnd user reporting for Security | Microsoft Teams | Microsoft Learn[Compliance considerations]QuestionAnswerDoes this change provide a new way for users, tenants, or subscriptions to communicate?Yes. This change introduces a new user reporting capability within Microsoft Teams group call history, enabling users to submit security concern reports for group calls directly from the Teams client.Does this change alter how existing customer data is processed, stored, or accessed?Yes. When a user reports a group call, relevant call metadata and limited contextual information are shared with the organization and Microsoft for security investigation and analysis.Does this change store new customer data?Yes. User-submitted call reports, including associated metadata and contextual information, are stored and made available through the Microsoft Defender portal and Teams admin center reporting experiences.Does this change alter how admins monitor, report on, or demonstrate compliance activities?Yes. Administrators gain new reporting and investigation capabilities through the Microsoft Defender portal and Teams admin center, where user-reported security submissions can be reviewed and analyzed.Does this change include an admin control?Yes. Administrators can configure whether detailed Teams call reports are received and available in the Microsoft Defender portal by managing the Teams call reporting setting.Can users enable or disable the feature themselves?Yes. Users can choose whether to submit a report for a specific call by using the new Report a Call option in Teams call history.",
-      "links": [
-        {
-          "label": "Microsoft Defender portal",
-          "url": "https://sip.security.microsoft.com/reportsubmission?viewid=user"
-        },
-        {
-          "label": "End user reporting for Security | Microsoft Teams | Microsoft Learn",
-          "url": "https://learn.microsoft.com/microsoftteams/end-user-reporting-security"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center",
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Office 365"
       ]
     },
     {
@@ -2479,53 +2192,6 @@
           "label": "https://aka.ms/MDCNewsSubscribe",
           "url": "https://aka.ms/MDCNewsSubscribe"
         }
-      ]
-    },
-    {
-      "title": "(Updated) Microsoft Defender for Office 365: Enhancing how we handle promotional mail",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1279093",
-      "published": "2026-08-03T16:39:35.413000+00:00",
-      "summary": "Updated August 3, 2026: We have updated the timeline. Thank you for your patience. [Introduction]We are enhancing how Microsoft Defender for Office 365 identifies and manages promotional email. Promotional messages will be tagged as “promotions” (previously “Bulk” in preview) and can be moved...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1279093",
-      "services": [
-        "Microsoft Defender XDR"
-      ],
-      "body": "Updated August 3, 2026: We have updated the timeline. Thank you for your patience. [Introduction]We are enhancing how Microsoft Defender for Office 365 identifies and manages promotional email. Promotional messages will be tagged as “promotions” (previously “Bulk” in preview) and can be moved automatically to a new Promotions folder. The system learns from user actions, such as moving messages into or out of the Promotions folder and applies those preferences to future messages. These improvements reduce inbox clutter and help users stay focused while still receiving promotional content they want.[When this will happen]Public Preview (Limited): We will begin rolling out in mid-April 2026 and expect to complete by mid-May 2026 (previously end of April). To be included in the public preview program, send an email to BulkMailPreviews@microsoft.com indicating: Organization name, Tenant ID and your onmicrosoft.com domain (e.g contoso.onmicrosoft.com). Slots are limited and will close on May 15th, 2026.General Availability (Worldwide): We will begin rolling out in late July 2026 (previously early July) and expect to complete by late August 2026 (previously late July).General Availability (DoD, GCC, GCC High): We will begin rolling out in late July 2026 (previously early July) and expect to complete by mid-September 2026 (previously early August).[How this affects your organization]Who is affectedAll organizations that use Microsoft Defender for Office 365 across Worldwide, GCC, GCC High, and DoD cloudsWhat will happenIncoming promotional messages will be tagged as “promotions.” (previously “Bulk” in private and public preview)If the Bulk Moves Enabled setting is turned on, tagged messages will automatically move to a Promotions folder created in user mailboxes.The system will learn from user actions when they move messages into or out of the Promotions folder. Future messages will follow the learned behavior.Users will be able to create inbox rules that reference the promotions tag.During the Public Preview: Tagging will be opt-in and configured using Exchange transport rules.Folder routing will be enabled through anti-spam policy settings (“Bulk moves enabled”). Both features will be able to be scoped to pilot security groups for a staged rollout.At Worldwide General Availability, tagging will be enabled by default for all tenants and will always remain that way.For the tagging experience, supported outlooks clients are Outlook on the web and outlook for Windows. Other client such as Outlook for IOS/Android and classic outlook will follow subsequentlyFor the promotions folder experiences, Outlook on the web, outlook for Windows, Outlook for IOS/Android and classic outlook are all supported. Figure one - Admin configuration for tagging using exchange transport rule (required for public preview opt-In): Figure two - Admin configuration for Bulk moves enabled to provision the promotions folder: Figure three - System tagging of “Promotions” in outlook client and promotions folder (previously tagged as “Bulk” in private and public preview): Figure four - User inbox rules using the promotions” tag: [What you can do to prepare]To be included in the public preview program, send an email to BulkMailPreviews@microsoft.com indicating: Organization name, Tenant ID and your onmicrosoft.com domain (e.g contoso.onmicrosoft.com). Slots are limited and will close on April 30th, 2026.Review your internal mailbox and message handling guidance and update training materials if needed.If you plan to participate in the Public Preview, review your Exchange transport rule and anti-spam policy configurations to determine if you want to opt-in.Monitor the product documentation. You can review the following: Bulk email detection and bulk complaint level (BCL) in cloud organizations[Compliance considerations]QuestionAnswerDoes the change alter how existing customer data is processed, stored, or accessed?Yes. Incoming email will receive the promotions classification and may be moved automatically to the Promotions folder depending on admin configuration.Does the change introduce or significantly modify AI or ML that interacts with customer data?Yes. The system learns from user actions when they move messages and applies that learning to future similar messages.Does the change include an admin control, and can it be controlled through Entra ID group membership?Yes. Admins can enable or disable Bulk Moves Enabled and can opt in to tagging during Public Preview. These controls can be scoped using existing admin delegation models.Does the change allow a user to enable or disable the feature themselves?Yes. Users can override tagging behavior by moving messages in or out of the Promotions folder, which trains the ML model and adjusts future message handling.",
-      "links": [
-        {
-          "label": "Bulk email detection and bulk complaint level (BCL) in cloud organizations",
-          "url": "https://learn.microsoft.com/defender-office-365/anti-spam-bulk-complaint-level-bcl-about"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center",
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Office 365"
       ]
     },
     {
@@ -3483,6 +3149,36 @@
       ]
     },
     {
+      "title": "Microsoft Entra ID: Optimizations for passkey registration experience",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1440968",
+      "published": "2026-07-27T22:53:36.710000+00:00",
+      "summary": "[What and why]We're rolling out optimizations to passkey registration across Microsoft Entra ID. These changes improve how passkey registration is handled through Registration Campaign, Authentication Strengths, and My Sign-Ins.The updated registration logic will more consistently:Guide users to...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1440968",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]We're rolling out optimizations to passkey registration across Microsoft Entra ID. These changes improve how passkey registration is handled through Registration Campaign, Authentication Strengths, and My Sign-Ins.The updated registration logic will more consistently:Guide users to register passkey types that comply with administrator configured passkey profile restrictions, reducing unsuccessful or non-compliant registration attempts.Prioritize registration of a passkey that is local to the user's current device when permitted by policy.These improvements are designed to increase successful passkey registrations, reduce registration friction, and help organizations strengthen adoption of phishing resistant authentication methods.There are no user interface changes associated with this update.[Rollout schedule]General Availability (Worldwide and GCC): Beginning in late August 2026 and expected to complete in late August 2026[Impact on your organization]Who is affectedUsers who register passkeys through Registration Campaign, Authentication Strengths, or My Sign-InsOrganizations using passkey profiles, including Synced-only, Device-bound-only, Attestation Enforced, and AAGUID-restricted configurationsOrganizations using AAGUID-restricted passkey profiles will benefit from these registration optimizations. The greatest benefit is expected for Microsoft-supported passkey experiences. Other AAGUID-restricted providers continue to be supported and can be configured as before.Platforms and servicesMicrosoft Entra ID Registration CampaignAuthentication StrengthsMy Sign-Ins self-service passkey registrationMicrosoft-supported passkey experiences for AAGUID-restricted profiles:Entra passkey on WindowsMicrosoft Authenticator passkeyiCloud Keychain passkeyGoogle Password Manager passkeyWhat will happenUsers will continue to register passkeys through the same registration screens and entry points they use today.Registration will more consistently align with administrator configured passkey profile requirements.When permitted by policy, registration will prioritize a passkey native to the user's current device to improve the sign-in experience.[Action required and recommendations]No action is required.Organizations should continue driving passkey adoption through Registration Campaign and Authentication Strengths. These optimizations are intended to improve the likelihood of successful passkey registration while helping users remain compliant with organizational passkey policies.[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
       "title": "[Launched] Generally Available: HTTP header insertion in Azure Firewall",
       "link": "https://azure.microsoft.com/updates?id=568115",
       "published": "2026-07-27T16:54:36+00:00",
@@ -3764,6 +3460,36 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Entra: Passwordless password change in My Sign-Ins",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1437671",
+      "published": "2026-07-23T22:39:34.487000+00:00",
+      "summary": "[What and Why]We're introducing a new Microsoft Entra capability that allows passwordless users to change their password directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key, or Windows Hello for Business. Users can complete this action even if they...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1437671",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and Why]We're introducing a new Microsoft Entra capability that allows passwordless users to change their password directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key, or Windows Hello for Business. Users can complete this action even if they don't know their current password and without using self-service password reset (SSPR) or contacting the helpdesk.Many organizations are adopting passwordless authentication but still maintain passwords for legacy applications and services. This update helps reduce password-related support requests and removes a common barrier to passwordless adoption. The feature is disabled by default and requires administrator enablement before users can access it.[Rollout Schedule]General Availability (Worldwide and GCC): Beginning in late October 2026 and expected to complete by late October 2026[Impact on Your Organization]Who is affectedMicrosoft Entra administrators who manage password change settingsUsers who have a registered passwordless authentication method (passkey, FIDO2 security key, or Windows Hello for Business) and also maintain a passwordOrganizations that choose to enable the featurePlatforms/ServicesMicrosoft EntraMy Sign-Ins (mysignins.microsoft.com)What will happenBecause this feature is off by default, there is no change to your users' experience unless you turn it on. After the feature is enabled, eligible users will see a new Change password option in My Sign-Ins.Users can authenticate with their passwordless credential and set a new password without knowing their existing password.Users are not required to enroll in or use SSPR to complete this action.Administrators can choose to enable or disable the capability through Microsoft Entra management interfaces available at release.Authentication continues to require a strong passwordless credential, such as a passkey, FIDO2 security key, or Windows Hello for Business.The setting is tenant-wide: you can turn it on for your entire tenant or leave it off for everyone. There is no per-user or per-group scoping. [Action Required/Recommendations]No action is required.If your organization plans to support passwordless password changes:Review your password management and passwordless authentication strategy.Evaluate whether enabling this capability aligns with your organization's security and support requirements.Communicate the new self-service capability to helpdesk and support teams.Update internal user guidance and documentation as needed.If your organization chooses to offer passwordless password changes, enable the feature through the Microsoft Entra admin experience or supported APIs when it becomes available in October 2026.Learn more Microsoft Learn documentation will be available when the feature releases in October. [Compliance Considerations]QuestionAnswerDoes the change include an admin control?Yes. The feature is disabled by default and requires explicit administrator enablement.Does the change modify how users can access or correct their personal data?Yes. Users gain a new self-service method to update their password using an existing passwordless credential.",
+      "links": [],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
       ]
     },
     {
@@ -4313,6 +4039,118 @@
       ]
     },
     {
+      "title": "(Updated) Microsoft Entra: Self-service password reset CAPTCHA protection updated",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1400824",
+      "published": "2026-07-20T22:13:25.033000+00:00",
+      "summary": "Updated July 20, 2026: We have updated the timeline. Thank you for your patience. [What and Why]We are updating bot protection in Microsoft Entra self-service password reset (SSPR) by replacing the legacy CAPTCHA with modern backend throttling and behavior-based abuse detection. This change...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1400824",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated July 20, 2026: We have updated the timeline. Thank you for your patience. [What and Why]We are updating bot protection in Microsoft Entra self-service password reset (SSPR) by replacing the legacy CAPTCHA with modern backend throttling and behavior-based abuse detection. This change improves security, accessibility, and reliability by reducing friction for users while strengthening protection against automated attacks and account enumeration. No configuration changes are required. This change is fully managed by Microsoft.[Rollout Schedule]General Availability (Worldwide): Rollout will begin in early August 2026 (previously late July) and is expected to complete by late August 2026 (previously mid-August).[Impact on Your Organization]Who is affectedAll Microsoft Entra tenants using self-service password reset (SSPR)Platforms/ServicesMicrosoft Entra, self-service password reset (web flow)What will happenThe legacy CAPTCHA challenge will be removed from the SSPR experience.Users will continue to reset passwords as they do today without additional prompts.Backend throttling and behavior-based detection will protect against bots and abuse.No users will be blocked from completing SSPR.There is no impact to users' ability to reset their passwords.No changes to authentication methods, policies, or configurations.No new admin controls will be introduced.The feature is enabled by default and managed by Microsoft.[Action Required/Recommendations]No action is required.As an optional best practice:Inform your helpdesk that CAPTCHA prompts will no longer appear in SSPR flows.Update internal documentation if it references CAPTCHA during password reset.[Compliance considerations] No compliance considerations identified, review as appropriate for your organization.",
+      "links": [],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "(Update)Microsoft Entra ID: General Availability of passkey profiles and migration for existing Passkeys (FIDO2) tenants",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1221452",
+      "published": "2026-07-20T18:35:44.443000+00:00",
+      "summary": "Updated July 20, 2026: We have updated the content. Thank you for your patience.[Introduction]Starting in March 2026, Microsoft Entra ID will introduce passkey profiles and synced passkeys to General Availability (GA). This update allows administrators to opt in to a new passkey profiles experience...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1221452",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated July 20, 2026: We have updated the content. Thank you for your patience.[Introduction]Starting in March 2026, Microsoft Entra ID will introduce passkey profiles and synced passkeys to General Availability (GA). This update allows administrators to opt in to a new passkey profiles experience that supports group-based passkey configurations and introduces a new passkeyType property.Important: Only tenants that already have Passkeys (FIDO2) enabled are affected by this update. The passkeyType property enables admins to configure:Device-bound passkeysSynced passkeysBothIf your tenant already has Passkeys (FIDO2) enabled and you do not opt in to passkey profiles during the initial rollout window, your tenant will be automatically migrated to the passkey profiles schema at the date range specified below. When this occurs: Existing Passkey (FIDO2) authentication method configurations will be moved into a Default passkey profile. The passkeyType value will be set based on the tenant’s current attestation settings. Synced passkeys will be enabled for tenants with attestation enforcement disabled. No new authentication methods are enabled as part of this migration. This migration also impacts Authentication methods registration campaign set to “Microsoft managed” state, which uses passkey configuration settings to determine which registration prompts are shown to users.Authentication Methods Registration Campaign changes (Microsoft-Managed Only)Tenants are impacted when all the following conditions are met:The Passkeys (FIDO2) authentication method policy is EnabledAuthentication methods registration campaign is set to “Microsoft managed” stateAllow self-service setup is EnabledTarget specific AAGUIDs is not selected (no AAGUID restrictions configured)The Authentication Methods Registration Campaign state is set to Microsoft-managedThe tenant has at least one user enabled for both synced passkeys and device‑bound passkeysOnly users who are enabled for both synced passkeys and device‑bound passkeys, with no passkey profile restrictions configured (i.e. attestation enforcement, AAGUID restrictions), will receive a passkey registration nudge during sign‑in.For these tenants, Microsoft-managed registration campaign settings will be updated after passkey profile automatic migration is complete. We will roll out changes incrementally to in-scope tenants according to the timeline outlined below. [When this will happen]Passkey profile and Synced passkeys General AvailabilityPublic cloud Worldwide, GCC: Rollout begins in early March 2026 and is expected to complete by late March 2026 GCC High, DoD clouds: Rollout begins in early May 2026 and is expected to complete by late May 2026 USNat, USSec: Rollout begins in early October 2026 (previously early July) and is expected to complete by late October 2026 (previously late July) Automatic migration for existing passkeys (FIDO2) enabled tenantsPublic cloud Worldwide, GCC: Rollout begins in early May 2026 and is expected to complete by late June 2026GCC High, DoD clouds: Rollout begins in early October 2026 (previously early August) and is expected to complete by late October 2026 (previously late August)USNat, USSec: Rollout begins in early October 2026 (previously early August) and is expected to complete by late October 2026 (previously late August)Authentication Methods registration campaign changes in Microsoft-Managed state (for in-scope tenants):Public cloud Worldwide, GCC: Rollout begins in early May 2026 and is expected to complete by late June 2026 [How this affects your organization]Automatic migration for existing passkeys (FIDO2) enabled tenants What will happen:If you have not opted in to passkey profiles by your automatic enablement period, your tenant will be migrated to passkey profiles.Your existing Passkey (FIDO2) configurations will be migrated into a Default passkey profileNew passkeyType property will be auto-populatedIf enforce attestation is enabled, then device-bound allowedIf enforce attestation is disabled, then device-bound and synced allowedAny existing key restrictions will remain intactAny existing user targets will be assigned to the Default passkey profileAuthentication Methods registration campaign changes in Microsoft-Managed state (for in-scope tenants) What will happen:Microsoft-managed registration campaign settings will be updated: \"Targeted authentication method” will change from Microsoft Authenticator to “passkeys (FIDO2)”. “Days allowed to snooze” setting will change from 3days to “1 day”. This setting will no longer be configurable. “Limited number of snoozes” setting will change from Enabled to \"Disabled”. This setting will no longer be configurable. The default user targeting will be updated from voice call or text message users to all multifactor authentication (MFA) capable users. What is the end user impact: Once the above changes have taken effect, users targeted in the registration campaign will begin to receive passkey registration nudges during sign-in flows after they have completed multifactor authentication. [What you can do to prepare]If you want a configuration different from the migration defaults, review the timeline above and opt in to passkey profiles before your tenant’s automatic enablement window begins. Then configure the Default passkey profile’s passkeyType to your preferred values.We also recommend:Review your registration campaign configuration, especially if its set to Microsoft-managed. If you do not want registration campaign to target passkeys, you can: Switch the registration campaign state to Enabled and continue targeting Microsoft Authenticator, or Set the registration campaign state to Disabled.Update runbooks and help content so your help desk and end users understand any changes in passkey availability or behavior. Learn more:Enable passkeys for your organization - Microsoft Entra ID | Microsoft Learn How to Enable Passkey (FIDO2) Profiles in Microsoft Entra ID (preview) -...",
+      "links": [
+        {
+          "label": "Enable passkeys for your organization - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-enable-passkey-fido2#enable-passkey-fido2-authentication-method"
+        },
+        {
+          "label": "How to Enable Passkey (FIDO2) Profiles in Microsoft Entra ID (preview) - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-authentication-passkey-profiles"
+        },
+        {
+          "label": "How to Enable Synced Passkeys (FIDO2) in Microsoft Entra ID (preview) - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-authentication-synced-passkeys"
+        },
+        {
+          "label": "Synced passkeys FAQ - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/synced-passkey-faq"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "(Updated) General Availability: Microsoft Entra passkeys on Windows",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1282568",
+      "published": "2026-07-20T18:28:33.273000+00:00",
+      "summary": "Updated July 20, 2026: We have updated the timeline. Thank you for your patience. [Introduction]Microsoft Entra passkeys on Windows will soon be Generally Available, enabling phishing‑resistant, passwordless sign‑in to Microsoft Entra‑protected resources from Windows devices.The Public Preview of...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1282568",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated July 20, 2026: We have updated the timeline. Thank you for your patience. [Introduction]Microsoft Entra passkeys on Windows will soon be Generally Available, enabling phishing‑resistant, passwordless sign‑in to Microsoft Entra‑protected resources from Windows devices.The Public Preview of this capability was previously announced in MC1247893.Users can create device‑bound passkeys stored in the Windows Hello container and authenticate using Windows Hello methods (face, fingerprint, or PIN). This expands passwordless authentication support to Windows devices that aren’t Microsoft Entra‑joined or registered, helping organizations strengthen security and reduce reliance on passwords across corporate‑managed, personal, and shared device scenarios.[When this will happen:]General Availability (Worldwide, GCC): We will begin rolling out in late April 2026 and expect to complete by mid‑June 2026.General Availability (GCC High, DoD): We will begin rolling out in early October 2026 (previously early September 2026) and expect to complete by late October 2026 (previously late September).How this affects your organization:Who is affected:Organizations using Microsoft Entra ID with passkeys enabled in the Authentication Methods policy whose users sign in from Windows devices, including:Corporate‑managed PCsPersonal devicesShared devicesWhat will happen:With this General Availability release:Microsoft Entra passkeys on Windows will no longer require explicit opt‑in through Windows Hello AAGUID allow‑listing in a passkey (FIDO2) profile.This represents a change from Public Preview behavior, where administrators were required to explicitly allow Windows Hello AAGUIDs in a passkey profile for Microsoft Entra passkeys on Windows to function.If your passkey profile allows device‑bound, non‑attested passkeys:Users scoped to that profile will now be able to register and use Microsoft Entra passkeys on Windows by default without additional administrator configuration.As a result:Users in scope of passkey profiles that allow device‑bound, non‑attested passkeys may begin registering and using passkeys on Windows devices.If Conditional Access policies allow:Passkeys can be created and used on Windows devices that are not Microsoft Entra‑joined or registered, including personal or shared PCs.Each Windows device requires separate passkey registration per Entra account.Windows Hello for Business remains recommended for managed, Microsoft Entra‑joined or registered devices.Passkeys on Windows supplement unmanaged or shared device scenarios and do not support device sign‑in.Attestation is not currently supported for Microsoft Entra passkeys on Windows but is planned for a future update.What you can do to prepare:No action is required for most organizations.If you do not want users to register or use Microsoft Entra passkeys on Windows:Update the relevant passkey (FIDO2) profile to block Windows Hello AAGUIDs.Review existing passkey profiles that allow device‑bound, non‑attested passkeys.Add Windows Hello AAGUIDs to the block list in passkey profiles where passkey usage on Windows devices should not be permitted.Learn more: Enable Microsoft Entra passkey on Windows | Microsoft Learn (will be updated before GA rollout)[Compliance considerations:]Compliance areaExplanationDoes the change modify, interrupt, or disable Conditional Access policies?Existing Conditional Access policies continue to govern whether passkeys can be created or used on unmanaged Windows devices.Does the change include an admin control and can it be controlled through Entra ID group membership?Admins can control passkey availability through Authentication Methods policies and FIDO2 passkey profiles scoped to Microsoft Entra ID groups.Does the change allow a user to enable and disable the feature themselves?Users may register Microsoft Entra passkeys on Windows devices if permitted by administrator policy configuration.",
+      "links": [
+        {
+          "label": "Windows Hello AAGUIDs",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-authentication-entra-passkeys-on-windows#supported-windows-hello-passkey-authenticator-attestation-guids-aaguids)"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
       "title": "[In preview] Public Preview: Protect sensitive generative AI telemetry in Application Insights and Microsoft Foundry",
       "link": "https://azure.microsoft.com/updates?id=567594",
       "published": "2026-07-20T15:09:43+00:00",
@@ -4740,6 +4578,49 @@
           "label": "embedded in Microsoft Defender",
           "url": "https://learn.microsoft.com/defender-xdr/security-copilot-in-microsoft-365-defender"
         }
+      ]
+    },
+    {
+      "title": "Microsoft Entra: Passkeys by default and retirement of Microsoft-provided SMS and voice authentication",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1426371",
+      "published": "2026-07-16T18:55:54.040000+00:00",
+      "summary": "[What and why]Passkeys will become the default authentication experience in Microsoft Entra on September 1, 2026. Telecom-based methods (SMS and voice) will transition to customer-configured providers through the Microsoft Security Store. The AI era demands stronger, phishing-resistant...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1426371",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]Passkeys will become the default authentication experience in Microsoft Entra on September 1, 2026. Telecom-based methods (SMS and voice) will transition to customer-configured providers through the Microsoft Security Store. The AI era demands stronger, phishing-resistant authentication. We are making passkeys the default authentication experience in Microsoft Entra to help customers securely adopt AI at scale. As part of this transition, SMS and voice will no longer be available as multifactor authentication methods starting February 1, 2027. SMS and voice do not offer sufficient levels of security in comparison to passkeys. Traditional authentication methods including passwords, SMS one-time passcodes, and voice-based verification remain vulnerable to phishing, interception, and social engineering attacks.We strongly recommend moving away from telephony-based authentication methods to improve security and prevent identity attacks. Passkeys are included in all Microsoft Entra plans, so making this critical security change comes at no additional cost for you. While we recommend adopting passkeys for phishing-resistant authentication as quickly as possible, we also recognize that some customers may have business needs that make an immediate transition impractical. In such cases, customers may continue to use SMS and voice by selecting a telecom provider in the Microsoft Security Store. [Rollout schedule] September 1, 2026: Rollout begins. Changes may take time to reach all tenants and will be deployed gradually. Passkeys will be automatically enabled for users currently enabled for SMS or voice. Registration Campaign will be set to Microsoft-Managed targeting passkeys for all users in eligible tenants. Users will be prompted to register a passkey during MFA sign-in; users will be able to skip. September 18th, 2026:review the telecom providers and related information available through the Microsoft Security Store to evaluate which optiohn best meets your regional and compliance requirements.October 30, 2026: Customers who need to continue to use SMS or voice will be able to choose from a list of telecom providers available through the Microsoft Security Store. February 1, 2027: Microsoft-provided SMS and voice authentication will be retired. Only customer-configured telecom providers will support SMS and voice going forward. Passkeys become the default, recommended authentication method. If no action is taken, tenants relying only on Microsoft-provided SMS or voice may experience sign-in disruptions after February 1, 2027. [Impact on your organization]Who is affectedAll Microsoft Entra ID tenants enabled for SMS or voice authenticationUsers enabled for SMS or voice Platforms and servicesMicrosoft Entra IDMultifactor authenticationMicrosoft Security StoreWhat will happenPasskeys will be automatically enabled for eligible users and Registration Campaign for passkeys will be set to Microsoft Managed state starting September 1, 2026. Users will be prompted during MFA sign-in to register a passkey; users can skip the prompt. Microsoft-provided SMS and voice will be retired on February 1, 2027.Organizations that still require telephony methods must configure a telecom provider in the Microsoft Security Store.Tenants that do not configure a provider and continue relying on Microsoft telephony will face SMS and voice authentication disruptions after retirement.[Action required and recommendations]Admins should take the following steps:Prepare for passkeysPlan to transition users to passkeys and communicate upcoming registration prompts. Decide if SMS or voice is still requiredIf SMS or voice is still needed, you must configure a customer-managed telecom provider. We recommend completing setup at least 4 weeks before the February 1 enforcement to allow sufficient time for testing and a cautious transition. Set up a telecom provider before February 1, 2027SMS and voice will only work after this date if a customer-configured telecom provider is enabled. Use temporary opt-out if neededA temporary opt-out will be available for the September 1, 2026 through February 1, 2027 changes. This allows you to delay passkey and Registration Campaign enablement while you complete transition activities, such as configuring customer-managed telecom providers or migrating to other authentication methods. After February 1, 2027, passkey enablement will be enforced for all users in scope. Additional documentation and more information will be available on Microsoft Learn and the Tech Community.For more information please visit: https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement more:Deploy passkey adoption campaigns with the Conditional Access Optimization Agent | Microsoft Entra | Microsoft LearnGet started with phishing-resistant passwordless authentication deployment in Microsoft Entra ID | Authentication | Microsoft Entra ID | Microsoft Entra | Microsoft LearnIt's Time to Hang Up on Phone Transports for Authentication | Microsoft Entra BlogPasskeys by default and retirement of Microsoft-provided SMS and voice authentication | Microsoft Entra | Microsoft Learn[Compliance considerations]Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement more:",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
+        },
+        {
+          "label": "Get started with phishing-resistant passwordless authentication deployment in Microsoft Entra ID | Authentication |...",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-plan-prerequisites-phishing-resistant-passwordless-authentication%22 target="
+        },
+        {
+          "label": "It's Time to Hang Up on Phone Transports for Authentication | Microsoft Entra Blog",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/its-time-to-hang-up-on-phone-transports-for-authentication/1751752%22 target="
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
       ]
     },
     {
@@ -5680,30 +5561,6 @@
       "source_kind": "rss",
       "vendor": "Microsoft",
       "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Retirement: Support for Python-2.7; 3.8 and PowerShell- 7.1; 7.2 will be retired on September 30, 2026",
-      "link": "https://azure.microsoft.com/updates?id=567556",
-      "published": "2026-07-10T21:33:34+00:00",
-      "summary": "Starting October 1, 2026, the specified runtime versions Python 2.7, Python 3.8, and PowerShell 7.1 & 7.2. will no longer be supported by Automation. Runbooks using these versions may continue to run but will not receive security updates, bug fixes, or o",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
       "board_id": null,
       "products": [
         {
