@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-12T02:11:52.620005+00:00",
-  "totalArticles": 139,
+  "lastUpdated": "2026-08-12T07:37:39.040874+00:00",
+  "totalArticles": 138,
   "articles": [
     {
       "title": "Microsoft Entra: Windows Hello for Business and macOS Platform Single Sign-on can now be used as a second factor for MFA",
@@ -1040,71 +1040,6 @@
       ],
       "tags": [
         "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "Building Microsoft Sentinel Connectors in Minutes with the Sentinel Connector Builder Agent",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/building-microsoft-sentinel-connectors-in-minutes-with-the/ba-p/4544378",
-      "published": "2026-08-11T16:00:00+00:00",
-      "summary": "Overview We previously announced the public preview of the Microsoft Sentinel connector builder agent via VS code extension, that helps developers build Microsoft Sentinel codeless connectors faster with low-code and AI-assisted prompts. This post walks through a hands-on lab using a mock Network...",
-      "author": "Robert_Moriarty",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Threat Intelligence"
-      ],
-      "body": "Overview We previously announced the public preview of the Microsoft Sentinel connector builder agent via VS code extension, that helps developers build Microsoft Sentinel codeless connectors faster with low-code and AI-assisted prompts. This post walks through a hands-on lab using a mock Network Log API to demonstrate how the Sentinel connector builder agent simplifies building Codeless Connector Framework (CCF) pull connectors. Instead of manually creating ingestion infrastructure and configuration files, you’ll use a guided, conversational workflow in VS Code to generate connector artifacts, test them against a live API, and deploy them into Microsoft Sentinel. The lab focuses on the end-to-end experience ranging from API setup to validated connector deployment so you can see how quickly a working integration can be produced. For additional guidance beyond this lab, refer to our MS Learn documentation. The Lab Environment This lab is built around a mock Network Log API hosted as an Azure Function App. The purpose of the lab environment is to give us a live API that we can use to build, validate, and test the Sentinel CCF connector builder agent against end to end. The API exposes 50 synthetic network activity records that look and behave like a real product data source, including web traffic, DNS requests, blocked remote access attempts, malware command-and-control blocks, VPN activity, and other common network events. That makes it a useful stand-in for the type of telemetry many teams want to onboard into Microsoft Sentinel. The API is intentionally shaped like the kind of source a customer might expose for telemetry retrieval. It uses API key authentication through the X-API-Key header, returns paginated results through a nextLink model, and provides a predictable response structure that the builder agent can map into a pull connector configuration. The repo contains everything needed for the walkthrough. There is an ARM template to deploy the Function App, reference documentation for the API, and a sample connector package showing the generated polling config, table schema, DCR, and connector definition. The end goal of the lab is straightforward: use the builder agent to generate a CCF pull connector that ingests this API into the custom NetworkLogAPIGetNetworkLogs_CL table in Sentinel. Prerequisites Before starting, make sure you have the following: Azure subscription -- with Contributor access on a resource group (for deploying the Function App)...",
-      "links": [
-        {
-          "label": "Microsoft Sentinel connector builder agent",
-          "url": "https://aka.ms/SentinelCCF_Connector-Builder-Agent"
-        },
-        {
-          "label": "MS Learn documentation",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/isv/create-custom-connector-builder-agent"
-        },
-        {
-          "label": "Onboard Microsoft Sentinel to a Log Analytics workspace",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/quickstart-onboard?tabs=defender-portal"
-        },
-        {
-          "label": "How to install the Azure CLI",
-          "url": "https://learn.microsoft.com/en-us/cli/azure/install-azure-cli"
-        },
-        {
-          "label": "Microsoft Sentinel for Visual Studio Code",
-          "url": "https://marketplace.visualstudio.com/items?itemName=ms-security.ms-sentinel"
-        },
-        {
-          "label": "Azure-Sentinel/Tools/CCF-Connector-Builder-Agent-Accelerator at master · Azure/Azure-Sentinel",
-          "url": "https://github.com/Azure/Azure-Sentinel/tree/master/Tools/CCF-Connector-Builder-Agent-Accelerator"
-        },
-        {
-          "label": "our intake form",
-          "url": "https://aka.ms/appassurerequest"
-        },
-        {
-          "label": "Building a CCF Nested API Pull Connector: A Technical Lab Walkthrough",
-          "url": "https://aka.ms/AppAssure_Nested-API-Connector-Lab"
-        }
       ]
     },
     {
