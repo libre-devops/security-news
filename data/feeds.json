@@ -1,8 +1,32 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-12T07:37:39.040874+00:00",
+  "lastUpdated": "2026-08-12T13:16:52.424710+00:00",
   "totalArticles": 138,
   "articles": [
+    {
+      "title": "Help shape the future of resilient private 5G",
+      "link": "https://www.ncsc.gov.uk/blogs/help-shape-the-future-of-resilient-private-5g",
+      "published": "2026-08-12T12:00:00+00:00",
+      "summary": "The NCSC wants to collaborate with organisations developing technologies and approaches for secure, resilient and deployable private 5G",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
     {
       "title": "Microsoft Entra: Windows Hello for Business and macOS Platform Single Sign-on can now be used as a second factor for MFA",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568076",
@@ -1040,6 +1064,71 @@
       ],
       "tags": [
         "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Building Microsoft Sentinel Connectors in Minutes with the Sentinel Connector Builder Agent",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/building-microsoft-sentinel-connectors-in-minutes-with-the/ba-p/4544378",
+      "published": "2026-08-11T16:00:00+00:00",
+      "summary": "Overview We previously announced the public preview of the Microsoft Sentinel connector builder agent via VS code extension, that helps developers build Microsoft Sentinel codeless connectors faster with low-code and AI-assisted prompts. This post walks through a hands-on lab using a mock Network...",
+      "author": "Robert_Moriarty",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel",
+        "Threat Intelligence"
+      ],
+      "body": "Overview We previously announced the public preview of the Microsoft Sentinel connector builder agent via VS code extension, that helps developers build Microsoft Sentinel codeless connectors faster with low-code and AI-assisted prompts. This post walks through a hands-on lab using a mock Network Log API to demonstrate how the Sentinel connector builder agent simplifies building Codeless Connector Framework (CCF) pull connectors. Instead of manually creating ingestion infrastructure and configuration files, you’ll use a guided, conversational workflow in VS Code to generate connector artifacts, test them against a live API, and deploy them into Microsoft Sentinel. The lab focuses on the end-to-end experience ranging from API setup to validated connector deployment so you can see how quickly a working integration can be produced. For additional guidance beyond this lab, refer to our MS Learn documentation. The Lab Environment This lab is built around a mock Network Log API hosted as an Azure Function App. The purpose of the lab environment is to give us a live API that we can use to build, validate, and test the Sentinel CCF connector builder agent against end to end. The API exposes 50 synthetic network activity records that look and behave like a real product data source, including web traffic, DNS requests, blocked remote access attempts, malware command-and-control blocks, VPN activity, and other common network events. That makes it a useful stand-in for the type of telemetry many teams want to onboard into Microsoft Sentinel. The API is intentionally shaped like the kind of source a customer might expose for telemetry retrieval. It uses API key authentication through the X-API-Key header, returns paginated results through a nextLink model, and provides a predictable response structure that the builder agent can map into a pull connector configuration. The repo contains everything needed for the walkthrough. There is an ARM template to deploy the Function App, reference documentation for the API, and a sample connector package showing the generated polling config, table schema, DCR, and connector definition. The end goal of the lab is straightforward: use the builder agent to generate a CCF pull connector that ingests this API into the custom NetworkLogAPIGetNetworkLogs_CL table in Sentinel. Prerequisites Before starting, make sure you have the following: Azure subscription -- with Contributor access on a resource group (for deploying the Function App)...",
+      "links": [
+        {
+          "label": "Microsoft Sentinel connector builder agent",
+          "url": "https://aka.ms/SentinelCCF_Connector-Builder-Agent"
+        },
+        {
+          "label": "MS Learn documentation",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/isv/create-custom-connector-builder-agent"
+        },
+        {
+          "label": "Onboard Microsoft Sentinel to a Log Analytics workspace",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/quickstart-onboard?tabs=defender-portal"
+        },
+        {
+          "label": "How to install the Azure CLI",
+          "url": "https://learn.microsoft.com/en-us/cli/azure/install-azure-cli"
+        },
+        {
+          "label": "Microsoft Sentinel for Visual Studio Code",
+          "url": "https://marketplace.visualstudio.com/items?itemName=ms-security.ms-sentinel"
+        },
+        {
+          "label": "Azure-Sentinel/Tools/CCF-Connector-Builder-Agent-Accelerator at master · Azure/Azure-Sentinel",
+          "url": "https://github.com/Azure/Azure-Sentinel/tree/master/Tools/CCF-Connector-Builder-Agent-Accelerator"
+        },
+        {
+          "label": "our intake form",
+          "url": "https://aka.ms/appassurerequest"
+        },
+        {
+          "label": "Building a CCF Nested API Pull Connector: A Technical Lab Walkthrough",
+          "url": "https://aka.ms/AppAssure_Nested-API-Connector-Lab"
+        }
       ]
     },
     {
@@ -5620,69 +5709,6 @@
         {
           "label": "https://learn.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview",
           "url": "https://learn.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview"
-        }
-      ]
-    },
-    {
-      "title": "UK and Allies urge critical sectors to improve defences against Russian intelligence targeting",
-      "link": "https://www.ncsc.gov.uk/news/uk-and-allies-urge-critical-sectors-to-improve-defences-against-russian-intelligence-targeting",
-      "published": "2026-07-13T12:00:00+00:00",
-      "summary": "New advisory highlights Russian state cyber actors’ global exploitation of poorly configured routers",
-      "author": "",
-      "source": "NCSC Security Feed",
-      "source_id": "ncsc_security",
-      "source_group": "Official NCSC",
-      "source_kind": "rss",
-      "vendor": "NCSC",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ncsc-guidance",
-          "name": "NCSC Guidance",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Secure Native Access to Azure Kubernetes Service (AKS) Private Clusters with Azure Bastion",
-      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/secure-native-access-to-azure-kubernetes-service-aks-private/ba-p/4535123",
-      "published": "2026-07-13T07:37:52+00:00",
-      "summary": "Written in Collaboration with AvirupChat​ ShabazShaik​ Mohit_Kumar​ YuriDiogenes​ Introduction: As organizations move toward containerized workloads such as Azure Kubernetes Service (AKS), secure access to cluster resources becomes critical. Making the Kubernetes API server private, therefore,...",
-      "author": "saikishor",
-      "source": "Azure Network Security",
-      "source_id": "network_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Network Security",
-      "board_id": "azurenetworksecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Written in Collaboration with AvirupChat​ ShabazShaik​ Mohit_Kumar​ YuriDiogenes​ Introduction: As organizations move toward containerized workloads such as Azure Kubernetes Service (AKS), secure access to cluster resources becomes critical. Making the Kubernetes API server private, therefore, significantly reduces the attack surface. However, it also changes how engineers perform routine management tasks. Operations as simple as running kubectl logs, describing resources, or troubleshooting workloads require connectivity to the virtual network hosting the cluster. This challenge becomes even more apparent during day-to-day operations. An engineer may have the necessary Kubernetes credentials and Azure RBAC permissions yet still be unable to access the cluster because the API server is reachable only from within the private network. Establishing VPN connectivity, using jump hosts, or deploying dedicated management workstations often becomes part of the operational workflow, adding complexity to what should be straightforward administrative tasks. This balance between maintaining strong network isolation and enabling efficient cluster management is exactly what Azure Bastion's native client tunneling support for private AKS clusters is designed to address. Many Azure customers already use Azure Bastion to securely access virtual machines without exposing them to the public internet. Native client tunneling now brings that same secure access model to AKS private clusters. This capability is in public preview currently. Before discussing how it works, it is worth understanding the operational challenges it is designed to solve and how it's done. Bastion for Azure Kubernetes Service (AKS) private clusters: At its core, Azure Bastion is designed to simplify secure access to private Azure resources. Since its launch, it has provided browser-based and native client RDP and SSH connectivity to Azure VMs without exposing management ports to the internet. No public IPs on your VMs. No inbound NSG rules for port 22 or 3389. Just TLS over port 443, routed through a fully managed service that Microsoft patches, scales, and secures on your behalf. When you establish a Bastion tunnel to your private AKS cluster, you are not signing in to an intermediary machine and running kubectl from there. You are opening an encrypted tunnel from your local machine, through Bastion, directly to the private API server endpoint. Your kubeconfig points to localhost on a dynamically...",
-      "links": [
-        {
-          "label": "AKS identity documentation",
-          "url": "https://learn.microsoft.com/en-us/azure/aks/concepts-identity"
-        },
-        {
-          "label": "Microsoft Learn",
-          "url": "https://learn.microsoft.com/en-us/azure/bastion/bastion-connect-to-aks-private-cluster"
-        },
-        {
-          "label": "AKS GitHub repository",
-          "url": "https://github.com/Azure/AKS/issues"
         }
       ]
     }
