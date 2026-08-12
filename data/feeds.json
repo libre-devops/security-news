@@ -1,8 +1,82 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-12T13:16:52.424710+00:00",
-  "totalArticles": 138,
+  "lastUpdated": "2026-08-12T19:05:14.651098+00:00",
+  "totalArticles": 141,
   "articles": [
+    {
+      "title": "CVE-2026-19311- Missing Authorization in OpenSearch Alerting Plugin",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-078-aws/",
+      "published": "2026-08-12T18:46:36+00:00",
+      "summary": "Bulletin ID: 2026-078-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/12/2026 11:30 AM PDT Description: OpenSearch is a community-driven, open-source search and analytics suite. We identified CVE-2026-19311, a missing authorization issue in the Execute Monitor API...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-078-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/12/2026 11:30 AM PDT Description: OpenSearch is a community-driven, open-source search and analytics suite. We identified CVE-2026-19311, a missing authorization issue in the Execute Monitor API of the OpenSearch Alerting plugin. This issue may allow an authenticated user with the alerting_full_access role to read, modify, or delete arbitrary index data via a crafted inline monitor request with unintentional data source and input index parameters. Impacted Versions: OpenSearch Alerting Plugin (open-source, self-managed): - Affected: 2.4.0 through 2.19.5, 3.0.0 through 3.7.0 - Fixed: 2.19.6, 3.8.0 Amazon OpenSearch Service (AWS Managed): - Affected: All domains running engine versions 2.4 through 3.5 - Fixed: Service software R20260428-P3 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "[Launched] Generally Available: Batch rule updates for Azure Front Door",
+      "link": "https://azure.microsoft.com/updates?id=569246",
+      "published": "2026-08-12T17:03:08+00:00",
+      "summary": "Batch rule updates are now generally available for Azure Front Door Standard and Premium. This capability enables customers to add, update, delete, or reorder multiple rules in a rule set as a coordinated operation, ensuring that all changes are applied t",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: Azure Front Door mutual TLS",
+      "link": "https://azure.microsoft.com/updates?id=569251",
+      "published": "2026-08-12T17:01:19+00:00",
+      "summary": "Mutual TLS, also known as client certificate authentication, enables Azure Front Door to authenticate clients using X.509 certificates before requests reach an application. It helps protect sensitive applications and APIs across business-to-business, Inte",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Help shape the future of resilient private 5G",
       "link": "https://www.ncsc.gov.uk/blogs/help-shape-the-future-of-resilient-private-5g",
@@ -1547,6 +1621,32 @@
       ]
     },
     {
+      "title": "CVE-2026-18954 - Incorrect authorization in the aggregation pipeline tool in Amazon AWS Labs DocumentDB MCP Server",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-076-aws/",
+      "published": "2026-08-05T23:23:30+00:00",
+      "summary": "Bulletin ID: 2026-076-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/05/2026 13:00 PM PDT Description: Amazon DocumentDB MCP Server is an open-source Model Context Protocol (MCP) server that enables AI assistants to interact with Amazon DocumentDB databases. We...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-076-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/05/2026 13:00 PM PDT Description: Amazon DocumentDB MCP Server is an open-source Model Context Protocol (MCP) server that enables AI assistants to interact with Amazon DocumentDB databases. We identified CVE-2026-18954, an incorrect authorization issue where write-capable aggregation pipeline stages ($out, $merge) bypass the read-only mode enforcement logic, potentially allowing an authenticated MCP client to perform write operations on the connected database. Impacted versions: < 1.0.12 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
       "title": "Monthly News-August 2026",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/monthly-news-august-2026/ba-p/4544388",
       "published": "2026-08-05T22:15:47+00:00",
@@ -2267,32 +2367,6 @@
           "url": "https://learn.microsoft.com/defender-endpoint/respond-machine-alerts#isolate-device---automatic-attack-disruption-preview"
         }
       ]
-    },
-    {
-      "title": "CVE-2026-18830 - Issue with Amazon Bedrock AgentCore harness – Insufficient Input Validation",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-073-aws/",
-      "published": "2026-08-04T17:45:00+00:00",
-      "summary": "Bulletin ID: 2026-073-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/04/2026 10:00 AM PDT Description: We have identified CVE-2026-18830 in the Amazon Bedrock AgentCore harness InvokeHarness API. This issue could allow an authenticated user to execute configured...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-073-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/04/2026 10:00 AM PDT Description: We have identified CVE-2026-18830 in the Amazon Bedrock AgentCore harness InvokeHarness API. This issue could allow an authenticated user to execute configured tools while bypassing model invocation and associated security controls. When the most recent message in an InvokeHarness request contained a tool-use content block, the agent event loop could dispatch the named tool directly, without model mediation. Please note that potential impact was limited to the tools configured on a given harness. A harness with no configured tools could not execute any tool, and a harness with a restricted tool set was limited to that set. Impacted versions: Amazon Bedrock AgentCore harness InvokeHarness API prior to July 31, 2026. Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
     },
     {
       "title": "(Updated) Microsoft Entra ID SSPR will require registered authentication methods starting November 9, 2026",
@@ -3791,32 +3865,6 @@
       ]
     },
     {
-      "title": "CVE-2026-16796 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-065-aws/",
-      "published": "2026-07-23T20:14:18+00:00",
-      "summary": "Bulletin ID: 2026-065-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/23/2026 13:00 PM PDT Description: The AWS Bedrock AgentCore Python SDK (bedrock-agentcore) provides tools for building AI agents, including a Code Interpreter client that installs Python packages...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-065-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/23/2026 13:00 PM PDT Description: The AWS Bedrock AgentCore Python SDK (bedrock-agentcore) provides tools for building AI agents, including a Code Interpreter client that installs Python packages into a managed sandbox. We identified CVE-2026-16796, an improper neutralization of argument delimiters in the install_packages() method that might allow a remote authenticated user to execute arbitrary commands within the Code Interpreter sandbox via crafted package name arguments. Impacted versions: bedrock-agentcore version <1.18.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "CVE-2026-16756 - Allocation of resources without limits in the default aws-smithy-http-server serve() path allows unauthenticated Slowloris denial of service",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-064-aws/",
       "published": "2026-07-23T18:39:11+00:00",
@@ -4337,6 +4385,32 @@
       ]
     },
     {
+      "title": "CVE-2026-16317 and CVE-2026-16318: Issues with s2n-tls: an open-source implementation of the TLS/SSL protocols",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-062-aws/",
+      "published": "2026-07-21T20:19:37+00:00",
+      "summary": "Bulletin ID: 2026-062-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/21/2026 13:15 PM PDT Description: s2n-tls is an open source C99 implementation of the TLS/SSL protocol. We have identified two distinct issues: - CVE-2026-16317: Silent Drop of TLS 1.3 Encrypted...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-062-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/21/2026 13:15 PM PDT Description: s2n-tls is an open source C99 implementation of the TLS/SSL protocol. We have identified two distinct issues: - CVE-2026-16317: Silent Drop of TLS 1.3 Encrypted Records in s2n-tls Missing validation of the outer content_type byte on TLS 1.3 encrypted records in s2n-tls allows an active man-in-the-middle to silently drop individual application data records without either endpoint detecting the modification. RFC 8446 Section 5.2 requires that the outer content_type of all encrypted TLS 1.3 records must be application_data (0x17). The s2n-tls AEAD implementation hardcodes this value in the additional authenticated data rather than using the actual wire byte, so the outer content_type is not covered by the authentication tag. All TLS 1.3 connections are affected. Both TLS clients and servers are affected. TLS 1.2 and QUIC connections are not affected. - CVE-2026-16318: QUIC Transport Parameters Memory Leak During HelloRetryRequest in s2n-tls Incorrect use of s2n_alloc instead of s2n_realloc in the QUIC transport parameters extension handler in s2n-tls causes one memory allocation to be leaked each time a QUIC-enabled TLS 1.3 connection goes through a HelloRetryRequest. This can occur during normal handshakes when a client offers a key share group the server does not prefer, and can lead to increased memory consumption on long-running server processes. Only QUIC-enabled deployments are affected. Impacted versions: <= v1.7.5 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
       "title": "(Updated) Microsoft Entra: Self-service password reset CAPTCHA protection updated",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1400824",
       "published": "2026-07-20T22:13:25.033000+00:00",
@@ -4730,10 +4804,10 @@
       "links": []
     },
     {
-      "title": "CVE-2026-12283 - Issue with Athena Federated Query Synapse Connector",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-059-aws/",
-      "published": "2026-07-17T19:09:51+00:00",
-      "summary": "Bulletin ID: 2026-059-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/17/2026 12:00 PM PDT Description: Amazon Athena is a serverless, interactive query service that lets you analyze data directly in Amazon S3 using standard SQL. Athena Query Federation is a feature...",
+      "title": "CVE-2026-15415 - Path traversal and arbitrary file write in the workflow linters of aws-healthomics-mcp-server",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-060-aws/",
+      "published": "2026-07-17T19:44:21+00:00",
+      "summary": "Bulletin ID: 2026-060-AWS Scope: AWS Content Type: Important (requires attention) / Informational Publication Date: 07/17/2026 12:45 PM PDT Description: AWS HealthOmics is a HIPAA-eligible service that fully manages the compute, storage, and workflow engine infrastructure required to run...",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
       "source_id": "aws_security",
@@ -4752,7 +4826,7 @@
       "tags": [
         "AWS Security"
       ],
-      "body": "Bulletin ID: 2026-059-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/17/2026 12:00 PM PDT Description: Amazon Athena is a serverless, interactive query service that lets you analyze data directly in Amazon S3 using standard SQL. Athena Query Federation is a feature that allows you to connect to data sources outside of Amazon S3 like DynamoDB, Azure Synapse, and custom connectors using standard SQL syntax. These connectors are open source and deployed to the Athena service on a regular basis. We identified CVE-2026-12283. A user with access to an Azure Synapse account can create a table with a specially crafted name that, when queried through the Athena Synapse connector, could result in unintended data being returned. Impacted versions: - versions >= v2022.20.1 (released on 5/19/2022) AND - versions <= v2026.19.1 (released on 5/28/2026) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "body": "Bulletin ID: 2026-060-AWS Scope: AWS Content Type: Important (requires attention) / Informational Publication Date: 07/17/2026 12:45 PM PDT Description: AWS HealthOmics is a HIPAA-eligible service that fully manages the compute, storage, and workflow engine infrastructure required to run bioinformatics analyses at scale for clinical diagnostics, drug discovery, and agricultural research. We identified CVE-2026-15415, where improper limitation of a pathname to a restricted directory in the linting tools of the AWS HealthOmics MCP Server (aws-healthomics-mcp-server) before version 0.0.36 might allow an actor who can influence the MCP agent to write an actor-controlled content to arbitrary locations outside the intended workflow bundle directory, via directory traversal sequences in the workflow_files input. Impacted versions: aws-healthomics-mcp-server <= 0.0.35 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
@@ -4922,10 +4996,10 @@
       ]
     },
     {
-      "title": "CVE-2026-15895: OS command injection in jsii-diff in AWS jsii",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-057-aws/",
-      "published": "2026-07-16T17:35:31+00:00",
-      "summary": "Bulletin ID: 2026-057-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/15/2026 12:00 PM PDT Description: jsii-diff is a command line tool to compare the API differences between two jsii assemblies, and report errors if there are backwards-incompatible changes to the...",
+      "title": "CVE-2026-15737 - Sensitive content disclosure via OpenTelemetry spans in AgentCore Python SDK",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-058-aws/",
+      "published": "2026-07-16T17:09:05+00:00",
+      "summary": "Bulletin ID: 2026-058-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/16/2026 10:15 AM PDT Description: Bedrock AgentCore Python SDK (bedrock-agentcore) is an open-source Python library that provides client tools for building AI agents on the Amazon Bedrock...",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
       "source_id": "aws_security",
@@ -4944,7 +5018,7 @@
       "tags": [
         "AWS Security"
       ],
-      "body": "Bulletin ID: 2026-057-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/15/2026 12:00 PM PDT Description: jsii-diff is a command line tool to compare the API differences between two jsii assemblies, and report errors if there are backwards-incompatible changes to the API. We identified CVE-2026-15895, an issue where specially formatted command line arguments can be used to execute shell commands via this tool. Impacted versions: < 1.131.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "body": "Bulletin ID: 2026-058-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/16/2026 10:15 AM PDT Description: Bedrock AgentCore Python SDK (bedrock-agentcore) is an open-source Python library that provides client tools for building AI agents on the Amazon Bedrock AgentCore platform. We identified CVE-2026-15737 in the OpenTelemetry instrumentation of the SDK. Affected versions wrote raw user prompts and complete agent responses into OpenTelemetry span attributes on every invocation without filtering or masking. These spans flow into the customer's aws/spans CloudWatch log group, where a local authenticated user with CloudWatch Logs read access could access the potentially sensitive content. Impacted versions: 1.4.8, 1.5.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
