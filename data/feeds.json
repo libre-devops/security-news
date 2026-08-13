@@ -1,8 +1,58 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-12T19:05:14.651098+00:00",
+  "lastUpdated": "2026-08-13T02:15:06.883286+00:00",
   "totalArticles": 141,
   "articles": [
+    {
+      "title": "CVE-2026-19642 & CVE-2026-19643 - Memory-safety issues in the Base64 decoder in the AWS SDK for C++",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-080-aws/",
+      "published": "2026-08-12T19:52:23+00:00",
+      "summary": "Bulletin ID: 2026-080-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/12/2026 12:30 PM PDT Description: The AWS SDK for C++ is an open-source library that provides C++ developers with APIs for AWS services. Its core library includes a Base64 codec used by the...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-080-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/12/2026 12:30 PM PDT Description: The AWS SDK for C++ is an open-source library that provides C++ developers with APIs for AWS services. Its core library includes a Base64 codec used by the generated service clients for a variety of features.We identified the following CVEs: - CVE-2026-19642 - Out-of-bounds write in the Base64 decoder in the AWS SDK for C++ - CVE-2026-19643 - Out-of-bounds read in the Base64 decoder in the AWS SDK for C++ For CVE-2026-19642, certain inputs to the Base64 decoder might cause the decoder to write past the end of its heap-allocated output buffer, which might crash or corrupt memory in the process performing the decode. Remote code execution has not been demonstrated. For CVE-2026-19643, certain inputs to the Base64 decoder, on some platforms, might cause the decoder to read outside the bounds of its decode table, which might crash the process performing the decode. For both issues, impact is confined to the process of the application performing the decode. Impacted Versions: AWS SDK for C++: <= 1.11.861 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "Retirement: Containerized data connector agent for the Microsoft Sentinel solution for SAP applications",
+      "link": "https://azure.microsoft.com/updates?id=568457",
+      "published": "2026-08-12T19:41:20+00:00",
+      "summary": "On September 14, 2026 we will retire the containerized data connector agent for the Microsoft Sentinel solution for SAP applications. After this date the agent will be permanently disabled and will stop sending SAP logs to Microsoft Sentinel.The SAP agent",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel"
+      ]
+    },
     {
       "title": "CVE-2026-19311- Missing Authorization in OpenSearch Alerting Plugin",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-078-aws/",
@@ -26,7 +76,7 @@
       "tags": [
         "AWS Security"
       ],
-      "body": "Bulletin ID: 2026-078-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/12/2026 11:30 AM PDT Description: OpenSearch is a community-driven, open-source search and analytics suite. We identified CVE-2026-19311, a missing authorization issue in the Execute Monitor API of the OpenSearch Alerting plugin. This issue may allow an authenticated user with the alerting_full_access role to read, modify, or delete arbitrary index data via a crafted inline monitor request with unintentional data source and input index parameters. Impacted Versions: OpenSearch Alerting Plugin (open-source, self-managed): - Affected: 2.4.0 through 2.19.5, 3.0.0 through 3.7.0 - Fixed: 2.19.6, 3.8.0 Amazon OpenSearch Service (AWS Managed): - Affected: All domains running engine versions 2.4 through 3.5 - Fixed: Service software R20260428-P3 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "body": "Bulletin ID: 2026-078-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/12/2026 11:30 AM PDT Description: OpenSearch is a community-driven, open-source search and analytics suite. We identified CVE-2026-19311, a missing authorization issue in the Execute Monitor API of the OpenSearch Alerting plugin. This issue may allow an authenticated user with the alerting_full_access role to read, modify, or delete arbitrary index data via a crafted inline monitor request with unintentional data source and input index parameters. Impacted versions: OpenSearch Alerting Plugin (open-source, self-managed): - Affected: 2.4.0 through 2.19.5, 3.0.0 through 3.7.0 - Fixed: 2.19.6, 3.8.0 Amazon OpenSearch Service (AWS Managed): - Affected: All domains running engine versions 2.4 through 3.5 - Fixed: Service software R20260428-P3 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
@@ -5623,166 +5673,6 @@
         {
           "label": "Integrate the Armis OT data connector in Microsoft Security Exposure Management - Microsoft Security Exposure...",
           "url": "https://learn.microsoft.com/en-us/security-exposure-management/armis-data-connector"
-        }
-      ]
-    },
-    {
-      "title": "Check This Out! (CTO!) Guide (July 2026)",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/check-this-out-cto-guide-july-2026/ba-p/4536608",
-      "published": "2026-07-13T20:50:04+00:00",
-      "summary": "Member: TysonPaul | Microsoft Community Hub Triage vulnerabilities with the Vulnerability Remediation Agent, now in public preview Team Blog: Intune Customer Success Author: Intune_Support_Team Published: 06/16/2026 Summary: Microsoft has launched the Vulnerability Remediation Agent for Security...",
-      "author": "TysonPaul",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 14
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 11
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 5
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint",
-        "Microsoft Security Copilot",
-        "Microsoft Defender XDR",
-        "AWS Security",
-        "Microsoft Sentinel"
-      ],
-      "body": "Member: TysonPaul | Microsoft Community Hub Triage vulnerabilities with the Vulnerability Remediation Agent, now in public preview Team Blog: Intune Customer Success Author: Intune_Support_Team Published: 06/16/2026 Summary: Microsoft has launched the Vulnerability Remediation Agent for Security Copilot in Microsoft Intune, now in public preview. This agent automates the identification, prioritization, and remediation of vulnerabilities on Intune-managed Windows devices using data from Microsoft Defender. It provides prioritized recommendations, Copilot-assisted impact analysis, and step-by-step remediation guidance, all within the Intune admin center. The agent operates securely under a dedicated agentic identity, ensuring clear governance and accountability. The streamlined workflow helps IT teams quickly address critical threats, reduce exposure, and track progress, supporting a more proactive, AI-driven security posture. Deploying Platform SSO for pre macOS 26 with Microsoft Intune: Lessons Learned Team Blog: Intune Customer Success Author: MikeGriz Published: 06/18/2026 Summary: The article details Microsoft’s internal deployment of Platform Single Sign-On (PSSO) for pre-macOS 26 devices using Intune. It highlights the benefits of Secure Enclave-backed authentication—phishing-resistant MFA, device-bound tokens, and improved Conditional Access—while outlining setup steps, user experience, troubleshooting, and best practices. Key challenges included password policy mismatches and users dismissing registration prompts. The authors recommend starting with Secure Enclave, deploying during enrollment, aligning password policies, and piloting thoroughly. PSSO enables passwordless, hardware-backed SSO across Microsoft 365 apps, improving security and user experience for Mac fleets. Scale On-Prem AI with Foundry Local on Azure Local: Multi-Node Inference and vLLM Support Team Blog: Azure Arc Author: LiranLyabock Published: 06/02/2026 Summary: The article announces expanded capabilities for Foundry Local on Azure Local, including multi-node inference scheduling, vLLM runtime support, and a broader model catalog. These enhancements enable scalable, high-concurrency AI deployments fully on-premises—even in disconnected environments—using Kubernetes-native and OpenAI-compatible patterns. vLLM boosts throughput for large models and concurrent workloads, with automatic GPU tuning via vLLMplanner. Identity-based access is supported for multi-user scenarios. The...",
-      "links": [
-        {
-          "label": "Member: TysonPaul | Microsoft Community Hub",
-          "url": "https://techcommunity.microsoft.com/users/tysonpaul/322025"
-        },
-        {
-          "label": "Triage vulnerabilities with the Vulnerability Remediation Agent, now in public preview",
-          "url": "https://techcommunity.microsoft.com/blog/intunecustomersuccess/triage-vulnerabilities-with-the-vulnerability-remediation-agent-now-in-public-pr/4528646"
-        },
-        {
-          "label": "Intune Customer Success",
-          "url": "https://techcommunity.microsoft.com/category/microsoftintune/blog/intunecustomersuccess"
-        },
-        {
-          "label": "Intune_Support_Team",
-          "url": "https://techcommunity.microsoft.com/users/intune_support_team/226779"
-        },
-        {
-          "label": "Deploying Platform SSO for pre macOS 26 with Microsoft Intune: Lessons Learned",
-          "url": "https://techcommunity.microsoft.com/blog/intunecustomersuccess/deploying-platform-sso-for-pre-macos-26-with-microsoft-intune-lessons-learned/4521368"
-        },
-        {
-          "label": "MikeGriz",
-          "url": "https://techcommunity.microsoft.com/users/mikegriz/293153"
-        },
-        {
-          "label": "Scale On-Prem AI with Foundry Local on Azure Local: Multi-Node Inference and vLLM Support",
-          "url": "https://techcommunity.microsoft.com/blog/azurearcblog/scale-on-prem-ai-with-foundry-local-on-azure-local-multi-node-inference-and-vllm/4516692"
-        },
-        {
-          "label": "Azure Arc",
-          "url": "https://techcommunity.microsoft.com/category/azure/blog/azurearcblog"
-        },
-        {
-          "label": "LiranLyabock",
-          "url": "https://techcommunity.microsoft.com/users/liranlyabock/3433085"
-        },
-        {
-          "label": "Unlock On-Prem Productivity with Agentic Retrieval in Foundry Local",
-          "url": "https://techcommunity.microsoft.com/blog/azurearcblog/unlock-on-prem-productivity-with-agentic-retrieval-in-foundry-local/4523646"
-        },
-        {
-          "label": "moran_assaf",
-          "url": "https://techcommunity.microsoft.com/users/moran_assaf/3028283"
-        },
-        {
-          "label": "Microsoft 365 Copilot on mobile: What staged rollout plans can miss",
-          "url": "https://techcommunity.microsoft.com/blog/fasttrackblog/microsoft-365-copilot-on-mobile-what-staged-rollout-plans-can-miss/4524953"
-        }
-      ]
-    },
-    {
-      "title": "Building toward an Agentic SOC: A Portable, Autonomous Malware Investigation Agent",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/building-toward-an-agentic-soc-a-portable-autonomous-malware/ba-p/4526872",
-      "published": "2026-07-13T19:09:25+00:00",
-      "summary": "Modern Security Operations Centers are not short on tools. They are short on continuity. Analysts jump from alert consoles to data exploration, from enrichment to investigation, and from evidence gathering to response—often across multiple interfaces and disconnected workflows. A single malware...",
-      "author": "absharan",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint",
-        "Microsoft Sentinel",
-        "Microsoft Security Copilot",
-        "Threat Intelligence"
-      ],
-      "body": "Modern Security Operations Centers are not short on tools. They are short on continuity. Analysts jump from alert consoles to data exploration, from enrichment to investigation, and from evidence gathering to response—often across multiple interfaces and disconnected workflows. A single malware incident may begin in Microsoft Sentinel, require enrichment in Defender, depend on targeted KQL hunting, and end with manual response actions somewhere else. Every handoff adds friction. Every context switch slows triage. And every inconsistency increases the risk of missed signals or delayed containment. To explore what an Agentic SOC could look like in practice, I built a portable, autonomous malware investigation agent: a user-invocable workflow that takes an incident from investigation to evidence correlation to verdict and, when appropriate, to action. The goal is simple: one prompt, one workflow, and a full incident lifecycle that moves cleanly from Investigate to Decide to Act. The Real Problem: SOC Work Is Still Too Fragmented In a conventional malware investigation, even experienced analysts spend too much time stitching the workflow together: Pivoting across Sentinel and Defender Manually extracting entities Writing and optimizing multiple KQL queries Context switching between tools Making decisions with incomplete evidence The operational impact is familiar to every SOC team: Increased MTTR Analyst fatigue Inconsistent investigation quality This fragmentation is exactly what a unified Microsoft Sentinel and Defender experience is built to solve, and it is where such an investigation agent demonstrates its value. The Approach: A Portable Agent for End-to-End Malware Investigations The agent is designed to handle the full investigation loop—not just enrichment, not just summarization, and not just response orchestration. End-to-end malware investigation Evidence-based verdicting SOC-ready summarization Optional automated response Because it is defined as a portable agent, the same investigation pattern can be reused across environments with consistent logic, standardized outputs, and controlled automation boundaries. Standardized investigations Repeatable execution Controlled automation Cross-environment portability Architecture Overview (End-to-End Flow) Visual 1: Agentic SOC Investigation Workflow User / Analyst Input“Investigate Incident” ↓ SOC AI AgentPortable Investigator ↓ Microsoft SentinelSecurityIncident • SecurityAlert • Data Lake (KQL) ↓...",
-      "links": [
-        {
-          "label": "SOC Malware Investigator (Portable)SOC Malware Investigator (Portable)",
-          "url": "https://github.com/Abhishek-Sharan/microsoft-security-operations-toolkit/tree/main/AI%20Security/Custom%20Agents/SOC%20Malware%20Investigator%20Portable"
-        },
-        {
-          "label": "https://learn.microsoft.com/azure/sentinel/datalake/sentinel-mcp-overview",
-          "url": "https://learn.microsoft.com/azure/sentinel/datalake/sentinel-mcp-overview"
-        },
-        {
-          "label": "https://learn.microsoft.com/azure/sentinel/datalake/sentinel-lake-overview",
-          "url": "https://learn.microsoft.com/azure/sentinel/datalake/sentinel-lake-overview"
-        },
-        {
-          "label": "https://learn.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview",
-          "url": "https://learn.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview"
         }
       ]
     }
