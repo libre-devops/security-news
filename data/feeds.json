@@ -1,8 +1,43 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-13T19:06:27.253238+00:00",
-  "totalArticles": 139,
+  "lastUpdated": "2026-08-14T02:12:00.778481+00:00",
+  "totalArticles": 134,
   "articles": [
+    {
+      "title": "(Updated) Microsoft Entra ID: Retirement of SMS first-factor sign-in for Entra ID Free tenants",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1448374",
+      "published": "2026-08-13T20:30:56.690000+00:00",
+      "summary": "Updated August 10, 2026: We have updated the timeline. We apologize for any inconvenience. [What and why]Microsoft will retire SMS first-factor sign-in for Microsoft Entra ID Free tenants on August 11, 2026, due to increased fraudulent activity targeting this authentication method. SMS first-factor...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1448374",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated August 10, 2026: We have updated the timeline. We apologize for any inconvenience. [What and why]Microsoft will retire SMS first-factor sign-in for Microsoft Entra ID Free tenants on August 11, 2026, due to increased fraudulent activity targeting this authentication method. SMS first-factor sign-in allows users to sign in using only a registered phone number and a one-time passcode (OTP) sent by SMS, without entering a username or password. Because this sign-in method relies solely on a registered phone number and SMS-delivered passcode, it is more susceptible to abuse and account compromise than phishing-resistant authentication methods. This change applies only to SMS first-factor sign-in. SMS used as a multifactor authentication (MFA) method is not affected. Users can continue receiving SMS verification codes as an additional authentication factor after completing their primary sign-in.[Rollout schedule]Beginning August 11, 2026, SMS first-factor sign-in will no longer be supported for Microsoft Entra ID Free tenants.[Impact on your organization]Who is affectedMicrosoft Entra ID Free tenants with SMS first-factor sign-in enabledUsers who rely exclusively on SMS first-factor sign-inPlatforms and servicesMicrosoft Entra IDSMS first-factor passwordless sign-in (SignInNoPassword)What will happenUsers in Microsoft Entra ID Free tenants will no longer be able to use SMS as a first-factor sign-in method.Attempts to sign in using only a registered phone number and SMS one-time passcode will be blocked.Users who have another registered authentication method can continue signing in using that method.SMS as a multifactor authentication method is not affected.All other registered authentication methods remain available.Users who rely exclusively on SMS first-factor sign-in must register and use another authentication method before the retirement date.[Action required and recommendations]If your organization has users relying on SMS first-factor sign-in, we recommend that you:Identify users currently using SMS first-factor sign-in.Ensure affected users register an alternative authentication method before August 11, 2026.Communicate this change to affected users to help prevent sign-in disruptions.Migrate users to passkeys or other phishing-resistant authentication methods where possible.Review authentication method policies and remove dependencies on SMS first-factor sign-in.Learn moreEnable the SMS-based authentication method - Configure and enable users for SMS-based authentication using Microsoft Entra ID | Microsoft Learn[Compliance considerations]QuestionAnswerDoes this change modify how users access Microsoft 365 resources or services?Yes. Users in affected Microsoft Entra ID Free tenants will no longer be able to sign in using SMS as their first-factor authentication method and must use another registered sign-in method.Does this change require admin action to maintain user access?Yes. Administrators should identify users who rely on SMS first-factor sign-in and ensure those users register an alternative authentication method before the retirement date to avoid sign-in disruptions.Does this change affect authentication or access management policies?Yes. Organizations that currently depend on SMS first-factor sign-in may need to review and update their authentication policies to remove dependencies on this retired authentication method.",
+      "links": [
+        {
+          "label": "Enable the SMS-based authentication method - Configure and enable users for SMS-based authentication using Microsoft...",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/howto-authentication-sms-signin#enable-the-sms-based-authentication-method"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
     {
       "title": "How BitLocker PINs help protect your data and devices",
       "link": "https://www.ncsc.gov.uk/blogs/how-bitlocker-pins-help-protect-your-data-and-devices",
@@ -3715,7 +3750,7 @@
       "title": "Rethinking security for the age of AI",
       "link": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
       "published": "2026-07-27T16:30:09+00:00",
-      "summary": "Why security needs a new cyber stack — Introducing Project Perception The physics of cybersecurity are changing. Autonomous systems can now reason, adapt and operate continuously. At the same time, the cost of offense is falling, while the volume, velocity and complexity of what must be secured...",
+      "summary": "Editor’s note: Updates with additional details on the model’s crash score. Why security needs a new cyber stack — Introducing Project Perception The physics of cybersecurity are changing. Autonomous systems can now reason, adapt and operate continuously. At the same time, the cost of offense is...",
       "author": "Hayete Gallot",
       "source": "Microsoft AI Blog",
       "source_id": "ms_ai_blog",
@@ -3734,7 +3769,7 @@
       "tags": [
         "General Security"
       ],
-      "body": "Why security needs a new cyber stack — Introducing Project Perception The physics of cybersecurity are changing. Autonomous systems can now reason, adapt and operate continuously. At the same time, the cost of offense is falling, while the volume, velocity and complexity of what must be secured continues to grow. Attackers can generate exploits faster, scale campaigns further and operate with unprecedented efficiency. The approaches built for a world of human actors cannot keep pace with a world of AI, agents and machine-speed attacks. Security needs a new cyber stack. A new cyber stack must continuously perceive risk across the entire digital estate, reason across vast amounts of context and take action at machine speed. It must learn and adapt as environments evolve, helping organizations stay ahead of threats. And because security is ultimately a human mission, it must amplify defenders with better insights and more powerful ways to act. The defining characteristic of the next generation of security systems will not be their ability to generate more alerts. It will be their ability to continuously perceive, reason and act. That vision led us to build Project Perception. A new agentic security system designed for the realities of AI. It turns signals into real-time protections using AI to defend against AI. Project Perception brings together signals, context, models and specialized agents into a continuously learning system of defense. It can reason, prioritize and act at machine speed while keeping humans firmly in control and empowering them with powerful new workflows. Project Perception is based on a simple idea: effective defense requires continuous understanding of how an attacker sees the world, how a defender evaluates risk and how protections are improved over time. To accomplish this, Perception coordinates three classes of specialized agents. Red team agents identify potential paths to compromise before an attacker can exploit them. Blue team agents investigate, reason over context and determine what represents meaningful risk. Green team agents take corrective actions and strengthen defenses across the environment. Working together, these agents form a closed-loop system that continuously discovers, evaluates and improves an organization’s security posture. A system like Project Perception is only as effective as the visibility it has, the actions it can take, the experience of the teams building it and the models it can use. Microsoft...",
+      "body": "Editor’s note: Updates with additional details on the model’s crash score. Why security needs a new cyber stack — Introducing Project Perception The physics of cybersecurity are changing. Autonomous systems can now reason, adapt and operate continuously. At the same time, the cost of offense is falling, while the volume, velocity and complexity of what must be secured continues to grow. Attackers can generate exploits faster, scale campaigns further and operate with unprecedented efficiency. The approaches built for a world of human actors cannot keep pace with a world of AI, agents and machine-speed attacks. Security needs a new cyber stack. A new cyber stack must continuously perceive risk across the entire digital estate, reason across vast amounts of context and take action at machine speed. It must learn and adapt as environments evolve, helping organizations stay ahead of threats. And because security is ultimately a human mission, it must amplify defenders with better insights and more powerful ways to act. The defining characteristic of the next generation of security systems will not be their ability to generate more alerts. It will be their ability to continuously perceive, reason and act. That vision led us to build Project Perception. A new agentic security system designed for the realities of AI. It turns signals into real-time protections using AI to defend against AI. Project Perception brings together signals, context, models and specialized agents into a continuously learning system of defense. It can reason, prioritize and act at machine speed while keeping humans firmly in control and empowering them with powerful new workflows. Project Perception is based on a simple idea: effective defense requires continuous understanding of how an attacker sees the world, how a defender evaluates risk and how protections are improved over time. To accomplish this, Perception coordinates three classes of specialized agents. Red team agents identify potential paths to compromise before an attacker can exploit them. Blue team agents investigate, reason over context and determine what represents meaningful risk. Green team agents take corrective actions and strengthen defenses across the environment. Working together, these agents form a closed-loop system that continuously discovers, evaluates and improves an organization’s security posture. A system like Project Perception is only as effective as the visibility it has, the actions it can take, the...",
       "links": [
         {
           "label": "Project Perception",
@@ -3746,7 +3781,7 @@
         },
         {
           "label": "MDASH with MAI-Cyber-1-Flash",
-          "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/"
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmicrosoft.ai%2Fnews%2Fintroducing-mai-cyber-1-flash-inside-mdash%2F&data=05%7C02%7Cv-nyhanpaul%40microsoft.com%7C2f9635800e2a464fc9a308def97d5f8a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639222514023631178%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=v4yi%2FYxufRwpxNqGCTIHXQltlxare8w2n4WI3DKrmEQ%3D&reserved=0"
         },
         {
           "label": "https://blogs.microsoft.com/wp-content/uploads/2026/07/OMB-Project-Perception-Image-2-Final.jpg",
@@ -5406,156 +5441,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "SVD-2026-0706: Third-Party Package Updates in Splunk Universal Forwarder - July 2026",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0706",
-      "published": "2026-07-15T00:00:00+00:00",
-      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk Universal Forwarder versions 10.4.1, 10.2.5, 10.0.8, 9.4.13, and higher.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0705: Third-Party Package Updates in Splunk Enterprise - July 2026",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0705",
-      "published": "2026-07-15T00:00:00+00:00",
-      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in Third Party Packages in Splunk Enterprise versions 10.4.1, 10.2.5, 10.0.8, 9.4.13, and higher.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-0704: Sensitive Information Disclosure through the storage/passwords REST Endpoint in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0704",
-      "published": "2026-07-15T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.4.1, 10.2.5, 10.0.8, and 9.4.13, and Splunk Cloud Platform versions below 10.5.2605.0, 10.4.2604.6, 10.3.2512.15, 10.2.2510.18, and 10.1.2507.24, a low-privileged user that does not hold the ‘admin’ or ‘power’ Splunk roles could view stored credential hashes...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ],
-      "body": "In Splunk Enterprise versions below 10.4.1, 10.2.5, 10.0.8, and 9.4.13, and Splunk Cloud Platform versions below 10.5.2605.0, 10.4.2604.6, 10.3.2512.15, 10.2.2510.18, and 10.1.2507.24, a low-privileged user that does not hold the ‘admin’ or ‘power’ Splunk roles could view stored credential hashes when they access the /servicesNS/-/-/storage/passwords REST endpoint through the |rest Search Processing Language (SPL) command.The exposure happens because the |rest SPL command returns the encr_password field in the results of the /servicesNS/-/-/storage/passwords REST endpoint.",
-      "links": []
-    },
-    {
-      "title": "SVD-2026-0703: Path Traversal through 'explicit_appname' in the App Install REST Endpoint in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0703",
-      "published": "2026-07-15T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.4.1, 10.2.5, 10.0.8, 9.4.13, and 9.3.14, and Splunk Cloud Platform versions below 10.5.2605.0, 10.4.2604.6, 10.2.2510.18, and 10.1.2507.24, a user who holds a role that contains the edit_local_apps and install_apps capabilities could cause a legitimate app...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ],
-      "body": "In Splunk Enterprise versions below 10.4.1, 10.2.5, 10.0.8, 9.4.13, and 9.3.14, and Splunk Cloud Platform versions below 10.5.2605.0, 10.4.2604.6, 10.2.2510.18, and 10.1.2507.24, a user who holds a role that contains the edit_local_apps and install_apps capabilities could cause a legitimate app installation to write files outside the intended app directory, into $SPLUNK_HOME/etc/ and its subdirectories.The vulnerability is caused by a path traversal in the app installation workflow, which does not restrict the installation path to the intended app directory.",
-      "links": []
-    },
-    {
-      "title": "SVD-2026-0702: SPL Command Safeguards Bypass through Cross-Site Request Forgery (CSRF) in Deployment Server in Splunk Enterprise",
-      "link": "https://advisory.splunk.com//advisories/SVD-2026-0702",
-      "published": "2026-07-15T00:00:00+00:00",
-      "summary": "In Splunk Enterprise versions below 10.4.1, 10.2.5, 10.0.8, and 9.4.13, and Splunk Cloud Platform versions below 10.5.2605.0, 10.4.2604.7, 10.3.2512.16, 10.2.2510.18, and 10.1.2507.24, an attacker could trick a user that holds a role with the list_deployment_server capability into running arbitrary...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ],
-      "body": "In Splunk Enterprise versions below 10.4.1, 10.2.5, 10.0.8, and 9.4.13, and Splunk Cloud Platform versions below 10.5.2605.0, 10.4.2604.7, 10.3.2512.16, 10.2.2510.18, and 10.1.2507.24, an attacker could trick a user that holds a role with the list_deployment_server capability into running arbitrary Search Processing Language (SPL) searches on their behalf as splunk-system-user, allowing for access to stored credentials and indexed data.The vulnerability is possible because Deployment Server endpoints in Splunk Web do not validate Cross-Site Request Forgery (CSRF) tokens on GET requests, and caller-supplied input is not correctly neutralized before it is placed into an SPL search.",
-      "links": []
-    },
-    {
-      "title": "[In preview] Public Preview: Azure Front Door edge actions",
-      "link": "https://azure.microsoft.com/updates?id=567402",
-      "published": "2026-07-14T20:03:32+00:00",
-      "summary": "Announcing the public preview of Azure Front Door edge actions (serverless compute at the edge).With edge actions, customers can execute lightweight JavaScript functions during Azure Front Door request processing to make real-time decisions closer to user",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     }
   ]
