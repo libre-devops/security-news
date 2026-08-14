@@ -1,8 +1,39 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-14T02:12:00.778481+00:00",
-  "totalArticles": 134,
+  "lastUpdated": "2026-08-14T07:37:14.890978+00:00",
+  "totalArticles": 135,
   "articles": [
+    {
+      "title": "No updates to \"Stop clear text credentials exposure\" after migrating our MDI sensors to v3",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-identity/no-updates-to-quot-stop-clear-text-credentials-exposure-quot/m-p/4546845#M4330",
+      "published": "2026-08-13T22:04:07+00:00",
+      "summary": "Since migrating our domain controllers to the v3 sensor, the \"Stop clear text credentials exposure\" recommendation is no longer updating. The latest \"Last seen\" date correlates with the date we performed the migration, and I know we have a couple entities that have not yet been remediated.If I run...",
+      "author": "RyanSteele-CoV",
+      "source": "Microsoft Defender for Identity",
+      "source_id": "defender_identity",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Identity Security",
+      "board_id": "azureadvancedthreatprotection",
+      "products": [
+        {
+          "id": "defender-identity",
+          "name": "Microsoft Defender for Identity",
+          "score": 14
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Identity"
+      ],
+      "body": "Since migrating our domain controllers to the v3 sensor, the \"Stop clear text credentials exposure\" recommendation is no longer updating. The latest \"Last seen\" date correlates with the date we performed the migration, and I know we have a couple entities that have not yet been remediated.If I run a query on the IdentityQueryEvents table in Advanced Hunting, I'm still seeing LDAP queries.Anyone else seeing this?",
+      "links": [
+        {
+          "label": "\"Stop clear text credentials exposure\" recommendation",
+          "url": "https://security.microsoft.com/exposure-recommendations?recommendationId=AATP_ClearText&tabId=Identities"
+        }
+      ]
+    },
     {
       "title": "(Updated) Microsoft Entra ID: Retirement of SMS first-factor sign-in for Entra ID Free tenants",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1448374",
