@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-14T18:58:42.749421+00:00",
-  "totalArticles": 134,
+  "lastUpdated": "2026-08-15T01:24:48.616680+00:00",
+  "totalArticles": 131,
   "articles": [
     {
       "title": "Chromium: CVE-2026-19560 Use after free in Blink",
@@ -121,37 +121,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "No updates to \"Stop clear text credentials exposure\" after migrating our MDI sensors to v3",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-identity/no-updates-to-quot-stop-clear-text-credentials-exposure-quot/m-p/4546845#M4330",
-      "published": "2026-08-13T22:04:07+00:00",
-      "summary": "Since migrating our domain controllers to the v3 sensor, the \"Stop clear text credentials exposure\" recommendation is no longer updating. The latest \"Last seen\" date correlates with the date we performed the migration, and I know we have a couple entities that have not yet been remediated.If I run...",
-      "author": "RyanSteele-CoV",
-      "source": "Microsoft Defender for Identity",
-      "source_id": "defender_identity",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Identity Security",
-      "board_id": "azureadvancedthreatprotection",
-      "products": [
-        {
-          "id": "defender-identity",
-          "name": "Microsoft Defender for Identity",
-          "score": 14
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Identity"
-      ],
-      "body": "Since migrating our domain controllers to the v3 sensor, the \"Stop clear text credentials exposure\" recommendation is no longer updating. The latest \"Last seen\" date correlates with the date we performed the migration, and I know we have a couple entities that have not yet been remediated.If I run a query on the IdentityQueryEvents table in Advanced Hunting, I'm still seeing LDAP queries.Anyone else seeing this?",
-      "links": [
-        {
-          "label": "\"Stop clear text credentials exposure\" recommendation",
-          "url": "https://security.microsoft.com/exposure-recommendations?recommendationId=AATP_ClearText&tabId=Identities"
-        }
       ]
     },
     {
@@ -3555,56 +3524,6 @@
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568372",
       "published": "2026-07-28T22:43:45+00:00",
       "summary": "Out-of-box MTTA/MTTD/MTTR SLA Alert Reporting dashboard showing past trends, Top SITs getting exposed via DLP alerts generated. Customers can define their custom SLAs for high, med and low severity alerts and get access to dashboard showing operational performance and SLA metrics. GA date:...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ]
-    },
-    {
-      "title": "Microsoft Purview: Data Loss Prevention - Rule-based tagging and auto-resolution of alerts based on business needs of the customer.",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568371",
-      "published": "2026-07-28T22:43:45+00:00",
-      "summary": "Alert auto-resolution & tagging rules let you tell DLP, in advance, how to handle predictable alerts. You define a rule once, and from then on DLP applies it automatically to every new alert: ● Resolve alerts you don't need to see - e.g., Low-severity alerts for mail sent only to your trusted...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "Alert auto-resolution & tagging rules let you tell DLP, in advance, how to handle predictable alerts. You define a rule once, and from then on DLP applies it automatically to every new alert: ● Resolve alerts you don't need to see - e.g., Low-severity alerts for mail sent only to your trusted partner domains, so they never reach your triage queue. ● Tag alerts so you can find and route them - e.g., label every alert from your Legal department as a “Business Process”.GA date: September CY2026Preview date: August CY2026",
-      "links": []
-    },
-    {
-      "title": "Microsoft Purview: Information Protection - Sensitivity Labels for Microsoft Entra Security Groups",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568217",
-      "published": "2026-07-28T22:43:45+00:00",
-      "summary": "Apply sensitivity labels to Microsoft Entra cloud security groups to extend the classification and governance you already use for Microsoft 365 groups. The same labels you publish in the Microsoft Purview portal and configure for groups and sites apply automatically to cloud security groups, with...",
       "author": "Microsoft",
       "source": "Microsoft 365 Roadmap",
       "source_id": "m365_roadmap",
