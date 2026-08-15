@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-15T01:24:48.616680+00:00",
-  "totalArticles": 131,
+  "lastUpdated": "2026-08-15T06:42:38.862362+00:00",
+  "totalArticles": 130,
   "articles": [
     {
       "title": "Chromium: CVE-2026-19560 Use after free in Blink",
@@ -5199,81 +5199,6 @@
       ],
       "body": "Bulletin ID: 2026-058-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/16/2026 10:15 AM PDT Description: Bedrock AgentCore Python SDK (bedrock-agentcore) is an open-source Python library that provides client tools for building AI agents on the Amazon Bedrock AgentCore platform. We identified CVE-2026-15737 in the OpenTelemetry instrumentation of the SDK. Affected versions wrote raw user prompts and complete agent responses into OpenTelemetry span attributes on every invocation without filtering or masking. These spans flow into the customer's aws/spans CloudWatch log group, where a local authenticated user with CloudWatch Logs read access could access the potentially sensitive content. Impacted versions: 1.4.8, 1.5.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
-    },
-    {
-      "title": "Unpacking the AsyncAPI npm supply chain compromise and import-time payload delivery",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/15/unpacking-asyncapi-npm-supply-chain-compromise-import-time-payload-delivery/",
-      "published": "2026-07-16T01:36:21+00:00",
-      "summary": "Threat actors compromised AsyncAPI packages and weaponized trusted CI/CD workflows to distribute malware through npm. This analysis breaks down the attack chain, payload delivery, and recommended defenses. The post Unpacking the AsyncAPI npm supply chain compromise and import-time payload delivery...",
-      "author": "Microsoft Security Research, Ravikant Tiwari, Sagar Patil, Suriyaraj Natarajan and Arvind Gowda",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Attack chain overviewHow the attack started: GitHub Actions pwn requestMitigation and protection guidanceLearn more On July 14, 2026, Microsoft Threat Intelligence identified a coordinated supply chain compromise of the @asyncapi npm organization, a widely used set of packages for the AsyncAPI specification and code generation. Five package versions across four package names were republished within roughly ninety minutes, each carrying the same maliciously injected loader: @asyncapi/specs (in both the 6.11.2-alpha.1 prerelease and 6.11.2 stable release), @asyncapi/generator@3.3.1, @asyncapi/generator-components@0.7.1, and @asyncapi/generator-helpers@1.1.1. Because @asyncapi/specs is a transitive dependency of numerous AsyncAPI tooling packages, this attack affected developer workstations, CI/CD pipelines, container builds, or production services that resolved and imported the affected versions during the exposure window. Unlike the more common postinstall-hook supply-chain pattern, this campaign executes at module-load (import/require) time. When any consuming build or application imports a poisoned package, the injected block runs immediately. Because the trigger is an import rather than an install script, the common npm install –ignore-scripts mitigation does not neutralize it. The second stage decrypts and evaluates a Miasma modular runtime with active command and control (C2), persistence, and decentralized fallback channels. Although disabled in this instance, credential-harvesting, propagation, and additional high-risk modules could be enabled through persistence. Microsoft Defender Antivirus detects and blocks malicious artifacts as Trojan:JS/MiasmStealer.SC and Trojan:Script/Supychain.A. Microsoft Defender for Endpoint provides behavioral coverage for the suspicious detached Node.js process spawn, IPFS retrieval, and persistence activity. Organizations should immediately remove all five affected versions, purge npm and Yarn caches, hunt for sync.js under the NodeJS masquerade directories, block outbound connections to 85.137.53[.]71 on ports 8080, 8081, and 8091, and rotate all credentials accessible from any environment that imported the compromised packages. Detailed hunting queries, indicators of compromise, and mitigation guidance are provided in the succeeding sections. Attack chain overview Figure 1. End-to-end attack chain from CI/CD pipeline compromise through import-time execution to IPFS second-stage fetch, with C2...",
-      "links": [
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "How the attack started: GitHub Actions pwn request",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#how-the-attack-started-github-actions-pwn-request"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "npm CLI v11.10.0+",
-          "url": "https://github.blog/changelog/2026-02-18-npm-bulk-trusted-publishing-config-and-script-security-now-generally-available/"
-        },
-        {
-          "label": "min-release-age",
-          "url": "https://docs.npmjs.com/cli/v11/using-npm/config#min-release-age"
-        },
-        {
-          "label": "advanced hunting",
-          "url": "https://learn.microsoft.com/defender-xdr/advanced-hunting-overview"
-        },
-        {
-          "label": "Microsoft Threat Intelligence Blog",
-          "url": "https://aka.ms/threatintelblog"
-        },
-        {
-          "label": "LinkedIn",
-          "url": "https://www.linkedin.com/showcase/microsoft-threat-intelligence"
-        },
-        {
-          "label": "X (formerly Twitter)",
-          "url": "https://x.com/MsftSecIntel"
-        },
-        {
-          "label": "Bluesky",
-          "url": "https://bsky.app/profile/threatintel.microsoft.com"
-        },
-        {
-          "label": "Microsoft Threat Intelligence podcast",
-          "url": "https://thecyberwire.com/podcasts/microsoft-threat-intelligence"
-        }
-      ]
     }
   ]
 }
