@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-15T18:33:45.428406+00:00",
-  "totalArticles": 129,
+  "lastUpdated": "2026-08-16T01:35:54.098686+00:00",
+  "totalArticles": 127,
   "articles": [
     {
       "title": "Chromium: CVE-2026-19560 Use after free in Blink",
@@ -5054,124 +5054,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "ACR Stealer: Two observed intrusion chains amid increased threat activity",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/16/acr-stealer-two-observed-intrusion-chains-amid-increased-threat-activity/",
-      "published": "2026-07-16T23:12:02+00:00",
-      "summary": "From late April 2026 to mid-June 2026, Microsoft Defender Experts observed increased ACR Stealer activity across customer environments. These campaigns are successfully using ClickFix lures to steal browser credentials, authentication tokens, and sensitive documents from enterprise environments....",
-      "author": "Microsoft Security Research and Balaji Venkatesh S",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Campaign 1: WebDAV-based ClickFix with Python loaders and blockchain C2Campaign 2: MSHTA-initiated PowerShell chain with steganographic payload deliveryMitigation and protection guidanceReferencesLearn more From late April 2026 to mid-June 2026, Microsoft Defender Experts observed increased ACR Stealer activity across customer environments. These campaigns are successfully using ClickFix lures to steal browser credentials, authentication tokens, and sensitive documents from enterprise environments. Successful compromise can expose browser credentials, session tokens, authentication artifacts, and sensitive enterprise data, potentially enabling account compromise, unauthorized access to cloud resources, and follow-on intrusion activity. Security teams should prioritize monitoring for ClickFix lures, suspicious WebDAV activity, obfuscated PowerShell execution, and attempts to access browser credential stores. ACR Stealer is an information-stealing malware family reportedly offered through a malware-as-a-service (MaaS) model and associated with the rebranding of Amatera Stealer. During this period, two campaigns stand out, together appearing frequently in reviewed recent intrusions. Both begin the same way, with a ClickFix social engineering technique that tricks targets into running the threat actor’s command, but the intrusion chains that follow diverge in how they deliver payloads, establish execution, and evade detection. The first campaign relies on WebDAV-delivered payloads, staged PowerShell, Python-based loaders and persistence, and, in some intrusions, blockchain-backed dead-drop command-and-control (C2) resolution. The second campaign takes a more fileless route, using MSHTA, obfuscated PowerShell, and steganography-assisted in-memory execution. Despite these differences, both campaigns ultimately pursue the same goal: stealing browser-stored credentials and other sensitive data for exfiltration. These two campaigns represent some of the most prevalent ACR Stealer delivery campaigns observed by Defender Experts; however, they do not represent the full range of delivery methods used by this malware family. Attribution to ACR Stealer is based on the observed behavior and post-exploitation tradecraft, corroborated by open-source intelligence on the infrastructure associated with this malware family. Additional campaigns, infrastructure patterns, and execution chains are likely active, and organizations should treat the indicators and...",
-      "links": [
-        {
-          "label": "Campaign 1: WebDAV-based ClickFix with Python loaders and blockchain C2",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#campaign-1-webdav-based-clickfix-with-python-loaders-and-blockchain-c2"
-        },
-        {
-          "label": "Campaign 2: MSHTA-initiated PowerShell chain with steganographic payload delivery",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#campaign-2-mshta-initiated-powershell-chain-with-steganographic-payload-delivery"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "cloud-delivered protection",
-          "url": "https://learn.microsoft.com/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus"
-        },
-        {
-          "label": "endpoint detection and response (EDR) in block mode",
-          "url": "https://learn.microsoft.com/defender-endpoint/edr-in-block-mode"
-        },
-        {
-          "label": "automated investigation and remediation",
-          "url": "https://learn.microsoft.com/defender-endpoint/automated-investigations"
-        },
-        {
-          "label": "script block logging",
-          "url": "https://learn.microsoft.com/powershell/module/microsoft.powershell.core/about/about_logging?view=powershell-5.1"
-        },
-        {
-          "label": "tamper protection",
-          "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection"
-        },
-        {
-          "label": "Microsoft Security Copilot",
-          "url": "https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot"
-        },
-        {
-          "label": "embedded in Microsoft Defender",
-          "url": "https://learn.microsoft.com/defender-xdr/security-copilot-in-microsoft-365-defender"
-        }
-      ]
-    },
-    {
-      "title": "Microsoft Entra: Passkeys by default and retirement of Microsoft-provided SMS and voice authentication",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1426371",
-      "published": "2026-07-16T18:55:54.040000+00:00",
-      "summary": "[What and why]Passkeys will become the default authentication experience in Microsoft Entra on September 1, 2026. Telecom-based methods (SMS and voice) will transition to customer-configured providers through the Microsoft Security Store. The AI era demands stronger, phishing-resistant...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1426371",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]Passkeys will become the default authentication experience in Microsoft Entra on September 1, 2026. Telecom-based methods (SMS and voice) will transition to customer-configured providers through the Microsoft Security Store. The AI era demands stronger, phishing-resistant authentication. We are making passkeys the default authentication experience in Microsoft Entra to help customers securely adopt AI at scale. As part of this transition, SMS and voice will no longer be available as multifactor authentication methods starting February 1, 2027. SMS and voice do not offer sufficient levels of security in comparison to passkeys. Traditional authentication methods including passwords, SMS one-time passcodes, and voice-based verification remain vulnerable to phishing, interception, and social engineering attacks.We strongly recommend moving away from telephony-based authentication methods to improve security and prevent identity attacks. Passkeys are included in all Microsoft Entra plans, so making this critical security change comes at no additional cost for you. While we recommend adopting passkeys for phishing-resistant authentication as quickly as possible, we also recognize that some customers may have business needs that make an immediate transition impractical. In such cases, customers may continue to use SMS and voice by selecting a telecom provider in the Microsoft Security Store. [Rollout schedule] September 1, 2026: Rollout begins. Changes may take time to reach all tenants and will be deployed gradually. Passkeys will be automatically enabled for users currently enabled for SMS or voice. Registration Campaign will be set to Microsoft-Managed targeting passkeys for all users in eligible tenants. Users will be prompted to register a passkey during MFA sign-in; users will be able to skip. September 18th, 2026:review the telecom providers and related information available through the Microsoft Security Store to evaluate which optiohn best meets your regional and compliance requirements.October 30, 2026: Customers who need to continue to use SMS or voice will be able to choose from a list of telecom providers available through the Microsoft Security Store. February 1, 2027: Microsoft-provided SMS and voice authentication will be retired. Only customer-configured telecom providers will support SMS and voice going forward. Passkeys become the default, recommended authentication method. If no action is taken, tenants relying only on Microsoft-provided SMS or voice may experience sign-in disruptions after February 1, 2027. [Impact on your organization]Who is affectedAll Microsoft Entra ID tenants enabled for SMS or voice authenticationUsers enabled for SMS or voice Platforms and servicesMicrosoft Entra IDMultifactor authenticationMicrosoft Security StoreWhat will happenPasskeys will be automatically enabled for eligible users and Registration Campaign for passkeys will be set to Microsoft Managed state starting September 1, 2026. Users will be prompted during MFA sign-in to register a passkey; users can skip the prompt. Microsoft-provided SMS and voice will be retired on February 1, 2027.Organizations that still require telephony methods must configure a telecom provider in the Microsoft Security Store.Tenants that do not configure a provider and continue relying on Microsoft telephony will face SMS and voice authentication disruptions after retirement.[Action required and recommendations]Admins should take the following steps:Prepare for passkeysPlan to transition users to passkeys and communicate upcoming registration prompts. Decide if SMS or voice is still requiredIf SMS or voice is still needed, you must configure a customer-managed telecom provider. We recommend completing setup at least 4 weeks before the February 1 enforcement to allow sufficient time for testing and a cautious transition. Set up a telecom provider before February 1, 2027SMS and voice will only work after this date if a customer-configured telecom provider is enabled. Use temporary opt-out if neededA temporary opt-out will be available for the September 1, 2026 through February 1, 2027 changes. This allows you to delay passkey and Registration Campaign enablement while you complete transition activities, such as configuring customer-managed telecom providers or migrating to other authentication methods. After February 1, 2027, passkey enablement will be enforced for all users in scope. Additional documentation and more information will be available on Microsoft Learn and the Tech Community.For more information please visit: https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement more:Deploy passkey adoption campaigns with the Conditional Access Optimization Agent | Microsoft Entra | Microsoft LearnGet started with phishing-resistant passwordless authentication deployment in Microsoft Entra ID | Authentication | Microsoft Entra ID | Microsoft Entra | Microsoft LearnIt's Time to Hang Up on Phone Transports for Authentication | Microsoft Entra BlogPasskeys by default and retirement of Microsoft-provided SMS and voice authentication | Microsoft Entra | Microsoft Learn[Compliance considerations]Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement more:",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
-        },
-        {
-          "label": "Get started with phishing-resistant passwordless authentication deployment in Microsoft Entra ID | Authentication |...",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-plan-prerequisites-phishing-resistant-passwordless-authentication%22 target="
-        },
-        {
-          "label": "It's Time to Hang Up on Phone Transports for Authentication | Microsoft Entra Blog",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/its-time-to-hang-up-on-phone-transports-for-authentication/1751752%22 target="
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
       ]
     }
   ]
