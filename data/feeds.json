@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-16T12:45:12.206701+00:00",
-  "totalArticles": 127,
+  "lastUpdated": "2026-08-16T18:33:26.800456+00:00",
+  "totalArticles": 125,
   "articles": [
     {
       "title": "Chromium: CVE-2026-19560 Use after free in Blink",
@@ -5007,54 +5007,6 @@
       ],
       "body": "Bulletin ID: 2026-060-AWS Scope: AWS Content Type: Important (requires attention) / Informational Publication Date: 07/17/2026 12:45 PM PDT Description: AWS HealthOmics is a HIPAA-eligible service that fully manages the compute, storage, and workflow engine infrastructure required to run bioinformatics analyses at scale for clinical diagnostics, drug discovery, and agricultural research. We identified CVE-2026-15415, where improper limitation of a pathname to a restricted directory in the linting tools of the AWS HealthOmics MCP Server (aws-healthomics-mcp-server) before version 0.0.36 might allow an actor who can influence the MCP agent to write an actor-controlled content to arbitrary locations outside the intended workflow bundle directory, via directory traversal sequences in the workflow_files input. Impacted versions: aws-healthomics-mcp-server <= 0.0.35 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
-    },
-    {
-      "title": "[Launched] Public Preview: Azure Functions Support for PowerShell 7.6",
-      "link": "https://azure.microsoft.com/updates?id=567651",
-      "published": "2026-07-17T17:44:00+00:00",
-      "summary": "Azure Functions support for PowerShell 7.6 is now available in preview. You can now develop apps using PowerShell 7.6 locally and deploy them to Azure Functions plans. Learn more: What's new in PowerShell 7.6 Azure Functions PowerShell versions and their",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "[Launched] Generally Available: Encryption in Transit for Azure Files NFS Shares in Azure Kubernetes Service (AKS)",
-      "link": "https://azure.microsoft.com/updates?id=567787",
-      "published": "2026-07-17T14:54:09+00:00",
-      "summary": "Azure Kubernetes Service (AKS) now generally supports Encryption in Transit (EiT) for Azure Files NFS v4.1 volumes through the Azure File CSI driver. With EiT enabled, data transferred between AKS workloads and Azure Files NFS shares is encrypted using TL",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
     }
   ]
 }
