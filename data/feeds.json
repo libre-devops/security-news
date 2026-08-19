@@ -1,6 +1,6 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-19T06:49:47.951616+00:00",
+  "lastUpdated": "2026-08-19T12:53:28.433326+00:00",
   "totalArticles": 118,
   "articles": [
     {
@@ -93,6 +93,69 @@
       ],
       "tags": [
         "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Smarter signals, broader coverage: UEBA anomalies on top of Behaviors layer and new data sources",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/smarter-signals-broader-coverage-ueba-anomalies-on-top-of/ba-p/4544384",
+      "published": "2026-08-18T18:39:45+00:00",
+      "summary": "Co-authors: Ron Shlomo and Ryan Smith Security teams don't struggle with a lack of security signals. The real challenge is understanding which activity matters, why it stands out, and where to focus first. Microsoft Sentinel's Behaviors layer already helps analysts transform raw security events...",
+      "author": "SaraSamokovlija",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel",
+        "Threat Intelligence",
+        "AWS Security"
+      ],
+      "body": "Co-authors: Ron Shlomo and Ryan Smith Security teams don't struggle with a lack of security signals. The real challenge is understanding which activity matters, why it stands out, and where to focus first. Microsoft Sentinel's Behaviors layer already helps analysts transform raw security events into meaningful behavioral patterns. Today, we're making that experience both smarter and broader. What if every behavior could immediately tell you not only what happened, but why it matters? We're bringing UEBA anomaly intelligence directly into the Behaviors layer, so every behavior now includes anomaly insights together with explainable context. At the same time, UEBA expands beyond identity signals to support network and cloud data sources, enabling richer behavioral insights across more of your environment and helping security teams detect suspicious activity wherever it occurs. If you're new to these capabilities, we recommend reviewing our previous announcements on the UEBA expansion and the Behaviors public preview, which provide additional background on the Behaviors layer and its underlying UEBA capabilities. What's new in Sentinel UEBA and Behaviors layer Microsoft Sentinel’s Behaviors layer aggregates and sequences individual events into meaningful behavioral patterns, giving SOC teams the security context of who did what to whom and why it matters in one place, instead of sifting through raw telemetry in separated tables. With this release, we're expanding the Behaviors layer. It now includes UEBA Anomalies and contextual enrichments directly within each behavior. In addition, the Behaviors layer now supports Fortinet logs via the CommonSecurityLog table. We're also expanding Classical UEBA beyond identity signals by adding support for network and cloud data sources: AWS GuardDuty, Check Point, Zscaler and Fortinet (via CommonSecurityLog). Together, these enhancements allow the SOC to receive a richer context and explainable anomaly detection for every behavior across a broader portion of the environment. Adding context to every behavior—use case The following example illustrates how UEBA Anomalies on Behaviors help analysts quickly identify suspicious activity by adding context to every behavior. Scenario: Detecting a compromised FortiGate device An attacker gains administrative access to a FortiGate firewall and begins making configuration changes to establish persistence and enable future access. Individually, each action may appear legitimate....",
+      "links": [
+        {
+          "label": "UEBA expansion",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/microsoft-sentinel%E2%80%99s-ai-driven-ueba-ushers-in-the-next-era-of-behavioral-analyti/4448390"
+        },
+        {
+          "label": "Behaviors public preview",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/turn-complexity-into-clarity-introducing-the-new-ueba-behaviors-layer-in-microso/4484493"
+        },
+        {
+          "label": "Behaviors layer is enabled",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#enable-the-ueba-behaviors-layer"
+        },
+        {
+          "label": "supported data sources are connected",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#supported-data-sources-and-behaviors"
+        },
+        {
+          "label": "UEBA",
+          "url": "https://review.learn.microsoft.com/en-us/azure/sentinel/enable-entity-behavior-analytics?branch=pr-en-us-8156&tabs=azure"
+        },
+        {
+          "label": "Behaviors layer:",
+          "url": "https://review.learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer"
+        }
       ]
     },
     {
@@ -1898,69 +1961,6 @@
       ],
       "body": "For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation snapshot. This helps admins understand enforcement progress for a specific policy against the data state captured during simulation, while also identifying files that were not found in the simulation snapshot but were processed during enforcement. GA date: September CY2026Preview date: September CY2026",
       "links": []
-    },
-    {
-      "title": "Smarter signals, broader coverage: UEBA anomalies on top of Behaviors layer and new data sources",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/smarter-signals-broader-coverage-ueba-anomalies-on-top-of/ba-p/4544384",
-      "published": "2026-08-07T20:14:53+00:00",
-      "summary": "Co-authors: Ron Shlomo and Ryan Smith Security teams don't struggle with a lack of security signals. The real challenge is understanding which activity matters, why it stands out, and where to focus first. Microsoft Sentinel's Behaviors layer already helps analysts transform raw security events...",
-      "author": "SaraSamokovlija",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Threat Intelligence",
-        "AWS Security"
-      ],
-      "body": "Co-authors: Ron Shlomo and Ryan Smith Security teams don't struggle with a lack of security signals. The real challenge is understanding which activity matters, why it stands out, and where to focus first. Microsoft Sentinel's Behaviors layer already helps analysts transform raw security events into meaningful behavioral patterns. Today, we're making that experience both smarter and broader. What if every behavior could immediately tell you not only what happened, but why it matters? We're bringing UEBA anomaly intelligence directly into the Behaviors layer, so every behavior now includes anomaly insights together with explainable context. At the same time, UEBA expands beyond identity signals to support network and cloud data sources, enabling richer behavioral insights across more of your environment and helping security teams detect suspicious activity wherever it occurs. If you're new to these capabilities, we recommend reviewing our previous announcements on the UEBA expansion and the Behaviors public preview, which provide additional background on the Behaviors layer and its underlying UEBA capabilities. What's new in Sentinel UEBA and Behaviors layer Microsoft Sentinel’s Behaviors layer aggregates and sequences individual events into meaningful behavioral patterns, giving SOC teams the security context of who did what to whom and why it matters in one place, instead of sifting through raw telemetry in separated tables. With this release, we're expanding the Behaviors layer. It now includes UEBA Anomalies and contextual enrichments directly within each behavior. In addition, the Behaviors layer now supports Fortinet logs via the CommonSecurityLog table. We're also expanding Classical UEBA beyond identity signals by adding support for network and cloud data sources: AWS GuardDuty, Check Point, Zscaler and Fortinet (via CommonSecurityLog). Together, these enhancements allow the SOC to receive a richer context and explainable anomaly detection for every behavior across a broader portion of the environment. Adding context to every behavior—use case The following example illustrates how UEBA Anomalies on Behaviors help analysts quickly identify suspicious activity by adding context to every behavior. Scenario: Detecting a compromised FortiGate device An attacker gains administrative access to a FortiGate firewall and begins making configuration changes to establish persistence and enable future access. Individually, each action may appear legitimate....",
-      "links": [
-        {
-          "label": "UEBA expansion",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/microsoft-sentinel%E2%80%99s-ai-driven-ueba-ushers-in-the-next-era-of-behavioral-analyti/4448390"
-        },
-        {
-          "label": "Behaviors public preview",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/turn-complexity-into-clarity-introducing-the-new-ueba-behaviors-layer-in-microso/4484493"
-        },
-        {
-          "label": "Behaviors layer is enabled",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#enable-the-ueba-behaviors-layer"
-        },
-        {
-          "label": "supported data sources are connected",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#supported-data-sources-and-behaviors"
-        },
-        {
-          "label": "UEBA",
-          "url": "https://review.learn.microsoft.com/en-us/azure/sentinel/enable-entity-behavior-analytics?branch=pr-en-us-8156&tabs=azure"
-        },
-        {
-          "label": "Behaviors layer:",
-          "url": "https://review.learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer"
-        }
-      ]
     },
     {
       "title": "AI-powered playbook generator, now available to more customers",
