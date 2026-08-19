@@ -1,8 +1,163 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-18T18:41:56.498415+00:00",
+  "lastUpdated": "2026-08-19T01:25:32.629518+00:00",
   "totalArticles": 118,
   "articles": [
+    {
+      "title": "(Updated) Microsoft Entra: Upcoming changes to federatedTokenValidationPolicy default settings",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1303719",
+      "published": "2026-08-18T23:08:05.817000+00:00",
+      "summary": "Updated August 18, 2026: We have updated the timeline. Thank you for your patience. [Introduction]To strengthen security for federated authentication, Microsoft Entra will update the default behavior of federatedTokenValidationPolicy. This policy governs how Microsoft Entra validates federated...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1303719",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated August 18, 2026: We have updated the timeline. Thank you for your patience. [Introduction]To strengthen security for federated authentication, Microsoft Entra will update the default behavior of federatedTokenValidationPolicy. This policy governs how Microsoft Entra validates federated authentication tokens and determines whether sign-ins are allowed when the internalDomainFederation does not match the user’s UPN domain. Previously, enforcing this behavior required explicit tenant configuration, but it will now be applied by default to reduce the risk of unintended cross-domain sign-ins caused by misconfigured or overly permissive federation trust relationships.[When this will happen]General Availability (Worldwide, GCC, GCCH, and DoD): We will begin rolling out in mid-August 2026 and expect to complete by end of August 2026 (previously mid-August).[How this affects your organization]Who is affectedMicrosoft 365 tenants using federated authentication in Microsoft EntraAdmins managing federated domains that were configured before December 2025Applies only to federated domains that have an internalDomainFederation objectWhat will happenBy default, federated sign-ins will be blocked when the internalDomainFederation does not match the user’s UPN domain.The internalDomainFederation object is typically created automatically during federation setup with Active Directory Federation Services (AD FS) or other identity providers (IdPs).This stricter default behavior of the federatedTokenValidationPolicy is already enforced for federated domains added since December 2025.After this change, the same behavior will apply to all existing federated domains with an internalDomainFederation object.Impacted sign-ins will fail with the error:AADSTS5000820: Sign-in blocked by Federated Token Validation policy. Contact your administrator for details.There is no change to the user experience unless cross-domain federated sign-ins are currently occurring.[What you can do to prepare]No action is required for most organizations.Cross-domain federated sign-ins will be blocked automatically as part of this security improvement.Organizations that rely on cross-domain federated sign-ins should review their existing federation configurations before rollout.(Strongly discouraged) If required for business continuity, Security Administrators, Hybrid Identity Administrators, or External Identity Provider Administrators can use Microsoft Graph to create a custom federatedTokenValidationPolicy with rootDomains = none to allow cross-domain sign-ins.Communicate this change to identity and helpdesk teams to reduce support escalations.Learn more:Get federatedTokenValidationPolicy | Microsoft Graph | Microsoft LearnGet internalDomainFederation | Microsoft Graph | Microsoft LearnUse Graph Explorer to try Microsoft Graph APIs | Microsoft Graph | Microsoft LearnvalidatingDomains resource type | Microsoft Graph | Microsoft Learn[Compliance considerations]QuestionAnswerDoes the change include an admin control, and can it be controlled through Microsoft Entra ID group membership?Yes. Administrators can configure a custom federatedTokenValidationPolicy using Microsoft Graph to override the default behavior, although this is strongly discouraged due to security risks.Does the change modify, interrupt, or disable Purview capabilities such as Data Loss Prevention, Information Protection, Conditional Access, audit logging, eDiscovery, encryption, or retention policies?Yes. This change affects authentication enforcement behavior in Microsoft Entra, which may indirectly influence how Conditional Access policies evaluate federated sign-ins.",
+      "links": [
+        {
+          "label": "internalDomainFederation",
+          "url": "https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-1.0&tabs=http"
+        },
+        {
+          "label": "federatedTokenValidationPolicy",
+          "url": "https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta&tabs=http"
+        },
+        {
+          "label": "rootDomains",
+          "url": "https://learn.microsoft.com/graph/api/resources/validatingdomains?view=graph-rest-beta"
+        },
+        {
+          "label": "Use Graph Explorer to try Microsoft Graph APIs | Microsoft Graph | Microsoft Learn",
+          "url": "https://learn.microsoft.com/graph/graph-explorer/graph-explorer-overview"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        },
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center",
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "(Updated) Microsoft Entra: Windows Hello for Business and macOS Platform SSO as standalone MFA factors",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450134",
+      "published": "2026-08-18T20:28:17.920000+00:00",
+      "summary": "Updated August 18, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1450134",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated August 18, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication scenarios.Today, WHfB and macOS PSSO can satisfy MFA requirements during primary sign-in, but users may still be required to register and use an additional passkey or authentication method for certain step-up authentication prompts, Authentication Strength policies, and sign-in frequency checks.After this rollout, users who authenticate with WHfB or macOS PSSO will be able to satisfy supported MFA requirements without registering an additional passkey. This change helps organizations expand the use of phishing-resistant authentication methods and reduce reliance on less secure authentication methods. As part of this change, a user's WHfB and macOS PSSO credentials will be displayed in My Security Info as auto-registered passkeys.[Rollout schedule]General Availability (Worldwide, GCC): Beginning in early October 2026 and expected to complete in late November 2026[Impact on your organization]Who is affectedOrganizations using Microsoft Entra IDUsers who authenticate with Windows Hello for BusinessUsers who authenticate with macOS Platform SSOOrganizations using Conditional Access Authentication Strength policiesPlatforms and servicesMicrosoft Entra IDWindows Hello for BusinessmacOS Platform SSOConditional AccessAuthentication Strength policiesWhat will happenAfter rollout:Users signing in with WHfB or macOS PSSO can complete supported MFA challenges without requiring a separate passkey.WHfB and macOS PSSO will satisfy supported MFA requirements for step-up authentication scenarios.WHfB and macOS PSSO can be used during 2FA to satisfy supported Authentication Strength policy requirements.WHfB and macOS PSSO can be used during 2FA to satisfy supported sign-in frequency challenge requirements.Users whose only MFA method is WHfB or macOS PSSO will be considered MFA-capable.Users who sign in with only a password will no longer be automatically prompted to register an additional MFA method if WHfB or macOS PSSO is their only registered MFA credential.Users with WHfB or macOS PSSO credentials, will be able to see them listed in My Security Info as auto-registered passkeys.[Action required and recommendations]No configuration changes are required.We recommend reviewing user onboarding and MFA registration processes before rollout. Because WHfB and macOS PSSO credentials are device-bound, users may not be able to complete MFA challenges from devices where those credentials are not available.Recommended actions:Update onboarding guidance to ensure users register at least one portable MFA method.Consider requiring users to register a synced passkey or Microsoft Authenticator passkey in addition to WHfB or macOS PSSO.Review custom Authentication Strength policies to confirm WHfB and macOS PSSO are allowed where appropriate.Update user documentation because users with only WHfB or macOS PSSO registered will no longer be automatically guided to register an additional MFA method.Learn more (To be updated closer to GA rollout.)Plan a Windows Hello for Business deployment | Security | Windows | Microsoft LearnPrepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Plan a Windows Hello for Business deployment | Security | Windows | Microsoft Learn",
+          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/"
+        },
+        {
+          "label": "Prepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn",
+          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/prepare-users"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Smarter signals, broader coverage: UEBA anomalies on top of Behaviors layer and new data sources",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/smarter-signals-broader-coverage-ueba-anomalies-on-top-of/ba-p/4544384",
+      "published": "2026-08-18T18:39:45+00:00",
+      "summary": "Co-authors: Ron Shlomo and Ryan Smith Security teams don't struggle with a lack of security signals. The real challenge is understanding which activity matters, why it stands out, and where to focus first. Microsoft Sentinel's Behaviors layer already helps analysts transform raw security events...",
+      "author": "SaraSamokovlija",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel",
+        "Threat Intelligence",
+        "AWS Security"
+      ],
+      "body": "Co-authors: Ron Shlomo and Ryan Smith Security teams don't struggle with a lack of security signals. The real challenge is understanding which activity matters, why it stands out, and where to focus first. Microsoft Sentinel's Behaviors layer already helps analysts transform raw security events into meaningful behavioral patterns. Today, we're making that experience both smarter and broader. What if every behavior could immediately tell you not only what happened, but why it matters? We're bringing UEBA anomaly intelligence directly into the Behaviors layer, so every behavior now includes anomaly insights together with explainable context. At the same time, UEBA expands beyond identity signals to support network and cloud data sources, enabling richer behavioral insights across more of your environment and helping security teams detect suspicious activity wherever it occurs. If you're new to these capabilities, we recommend reviewing our previous announcements on the UEBA expansion and the Behaviors public preview, which provide additional background on the Behaviors layer and its underlying UEBA capabilities. What's new in Sentinel UEBA and Behaviors layer Microsoft Sentinel’s Behaviors layer aggregates and sequences individual events into meaningful behavioral patterns, giving SOC teams the security context of who did what to whom and why it matters in one place, instead of sifting through raw telemetry in separated tables. With this release, we're expanding the Behaviors layer. It now includes UEBA Anomalies and contextual enrichments directly within each behavior. In addition, the Behaviors layer now supports Fortinet logs via the CommonSecurityLog table. We're also expanding Classical UEBA beyond identity signals by adding support for network and cloud data sources: AWS GuardDuty, Check Point, Zscaler and Fortinet (via CommonSecurityLog). Together, these enhancements allow the SOC to receive a richer context and explainable anomaly detection for every behavior across a broader portion of the environment. Adding context to every behavior—use case The following example illustrates how UEBA Anomalies on Behaviors help analysts quickly identify suspicious activity by adding context to every behavior. Scenario: Detecting a compromised FortiGate device An attacker gains administrative access to a FortiGate firewall and begins making configuration changes to establish persistence and enable future access. Individually, each action may appear legitimate....",
+      "links": [
+        {
+          "label": "UEBA expansion",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/microsoft-sentinel%E2%80%99s-ai-driven-ueba-ushers-in-the-next-era-of-behavioral-analyti/4448390"
+        },
+        {
+          "label": "Behaviors public preview",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/turn-complexity-into-clarity-introducing-the-new-ueba-behaviors-layer-in-microso/4484493"
+        },
+        {
+          "label": "Behaviors layer is enabled",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#enable-the-ueba-behaviors-layer"
+        },
+        {
+          "label": "supported data sources are connected",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#supported-data-sources-and-behaviors"
+        },
+        {
+          "label": "UEBA",
+          "url": "https://review.learn.microsoft.com/en-us/azure/sentinel/enable-entity-behavior-analytics?branch=pr-en-us-8156&tabs=azure"
+        },
+        {
+          "label": "Behaviors layer:",
+          "url": "https://review.learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer"
+        }
+      ]
+    },
     {
       "title": "CVE-2026-75897 - Uncontrolled resource consumption in OpenSearch Dashboards capabilities route",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-082-aws/",
@@ -51,6 +206,81 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Hunting MacSync Stealer infrastructure through behavioral pivots",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/18/hunting-macsync-stealer-infrastructure-through-behavioral-pivots/",
+      "published": "2026-08-18T17:08:28+00:00",
+      "summary": "MacSync Stealer rapidly rotates domains to evade detection, but its behavior remains consistent. Learn how Microsoft uncovered 30+ related domains using durable hunting pivots. The post Hunting MacSync Stealer infrastructure through behavioral pivots appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Defender Experts and Microsoft Security Research",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article Activity overview Discovery of additional rotating infrastructure Attack chain overviewMitigation and protection guidanceReferencesLearn more MacSync Stealer is a macOS-focused information stealer that relies on changing infrastructure to deliver payloads, communicate with compromised devices, and exfiltrate data. Earlier reporting by RST Cloud identified the threat through a limited set of domains and documented rapid command-and-control (C2) replacement after public disclosure. Microsoft Defender Experts expanded that view by correlating recurring endpoints and network behaviors across the activity. This behavior-led approach connected more than 30 domains and showed that the infrastructure supported more than C2 communication, extending into active collection, staging, and exfiltration. The findings demonstrate that although domains may rotate quickly, repeated execution patterns, request characteristics, staging behavior, and upload methods provide defenders with more durable opportunities to investigate MacSync Stealer activity. Activity overview Microsoft Defender Experts reviewed endpoint and network telemetry to determine which MacSync Stealer behaviors persisted as infrastructure changed. The investigation followed the activity from C2 communication through collection, staging, and exfiltration, using recurring technical traits to connect activity across rotating domains. Execution began from an interactive shell session consistent with ClickFix social engineering, where users are tricked into pasting or running commands in Terminal. The shell session used curl to retrieve attacker-controlled payload content, followed by script-driven execution and outbound communication. After execution, the malware communicated with attacker-controlled infrastructure using recurring URI paths, macOS User-Agent strings, API-key headers, and curl command-line options. These request traits became durable behavioral pivots because they remained consistent even as domains changed. The activity then progressed into collection behavior targeting macOS Keychain material, browser data, locally stored credentials, cloud and Secure Shell (SSH) credentials, and sensitive files from common user directories. The investigation also confirmed active data exfiltration, not just beaconing. Collected data was staged under temporary paths, compressed into an archive, split into chunks, and uploaded through HTTP PUT requests using curl with the –data-binary...",
+      "links": [
+        {
+          "label": "Activity overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#activity-overview"
+        },
+        {
+          "label": "Discovery of additional rotating infrastructure",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#discovery-of-additional-rotating-infrastructure"
+        },
+        {
+          "label": "Attack chain overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+        },
+        {
+          "label": "Learn more",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "reporting",
+          "url": "https://www.rstcloud.com/macsync-stealer-c2-infrastructure-rotation/"
+        },
+        {
+          "label": "osascript",
+          "url": "https://ss64.com/mac/osascript.html"
+        },
+        {
+          "label": "XProtect",
+          "url": "https://support.apple.com/guide/security/protecting-against-malware-sec469d47bd8/web"
+        },
+        {
+          "label": "cloud-delivered protection",
+          "url": "https://learn.microsoft.com/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus"
+        },
+        {
+          "label": "Enable network protection and web protection",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/network-protection-macos"
+        },
+        {
+          "label": "Enable tamper protection",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/mac-preferences"
+        }
       ]
     },
     {
@@ -1707,45 +1937,6 @@
       ]
     },
     {
-      "title": "Microsoft Entra: Windows Hello for Business and macOS Platform SSO as standalone MFA factors",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450134",
-      "published": "2026-08-07T21:56:16.503000+00:00",
-      "summary": "[What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication scenarios.Today, WHfB and macOS PSSO can satisfy MFA requirements during primary sign-in,...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1450134",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication scenarios.Today, WHfB and macOS PSSO can satisfy MFA requirements during primary sign-in, but users may still be required to register and use an additional passkey or authentication method for certain step-up authentication prompts, Authentication Strength policies, and sign-in frequency checks.After this rollout, users who authenticate with WHfB or macOS PSSO will be able to satisfy supported MFA requirements without registering an additional passkey. This change helps organizations expand the use of phishing-resistant authentication methods and reduce reliance on less secure authentication methods.[Rollout schedule]General Availability (Worldwide, GCC): Beginning in early October 2026 and expected to complete in late November 2026[Impact on your organization]Who is affectedOrganizations using Microsoft Entra IDUsers who authenticate with Windows Hello for BusinessUsers who authenticate with macOS Platform SSOOrganizations using Conditional Access Authentication Strength policiesPlatforms and servicesMicrosoft Entra IDWindows Hello for BusinessmacOS Platform SSOConditional AccessAuthentication Strength policiesWhat will happenAfter rollout:Users signing in with WHfB or macOS PSSO can complete supported MFA challenges without requiring a separate passkey.WHfB and macOS PSSO will satisfy supported MFA requirements for step-up authentication scenarios.WHfB and macOS PSSO can be used during 2FA to satisfy supported Authentication Strength policy requirements.WHfB and macOS PSSO can be used during 2FA to satisfy supported sign-in frequency challenge requirements.Users whose only MFA method is WHfB or macOS PSSO will be considered MFA-capable.Users who sign in with only a password will no longer be automatically prompted to register an additional MFA method if WHfB or macOS PSSO is their only registered MFA credential.[Action required and recommendations]No configuration changes are required.We recommend reviewing user onboarding and MFA registration processes before rollout. Because WHfB and macOS PSSO credentials are device-bound, users may not be able to complete MFA challenges from devices where those credentials are not available.Recommended actions:Update onboarding guidance to ensure users register at least one portable MFA method.Consider requiring users to register a synced passkey or Microsoft Authenticator passkey in addition to WHfB or macOS PSSO.Review custom Authentication Strength policies to confirm WHfB and macOS PSSO are allowed where appropriate.Update user documentation because users with only WHfB or macOS PSSO registered will no longer be automatically guided to register an additional MFA method.Learn more (To be updated closer to GA rollout.)Plan a Windows Hello for Business deployment | Security | Windows | Microsoft LearnPrepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "Plan a Windows Hello for Business deployment | Security | Windows | Microsoft Learn",
-          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/"
-        },
-        {
-          "label": "Prepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn",
-          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/prepare-users"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
       "title": "Microsoft Purview: Information Protection-Auto-labeling per-policy coverage report",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568935",
       "published": "2026-08-07T21:45:15+00:00",
@@ -1770,69 +1961,6 @@
       ],
       "body": "For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation snapshot. This helps admins understand enforcement progress for a specific policy against the data state captured during simulation, while also identifying files that were not found in the simulation snapshot but were processed during enforcement. GA date: September CY2026Preview date: September CY2026",
       "links": []
-    },
-    {
-      "title": "Smarter signals, broader coverage: UEBA anomalies on top of Behaviors layer and new data sources",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/smarter-signals-broader-coverage-ueba-anomalies-on-top-of/ba-p/4544384",
-      "published": "2026-08-07T20:14:53+00:00",
-      "summary": "Co-authors: Ron Shlomo and Ryan Smith Security teams don't struggle with a lack of security signals. The real challenge is understanding which activity matters, why it stands out, and where to focus first. Microsoft Sentinel's Behaviors layer already helps analysts transform raw security events...",
-      "author": "SaraSamokovlija",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Threat Intelligence",
-        "AWS Security"
-      ],
-      "body": "Co-authors: Ron Shlomo and Ryan Smith Security teams don't struggle with a lack of security signals. The real challenge is understanding which activity matters, why it stands out, and where to focus first. Microsoft Sentinel's Behaviors layer already helps analysts transform raw security events into meaningful behavioral patterns. Today, we're making that experience both smarter and broader. What if every behavior could immediately tell you not only what happened, but why it matters? We're bringing UEBA anomaly intelligence directly into the Behaviors layer, so every behavior now includes anomaly insights together with explainable context. At the same time, UEBA expands beyond identity signals to support network and cloud data sources, enabling richer behavioral insights across more of your environment and helping security teams detect suspicious activity wherever it occurs. If you're new to these capabilities, we recommend reviewing our previous announcements on the UEBA expansion and the Behaviors public preview, which provide additional background on the Behaviors layer and its underlying UEBA capabilities. What's new in Sentinel UEBA and Behaviors layer Microsoft Sentinel’s Behaviors layer aggregates and sequences individual events into meaningful behavioral patterns, giving SOC teams the security context of who did what to whom and why it matters in one place, instead of sifting through raw telemetry in separated tables. With this release, we're expanding the Behaviors layer. It now includes UEBA Anomalies and contextual enrichments directly within each behavior. In addition, the Behaviors layer now supports Fortinet logs via the CommonSecurityLog table. We're also expanding Classical UEBA beyond identity signals by adding support for network and cloud data sources: AWS GuardDuty, Check Point, Zscaler and Fortinet (via CommonSecurityLog). Together, these enhancements allow the SOC to receive a richer context and explainable anomaly detection for every behavior across a broader portion of the environment. Adding context to every behavior—use case The following example illustrates how UEBA Anomalies on Behaviors help analysts quickly identify suspicious activity by adding context to every behavior. Scenario: Detecting a compromised FortiGate device An attacker gains administrative access to a FortiGate firewall and begins making configuration changes to establish persistence and enable future access. Individually, each action may appear legitimate....",
-      "links": [
-        {
-          "label": "UEBA expansion",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/microsoft-sentinel%E2%80%99s-ai-driven-ueba-ushers-in-the-next-era-of-behavioral-analyti/4448390"
-        },
-        {
-          "label": "Behaviors public preview",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/turn-complexity-into-clarity-introducing-the-new-ueba-behaviors-layer-in-microso/4484493"
-        },
-        {
-          "label": "Behaviors layer is enabled",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#enable-the-ueba-behaviors-layer"
-        },
-        {
-          "label": "supported data sources are connected",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#supported-data-sources-and-behaviors"
-        },
-        {
-          "label": "UEBA",
-          "url": "https://review.learn.microsoft.com/en-us/azure/sentinel/enable-entity-behavior-analytics?branch=pr-en-us-8156&tabs=azure"
-        },
-        {
-          "label": "Behaviors layer:",
-          "url": "https://review.learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer"
-        }
-      ]
     },
     {
       "title": "AI-powered playbook generator, now available to more customers",
@@ -3448,69 +3576,6 @@
       ]
     },
     {
-      "title": "​​Better security starts with better questions",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/29/better-security-starts-with-better-questions/",
-      "published": "2026-07-29T16:00:00+00:00",
-      "summary": "Learn how better questions, trusted AI, and human judgment help security leaders make confident decisions and build resilient systems. The post ​​Better security starts with better questions appeared first on Microsoft Security Blog.",
-      "author": "Aarti Borkar",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "As organizations move beyond AI experimentation, success will depend on how effectively they combine intelligence and trust. The same systems that amplify knowledge, accelerate decisions, and unlock new outcomes must also protect data, govern AI, and build resilience. In this next phase of transformation, security is not separate from innovation—it is an enabler that helps make responsible innovation possible at a faster pace. That starts with asking better questions—the kind that help organizations turn intelligence into action and trust into a foundation for progress. AI is changing how security decisions are made. Defenders now have access to more signals, insights, and analytical power than ever before. But better security does not start with more information. It starts with asking the right questions: What are we trying to protect? What risks matter most? What conditions need to be true? And what decisions do we need to make with confidence? That clarity matters because security is shaped by more than technology. The challenges organizations face rarely exist in isolation. They emerge across people, processes, technology, data, identities, and governance. Understanding those connections is what allows security teams to use platforms, AI, and automation to make better decisions under real-world conditions. Connect with Microsoft Security at Black Hat USA 2026 Security as a systems challenge Security has never been a single-layer challenge. Vulnerabilities can emerge across code, data, identities, and integrations, while exposure is often created at the intersections between them. Designing for security requires a systems mindset—understanding how these elements work together, where failure can occur, and what safeguards are needed so no single layer carries the burden alone. That is why defense in depth remains essential: layered controls, ongoing monitoring, mitigations, and risk management across the AI lifecycle help organizations reduce exposure while continuing to adapt. Agentic AI in cybersecurity Explore actionable takeaways ↗ This is especially important as AI becomes more embedded in how organizations operate. AI can help teams analyze vast amounts of information, identify patterns, and surface recommendations at a scale that was previously unthinkable. Those AI outputs still require oversight, governance, and human judgment, with clear accountability for how AI-generated insights are validated and used. But insight only creates value when it...",
-      "links": [
-        {
-          "label": "Connect with Microsoft Security at Black Hat USA 2026",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/07/17/microsoft-at-black-hat-usa-2026-defending-trust-in-the-age-of-ai-and-supply-chain-attacks/?msockid=2a1cf1f3c1b76c8b0651e650c03b6dd1"
-        },
-        {
-          "label": "Explore actionable takeaways ↗",
-          "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-agentic-ai-cybersecurity"
-        },
-        {
-          "label": "Threat intelligence",
-          "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-cyber-threat-intelligence"
-        },
-        {
-          "label": "Explore Microsoft Security solutions",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "​​Better security starts with better questions",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/07/29/better-security-starts-with-better-questions/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
-        }
-      ]
-    },
-    {
       "title": "MDTI convergence in Microsoft Sentinel and Defender XDR is complete",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/mdti-convergence-in-microsoft-sentinel-and-defender-xdr-is/ba-p/4541279",
       "published": "2026-07-29T16:00:00+00:00",
@@ -4581,36 +4646,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Microsoft Purview: Data Loss Prevention - Data Security for non-Microsoft connected apps",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=568075",
-      "published": "2026-07-21T22:37:32+00:00",
-      "summary": "Microsoft Purview Data Loss Prevention and Information Protection Auto-labeling capabilities now extend to non-Microsoft connected apps (e.g., Google Workspace, Box, Dropbox, Salesforce, ServiceNow, Amazon Web Services, and Cisco Webex). The conditions and actions supported for each of these...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Purview",
-        "AWS Security"
       ]
     },
     {
