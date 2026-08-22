@@ -1,8 +1,64 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-21T18:40:51.136140+00:00",
-  "totalArticles": 135,
+  "lastUpdated": "2026-08-22T01:23:32.373055+00:00",
+  "totalArticles": 136,
   "articles": [
+    {
+      "title": "Microsoft Entra ID: Passkey support for B2B users",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1459133",
+      "published": "2026-08-21T22:38:13.657000+00:00",
+      "summary": "[What and why]Microsoft Entra ID will support passkey registration and sign-in for B2B users, including internal guest users and external users. Eligible B2B users will be able to register and use passkeys issued by the resource tenant to satisfy that tenant's multifactor authentication (MFA)...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1459133",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]Microsoft Entra ID will support passkey registration and sign-in for B2B users, including internal guest users and external users. Eligible B2B users will be able to register and use passkeys issued by the resource tenant to satisfy that tenant's multifactor authentication (MFA) requirements.Passkeys are already supported for member users in their home tenant. Until now, B2B users could not use a resource tenant passkey when that tenant required MFA and did not trust the home tenant's MFA. This update closes that gap and gives guest and external users a phishing-resistant way to satisfy MFA requirements in the resource tenant.B2B users can register a resource tenant passkey from the resource tenant's My Security Info page, during a proof-up prompt, or through a passkey registration campaign. Once registered, the passkey can satisfy the resource tenant's MFA requirements during sign-in.Microsoft Authenticator app passkeys will be supported for internal guest users but not for external users.[Rollout schedule]General Availability (GCC, Worldwide): Beginning in early October 2026 and expected to complete by late February 2027Internal guest users: Beginning in early October 2026 and is expected to complete by late October 2026External users (excluding Microsoft Authenticator app passkeys): Rollout timing will be communicated in a future Message center post update.[Impact on your organization]Who is affectedMicrosoft Entra administrators managing Authentication methods policiesOrganizations that use Microsoft Entra B2B collaborationInternal guest users and external users who are in scope for passkey authenticationPlatforms and servicesMicrosoft Entra IDMy Security InfoAuthentication methods policyConditional AccessWhat will happenThe feature will be enabled by default.B2B users who are already in scope for passkeys in your Authentication methods policy will automatically be able to register and sign in with resource tenant passkeys.No administrative action is required to enable this feature.Eligible B2B users may receive prompts to register a passkey during sign-in through proof-up experiences or passkey registration campaigns, if those experiences are configured in your tenant.Users can also register a passkey from the resource tenant's My Security Info page.If your organization has excluded B2B users from passkeys in the Authentication methods policy, those users will not be prompted and will not be able to register or sign in with a resource tenant passkey.This change gives guest and external users a phishing-resistant sign-in option and helps organizations extend strong authentication requirements to their B2B population.[Action required and recommendations]No action is required.We recommend that administrators review current passkey and MFA configurations before rollout:Review your Authentication methods policy. Confirm which users are in scope for passkeys, including guest and external users. B2B users who are in scope will be enabled automatically. Exclude them from the policy if that is not the intended behavior.Review your passkey registration campaign. Confirm that the campaign's user scope includes the intended users.Review your Conditional Access policies. Confirm that MFA and authentication strength requirements will apply as intended for B2B users when resource tenant passkeys become available.Confirm user scoping across authentication-related policies. Make sure the groups and user types targeted by each policy align with your organization's requirements for guest and external users.Consider notifying your help desk and identity support teams that eligible B2B users may begin receiving passkey registration prompts after rollout.[Compliance considerations]QuestionAnswerDoes the change store new customer data?Passkey credential registration data may be stored as part of Microsoft Entra authentication management.Does the change alter how existing customer data is processed, stored, or accessed?The change introduces an additional authentication method for B2B users accessing resource tenant resources.",
+      "links": [],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Data Lifecycle Management – Retention for Copilot Memory",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569612",
+      "published": "2026-08-21T22:00:23+00:00",
+      "summary": "Configure retention for Microsoft 365 Copilot memory to help preserve historical versions of memory items for security, compliance, and investigation scenarios. Copilot memory includes saved memories and details inferred from chat history that enable more personalized and context-aware Copilot...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "Configure retention for Microsoft 365 Copilot memory to help preserve historical versions of memory items for security, compliance, and investigation scenarios. Copilot memory includes saved memories and details inferred from chat history that enable more personalized and context-aware Copilot experiences. Copilot memory items are stored in a hidden folder in the user’s Exchange mailbox. This capability will enable retention and versioning support for inactive memory items so that administrators can maintain visibility into memory changes while active memory continues to be managed by the Copilot experience. GA date: September CY2026",
+      "links": []
+    },
     {
       "title": "Microsoft Entra ID: Retirement of custom CSS layout and positioning properties in company branding",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1458474",
@@ -5093,43 +5149,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Defending the Inbox Against Prompt Injection Attacks",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/defending-the-inbox-against-prompt-injection-attacks/ba-p/4534636",
-      "published": "2026-07-22T18:50:10+00:00",
-      "summary": "AI assistants are quickly becoming part of everyday work—summarizing emails, drafting responses, triaging requests, and even potentially acting across connected business systems. As email becomes an automated input to AI systems, it can also become a new attack surface. Attackers no longer need to...",
-      "author": "nithinnara",
-      "source": "Microsoft Defender for Office 365",
-      "source_id": "defender_office",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Email Security",
-      "board_id": "microsoftdefenderforoffice365blog",
-      "products": [
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Office 365",
-        "AI Security"
-      ],
-      "body": "AI assistants are quickly becoming part of everyday work—summarizing emails, drafting responses, triaging requests, and even potentially acting across connected business systems. As email becomes an automated input to AI systems, it can also become a new attack surface. Attackers no longer need to convince a human to click; they can target the AI. This shift changes how email threats operate and why traditional protections aren’t enough on their own. Publicly disclosed research—Morris II, EchoLeak, and a steady stream of indirect prompt injection findings—shows this isn’t theoretical. Email can be the highest-volume, lowest-friction ingress channel into your AI estate, and it needs its own purpose-built control. Today, we’re announcing a new capability in Microsoft Defender that addresses this. Microsoft Defender can now detect and isolate malicious AI instructions embedded in email, commonly referred to as prompt injection, before delivery. This reduces the risk of prompt injection reaching the inbox and activating against AI systems. By detecting these threats, organizations are better protected from prompt injection-driven compromise and unintended data exposure. Rather than responding to attacks after an AI system has already processed them, Defender can remove the threat at the earliest control point: the inbox itself. When attackers stop phishing humans and start targeting AI For decades, email attacks relied on social engineering—convincing a user to click a link, open an attachment, or follow instructions. AI assistants connected to email change that model. For illustrative purposes, an attack chain could look like this: An attacker can send an email containing hidden instructions often invisible to a human because they’re encoded, white-on-white, zero-width Unicode, or embedded in HTML the renderer hides. The recipient, or an autonomous agent, asks Copilot to summarize or process the unread mail or inbox. The AI could unknowingly follow the embedded instructions, which can trigger actions like exposing sensitive data, calling tools, or poisoning downstream context. This emerging class of attack, commonly referred to as indirect prompt injection, represents a clear evolution of email‑borne risk and calls for protections specifically designed for AI‑targeted threats. How Microsoft Defender protects against prompt injection attempts Protection against prompt injection is built into Defender’s existing email security pipeline, allowing organizations...",
-      "links": [
-        {
-          "label": "documentation",
-          "url": "https://learn.microsoft.com/en-us/defender-office-365/step-by-step-guides/prompt-injection-protection-defender-for-office-365"
-        }
       ]
     }
   ]
