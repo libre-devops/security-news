@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-22T06:44:51.715027+00:00",
-  "totalArticles": 136,
+  "lastUpdated": "2026-08-22T12:44:53.858456+00:00",
+  "totalArticles": 134,
   "articles": [
     {
       "title": "Microsoft Entra ID: Passkey support for B2B users",
@@ -5044,111 +5044,6 @@
           "label": "continued to produce measurable results",
           "url": "https://www.microsoft.com/en-us/security/blog/2026/04/30/email-threat-landscape-q1-2026-trends-and-insights/#tycoon2fa-disruption-impact"
         }
-      ]
-    },
-    {
-      "title": "Should You Use the New Microsoft Entra Tenant Governance or Azure Lighthouse? (part 3 of 3)",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/should-you-use-the-new-microsoft-entra-tenant-governance-or/ba-p/4532297",
-      "published": "2026-07-23T12:00:00+00:00",
-      "summary": "In Part 1 we built Azure Lighthouse the technical way. In Part 2, \"Bring Your Partner In, Without Letting Their Identities In,\" we made the security case for it: let a service provider operate a customer's Azure resources without creating any identity in the customer's tenant. This third part...",
-      "author": "Preston_Romney",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Sentinel"
-      ],
-      "body": "In Part 1 we built Azure Lighthouse the technical way. In Part 2, \"Bring Your Partner In, Without Letting Their Identities In,\" we made the security case for it: let a service provider operate a customer's Azure resources without creating any identity in the customer's tenant. This third part introduces another, newly available delegation model Microsoft Entra Tenant Governance and helps you to answer the question: which one do I use, and when?. If you already know Lighthouse, you have everything you need to follow along - If not, catch up on the previous two articles. While most of the focus will be on Microsoft Entra Tenant Governance, we will compare and contrast it with Azure Lighthouse. There's one idea that makes the whole comparison click: the two models project access in opposite directions. 1. Azure Lighthouse, and its boundary As a brief refresher, Azure Lighthouse lets a service provider manage a customer's Azure resources (subscriptions and resource groups) from the provider's own tenant. The provider's users never get an account in the customer's directory and never become guests there; instead, the customer's subscriptions and resource groups are delegated to the provider through Azure Resource Manager, and the provider operates them with their home credentials (Azure Lighthouse architecture). No identity sprawl, no extra license, no charge (Azure Lighthouse overview). Lighthouse is scoped to the Azure Resource Manager control plane. It delegates resources from subscriptions or resource groups such as virtual machines, storage, networking, policy, and Sentinel workspaces. It does not grant Microsoft Entra directory roles, it does not reach resource data planes such as Storage blob data or Key Vault secrets, and it doesn't reach Microsoft 365 (cross-tenant management experience). But it leaves a real question open. What happens when the partner (or an enterprise with multiple tenants) legitimately needs access to the directory, to read identity configuration, run security operations, administer users, or govern identities, and not just the resource estate? Lighthouse, by design, can't take you there. That's the gap the second model fills. 2. Two directions of projection The easiest way to keep the two models straight is to consider the following: Fig 1 - Access delegation direction of trust Azure Lighthouse projects the customer's resources up into the provider's tenant. The provider manages those resources from its own context. The...",
-      "links": [
-        {
-          "label": "Part 1",
-          "url": "https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/implementing-azure-lighthouse-a-technical-guide-for-service-providers-and-enterp/4490592"
-        },
-        {
-          "label": "Bring Your Partner In, Without Letting Their Identities In",
-          "url": "https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/azure-lighthouse-bring-your-partner-in-without-letting-their-identities-in-part-/4529852"
-        },
-        {
-          "label": "Azure Lighthouse architecture",
-          "url": "https://learn.microsoft.com/en-us/azure/lighthouse/concepts/architecture"
-        },
-        {
-          "label": "Azure Lighthouse overview",
-          "url": "https://learn.microsoft.com/en-us/azure/lighthouse/overview"
-        },
-        {
-          "label": "cross-tenant management experience",
-          "url": "https://learn.microsoft.com/en-us/azure/lighthouse/concepts/cross-tenant-management-experience"
-        },
-        {
-          "label": "set up a governance relationship",
-          "url": "https://learn.microsoft.com/en-us/entra/id-governance/tenant-governance/how-to-set-up-governance-relationship"
-        },
-        {
-          "label": "governance policy templates",
-          "url": "https://learn.microsoft.com/en-us/entra/id-governance/tenant-governance/governance-policy-templates"
-        },
-        {
-          "label": "use cross-tenant delegated administration",
-          "url": "https://learn.microsoft.com/en-us/entra/id-governance/tenant-governance/how-to-delegated-administration"
-        },
-        {
-          "label": "cross-tenant delegated administration",
-          "url": "https://learn.microsoft.com/en-us/entra/id-governance/tenant-governance/cross-tenant-delegated-administration"
-        },
-        {
-          "label": "API overview",
-          "url": "https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-tenantgovernance-overview?view=graph-rest-beta"
-        },
-        {
-          "label": "deployment guide",
-          "url": "https://learn.microsoft.com/en-us/entra/id-governance/tenant-governance/deployment-guide#configure-a-default-policy-template-optional"
-        },
-        {
-          "label": "governance relationships for unified SecOps",
-          "url": "https://learn.microsoft.com/en-us/unified-secops/governance-relationships"
-        }
-      ]
-    },
-    {
-      "title": "UK and partners expose Russian state-supported actors for new ‘zero-click’ phishing campaign targeting Western organisations",
-      "link": "https://www.ncsc.gov.uk/news/uk-and-partners-expose-russian-state-supported-actors-for-new-zero-click-phishing-campaign",
-      "published": "2026-07-23T12:00:00+00:00",
-      "summary": "GCHQ’s National Cyber Security Centre and international partners issue warning as ‘LAUNDRY BEAR’ cyber threat group exposed for targeted phishing campaign",
-      "author": "",
-      "source": "NCSC Security Feed",
-      "source_id": "ncsc_security",
-      "source_group": "Official NCSC",
-      "source_kind": "rss",
-      "vendor": "NCSC",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ncsc-guidance",
-          "name": "NCSC Guidance",
-          "score": 13
-        }
-      ],
-      "tags": [
-        "NCSC Guidance"
       ]
     }
   ]
