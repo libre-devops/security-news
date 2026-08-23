@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-22T18:34:46.451429+00:00",
-  "totalArticles": 130,
+  "lastUpdated": "2026-08-23T01:37:16.932995+00:00",
+  "totalArticles": 129,
   "articles": [
     {
       "title": "Microsoft Entra ID: Passkey support for B2B users",
@@ -4791,36 +4791,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Microsoft Entra: Passwordless password change in My Sign-Ins",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1437671",
-      "published": "2026-07-23T22:39:34.487000+00:00",
-      "summary": "[What and Why]We're introducing a new Microsoft Entra capability that allows passwordless users to change their password directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key, or Windows Hello for Business. Users can complete this action even if they...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1437671",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and Why]We're introducing a new Microsoft Entra capability that allows passwordless users to change their password directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key, or Windows Hello for Business. Users can complete this action even if they don't know their current password and without using self-service password reset (SSPR) or contacting the helpdesk.Many organizations are adopting passwordless authentication but still maintain passwords for legacy applications and services. This update helps reduce password-related support requests and removes a common barrier to passwordless adoption. The feature is disabled by default and requires administrator enablement before users can access it.[Rollout Schedule]General Availability (Worldwide and GCC): Beginning in late October 2026 and expected to complete by late October 2026[Impact on Your Organization]Who is affectedMicrosoft Entra administrators who manage password change settingsUsers who have a registered passwordless authentication method (passkey, FIDO2 security key, or Windows Hello for Business) and also maintain a passwordOrganizations that choose to enable the featurePlatforms/ServicesMicrosoft EntraMy Sign-Ins (mysignins.microsoft.com)What will happenBecause this feature is off by default, there is no change to your users' experience unless you turn it on. After the feature is enabled, eligible users will see a new Change password option in My Sign-Ins.Users can authenticate with their passwordless credential and set a new password without knowing their existing password.Users are not required to enroll in or use SSPR to complete this action.Administrators can choose to enable or disable the capability through Microsoft Entra management interfaces available at release.Authentication continues to require a strong passwordless credential, such as a passkey, FIDO2 security key, or Windows Hello for Business.The setting is tenant-wide: you can turn it on for your entire tenant or leave it off for everyone. There is no per-user or per-group scoping. [Action Required/Recommendations]No action is required.If your organization plans to support passwordless password changes:Review your password management and passwordless authentication strategy.Evaluate whether enabling this capability aligns with your organization's security and support requirements.Communicate the new self-service capability to helpdesk and support teams.Update internal user guidance and documentation as needed.If your organization chooses to offer passwordless password changes, enable the feature through the Microsoft Entra admin experience or supported APIs when it becomes available in October 2026.Learn more Microsoft Learn documentation will be available when the feature releases in October. [Compliance Considerations]QuestionAnswerDoes the change include an admin control?Yes. The feature is disabled by default and requires explicit administrator enablement.Does the change modify how users can access or correct their personal data?Yes. Users gain a new self-service method to update their password using an existing passwordless credential.",
-      "links": [],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
       ]
     }
   ]
