@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-25T01:25:34.821804+00:00",
-  "totalArticles": 129,
+  "lastUpdated": "2026-08-25T06:54:00.696315+00:00",
+  "totalArticles": 130,
   "articles": [
     {
       "title": "[Launched] Generally Available: Custom block response code and body for Application Gateway WAF",
@@ -25,6 +25,77 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Unified AI Defense: Security Copilot, Project Perception, and MDASH",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/unified-ai-defense-security-copilot-project-perception-and-mdash/ba-p/4547124",
+      "published": "2026-08-24T17:04:23+00:00",
+      "summary": "Executive Summary This triumvirate of tools present a cohesive and unified platform that tells a compelling story: Microsoft Security Copilot as the assistive AI experience and extensible agent platform for security and IT work; Project Perception as the coordinated multi-agent defense system that...",
+      "author": "edgarus71",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 11
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 7
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Security Copilot",
+        "AI Security",
+        "Threat Intelligence"
+      ],
+      "body": "Executive Summary This triumvirate of tools present a cohesive and unified platform that tells a compelling story: Microsoft Security Copilot as the assistive AI experience and extensible agent platform for security and IT work; Project Perception as the coordinated multi-agent defense system that executes Red, Blue, and Green workflows. MDASH as the specialized multi-model agentic code-scanning harness for discovering, validating, proving, and helping remediate exploitable source-code vulnerabilities. Security Copilot helps analysts and teams ask, summarize, investigate, report, and extend workflows. Project Perception coordinates agents that reason and act across the defense lifecycle. MDASH feeds high-confidence vulnerability findings into broader security workflows, including Project Perception. Simple distinctionSecurity Copilot assists the human. Project Perception coordinates the defense workflow. MDASH finds and validates software vulnerabilities. Platform Description Security Copilot AI that assists security and IT teams through natural-language investigation, summarization, promptbooks, plugins, embedded experiences, and extensible agents across Microsoft Security products. Project Perception AI that acts through coordinated multi-agent defense, using Red, Blue, and Green agents to expose gaps, investigate threats, remediate, and harden with humans in control of critical decisions. MDASH AI that finds and proves code vulnerabilities through a multi-model agentic scanning harness focused on source-code vulnerability discovery, validation, deduplication, proof, prioritization, and fix guidance. Relationship Model Security Copilot, Project Perception, and MDASH should not be positioned as interchangeable AI security tools. They sit at different layers of the security operating model: Security Copilot is the broad assistance and agent platform across Microsoft Security experiences; Project Perception is the coordinated multi-agent defense system for continuous defense; MDASH is the specialized code-security harness whose findings can feed Project Perception workflows. Layer Role How it connects Security Copilot Assistive AI and extensible agent platform Provides the user-facing experience, promptbooks, plugins, reporting, investigation help, and custom/Microsoft-built agents. Project Perception Coordinated multi-agent defense system Coordinates Red, Blue, and Green agents across exposure discovery, investigation, prioritization, remediation, and...",
+      "links": [
+        {
+          "label": "documentation",
+          "url": "https://learn.microsoft.com/en-us/security/agentic-security/"
+        },
+        {
+          "label": "MAI-Cyber-1-Flash",
+          "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/"
+        },
+        {
+          "label": "Project Perception FAQ",
+          "url": "https://www.microsoft.com/en-us/security/business/ai-powered-cybersecurity/project-perception-agentic-system#FAQ"
+        },
+        {
+          "label": "Codename MDASH Overview",
+          "url": "https://learn.microsoft.com/en-us/security-exposure-management/ai-code-security-overview"
+        },
+        {
+          "label": "Getting started with Security Copilot",
+          "url": "https://learn.microsoft.com/en-us/copilot/security/security-store-integration"
+        },
+        {
+          "label": "Security Copilot is now included for Microsoft 365 E5 and E7 organizations",
+          "url": "https://learn.microsoft.com/en-us/copilot/security/security-copilot-inclusion"
+        },
+        {
+          "label": "The AI Strategy Roadmap: Five drivers of successful AI transformation",
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/07/21/the-ai-strategy-roadmap-five-drivers-of-successful-ai-transformation/"
+        },
+        {
+          "label": "The AI Strategy Roadmap: How organizations are achieving Frontier Transformation (pdf)",
+          "url": "https://marketingassets.microsoft.com/gdc/gdc4wf3I8/original"
+        }
       ]
     },
     {
