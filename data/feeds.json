@@ -1,8 +1,43 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-25T12:53:03.772104+00:00",
-  "totalArticles": 130,
+  "lastUpdated": "2026-08-25T18:42:48.302324+00:00",
+  "totalArticles": 131,
   "articles": [
+    {
+      "title": "The patch window is collapsing: Why security needs a new control plane",
+      "link": "https://azure.microsoft.com/en-us/blog/the-patch-window-is-collapsing-why-security-needs-a-new-control-plane/",
+      "published": "2026-08-25T16:00:00+00:00",
+      "summary": "Organizations need protection that operates in the gap between discovery and remediation. The post The patch window is collapsing: Why security needs a new control plane appeared first on Microsoft Security Blog.",
+      "author": "Igor Sakhnov",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "For decades, cybersecurity defenders have relied on a relatively straightforward model: a vulnerability is disclosed, security teams assess exposure, test available fixes, deploy patches into production, and ultimately close the risk before attackers can exploit it at scale. That model increasingly reflects a world that no longer exists. Today’s enterprises operate thousands of interconnected workloads across hybrid and multicloud environments. Mission-critical applications power revenue-generating services, customer experiences, and core business operations that cannot simply be taken offline whenever a security update becomes available. At the same time, vulnerabilities are becoming more visible, more widely distributed, and more rapidly weaponized than ever before. The result is a growing gap between how quickly organizations can safely remediate vulnerabilities and how quickly adversaries can exploit them. It is time to rethink how the industry approaches security during the critical period between disclosure and remediation. The patch window has collapsed Traditional vulnerability management was built on the assumption that defenders could move faster than attackers. In many cases, they could. When a vulnerability was disclosed, organizations had time to understand the issue, assess affected systems, test patches, coordinate change windows, and deploy fixes before widespread exploitation occurred. Today that timeline is rapidly shrinking. Modern attack campaigns operate at internet scale. Security research, public disclosures, proof-of-concept exploits, and threat intelligence circulate globally within hours. A vulnerability announced in the morning can become the focus of active scanning and exploitation efforts by the afternoon. Meanwhile, the operational realities of enterprise environments have not changed. Organizations still must: Understand the vulnerability and its business impact. Identify affected systems across large estates. Evaluate dependencies and compatibility concerns. Validate fixes in test environments. Coordinate deployment schedules. Monitor for regressions and operational risk. These are not signs of inefficiency. They are necessary safeguards for business-critical environments. The challenge is that while defensive processes continue to require days or weeks, offensive timelines are increasingly measured in hours. That creates one of the most dangerous periods in modern cybersecurity: the window between awareness and...",
+      "links": [
+        {
+          "label": "The patch window is collapsing: Why security needs a new control plane",
+          "url": "https://azure.microsoft.com/en-us/blog/the-patch-window-is-collapsing-why-security-needs-a-new-control-plane/"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog"
+        }
+      ]
+    },
     {
       "title": "[Launched] Generally Available: Custom block response code and body for Application Gateway WAF",
       "link": "https://azure.microsoft.com/updates?id=569504",
@@ -4114,18 +4149,18 @@
       "published": "2026-07-31T21:01:37+00:00",
       "summary": "Storm-2945, a sub-cluster of the Russian threat actor Midnight Blizzard, has been observed compromising the sign-in portals of hospitality-related organizations such as hotels since May 2026 in order to deliver malware to travelers and steal credentials in an operation we call CaptiveCrunch. The...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 6
+          "score": 11
         }
       ],
       "tags": [
@@ -4135,27 +4170,27 @@
       "links": [
         {
           "label": "The CaptiveCrunch campaign",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#the-captivecrunch-campaign"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#the-captivecrunch-campaign"
         },
         {
           "label": "Storm-2945 and Midnight Blizzard",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#storm-2945-and-midnight-blizzard"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#storm-2945-and-midnight-blizzard"
         },
         {
           "label": "CaptiveCrunch tradecraft and tooling",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#captivecrunch-tradecraft-and-tooling"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#captivecrunch-tradecraft-and-tooling"
         },
         {
           "label": "How to protect against CaptiveCrunch activity",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#how-to-protect-against-captivecrunch-activity"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#how-to-protect-against-captivecrunch-activity"
         },
         {
           "label": "Microsoft Defender detections and hunting guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections-and-hunting-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections-and-hunting-guidance"
         },
         {
           "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
         },
         {
           "label": "Forest Blizzard DNS hijacking operation",
