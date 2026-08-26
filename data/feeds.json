@@ -1,8 +1,179 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-26T12:58:20.944575+00:00",
-  "totalArticles": 129,
+  "lastUpdated": "2026-08-26T19:52:05.840217+00:00",
+  "totalArticles": 131,
   "articles": [
+    {
+      "title": "[Launched] Generally Available: Azure Bastion shareable link expiration",
+      "link": "https://azure.microsoft.com/updates?id=570020",
+      "published": "2026-08-26T16:57:56+00:00",
+      "summary": "Azure Bastion shareable link expiration is now generally available. When creating a shareable link, administrators can specify the date and time when the link should expire. After the configured expiration time, the link can no longer be used to connect t",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: IPv6 dual-stack support for Azure Bastion",
+      "link": "https://azure.microsoft.com/updates?id=570025",
+      "published": "2026-08-26T16:56:29+00:00",
+      "summary": "Azure Bastion support for IPv4 and IPv6 dual-stack configurations is now available in public preview. Customers can configure a newly created Bastion deployment with both IPv4 and IPv6 public IP addresses. IPv6 is supported for connections between the use",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "[Launched] Generally Available: Connect to AKS clusters using Azure Bastion",
+      "link": "https://azure.microsoft.com/updates?id=570030",
+      "published": "2026-08-26T16:55:25+00:00",
+      "summary": "Azure Bastion integration with Azure Kubernetes Service is now generally available. Customers can establish a secure tunnel from their local machine through Azure Bastion to an AKS cluster API server. The integration enables customers to use standard Kube",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "[Launched] Generally Available: Azure SRE Agent VNet Integration",
+      "link": "https://azure.microsoft.com/updates?id=569695",
+      "published": "2026-08-26T16:51:31+00:00",
+      "summary": "Azure SRE Agent VNet Integration is now generally available. VNet integration enables Azure SRE Agent to operate within your existing network controls, including Network Security Groups (NSGs), private DNS, and firewall policies, etc. With VNet support, t",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "When AI infrastructure becomes the target: Securing gateways and control points",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/26/when-ai-infrastructure-becomes-target-securing-gateways-control-points/",
+      "published": "2026-08-26T16:43:53+00:00",
+      "summary": "Microsoft Threat Intelligence examines attacks on exposed AI workloads, including LiteLLM gateway exploitation, credential harvesting, persistence, and cryptomining activity. The post When AI infrastructure becomes the target: Securing gateways and control points appeared first on Microsoft...",
+      "author": "Microsoft Security Research, Yash Gund and Sumith Maniath",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article AI workloads are becoming high-value control pointsCase study 1: LiteLLM gateway compromiseCase study 2: RAGFlow compromiseCase study 3: Kestra compromiseMitigation and protection guidanceMITRE ATT&CK techniques observedReferencesLearn more AI is creating a new layer of enterprise infrastructure. Gateways, retrieval platforms, orchestration services, and containerized runtimes now sit between users, applications, data, and models. These systems concentrate credentials, data access, model connectivity, and execution privileges, making them some of the most powerful components in the AI stack. That concentration of trust is also creating new opportunities for attackers. In recent investigations, Microsoft observed activity targeting three distinct AI workloads: a LiteLLM gateway, a RAGFlow deployment, and a Kestra workflow environment. The intrusion paths varied, but the objectives were strikingly similar. Attackers sought to steal credentials, establish persistence, and monetize compromised compute resources. The individual techniques matter, but the broader pattern matters more. Across these cases, attackers treated AI infrastructure as a control plane where credential theft, host compromise, and downstream data access can converge. As organizations continue to deploy AI systems, these platforms are becoming high value targets that deserve the same security scrutiny as other critical enterprise infrastructure. AI workloads are becoming high-value control points The campaign-level signal extends beyond one product. The targeted workloads served different functions, but each exposed assets that could support follow-on abuse, including model-provider keys, proxy-issued virtual keys, database connection strings, tenant configuration, workflow execution, or host compute. Post-compromise behavior varied by workload role. Defenders should inventory exposed AI management surfaces, restrict administrative access, and monitor for gateway-originated execution and secret access. Three observed compromises across AI workloads AI workloadObserved activityAttacker objectiveLiteLLM Observed attacker activity: Python droppers, runtime secret harvesting, PostgreSQL collection, miner deployment, and persistence activity from the LiteLLM gateway context.Microsoft assessment: Initial access likely occurred through exploitation of the exposed LiteLLM gateway surface, consistent with the vulnerability chain involving CVE-2026-42271 and CVE-2026-48710.Credential...",
+      "links": [
+        {
+          "label": "AI workloads are becoming high-value control points",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-workloads-are-becoming-high-value-control-points"
+        },
+        {
+          "label": "Case study 1: LiteLLM gateway compromise",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-study-1-litellm-gateway-compromise"
+        },
+        {
+          "label": "Case study 2: RAGFlow compromise",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-study-2-ragflow-compromise"
+        },
+        {
+          "label": "Case study 3: Kestra compromise",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-study-3-kestra-compromise"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "MITRE ATT&CK techniques observed",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitre-att-ck-techniques-observed"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+        },
+        {
+          "label": "Learn more",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "CVE-2026-42271",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-42271"
+        },
+        {
+          "label": "CVE-2026-48710",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-48710"
+        },
+        {
+          "label": "create their own prompts",
+          "url": "https://learn.microsoft.com/copilot/security/prompting-security-copilot#create-your-own-prompts"
+        },
+        {
+          "label": "prebuilt promptbooks",
+          "url": "https://learn.microsoft.com/copilot/security/using-promptbooks"
+        }
+      ]
+    },
     {
       "title": "GCP-2026-056",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-056",
@@ -3752,81 +3923,6 @@
       ]
     },
     {
-      "title": "128 Seconds to disruption: Microsoft Defender stops ransomware at QNET",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/04/129-seconds-disruption-microsoft-defender-stops-ransomware-qnet/",
-      "published": "2026-08-04T17:54:04+00:00",
-      "summary": "Microsoft Defender automatically isolated a compromised QNET endpoint in 128 seconds, stopping a multi-stage attack before the payload could persist or spread. The post 128 Seconds to disruption: Microsoft Defender stops ransomware at QNET appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Security Research, David Shiran and Ayelet Artzi",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article What is device isolation?Case study: QNETAttack chain overviewMITRE ATT&CK techniques observedReferencesLearn more Microsoft Defender’s attack disruption now includes device isolation, a new response action that extends autonomous protection directly to compromised endpoints. At QNET, an attacker initiated a multi-stage attack using a legitimate Windows tool on a compromised endpoint to retrieve a malicious remote payload–a classic living-off-the-land (LOL) technique that often evades traditional containment. By automatically enforcing the new device isolation action on the compromised endpoint, Defender attack disruption stopped the attack dead in its tracks. From the first high-severity alert to completed isolation, after only 128 seconds, Defender cut off the attack chain before the second-stage payload could establish persistence or move beyond the host. The growing threat: when the endpoint is the blast radius Attack disruption has proven highly effective at stopping multistage, cross-domain attacks by disrupting the attacker’s ability to move across the environment. In many identity-driven attack scenarios, containing the compromised user is enough to shut down the attack chain, preventing lateral movement and limiting the attacker’s ability to access additional systems, identities, and resources. However, we are increasingly seeing a different class of high-severity incidents that begin with initial access directly on the device. Once adversaries establish a foothold on an endpoint, they can plant multiple persistence mechanisms and continue operating locally on the machine. This means that acting against the user’s identity alone is no longer enough to dismantle the threat. In these scenarios, the attacker has multiple ways to communicate and operate on the device beyond the user entity; the malicious code is already executing locally on the machine. The attacker doesn’t have to move laterally immediately; they can establish persistence, steal credentials, inject into processes, and prepare follow-on stages directly from the compromised endpoint itself. Previously, stopping these attacks required manual triage and response, giving attackers time to advance. Device isolation closes this gap by automatically correlating signals, assessing the threat, and isolating the compromised device within seconds. Traditional response approaches often depend on static playbooks triggered by individual alerts and maintained through manual tuning....",
-      "links": [
-        {
-          "label": "What is device isolation?",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-is-device-isolation"
-        },
-        {
-          "label": "Case study: QNET",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-study-qnet"
-        },
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
-        },
-        {
-          "label": "MITRE ATT&CK techniques observed",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitre-att-ck-techniques-observed"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "Attack disruption",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/automatic-attack-disruption"
-        },
-        {
-          "label": "Automatic device isolation",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/respond-machine-alerts#isolate-device---automatic-attack-disruption-preview"
-        },
-        {
-          "label": "QI Group",
-          "url": "https://www.qigroup.com/business-focus/empowering-entrepreneurship/"
-        },
-        {
-          "label": "Automatic attack disruption in Microsoft Defender XDR",
-          "url": "https://learn.microsoft.com/defender-xdr/automatic-attack-disruption"
-        },
-        {
-          "label": "Automatic attack disruption — supported triggers and enforced actions",
-          "url": "https://learn.microsoft.com/defender-xdr/automatic-attack-disruption#automated-response-actions"
-        },
-        {
-          "label": "Device Isolation in Attack Disruption",
-          "url": "https://learn.microsoft.com/defender-endpoint/respond-machine-alerts#isolate-device---automatic-attack-disruption-preview"
-        }
-      ]
-    },
-    {
       "title": "(Updated) Microsoft Entra ID SSPR will require registered authentication methods starting November 9, 2026",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1325414",
       "published": "2026-08-04T16:34:28.880000+00:00",
@@ -4833,105 +4929,6 @@
       ],
       "tags": [
         "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "[Launched] Generally Available: HTTP header insertion in Azure Firewall",
-      "link": "https://azure.microsoft.com/updates?id=568115",
-      "published": "2026-07-27T16:54:36+00:00",
-      "summary": "Azure Firewall now supports HTTP header insertion, enabling organizations to add or overwrite HTTP/HTTPS request headers directly from Azure Firewall application rules. This capability helps customers enforce security controls, support tenant restriction",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Rethinking security for the age of AI",
-      "link": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/",
-      "published": "2026-07-27T16:30:09+00:00",
-      "summary": "Editor’s note: Updates with additional details on the model’s crash score. Why security needs a new cyber stack — Introducing Project Perception The physics of cybersecurity are changing. Autonomous systems can now reason, adapt and operate continuously. At the same time, the cost of offense is...",
-      "author": "Hayete Gallot",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "AI",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Editor’s note: Updates with additional details on the model’s crash score. Why security needs a new cyber stack — Introducing Project Perception The physics of cybersecurity are changing. Autonomous systems can now reason, adapt and operate continuously. At the same time, the cost of offense is falling, while the volume, velocity and complexity of what must be secured continues to grow. Attackers can generate exploits faster, scale campaigns further and operate with unprecedented efficiency. The approaches built for a world of human actors cannot keep pace with a world of AI, agents and machine-speed attacks. Security needs a new cyber stack. A new cyber stack must continuously perceive risk across the entire digital estate, reason across vast amounts of context and take action at machine speed. It must learn and adapt as environments evolve, helping organizations stay ahead of threats. And because security is ultimately a human mission, it must amplify defenders with better insights and more powerful ways to act. The defining characteristic of the next generation of security systems will not be their ability to generate more alerts. It will be their ability to continuously perceive, reason and act. That vision led us to build Project Perception. A new agentic security system designed for the realities of AI. It turns signals into real-time protections using AI to defend against AI. Project Perception brings together signals, context, models and specialized agents into a continuously learning system of defense. It can reason, prioritize and act at machine speed while keeping humans firmly in control and empowering them with powerful new workflows. Project Perception is based on a simple idea: effective defense requires continuous understanding of how an attacker sees the world, how a defender evaluates risk and how protections are improved over time. To accomplish this, Perception coordinates three classes of specialized agents. Red team agents identify potential paths to compromise before an attacker can exploit them. Blue team agents investigate, reason over context and determine what represents meaningful risk. Green team agents take corrective actions and strengthen defenses across the environment. Working together, these agents form a closed-loop system that continuously discovers, evaluates and improves an organization’s security posture. A system like Project Perception is only as effective as the visibility it has, the actions it can take, the...",
-      "links": [
-        {
-          "label": "Project Perception",
-          "url": "https://aka.ms/agenticsystem"
-        },
-        {
-          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/07/Slide1-Final.jpg",
-          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/07/Slide1-Final.jpg"
-        },
-        {
-          "label": "MDASH with MAI-Cyber-1-Flash",
-          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmicrosoft.ai%2Fnews%2Fintroducing-mai-cyber-1-flash-inside-mdash%2F&data=05%7C02%7Cv-nyhanpaul%40microsoft.com%7C2f9635800e2a464fc9a308def97d5f8a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639222514023631178%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=v4yi%2FYxufRwpxNqGCTIHXQltlxare8w2n4WI3DKrmEQ%3D&reserved=0"
-        },
-        {
-          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/07/OMB-Project-Perception-Image-2-Final.jpg",
-          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/07/OMB-Project-Perception-Image-2-Final.jpg"
-        },
-        {
-          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/07/Image-3-Final-Final-Final.jpg",
-          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/07/Image-3-Final-Final-Final.jpg"
-        },
-        {
-          "label": "website",
-          "url": "https://www.microsoft.com/security"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/posts/?feedView=all"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://x.com/msftsecurity"
-        },
-        {
-          "label": "Enhancing AI Security Through Global AI Red Teaming",
-          "url": "https://aka.ms/ExternalRedTeamAlliance"
-        },
-        {
-          "label": "From research to reality: An interview with Microsoft VP of Security Research Taesoo Kim",
-          "url": "https://aka.ms/TaesooKim"
-        },
-        {
-          "label": "Rethinking security for the age of AI",
-          "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/"
-        }
       ]
     }
   ]
