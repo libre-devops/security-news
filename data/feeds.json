@@ -1,8 +1,43 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-26T19:52:05.840217+00:00",
-  "totalArticles": 131,
+  "lastUpdated": "2026-08-27T08:21:48.134411+00:00",
+  "totalArticles": 120,
   "articles": [
+    {
+      "title": "Microsoft Entra: Domain update for My Account and identity self-service experiences",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1462460",
+      "published": "2026-08-26T22:28:01.757000+00:00",
+      "summary": "[What and why]We're updating the domain used for Microsoft Entra identity and access management self-service experiences. As part of this change, myaccount.microsoft.com will move to myaccount.cloud.microsoft. Experiences currently hosted on separate domains will also be consolidated under the...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1462460",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]We're updating the domain used for Microsoft Entra identity and access management self-service experiences. As part of this change, myaccount.microsoft.com will move to myaccount.cloud.microsoft. Experiences currently hosted on separate domains will also be consolidated under the myaccount.cloud.microsoft domain.The following experiences are included in this update:myaccount.microsoft.commyapps.microsoft.commyaccess.microsoft.commystaff.microsoft.comThis change provides a more consistent and unified access point for identity and access management self-service experiences while supporting ongoing improvements to our service infrastructure.[Rollout schedule]General Availability (Worldwide): Beginning in late November 2026 and expected to complete in late November 2026[Impact on your organization]Who is affectedUsers who access Microsoft Entra self-service identity and access management experiencesAdministrators who manage network, proxy, firewall, or endpoint allowlistsPlatforms and servicesMicrosoft EntraWebWhat will happenFor usersNo action is required.Users accessing supported experiences will be automatically redirected to the new domain.Core functionality and existing workflows will remain unchanged.Over time, self-service identity and access management experiences will be available through a unified domain experience.For administratorsMost organizations are not expected to require configuration changes.Organizations that manage network, proxy, firewall, or endpoint allowlists should verify that required cloud.microsoft domains are accessible.Failure to allow required domains may result in users being unable to access these experiences after the rollout.[Action required and recommendations]Recommended actions for administratorsBefore rollout begins:Review network, proxy, firewall, and endpoint policies that restrict access to Microsoft services.Verify that *.cloud.microsoft is included in required allowlists where applicable.Confirm that access to myaccount.cloud.microsoft is not blocked within your environment.Review internal documentation or user guidance that references the existing URLs and update as needed.No action is required for users.Learn moreUnified cloud.microsoft domain for Microsoft 365 apps | Microsoft 365 for enterprise | Microsoft 365 | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Unified cloud.microsoft domain for Microsoft 365 apps | Microsoft 365 for enterprise | Microsoft 365 | Microsoft Learn",
+          "url": "https://learn.microsoft.com/microsoft-365/enterprise/cloud-microsoft-domain?view=o365-worldwide"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
     {
       "title": "[Launched] Generally Available: Azure Bastion shareable link expiration",
       "link": "https://azure.microsoft.com/updates?id=570020",
@@ -100,77 +135,77 @@
       ]
     },
     {
-      "title": "When AI infrastructure becomes the target: Securing gateways and control points",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/26/when-ai-infrastructure-becomes-target-securing-gateways-control-points/",
-      "published": "2026-08-26T16:43:53+00:00",
-      "summary": "Microsoft Threat Intelligence examines attacks on exposed AI workloads, including LiteLLM gateway exploitation, credential harvesting, persistence, and cryptomining activity. The post When AI infrastructure becomes the target: Securing gateways and control points appeared first on Microsoft...",
-      "author": "Microsoft Security Research, Yash Gund and Sumith Maniath",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
+      "title": "GCP-2026-057",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-057",
+      "published": "2026-08-26T13:00:00+00:00",
+      "summary": "Published: 2026-08-26Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
       "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
       "board_id": null,
       "products": [
         {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
         }
       ],
       "tags": [
-        "Threat Intelligence"
+        "Google Cloud Security"
       ],
-      "body": "In this article AI workloads are becoming high-value control pointsCase study 1: LiteLLM gateway compromiseCase study 2: RAGFlow compromiseCase study 3: Kestra compromiseMitigation and protection guidanceMITRE ATT&CK techniques observedReferencesLearn more AI is creating a new layer of enterprise infrastructure. Gateways, retrieval platforms, orchestration services, and containerized runtimes now sit between users, applications, data, and models. These systems concentrate credentials, data access, model connectivity, and execution privileges, making them some of the most powerful components in the AI stack. That concentration of trust is also creating new opportunities for attackers. In recent investigations, Microsoft observed activity targeting three distinct AI workloads: a LiteLLM gateway, a RAGFlow deployment, and a Kestra workflow environment. The intrusion paths varied, but the objectives were strikingly similar. Attackers sought to steal credentials, establish persistence, and monetize compromised compute resources. The individual techniques matter, but the broader pattern matters more. Across these cases, attackers treated AI infrastructure as a control plane where credential theft, host compromise, and downstream data access can converge. As organizations continue to deploy AI systems, these platforms are becoming high value targets that deserve the same security scrutiny as other critical enterprise infrastructure. AI workloads are becoming high-value control points The campaign-level signal extends beyond one product. The targeted workloads served different functions, but each exposed assets that could support follow-on abuse, including model-provider keys, proxy-issued virtual keys, database connection strings, tenant configuration, workflow execution, or host compute. Post-compromise behavior varied by workload role. Defenders should inventory exposed AI management surfaces, restrict administrative access, and monitor for gateway-originated execution and secret access. Three observed compromises across AI workloads AI workloadObserved activityAttacker objectiveLiteLLM Observed attacker activity: Python droppers, runtime secret harvesting, PostgreSQL collection, miner deployment, and persistence activity from the LiteLLM gateway context.Microsoft assessment: Initial access likely occurred through exploitation of the exposed LiteLLM gateway surface, consistent with the vulnerability chain involving CVE-2026-42271 and CVE-2026-48710.Credential...",
+      "body": "Published: 2026-08-26Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549 CVE-2026-50572 CVE-2026-73546 CVE-2026-48521 CVE-2026-73551 CVE-2026-73511 CVE-2026-73548 CVE-2026-73550 CVE-2026-73553",
       "links": [
         {
-          "label": "AI workloads are becoming high-value control points",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-workloads-are-becoming-high-value-control-points"
+          "label": "Cloud Service Mesh security bulletin",
+          "url": "https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-057"
         },
         {
-          "label": "Case study 1: LiteLLM gateway compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-study-1-litellm-gateway-compromise"
+          "label": "CVE-2026-73513",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73513"
         },
         {
-          "label": "Case study 2: RAGFlow compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-study-2-ragflow-compromise"
+          "label": "CVE-2026-73552",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73552"
         },
         {
-          "label": "Case study 3: Kestra compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-study-3-kestra-compromise"
+          "label": "CVE-2026-73512",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73512"
         },
         {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "label": "CVE-2026-73547",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73547"
         },
         {
-          "label": "MITRE ATT&CK techniques observed",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitre-att-ck-techniques-observed"
+          "label": "CVE-2026-73549",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73549"
         },
         {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+          "label": "CVE-2026-50572",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-50572"
         },
         {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+          "label": "CVE-2026-73546",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73546"
         },
         {
-          "label": "CVE-2026-42271",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-42271"
+          "label": "CVE-2026-48521",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-48521"
         },
         {
-          "label": "CVE-2026-48710",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-48710"
+          "label": "CVE-2026-73551",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73551"
         },
         {
-          "label": "create their own prompts",
-          "url": "https://learn.microsoft.com/copilot/security/prompting-security-copilot#create-your-own-prompts"
+          "label": "CVE-2026-73511",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73511"
         },
         {
-          "label": "prebuilt promptbooks",
-          "url": "https://learn.microsoft.com/copilot/security/using-promptbooks"
+          "label": "CVE-2026-73548",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73548"
         }
       ]
     },
@@ -1064,41 +1099,6 @@
       ]
     },
     {
-      "title": "GCP-2026-032",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-032",
-      "published": "2026-08-26T11:55:42+00:00",
-      "summary": "Published: 2026-05-12Description Description Severity Notes AMD has identified a hardware-level vulnerability in Zen 2 microarchitecture processors (including EPYC and Ryzen series) involving potential corruption within the micro-operation (OP) cache. Under specific conditions, this issue...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-05-12Description Description Severity Notes AMD has identified a hardware-level vulnerability in Zen 2 microarchitecture processors (including EPYC and Ryzen series) involving potential corruption within the micro-operation (OP) cache. Under specific conditions, this issue (AMD-SN-7052 / CVE-2025-54518) could lead to security boundary bypasses or unauthorized data access.We have deployed fixes across Google infrastructure to mitigate these issues. For more information, see the Compute Engine security bulletin. High CVE-2025-54518",
-      "links": [
-        {
-          "label": "Compute Engine security bulletin",
-          "url": "https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-032"
-        },
-        {
-          "label": "CVE-2025-54518",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2025-54518"
-        }
-      ]
-    },
-    {
       "title": "CVE-2026-78379 - Consent bypass in Strands Agents Tools python_repl tool",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-089-aws/",
       "published": "2026-08-25T19:09:48+00:00",
@@ -1123,41 +1123,6 @@
       ],
       "body": "Bulletin ID: 2026-089-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/25/2026 12:00 PM PDT Description: Strands Agents is an open-source Python SDK for building and running AI agents. The strands-agents-tools package provides pre-built tools for use with the SDK, including the python_repl tool, which executes Python code on the agent's host, and the batch tool, which invokes several other tools in a single call. Before executing code, python_repl prompts the operator for approval. We identified CVE-2026-78379, a consent bypass in the python_repl tool. Improper neutralization of input used for LLM prompting in the python_repl tool in Amazon Strands Agents Tools before 0.8.5 might allow remote actors to execute arbitrary Python code on the agent's host by bypassing the human consent gate, via a crafted prompt that forwards non_interactive_mode as a keyword argument through the batch tool. Impacted versions: < 0.8.5 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
-    },
-    {
-      "title": "The patch window is collapsing: Why security needs a new control plane",
-      "link": "https://azure.microsoft.com/en-us/blog/the-patch-window-is-collapsing-why-security-needs-a-new-control-plane/",
-      "published": "2026-08-25T16:00:00+00:00",
-      "summary": "Organizations need protection that operates in the gap between discovery and remediation. The post The patch window is collapsing: Why security needs a new control plane appeared first on Microsoft Security Blog.",
-      "author": "Igor Sakhnov",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "For decades, cybersecurity defenders have relied on a relatively straightforward model: a vulnerability is disclosed, security teams assess exposure, test available fixes, deploy patches into production, and ultimately close the risk before attackers can exploit it at scale. That model increasingly reflects a world that no longer exists. Today’s enterprises operate thousands of interconnected workloads across hybrid and multicloud environments. Mission-critical applications power revenue-generating services, customer experiences, and core business operations that cannot simply be taken offline whenever a security update becomes available. At the same time, vulnerabilities are becoming more visible, more widely distributed, and more rapidly weaponized than ever before. The result is a growing gap between how quickly organizations can safely remediate vulnerabilities and how quickly adversaries can exploit them. It is time to rethink how the industry approaches security during the critical period between disclosure and remediation. The patch window has collapsed Traditional vulnerability management was built on the assumption that defenders could move faster than attackers. In many cases, they could. When a vulnerability was disclosed, organizations had time to understand the issue, assess affected systems, test patches, coordinate change windows, and deploy fixes before widespread exploitation occurred. Today that timeline is rapidly shrinking. Modern attack campaigns operate at internet scale. Security research, public disclosures, proof-of-concept exploits, and threat intelligence circulate globally within hours. A vulnerability announced in the morning can become the focus of active scanning and exploitation efforts by the afternoon. Meanwhile, the operational realities of enterprise environments have not changed. Organizations still must: Understand the vulnerability and its business impact. Identify affected systems across large estates. Evaluate dependencies and compatibility concerns. Validate fixes in test environments. Coordinate deployment schedules. Monitor for regressions and operational risk. These are not signs of inefficiency. They are necessary safeguards for business-critical environments. The challenge is that while defensive processes continue to require days or weeks, offensive timelines are increasingly measured in hours. That creates one of the most dangerous periods in modern cybersecurity: the window between awareness and...",
-      "links": [
-        {
-          "label": "The patch window is collapsing: Why security needs a new control plane",
-          "url": "https://azure.microsoft.com/en-us/blog/the-patch-window-is-collapsing-why-security-needs-a-new-control-plane/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
-        }
-      ]
     },
     {
       "title": "[Launched] Generally Available: Custom block response code and body for Application Gateway WAF",
@@ -2071,81 +2036,6 @@
       ]
     },
     {
-      "title": "Microsoft named a Leader in the Frost Radar™: Cloud Workload Protection Platforms, 2026",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/19/microsoft-named-a-leader-in-the-frost-radar-cloud-workload-protection-platforms-2026/",
-      "published": "2026-08-19T17:30:00+00:00",
-      "summary": "Microsoft is named a visionary leader in the 2026 Frost Radar for Cloud Workload Protection Platforms, recognized for unified runtime security with Microsoft Defender for Cloud. The post Microsoft named a Leader in the Frost Radar™: Cloud Workload Protection Platforms, 2026 appeared first on...",
-      "author": "Ran Rosin",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Cloud"
-      ],
-      "body": "Security teams are overwhelmed with findings but still struggle to answer a simple question: which risks matter right now? A vulnerability alone is rarely the problem. The same vulnerability running in production, exposed through a misconfiguration or over-permissioned identity, is a real path to compromise. Organizations do not need longer lists of alerts. They need context that connects code, cloud resources, identities, and runtime activity so they can prioritize the issues that pose the greatest risk and stop cyberthreats before they reach production. As organizations adopt cloud-native architectures at scale, protecting workloads requires more than scanning. Today, 82% of container users run Kubernetes in production, making runtime visibility and protection critical for modern applications.1 That change, from scanning workloads to protecting them where they run, is exactly what Frost & Sullivan describes in its Frost Radar™: Cloud Workload Protection Platforms, 2026. Out of more than 45 qualified vendors, it benchmarked 20, and it found the category moving to a single runtime security model, one that ties together code, cloud, runtime, identity, and the security operations center (SOC). Read the full Frost Radar report Within that market, Frost & Sullivan names Microsoft a visionary leader, its category for vendors that balance innovation with growth and help set the direction of the market. Microsoft is also the largest cloud workload protection platform (CWPP) provider by revenue, with an estimated share of more than 22% of the global CWPP market. In the analyst’s words: “Microsoft is positioned as a visionary leader in this analysis for its scale and breadth of [Microsoft] Defender for Cloud within a unified framework. The platform stands out for its breadth of coverage across infrastructure, workloads, identities, entitlements, data, and applications, and for its deep integration with Microsoft’s broader security ecosystem, allowing organizations to secure modern and AI-native application lifecycles, while reducing operational complexity.” Scale and breadth, in one framework. That is what customers are asking for, and it is where this category is heading. Why cloud workload protection is being redefined For a long time, protecting a workload meant scanning its image, fixing known vulnerabilities, and hardening configurations before deployment. That still matters. But it is no longer enough, because what looks safe before deployment can become...",
-      "links": [
-        {
-          "label": "Frost Radar™: Cloud Workload Protection Platforms, 2026",
-          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/Frost%20Radar-CWPP%202026-Microsoft.pdf"
-        },
-        {
-          "label": "Microsoft Defender for Cloud",
-          "url": "https://www.microsoft.com/en-us/security/business/cloud-security/microsoft-defender-cloud"
-        },
-        {
-          "label": "Microsoft Defender XDR",
-          "url": "https://www.microsoft.com/en-us/security/business/solutions/extended-detection-response-xdr"
-        },
-        {
-          "label": "Microsoft Sentinel",
-          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel-siem"
-        },
-        {
-          "label": "Microsoft Security Copilot",
-          "url": "https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot"
-        },
-        {
-          "label": "Microsoft cloud security solutions",
-          "url": "https://www.microsoft.com/en-us/security/business/solutions/cloud-security"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "Kubernetes Established as the De Facto ‘Operating System’ for AI as Production Use Hits 82% in 2025 CNCF Annual Cloud...",
-          "url": "https://www.prnewswire.com/news-releases/kubernetes-established-as-the-de-facto-operating-system-for-ai-as-production-use-hits-82-in-2025-cncf-annual-cloud-native-survey-302663249.html"
-        },
-        {
-          "label": "Microsoft named a Leader in the Frost Radar™: Cloud Workload Protection Platforms, 2026",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/08/19/microsoft-named-a-leader-in-the-frost-radar-cloud-workload-protection-platforms-2026/"
-        }
-      ]
-    },
-    {
       "title": "SVD-2026-0808: Security Hardening Release for Splunk Apps and Add-ons - August 2026",
       "link": "https://advisory.splunk.com/advisories/SVD-2026-0808",
       "published": "2026-08-19T00:00:00+00:00",
@@ -2514,81 +2404,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Hunting MacSync Stealer infrastructure through behavioral pivots",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/18/hunting-macsync-stealer-infrastructure-through-behavioral-pivots/",
-      "published": "2026-08-18T17:08:28+00:00",
-      "summary": "MacSync Stealer rapidly rotates domains to evade detection, but its behavior remains consistent. Learn how Microsoft uncovered 30+ related domains using durable hunting pivots. The post Hunting MacSync Stealer infrastructure through behavioral pivots appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Defender Experts and Microsoft Security Research",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Activity overview Discovery of additional rotating infrastructure Attack chain overviewMitigation and protection guidanceReferencesLearn more MacSync Stealer is a macOS-focused information stealer that relies on changing infrastructure to deliver payloads, communicate with compromised devices, and exfiltrate data. Earlier reporting by RST Cloud identified the threat through a limited set of domains and documented rapid command-and-control (C2) replacement after public disclosure. Microsoft Defender Experts expanded that view by correlating recurring endpoints and network behaviors across the activity. This behavior-led approach connected more than 30 domains and showed that the infrastructure supported more than C2 communication, extending into active collection, staging, and exfiltration. The findings demonstrate that although domains may rotate quickly, repeated execution patterns, request characteristics, staging behavior, and upload methods provide defenders with more durable opportunities to investigate MacSync Stealer activity. Activity overview Microsoft Defender Experts reviewed endpoint and network telemetry to determine which MacSync Stealer behaviors persisted as infrastructure changed. The investigation followed the activity from C2 communication through collection, staging, and exfiltration, using recurring technical traits to connect activity across rotating domains. Execution began from an interactive shell session consistent with ClickFix social engineering, where users are tricked into pasting or running commands in Terminal. The shell session used curl to retrieve attacker-controlled payload content, followed by script-driven execution and outbound communication. After execution, the malware communicated with attacker-controlled infrastructure using recurring URI paths, macOS User-Agent strings, API-key headers, and curl command-line options. These request traits became durable behavioral pivots because they remained consistent even as domains changed. The activity then progressed into collection behavior targeting macOS Keychain material, browser data, locally stored credentials, cloud and Secure Shell (SSH) credentials, and sensitive files from common user directories. The investigation also confirmed active data exfiltration, not just beaconing. Collected data was staged under temporary paths, compressed into an archive, split into chunks, and uploaded through HTTP PUT requests using curl with the –data-binary...",
-      "links": [
-        {
-          "label": "Activity overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#activity-overview"
-        },
-        {
-          "label": "Discovery of additional rotating infrastructure",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#discovery-of-additional-rotating-infrastructure"
-        },
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "reporting",
-          "url": "https://www.rstcloud.com/macsync-stealer-c2-infrastructure-rotation/"
-        },
-        {
-          "label": "osascript",
-          "url": "https://ss64.com/mac/osascript.html"
-        },
-        {
-          "label": "XProtect",
-          "url": "https://support.apple.com/guide/security/protecting-against-malware-sec469d47bd8/web"
-        },
-        {
-          "label": "cloud-delivered protection",
-          "url": "https://learn.microsoft.com/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus"
-        },
-        {
-          "label": "Enable network protection and web protection",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/network-protection-macos"
-        },
-        {
-          "label": "Enable tamper protection",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/mac-preferences"
-        }
       ]
     },
     {
@@ -3063,156 +2878,6 @@
       ]
     },
     {
-      "title": "Microsoft named a Leader in the 2026 IDC MarketScape for MDR/MXDR for the Enterprise",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/10/microsoft-named-a-leader-in-the-2026-idc-marketscape-for-mdr-mxdr-for-the-enterprise/",
-      "published": "2026-08-10T16:00:00+00:00",
-      "summary": "Microsoft is named a Leader in the 2026 IDC MarketScape for MDR services. Discover how Microsoft Defender Experts MDR combines AI, threat intelligence, and human expertise. The post Microsoft named a Leader in the 2026 IDC MarketScape for MDR/MXDR for the Enterprise appeared first on Microsoft...",
-      "author": "Srikanth Shoroff",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "Security teams are being asked to defend a growing attack surface with fewer people and around the clock, against threat actors who never take a night off. As cyberattackers increasingly use AI to launch and scale campaigns, the volume, speed, and sophistication of threats continue to rise. Closing that gap takes more than tooling. It takes a partner that pairs a leading security platform with scaled intelligence and human experts who can act on your behalf at any hour. That’s exactly what Microsoft Defender Experts MDR is built to do. We are excited to announce that we have been named a Leader in the 2026 IDC MarketScape: Worldwide MDR/MXDR for the Enterprise Vendor Assessment (Doc #US54792426, July 2026). Read the excerpt here. Scale your SOC with Microsoft Defender Experts MDR Expert-led MDR, built on the Microsoft Defender platform Microsoft Defender Experts MDR is a round-the-clock, expert-led managed detection and response service that helps security teams triage, investigate, and respond to incidents so they can stop cyberattackers in their tracks and prevent future compromise. Rather than bolting a separate stack of tools and connectors onto your environment, the service operates natively on Microsoft Defender, with built-in protection across endpoints, identities, email, cloud apps, cloud workloads, and network security, as well as around-the-clock proactive threat hunting with Microsoft Defender Experts Hunting. Because the service is delivered on the same platform it monitors, detection and intelligence improvements reach customers continuously. The insights our experts generate also strengthen protection across the broader Defender ecosystem, so every customer benefits from what we learn defending the next environment. The IDC MarketScape vendor assessment model is designed to provide an overview of the competitive fitness of technology and service suppliers in a given market. The research uses a rigorous scoring methodology based on both qualitative and quantitative criteria that results in a single graphical illustration of each supplier’s position within a given market. The Capabilities axis measures supplier product, go-to-market, and business execution in the short term, while the Strategy axis measures how well a supplier’s strategy aligns with customer requirements over a 3-5-year timeframe. Supplier market share is represented by the size of the icons. Threat intelligence at internet scale Great detection starts with great...",
-      "links": [
-        {
-          "label": "Microsoft Defender Experts MDR",
-          "url": "https://www.microsoft.com/en-us/security/business/services/microsoft-defender-experts-mdr?msockid=25cfdac4ec1e6114037bcd63ed2860f5"
-        },
-        {
-          "label": "Read the excerpt here",
-          "url": "https://idcdocserv.com/US54792426e_Microsoft"
-        },
-        {
-          "label": "Microsoft Defender",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender"
-        },
-        {
-          "label": "Microsoft Defender Experts Hunting",
-          "url": "https://www.microsoft.com/en-us/security/business/services/microsoft-defender-experts-hunting"
-        },
-        {
-          "label": "Microsoft Defender Experts MDR",
-          "url": "https://www.microsoft.com/en-us/security/business/services/microsoft-defender-experts-xdr?msockid=27bd8b1d324d6b4d28eb9e2e33dd6a4f"
-        },
-        {
-          "label": "website",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "Microsoft Digital Defense Report 2025",
-          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Microsoft-Digital-Defense-Report-2025.pdf#page=1"
-        },
-        {
-          "label": "Microsoft named a Leader in the 2026 IDC MarketScape for MDR/MXDR for the Enterprise",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/08/10/microsoft-named-a-leader-in-the-2026-idc-marketscape-for-mdr-mxdr-for-the-enterprise/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
-        }
-      ]
-    },
-    {
-      "title": "DeadLock ransomware: Breaking down a Rust-based encryptor with decentralized recovery infrastructure",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/10/deadlock-ransomware-breaking-down-a-rust-based-encryptor-with-decentralized-recovery-infrastructure/",
-      "published": "2026-08-10T15:00:00+00:00",
-      "summary": "Microsoft Threat Intelligence examines DeadLock ransomware, an emerging financially motivated operation distinguished by its use of decentralized infrastructure to support victim communications, negotiations, and data leak operations alongside double extortion tactics used to pressure victims. The...",
-      "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Pre-encryptionEncryptionPost-encryptionDefending against DeadLock ransomwareIndicators of compromise Microsoft Threat Intelligence tracks DeadLock ransomware as an emerging financially motivated operation distinguished by its use of decentralized infrastructure to support victim communications and data leak operations. Its recovery ecosystem combines the Session messaging network with blockchain-backed services that store and deliver resources used throughout the extortion process. This architecture likely increases the resilience of portions of its communication, leak-hosting, and negotiation infrastructure, allowing DeadLock operators to recover from some disruption efforts while maintaining continuity for victims. Microsoft has observed DeadLock ransomware being deployed by multiple groups including an affiliate of the Lynx and INC ransomware ecosystems. First observed in July 2025, DeadLock operators employ double extortion tactics, encrypting victim environments while threatening to publicly release exfiltrated data. As of July 2026, the operators have published more than 80 compromised organizations on their data leak site, called the DeadLock blog, with more than half of the claimed victims in Europe. Microsoft identified DeadLock ransomware impacting organizations across information technology (IT), mining, transportation and logistics, manufacturing, hospitality, consumer goods, and other sectors in Europe, Asia, North America, South America, and Africa. The DeadLock encryptor includes a resource-aware throttling mechanism designed to maintain system responsiveness during encryption. In addition to its encryption capabilities, the ransomware also appears to implement language or country-based geofencing designed to avoid running in environments associated with former Soviet and Commonwealth of Independent States (CIS)-linked countries as well as select Middle Eastern countries, a pattern commonly observed among ransomware operators believed to operate from those regions. Together, these capabilities demonstrate how DeadLock combines established ransomware tradecraft with decentralized infrastructure designed to improve operational resilience. In this blog, we present a technical analysis of the DeadLock ransomware encryptor, covering its execution flow, defense evasion techniques, encryption design, and post-encryption behaviors, including a decentralized recovery chat system. We also provide indicators of compromise (IOCs),...",
-      "links": [
-        {
-          "label": "Pre-encryption",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#pre-encryption"
-        },
-        {
-          "label": "Encryption",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#encryption"
-        },
-        {
-          "label": "Post-encryption",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#post-encryption"
-        },
-        {
-          "label": "Defending against DeadLock ransomware",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#defending-against-deadlock-ransomware"
-        },
-        {
-          "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
-        },
-        {
-          "label": "ransomware tradecraft",
-          "url": "https://www.microsoft.com/en-us/security/blog/tag/ransomware/"
-        },
-        {
-          "label": "Microsoft Defender",
-          "url": "https://www.microsoft.com/security/business/microsoft-defender"
-        },
-        {
-          "label": "Language geofencing",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#_Language_geofencing"
-        },
-        {
-          "label": "Process and service termination",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#_Process_and_service"
-        },
-        {
-          "label": "Directory traversal",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#_Directory_Traversal"
-        },
-        {
-          "label": "Ransom notes deployment",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#_Ransom_notes_deployment"
-        },
-        {
-          "label": "Recovery chat: Technical architecture",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#_Recovery_chat:_Technical"
-        }
-      ]
-    },
-    {
       "title": "AI-powered playbook generator, now available to more customers",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/ai-powered-playbook-generator-now-available-to-more-customers/ba-p/4544385",
       "published": "2026-08-07T19:28:40+00:00",
@@ -3461,77 +3126,6 @@
       ]
     },
     {
-      "title": "​​Microsoft named a Leader in the KuppingerCole Leadership Compass for Cloud Native Application Protection Platforms (CNAPP)",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/05/microsoft-named-a-leader-in-the-kuppingercole-leadership-compass-for-cloud-native-application-protection-platforms-cnapp/",
-      "published": "2026-08-05T16:30:00+00:00",
-      "summary": "Learn why KuppingerCole named Microsoft a Leader in its Leadership Compass: Cloud Native Application Protection Platforms report. The post ​​Microsoft named a Leader in the KuppingerCole Leadership Compass for Cloud Native Application Protection Platforms (CNAPP) appeared first on Microsoft...",
-      "author": "Ran Rosin",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "As organizations adopt AI, they must secure both cloud and AI environments through a unified security control plane as their attack surface expands. Because modern applications and AI workloads are built and run in the cloud, security teams must understand which exposures matter most, prioritize what can truly be exploited, and reduce risk across cloud infrastructure, applications, identities, data, and AI systems in one place. Modern IT estates now span multiple clouds and on-premises systems, with architectures built on containers, Kubernetes, serverless functions, microservices, APIs, and AI-powered workloads. This increases both the volume and the interconnectedness of security signals. The challenge is no longer identifying individual risks, but determining how misconfigurations, identities, and data exposures combine to create real attack paths, and which of these are most critical to fix at the source. KuppingerCole’s Leadership Compass: Cloud Native Application Protection Platforms (CNAPP) reflects this shift. The report describes how CNAPP is evolving from a consolidation of cloud security tools into the security foundation for AI-native enterprises, combining cloud security, AI security posture management, runtime protection, attack path analysis, cloud detection and response, and agentic AI operations into unified platforms. Read the full report Within this evolving market, KuppingerCole names Microsoft a Leader across all four of its Leadership categories: Overall, Product, Innovation, and Market. In the report’s words: “Microsoft earns its Overall Leadership with its Defender for Cloud that is redefining the CNAPP market by extending cloud security beyond infrastructure protection and into a unified security platform for cloud, data, identity, AI, and security operations, supported by one of the industry’s most advanced agentic AI ecosystems.” That recognition reflects where the category is heading: toward platforms that unify cloud and AI security into one operational view of risk. Why CNAPP is being redefined KuppingerCole makes a clear point: CNAPP is no longer about posture or visibility alone. It is becoming the operational foundation for securing AI-powered applications, services, and business processes, across the full software lifecycle from cloud infrastructure to the AI systems running on top of it. Modern environments introduce complexity across: Multicloud and hybrid infrastructure. Rapid development and continuous deployment....",
-      "links": [
-        {
-          "label": "Leadership Compass: Cloud Native Application Protection Platforms (CNAPP)",
-          "url": "https://www.kuppingercole.com/research/lc81068/cloud-native-application-protection-platforms-cnapp"
-        },
-        {
-          "label": "CNAPP",
-          "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-cnapp"
-        },
-        {
-          "label": "Microsoft Defender for Cloud",
-          "url": "https://www.microsoft.com/en-us/security/business/cloud-security/microsoft-defender-cloud"
-        },
-        {
-          "label": "Microsoft Security Copilot",
-          "url": "https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot"
-        },
-        {
-          "label": "Microsoft cloud security solutions",
-          "url": "https://www.microsoft.com/en-us/security/business/solutions/cloud-security"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "​​Microsoft named a Leader in the KuppingerCole Leadership Compass for Cloud Native Application Protection Platforms...",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/08/05/microsoft-named-a-leader-in-the-kuppingercole-leadership-compass-for-cloud-native-application-protection-platforms-cnapp/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
-        }
-      ]
-    },
-    {
       "title": "Building a CCF Nested API Pull Connector: A Technical Lab Walkthrough",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/building-a-ccf-nested-api-pull-connector-a-technical-lab/ba-p/4537027",
       "published": "2026-08-05T16:00:00+00:00",
@@ -3607,81 +3201,6 @@
       ]
     },
     {
-      "title": "From open lures to cloaked gates: How a macOS ClickFix campaign learned to hide",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/05/macos-clickfix-campaign-learned-hide/",
-      "published": "2026-08-05T15:48:39+00:00",
-      "summary": "A macOS ClickFix campaign shifted tactics from openly serving infostealer lures to hiding them behind a browser-fingerprinting gate. The change makes malicious infrastructure harder to detect while giving defenders new hunting opportunities. The post From open lures to cloaked gates: How a macOS...",
-      "author": "Microsoft Security Research and Srinivasan Govindarajan",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Activity overviewHow ClickFix works Campaign overviewClickFix moved from open pages to fingerprinting gatesThe fingerprinting gateMitigation and protection guidanceIndicators of compromise (IOC)ReferencesLearn more Microsoft Threat Intelligence observed a macOS ClickFix campaign distributing infostealers, including MacSync and Atomic Stealer (AMOS), through a large cluster of look-alike domains. The campaign evolved from broadly serving ClickFix lures to using a server-side browser-fingerprinting gate that shows the lure primarily to visitors whose environment appears consistent with a genuine macOS browser. This cloaking limits visibility for crawlers, sandboxes, and some automated analysis workflows. The blog details the domain pattern, fingerprinting checks, infection chain, detection coverage, and hunting pivots that defenders can use to identify related activity. Activity overview Microsoft Threat Intelligence has been tracking a macOS ClickFix operation that distributes information-stealing malware through a large family of algorithmically named domains. Over several weeks of monitoring, Microsoft observed a notable shift in tradecraft: the same infrastructure moved from openly serving the malicious command in the served page’s HTML source to concealing the lure behind a server-side fingerprinting gate that reveals the payload only to visitors the server assesses as a genuine macOS target. The chain ultimately delivers information stealers such as MacSync or Atomic Stealer (AMOS). This activity is consistent with the broader shift in macOS ClickFix tradecraft that Microsoft Threat Intelligence previously documented, in which threat actors instruct users to run Terminal commands that retrieve remotely hosted content rather than the traditional approach of delivering a disk image for manual installation. The cluster described here is notable for two reasons: its domains are mass-produced by a recognizable name generator, and it adopted server-side cloaking on existing infrastructure, giving defenders a clear before-and-after view of the same operation. In this blog, we describe the campaign’s domain-generation pattern, the two delivery phases we observed, the fingerprinting gate that now fronts the infrastructure, and the end-to-end infection chain. We also provide hunting guidance, mitigation recommendations, and defanged indicators of compromise. How ClickFix works ClickFix is a social-engineering technique where attackers persuade...",
-      "links": [
-        {
-          "label": "Activity overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#activity-overview"
-        },
-        {
-          "label": "How ClickFix works",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#how-clickfix-works"
-        },
-        {
-          "label": "Campaign overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#campaign-overview"
-        },
-        {
-          "label": "ClickFix moved from open pages to fingerprinting gates",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#clickfix-moved-from-open-pages-to-fingerprinting-gates"
-        },
-        {
-          "label": "The fingerprinting gate",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#the-fingerprinting-gate"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Indicators of compromise (IOC)",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise-ioc"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "including MacSync and Atomic Stealer (AMOS)",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/06/clickfix-campaign-uses-fake-macos-utilities-lures-deliver-infostealers/"
-        },
-        {
-          "label": "ClickFix",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/08/21/think-before-you-clickfix-analyzing-the-clickfix-social-engineering-technique/"
-        },
-        {
-          "label": "introduced a mitigation",
-          "url": "https://support.apple.com/en-us/127377"
-        }
-      ]
-    },
-    {
       "title": "[Launched] Generally Available: Explicit proxy in Azure Firewall",
       "link": "https://azure.microsoft.com/updates?id=568825",
       "published": "2026-08-05T14:54:08+00:00",
@@ -3749,81 +3268,6 @@
       ]
     },
     {
-      "title": "ChainDrop supply chain compromise: Anatomy of a self-propagating worm",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/",
-      "published": "2026-08-04T23:46:41+00:00",
-      "summary": "A credential-stealing worm hidden in more than 400 compromised npm packages automatically spread across software ecosystems by republishing malicious updates. This analysis details the attack chain, affected environments, and practical guidance for detection, hunting, and remediation. The post...",
-      "author": "Microsoft Security Research, Ravikant Tiwari, Sagar Patil and Suriyaraj Natarajan",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Attack chain overviewMitigation and protection guidanceIndicators of compromise (IOC)Microsoft Defender XDR detectionsAdvanced hunting queriesLearn more Microsoft Threat Intelligence identified a large-scale npm supply chain attack affecting more than 400 packages across multiple unrelated publishers, including packages associated with major enterprise software ecosystems such as keyv, flat-cache, cache-manager, and others. The malicious releases contain a Mini Shai-Hulud variant, a self-propagating credential-stealing worm delivered through a large, heavily obfuscated Bun-based JavaScript payload. The malware typically executes automatically through an npm preinstall lifecycle hook before package installation completes. Once executed, the malware searches developer workstations and continuous integration and continuous delivery (CI/CD) environments for npm, GitHub, cloud, and infrastructure credentials. It uses recovered identities to authenticate to npm, GitHub, Amazon Web Services (AWS), Kubernetes, and HashiCorp Vault, enabling it to enumerate packages, repositories, workflow secrets, cloud parameters, and secret-store values. Collected data is encrypted and transmitted through an attacker-controlled HTTPS endpoint, with GitHub repositories serving as a fallback exfiltration channel. The payload’s most significant capability is automated propagation. After obtaining an npm publishing token, it enumerates packages available to the compromised identity, downloads their latest tarballs, inserts the malware and setup loader, adds a preinstall hook, increments the patch version, and republishes the modified packages. The malware can also use stolen GitHub credentials to inject Claude and Visual Studio Code configuration files into repositories, establishing persistence and creating an additional developer-to-developer infection path. In this blog, we’re sharing our analysis of this supply chain attack, along with protection, detection, amd hunting guidance. Organizations that installed an affected package with lifecycle scripts enabled should treat the associated developer workstation or build runner as potentially compromised. Investigations should prioritize credentials accessible to the affected identity, unauthorized npm releases, unexpected repository or workflow modifications, suspicious cloud and secret-store access, and artifacts produced by affected build systems. Organizations should revoke and rotate exposed credentials from a...",
-      "links": [
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Indicators of compromise (IOC)",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise-ioc"
-        },
-        {
-          "label": "Microsoft Defender XDR detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-xdr-detections"
-        },
-        {
-          "label": "Advanced hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#advanced-hunting-queries"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "npm CLI v 12",
-          "url": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/"
-        },
-        {
-          "label": "min-release-age",
-          "url": "https://docs.npmjs.com/cli/v11/using-npm/config"
-        },
-        {
-          "label": "advanced hunting",
-          "url": "https://learn.microsoft.com/defender-xdr/advanced-hunting-overview"
-        },
-        {
-          "label": "Microsoft Threat Intelligence Blog",
-          "url": "https://aka.ms/threatintelblog"
-        },
-        {
-          "label": "LinkedIn",
-          "url": "https://www.linkedin.com/showcase/microsoft-threat-intelligence"
-        },
-        {
-          "label": "X (formerly Twitter)",
-          "url": "https://x.com/MsftSecIntel"
-        }
-      ]
-    },
-    {
       "title": "[In preview] Public Preview: Perimeter link feature in network security perimeter",
       "link": "https://azure.microsoft.com/updates?id=568837",
       "published": "2026-08-04T18:30:09+00:00",
@@ -3845,81 +3289,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Advance Zero Trust for AI: New tools and guidance to secure AI agents and DevSecOps",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/04/advance-zero-trust-for-ai-new-tools-and-guidance-to-secure-ai-agents-and-devsecops/",
-      "published": "2026-08-04T18:30:00+00:00",
-      "summary": "Microsoft expands its Zero Trust for AI strategy to enhance security for AI and DevSecOps environments with new tools and guidance. The post Advance Zero Trust for AI: New tools and guidance to secure AI agents and DevSecOps appeared first on Microsoft Security Blog.",
-      "author": "Ron Pessner",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "The calculus of cybersecurity has changed. AI is reshaping how organizations build, deploy, operate, and defend digital systems. AI-powered development tools, agents, and autonomous workflows are accelerating innovation but they are also introducing new attack surfaces, new trust boundaries, and new security challenges. Microsoft has long helped organizations secure their digital estates using Zero Trust principles. That leadership was recently recognized by KuppingerCole analysts, which named Microsoft as the Overall Leader in its Zero Trust Platform Leadership Compass, ranking Microsoft highest for both product and innovation leadership. Learn more about Zero Trust for AI As organizations accelerate AI adoption, secure software development becomes more important than ever. That’s why we are expanding the Zero Trust for AI strategy with two major additions: a new AI-focused Zero Trust Assessment experience and a new DevSecOps pillar in the Zero Trust Workshop. Together, they help organizations get ready for AI by assessing exposure, risks, prioritizing remediation, and securing AI-enabled development from source code to deployment. Zero Trust Assessment tool updates: New set of assessment checks for AI, Security Operations (SecOps), and Infrastructure. Zero Trust Workshop updates: New dedicated pillar focused on Developer Security (DevSecOps) and additional guidance for AI Memory. New guidance: New practical guidance for security practitioners and a new e-book titled Zero Trust for AI, rebuilding security controls for autonomous and agentic systems. This builds directly on the Zero Trust for AI strategy announced at RSA Conference 2026 and moves the conversation from architecture to implementation. If that announcement was about establishing Zero Trust for AI, this one is about operationalizing it: giving security, engineering, and platform teams the specific controls they need to act. To learn more about our work in applying Zero Trust for AI and agents watch this Microsoft Mechanics video: New AI pillar in Zero Trust Assessment tool The Zero Trust Assessment provides an automated view of security posture by evaluating tenant configuration and activity signals across the environment and translating those findings into prioritized recommendations. As organizations adopt AI agents, Copilots, developer tools, and autonomous workflows, the Assessment helps security and platform teams establish a baseline, measure progress, and identify gaps across both...",
-      "links": [
-        {
-          "label": "Zero Trust principles",
-          "url": "https://www.microsoft.com/en-us/security/business/zero-trust"
-        },
-        {
-          "label": "Zero Trust Platform Leadership Compass",
-          "url": "https://www.kuppingercole.com/reprints/e8ad8cf6029a33bfca6bbc02d6b5fcc4"
-        },
-        {
-          "label": "Zero Trust Assessment",
-          "url": "https://aka.ms/zerotrust/assessment"
-        },
-        {
-          "label": "Zero Trust Workshop",
-          "url": "https://aka.ms/ZTWorkshop"
-        },
-        {
-          "label": "Zero Trust for AI, rebuilding security controls for autonomous and agentic systems",
-          "url": "https://aka.ms/ZT4AI_book1"
-        },
-        {
-          "label": "AI Memory framework",
-          "url": "https://www.microsoft.com/security/blog/2026/06/22/guarding-ai-memory/"
-        },
-        {
-          "label": "patterns and practices",
-          "url": "https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative/patterns-and-practices"
-        },
-        {
-          "label": "Least privilege for AI agents",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/sfi/least-privilege-for-ai-agents"
-        },
-        {
-          "label": "Zero Trust for source code access",
-          "url": "https://learn.microsoft.com/en-us/security/zero-trust/sfi/zero-trust-source-code-access"
-        },
-        {
-          "label": "Manage memory safety in agentic systems",
-          "url": "https://learn.microsoft.com/security/zero-trust/sfi/manage-agentic-memory-safety"
-        },
-        {
-          "label": "Protect the software supply chain",
-          "url": "https://learn.microsoft.com/security/zero-trust/sfi/protect-software-supply-chain"
-        },
-        {
-          "label": "Security adoption guidance for development",
-          "url": "https://learn.microsoft.com/security/zero-trust/security-adoption-discipline-development"
-        }
       ]
     },
     {
@@ -4180,81 +3549,6 @@
         {
           "label": "https://aka.ms/MDCNewsSubscribe",
           "url": "https://aka.ms/MDCNewsSubscribe"
-        }
-      ]
-    },
-    {
-      "title": "CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
-      "published": "2026-07-31T21:01:37+00:00",
-      "summary": "Storm-2945, a sub-cluster of the Russian threat actor Midnight Blizzard, has been observed compromising the sign-in portals of hospitality-related organizations such as hotels since May 2026 in order to deliver malware to travelers and steal credentials in an operation we call CaptiveCrunch. The...",
-      "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article The CaptiveCrunch campaignStorm-2945 and Midnight BlizzardCaptiveCrunch tradecraft and toolingHow to protect against CaptiveCrunch activityMicrosoft Defender detections and hunting guidanceIndicators of compromise Since early May 2026, Microsoft Threat Intelligence has observed Storm-2945, a sub-cluster of Midnight Blizzard, conducting widespread but targeted traffic manipulation attacks involving hospitality sector networks served by captive portals worldwide. Despite some tactic, technique, and procedure (TTP) similarities to the Forest Blizzard DNS hijacking operation that we publicly disclosed in April 2026, we attribute this campaign, which we call CaptiveCrunch, to Storm-2945. As reported by ReliaQuest on July 23, a portion of this activity leverages doppelganger domains mimicking Microsoft online services to conduct follow-on adversary-in-the-middle (AitM) phishing operations that abuse the device code authentication flow in Microsoft Entra ID. Microsoft Threat Intelligence has also identified active traffic manipulation attacks leading to the delivery of malware on impacted systems. Microsoft has observed Storm-2945 leveraging AI to support a significant portion of these operations. Today, we are sharing our findings on these ongoing intrusions to raise awareness of this threat and enable customers to protect their devices, especially while traveling. We provide our assessment of Storm-2945’s relationship to Midnight Blizzard and analysis of the CaptiveCrunch campaign, detailing the malware and tradecraft used in these operations. We also provide mitigation, detection, and hunting guidance to help organizations identify and defend against Storm-2945 and related activity. Microsoft Threat Intelligence would like to thank our partners at Anthropic and OpenAI for their collaboration and support during this investigation. The CaptiveCrunch campaign Since February 2026, Storm-2945 has conducted AI-augmented operations including targeted device code and OAuth code phishing campaigns leading to Entra device registration and subsequent data collection from Microsoft 365. Since early May 2026, Microsoft Threat Intelligence has observed Storm-2945 manipulating DNS and HTTP traffic from networks served by captive portals to redirect user traffic through actor-controlled infrastructure. Although our investigation into the initial compromise vector for the captive portal networks is ongoing, we have observed notable commonalities in the...",
-      "links": [
-        {
-          "label": "The CaptiveCrunch campaign",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#the-captivecrunch-campaign"
-        },
-        {
-          "label": "Storm-2945 and Midnight Blizzard",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#storm-2945-and-midnight-blizzard"
-        },
-        {
-          "label": "CaptiveCrunch tradecraft and tooling",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#captivecrunch-tradecraft-and-tooling"
-        },
-        {
-          "label": "How to protect against CaptiveCrunch activity",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#how-to-protect-against-captivecrunch-activity"
-        },
-        {
-          "label": "Microsoft Defender detections and hunting guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections-and-hunting-guidance"
-        },
-        {
-          "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
-        },
-        {
-          "label": "Forest Blizzard DNS hijacking operation",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/07/soho-router-compromise-leads-to-dns-hijacking-and-adversary-in-the-middle-attacks/"
-        },
-        {
-          "label": "ReliaQuest",
-          "url": "https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/"
-        },
-        {
-          "label": "ClickFix",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/08/21/think-before-you-clickfix-analyzing-the-clickfix-social-engineering-technique/"
-        },
-        {
-          "label": "Storm-2372",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/02/13/storm-2372-conducts-device-code-phishing-campaign/"
-        },
-        {
-          "label": "device code and OAuth code phishing operations",
-          "url": "https://www.volexity.com/blog/2025/02/13/multiple-russian-threat-actors-targeting-microsoft-device-code-authentication"
-        },
-        {
-          "label": "Inside an AI‑enabled device code phishing campaign",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/06/ai-enabled-device-code-phishing-campaign-april-2026/"
         }
       ]
     },
@@ -4899,36 +4193,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Microsoft Entra ID: Optimizations for passkey registration experience",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1440968",
-      "published": "2026-07-27T22:53:36.710000+00:00",
-      "summary": "[What and why]We're rolling out optimizations to passkey registration across Microsoft Entra ID. These changes improve how passkey registration is handled through Registration Campaign, Authentication Strengths, and My Sign-Ins.The updated registration logic will more consistently:Guide users to...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1440968",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]We're rolling out optimizations to passkey registration across Microsoft Entra ID. These changes improve how passkey registration is handled through Registration Campaign, Authentication Strengths, and My Sign-Ins.The updated registration logic will more consistently:Guide users to register passkey types that comply with administrator configured passkey profile restrictions, reducing unsuccessful or non-compliant registration attempts.Prioritize registration of a passkey that is local to the user's current device when permitted by policy.These improvements are designed to increase successful passkey registrations, reduce registration friction, and help organizations strengthen adoption of phishing resistant authentication methods.There are no user interface changes associated with this update.[Rollout schedule]General Availability (Worldwide and GCC): Beginning in late August 2026 and expected to complete in late August 2026[Impact on your organization]Who is affectedUsers who register passkeys through Registration Campaign, Authentication Strengths, or My Sign-InsOrganizations using passkey profiles, including Synced-only, Device-bound-only, Attestation Enforced, and AAGUID-restricted configurationsOrganizations using AAGUID-restricted passkey profiles will benefit from these registration optimizations. The greatest benefit is expected for Microsoft-supported passkey experiences. Other AAGUID-restricted providers continue to be supported and can be configured as before.Platforms and servicesMicrosoft Entra ID Registration CampaignAuthentication StrengthsMy Sign-Ins self-service passkey registrationMicrosoft-supported passkey experiences for AAGUID-restricted profiles:Entra passkey on WindowsMicrosoft Authenticator passkeyiCloud Keychain passkeyGoogle Password Manager passkeyWhat will happenUsers will continue to register passkeys through the same registration screens and entry points they use today.Registration will more consistently align with administrator configured passkey profile requirements.When permitted by policy, registration will prioritize a passkey native to the user's current device to improve the sign-in experience.[Action required and recommendations]No action is required.Organizations should continue driving passkey adoption through Registration Campaign and Authentication Strengths. These optimizations are intended to improve the likelihood of successful passkey registration while helping users remain compliant with organizational passkey policies.[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
       ]
     }
   ]
