@@ -1,8 +1,564 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-28T10:22:54.100720+00:00",
-  "totalArticles": 124,
+  "lastUpdated": "2026-08-28T21:56:01.079391+00:00",
+  "totalArticles": 139,
   "articles": [
+    {
+      "title": "[Launched] Generally Available: Workload identity support for Azure Files CSI driver (SMB) in Azure",
+      "link": "https://azure.microsoft.com/updates?id=570120",
+      "published": "2026-08-28T20:25:22+00:00",
+      "summary": "The Azure Files Container Storage Interface (CSI) driver in Azure Kubernetes Service (AKS) now supports workload identity for pod-level authentication to SMB file shares. Previously, managed identity support in AKS enabled workloads to mount Azure Files w",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-81849 - Path traversal in the aws:downloadContent plugin in amazon-ssm-agent",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-091-aws/",
+      "published": "2026-08-28T18:06:52+00:00",
+      "summary": "Bulletin ID: 2026-091-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/28/2026 11:00 AM PDT Description: AWS Systems Manager Agent (amazon-ssm-agent) is Amazon software that runs on Amazon Elastic Compute Cloud (Amazon EC2) instances, edge devices, on-premises...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-091-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/28/2026 11:00 AM PDT Description: AWS Systems Manager Agent (amazon-ssm-agent) is Amazon software that runs on Amazon Elastic Compute Cloud (Amazon EC2) instances, edge devices, on-premises servers, and virtual machines (VMs). Amazon-ssm-agent makes it possible for Systems Manager to update, manage, and configure these resources. We identified CVE-2026-81849, where an improper limitation of a pathname to a restricted directory in the aws:downloadContent plugin in amazon-ssm-agent before 3.3.4515.0 might allow an authenticated remote user whose ssm:SendCommand permission is restricted to the AWS-DownloadContent document, to write arbitrary files outside the intended download directory with root privileges, via crafted object keys in the S3 source the document is directed to retrieve. This issue may lead to arbitrary code execution as root if specific sensitive files are overwritten. To remediate this issue, customers should upgrade amazon-ssm-agent to version 3.3.4515.0 or later. Impacted versions: Amazon amazon-ssm-agent from 2.0.767.0 to 3.3.4364.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "CVE-2026-81838 - Zip Slip path traversal in awsdac (diagram-as-code)",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-090-aws/",
+      "published": "2026-08-28T16:50:52+00:00",
+      "summary": "Bulletin ID: 2026-090-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/27/2026 13:00 PM PDT Description: awsdac (diagram-as-code) is a CLI tool that generates AWS architecture diagrams from YAML definitions, enabling version-controlled, code-driven diagramming. We...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-090-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/27/2026 13:00 PM PDT Description: awsdac (diagram-as-code) is a CLI tool that generates AWS architecture diagrams from YAML definitions, enabling version-controlled, code-driven diagramming. We identified CVE-2026-81838, a Zip Slip (path traversal) issue. When awsdac extracts a zip archive referenced by a ZipFile resource in a definition file, a crafted archive can write files outside the intended cache directory, to any path writable by the user running awsdac. Depending on the file written, this can lead to arbitrary code execution. Leveraging this issue requires processing a definition file from an untrusted source. This can occur when: - awsdac is run without definition trust restrictions (versions prior to 0.22.4 had no trust distinction; version 0.22.4 and later require the −−allow−untrusted−definitions flag), or - a definition file is loaded from the local filesystem ('Type: LocalFile'), which bypasses the definition URL allowlist. CI/CD environments that process definition files from untrusted or semi-trusted sources are the primary risk scenario. awsdac is a client-side CLI tool that renders architecture diagrams locally. This issue does not affect any AWS service, AWS account, or customer data. The impact is limited to the machine on which awsdac runs. Impacted versions: awsdac: versions 0.10 through 0.23 (inclusive) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "Chromium: CVE-2026-78891 Buffer overflow in WebRTC",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78891",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78892 Incorrect authorization in Chromoting",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78892",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78893 Information leak in QUIC",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78893",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78894 Race condition in Payments",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78894",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78895 Information leak in Paint",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78895",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78896 Information leak in StorageAccessAPI",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78896",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78897 Missing authorization in BrowserTag",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78897",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78898 Incorrect authorization in Downloads",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78898",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78899 Use after free in V8",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78899",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78900 Improper input validation in Media",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78900",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78901 Race condition in V8",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78901",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78903 Incomplete cleanup in SiteIsolation",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78903",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78904 Type confusion in ANGLE",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78904",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78905 Type confusion in ANGLE",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78905",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78906 Race condition in ANGLE",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78906",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78907 Incorrect authorization in WebProtect",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78907",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78908 Information leak in Canvas",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78908",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78909 Use after free in Views",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78909",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78910 Buffer overflow in V8",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78910",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2026-78911 Incorrect authorization in USB",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-78911",
+      "published": "2026-08-28T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "​​​​​​What’s new in Microsoft Security: August 2026",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/08/27/whats-new-in-microsoft-security-august-2026/",
@@ -1273,32 +1829,6 @@
       ]
     },
     {
-      "title": "CVE-2026-78379 - Consent bypass in Strands Agents Tools python_repl tool",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-089-aws/",
-      "published": "2026-08-25T19:09:48+00:00",
-      "summary": "Bulletin ID: 2026-089-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/25/2026 12:00 PM PDT Description: Strands Agents is an open-source Python SDK for building and running AI agents. The strands-agents-tools package provides pre-built tools for use with the SDK,...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-089-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/25/2026 12:00 PM PDT Description: Strands Agents is an open-source Python SDK for building and running AI agents. The strands-agents-tools package provides pre-built tools for use with the SDK, including the python_repl tool, which executes Python code on the agent's host, and the batch tool, which invokes several other tools in a single call. Before executing code, python_repl prompts the operator for approval. We identified CVE-2026-78379, a consent bypass in the python_repl tool. Improper neutralization of input used for LLM prompting in the python_repl tool in Amazon Strands Agents Tools before 0.8.5 might allow remote actors to execute arbitrary Python code on the agent's host by bypassing the human consent gate, via a crafted prompt that forwards non_interactive_mode as a keyword argument through the batch tool. Impacted versions: < 0.8.5 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "The patch window is collapsing: Why security needs a new control plane",
       "link": "https://azure.microsoft.com/en-us/blog/the-patch-window-is-collapsing-why-security-needs-a-new-control-plane/",
       "published": "2026-08-25T16:00:00+00:00",
@@ -2171,32 +2701,6 @@
       "links": []
     },
     {
-      "title": "CVE-2026-6437 - Mount Option Injection in Amazon EFS CSI Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-016-aws/",
-      "published": "2026-08-20T21:35:57+00:00",
-      "summary": "Bulletin ID: 2026-016-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/17 11:15 AM PDT Description: The Amazon EFS CSI Driver is a Container Storage Interface driver that allows Kubernetes clusters to use Amazon Elastic File System. We identified CVE-2026-6437,...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-016-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/17 11:15 AM PDT Description: The Amazon EFS CSI Driver is a Container Storage Interface driver that allows Kubernetes clusters to use Amazon Elastic File System. We identified CVE-2026-6437, where an actor with PersistentVolume creation privileges can inject arbitrary mount options via two unsanitized fields: the Access Point ID in volumeHandle and the mounttargetip volumeAttribute. In both cases, appending comma-separated values causes the mount utility to parse them as separate mount options. No AWS service is affected. Impacted versions: EFS CSI Driver <&equal; v3.0.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "[Launched] Generally Available: Summarized advertised gateway prefixes for route advertisement",
       "link": "https://azure.microsoft.com/updates?id=569743",
       "published": "2026-08-20T17:02:23+00:00",
@@ -2811,126 +3315,6 @@
       ],
       "tags": [
         "Microsoft Purview"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-19560 Use after free in Blink",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19560",
-      "published": "2026-08-14T23:37:22+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-19559 Use after free in HTML",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19559",
-      "published": "2026-08-14T23:37:19+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-19558 Use after free in Extensions",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19558",
-      "published": "2026-08-14T23:37:16+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-19557 Use after free in TabStrip",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19557",
-      "published": "2026-08-14T23:37:14+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-19556 Use after free in V8",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-19556",
-      "published": "2026-08-14T23:37:11+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2025) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
@@ -4283,6 +4667,81 @@
       ]
     },
     {
+      "title": "CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+      "published": "2026-07-31T21:01:37+00:00",
+      "summary": "Storm-2945, a sub-cluster of the Russian threat actor Midnight Blizzard, has been observed compromising the sign-in portals of hospitality-related organizations such as hotels since May 2026 in order to deliver malware to travelers and steal credentials in an operation we call CaptiveCrunch. The...",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Threat Intelligence",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article The CaptiveCrunch campaignStorm-2945 and Midnight BlizzardCaptiveCrunch tradecraft and toolingHow to protect against CaptiveCrunch activityMicrosoft Defender detections and hunting guidanceIndicators of compromise Since early May 2026, Microsoft Threat Intelligence has observed Storm-2945, a sub-cluster of Midnight Blizzard, conducting widespread but targeted traffic manipulation attacks involving hospitality sector networks served by captive portals worldwide. Despite some tactic, technique, and procedure (TTP) similarities to the Forest Blizzard DNS hijacking operation that we publicly disclosed in April 2026, we attribute this campaign, which we call CaptiveCrunch, to Storm-2945. As reported by ReliaQuest on July 23, a portion of this activity leverages doppelganger domains mimicking Microsoft online services to conduct follow-on adversary-in-the-middle (AitM) phishing operations that abuse the device code authentication flow in Microsoft Entra ID. Microsoft Threat Intelligence has also identified active traffic manipulation attacks leading to the delivery of malware on impacted systems. Microsoft has observed Storm-2945 leveraging AI to support a significant portion of these operations. Today, we are sharing our findings on these ongoing intrusions to raise awareness of this threat and enable customers to protect their devices, especially while traveling. We provide our assessment of Storm-2945’s relationship to Midnight Blizzard and analysis of the CaptiveCrunch campaign, detailing the malware and tradecraft used in these operations. We also provide mitigation, detection, and hunting guidance to help organizations identify and defend against Storm-2945 and related activity. Microsoft Threat Intelligence would like to thank our partners at Anthropic and OpenAI for their collaboration and support during this investigation. The CaptiveCrunch campaign Since February 2026, Storm-2945 has conducted AI-augmented operations including targeted device code and OAuth code phishing campaigns leading to Entra device registration and subsequent data collection from Microsoft 365. Since early May 2026, Microsoft Threat Intelligence has observed Storm-2945 manipulating DNS and HTTP traffic from networks served by captive portals to redirect user traffic through actor-controlled infrastructure. Although our investigation into the initial compromise vector for the captive portal networks is ongoing, we have observed notable commonalities in the...",
+      "links": [
+        {
+          "label": "The CaptiveCrunch campaign",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#the-captivecrunch-campaign"
+        },
+        {
+          "label": "Storm-2945 and Midnight Blizzard",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#storm-2945-and-midnight-blizzard"
+        },
+        {
+          "label": "CaptiveCrunch tradecraft and tooling",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#captivecrunch-tradecraft-and-tooling"
+        },
+        {
+          "label": "How to protect against CaptiveCrunch activity",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#how-to-protect-against-captivecrunch-activity"
+        },
+        {
+          "label": "Microsoft Defender detections and hunting guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections-and-hunting-guidance"
+        },
+        {
+          "label": "Indicators of compromise",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
+        },
+        {
+          "label": "Forest Blizzard DNS hijacking operation",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/07/soho-router-compromise-leads-to-dns-hijacking-and-adversary-in-the-middle-attacks/"
+        },
+        {
+          "label": "ReliaQuest",
+          "url": "https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/"
+        },
+        {
+          "label": "ClickFix",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/08/21/think-before-you-clickfix-analyzing-the-clickfix-social-engineering-technique/"
+        },
+        {
+          "label": "Storm-2372",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/02/13/storm-2372-conducts-device-code-phishing-campaign/"
+        },
+        {
+          "label": "device code and OAuth code phishing operations",
+          "url": "https://www.volexity.com/blog/2025/02/13/multiple-russian-threat-actors-targeting-microsoft-device-code-authentication"
+        },
+        {
+          "label": "Inside an AI‑enabled device code phishing campaign",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/06/ai-enabled-device-code-phishing-campaign-april-2026/"
+        }
+      ]
+    },
+    {
       "title": "Detecting CVE-2026-54121 (Certighost) with Microsoft Defender",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/detecting-cve-2026-54121-certighost-with-microsoft-defender/ba-p/4542861",
       "published": "2026-07-31T17:41:07+00:00",
@@ -4622,89 +5081,6 @@
       ],
       "body": "Information Table Defender Foundations RegionalOperation AI & DataContainment ResponsibleGovernance Built as a production Microsoft Security service, not an isolated research system. Operates alongside Microsoft Defender in the clouds and regions customers already use. Designed to keep source, findings, and security data inside controlled boundaries. Security, privacy, compliance, responsible AI, and operational readiness. A new class of AI security needs a new level of trust When Microsoft introduced Codename MDASH, we shared a major step forward in AI-powered vulnerability discovery: a multi-model, agentic scanning system that helps customers discover, validate, and reason about exploitable vulnerabilities across software applications. MDASH brings together specialized agents, multiple models, domain-specific analysis, debate, and proof construction to move beyond theoretical alerts and toward findings that customers can remediate and act on. That capability matters because the software landscape is changing quickly. AI is accelerating how code is written, how systems are analyzed, and how vulnerabilities are discovered. The same advances that help defenders find critical weaknesses earlier can also lower the barrier for attackers and make sophisticated vulnerability research more accessible. In that environment, customers need more than powerful AI. They need powerful AI delivered inside a trusted security architecture. That is the design behind MDASH. The product is not simply the model and harness. The product is the comprehensive security system that surrounds them: the controls, isolation boundaries, operational practices, governance, and compliance posture that allow customers to benefit from frontier AI and advanced vulnerability discovery without compromising control, and leveraging the discoveries inside Microsoft Defender. Built as a production Microsoft Defender service MDASH was built from the beginning as a production Microsoft Security service. It was not designed as a standalone experiment, a separate research environment, or a disconnected security tool. It was designed to operate with the same security, governance, privacy, and operational foundations customers expect from Microsoft Defender XDR and Microsoft Sentinel. That distinction is important. Security products operate on some of the most sensitive information an organization has: source code, vulnerability findings, exploitability analysis, threat intelligence, identity signals,...",
       "links": []
-    },
-    {
-      "title": "MDTI convergence in Microsoft Sentinel and Defender XDR is complete",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/mdti-convergence-in-microsoft-sentinel-and-defender-xdr-is/ba-p/4541279",
-      "published": "2026-07-29T16:00:00+00:00",
-      "summary": "Beginning August 1, the final phase of Microsoft Defender Threat Intelligence (MDTI) convergence will be generally available in the Defender portal, giving customers real-time Microsoft threat intelligence across detection, investigation, response, hunting, and automation at no additional cost....",
-      "author": "AmelieDarchicourt",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Sentinel",
-        "Threat Intelligence"
-      ],
-      "body": "Beginning August 1, the final phase of Microsoft Defender Threat Intelligence (MDTI) convergence will be generally available in the Defender portal, giving customers real-time Microsoft threat intelligence across detection, investigation, response, hunting, and automation at no additional cost. Announced last year, this unified SecOps experience reduces fragmented context and tool handoffs, creating a clearer path from threat signal to informed action. Latest features converging Entity enrichments: all the intel, right where you need it Defender entity pages surface threat intelligence enrichments in the Threat Intelligence Insights tab for IP addresses, domains, URLs, and files. This unified view combines reputation data and scores, attributed reports, infrastructure relationships, services, certificates, DNS and WHOIS records, trackers, cookies, and sandbox analysis, helping analysts assess risk and investigate incidents without switching tabs. For more information, see View threat intelligence in entity pages. Screenshot of the Threat Intelligence Insights tab under Threat Analytics in the Defender portal showing reputation risk. Screenshot of the Threat Intelligence Insights tab under Threat Analytics in the Defender portal showing WHOIS records. MDTI Sentinel data connectors and APIs Microsoft Threat Intelligence data that previously required the Premium MDTI connector is now available through the free Microsoft Threat Intelligence connector in Sentinel, enabling free and premium indicator feeds through one setup. MDTI APIs are also available by default to Microsoft Defender XDR and Microsoft Sentinel customers, without a separate MDTI license SKU, so teams can enrich investigations through Sentinel or external SIEM, SOAR, and automation tools. As a reminder, the API surface remains unchanged, and no customer migration is required. Customers do not need to perform endpoint mapping, code changes, tooling changes, or cutover activities. Features previously released Threat Intelligence Library Microsoft’s threat actor profiles, intelligence reports, OSINT articles, MSTIC and MTP research, and indicators of compromise (IoCs) are now available through Threat Analytics in the Defender portal, at no additional cost beyond the existing license. Screenshot of the Threat Analytics dashbaord in the Defender portal. Threat Analytics Enhancements Reports now bring together embedded IoCs, MITRE ATT&CK mappings, targeted industries, actor origins, and automatic...",
-      "links": [
-        {
-          "label": "this unified SecOps experience",
-          "url": "https://techcommunity.microsoft.com/blog/defenderthreatintelligence/mdti-is-converging-into-microsoft-sentinel-and-defender-xdr/4427991"
-        },
-        {
-          "label": "View threat intelligence in entity pages",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/entity-page-threat-intelligence"
-        },
-        {
-          "label": "Threat Analytics",
-          "url": "https://learn.microsoft.com/defender-xdr/threat-analytics"
-        },
-        {
-          "label": "Explore our documentation",
-          "url": "https://learn.microsoft.com/defender-xdr/defender-threat-intelligence"
-        },
-        {
-          "label": "Microsoft Defender portal",
-          "url": "https://security.microsoft.com/"
-        }
-      ]
-    },
-    {
-      "title": "Making forensic observability the norm for network devices",
-      "link": "https://www.ncsc.gov.uk/blogs/making-forensic-observability-the-norm-for-network-devices",
-      "published": "2026-07-29T12:00:00+00:00",
-      "summary": "Progress is being made, but too many network devices still remain difficult to investigate after compromise",
-      "author": "",
-      "source": "NCSC Security Feed",
-      "source_id": "ncsc_security",
-      "source_group": "Official NCSC",
-      "source_kind": "rss",
-      "vendor": "NCSC",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ncsc-guidance",
-          "name": "NCSC Guidance",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "NCSC Guidance"
-      ]
     }
   ]
 }
