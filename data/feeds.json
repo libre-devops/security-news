@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-27T22:00:28.627552+00:00",
-  "totalArticles": 129,
+  "lastUpdated": "2026-08-28T10:22:54.100720+00:00",
+  "totalArticles": 124,
   "articles": [
     {
       "title": "​​​​​​What’s new in Microsoft Security: August 2026",
@@ -82,7 +82,7 @@
       "title": "Disruptive cyber activity highlights risk from internet-exposed systems and edge devices",
       "link": "https://www.ncsc.gov.uk/news/disruptive-cyber-activity-highlights-risk-from-internet-exposed-systems-and-edge-devices",
       "published": "2026-08-27T12:00:00+00:00",
-      "summary": "",
+      "summary": "Owners of operational technology encouraged to address avoidable vulnerabilities, and build long-term cyber resilience.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -4283,81 +4283,6 @@
       ]
     },
     {
-      "title": "CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
-      "published": "2026-07-31T21:01:37+00:00",
-      "summary": "Storm-2945, a sub-cluster of the Russian threat actor Midnight Blizzard, has been observed compromising the sign-in portals of hospitality-related organizations such as hotels since May 2026 in order to deliver malware to travelers and steal credentials in an operation we call CaptiveCrunch. The...",
-      "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article The CaptiveCrunch campaignStorm-2945 and Midnight BlizzardCaptiveCrunch tradecraft and toolingHow to protect against CaptiveCrunch activityMicrosoft Defender detections and hunting guidanceIndicators of compromise Since early May 2026, Microsoft Threat Intelligence has observed Storm-2945, a sub-cluster of Midnight Blizzard, conducting widespread but targeted traffic manipulation attacks involving hospitality sector networks served by captive portals worldwide. Despite some tactic, technique, and procedure (TTP) similarities to the Forest Blizzard DNS hijacking operation that we publicly disclosed in April 2026, we attribute this campaign, which we call CaptiveCrunch, to Storm-2945. As reported by ReliaQuest on July 23, a portion of this activity leverages doppelganger domains mimicking Microsoft online services to conduct follow-on adversary-in-the-middle (AitM) phishing operations that abuse the device code authentication flow in Microsoft Entra ID. Microsoft Threat Intelligence has also identified active traffic manipulation attacks leading to the delivery of malware on impacted systems. Microsoft has observed Storm-2945 leveraging AI to support a significant portion of these operations. Today, we are sharing our findings on these ongoing intrusions to raise awareness of this threat and enable customers to protect their devices, especially while traveling. We provide our assessment of Storm-2945’s relationship to Midnight Blizzard and analysis of the CaptiveCrunch campaign, detailing the malware and tradecraft used in these operations. We also provide mitigation, detection, and hunting guidance to help organizations identify and defend against Storm-2945 and related activity. Microsoft Threat Intelligence would like to thank our partners at Anthropic and OpenAI for their collaboration and support during this investigation. The CaptiveCrunch campaign Since February 2026, Storm-2945 has conducted AI-augmented operations including targeted device code and OAuth code phishing campaigns leading to Entra device registration and subsequent data collection from Microsoft 365. Since early May 2026, Microsoft Threat Intelligence has observed Storm-2945 manipulating DNS and HTTP traffic from networks served by captive portals to redirect user traffic through actor-controlled infrastructure. Although our investigation into the initial compromise vector for the captive portal networks is ongoing, we have observed notable commonalities in the...",
-      "links": [
-        {
-          "label": "The CaptiveCrunch campaign",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#the-captivecrunch-campaign"
-        },
-        {
-          "label": "Storm-2945 and Midnight Blizzard",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#storm-2945-and-midnight-blizzard"
-        },
-        {
-          "label": "CaptiveCrunch tradecraft and tooling",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#captivecrunch-tradecraft-and-tooling"
-        },
-        {
-          "label": "How to protect against CaptiveCrunch activity",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#how-to-protect-against-captivecrunch-activity"
-        },
-        {
-          "label": "Microsoft Defender detections and hunting guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections-and-hunting-guidance"
-        },
-        {
-          "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
-        },
-        {
-          "label": "Forest Blizzard DNS hijacking operation",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/07/soho-router-compromise-leads-to-dns-hijacking-and-adversary-in-the-middle-attacks/"
-        },
-        {
-          "label": "ReliaQuest",
-          "url": "https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/"
-        },
-        {
-          "label": "ClickFix",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/08/21/think-before-you-clickfix-analyzing-the-clickfix-social-engineering-technique/"
-        },
-        {
-          "label": "Storm-2372",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/02/13/storm-2372-conducts-device-code-phishing-campaign/"
-        },
-        {
-          "label": "device code and OAuth code phishing operations",
-          "url": "https://www.volexity.com/blog/2025/02/13/multiple-russian-threat-actors-targeting-microsoft-device-code-authentication"
-        },
-        {
-          "label": "Inside an AI‑enabled device code phishing campaign",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/06/ai-enabled-device-code-phishing-campaign-april-2026/"
-        }
-      ]
-    },
-    {
       "title": "Detecting CVE-2026-54121 (Certighost) with Microsoft Defender",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/detecting-cve-2026-54121-certighost-with-microsoft-defender/ba-p/4542861",
       "published": "2026-07-31T17:41:07+00:00",
@@ -4779,102 +4704,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-13037 Use after free in WebView",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13037",
-      "published": "2026-07-28T22:03:49+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-13032 Use after free in WebGL",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13032",
-      "published": "2026-07-28T22:03:48+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-13030 Uninitialized Use in GPU",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13030",
-      "published": "2026-07-28T22:03:47+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-13028 Use after free in WebGL",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-13028",
-      "published": "2026-07-28T22:03:44+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     }
   ]
