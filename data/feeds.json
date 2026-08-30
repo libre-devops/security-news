@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-30T11:33:24.340194+00:00",
-  "totalArticles": 136,
+  "lastUpdated": "2026-08-30T16:20:47.524541+00:00",
+  "totalArticles": 135,
   "articles": [
     {
       "title": "TerminalFix campaign deploys a reverse tunnel through multistage intrusion",
@@ -4914,87 +4914,6 @@
       ],
       "tags": [
         "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "What’s new in Microsoft Sentinel: July 2026",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-july-2026/ba-p/4542130",
-      "published": "2026-07-31T16:00:00+00:00",
-      "summary": "Welcome back to What's new in Microsoft Sentinel. In July, Sentinel adds custom detections support in Sentinel repositories, so you can manage detections as code alongside your analytics rules, playbooks, parsers, and workbooks, authoring in GitHub and deploying through the CI/CD pipelines you...",
-      "author": "vkokkengada",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Threat Intelligence"
-      ],
-      "body": "Welcome back to What's new in Microsoft Sentinel. In July, Sentinel adds custom detections support in Sentinel repositories, so you can manage detections as code alongside your analytics rules, playbooks, parsers, and workbooks, authoring in GitHub and deploying through the CI/CD pipelines you already use. In Sentinel data lake, table insights brings table-level observability into the Microsoft Defender portal, helping you track ingestion volume, spot week-over-week changes, and catch connectors that have gone silent, all without running a single KQL query. Connector coverage also expands with GitHub Audit logs, Agari, and Airlock Digital, bringing more of the signals that matter to you into one place. Read on for the details, and if you're joining us at Black Hat USA 2026, don't miss the keynote from Agentic Security CVP David Weston and other Microsoft Security activities at this event. Explore our resources at the end to go deeper. Sentinel innovations: Sentinel SIEM Sentinel data lake Sentinel SIEM Custom detections support in Sentinel repositories [Public Preview] Custom detections can be managed as code through Sentinel repositories, alongside analytics rules, playbooks, parsers, and workbooks, completing the detections-as-code workflow across the full Sentinel portfolio. Teams can author detections in GitHub, review through pull requests, and deploy via existing CI/CD pipelines or the Microsoft Security Bicep extension. Learn how to manage custom content with repository connections. Behind the Build with Gigamon: Enriching Sentinel with network-derived telemetry Learn how Gigamon's integration with Sentinel brings network-derived telemetry into your security investigations, correlated with the identity, endpoint, and cloud signals already in your workspace. By adding this runtime context, you can trace suspicious activity across environments and investigate threats that span traditionally siloed domains, with faster and more accurate investigations, higher-quality signal, and clearer visibility into encrypted and hybrid cloud traffic that logs alone often miss. Read the blog to explore the integration and what it means for your security operations. Sentinel data lake Table insights [Public Preview] Table insights is a built-in monitoring view on the tables page in the Microsoft Defender portal that gives you table-level observability for your Sentinel workspace without running KQL queries or opening a separate workbook. Table insights surfaces the...",
-      "links": [
-        {
-          "label": "Sentinel SIEM",
-          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-siem"
-        },
-        {
-          "label": "Sentinel data lake",
-          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-datalake"
-        },
-        {
-          "label": "Learn how to manage custom content with repository connections",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/ci-cd-custom-content#deploy-custom-detection-rules-as-code-preview"
-        },
-        {
-          "label": "Read the blog",
-          "url": "https://aka.ms/AppAssure_BehindtheBuild_Gigamon"
-        },
-        {
-          "label": "Learn more.",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/understand-your-sentinel-tables-at-a-glance-monitor-with-table-insights/4530738"
-        },
-        {
-          "label": "GitHub Audit logs connector",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference#github-enterprise-audit-log-via-azure-storage"
-        },
-        {
-          "label": "Learn how to stream audit logs.",
-          "url": "https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise"
-        },
-        {
-          "label": "Agari Data connector",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference#fortra-agari-data-connector-via-codeless-connector-framework"
-        },
-        {
-          "label": "Airlock Digital",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference#airlock-digital-connector-via-codeless-connector-framework"
-        },
-        {
-          "label": "Configure table settings in Sentinel",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-table-tiers-retention"
-        },
-        {
-          "label": "Manage data tiers and retention in Sentinel",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/manage-data-overview"
-        },
-        {
-          "label": "Sentinel CI/CD repositories sample",
-          "url": "https://github.com/SentinelCICD/RepositoriesSampleContent"
-        }
       ]
     }
   ]
