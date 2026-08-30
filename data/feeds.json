@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-29T20:40:55.558550+00:00",
-  "totalArticles": 138,
+  "lastUpdated": "2026-08-30T04:33:13.150304+00:00",
+  "totalArticles": 136,
   "articles": [
     {
       "title": "TerminalFix campaign deploys a reverse tunnel through multistage intrusion",
@@ -4994,92 +4994,6 @@
         {
           "label": "Sentinel CI/CD repositories sample",
           "url": "https://github.com/SentinelCICD/RepositoriesSampleContent"
-        }
-      ]
-    },
-    {
-      "title": "Securing Enterprise AI Agents with Microsoft Sentinel",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/securing-enterprise-ai-agents-with-microsoft-sentinel/ba-p/4542583",
-      "published": "2026-07-31T02:30:39+00:00",
-      "summary": "1. Introduction Enterprise adoption of Generative AI is accelerating rapidly through Microsoft 365 Copilot, Copilot Studio, Azure AI Foundry Agents, Security Copilot, and custom AI agents integrated with business applications. Unlike traditional SaaS applications, AI agents can: Access enterprise...",
-      "author": "SantoshPargi",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 9
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Cloud",
-        "Microsoft Sentinel",
-        "AI Security",
-        "Microsoft Security Copilot"
-      ],
-      "body": "1. Introduction Enterprise adoption of Generative AI is accelerating rapidly through Microsoft 365 Copilot, Copilot Studio, Azure AI Foundry Agents, Security Copilot, and custom AI agents integrated with business applications. Unlike traditional SaaS applications, AI agents can: Access enterprise data Query internal knowledge repositories Invoke APIs and MCP tools Execute workflows Interact with business applications Make decisions on behalf of users While these capabilities improve productivity, they introduce a new attack surface that security teams must monitor and secure. Common AI threats include: Prompt Injection Cross Prompt Injection Attacks (XPIA) Jailbreak Attempts Unauthorized Tool Invocation Data Exfiltration through AI Agents Agent Identity Abuse Excessive Data Access Malicious MCP Tool Execution Traditional SOC monitoring platforms were designed for users, devices, applications and infrastructure—not autonomous AI systems. To address this challenge, Microsoft provides a comprehensive AI security monitoring framework built around: Agent 365 Observability Microsoft Agent Identities Microsoft Copilot Logs Defender XDR Defender for AI Microsoft Sentinel Together these components provide end-to-end observability of: User prompts Agent execution paths Tool invocations Safety signal detections Agent identities Security alerts 2. Reference Architecture AI Security Monitoring Architecture 3. Integration Architecture Microsoft provides multiple telemetry sources that complement one another. 3.1 Agent Runtime Telemetry Sentinel Data Connector Agent 365 Data Connector Table UnifiedAgentObservability Captures runtime behavior of AI agents including: User prompts Session IDs Conversation IDs Agent identities MCP tool invocations Connector invocations Tool arguments Tool responses Request payloads Response payloads Execution errors This dataset provides the forensic trail of everything an AI agent performed. 3.2 Agent Governance and Asset Inventory Sentinel Data Connector Microsoft Agent Identities Provides visibility into: Agent inventory Agent blueprint inventory Ownership Relationships Governance metadata Risk context This allows SOC teams to answer: Who owns this agent? What permissions does it have? Which business unit deployed it? Which related agents exist? 3.3 Copilot Audit and Usage Monitoring Sentinel Data Connector Microsoft Copilot Logs Connector Table CopilotActivity Provides: Copilot usage auditing Operational visibility User interaction...",
-      "links": [
-        {
-          "label": "Agent 365 Observability — AI Agent Telemetry Hunting",
-          "url": "https://github.com/SCStelz/security-investigator/blob/main/queries/cloud/agent365_observability.md"
-        }
-      ]
-    },
-    {
-      "title": "Domain controller showing \"Not ready for migration\"",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-identity/domain-controller-showing-quot-not-ready-for-migration-quot/m-p/4542534#M4327",
-      "published": "2026-07-30T20:52:18+00:00",
-      "summary": "I want to get the MDI sensor upgraded to v3 on our domain controllers. When I go into Settings > Sensors, two of our DCs are listed as \"Ready for migration\", but the third says \"Not ready for migration\".As far as I can tell, this DC meets all the prerequisites listed at Migrate from sensor v2.x to...",
-      "author": "RyanSteele-CoV",
-      "source": "Microsoft Defender for Identity",
-      "source_id": "defender_identity",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Identity Security",
-      "board_id": "azureadvancedthreatprotection",
-      "products": [
-        {
-          "id": "defender-identity",
-          "name": "Microsoft Defender for Identity",
-          "score": 14
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Identity"
-      ],
-      "body": "I want to get the MDI sensor upgraded to v3 on our domain controllers. When I go into Settings > Sensors, two of our DCs are listed as \"Ready for migration\", but the third says \"Not ready for migration\".As far as I can tell, this DC meets all the prerequisites listed at Migrate from sensor v2.x to sensor v3.x - Microsoft Defender for Identity | Microsoft Learn. In the Troubleshooting section of that article, it says \"hover over the status on the Sensors page to see a tooltip that lists the reasons the server doesn't meet the migration prerequisites\", but I see no such tooltip, no matter where I hover.I tried opening a support request with Microsoft 365 Support, only to be told that I have to contact Azure support. We don't currently have an Azure support plan, so I guess we don't qualify for support.Anyone got any suggestions for things I can try?",
-      "links": [
-        {
-          "label": "Migrate from sensor v2.x to sensor v3.x - Microsoft Defender for Identity | Microsoft Learn",
-          "url": "https://learn.microsoft.com/en-us/defender-for-identity/deploy/migrate-to-sensor-v3"
         }
       ]
     }
