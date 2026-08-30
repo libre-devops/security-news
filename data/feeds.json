@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-30T16:20:47.524541+00:00",
-  "totalArticles": 135,
+  "lastUpdated": "2026-08-30T20:46:45.098486+00:00",
+  "totalArticles": 133,
   "articles": [
     {
       "title": "TerminalFix campaign deploys a reverse tunnel through multistage intrusion",
@@ -4814,106 +4814,6 @@
           "label": "Inside an AI‑enabled device code phishing campaign",
           "url": "https://www.microsoft.com/en-us/security/blog/2026/04/06/ai-enabled-device-code-phishing-campaign-april-2026/"
         }
-      ]
-    },
-    {
-      "title": "Detecting CVE-2026-54121 (Certighost) with Microsoft Defender",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/detecting-cve-2026-54121-certighost-with-microsoft-defender/ba-p/4542861",
-      "published": "2026-07-31T17:41:07+00:00",
-      "summary": "What is CVE-2026-54121? CVE-2026-54121 is an authentication-bypass vulnerability in Active Directory Certificate Services that allows an attacker to obtain certificates for arbitrary domain computer accounts, including Domain Controllers. A valid Domain Controller certificate enables escalation to...",
-      "author": "EdanZwick",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-identity",
-          "name": "Microsoft Defender for Identity",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Identity"
-      ],
-      "body": "What is CVE-2026-54121? CVE-2026-54121 is an authentication-bypass vulnerability in Active Directory Certificate Services that allows an attacker to obtain certificates for arbitrary domain computer accounts, including Domain Controllers. A valid Domain Controller certificate enables escalation to full domain compromise: it can be used to obtain Kerberos tickets that authenticate the attacker as a Domain Controller. Those tickets can then be used to perform attacks such as DCSync, or to recover the Domain Controller's password hash for later use. The flaw lies in an AD CS enrollment fallback known as a chase, which occurs when the CA cannot resolve the requester. In such cases, the vulnerable CA contacts a client-supplied Domain Controller, specified in the cdc attribute, to retrieve fresher identity data and incorporates the response into the issued certificate, without verifying that it is communicating with a legitimate Domain Controller. The chase fallback occurs only for templates that require a DNS name, and only on CAs with the EDITF_ENABLECHASECLIENTDC flag enabled. A public proof of concept was released on July 24, 2026. Microsoft has not observed confirmed threat-actor exploitation, and the activity seen so far appears consistent with security testing. Organizations with affected AD CS configurations should apply the July 14 security update. Organizations should identify exposed Certificate Services hosts, confirm whether the required environmental conditions exist, enable the recommended AD CS auditing, and monitor for the suspicious authentication and certificate-enrollment activity described below. More details about VCE-2026-54121 can be found here. What to do The response follows a simple order: know your exposure, patch it, instrument it, and watch for the activity. 1. Identify affected systems Certighost affects Windows Server 2012 through Windows Server 2025, including Server Core installations, but several conditions must all be present for a given environment to be exploitable: An Enterprise Certification Authority integrated with Active Directory Enrollment through the machine certificate template A default ms-DS-MachineAccountQuota value, or a machine account already controlled by the attacker Network reachability between the Certification Authority and the attacker's host over SMB and LDAP A valid domain account, with no administrative privileges required 2. Patch The primary and durable remediation is the July 14, 2026 security...",
-      "links": [
-        {
-          "label": "More details about VCE-2026-54121 can be found here",
-          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-54121"
-        },
-        {
-          "label": "Configure Windows event auditing — Microsoft Defender for Identity",
-          "url": "https://learn.microsoft.com/defender-for-identity/deploy/configure-windows-event-collection"
-        },
-        {
-          "label": "What's New",
-          "url": "https://learn.microsoft.com/defender-for-identity/whats-new"
-        }
-      ]
-    },
-    {
-      "title": "Microsoft Entra ID: Retirement of custom CSS positioning properties in custom branding",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1435782",
-      "published": "2026-07-31T17:35:58.477000+00:00",
-      "summary": "[What and Why]To align with Microsoft's Secure Future Initiative (SFI) and its focus on identity security and phishing resistance, Microsoft is enhancing Microsoft Entra custom branding to support more secure, reliable, and consistent sign in experiences. Beginning in October 2026, Microsoft Entra...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1435782",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and Why]To align with Microsoft's Secure Future Initiative (SFI) and its focus on identity security and phishing resistance, Microsoft is enhancing Microsoft Entra custom branding to support more secure, reliable, and consistent sign in experiences. Beginning in October 2026, Microsoft Entra ID will retire support for custom CSS positioning properties used in custom branding. Full retirement of all custom CSS is planned for a future date, and additional notice will be provided before that change occurs.This update helps further reduce opportunities for deceptive or misleading sign in page layouts and supports trusted sign in experiences that better protect users from phishing attacks while maintaining brand customization capabilities.General Availability (Worldwide and GCC): Beginning in October 2026 and expected to complete by late November 2026[Impact on Your Organization]Who is affectedAdministrators managing Microsoft Entra ID company brandingOrganizations currently using custom CSS positioning properties in company brandingOrganizations that do not use custom CSS positioning properties as of July 21, 2026, are not affected and will not be able to use these properties going forwardMicrosoft Entra External ID tenants are not affectedPlatforms/ServicesMicrosoft Entra IDCustom branding for sign-in experiences (including company branding and branding themes)Web-based branded sign-in pagesWhat will happenExisting tenants that currently use custom CSS positioning properties can continue using them until October 2026.Beginning on October 26, 2026, the affected positioning properties will no longer be honored and will stop functioning.Branding elements on branded sign-in pages such as logos, images, and text will remain visible but may revert to their default placement and appearance.There is no supported migration path or replacement for the retired positioning properties.Organizations that do not already use custom CSS positioning properties cannot create new dependencies on these properties.New Microsoft Entra ID tenants created after January 5, 2026, do not have custom CSS available for company branding.Microsoft will notify impacted customers directly in advance of the retirement.The following CSS properties are being retired:position (including top, right, bottom, left, and z-index)margin (including margin-top, margin-bottom, margin-left, and margin-right)transformopacityoverflowfilterpointer-eventsclip-pathmix-blend-modetranslate[Action Required/Recommendations]Action is required if your organization uses any of the retired positioning properties listed above.Recommended actions:Review your Microsoft Entra ID company branding configurations before October 26, 2026.Identify any usage of the retired CSS positioning properties.Remove or redesign branding customizations that depend on these properties.Validate your branded sign in experience after changes are made to ensure the layout remains acceptable.Communicate this upcoming change to identity administrators and support teams.To determine whether your tenant is using retired positioning properties:Sign in using a Global Administrator or Branding Administrator account.Use Microsoft Graph Explorer to retrieve your organization branding configuration.Review all configured branding localizations.Identify any references to the retired CSS positioning properties.Remove those properties before October 2026.Learn more: Configure your company branding | Fundamentals | Microsoft Entra | Microsoft LearnCSS template reference guide | Fundamentals | Microsoft Entra | Microsoft LearnCustomize the sign-in experience for your application with branding themes | Fundamentals | Microsoft Entra | Microsoft LearnMicrosoft Entra ID enhances security of branded sign-ins | Microsoft Entra BlogScience Future Initiative (SFI) | Microsoft[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "Microsoft Graph Explorer",
-          "url": "https://developer.microsoft.com/graph/graph-explorer"
-        },
-        {
-          "label": "Configure your company branding | Fundamentals | Microsoft Entra | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/fundamentals/how-to-customize-branding"
-        },
-        {
-          "label": "CSS template reference guide | Fundamentals | Microsoft Entra | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/fundamentals/reference-company-branding-css-template#deprecation-of-custom-css-positioning-properties"
-        },
-        {
-          "label": "Customize the sign-in experience for your application with branding themes | Fundamentals | Microsoft Entra | Microsoft...",
-          "url": "https://learn.microsoft.com/entra/fundamentals/how-to-customize-branding-themes-apps"
-        },
-        {
-          "label": "Microsoft Entra ID enhances security of branded sign-ins | Microsoft Entra Blog",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-enhances-security-of-branded-sign-ins/4537471"
-        },
-        {
-          "label": "Science Future Initiative (SFI) | Microsoft",
-          "url": "https://www.microsoft.com/trust-center/security/secure-future-initiative?msockid=22346ecb805f631739b27a6e81726266"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
       ]
     }
   ]
