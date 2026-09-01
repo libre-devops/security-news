@@ -1,8 +1,158 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-08-31T22:39:11.687284+00:00",
-  "totalArticles": 132,
+  "lastUpdated": "2026-09-01T04:19:10.975817+00:00",
+  "totalArticles": 134,
   "articles": [
+    {
+      "title": "Close the gaps: layered data protection with Microsoft Purview across endpoint, browser, and network",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/close-the-gaps-layered-data-protection-with-microsoft-purview/ba-p/4550997",
+      "published": "2026-08-31T22:25:14+00:00",
+      "summary": "Three layers that work like a good team and slides to show it Data Loss Prevention (DLP) is not new, many use it daily without ever even knowing it, but with AI bringing faster results for productivity so does the risk of data leakage. That is where we take a layered approach, meeting the end user...",
+      "author": "Nick-MSFT",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "Three layers that work like a good team and slides to show it Data Loss Prevention (DLP) is not new, many use it daily without ever even knowing it, but with AI bringing faster results for productivity so does the risk of data leakage. That is where we take a layered approach, meeting the end user exactly where they are working, on a device, or in a browser, or through that cute cat Office add-in that had to be installed. But don't think of layered protection as three products but more as three specialists who are each excellent at their own job and have the good sense not to try doing everyone else's. Endpoint DLP lives on the device. USB and removable media, clipboard, print, restricted apps. It carries the deepest classification support, EDM, fingerprinting, OCR, and it works offline, which turns out to be more useful than it sounds at 30,000 feet. Browser Data Security lives in the session, inline in Edge for Business, checking content before an upload or a form submission. It is the most precise layer for AI prompts and for activity happening inside a managed web app, where nothing else is standing close enough to help. Network Data Security lives on the wire, via Entra Global Secure Access or a third-party SASE. It handles traffic that never touches a browser at all, desktop apps, Office add-ins quietly phoning a friend, and it is the layer that supports inbound classification of content coming back from cloud and AI apps. Each one has natural technical boundaries, and those are a design decision rather than an oversight. A network proxy is never going to have strong opinions about a USB stick. An endpoint agent is not positioned to unwrap an encrypted API call from a third-party add-in. Ask any one of them to cover all three domains and you would end up with something slower and less capable at each. Deployed together, though, the edges line up rather nicely. That is the entire premise of layered protection, and it is what I built this asset to show. What is actually in the slides A coverage view across all three layers. Common activities — removable media, RDP sessions, add-in API calls, in-session copy and paste, inbound AI content, classification depth, inline prompt inspection — matched to the layer best positioned for each. Example file flow from start to finish leveraging each layer where it works best Six scenario walkthroughs. Realistic situations traced attempt by attempt, including one determined individual who tries three separate routes...",
+      "links": [
+        {
+          "label": "Endpoint DLP",
+          "url": "https://learn.microsoft.com/en-us/purview/endpoint-dlp-learn-about"
+        },
+        {
+          "label": "Browser Data Security",
+          "url": "https://learn.microsoft.com/en-us/purview/dlp-browser-dlp-learn"
+        },
+        {
+          "label": "Network Data Security",
+          "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn"
+        },
+        {
+          "label": "Pay-As-You-Go",
+          "url": "https://learn.microsoft.com/en-us/purview/purview-billing-models"
+        },
+        {
+          "label": "Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/purview/dlp-network-data-security-learn#network-security-solution"
+        },
+        {
+          "label": "https://aka.ms/purviewlayeredprotection",
+          "url": "https://aka.ms/purviewlayeredprotection"
+        }
+      ]
+    },
+    {
+      "title": "What’s new in Microsoft Sentinel: August 2026",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-august-2026/ba-p/4551405",
+      "published": "2026-08-31T16:00:00+00:00",
+      "summary": "Welcome back to What's new in Microsoft Sentinel. This August, Sentinel innovation kicks off with the AI-powered playbook generator, generally available to all Sentinel customers in the Microsoft Defender portal. Meanwhile, User and Entity Behavior Analytics (UEBA) anomalies enter public preview on...",
+      "author": "spalani",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Sentinel",
+        "Microsoft Security Copilot",
+        "Threat Intelligence",
+        "AWS Security"
+      ],
+      "body": "Welcome back to What's new in Microsoft Sentinel. This August, Sentinel innovation kicks off with the AI-powered playbook generator, generally available to all Sentinel customers in the Microsoft Defender portal. Meanwhile, User and Entity Behavior Analytics (UEBA) anomalies enter public preview on the Behaviors layer, with coverage across Fortinet, AWS GuardDuty, Check Point, and Zscaler. In Sentinel data lake, nested API support in the Codeless Connector Framework (CCF) enters public preview to connect data sources whose APIs span multiple calls, and multi-account data ingestion is now generally available for Auth0, CrowdStrike, and Salesforce. Finally, the free Microsoft Threat Intelligence connector for unified SecOps, marking the final phase of MDTI convergence, is now generally available in the Defender portal. Read on for the details, and explore our resources at the end to go deeper. Sentinel innovations: Sentinel SIEM Sentinel data lake Sentinel SIEM AI-powered playbook generator expanded to all Sentinel customers in the Defender portal [Generally Available] Go from intent to action faster with the AI-powered playbook generator. It is available to all Sentinel customers using the Defender portal with no Security Copilot enablement or additional cost required. Describe the response you want in natural language and generate an editable, code-based playbook complete with tests, documentation, and a visual flow. Figure 1: Automatically-created visual flow diagram of the playbook. To get started, confirm you have Automation Playbooks Unified RBAC Read and Write permissions, then select Automation > + Create > Playbook Generator. Read our blog to learn more. UEBA Anomalies are now built on top of Behaviors, along with expanded coverage through new data sources [Public Preview] Understand what happened and why it matters in one place. Sentinel adds UEBA anomaly insights and explainable context directly to the Behaviors layer, while expanding coverage across Fortinet, AWS GuardDuty, Check Point, and Zscaler data. This helps you identify unusual activity across identity, network, and cloud environments, reduce investigation time, and focus on the highest-risk behaviors. Enable the Behaviors layer, connect supported data sources, and explore the Insights column in the BehaviorInfo table to get started. Read our blog to learn more and watch our training video for a guided walkthrough. Sentinel data lake Nested API support in Codeless Connector Framework...",
+      "links": [
+        {
+          "label": "Sentinel SIEM",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-siem"
+        },
+        {
+          "label": "Sentinel data lake",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-lake"
+        },
+        {
+          "label": "Read our blog",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/ai-powered-playbook-generator-now-available-to-more-customers/4544385"
+        },
+        {
+          "label": "Read our blog",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/smarter-signals-broader-coverage-ueba-anomalies-on-top-of-behaviors-layer-and-ne/4544384"
+        },
+        {
+          "label": "watch our training video",
+          "url": "https://www.youtube.com/watch?v=73XRo0U6qDQ"
+        },
+        {
+          "label": "Read our blog",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-nested-api-support-comes-to-microsoft-sentinel-ccf/4537026"
+        },
+        {
+          "label": "Nested API Lab",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/building-a-ccf-nested-api-pull-connector-a-technical-lab-walkthrough/4537027"
+        },
+        {
+          "label": "finding your supported Sentinel data connector",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference"
+        },
+        {
+          "label": "Read the blog",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/mdti-convergence-in-microsoft-sentinel-and-defender-xdr-is-complete/4541279"
+        },
+        {
+          "label": "Investigate anomalies on UEBA behaviors in Microsoft Sentinel | Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/ueba-anomalies-on-behaviors"
+        },
+        {
+          "label": "UEBA behaviors layer pricing model in Microsoft Sentinel | Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#pricing-model"
+        },
+        {
+          "label": "Turn Complexity into Clarity: Introducing the New UEBA Behaviors Layer in Microsoft Sentinel | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/turn-complexity-into-clarity-introducing-the-new-ueba-behaviors-layer-in-microso/4484493"
+        }
+      ]
+    },
     {
       "title": "TerminalFix campaign deploys a reverse tunnel through multistage intrusion",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/08/28/terminalfix-campaign-deploys-reverse-tunnel-through-multistage-intrusion/",
