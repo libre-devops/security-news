@@ -1,8 +1,165 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-01T20:47:39.116420+00:00",
-  "totalArticles": 137,
+  "lastUpdated": "2026-09-02T03:42:04.120581+00:00",
+  "totalArticles": 141,
   "articles": [
+    {
+      "title": "Microsoft Purview: Data Loss Prevention – Default Protection Controls for Exchange Online in the event of classification failure",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569477",
+      "published": "2026-09-01T22:59:38+00:00",
+      "summary": "Default protection controls for Exchange Online is available in public preview. This release gives administrators fine-grained control to create DLP policies based on specific classification or text extraction failure types — such as timeout, throttling and other scan errors — rather than one...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "Microsoft Entra: Enhanced Security Accounts Manager (sAM) Account Name support for Microsoft Entra Domain Services",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569446",
+      "published": "2026-09-01T22:59:38+00:00",
+      "summary": "Enhanced support for synchronizing the Security Accounts Manager account name (sAMAccountName) with Microsoft Entra Domain Services is now in Public Preview. This feature allows sAMAccountName to be populated from the onPremisesSamAccountName attribute in Microsoft Entra ID. Existing managed...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Enhanced support for synchronizing the Security Accounts Manager account name (sAMAccountName) with Microsoft Entra Domain Services is now in Public Preview. This feature allows sAMAccountName to be populated from the onPremisesSamAccountName attribute in Microsoft Entra ID. Existing managed domains can enable the new synchronization behavior, while it is enabled by default for new managed domains. When enabled, existing hybrid users are updated during synchronization; cloud-only users without an onPremisesSamAccountName value continue to use mailNickname-based generation. The feature is available for Enterprise and Premium SKUs.GA date: November CY2026Preview date: August CY2026",
+      "links": []
+    },
+    {
+      "title": "Microsoft 365: Entra ID Backup & Recovery",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=567885",
+      "published": "2026-09-01T22:59:38+00:00",
+      "summary": "Enable extended 30-day backup and recovery for a tenant's Entra objects via the Microsoft 365 Backup native app or M365 Backup Storage platform APIs. This capability allows customers and ISV apps to do a point in time restore of Entra objects to a last known good state to a rolling historical...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Enable extended 30-day backup and recovery for a tenant's Entra objects via the Microsoft 365 Backup native app or M365 Backup Storage platform APIs. This capability allows customers and ISV apps to do a point in time restore of Entra objects to a last known good state to a rolling historical 30-day point. Advanced recovery features are currently limited to the Entra admin portal, but some user recovery actions will be possible via the M365 Backup native app UX in the M365 Admin center. Note that the existing 7-day recovery that comes with a customer's P1 & P2 licenses is already generally available and is independent of this roadmap item.GA date: December CY2026",
+      "links": []
+    },
+    {
+      "title": "Counterfeit installers to system compromise: Tracking a deceptive software download campaign",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/",
+      "published": "2026-09-01T22:48:28+00:00",
+      "summary": "An active campaign is impersonating legitimate software vendors to deliver malware through look-alike download pages and regenerated installer archives. Microsoft Defender Experts shares observed attack techniques, Defender XDR detections, indicators of compromise, and practical mitigations to help...",
+      "author": "Microsoft Security Research, Microsoft Defender Experts and Parth Jomadkar",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 5
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Threat Intelligence"
+      ],
+      "body": "In this article Attack chain overviewCampaign scope and targetingMitigation and protection guidanceReferencesLearn more Microsoft Defender Experts is tracking an active malware campaign that uses counterfeit software-download websites to impersonate trusted vendors and distribute malicious installers. The campaign has targeted users looking to download popular software and has resulted in compromises across multiple organizations and industries, primarily affecting China-based operations of multinational organizations and Chinese-speaking users. Microsoft has observed victims across healthcare, manufacturing, gaming, technology, logistics, government, and education sectors. Once executed, the malicious installers deploy malware that establishes persistence, attempts to weaken security protections, and communicates with attacker-controlled infrastructure. Microsoft assesses with moderate confidence that this activity is consistent with the publicly reported Silver Fox (also known as Yinhu, 银狐) fake software campaign but has not attributed it to a nation-state actor. Microsoft Defender detected and disrupted activity across multiple stages of the attack, including automated containment through attack disruption. Organizations should prioritize preventing downloads from untrusted software sources and ensure protections such as SmartScreen, network protection, tamper protection, and Microsoft Defender XDR are enabled to help identify, block, and respond to related activity. Attack chain overview The campaign follows a consistent attack chain from a spoofed vendor download page to a self-protecting, persistent implant. The stages below trace that chain — initial access, delivery, execution, persistence, privilege escalation, defense evasion, and command and control. Figure 1. Diagram showing the campaign attack chain from spoofed download page to archive delivery, execution, persistence, defense evasion, and command-and-control. Campaign scope and targeting Microsoft observed affected devices predominantly associated with China-based operations and Chinese-speaking users, consistent with the Chinese-language lure content and the .com.cn and .hl.cn infrastructure. Confirmed activity spans medical devices and healthcare, manufacturing, gaming, technology, logistics, government, and higher education across multiple organizations and industries. Initial access: spoofed software-download sites The entry point is a fraudulent software-download website that spoofs a...",
+      "links": [
+        {
+          "label": "Attack chain overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+        },
+        {
+          "label": "Campaign scope and targeting",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#campaign-scope-and-targeting"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+        },
+        {
+          "label": "Learn more",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "Block executable files from running unless they meet a prevalence, age, or trusted list criterion",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"
+        },
+        {
+          "label": "Block execution of potentially obfuscated scripts",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-execution-of-potentially-obfuscated-scripts"
+        },
+        {
+          "label": "Block use of copied or impersonated system tools",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-use-of-copied-or-impersonated-system-tools"
+        },
+        {
+          "label": "Use advanced protection against ransomware",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#use-advanced-protection-against-ransomware"
+        },
+        {
+          "label": "Microsoft Security Copilot in Microsoft Defender",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-in-microsoft-365-defender"
+        },
+        {
+          "label": "create their own prompts",
+          "url": "https://learn.microsoft.com/copilot/security/prompting-security-copilot#create-your-own-prompts"
+        },
+        {
+          "label": "prebuilt promptbooks",
+          "url": "https://learn.microsoft.com/copilot/security/using-promptbooks"
+        }
+      ]
+    },
     {
       "title": "(Updated) Microsoft Entra: Improved restore experience for Authenticator passkeys on iOS",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1423108",
@@ -174,6 +331,38 @@
           "url": "https://learn.microsoft.com/en-us/defender-for-identity/security-assessment"
         }
       ]
+    },
+    {
+      "title": "MDATP Linux agent latest release reporting",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/mdatp-linux-agent-latest-release-reporting/ba-p/4552316",
+      "published": "2026-09-01T15:02:13+00:00",
+      "summary": "Executive Summary The solution provides a repeatable way to determine which Microsoft Defender for Endpoint for Linux package is released by configured Microsoft package repositories for each operating-system family, version, architecture, and update channel. It runs from Windows using PowerShell...",
+      "author": "edgarus71",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 14
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint",
+        "Threat Intelligence"
+      ],
+      "body": "Executive Summary The solution provides a repeatable way to determine which Microsoft Defender for Endpoint for Linux package is released by configured Microsoft package repositories for each operating-system family, version, architecture, and update channel. It runs from Windows using PowerShell and writes a structured Excel report for operational review. A single report replaces repeated manual browsing and package-manager checks across multiple Linux distributions and release channels. What the automation delivers Queries packages.microsoft.com over HTTPS. Checks RPM-based and APT-based repository metadata. Locates package records named mdatp. Selects the latest version represented by repository metadata. Captures source URLs, architecture, available timestamps, and collection status. Creates Latest Releases and Configuration worksheets. Continues processing when an individual repository fails. Scope and Limitations The report reflects package availability in the configured Microsoft repositories. It is intended for release visibility and operational review only. What the report does not do Confirm that a package has been deployed to an endpoint. Validate compatibility with a customer-specific environment. Replace published Microsoft support or deployment guidance. Change an endpoint’s configured update channel. Solution Structure Scheduler Collector Source Processing Output Windows Task Scheduler PowerShell 7 Microsoft Linux package repositories Metadata discovery and version selection Excel workbook The scheduler launches the script. The script enumerates configured targets, retrieves metadata, identifies an mdatp package record, normalizes the result, and exports it to the workbook. End-to-End Processing Walkthrough 1. Initialize the environment Confirm that ImportExcel is available. The first interactive run can use -InstallDependencies to install the module for the current user. The module creates .xlsx files without desktop Excel. 2. Load the target matrix Use the built-in target list for RHEL, Rocky Linux, Amazon Linux, Ubuntu, Debian, and SLES. The current design evaluates prod, insiders-slow, and insiders-fast URL patterns. 3. Construct endpoints Substitute the channel into each repository or configuration URL so every query has a traceable source. 4. Process RPM metadata Download repodata/repomd.xml, follow its primary-metadata reference, decompress when needed, and search package records for mdatp. 5. Process APT metadata Read the Microsoft...",
+      "links": []
     },
     {
       "title": "Close the gaps: layered data protection with Microsoft Purview across endpoint, browser, and network",
@@ -4412,77 +4601,6 @@
         {
           "label": "Investigate a domain",
           "url": "https://learn.microsoft.com/en-us/defender-for-identity/investigate-domain"
-        }
-      ]
-    },
-    {
-      "title": "​​Microsoft named a Leader in the KuppingerCole Leadership Compass for Cloud Native Application Protection Platforms (CNAPP)",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/05/microsoft-named-a-leader-in-the-kuppingercole-leadership-compass-for-cloud-native-application-protection-platforms-cnapp/",
-      "published": "2026-08-05T16:30:00+00:00",
-      "summary": "Learn why KuppingerCole named Microsoft a Leader in its Leadership Compass: Cloud Native Application Protection Platforms report. The post ​​Microsoft named a Leader in the KuppingerCole Leadership Compass for Cloud Native Application Protection Platforms (CNAPP) appeared first on Microsoft...",
-      "author": "Ran Rosin",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "As organizations adopt AI, they must secure both cloud and AI environments through a unified security control plane as their attack surface expands. Because modern applications and AI workloads are built and run in the cloud, security teams must understand which exposures matter most, prioritize what can truly be exploited, and reduce risk across cloud infrastructure, applications, identities, data, and AI systems in one place. Modern IT estates now span multiple clouds and on-premises systems, with architectures built on containers, Kubernetes, serverless functions, microservices, APIs, and AI-powered workloads. This increases both the volume and the interconnectedness of security signals. The challenge is no longer identifying individual risks, but determining how misconfigurations, identities, and data exposures combine to create real attack paths, and which of these are most critical to fix at the source. KuppingerCole’s Leadership Compass: Cloud Native Application Protection Platforms (CNAPP) reflects this shift. The report describes how CNAPP is evolving from a consolidation of cloud security tools into the security foundation for AI-native enterprises, combining cloud security, AI security posture management, runtime protection, attack path analysis, cloud detection and response, and agentic AI operations into unified platforms. Read the full report Within this evolving market, KuppingerCole names Microsoft a Leader across all four of its Leadership categories: Overall, Product, Innovation, and Market. In the report’s words: “Microsoft earns its Overall Leadership with its Defender for Cloud that is redefining the CNAPP market by extending cloud security beyond infrastructure protection and into a unified security platform for cloud, data, identity, AI, and security operations, supported by one of the industry’s most advanced agentic AI ecosystems.” That recognition reflects where the category is heading: toward platforms that unify cloud and AI security into one operational view of risk. Why CNAPP is being redefined KuppingerCole makes a clear point: CNAPP is no longer about posture or visibility alone. It is becoming the operational foundation for securing AI-powered applications, services, and business processes, across the full software lifecycle from cloud infrastructure to the AI systems running on top of it. Modern environments introduce complexity across: Multicloud and hybrid infrastructure. Rapid development and continuous deployment....",
-      "links": [
-        {
-          "label": "Leadership Compass: Cloud Native Application Protection Platforms (CNAPP)",
-          "url": "https://www.kuppingercole.com/research/lc81068/cloud-native-application-protection-platforms-cnapp"
-        },
-        {
-          "label": "CNAPP",
-          "url": "https://www.microsoft.com/en-us/security/business/security-101/what-is-cnapp"
-        },
-        {
-          "label": "Microsoft Defender for Cloud",
-          "url": "https://www.microsoft.com/en-us/security/business/cloud-security/microsoft-defender-cloud"
-        },
-        {
-          "label": "Microsoft Security Copilot",
-          "url": "https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot"
-        },
-        {
-          "label": "Microsoft cloud security solutions",
-          "url": "https://www.microsoft.com/en-us/security/business/solutions/cloud-security"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "​​Microsoft named a Leader in the KuppingerCole Leadership Compass for Cloud Native Application Protection Platforms...",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/08/05/microsoft-named-a-leader-in-the-kuppingercole-leadership-compass-for-cloud-native-application-protection-platforms-cnapp/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
         }
       ]
     },
