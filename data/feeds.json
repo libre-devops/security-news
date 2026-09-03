@@ -1,8 +1,83 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-03T16:05:02.735586+00:00",
-  "totalArticles": 140,
+  "lastUpdated": "2026-09-03T20:44:13.822594+00:00",
+  "totalArticles": 138,
   "articles": [
+    {
+      "title": "ASCII smuggling crosses over from AI prompt injection to phishing evasion",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/03/ascii-smuggling-crosses-over-from-ai-prompt-injection-to-phishing-evasion/",
+      "published": "2026-09-03T16:00:00+00:00",
+      "summary": "Invisible Unicode characters popularized for hiding instructions from AI models are now being used to obfuscate words before email filters parse them. The post ASCII smuggling crosses over from AI prompt injection to phishing evasion appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Security Research, Noam Kochavi and Sarah Wolstencroft",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "AI Security"
+      ],
+      "body": "In this article What is ASCII smuggling?Writing a practical ASCII-smuggling signatureWhat we observed: ASCII smuggling repurposed for phishingWhat is known and what is newIs there a detection gap?Mitigation and protection guidanceReferencesLearn More Microsoft researchers observed a high-volume phishing campaign using invisible Unicode tag characters, a technique popularized in AI prompt injection research as ASCII Smuggling. Instead of using these characters to hide instructions from people while exposing them to AI models, the attacker used them to split financial lure words such as ‘funding’ to prevent email filters from parsing them. The finding emerged from Microsoft Defender for Office 365 prompt injection protection research, showing how AI-era evasion techniques can surface in traditional phishing campaigns. In Microsoft telemetry, hits on a hunting signature designed to detect ASCII-smuggling increased sharply beginning February 9, 2026, and remained elevated on weekdays for approximately three months. Microsoft Defender for Office 365 telemetry showed that the majority of messages were flagged by layered protections rather than by reliance on a single Unicode-specific signal. What is ASCII smuggling? “ASCII smuggling” refers to the use of invisible or non-rendering Unicode characters to hide content inside text that looks normal. The most abused range is the Unicode Tags block, U+E0000 to U+E007F. This block contains a shadow copy of the printable ASCII characters (for example, U+E0041 mirrors ‘A’, U+E0061 mirrors ‘a’). The block was originally intended for language tagging and is now largely deprecated. The important property for an attacker is this: most of these code points are not rendered by typical fonts and user interfaces. A string can therefore carry a message that is not readable to a human but will be processed by any language model or other software that receives a copy of the email content. Why the AI-security world made it famous Over the past year, ASCII smuggling became a recurring technique in the prompt injection and cross-prompt injection (XPIA) literature. The attack pattern is straightforward: An attacker hides instructions inside invisible tag characters embedded in a web page, document, email, or other content. A human (and many user interfaces) sees nothing unusual. An AI assistant that ingests the raw text does “see” the hidden characters, decodes them as text, and may be induced to follow threat actor-controlled...",
+      "links": [
+        {
+          "label": "What is ASCII smuggling?",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-is-ascii-smuggling"
+        },
+        {
+          "label": "Writing a practical ASCII-smuggling signature",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#writing-a-practical-ascii-smuggling-signature"
+        },
+        {
+          "label": "What we observed: ASCII smuggling repurposed for phishing",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-we-observed-ascii-smuggling-repurposed-for-phishing"
+        },
+        {
+          "label": "What is known and what is new",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-is-known-and-what-is-new"
+        },
+        {
+          "label": "Is there a detection gap?",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#is-there-a-detection-gap"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "Microsoft Defender for Office 365",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/"
+        },
+        {
+          "label": "Microsoft Defender for Office 365 prompt injection protection",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/step-by-step-guides/prompt-injection-protection-defender-for-office-365"
+        },
+        {
+          "label": "T1566",
+          "url": "https://attack.mitre.org/techniques/T1566/"
+        },
+        {
+          "label": "T1027",
+          "url": "https://attack.mitre.org/techniques/T1027/"
+        }
+      ]
+    },
     {
       "title": "Device Code Flow: The Gift That Keeps on Giving — To Attackers",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/device-code-flow-the-gift-that-keeps-on-giving-to-attackers/ba-p/4540949",
@@ -4324,81 +4399,6 @@
       ]
     },
     {
-      "title": "Microsoft named a Leader in the 2026 IDC MarketScape for MDR/MXDR for the Enterprise",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/10/microsoft-named-a-leader-in-the-2026-idc-marketscape-for-mdr-mxdr-for-the-enterprise/",
-      "published": "2026-08-10T16:00:00+00:00",
-      "summary": "Microsoft is named a Leader in the 2026 IDC MarketScape for MDR services. Discover how Microsoft Defender Experts MDR combines AI, threat intelligence, and human expertise. The post Microsoft named a Leader in the 2026 IDC MarketScape for MDR/MXDR for the Enterprise appeared first on Microsoft...",
-      "author": "Srikanth Shoroff",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "Security teams are being asked to defend a growing attack surface with fewer people and around the clock, against threat actors who never take a night off. As cyberattackers increasingly use AI to launch and scale campaigns, the volume, speed, and sophistication of threats continue to rise. Closing that gap takes more than tooling. It takes a partner that pairs a leading security platform with scaled intelligence and human experts who can act on your behalf at any hour. That’s exactly what Microsoft Defender Experts MDR is built to do. We are excited to announce that we have been named a Leader in the 2026 IDC MarketScape: Worldwide MDR/MXDR for the Enterprise Vendor Assessment (Doc #US54792426, July 2026). Read the excerpt here. Scale your SOC with Microsoft Defender Experts MDR Expert-led MDR, built on the Microsoft Defender platform Microsoft Defender Experts MDR is a round-the-clock, expert-led managed detection and response service that helps security teams triage, investigate, and respond to incidents so they can stop cyberattackers in their tracks and prevent future compromise. Rather than bolting a separate stack of tools and connectors onto your environment, the service operates natively on Microsoft Defender, with built-in protection across endpoints, identities, email, cloud apps, cloud workloads, and network security, as well as around-the-clock proactive threat hunting with Microsoft Defender Experts Hunting. Because the service is delivered on the same platform it monitors, detection and intelligence improvements reach customers continuously. The insights our experts generate also strengthen protection across the broader Defender ecosystem, so every customer benefits from what we learn defending the next environment. The IDC MarketScape vendor assessment model is designed to provide an overview of the competitive fitness of technology and service suppliers in a given market. The research uses a rigorous scoring methodology based on both qualitative and quantitative criteria that results in a single graphical illustration of each supplier’s position within a given market. The Capabilities axis measures supplier product, go-to-market, and business execution in the short term, while the Strategy axis measures how well a supplier’s strategy aligns with customer requirements over a 3-5-year timeframe. Supplier market share is represented by the size of the icons. Threat intelligence at internet scale Great detection starts with great...",
-      "links": [
-        {
-          "label": "Microsoft Defender Experts MDR",
-          "url": "https://www.microsoft.com/en-us/security/business/services/microsoft-defender-experts-mdr?msockid=25cfdac4ec1e6114037bcd63ed2860f5"
-        },
-        {
-          "label": "Read the excerpt here",
-          "url": "https://idcdocserv.com/US54792426e_Microsoft"
-        },
-        {
-          "label": "Microsoft Defender",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender"
-        },
-        {
-          "label": "Microsoft Defender Experts Hunting",
-          "url": "https://www.microsoft.com/en-us/security/business/services/microsoft-defender-experts-hunting"
-        },
-        {
-          "label": "Microsoft Defender Experts MDR",
-          "url": "https://www.microsoft.com/en-us/security/business/services/microsoft-defender-experts-xdr?msockid=27bd8b1d324d6b4d28eb9e2e33dd6a4f"
-        },
-        {
-          "label": "website",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "Microsoft Digital Defense Report 2025",
-          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Microsoft-Digital-Defense-Report-2025.pdf#page=1"
-        },
-        {
-          "label": "Microsoft named a Leader in the 2026 IDC MarketScape for MDR/MXDR for the Enterprise",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/08/10/microsoft-named-a-leader-in-the-2026-idc-marketscape-for-mdr-mxdr-for-the-enterprise/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
-        }
-      ]
-    },
-    {
       "title": "DeadLock ransomware: Breaking down a Rust-based encryptor with decentralized recovery infrastructure",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/08/10/deadlock-ransomware-breaking-down-a-rust-based-encryptor-with-decentralized-recovery-infrastructure/",
       "published": "2026-08-10T15:00:00+00:00",
@@ -4968,85 +4968,6 @@
           "label": "X (formerly Twitter)",
           "url": "https://x.com/MsftSecIntel"
         }
-      ]
-    },
-    {
-      "title": "[In preview] Public Preview: Perimeter link feature in network security perimeter",
-      "link": "https://azure.microsoft.com/updates?id=568837",
-      "published": "2026-08-04T18:30:09+00:00",
-      "summary": "Perimeter link (cross-perimeter connectivity) is a network security perimeter capability that allows trusted resources in two different network security perimeters to securely communicate with each other using Managed Identity (MSI), without requiring add",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "(Updated) Microsoft Entra ID SSPR will require registered authentication methods starting November 9, 2026",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1325414",
-      "published": "2026-08-04T16:34:28.880000+00:00",
-      "summary": "Updated August 4, 2026: We have updated the timeline. Thank you for your patience. [What and Why]You’re receiving this message because your organization uses Microsoft Entra ID Self-Service Password Reset (SSPR).Currently, SSPR may allow users to verify their identity using contact information...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1325414",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated August 4, 2026: We have updated the timeline. Thank you for your patience. [What and Why]You’re receiving this message because your organization uses Microsoft Entra ID Self-Service Password Reset (SSPR).Currently, SSPR may allow users to verify their identity using contact information stored in directory attributes such as mobile phone, business phone, and alternate email, even if those values were never explicitly registered as authentication methods.To strengthen identity security, SSPR will require explicitly registered authentication methods for verification. This change is part of Microsoft’s Secure Future Initiative and ensures password reset verification is based on trusted, user-validated methods rather than directory-sourced attributes.[Rollout Schedule]October 5, 2026: SSPR registration campaign begins prompting users and administrators to register authentication methods if SSPR setting requires registration and users do not have enough methods.November 7, 2026: Enforcement begins. SSPR will no longer accept directory-sourced contact information for verification.General Availability (Worldwide, GCC, GCC High): Early November 2026 (previously Early September) through mid-November 2026 (previously mid-September)[Impact on Your Organization]Who is affectedAll users (including administrators) in tenants with SSPR enabledApplies to Public cloud and US Government clouds (GCC, GCC High, DoD)Platforms/ServicesMicrosoft Entra IDSelf-Service Password Reset (SSPR)Web and admin portal experiencesWhat will happenOnly explicitly registered authentication methods will be accepted for SSPR verification.Directory attributes (such as mobilePhone, businessPhone, otherMails) will no longer be valid unless registered.Approximately 86% of SSPR verifications already use registered methods today.Users without registered methods at enforcement will be:Unable to complete password resetsPrompted to register methods or contact an administratorThe registration campaign will proactively prompt affected users starting October 5, 2026.[Action Required / Recommendations]Action is required before November 9, 2026.Review authentication method registration coverage:Go to Microsoft Entra admin center → Authentication methods → User registration detailsEnsure all users (including admins) have at least one registered authentication method that satisfies your SSPR policy.Allow or enable the SSPR registration campaign to prompt users automatically.Plan fallback processes:Helpdesk-assisted registrationAlternative onboarding scenarios for users unable to self-registerCommunicate this change to:IT admins and helpdesk teamsUsers (encourage registration via My Security Info)Learn more:Manage user authentication methods | Entra admin centerMicrosoft Q&A for Entra ID | Microsoft Security | Microsoft Entra | Microsoft Entra ID | Microsoft LearnPassword policies and account restrictions in Microsoft Entra ID | Authentication | Microsoft Entra ID | Microsoft Entra | Microsoft LearnPrepopulate user authentication contact information for Microsoft Entra self-service password reset (SSPR) | Authentication | Microsoft Entra ID | Microsoft Entra | Microsoft LearnRegister security information (My Security Info)Secure Future Initiative | Microsoft [Compliance Considerations]QuestionAnswerDoes the change alter how existing customer data is processed, stored, or accessed?Yes. Directory attributes (such as phone/email) will no longer be used for SSPR unless explicitly registered as authentication methods.Does the change alter admin monitoring/reporting?Yes. Admins can monitor registration coverage via updated reporting in the Entra admin center.Does the change include admin controls?Yes. Admins control SSPR policies and registration requirements.",
-      "links": [
-        {
-          "label": "Manage user authentication methods | Entra admin center",
-          "url": "https://entra.microsoft.com/#view/Microsoft_AAD_IAM/AuthenticationMethodsMenuBlade/~/UserRegistrationDetails/fromNav/"
-        },
-        {
-          "label": "Microsoft Q&A for Entra ID | Microsoft Security | Microsoft Entra | Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/answers/tags/455/microsoft-security-entra-entra-id"
-        },
-        {
-          "label": "Password policies and account restrictions in Microsoft Entra ID | Authentication | Microsoft Entra ID | Microsoft...",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sspr-policy?tabs=ms-powershell"
-        },
-        {
-          "label": "Prepopulate user authentication contact information for Microsoft Entra self-service password reset (SSPR) |...",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/howto-sspr-authenticationdata"
-        },
-        {
-          "label": "Register security information (My Security Info)",
-          "url": "https://login.microsoft.com/common/fido/get?uiflavor=Web"
-        },
-        {
-          "label": "Secure Future Initiative | Microsoft",
-          "url": "https://www.microsoft.com/trust-center/security/secure-future-initiative?msockid=22346ecb805f631739b27a6e81726266"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
       ]
     }
   ]
