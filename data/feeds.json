@@ -1,8 +1,83 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-02T20:46:36.478851+00:00",
+  "lastUpdated": "2026-09-03T03:40:40.599887+00:00",
   "totalArticles": 140,
   "articles": [
+    {
+      "title": "Impersonating IT support: how threat actors turn a remote session into enterprise-wide access",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/02/impersonating-it-support-threat-actors-turn-remote-session-into-enterprise-wide-access/",
+      "published": "2026-09-02T22:51:18+00:00",
+      "summary": "Microsoft Threat Intelligence observed a human-operated intrusion campaign that abuses Microsoft Teams external collaboration to impersonate IT support, gain remote access, and deploy a Node.js-based implant. Learn how attackers move from social engineering to lateral movement using legitimate...",
+      "author": "Microsoft Security Research, Sagar Patil, Arlette Umuhire Sangwa, Jesse Birch and Ravikant Tiwari",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 7
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Risk to enterprise environmentsAttack chain overviewMitigation and response recommendationsLearn more Microsoft Threat Intelligence has observed a human-operated intrusion campaign that abuses Microsoft Teams external collaboration to impersonate IT or helpdesk personnel and socially engineer users into granting an interactive remote session. Once remote control is established via RMM tools, the threat actor uses PowerShell to download and silently install a malicious MSI package, which in turn stages a portable Node.js runtime and an obfuscated JavaScript implant that provides persistent command execution and command and control (C2). Unlike commodity phishing that ends with an infostealer, this campaign follows a full hands-on-keyboard playbook. After the implant is deployed, the threat actor performs extensive host and Active Directory reconnaissance, periodically captures screenshots of the victim’s desktop, executes follow-on payloads through trusted Windows binaries, and pivots across the enterprise over Windows Remote Management (WinRM) toward high-value assets such as domain controllers. The intrusion relies heavily on legitimate tooling, including Microsoft Teams, remote support software, Windows Installer, Node.js, and native administrative protocols, allowing the activity to blend into expected enterprise operations at nearly every stage. This intrusion pattern is especially high-impact because it hands an external operator credential-backed, interactive access to internal infrastructure. The reconnaissance and lateral movement patterns observed: domain enumeration, server discovery, and WinRM pivoting toward identity systems, are consistent with intrusion activity that can precede data theft, extortion, ransomware deployment, or other follow-on objectives, in which threat actors map the environment, escalate privileges, disable security controls, exfiltrate business-relevant data, and ultimately deploy ransomware across the organization. In this blog, we share our analysis of this attack chain, from initial Microsoft Teams contact through internal lateral movement, along with mitigation and hunting guidance to help defenders detect and disrupt this user-initiated access pathway before it escalates into broader compromise. Risk to enterprise environments By abusing enterprise collaboration workflows instead of traditional email-based phishing, the threat actor initiates contact through Microsoft Teams in a way that appears...",
+      "links": [
+        {
+          "label": "Risk to enterprise environments",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#risk-to-enterprise-environments"
+        },
+        {
+          "label": "Attack chain overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+        },
+        {
+          "label": "Mitigation and response recommendations",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-response-recommendations"
+        },
+        {
+          "label": "Learn more",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "Microsoft Defender for Office 365",
+          "url": "https://learn.microsoft.com/defender-office-365/mdo-about"
+        },
+        {
+          "label": "Safe Links",
+          "url": "https://learn.microsoft.com/defender-office-365/safe-links-about"
+        },
+        {
+          "label": "Zero-hour auto purge (ZAP)",
+          "url": "https://learn.microsoft.com/defender-office-365/zero-hour-auto-purge"
+        },
+        {
+          "label": "Security best practices for Microsoft Teams",
+          "url": "https://learn.microsoft.com/en-us/MicrosoftTeams/teams-security-best-practices-for-safer-messaging"
+        },
+        {
+          "label": "external collaboration policies",
+          "url": "https://learn.microsoft.com/en-us/microsoftteams/trusted-organizations-external-meetings-chat"
+        },
+        {
+          "label": "external sender notifications",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-support-teams-about"
+        },
+        {
+          "label": "Microsoft Entra Conditional Access",
+          "url": "https://learn.microsoft.com/entra/identity/conditional-access/overview"
+        },
+        {
+          "label": "ASR rules",
+          "url": "https://learn.microsoft.com/defender-endpoint/attack-surface-reduction-rules-deployment-implement"
+        }
+      ]
+    },
     {
       "title": "GCP-2026-058",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-058",
@@ -3920,30 +3995,6 @@
       ]
     },
     {
-      "title": "Microsoft Purview: Permissions audit log improvements",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569363",
-      "published": "2026-08-17T22:52:47+00:00",
-      "summary": "Improving permission checks when users access the Microsoft Purview portal. Enhanced audit logs will provide clearer visibility into role and scoped-role access decisions, helping administrators troubleshoot access issues and monitor authorization outcomes. GA date: September CY2026",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ]
-    },
-    {
       "title": "(Updated) Microsoft Entra ID: Retirement of SMS first-factor sign-in for Entra ID Free tenants",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1448374",
       "published": "2026-08-13T20:30:56.690000+00:00",
@@ -4327,12 +4378,12 @@
       "published": "2026-08-10T15:00:00+00:00",
       "summary": "Microsoft Threat Intelligence examines DeadLock ransomware, an emerging financially motivated operation distinguished by its use of decentralized infrastructure to support victim communications, negotiations, and data leak operations alongside double extortion tactics used to pressure victims. The...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
@@ -4348,23 +4399,23 @@
       "links": [
         {
           "label": "Pre-encryption",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#pre-encryption"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#pre-encryption"
         },
         {
           "label": "Encryption",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#encryption"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#encryption"
         },
         {
           "label": "Post-encryption",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#post-encryption"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#post-encryption"
         },
         {
           "label": "Defending against DeadLock ransomware",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#defending-against-deadlock-ransomware"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#defending-against-deadlock-ransomware"
         },
         {
           "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
         },
         {
           "label": "ransomware tradecraft",
@@ -4376,23 +4427,23 @@
         },
         {
           "label": "Language geofencing",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#_Language_geofencing"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Language_geofencing"
         },
         {
           "label": "Process and service termination",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#_Process_and_service"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Process_and_service"
         },
         {
           "label": "Directory traversal",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#_Directory_Traversal"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Directory_Traversal"
         },
         {
           "label": "Ransom notes deployment",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#_Ransom_notes_deployment"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Ransom_notes_deployment"
         },
         {
           "label": "Recovery chat: Technical architecture",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#_Recovery_chat:_Technical"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Recovery_chat:_Technical"
         }
       ]
     },
