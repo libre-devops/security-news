@@ -1,65 +1,13 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-04T20:31:02.442587+00:00",
-  "totalArticles": 135,
+  "lastUpdated": "2026-09-05T03:41:27.096538+00:00",
+  "totalArticles": 134,
   "articles": [
-    {
-      "title": "CVE-2026-85786 - Incomplete fix for CVE-2026-75936 memory-amplification denial of service in Amazon ion-java",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-100-aws/",
-      "published": "2026-09-04T19:24:10+00:00",
-      "summary": "Bulletin ID: 2026-100-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-85786, memory-amplification denial of service via...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-100-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-85786, memory-amplification denial of service via highly compressed data expansion. ion-java 1.12.0 added a GZIP auto-decompression opt-out for CVE-2026-75936, but the implementation of the opt-out in 1.12.0 was insufficient to address the issue. Impacted versions: < 1.12.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-85781 - Unverified access point ownership in Amazon EFS CSI Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-099-aws/",
-      "published": "2026-09-04T19:03:02+00:00",
-      "summary": "Bulletin ID: 2026-099-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 11:45 AM PDT Description: The Amazon EFS CSI Driver is an open-source Kubernetes Container Storage Interface (CSI) driver that lets Kubernetes workloads use Amazon EFS file systems. We...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-099-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 11:45 AM PDT Description: The Amazon EFS CSI Driver is an open-source Kubernetes Container Storage Interface (CSI) driver that lets Kubernetes workloads use Amazon EFS file systems. We identified CVE-2026-85781, an issue in the driver's volume-deletion logic. When the controller is configured with the non-default --delete-access-point-root-dir=true option, it did not verify that the EFS access point referenced by a PersistentVolume's volume handle belonged to the file system referenced by that same volume handle. An authenticated Kubernetes user with permission to create PersistentVolumes could use a crafted volume handle to cause the controller to recursively delete directories from an Amazon EFS file system that the user was not otherwise authorized to modify. This issue does not affect Amazon EFS itself; Amazon EFS access controls operated as designed. Impacted versions: <=3.4.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
     {
       "title": "GCP-2026-060",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-060",
-      "published": "2026-09-04T17:01:42+00:00",
-      "summary": "Published: 2026-09-02Description Description Severity Notes A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. For instructions and more details, see the following bulletins and release notes: Cluster...",
+      "published": "2026-09-04T21:10:31+00:00",
+      "summary": "Published: 2026-09-04Description Description Severity Notes A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. For instructions and more details, see the Cluster Director security bulletin. High...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
       "source_id": "gcp_security",
@@ -77,31 +25,12 @@
       ],
       "tags": [
         "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-02Description Description Severity Notes A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. For instructions and more details, see the following bulletins and release notes: Cluster Director security bulletin Cluster Toolkit security bulletin AI Hypercomputer release notes High CVE-2026-65107",
-      "links": [
-        {
-          "label": "Cluster Director security bulletin",
-          "url": "https://docs.cloud.google.com/cluster-director/docs/security-bulletins#gcp-2026-060"
-        },
-        {
-          "label": "Cluster Toolkit security bulletin",
-          "url": "https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-060"
-        },
-        {
-          "label": "AI Hypercomputer release notes",
-          "url": "https://docs.cloud.google.com/ai-hypercomputer/docs/release-notes"
-        },
-        {
-          "label": "CVE-2026-65107",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-65107"
-        }
       ]
     },
     {
       "title": "GCP-2026-059",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-059",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-09-04Description Description Severity Notes A Missing Authorization vulnerability was discovered in the HTTP Connector in Integration Connectors versions prior to December 11, 2025. What should I do? No customer action is required. This vulnerability was patched on December 11,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -132,7 +61,7 @@
     {
       "title": "GCP-2026-058",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-058",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-09-02Description Description Severity Notes A missing project permission check in GKE Multi-Cloud (CreateAttachedCluster, CreateAwsCluster, CreateAzureCluster) APIs allowed an attacker to register an attached cluster into an arbitrary target project's Workload Identity Federation...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -163,7 +92,7 @@
     {
       "title": "GCP-2026-057",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-057",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-08-26Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -238,7 +167,7 @@
     {
       "title": "GCP-2026-056",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-056",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-08-26Description Description Severity Notes An Improper Input Validation vulnerability was discovered in the JDBC driver in BigQuery Data Transfer Service versions prior to May 1, 2026. What should I do? No customer action is required. This vulnerability was patched on May 1, 2026....",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -273,7 +202,7 @@
     {
       "title": "GCP-2026-055",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-055",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-08-25Description Description Severity Notes A critical unauthenticated Remote Code Execution (RCE) vulnerability exists in Next.js and libheif when processing malicious image files. Google Cloud infrastructure is not directly vulnerable, but customer workloads running Next.js on...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -308,7 +237,7 @@
     {
       "title": "GCP-2026-054",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-054",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-08-11Description Description Severity Notes A vulnerability (CVE-2026-6726, also known as TCGVRT0010) has been identified in the Trusted Computing Group's TPM 2.0 reference implementation code, affecting all published revisions of the code (v1.16, v1.38, v1.59, v1.83, v184). What...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -343,7 +272,7 @@
     {
       "title": "GCP-2026-053",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-053",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-08-11Description Description Severity Notes Google is aware of several security vulnerabilities affecting Intel® Trust Domain Extensions (TDX) firmware that can compromise confidential guest integrity. These vulnerabilities could allow a privileged host adversary to bypass...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -418,7 +347,7 @@
     {
       "title": "GCP-2026-052",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-052",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-08-07Description Description Severity Notes A security vulnerability has been identified in the Kernel-based Virtual Machine (KVM) x86 shadow Memory Management Unit (MMU) impacting both Intel and AMD platforms. What should I do? No action is required for managed Compute Engine...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -449,7 +378,7 @@
     {
       "title": "GCP-2026-051",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-051",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-07-31Description2026-08-04 Update: The VMware patch release version is 1.33.1200, not 1.33.1100 as stated in the initial bulletin. Description Severity The following vulnerabilities have been discovered in containerd (the GDC container runtime). These vulnerabilities allow attackers...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -475,7 +404,7 @@
     {
       "title": "GCP-2026-050",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-050",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-07-29Description Description Severity Notes Per advisory VMSA-2026-0006, multiple vulnerabilities in VMware ESXi, and vCenter were privately reported to Broadcom. We are in the process of applying the necessary patches supplied by Broadcom. There are no known workarounds for these...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -506,7 +435,7 @@
     {
       "title": "GCP-2026-049",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-049",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-07-22Description Description Severity Notes A reflected Cross-Site Scripting (XSS) vulnerability was discovered in Google Cloud Looker. An attacker could craft a malicious URL that, when opened by an authenticated administrator, would allow the attacker to execute arbitrary scripts...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -537,7 +466,7 @@
     {
       "title": "GCP-2026-048",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-048",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-07-13Description Description Severity Notes A privilege escalation vulnerability was addressed in Developer Connect. Previously, for GitLab Enterprise and Bitbucket Data Center connections, when Secret Manager secrets were retrieved, permissions were checked against the Developer...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -568,7 +497,7 @@
     {
       "title": "GCP-2026-047",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-047",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-07-13Description Description Severity Notes A Missing Authorization vulnerability was discovered in repositories in BigQuery, Dataform, and Colab Enterprise. What should I do? No customer action is required. Google has already applied mitigations to all impacted products and...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -599,7 +528,7 @@
     {
       "title": "GCP-2026-046",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-046",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-07-06Description Description Severity Notes A virtualization vulnerability has been identified in the KVM x86 shadow paging and nested virtualization configurations. Because an attacker operating a virtual machine with nested virtualization could escape hypervisor boundary isolation...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -630,7 +559,7 @@
     {
       "title": "GCP-2026-045",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-045",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-06-29Description Description Severity Notes A vulnerability was detected in Envoy Proxy where blocked QPACK decoding can cause a Denial-of-Service Attack against the HTTP/3 stack. For instructions and more details, see the Cloud Service Mesh security bulletin. High...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -654,7 +583,7 @@
     {
       "title": "GCP-2026-044",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-044",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-06-25Description Description Severity Notes A vulnerability was detected in Application Integration's JavaScript task, which was using the Rhino JavaScript engine. This only impacted tasks published before January 2025. For details and instructions, see the Application Integration...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -678,7 +607,7 @@
     {
       "title": "GCP-2026-043",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-043",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-06-24Description Description Severity Notes A vulnerability was found in Firebase Studio where the GetSignedGcsUrl RPC allowed authenticated users to list buckets and download deployment source code of other tenants. No action is required to mitigate this vulnerability as the fix...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -713,7 +642,7 @@
     {
       "title": "GCP-2026-042",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-042",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-06-24Description Description Severity Notes A privilege escalation vulnerability was addressed in Cloud Build. Previously, for GitLab Enterprise and Bitbucket Data Center connections, when Secret Manager secrets were retrieved, permissions were checked against the Cloud Build...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -744,7 +673,7 @@
     {
       "title": "GCP-2026-041",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-041",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-06-24Description Description Severity Notes A recent security investigation was conducted regarding log4j vulnerabilities (CVE-2026-34480 and CVE-2026-34477) reported in Apigee Edge for Private Cloud. Google has determined that Apigee Edge for Private Cloud is not vulnerable to...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -783,7 +712,7 @@
     {
       "title": "GCP-2026-040",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-040",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-06-23Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-47692 CVE-2026-47207 CVE-2026-47205 CVE-2026-47220 CVE-2026-47221...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -858,7 +787,7 @@
     {
       "title": "GCP-2026-039",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-039",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-06-22Description Description Severity Notes A vulnerability in Cloud Logging could have allowed attackers to hijack log sink destinations by recreating the target Cloud Storage bucket in a project controlled by the attacker. This issue could have resulted in the continuous routing...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -889,7 +818,7 @@
     {
       "title": "GCP-2026-038",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-038",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-06-22Description Description Severity Notes A vulnerability was found in App Engine where the GetDashboardAppStats GraphQL private API operation in the Google Cloud console leaked cross-tenant request logs. No action is required. This vulnerability has been fixed. High CVE-2026-8934",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -913,7 +842,7 @@
     {
       "title": "GCP-2026-037",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-037",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-06-18Updated: 2026-06-20Description Description Severity Notes 2026-06-20 Update: Added GKE patch versions containing the fixes for Container-Optimized OS node images for minor versions 1.35 and 1.36. Patches for Ubuntu node images are still pending and in progress. 2026-06-19...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -964,7 +893,7 @@
     {
       "title": "GCP-2026-036",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-036",
-      "published": "2026-09-04T17:01:42+00:00",
+      "published": "2026-09-04T21:10:31+00:00",
       "summary": "Published: 2026-06-09Description Description Severity Notes ARM has announced CVE-2025-10263, an architectural issue affecting some Arm cores which lets an attacker bypass translation stages or GPT protections under certain conditions. This vulnerability lets an attacker at a lower exception level...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -995,6 +924,129 @@
           "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-10263"
         }
       ]
+    },
+    {
+      "title": "CVE-2026-85786 - Incomplete fix for CVE-2026-75936 memory-amplification denial of service in Amazon ion-java",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-100-aws/",
+      "published": "2026-09-04T19:24:10+00:00",
+      "summary": "Bulletin ID: 2026-100-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-85786, memory-amplification denial of service via...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-100-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-85786, memory-amplification denial of service via highly compressed data expansion. ion-java 1.12.0 added a GZIP auto-decompression opt-out for CVE-2026-75936, but the implementation of the opt-out in 1.12.0 was insufficient to address the issue. Impacted versions: < 1.12.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "How to secure edge AI in customer-owned environments",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/04/secure-edge-ai-customer-owned-environments/",
+      "published": "2026-09-04T19:10:10+00:00",
+      "summary": "As AI moves into customer-owned environments, organizations need new ways to verify the systems, software, and AI assets they trust before releasing sensitive data, credentials, and models. The post How to secure edge AI in customer-owned environments appeared first on Microsoft Security Blog.",
+      "author": "Shayak Lahiri",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article Edge AI changes the trust model for AI systemsConstrain model actions through deterministic mediationEstablish trust before releasing sensitive assetsVerify runtime before releasing sensitive assetsVerify artifacts that shape model behaviorNext steps Edge AI moves model execution, model IP, customer data, and system authority into infrastructure the customer owns and operates. That changes who must verify the stack before sensitive assets are released. Edge AI includes AI systems where inference runs on or near the device, sensor, or other local environments where data is produced and acted on, rather than relying entirely on a centralized cloud service. It is chosen for cost, model selection, sovereignty, latency, and disconnected operation. Edge AI changes the trust model for AI systems In Cloud AI, separate companies own and attest the hardware, platform, and model weights. Edge AI deployments often place customers in control of more of the AI stack. This changes the security model because the customer is now responsible for establishing trust across the environment where the AI operates. In Edge AI, attacks such as prompt injection, model tampering, or malicious firmware updates can occur in the same environment that stores the model, customer data, credentials, and access to physical systems. This shifts trust decisions that were previously handled by cloud providers to the customer. Both the model provider and the customer now share risk: the provider’s models run on customer-owned infrastructure, while the customer must protect the systems, data, and models operating in that environment. What changes with Edge AI? Customers operate more of the AI stack. AI systems can be influenced by prompts, retrieval data, agent instructions, and runtime inputs. Models, credentials, and data can live in environments outside the provider’s direct control. Traditional software security controls alone are not enough. What should organizations do? Verify runtimes using attestation. Verify AI artifacts using provenance. Constrain model actions through mediation. Bind and release sensitive assets only to trusted environments. Our post on threat modeling for AI systems covers safety and security issues related to the underlying model. These concerns apply to Edge AI as well. Edge AI adds another question: before releasing weights, keys, or data, what evidence shows the runtime and loaded components can be trusted? Why Edge AI increases exposure An Edge...",
+      "links": [
+        {
+          "label": "Edge AI changes the trust model for AI systems",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#edge-ai-changes-the-trust-model-for-ai-systems"
+        },
+        {
+          "label": "Constrain model actions through deterministic mediation",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#constrain-model-actions-through-deterministic-mediation"
+        },
+        {
+          "label": "Establish trust before releasing sensitive assets",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#establish-trust-before-releasing-sensitive-assets"
+        },
+        {
+          "label": "Verify runtime before releasing sensitive assets",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#verify-runtime-before-releasing-sensitive-assets"
+        },
+        {
+          "label": "Verify artifacts that shape model behavior",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#verify-artifacts-that-shape-model-behavior"
+        },
+        {
+          "label": "Next steps",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#next-steps"
+        },
+        {
+          "label": "Edge AI",
+          "url": "https://learn.microsoft.com/en-us/azure/azure-local/overview"
+        },
+        {
+          "label": "post on threat modeling for AI systems",
+          "url": "https://aka.ms/aithreatmodeling"
+        },
+        {
+          "label": "post on defense in depth for autonomous AI agents",
+          "url": "https://aka.ms/agenticdefense"
+        },
+        {
+          "label": "How to secure edge AI in customer-owned environments",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/04/secure-edge-ai-customer-owned-environments/"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-85781 - Unverified access point ownership in Amazon EFS CSI Driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-099-aws/",
+      "published": "2026-09-04T19:03:02+00:00",
+      "summary": "Bulletin ID: 2026-099-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 11:45 AM PDT Description: The Amazon EFS CSI Driver is an open-source Kubernetes Container Storage Interface (CSI) driver that lets Kubernetes workloads use Amazon EFS file systems. We...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-099-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 11:45 AM PDT Description: The Amazon EFS CSI Driver is an open-source Kubernetes Container Storage Interface (CSI) driver that lets Kubernetes workloads use Amazon EFS file systems. We identified CVE-2026-85781, an issue in the driver's volume-deletion logic. When the controller is configured with the non-default --delete-access-point-root-dir=true option, it did not verify that the EFS access point referenced by a PersistentVolume's volume handle belonged to the file system referenced by that same volume handle. An authenticated Kubernetes user with permission to create PersistentVolumes could use a crafted volume handle to cause the controller to recursively delete directories from an Amazon EFS file system that the user was not otherwise authorized to modify. This issue does not affect Amazon EFS itself; Amazon EFS access controls operated as designed. Impacted versions: <=3.4.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
     },
     {
       "title": "(Updated) Microsoft Entra ID: Optimizations for passkey registration experience",
@@ -4059,81 +4111,6 @@
       ]
     },
     {
-      "title": "Hunting MacSync Stealer infrastructure through behavioral pivots",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/18/hunting-macsync-stealer-infrastructure-through-behavioral-pivots/",
-      "published": "2026-08-18T17:08:28+00:00",
-      "summary": "MacSync Stealer rapidly rotates domains to evade detection, but its behavior remains consistent. Learn how Microsoft uncovered 30+ related domains using durable hunting pivots. The post Hunting MacSync Stealer infrastructure through behavioral pivots appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Defender Experts and Microsoft Security Research",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Activity overview Discovery of additional rotating infrastructure Attack chain overviewMitigation and protection guidanceReferencesLearn more MacSync Stealer is a macOS-focused information stealer that relies on changing infrastructure to deliver payloads, communicate with compromised devices, and exfiltrate data. Earlier reporting by RST Cloud identified the threat through a limited set of domains and documented rapid command-and-control (C2) replacement after public disclosure. Microsoft Defender Experts expanded that view by correlating recurring endpoints and network behaviors across the activity. This behavior-led approach connected more than 30 domains and showed that the infrastructure supported more than C2 communication, extending into active collection, staging, and exfiltration. The findings demonstrate that although domains may rotate quickly, repeated execution patterns, request characteristics, staging behavior, and upload methods provide defenders with more durable opportunities to investigate MacSync Stealer activity. Activity overview Microsoft Defender Experts reviewed endpoint and network telemetry to determine which MacSync Stealer behaviors persisted as infrastructure changed. The investigation followed the activity from C2 communication through collection, staging, and exfiltration, using recurring technical traits to connect activity across rotating domains. Execution began from an interactive shell session consistent with ClickFix social engineering, where users are tricked into pasting or running commands in Terminal. The shell session used curl to retrieve attacker-controlled payload content, followed by script-driven execution and outbound communication. After execution, the malware communicated with attacker-controlled infrastructure using recurring URI paths, macOS User-Agent strings, API-key headers, and curl command-line options. These request traits became durable behavioral pivots because they remained consistent even as domains changed. The activity then progressed into collection behavior targeting macOS Keychain material, browser data, locally stored credentials, cloud and Secure Shell (SSH) credentials, and sensitive files from common user directories. The investigation also confirmed active data exfiltration, not just beaconing. Collected data was staged under temporary paths, compressed into an archive, split into chunks, and uploaded through HTTP PUT requests using curl with the –data-binary...",
-      "links": [
-        {
-          "label": "Activity overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#activity-overview"
-        },
-        {
-          "label": "Discovery of additional rotating infrastructure",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#discovery-of-additional-rotating-infrastructure"
-        },
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "reporting",
-          "url": "https://www.rstcloud.com/macsync-stealer-c2-infrastructure-rotation/"
-        },
-        {
-          "label": "osascript",
-          "url": "https://ss64.com/mac/osascript.html"
-        },
-        {
-          "label": "XProtect",
-          "url": "https://support.apple.com/guide/security/protecting-against-malware-sec469d47bd8/web"
-        },
-        {
-          "label": "cloud-delivered protection",
-          "url": "https://learn.microsoft.com/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus"
-        },
-        {
-          "label": "Enable network protection and web protection",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/network-protection-macos"
-        },
-        {
-          "label": "Enable tamper protection",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/mac-preferences"
-        }
-      ]
-    },
-    {
       "title": "(Updated) Microsoft Entra ID: Retirement of SMS first-factor sign-in for Entra ID Free tenants",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1448374",
       "published": "2026-08-13T20:30:56.690000+00:00",
@@ -4621,141 +4598,6 @@
         {
           "label": "Nested API Lab",
           "url": "https://aka.ms/AppAssure_Nested-API-Connector-Lab"
-        }
-      ]
-    },
-    {
-      "title": "Monthly News-August 2026",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/monthly-news-august-2026/ba-p/4544388",
-      "published": "2026-08-05T22:15:47+00:00",
-      "summary": "Microsoft DefenderMonthly news - August 2026 Edition This is our monthly \"What's new\" blog post, summarizing product updates and various new assets we released over the past month across our Defender products. In this edition, we are looking at all the goodness from July 2026. We are now including...",
-      "author": "EdFisher",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 11
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        },
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
-        },
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 5
-        },
-        {
-          "id": "defender-cloud-apps",
-          "name": "Microsoft Defender for Cloud Apps",
-          "score": 5
-        },
-        {
-          "id": "defender-identity",
-          "name": "Microsoft Defender for Identity",
-          "score": 5
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "AI Security",
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Endpoint",
-        "Microsoft Defender for Office 365",
-        "Microsoft Purview",
-        "Microsoft Sentinel",
-        "Microsoft Defender for Cloud",
-        "Microsoft Defender for Cloud Apps",
-        "Microsoft Defender for Identity",
-        "Microsoft Security Copilot",
-        "AWS Security"
-      ],
-      "body": "Microsoft DefenderMonthly news - August 2026 Edition This is our monthly \"What's new\" blog post, summarizing product updates and various new assets we released over the past month across our Defender products. In this edition, we are looking at all the goodness from July 2026. We are now including news related to Defender for Cloud in the Defender portal. For all other Defender for Cloud news, have a look at the dedicated Defender for Cloud Monthly News here. 🚀 New Virtual Ninja Show episode: Redefining identity security for the modern enterprise One policy engine to govern them all: Securing agentic AI with Microsoft Purview Building a modern detection pipeline with ContentOps Securing local AI agents with Microsoft Defender Microsoft Defender: Extending critical protection for emerging threats in Team Actionable threat insights (find all of them here) Email threat landscape: Q2 2026 trends and insights Enhancing AI security through global AI red teaming Least privilege for AI agents: Identity, access, and tool binding Microsoft Defender (Public Preview) Microsoft Defender now assesses posture risk for AI agents, including enterprise agents and local agents discovered on endpoint devices. Risk levels are based on active risk indicators, such as configuration, access, runtime activity, endpoint and user context, and active alerts. Security teams can use posture risk and recommendations to prioritize risky agents and improve agent security posture. For more information, see AI agent posture risk in Microsoft Defender. (Generally available) The Domain investigation page allows you to investigate an Active Directory domain. It shows Active Directory domain security, including domain properties, deployment health, identity summary, service account breakdown, sensitive entities, active recommendations, group policies, and trust relationships. For more information, see Investigate a domain . (Generally available) With a Microsoft Agent 365 license, Microsoft Defender provides discovery, security posture, threat detection and investigation, and real-time protection for the AI agents in your tenant. Onboarding includes enabling data collection, connecting the Microsoft 365 app connector, and connecting Copilot Studio for real-time protection of Copilot Studio agents. For more information, see Protect AI agents using Microsoft Defender. (Generally available) Improved access to Playbook Generator: Following the GA release of Playbook Generator May 31st, the team...",
-      "links": [
-        {
-          "label": "here",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftdefendercloudblog/microsoft-defender-for-cloud-customer-newsletter/4525656"
-        },
-        {
-          "label": "Redefining identity security for the modern enterprise",
-          "url": "https://youtu.be/17qtl8RSFKA?si=_O1CgQpNJtQgk_dY"
-        },
-        {
-          "label": "One policy engine to govern them all: Securing agentic AI with Microsoft Purview",
-          "url": "https://youtu.be/I24oxM6rL6E?si=rgXUPok9_jVu0SsQ"
-        },
-        {
-          "label": "Building a modern detection pipeline with ContentOps",
-          "url": "https://youtu.be/q_7IXnBwv8c?si=94-NKofzzGx-3HkG"
-        },
-        {
-          "label": "Securing local AI agents with Microsoft Defender",
-          "url": "https://youtu.be/SzTEY3sY3lA?si=HJV1MKD8tJ63_EQT"
-        },
-        {
-          "label": "Microsoft Defender: Extending critical protection for emerging threats in Team",
-          "url": "https://youtu.be/AnQiZZkZO0s?si=xOnPdLRegN-RHbyh"
-        },
-        {
-          "label": "here",
-          "url": "https://www.microsoft.com/en-us/security/blog/content-type/research/?ep_filter_topic=actionable-threat-insights"
-        },
-        {
-          "label": "Email threat landscape: Q2 2026 trends and insights",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/"
-        },
-        {
-          "label": "Enhancing AI security through global AI red teaming",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/07/27/enhancing-ai-security-through-global-ai-red-teaming/"
-        },
-        {
-          "label": "Least privilege for AI agents: Identity, access, and tool binding",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/07/16/least-privilege-for-ai-agents-identity-access-and-tool-binding/"
-        },
-        {
-          "label": "see AI agent posture risk in Microsoft Defender",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/security-for-ai/ai-agent-risk-assessment"
-        },
-        {
-          "label": "Investigate a domain",
-          "url": "https://learn.microsoft.com/en-us/defender-for-identity/investigate-domain"
         }
       ]
     }
