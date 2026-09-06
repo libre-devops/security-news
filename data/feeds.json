@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-06T15:11:11.764049+00:00",
-  "totalArticles": 135,
+  "lastUpdated": "2026-09-06T20:11:39.406241+00:00",
+  "totalArticles": 133,
   "articles": [
     {
       "title": "GCP-2026-060",
@@ -4578,119 +4578,6 @@
         {
           "label": "Recovery chat: Technical architecture",
           "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Recovery_chat:_Technical"
-        }
-      ]
-    },
-    {
-      "title": "AI-powered playbook generator, now available to more customers",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/ai-powered-playbook-generator-now-available-to-more-customers/ba-p/4544385",
-      "published": "2026-08-07T19:28:40+00:00",
-      "summary": "We’re excited to announce we’re making it easier than ever to go from intent to action with the AI-powered playbook generator now available to more customers. What’s new All Microsoft Sentinel customers in Defender portal can now create AI-generated playbooks directly in their automation workflow....",
-      "author": "NoaCafri",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Microsoft Security Copilot"
-      ],
-      "body": "We’re excited to announce we’re making it easier than ever to go from intent to action with the AI-powered playbook generator now available to more customers. What’s new All Microsoft Sentinel customers in Defender portal can now create AI-generated playbooks directly in their automation workflow. As part of this change, Security Copilot enablement is no longer required: playbook generator is now available to more teams out of the box and without any extra cost. What playbook generator does Playbook generator uses AI to turn what you want to automate into a working playbook. Instead of hand-building automation in python code, describe the response you need in natural language and get an editable playbook, its tests and documentation generated for you right inside the Microsoft Defender portal. Faster response automation: go from idea to playbook in minutes. Built into your workflow: find it under Automation › + Create › Playbook Generator. Fully editable: generated playbooks are code-based, complete with tests, documentation and visual flow, that you can review and refine. Who is it for If you’re using Microsoft Sentinel in your Defender portal, the playbook generator is now within reach. This expansion brings AI-assisted playbook creation to significantly more security teams. How to get started Ensure you have the right permissions To build and deploy generated playbooks, make sure You have the Automation Playbooks Unified RBAC permission with Read and Write access. Open Microsoft Defender Portal and go to Automation. Select + Create › Playbook Generator. Describe the playbook you want to create. Review, edit, and deploy. Automatically created visual diagram of the playbook.Phyton code created by playbook generator. Availability General availability: Already available. Cost: Included with Microsoft Sentinel - no additional charge. Try Playbook Generator in your Microsoft Defender Portal today.",
-      "links": []
-    },
-    {
-      "title": "Public Preview: Nested API Support Comes to Microsoft Sentinel CCF",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/public-preview-nested-api-support-comes-to-microsoft-sentinel/ba-p/4537026",
-      "published": "2026-08-07T17:15:55+00:00",
-      "summary": "Microsoft Sentinel continues to evolve its capabilities to support an expanding ecosystem of partners and data integrations. Recent innovations include the Codeless Connector Framework (CCF) Push feature, the new Sentinel connector builder agent, and the CCF expansion to pull data from Azure...",
-      "author": "Robert_Moriarty",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Threat Intelligence"
-      ],
-      "body": "Microsoft Sentinel continues to evolve its capabilities to support an expanding ecosystem of partners and data integrations. Recent innovations include the Codeless Connector Framework (CCF) Push feature, the new Sentinel connector builder agent, and the CCF expansion to pull data from Azure Storage Blob. Each of these reflects our ongoing investment in making it easier for ISVs and developers to build scalable, high-fidelity data connectors that bring telemetry into Sentinel data lake. Today, we are excited to announce another advancement in this journey – the public preview for Nested API support in CCF. What is Nested API support and Why it Matters Nested API support enables a pattern common across many ISV log sources, where a single polling cycle spans multiple dependent API calls: an initial call returns a list of records (such as alert IDs or case references), and one or more follow-up calls fetch the full detail for each record in that list. This support allows CCF to accommodate the list-then-detail API pattern as it exists in many API designs, so that partners don’t need to restructure or adapt their endpoints. The result is broader integration coverage that allows partners to connect data sources whose APIs are naturally paginated across multiple calls, and then to ingest complete records into Microsoft Sentinel without building custom middleware. Support for Nested API in the Microsoft Sentinel VS Code extension This pattern is also available through the Visual Studio Code (VS Code) extension for Microsoft Sentinel connectors. The extension is an agentic tool that helps ISVs and partners build, test, and package data connectors more efficiently, providing a guided experience for bringing data into Microsoft Sentinel. As part of its design, the extension enables developers to implement Nested API workflows, allowing connectors to orchestrate multi-step API calls and support APIs that require chained or dependent requests. To learn more, see the Sentinel connector builder agent blog and the Microsoft Learn documentation for implementation guidance. Real-world adoption: Early ISV implementations A growing set of solutions are already leveraging Nested API support to enable multi-step data retrieval scenarios. These early implementations demonstrate how partners are using this capability to structure connector workflows around their existing APIs. Some of the early adopters and their solutions are listed below. BigID BigID integrates with...",
-      "links": [
-        {
-          "label": "Push feature",
-          "url": "https://aka.ms/SentinelCCFPush"
-        },
-        {
-          "label": "Sentinel connector builder agent",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/accelerate-connectors-development-using-ai-agent-in-microsoft-sentinel/4507019"
-        },
-        {
-          "label": "Azure Storage Blob",
-          "url": "https://aka.ms/SentinelAzureBlobStorage"
-        },
-        {
-          "label": "Microsoft Learn documentation",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/create-custom-connector-builder-agent"
-        },
-        {
-          "label": "BigID",
-          "url": "https://securitystore.microsoft.com/solutions/big-id.azure-sentinel-solution-bigid"
-        },
-        {
-          "label": "Cisco Email Threat Defense",
-          "url": "https://securitystore.microsoft.com/solutions/cisco.cisco-etd-sentinel"
-        },
-        {
-          "label": "Idira Audit",
-          "url": "https://securitystore.microsoft.com/solutions/cyberark.cyberark_audit_sentinel"
-        },
-        {
-          "label": "CrowdStrike Falcon Endpoint Protection",
-          "url": "https://securitystore.microsoft.com/solutions/azuresentinel.azure-sentinel-solution-crowdstrikefalconep"
-        },
-        {
-          "label": "InsightVM CloudAPI",
-          "url": "https://securitystore.microsoft.com/solutions/azuresentinel.azure-sentinel-solution-rapid7insightvm"
-        },
-        {
-          "label": "Salesforce Service Cloud",
-          "url": "https://securitystore.microsoft.com/solutions/azuresentinel.azure-sentinel-solution-salesforceservicecloud"
-        },
-        {
-          "label": "Microsoft Learn documentation",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/isv/custom-connector-nested-api-polling"
-        },
-        {
-          "label": "Nested API Lab",
-          "url": "https://aka.ms/AppAssure_Nested-API-Connector-Lab"
         }
       ]
     }
