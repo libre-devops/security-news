@@ -1,8 +1,95 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-07T03:43:03.926176+00:00",
-  "totalArticles": 133,
+  "lastUpdated": "2026-09-07T11:59:07.676483+00:00",
+  "totalArticles": 135,
   "articles": [
+    {
+      "title": "The hidden risks of shadow AI",
+      "link": "https://www.ncsc.gov.uk/blogs/the-hidden-risks-of-shadow-ai",
+      "published": "2026-09-07T12:00:00+00:00",
+      "summary": "Understanding why staff use unapproved AI tools is key to managing the security challenges they can create.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "Securing Your Certification Authorities (Practical PKI Part 4)",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/securing-your-certification-authorities-practical-pki-part-4/ba-p/4549029",
+      "published": "2026-09-07T10:57:56+00:00",
+      "summary": "My name is Ron Arestia, and I am a Security Researcher with Microsoft’s Detection and Response Team (DART). We respond to customer cybersecurity incidents to assist with containment and recovery from threat actors. In this blog post, we work to enhance the security position of PKI by focusing on...",
+      "author": "RonArestia",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "My name is Ron Arestia, and I am a Security Researcher with Microsoft’s Detection and Response Team (DART). We respond to customer cybersecurity incidents to assist with containment and recovery from threat actors. In this blog post, we work to enhance the security position of PKI by focusing on the most vital component first: your Certification Authorities (CAs). This is part 4 of a series on practical PKI implementation based on my experience with customer interactions working as a Microsoft engineer. Feel free to catch up on previous blog posts or jump right into this one Secure Configuration and Hardening of Active Directory Certificate Services Implementing and Managing an ADCS Offline Root Certificate Authority (Practical PKI Part 1) CRL & AIA Publishing Guidance (Practical PKI Part 2) Purpose For Your PKI (Practical PKI Part 3) Before you start down this path, review SpecterOps Exploitation of Certificate Services framework. This is the de facto standard against which you should secure your PKI. If you cannot protect against misconfigurations, threat actors are going to leverage them against you. Please note: I will not be demonstrating any red team/hacking tools in this blog out of an abundance of caution. There are myriad guides on how to leverage these tools against an ADCS PKI. My goal with this series is to provide best practice guidance and learn to think like a defensive security professional specific to PKI. Throughout this and future blog posts, I am going to reference the Exploitation of Certificate Services framework as ESC and reference specific ESC exploits. Take a moment to cross-reference what is written here with the finding to understand how misconfigurations can be abused. Root CA Security I would advise anyone jumping into this blog series at this point to go back and review previous posts about root CA security and best practices. So much has already been written about this, so I will be brief in this section to focus on downstream security concepts. If a root CA is truly offline and protected by an HSM, the risk of compromise is exceptionally low albeit not zero. While I do not know of any specific anecdotal evidence of an offline root CA compromise, I am sure Hollywood could produce some Mission Impossible-level script. In reality, most threat actors are maneuvering around an enterprise via the identity plane, and the PKI infrastructure is the icing on a very scrumptious cake once they have achieved domain dominance. The idea...",
+      "links": [
+        {
+          "label": "Secure Configuration and Hardening of Active Directory Certificate Services",
+          "url": "https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/secure-configuration-and-hardening-of-active-directory-certificate-services/4463240"
+        },
+        {
+          "label": "Implementing and Managing an ADCS Offline Root Certificate Authority (Practical PKI Part 1)",
+          "url": "https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/implementing-and-managing-an-adcs-offline-root-certificate-authority-part-1/4468175"
+        },
+        {
+          "label": "CRL & AIA Publishing Guidance (Practical PKI Part 2)",
+          "url": "https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/crl--aia-publishing-guidance-practical-pki-part-2/4485713"
+        },
+        {
+          "label": "Purpose For Your PKI (Practical PKI Part 3)",
+          "url": "https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/purpose-for-your-pki-practical-pki-part-3/4512518"
+        },
+        {
+          "label": "SpecterOps Exploitation of Certificate Services framework",
+          "url": "https://docs.specterops.io/ghostpack-docs/Certify.wik-mdx/overview"
+        },
+        {
+          "label": "KB5014754",
+          "url": "https://support.microsoft.com/en-US/servicing/os/windows-server/2022/05/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers"
+        },
+        {
+          "label": "CVE-2022-34691,",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-34691"
+        },
+        {
+          "label": "CVE-2022-26931",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-26931"
+        },
+        {
+          "label": "CVE-2022-26923",
+          "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-26923"
+        }
+      ]
+    },
     {
       "title": "GCP-2026-060",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-060",
