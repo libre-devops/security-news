@@ -1,8 +1,32 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-09T10:59:00.662601+00:00",
-  "totalArticles": 138,
+  "lastUpdated": "2026-09-09T16:13:44.764312+00:00",
+  "totalArticles": 137,
   "articles": [
+    {
+      "title": "Chromium: CVE-2026-85046 Type confusion in V8",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-85046",
+      "published": "2026-09-09T22:09:50+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information. Google is aware that an exploit for CVE-2026-85046 exists in the wild.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Microsoft Entra: Optimized passkey registration campaign experience",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1469555",
@@ -1490,30 +1514,6 @@
     {
       "title": "Chromium: CVE-2026-84349 Use after free in Browser",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84349",
-      "published": "2026-09-08T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-84355 Incorrect authorization in Navigation",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-84355",
       "published": "2026-09-08T14:00:00+00:00",
       "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
       "author": "Microsoft",
@@ -4695,81 +4695,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "DeadLock ransomware: Breaking down a Rust-based encryptor with decentralized recovery infrastructure",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/10/deadlock-ransomware-breaking-down-a-rust-based-encryptor-with-decentralized-recovery-infrastructure/",
-      "published": "2026-08-10T15:00:00+00:00",
-      "summary": "Microsoft Threat Intelligence examines DeadLock ransomware, an emerging financially motivated operation distinguished by its use of decentralized infrastructure to support victim communications, negotiations, and data leak operations alongside double extortion tactics used to pressure victims. The...",
-      "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Pre-encryptionEncryptionPost-encryptionDefending against DeadLock ransomwareIndicators of compromise Microsoft Threat Intelligence tracks DeadLock ransomware as an emerging financially motivated operation distinguished by its use of decentralized infrastructure to support victim communications and data leak operations. Its recovery ecosystem combines the Session messaging network with blockchain-backed services that store and deliver resources used throughout the extortion process. This architecture likely increases the resilience of portions of its communication, leak-hosting, and negotiation infrastructure, allowing DeadLock operators to recover from some disruption efforts while maintaining continuity for victims. Microsoft has observed DeadLock ransomware being deployed by multiple groups including an affiliate of the Lynx and INC ransomware ecosystems. First observed in July 2025, DeadLock operators employ double extortion tactics, encrypting victim environments while threatening to publicly release exfiltrated data. As of July 2026, the operators have published more than 80 compromised organizations on their data leak site, called the DeadLock blog, with more than half of the claimed victims in Europe. Microsoft identified DeadLock ransomware impacting organizations across information technology (IT), mining, transportation and logistics, manufacturing, hospitality, consumer goods, and other sectors in Europe, Asia, North America, South America, and Africa. The DeadLock encryptor includes a resource-aware throttling mechanism designed to maintain system responsiveness during encryption. In addition to its encryption capabilities, the ransomware also appears to implement language or country-based geofencing designed to avoid running in environments associated with former Soviet and Commonwealth of Independent States (CIS)-linked countries as well as select Middle Eastern countries, a pattern commonly observed among ransomware operators believed to operate from those regions. Together, these capabilities demonstrate how DeadLock combines established ransomware tradecraft with decentralized infrastructure designed to improve operational resilience. In this blog, we present a technical analysis of the DeadLock ransomware encryptor, covering its execution flow, defense evasion techniques, encryption design, and post-encryption behaviors, including a decentralized recovery chat system. We also provide indicators of compromise (IOCs),...",
-      "links": [
-        {
-          "label": "Pre-encryption",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#pre-encryption"
-        },
-        {
-          "label": "Encryption",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#encryption"
-        },
-        {
-          "label": "Post-encryption",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#post-encryption"
-        },
-        {
-          "label": "Defending against DeadLock ransomware",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#defending-against-deadlock-ransomware"
-        },
-        {
-          "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
-        },
-        {
-          "label": "ransomware tradecraft",
-          "url": "https://www.microsoft.com/en-us/security/blog/tag/ransomware/"
-        },
-        {
-          "label": "Microsoft Defender",
-          "url": "https://www.microsoft.com/security/business/microsoft-defender"
-        },
-        {
-          "label": "Language geofencing",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Language_geofencing"
-        },
-        {
-          "label": "Process and service termination",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Process_and_service"
-        },
-        {
-          "label": "Directory traversal",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Directory_Traversal"
-        },
-        {
-          "label": "Ransom notes deployment",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Ransom_notes_deployment"
-        },
-        {
-          "label": "Recovery chat: Technical architecture",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#_Recovery_chat:_Technical"
-        }
       ]
     }
   ]
