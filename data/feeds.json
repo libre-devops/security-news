@@ -1,8 +1,73 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-08T20:54:00.068180+00:00",
-  "totalArticles": 136,
+  "lastUpdated": "2026-09-09T03:52:44.228924+00:00",
+  "totalArticles": 138,
   "articles": [
+    {
+      "title": "Microsoft Entra: Optimized passkey registration campaign experience",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1469555",
+      "published": "2026-09-09T00:44:03.433000+00:00",
+      "summary": "[What and why]Following earlier announcements regarding passkey registration campaigns and targeting logic (MC1279092 and MC1440968), we're continuing to refine how Microsoft Entra identifies and guides eligible users toward passkey registration. These changes help increase adoption of...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1469555",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]Following earlier announcements regarding passkey registration campaigns and targeting logic (MC1279092 and MC1440968), we're continuing to refine how Microsoft Entra identifies and guides eligible users toward passkey registration. These changes help increase adoption of phishing-resistant authentication while maintaining alignment with administrator-configured passkey policies. We're introducing enhancements to the Microsoft Entra registration campaign to help organizations increase passkey registration and adoption.With this change, users who are eligible to register a passkey will receive an optimized registration experience. We're also expanding the Microsoft managed registration campaign experience so that users assigned to qualifying passkey profiles can be automatically prompted to register a passkey.These updates help organizations accelerate adoption of phishing-resistant authentication while continuing to honor configured passkey policies and administrative controls.A passkey profile qualifies when it meets one of the following criteria:Passkey profile configurationQualification criteriaUnrestrictedNo passkey profile restrictions are configured.Synced-onlyOnly synced passkeys are allowed and no key restrictions are configured.Device-bound-onlyOnly device-bound passkeys are allowed and no key restrictions are configured.AAGUID-restrictedThe allow list contains at least one AAGUID for iCloud Keychain, Google Password Manager (GPM), Microsoft Authenticator passkey, or Microsoft Entra passkey on Windows.Device-bound with attestation enforcedThe profile qualifies regardless of key restrictions. Key restrictions are not evaluated.[Rollout schedule]General Availability (Worldwide, GCC): Beginning in early September 2026 and expected to complete by mid-September 2026[Impact on your organization]Who is affectedAdministrators who manage Microsoft Entra registration campaigns and passkey authentication method policiesUsers who are in scope for a registration campaign and are permitted to register passkeysPlatforms and servicesMicrosoft Entra registration campaignMicrosoft Entra authentication methods policyPasskey registration experienceWhat will happenEligible users will receive an optimized passkey registration experience.When a registration campaign is in the Microsoft managed state, Microsoft will evaluate each in-scope user's passkey profile at sign-in.Users assigned to at least one qualifying passkey profile may be prompted to register a passkey.When a registration campaign is in the Enabled state, qualifying profile checks do not apply. All in-scope users who are allowed to register passkeys may be prompted to register a passkey.Existing registration campaign scope and authentication method policies continue to determine which users are eligible to register passkeys.Note: If your registration campaign is in the Microsoft managed state and in-scope users meet one or more of the new qualifying passkey profile criteria, Microsoft managed logic may automatically update campaign targeting to include passkeys. As a result, eligible users may begin receiving passkey registration prompts after rollout.[Action required and recommendations]Review your registration campaign configuration before rollout.Recommended actions:Review users and groups that are currently in scope for your registration campaign.Review passkey profiles assigned to in-scope users.Determine whether in-scope users are assigned to qualifying passkey profiles.If you do not want Microsoft managed dynamic targeting, change the registration campaign state and directly configure targeted authentication methods.Verify that intended users are enabled for passkeys through your authentication methods policy.Learn moreConfigure the Microsoft Entra registration campaign - Enable and support passkeys in Authenticator for Microsoft Entra ID - Microsoft Entra ID | Microsoft LearnRun a Registration Campaign to Set Up a Passkey or Microsoft Authenticator - Microsoft Entra ID | Microsoft Learn[Compliance considerations]The registration campaign does not override configured passkey authentication method policies.Users can only be prompted to register passkeys permitted by their assigned passkey profiles.In the Microsoft managed state, Microsoft uses dynamic logic to determine passkey targeting and may automatically update targeted authentication methods.Administrators retain control over registration campaign scope, registration campaign state, and authentication method policies.",
+      "links": [
+        {
+          "label": "Enable and support passkeys in Authenticator for Microsoft Entra ID - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-enable-authenticator-passkey"
+        },
+        {
+          "label": "Run a Registration Campaign to Set Up a Passkey or Microsoft Authenticator - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-mfa-registration-campaign"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Data Loss Prevention for Microsoft Cowork",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570845",
+      "published": "2026-09-08T22:57:21+00:00",
+      "summary": "Microsoft Purview Data Loss Prevention (DLP) is expanding to Microsoft Cowork, enabling data security admins to use a single policy across Microsoft 365 Copilot and Cowork. The integration helps protect sensitive AI interactions by preventing the use of labeled knowledge sources, blocking prompts...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "Microsoft Purview Data Loss Prevention (DLP) is expanding to Microsoft Cowork, enabling data security admins to use a single policy across Microsoft 365 Copilot and Cowork. The integration helps protect sensitive AI interactions by preventing the use of labeled knowledge sources, blocking prompts that contain supported sensitive information types, and restricting sensitive prompts from being sent to Bing for web search.GA date: October CY2026Preview date: September CY2026",
+      "links": []
+    },
     {
       "title": "CVE-2026-84942 - Stored Cross-Site Scripting via Vega Expression Function Bypass in OpenSearch Dashboards",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
