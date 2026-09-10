@@ -1,8 +1,222 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-10T16:04:49.957844+00:00",
-  "totalArticles": 137,
+  "lastUpdated": "2026-09-10T20:37:16.855133+00:00",
+  "totalArticles": 136,
   "articles": [
+    {
+      "title": "CVE-2026-89049 - Server-side request forgery in the Session Manager port forwarding functionality in AWS Systems Manager Agent",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-107-aws/",
+      "published": "2026-09-10T18:44:24+00:00",
+      "summary": "Bulletin ID: 2026-107-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/10/2026 11:30 AM PDT Description: AWS Systems Manager Agent (SSM Agent) is software that runs on managed nodes (EC2 instances, on-premises servers, and other supported machines) and processes...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-107-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/10/2026 11:30 AM PDT Description: AWS Systems Manager Agent (SSM Agent) is software that runs on managed nodes (EC2 instances, on-premises servers, and other supported machines) and processes requests from the AWS Systems Manager service, enabling capabilities including Session Manager port forwarding to remote hosts. We identified CVE-2026-89049, a server-side request forgery issue in the remote-host port forwarding functionality. Due to improper validation of equivalent address representations, an authenticated user with port-forwarding permission could bypass the remote destination denylist and reach link-local endpoints, potentially obtaining the managed instance's temporary IAM role credentials and acting with that role's permissions from outside the instance. Impacted versions: < 3.3.4851.0 (all versions supporting remote-host port forwarding) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "Protecting organizations from AI-assisted executive impersonation and invoice fraud",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/10/protecting-organizations-ai-assisted-executive-impersonation-invoice-fraud/",
+      "published": "2026-09-10T17:23:05+00:00",
+      "summary": "Microsoft examines an AI-assisted business email compromise campaign that used executive impersonation and fake invoices to target finance teams with ACH payment fraud. The post Protecting organizations from AI-assisted executive impersonation and invoice fraud appeared first on Microsoft Security...",
+      "author": "Microsoft Security Research",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article Attack chain overviewEmail DeliveryDomain registrationGenerative AI usageMitigation and protection guidanceMicrosoft Defender detectionsMicrosoft Security CopilotThreat intelligence reportsMITRE ATT&CK Techniques observedIndicators of compromise (IOC)Learn More Threat actors are increasingly improving their tactics to make suspicious emails look like legitimate email notifications to potential victims, deploying techniques that impersonate internally sent emails from executive team members. While this technique is not new, the adoption of AI has enabled threat actors to improve their campaign templates and construct emails tailored to their recipients. Additionally, threat actors are incorporating multiple techniques within the same email to improve the overall narrative further. In this blog, we will discuss a recent campaign observed using third-party email delivery infrastructure to send out over a million financial fraud scam emails that displayed multiple indicators consistent with the use of generative AI during email template creation. The threat actor impersonated CEOs of multiple target companies, attempting to convince accounts payable departments of the same companies to process an Automated Clearing House (ACH) payment of nearly $50,000. To add legitimacy, the actor included a forwarded email thread (and a fabricated invoice) between the impersonated CEO and ServiceNow (which was also being impersonated). Attack chain overview The campaign follows steps before and during the execution of the campaign: threat actors register impersonation domains, send executive-themed payment requests through trusted infrastructure, embed fabricated invoices and supporting conversations, and attempt to convince finance personnel to initiate ACH transfers. Figure 1: Attack chain showing domain registration, executive impersonation, invoice fraud delivery, ACH payment execution, and financial theft. Email Delivery Between August 3 and 5, Microsoft detected a campaign consisting of more than a million emails targeting enterprise users. The attacker used multiple third-party email service accounts to send out the emails. A huge majority of these emails were sent to users in the United States (87.7% of the total campaign). Figure 2. Campaign timeline. Figure 3. Industry distribution of targeted enterprises of this campaign with ‘IT services & business advisory’ along with ‘Consumer goods’ and others. Unlike traditional invoice scams that rely on a...",
+      "links": [
+        {
+          "label": "Attack chain overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+        },
+        {
+          "label": "Email Delivery",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#email-delivery"
+        },
+        {
+          "label": "Domain registration",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#domain-registration"
+        },
+        {
+          "label": "Generative AI usage",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#generative-ai-usage"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Microsoft Defender detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+        },
+        {
+          "label": "Microsoft Security Copilot",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-security-copilot"
+        },
+        {
+          "label": "Threat intelligence reports",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#threat-intelligence-reports"
+        },
+        {
+          "label": "MITRE ATT&CK Techniques observed",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitre-att-ck-techniques-observed"
+        },
+        {
+          "label": "Indicators of compromise (IOC)",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise-ioc"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "automatic attack disruption",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/configure-attack-disruption"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-85228 - Integer overflow in tensor buffer validation in Deep Java Library",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-106-aws/",
+      "published": "2026-09-10T17:13:16+00:00",
+      "summary": "Bulletin ID: 2026-106-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/10/2026 10:00 AM PDT Description: Deep Java Library (DJL) is an open-source, engine-agnostic Java framework for deep learning, developed and maintained by Amazon. AWS identified CVE-2026-85228, an...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-106-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/10/2026 10:00 AM PDT Description: Deep Java Library (DJL) is an open-source, engine-agnostic Java framework for deep learning, developed and maintained by Amazon. AWS identified CVE-2026-85228, an integer overflow in the tensor buffer validation component of DJL on all platforms. A crafted tensor payload declaring a shape whose computed byte size exceeds the 32-bit signed integer range causes the size to wrap, allowing an undersized buffer to pass validation; a subsequent tensor operation then reads out of bounds. If leveraged, a remote, unauthenticated actor could obtain information from adjacent process memory or cause a denial of service. A fix for this issue has been released and we recommend users of DJL upgrade to version 0.37.0 or later. Impacted versions: >=0.13.0 AND <=0.36.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "[Launched] Generally Available: TLS/SSL certificate and end-to-end TLS encryption support for Azure Functions Flex Consumption",
+      "link": "https://azure.microsoft.com/updates?id=570940",
+      "published": "2026-09-10T16:12:49+00:00",
+      "summary": "Azure Functions Flex Consumption support for TLS/SSL certificates is now generally available through a new site-scoped certificate model. Each function app can hold up to 3 private (.pfx) and 3 public (.cer) certificates uploaded directly, imported from A",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Detect and disrupt AI-themed attacks with Microsoft Defender",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
+      "published": "2026-09-10T16:00:00+00:00",
+      "summary": "See how Microsoft Defender detects and disrupts AI-themed phishing, malware, and multi-stage attacks across the attack chain. The post Detect and disrupt AI-themed attacks with Microsoft Defender appeared first on Microsoft Security Blog.",
+      "author": "Rob Lefferts",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "Every wave of technology excitement creates a new opportunity for cyberattackers, and AI is no exception. Microsoft Threat Intelligence has published research showing a growing set of campaigns that impersonate popular AI platforms and tools, including ChatGPT, Microsoft Copilot, DeepSeek, and Claude.1 The goal is to make phishing, search-driven malware campaigns, and malvertising—which is malicious advertising that uses online ads to lure users to harmful sites, downloads, or redirect chains—more convincing. A ChatGPT-themed phishing campaign sent up to 100,000 emails in a single day, tricking users into updating their ChatGPT Plus payment information and stealing personal and credit card data. These campaigns do not represent a compromise of the AI services being referenced. They represent something more familiar—cyberattackers doing what they have always done: borrowing trust. Right now, AI brands can carry significant trust and curiosity, making them attractive themes for cyberattackers to exploit. Prevent and disrupt cyberthreats with Microsoft Defender Understanding why this trend matters and what it means for security teams is critical to shaping a modern protection strategy. The tactics are the same ones cyberattackers have always refined: urgency, curiosity, and impersonation of something familiar to lower a user’s guard. What has changed is the wrapper. A message about a new model release, a policy update from a familiar AI assistant, or a plugin that promises to make the workday easier is today’s version of the fake invoice or the shipping notification. AI-themed lures deserve attention not because they are a passing trend tied to one product cycle, but because AI remains a genuine source of excitement and urgency for employees and consumers alike, and cyberattackers are exploiting the human instinct to explore what is new, useful, or urgent. The attack pattern is evolving Microsoft’s research team recently observed several AI brand campaigns including: A ChatGPT-themed phishing kit built to harvest credit card data. A Claude-themed campaign that harvested credentials and access tokens through adversary-in-the-middle (AiTM) techniques. Malvertising for a fake AI Windows plugin that delivered the Vidar stealer. Fraudulent DeepSeek installers distributed through GitHub. In one case, an initial access broker tracked as Storm-3075 used AI-themed malvertising to distribute payloads for multiple downstream actors, a sign of how quickly this tactic is...",
+      "links": [
+        {
+          "label": "Prevent and disrupt cyberthreats with Microsoft Defender",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender"
+        },
+        {
+          "label": "attack disruption",
+          "url": "https://aka.ms/disrupt-ebook"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        },
+        {
+          "label": "Microsoft Security",
+          "url": "https://www.linkedin.com/showcase/microsoft-security/"
+        },
+        {
+          "label": "@MSFTSecurity",
+          "url": "https://twitter.com/@MSFTSecurity"
+        },
+        {
+          "label": "AI brands as bait: How threat actors are using the AI hype in social engineering",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/06/08/ai-brands-as-bait-how-threat-actors-are-using-the-ai-hype-in-social-engineering/"
+        },
+        {
+          "label": "Detect and disrupt AI-themed attacks with Microsoft Defender",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog"
+        }
+      ]
+    },
     {
       "title": "Microsoft Purview: Endpoint Data Loss Prevention-Archive File Classification Behavior Change for Windows Endpoints",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570965",
@@ -680,58 +894,6 @@
       "links": []
     },
     {
-      "title": "CVE-2026-75910 - Issue with Athena Federated Query Clickhouse Connector",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-084-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-084-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/20/2026 13:00 PM PDT Description: Amazon Athena is a serverless, interactive query service that lets you analyze data directly in Amazon S3 using standard SQL. Athena Query Federation is a feature...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-084-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/20/2026 13:00 PM PDT Description: Amazon Athena is a serverless, interactive query service that lets you analyze data directly in Amazon S3 using standard SQL. Athena Query Federation is a feature that allows you to connect to data sources outside of Amazon S3 like DynamoDB, Azure Synapse, and custom connectors using standard SQL syntax. These connectors are open source and deployed to the Athena service on a regular basis. We identified CVE-2026-75910. Incorrect privilege assignment in the ClickHouse connector deployment template before the v2026.17.1 release could allow an authenticated remote user to read arbitrary AWS Secrets Manager secrets in the deploying account by pointing the connector's connection string at an unrelated secret and at a database endpoint under the user's control, causing the connector to transmit the secret to that endpoint. Impacted versions: < V2026.17.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-18953 - Improper limitation of a pathname in AWS Transform MCP Server",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-075-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-075-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/05/2026 12:30 PM PDT Description: The AWS Transform MCP Server (awslabs.aws-transform-mcp-server) is an open-source Model Context Protocol (MCP) server that runs locally on a developer's machine...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-075-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/05/2026 12:30 PM PDT Description: The AWS Transform MCP Server (awslabs.aws-transform-mcp-server) is an open-source Model Context Protocol (MCP) server that runs locally on a developer's machine and lets AI-powered assistants interact with AWS Transform to run code-transformation jobs and retrieve their artifacts. We identified CVE-2026-18953. Improper limitation of a pathname to a restricted directory in the get_resource tool in awslabs.aws-transform-mcp-server before 0.1.5 might allow a context-dependent actor to write arbitrary files outside the intended working directory via the savePath parameter, which could lead to local code execution. Impacted versions: >=0.1.0 AND <=0.1.4 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "Threat matrix: Mapping threats across cloud web applications",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/",
       "published": "2026-09-09T21:30:00+00:00",
@@ -959,7 +1121,7 @@
       "title": "SVD-2026-0901: Advance Notice of Publication of Splunk Security Advisories - September 2026",
       "link": "https://advisory.splunk.com/advisories/SVD-2026-0901",
       "published": "2026-09-09T00:00:00+00:00",
-      "summary": "On October 7, 2026, Splunk PSIRT will publish advisories to disclose security vulnerability advisories for Splunk Enterprise, Universal Forwarder, and Splunk Apps and Add-ons.",
+      "summary": "On October 7, 2026, Splunk PSIRT will publish advisories to disclose security vulnerabilities for Splunk Enterprise, Universal Forwarder, and Splunk Apps and Add-ons.",
       "author": "Splunk",
       "source": "Splunk Security Advisories",
       "source_id": "splunk_security",
@@ -3550,81 +3712,6 @@
       ]
     },
     {
-      "title": "​​​​​​What’s new in Microsoft Security: August 2026",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/27/whats-new-in-microsoft-security-august-2026/",
-      "published": "2026-08-27T16:00:00+00:00",
-      "summary": "This month’s updates provide new capabilities to help organizations gain insights into agent activity, expand security coverage across supported environments, and enhance security management across their environments. The post ​​​​​​What’s new in Microsoft Security: August 2026 appeared first on...",
-      "author": "Alym Rayani",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "As organizations incorporate AI agents into more processes across business and operations, security teams can benefit from greater visibility and new purpose-built tools that help manage, secure, and govern AI. This month’s updates provide new capabilities to help organizations gain insights into agent activity, expand security coverage across supported environments, and enhance security management across their environments. Here’s what’s new: Extend expert-led protection with new capabilities from Microsoft Defender Experts Microsoft Defender Experts Threat Intelligence delivers expert-led threat intelligence and actionable insights tailored to your geography, industry, and risk profile to help security teams anticipate cyberthreats, assess risk, and take informed action. Microsoft Defender Experts MDR now covers third-party data sources ingested through Microsoft Sentinel. This extends around-the-clock managed detection and response and threat hunting to deliver protection across both Microsoft native and third-party data sources, including Palo Alto Networks, Amazon Web Services (AWS), Okta, and more. This coverage is available through Microsoft Defender Experts MDR P2. Get started with Microsoft Defender Experts MDR Strengthen identity foundations for the AI era with Microsoft Entra Microsoft Entra Tenant Governance brings an organization’s tenants into a single view to help address security gaps and blind spots. Centralized policies and cross-tenant delegated administration of multi-tenant environments help reduce shadow-tenant risk, configure policies, monitor configuration drift, and strengthen identity foundations for AI-powered operations. The configuration drifts report, showing drift details including types, properties and timestamps, enabling continuous tenant configuration monitoring for a consistent security and compliance posture. Accelerate your move to cloud-native endpoint management with Microsoft Intune Windows Autopilot device association lets admins link devices to their tenant and configure pre-enrollment experiences. Admins can optimize the out-of-box experience and rename devices, reducing onboarding friction. Windows Unattended Support with Remote Sign-In allows IT and support staff to sign in to devices remotely, without involving the user. Role-based permissions, compliance checks, and session auditing are built in. Protect endpoints with Microsoft Intune Speed up Microsoft Copilot readiness with scalable Microsoft Purview...",
-      "links": [
-        {
-          "label": "Microsoft Defender Experts Threat Intelligence",
-          "url": "https://www.microsoft.com/en-us/security/business/services/microsoft-defender-experts-threat-intelligence?msockid=1863b3d18b0c6b5e06d1a56c8a4f6a19"
-        },
-        {
-          "label": "Microsoft Defender Experts MDR",
-          "url": "https://www.microsoft.com/en-us/security/business/services/microsoft-defender-experts-mdr?msockid=25cfdac4ec1e6114037bcd63ed2860f5"
-        },
-        {
-          "label": "Microsoft Sentinel",
-          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel-siem?msockid=3d0c53b8af3868db0edb4404aecf698f"
-        },
-        {
-          "label": "third-party data sources",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/defender-experts/defender-experts-mdr-overview#third-party-source-coverage-for-plan-2"
-        },
-        {
-          "label": "Microsoft Entra Tenant Governance",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-tenant-governance-is-now-generally-available/4543638"
-        },
-        {
-          "label": "Windows Autopilot device association",
-          "url": "https://aka.ms/IntuneDeviceAssociation"
-        },
-        {
-          "label": "Windows Unattended Support with Remote Sign-In",
-          "url": "https://aka.ms/Intune/Remote-Help-Unattended"
-        },
-        {
-          "label": "Protect endpoints with Microsoft Intune",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-intune"
-        },
-        {
-          "label": "Auto-labeling policies in Microsoft Purview",
-          "url": "https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically?tabs=apply-label"
-        },
-        {
-          "label": "Microsoft 365 Copilot",
-          "url": "https://www.microsoft.com/en-us/microsoft-365-copilot"
-        },
-        {
-          "label": "Secure and govern data with Microsoft Purview",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-purview"
-        },
-        {
-          "label": "New Secure Now guidance for agentic containment",
-          "url": "https://techcommunity.microsoft.com/blog/securityexposuremanagement/containment-strategies-for-ai-now-available-in-secure-now/4539827"
-        }
-      ]
-    },
-    {
       "title": "Disruptive cyber activity highlights risk from internet-exposed systems and edge devices",
       "link": "https://www.ncsc.gov.uk/news/disruptive-cyber-activity-highlights-risk-from-internet-exposed-systems-and-edge-devices",
       "published": "2026-08-27T12:00:00+00:00",
@@ -3777,81 +3864,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "When AI infrastructure becomes the target: Securing gateways and control points",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/26/when-ai-infrastructure-becomes-target-securing-gateways-control-points/",
-      "published": "2026-08-26T16:43:53+00:00",
-      "summary": "Microsoft Threat Intelligence examines attacks on exposed AI workloads, including LiteLLM gateway exploitation, credential harvesting, persistence, and cryptomining activity. The post When AI infrastructure becomes the target: Securing gateways and control points appeared first on Microsoft...",
-      "author": "Microsoft Security Research, Yash Gund and Sumith Maniath",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article AI workloads are becoming high-value control pointsCase study 1: LiteLLM gateway compromiseCase study 2: RAGFlow compromiseCase study 3: Kestra compromiseMitigation and protection guidanceMITRE ATT&CK techniques observedReferencesLearn more AI is creating a new layer of enterprise infrastructure. Gateways, retrieval platforms, orchestration services, and containerized runtimes now sit between users, applications, data, and models. These systems concentrate credentials, data access, model connectivity, and execution privileges, making them some of the most powerful components in the AI stack. That concentration of trust is also creating new opportunities for attackers. In recent investigations, Microsoft observed activity targeting three distinct AI workloads: a LiteLLM gateway, a RAGFlow deployment, and a Kestra workflow environment. The intrusion paths varied, but the objectives were strikingly similar. Attackers sought to steal credentials, establish persistence, and monetize compromised compute resources. The individual techniques matter, but the broader pattern matters more. Across these cases, attackers treated AI infrastructure as a control plane where credential theft, host compromise, and downstream data access can converge. As organizations continue to deploy AI systems, these platforms are becoming high value targets that deserve the same security scrutiny as other critical enterprise infrastructure. AI workloads are becoming high-value control points The campaign-level signal extends beyond one product. The targeted workloads served different functions, but each exposed assets that could support follow-on abuse, including model-provider keys, proxy-issued virtual keys, database connection strings, tenant configuration, workflow execution, or host compute. Post-compromise behavior varied by workload role. Defenders should inventory exposed AI management surfaces, restrict administrative access, and monitor for gateway-originated execution and secret access. Three observed compromises across AI workloads AI workloadObserved activityAttacker objectiveLiteLLM Observed attacker activity: Python droppers, runtime secret harvesting, PostgreSQL collection, miner deployment, and persistence activity from the LiteLLM gateway context.Microsoft assessment: Initial access likely occurred through exploitation of the exposed LiteLLM gateway surface, consistent with the vulnerability chain involving CVE-2026-42271 and CVE-2026-48710.Credential...",
-      "links": [
-        {
-          "label": "AI workloads are becoming high-value control points",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-workloads-are-becoming-high-value-control-points"
-        },
-        {
-          "label": "Case study 1: LiteLLM gateway compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-study-1-litellm-gateway-compromise"
-        },
-        {
-          "label": "Case study 2: RAGFlow compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-study-2-ragflow-compromise"
-        },
-        {
-          "label": "Case study 3: Kestra compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-study-3-kestra-compromise"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "MITRE ATT&CK techniques observed",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitre-att-ck-techniques-observed"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "CVE-2026-42271",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-42271"
-        },
-        {
-          "label": "CVE-2026-48710",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-48710"
-        },
-        {
-          "label": "create their own prompts",
-          "url": "https://learn.microsoft.com/copilot/security/prompting-security-copilot#create-your-own-prompts"
-        },
-        {
-          "label": "prebuilt promptbooks",
-          "url": "https://learn.microsoft.com/copilot/security/using-promptbooks"
-        }
       ]
     },
     {
@@ -4641,65 +4653,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "[Launched] Generally Available: 2.2X IDPS performance optimization in Azure Firewall",
-      "link": "https://azure.microsoft.com/updates?id=569256",
-      "published": "2026-08-11T17:26:51+00:00",
-      "summary": "Azure Firewall Premium now delivers up to 22 Gbps throughput with TLS inspection and IDPS in Deny mode, a 120% increase from 10 Gbps, and up to 600 Mbps per TCP connection with IDPS enabled in either Alert or Deny mode (doubled from 300 Mbps). Learn more.",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Microsoft Entra: Users can register a passkey or passwordless sign-in as their first multifactor authentication method",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450133",
-      "published": "2026-08-11T16:19:53.350000+00:00",
-      "summary": "Updated August 11, 2026: We have updated the content. Thank you for your patience. [What and why]Users will soon be able to register a passkey as their first multifactor authentication method. Previously, people had to set up an alternate MFA method like SMS or Voice before they could add a passkey...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1450133",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated August 11, 2026: We have updated the content. Thank you for your patience. [What and why]Users will soon be able to register a passkey as their first multifactor authentication method. Previously, people had to set up an alternate MFA method like SMS or Voice before they could add a passkey (FIDO2), Windows Hello for Business, macOS Platform SSO. That extra step pushed users toward weaker methods and slowed the move to phishing-resistant sign-in. Now password-only users can go straight to a passkey, making it easier to adopt strong authentication from day one. As part of this work, we will also be enabling Authenticator App passwordless sign-in to be a user's first registered MFA method. [Rollout schedule]This feature will roll out in phases: Phase 1: Support for synced passkeys, Microsoft Entra passkeys on Windows, and FIDO2 security keys. General Availability (Worldwide, GCC): We will begin rolling out in mid-October 2026 and expect to complete by mid-November 2026. Phase 2: Support for Windows Hello for Business, macOS Platform SSO, Authenticator App passkey, and Authenticator App passwordless sign-in. General Availability (Worldwide, GCC): We will begin rolling out in early January 2026 and expect to complete by late February 2027. [Impact on your organization]Who is affectedUsers who have not yet registered a multifactor authentication methodIdentity and security administrators responsible for authentication onboarding and registration policiesPlatforms and servicesMicrosoft Entra IDPasskeys (FIDO2)Windows Hello for BusinessmacOS Platform SSOMicrosoft Authenticator passwordless sign-inWhat will happenPassword-only users will be able to register passkeys or passwordless sign-in as their first MFA method.Users will no longer need to register a method such as SMS or voice before registering a passkey (FIDO2), Windows Hello for Business, macOS Platform SSO, or Authenticator passwordless sign-in.Organizations may see reduced registration friction and increased adoption of phishing-resistant authentication methods.[Action required and recommendations]No action is required for this change.We recommend that administrators:Review Conditional Access policies related to security information registration.Consider requiring MFA to register security information if additional verification is required by your organization.Review onboarding and registration guidance so users know to set up a passkey as their preferred first method.Learn more (To be updated closer to rollout) Register a synced passkey (FIDO2) | Authentication | Microsoft Entra ID | Microsoft Learn[Compliance considerations]QuestionAnswerDoes the change include an admin control?Yes. Administrators can control which authentication methods users are allowed to register through existing Microsoft Entra authentication method policies and Conditional Access policies.Does the change affect access or authentication controls?Yes. The update changes how users register multifactor authentication methods by allowing eligible users to register supported passkeys or passwordless authentication methods as their first MFA method.Can administrators govern the feature through existing Microsoft Entra controls?Yes. Administrators retain control over the feature through Microsoft Entra authentication method policies and Conditional Access configurations.",
-      "links": [
-        {
-          "label": "Register a synced passkey (FIDO2) | Authentication | Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-register-passkey"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
       ]
     }
   ]
