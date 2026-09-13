@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-12T20:21:08.220291+00:00",
-  "totalArticles": 132,
+  "lastUpdated": "2026-09-13T03:59:40.259218+00:00",
+  "totalArticles": 131,
   "articles": [
     {
       "title": "Chromium CVE-2026-87491: Out of bounds write in V8",
@@ -4540,41 +4540,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "(Updated) Microsoft Entra ID: Retirement of SMS first-factor sign-in for Entra ID Free tenants",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1448374",
-      "published": "2026-08-13T20:30:56.690000+00:00",
-      "summary": "Updated August 10, 2026: We have updated the timeline. We apologize for any inconvenience. [What and why]Microsoft will retire SMS first-factor sign-in for Microsoft Entra ID Free tenants on August 11, 2026, due to increased fraudulent activity targeting this authentication method. SMS first-factor...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1448374",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated August 10, 2026: We have updated the timeline. We apologize for any inconvenience. [What and why]Microsoft will retire SMS first-factor sign-in for Microsoft Entra ID Free tenants on August 11, 2026, due to increased fraudulent activity targeting this authentication method. SMS first-factor sign-in allows users to sign in using only a registered phone number and a one-time passcode (OTP) sent by SMS, without entering a username or password. Because this sign-in method relies solely on a registered phone number and SMS-delivered passcode, it is more susceptible to abuse and account compromise than phishing-resistant authentication methods. This change applies only to SMS first-factor sign-in. SMS used as a multifactor authentication (MFA) method is not affected. Users can continue receiving SMS verification codes as an additional authentication factor after completing their primary sign-in.[Rollout schedule]Beginning August 11, 2026, SMS first-factor sign-in will no longer be supported for Microsoft Entra ID Free tenants.[Impact on your organization]Who is affectedMicrosoft Entra ID Free tenants with SMS first-factor sign-in enabledUsers who rely exclusively on SMS first-factor sign-inPlatforms and servicesMicrosoft Entra IDSMS first-factor passwordless sign-in (SignInNoPassword)What will happenUsers in Microsoft Entra ID Free tenants will no longer be able to use SMS as a first-factor sign-in method.Attempts to sign in using only a registered phone number and SMS one-time passcode will be blocked.Users who have another registered authentication method can continue signing in using that method.SMS as a multifactor authentication method is not affected.All other registered authentication methods remain available.Users who rely exclusively on SMS first-factor sign-in must register and use another authentication method before the retirement date.[Action required and recommendations]If your organization has users relying on SMS first-factor sign-in, we recommend that you:Identify users currently using SMS first-factor sign-in.Ensure affected users register an alternative authentication method before August 11, 2026.Communicate this change to affected users to help prevent sign-in disruptions.Migrate users to passkeys or other phishing-resistant authentication methods where possible.Review authentication method policies and remove dependencies on SMS first-factor sign-in.Learn moreEnable the SMS-based authentication method - Configure and enable users for SMS-based authentication using Microsoft Entra ID | Microsoft Learn[Compliance considerations]QuestionAnswerDoes this change modify how users access Microsoft 365 resources or services?Yes. Users in affected Microsoft Entra ID Free tenants will no longer be able to sign in using SMS as their first-factor authentication method and must use another registered sign-in method.Does this change require admin action to maintain user access?Yes. Administrators should identify users who rely on SMS first-factor sign-in and ensure those users register an alternative authentication method before the retirement date to avoid sign-in disruptions.Does this change affect authentication or access management policies?Yes. Organizations that currently depend on SMS first-factor sign-in may need to review and update their authentication policies to remove dependencies on this retired authentication method.",
-      "links": [
-        {
-          "label": "Enable the SMS-based authentication method - Configure and enable users for SMS-based authentication using Microsoft...",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/howto-authentication-sms-signin#enable-the-sms-based-authentication-method"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
       ]
     }
   ]
