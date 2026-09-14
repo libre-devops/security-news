@@ -1,8 +1,89 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-14T04:07:49.302943+00:00",
-  "totalArticles": 131,
+  "lastUpdated": "2026-09-14T12:14:45.854239+00:00",
+  "totalArticles": 132,
   "articles": [
+    {
+      "title": "Locking down PAWs internet access when GSA drops",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/locking-down-paws-internet-access-when-gsa-drops/ba-p/4553963",
+      "published": "2026-09-14T08:38:19+00:00",
+      "summary": "By: Christian Friedel-Jain - Sr. Security Consultant | James Noyce - Sr. Security Solution Engineer Introduction Privileged Access Workstations (PAWs) are among the most sensitive endpoints in any organization. A PAW, in most of our Microsoft consulting projects, exists to do one job safely:...",
+      "author": "ChristianFriedel-Jain",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint",
+        "Threat Intelligence"
+      ],
+      "body": "By: Christian Friedel-Jain - Sr. Security Consultant | James Noyce - Sr. Security Solution Engineer Introduction Privileged Access Workstations (PAWs) are among the most sensitive endpoints in any organization. A PAW, in most of our Microsoft consulting projects, exists to do one job safely: administer cloud services from a hardened device that is only ever allowed to reach a small, tightly controlled set of internet destinations. But an endpoint’s security posture is ultimately defined by its behavior under failure conditions. When we moved the internet access restriction for our PAW devices from a locally enforced restriction (more about that later) to a solution based on Microsoft Global Secure Access (GSA), we immediately identified a gap under failure conditions – but first a quick grounding on the moving parts. Global Secure Access (What is Global Secure Access?) is Microsoft’s umbrella term for Microsoft Entra Internet Access and Microsoft Entra Private Access — the components of Microsoft’s Security Service Edge solution. For a PAW device we are leveraging Microsoft Entra Internet Access as an identity centric secure web gateway solution to control exactly which internet destinations the workstation can reach, by applying a fine-grained set of rules and policies enforced through Conditional Access in Microsoft Entra. This configuration provides us better filtering capabilities, like web content filtering (Global Secure Access web content filtering) with TLS inspection (TLSi) (Global Secure Access transport layer security inspection) and additional features like Threat Intelligence (Global Secure Access threat intelligence), but it comes also with a downside. Currently by default, if the GSA client encounters an issue or cannot connect to its required GSA edge services, the GSA client will fall back to a fail-open state, rather than to a fail-close state. Difference between those two modes: Fail-Open: When a security or control mechanism fails, access is still allowed. Fail-Close: When the security or control mechanism fails, access is blocked. This blog post covers above problem and showcases a solution we built, as part of our projects, to achieve a “Fail-Close” state rather than having the current “Fail-Open” behavior. The enforcement of the “Fail-Close” solution we developed works at two independent layers, both are deployable through Microsoft Intune: A network layer: Windows Defender Firewall network profiles, a rule set with Windows Firewall...",
+      "links": [
+        {
+          "label": "What is Global Secure Access?",
+          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access"
+        },
+        {
+          "label": "Global Secure Access web content filtering",
+          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-configure-web-content-filtering?tabs=microsoft-entra-admin-center"
+        },
+        {
+          "label": "Global Secure Access transport layer security inspection",
+          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/concept-transport-layer-security"
+        },
+        {
+          "label": "Global Secure Access threat intelligence",
+          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-configure-threat-intelligence"
+        },
+        {
+          "label": "Windows Firewall Dynamic Keywords",
+          "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/dynamic-keywords"
+        },
+        {
+          "label": "Microsoft Defender Firewall",
+          "url": "https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-deployment#set-rules-in-the-endpoint-protection-configuration-profile-for-microsoft-defender-firewall"
+        },
+        {
+          "label": "URL lock proxy",
+          "url": "https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-deployment#url-lock-proxy"
+        },
+        {
+          "label": "Service Level Agreement performance for Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-sla-performance#recent-worldwide-sla-performance"
+        },
+        {
+          "label": "Windows Firewall Network Profiles",
+          "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/#firewall-profiles"
+        },
+        {
+          "label": "AutoResolve dynamic keyword addresses",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/ics/firewall-dynamic-keywords#autoresolve-dynamic-keyword-addresses"
+        },
+        {
+          "label": "Use reusable groups of settings policies in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/reusable-settings-groups"
+        },
+        {
+          "label": "FQDN and IP addresses where the Global Secure Access service receives traffic",
+          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-points-of-presence#fqdn-and-ip-addresses-where-the-global-secure-access-service-receives-traffic"
+        }
+      ]
+    },
     {
       "title": "Chromium CVE-2026-87491: Out of bounds write in V8",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87491",
