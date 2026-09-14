@@ -1,8 +1,102 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-14T12:14:45.854239+00:00",
-  "totalArticles": 132,
+  "lastUpdated": "2026-09-14T21:39:18.270021+00:00",
+  "totalArticles": 134,
   "articles": [
+    {
+      "title": "(Updated) Microsoft Entra ID: Passkey support for B2B users",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1459133",
+      "published": "2026-09-14T18:48:07.210000+00:00",
+      "summary": "Updated September 14, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra ID will support passkey registration and sign-in for B2B users, including internal guest users and external users. Eligible B2B users will be able to register and use passkeys issued...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1459133",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated September 14, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra ID will support passkey registration and sign-in for B2B users, including internal guest users and external users. Eligible B2B users will be able to register and use passkeys issued by the resource tenant to satisfy that tenant's multifactor authentication (MFA) requirements.Passkeys are already supported for member users in their home tenant. Until now, B2B users could not use a resource tenant passkey when that tenant required MFA and did not trust the home tenant's MFA. This update closes that gap and gives guest and external users a phishing-resistant way to satisfy MFA requirements in the resource tenant.B2B users can register a resource tenant passkey from the resource tenant's My Security Info page, during a proof-up prompt, or through a passkey registration campaign. Once registered, the passkey can satisfy the resource tenant's MFA requirements during sign-in.Microsoft Authenticator app passkeys will be supported for internal guest users but not for external users.Important: This rollout intersects with the previously announced retirement of SMS and voice authentication. As described in Message Center posts MC1426371 and MC1434201, any user enabled for SMS or voice in the Authentication methods policy or legacy MFA policies will be automatically enabled for all passkey types. This will include eligible B2B users when B2B passkey support becomes available. [Rollout schedule]General Availability (GCC, Worldwide): Beginning in early October 2026 and expected to complete by late February 2027Internal guest users: Beginning in early October 2026 and is expected to complete by late October 2026External users (excluding Microsoft Authenticator app passkeys): Rollout timing will be communicated in a future Message center post update.[Impact on your organization]Who is affectedMicrosoft Entra administrators managing Authentication methods policiesOrganizations that use Microsoft Entra B2B collaborationInternal guest users and external users who are in scope for passkey authenticationInternal guest users and external users who are enabled for SMS or voice in the Authentication methods policy or legacy MFA policiesPlatforms and servicesMicrosoft Entra IDMy Security InfoAuthentication methods policyConditional AccessWhat will happenThe feature will be enabled by default.B2B users who are already in scope for passkeys in your Authentication methods policy will automatically be able to register and sign in with resource tenant passkeys.Eligible B2B users may receive prompts to register a passkey during sign-in through proof-up experiences or passkey registration campaigns, if those experiences are configured in your tenant.Users can also register a passkey from the resource tenant's My Security Info page.If your organization has excluded B2B users from passkeys in the Authentication methods policy, and those users are not separately subject to automatic passkey enablement through the SMS and voice retirement changes, they will not be prompted and will not be able to register or sign in with a resource tenant passkey.Under the SMS and voice retirement changes described in MC1426371 and MC1434201, B2B users who are enabled for SMS or voice in the Authentication methods policy or legacy MFA policies will be automatically enabled for all passkey types. Excluding these users from the passkey policy alone will not prevent this automatic enablement if they remain enabled for SMS or voice.This change gives guest and external users a phishing-resistant sign-in option and helps organizations extend strong authentication requirements to their B2B population.[Action required and recommendations]No action is required.We recommend that administrators review current passkey and MFA configurations before rollout:Review your Authentication methods policy. Confirm which users are in scope for passkeys, including guest and external users. B2B users who are in scope will be enabled automatically. Exclude them from the policy if that is not the intended behavior.Review Message Center posts MC1426371 and MC1434201 for details about the SMS and voice retirement changes.Review SMS and voice assignments in both the Authentication methods policy and legacy MFA policies. If you do not want specific B2B users to be automatically enabled for all passkey types, move those users off SMS and voice in all applicable policies. Excluding them only from the passkey policy is not sufficient while they remain enabled for SMS or voice.Review your passkey registration campaign. Confirm that the campaign's user scope includes the intended users.Review your Conditional Access policies. Confirm that MFA and authentication strength requirements will apply as intended for B2B users when resource tenant passkeys become available.Confirm user scoping across authentication-related policies. Make sure the groups and user types targeted by each policy align with your organization's requirements for guest and external users.Consider notifying your help desk and identity support teams that eligible B2B users may begin receiving passkey registration prompts after rollout.[Compliance considerations]QuestionAnswerDoes the change store new customer data?Passkey credential registration data may be stored as part of Microsoft Entra authentication management.Does the change alter how existing customer data is processed, stored, or accessed?The change introduces an additional authentication method for B2B users accessing resource tenant resources.",
+      "links": [
+        {
+          "label": "internal guest users and external users",
+          "url": "https://learn.microsoft.com/entra/external-id/user-properties"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Microsoft Entra: Users can register a passkey or passwordless sign-in as their first multifactor authentication method",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450133",
+      "published": "2026-09-14T18:38:32.820000+00:00",
+      "summary": "Updated September 14, 2026: We have updated the content. Thank you for your patience. [What and why]Users will soon be able to register a passkey as their first multifactor authentication method. Previously, people had to set up an alternate MFA method like SMS or Voice before they could add a...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1450133",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated September 14, 2026: We have updated the content. Thank you for your patience. [What and why]Users will soon be able to register a passkey as their first multifactor authentication method. Previously, people had to set up an alternate MFA method like SMS or Voice before they could add a passkey (FIDO2), Windows Hello for Business, macOS Platform SSO. That extra step pushed users toward weaker methods and slowed the move to phishing-resistant sign-in. Now password-only users can go straight to a passkey, making it easier to adopt strong authentication from day one. As part of this work, we will also be enabling Authenticator App passwordless sign-in to be a user's first registered MFA method. [Rollout schedule]This feature will roll out in phases: Phase 1: Support for synced passkeys, Microsoft Entra passkeys on Windows, and FIDO2 security keys. General Availability (Worldwide, GCC): We will begin rolling out in early October 2026 (previously mid-October) and expect to complete by mid-November 2026. Phase 2: Support for Windows Hello for Business, macOS Platform SSO, Authenticator App passkey, and Authenticator App passwordless sign-in. General Availability (Worldwide, GCC): We will begin rolling out in early January 2026 and expect to complete by late February 2027. [Impact on your organization]Who is affectedUsers who have not yet registered a multifactor authentication methodIdentity and security administrators responsible for authentication onboarding and registration policiesPlatforms and servicesMicrosoft Entra IDPasskeys (FIDO2)Windows Hello for BusinessmacOS Platform SSOMicrosoft Authenticator passwordless sign-inWhat will happenPassword-only users will be able to register passkeys or passwordless sign-in as their first MFA method.Users will no longer need to register a method such as SMS or voice before registering a passkey (FIDO2), Windows Hello for Business, macOS Platform SSO, or Authenticator passwordless sign-in.Organizations may see reduced registration friction and increased adoption of phishing-resistant authentication methods.[Action required and recommendations]No action is required for this change.We recommend that administrators:Review Conditional Access policies related to security information registration.Consider requiring MFA to register security information if additional verification is required by your organization.Review onboarding and registration guidance so users know to set up a passkey as their preferred first method.Learn more (To be updated closer to rollout) Register a synced passkey (FIDO2) | Authentication | Microsoft Entra ID | Microsoft Learn[Compliance considerations]QuestionAnswerDoes the change include an admin control?Yes. Administrators can control which authentication methods users are allowed to register through existing Microsoft Entra authentication method policies and Conditional Access policies.Does the change affect access or authentication controls?Yes. The update changes how users register multifactor authentication methods by allowing eligible users to register supported passkeys or passwordless authentication methods as their first MFA method.Can administrators govern the feature through existing Microsoft Entra controls?Yes. Administrators retain control over the feature through Microsoft Entra authentication method policies and Conditional Access configurations.",
+      "links": [
+        {
+          "label": "Register a synced passkey (FIDO2) | Authentication | Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-register-passkey"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: HTTP/3 over QUIC support in Azure Application Gateway",
+      "link": "https://azure.microsoft.com/updates?id=571123",
+      "published": "2026-09-14T17:55:00+00:00",
+      "summary": "Announcing public preview support for HTTP/3 over QUIC on Azure Application Gateway. HTTP/3 is the next evolution of HTTP and uses QUIC to improve connection setup time, reduce latency, and provide better resiliency for modern web applications and APIs. W",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Locking down PAWs internet access when GSA drops",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/locking-down-paws-internet-access-when-gsa-drops/ba-p/4553963",
@@ -4112,36 +4206,6 @@
           "url": "https://learn.microsoft.com/entra/identity/authentication/concept-system-preferred-authentication"
         }
       ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "Microsoft Entra ID: Passkey support for B2B users",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1459133",
-      "published": "2026-08-21T22:38:13.657000+00:00",
-      "summary": "[What and why]Microsoft Entra ID will support passkey registration and sign-in for B2B users, including internal guest users and external users. Eligible B2B users will be able to register and use passkeys issued by the resource tenant to satisfy that tenant's multifactor authentication (MFA)...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1459133",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]Microsoft Entra ID will support passkey registration and sign-in for B2B users, including internal guest users and external users. Eligible B2B users will be able to register and use passkeys issued by the resource tenant to satisfy that tenant's multifactor authentication (MFA) requirements.Passkeys are already supported for member users in their home tenant. Until now, B2B users could not use a resource tenant passkey when that tenant required MFA and did not trust the home tenant's MFA. This update closes that gap and gives guest and external users a phishing-resistant way to satisfy MFA requirements in the resource tenant.B2B users can register a resource tenant passkey from the resource tenant's My Security Info page, during a proof-up prompt, or through a passkey registration campaign. Once registered, the passkey can satisfy the resource tenant's MFA requirements during sign-in.Microsoft Authenticator app passkeys will be supported for internal guest users but not for external users.[Rollout schedule]General Availability (GCC, Worldwide): Beginning in early October 2026 and expected to complete by late February 2027Internal guest users: Beginning in early October 2026 and is expected to complete by late October 2026External users (excluding Microsoft Authenticator app passkeys): Rollout timing will be communicated in a future Message center post update.[Impact on your organization]Who is affectedMicrosoft Entra administrators managing Authentication methods policiesOrganizations that use Microsoft Entra B2B collaborationInternal guest users and external users who are in scope for passkey authenticationPlatforms and servicesMicrosoft Entra IDMy Security InfoAuthentication methods policyConditional AccessWhat will happenThe feature will be enabled by default.B2B users who are already in scope for passkeys in your Authentication methods policy will automatically be able to register and sign in with resource tenant passkeys.No administrative action is required to enable this feature.Eligible B2B users may receive prompts to register a passkey during sign-in through proof-up experiences or passkey registration campaigns, if those experiences are configured in your tenant.Users can also register a passkey from the resource tenant's My Security Info page.If your organization has excluded B2B users from passkeys in the Authentication methods policy, those users will not be prompted and will not be able to register or sign in with a resource tenant passkey.This change gives guest and external users a phishing-resistant sign-in option and helps organizations extend strong authentication requirements to their B2B population.[Action required and recommendations]No action is required.We recommend that administrators review current passkey and MFA configurations before rollout:Review your Authentication methods policy. Confirm which users are in scope for passkeys, including guest and external users. B2B users who are in scope will be enabled automatically. Exclude them from the policy if that is not the intended behavior.Review your passkey registration campaign. Confirm that the campaign's user scope includes the intended users.Review your Conditional Access policies. Confirm that MFA and authentication strength requirements will apply as intended for B2B users when resource tenant passkeys become available.Confirm user scoping across authentication-related policies. Make sure the groups and user types targeted by each policy align with your organization's requirements for guest and external users.Consider notifying your help desk and identity support teams that eligible B2B users may begin receiving passkey registration prompts after rollout.[Compliance considerations]QuestionAnswerDoes the change store new customer data?Passkey credential registration data may be stored as part of Microsoft Entra authentication management.Does the change alter how existing customer data is processed, stored, or accessed?The change introduces an additional authentication method for B2B users accessing resource tenant resources.",
-      "links": [],
       "products": [
         {
           "id": "message-center",
