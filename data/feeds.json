@@ -1,8 +1,68 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-15T11:23:18.063680+00:00",
-  "totalArticles": 135,
+  "lastUpdated": "2026-09-15T16:35:30.990868+00:00",
+  "totalArticles": 136,
   "articles": [
+    {
+      "title": "Iranian cyber targeting of dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
+      "published": "2026-09-15T12:00:00+00:00",
+      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "NCSC Guidance",
+        "Threat Intelligence"
+      ]
+    },
+    {
+      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
+      "published": "2026-09-15T12:00:00+00:00",
+      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "NCSC Guidance",
+        "Threat Intelligence"
+      ]
+    },
     {
       "title": "Chromium CVE-2026-87500: Improper validation of array index in ANGLE",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87500",
@@ -551,65 +611,6 @@
       ],
       "tags": [
         "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "Public Preview: Multi-account support for Microsoft Sentinel codeless connectors",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/public-preview-multi-account-support-for-microsoft-sentinel/ba-p/4544380",
-      "published": "2026-09-14T18:13:41+00:00",
-      "summary": "Security teams rarely have just one of anything. Most SOCs run separate production, staging, and development accounts. Large enterprises segment by region, business unit, or brand. And managed security service providers (MSSPs) watch over many customers at once. Traditionally, ISVs have used the...",
-      "author": "MitchellGulledge",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel"
-      ],
-      "body": "Security teams rarely have just one of anything. Most SOCs run separate production, staging, and development accounts. Large enterprises segment by region, business unit, or brand. And managed security service providers (MSSPs) watch over many customers at once. Traditionally, ISVs have used the following configuration – one connector for one product (or workspace), over as many instances of that product as are implemented. We set out to simplify and streamline that experience. Today we're excited to announce the public preview of multi-account support for codeless connectors in Microsoft Sentinel. A single connector built on the Codeless Connector Framework (CCF) can now support multiple, independently deployable connections in the same workspace, each shown in one unified list so that one connector scales to however many accounts a customer runs. What's new The current CCF separates a connector's user interface from its connection configuration. That separation is what makes multiple connections possible. With the multi-account pattern, a connector provides: A unified connections list: Every connection appears as its own row, labeled with the details that identify it such as account name, tenant ID, or environment (as seen in the screenshot above). An Add connection experience: Users add another connection through a guided form without disturbing the connections that already exist. Independent lifecycle per connection: Each connection is deployed, edited, and deleted on its own. Removing one leaves the others untouched. Shared, efficient ingestion: All connections flow through the same data collection rule and land in the same table, so adding connections doesn't multiply your ingestion plumbing. The result is a clean, predictable way to bring many sources of the same product into one Sentinel workspace. In brief, here’s how it looks in practice: Under the hood, the connector definition that renders the UI is shared, and so are the ingestion resources — the data collection rule, the data collection endpoint, and the destination table. What's created per connection is a single lightweight data connector resource with a unique name, tagged with the metadata that labels it in the grid. That unique name is what lets connections coexist instead of overwriting one another. Microsoft recommends all new CCF connectors support multi-account where appropriate. For a full walkthrough, annotated JSON, and an authoring checklist, see our MS Learn documentation on...",
-      "links": [
-        {
-          "label": "Codeless Connector Framework (CCF)",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/isv/create-codeless-connector"
-        },
-        {
-          "label": "MS Learn documentation",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/isv/multi-account-ccf-connector"
-        },
-        {
-          "label": "Semperis Lightning",
-          "url": "https://securitystore.microsoft.com/solutions/semperis.azure-sentinel-solution-semperislightning"
-        },
-        {
-          "label": "our intake form",
-          "url": "https://aka.ms/appassurerequest"
-        },
-        {
-          "label": "Public Preview Announcement: Empower Real-Time Security with Microsoft Sentinel’s CCF Push Feature | Microsoft...",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-announcement-empower-real-time-security-with-microsoft-sentinel%E2%80%99s/4483884"
-        },
-        {
-          "label": "Accelerate connectors development using AI agent in Microsoft Sentinel | Microsoft Community Hub",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/accelerate-connectors-development-using-ai-agent-in-microsoft-sentinel/4507019"
-        },
-        {
-          "label": "Extending Sentinel Data Integration: Azure Blob Storage Support for CCF Connectors | Microsoft Community Hub",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/extending-sentinel-data-integration-azure-blob-storage-support-for-ccf-connector/4516896?"
-        },
-        {
-          "label": "Public Preview: Nested API Support Comes to Microsoft Sentinel CCF | Microsoft Community Hub",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-nested-api-support-comes-to-microsoft-sentinel-ccf/4537026"
-        }
       ]
     },
     {
