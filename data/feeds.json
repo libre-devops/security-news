@@ -1,8 +1,109 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-16T16:28:07.954355+00:00",
-  "totalArticles": 139,
+  "lastUpdated": "2026-09-16T21:04:26.987732+00:00",
+  "totalArticles": 140,
   "articles": [
+    {
+      "title": "CVE-2026-86831: Improper validation of pod identifier uniqueness in aws-network-policy-agent in Amazon EKS",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-113-aws/",
+      "published": "2026-09-16T20:16:23+00:00",
+      "summary": "Bulletin ID: 2026-113-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/16/2026 12:30 PM PDT Description: Network Policy Agent is an EKS Policy management feature. We identified CVE-2026-86831, a cross-namespace NetworkPolicy bypass in Amazon EKS Network Policy Agent...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-113-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/16/2026 12:30 PM PDT Description: Network Policy Agent is an EKS Policy management feature. We identified CVE-2026-86831, a cross-namespace NetworkPolicy bypass in Amazon EKS Network Policy Agent (aws-network-policy-agent) before v1.4.0. Pod identifiers are constructed by concatenating the pod name and namespace with a hyphen delimiter, which is a legal character in both Kubernetes pod names and namespace names. This ambiguity can produce identical identifiers for pods across different namespaces, potentially allowing NetworkPolicy enforcement to be bypassed. Impacted versions: - 1.14.0<1.22.3 Amazon VPC CNI Managed Add-on - < v1.4.0 Network Policy Agent Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "Microsoft’s commitment for AI in education",
+      "link": "https://blogs.microsoft.com/blog/2026/09/16/microsofts-commitment-for-ai-in-education/",
+      "published": "2026-09-16T18:59:58+00:00",
+      "summary": "Microsoft has been in the business of education for five decades. Since the earliest days of this company, we have worked alongside educators, students, families and educational leaders through each new wave of technology — and we have learned what helps learning and what gets in the way. That...",
+      "author": "Justin Spelhaug",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Microsoft has been in the business of education for five decades. Since the earliest days of this company, we have worked alongside educators, students, families and educational leaders through each new wave of technology — and we have learned what helps learning and what gets in the way. That commitment continues today, in a technological moment unlike any we have seen. AI can personalize learning, reduce administrative burden, accelerate research and expand access to high-quality instruction. It also brings real risk. Educators and parents are asking whether students are still doing the thinking, and whether the tools their children use are safe. Those are the right questions. At its core, teaching and inspiring students to become their best selves is a deeply human endeavor. Education is built on a meaningful partnership among educators, students and families that helps unlock human potential and shape brighter futures. No one company understands entirely how AI will reshape education. But uncertainty calls for more care, not less. That is why Microsoft is taking a holistic approach, grounded in five principles. Safety, privacy, security and transparency by design Educators remain in control and at the center of AI use in the classroom AI designed to support students’ learning, not replace their thinking AI strengthens education systems, from learning to discovery Every student prepared for an AI powered future 1. Safety, privacy, security and transparency by design Every AI system used in education should be designed with robust safeguards that protect student privacy, enhance safety, reduce risk – including safeguards that address bias – and provide the transparency that students, educators and parents deserve. We believe institutions should never have to choose between innovation and trust. Security, privacy and transparency are foundational to Microsoft’s approach in education. That is why last week, we signed a landmark agreement with the American Federation of Teachers (AFT) and introduced a new Privacy & Safety Standard for Schools covering Microsoft Education products. The agreement represents the first time a major technology company and one of America’s largest teachers’ unions have come together to define what trusted AI should look like within these products. The Standard limits how Microsoft Education products can use student and educator data, requires human oversight for consequential decisions, provides meaningful transparency for...",
+      "links": [
+        {
+          "label": "Privacy & Safety Standard for Schools",
+          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/AI-Safety-and-Privacy-Standard-Fact-Sheet.pdf"
+        },
+        {
+          "label": "Ashley Hernandez is using Copilot to develop differentiated, sensory-aware materials for students with complex...",
+          "url": "https://unlocked.microsoft.com/copilot-special-education-teacher/"
+        },
+        {
+          "label": "Education Insiders Program",
+          "url": "https://eduinsider.powerappsportals.com/"
+        },
+        {
+          "label": "Teach in Microsoft 365 Copilot",
+          "url": "https://www.microsoft.com/en-us/education/products/copilot-in-education?msockid=33348aca553063b115a19f8554cb62c1#copilot-teach"
+        },
+        {
+          "label": "Microsoft Elevate for Educators",
+          "url": "https://elevateforeducators.microsoft.com"
+        },
+        {
+          "label": "learning science",
+          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/4105800-Microsoft-Learning-by-Design-white-paper.pdf"
+        },
+        {
+          "label": "Minecraft Education",
+          "url": "https://education.minecraft.net/en-us"
+        },
+        {
+          "label": "Learning Accelerators",
+          "url": "https://www.microsoft.com/en-us/education/learning-tools/learning-accelerators?msockid=33348aca553063b115a19f8554cb62c1"
+        },
+        {
+          "label": "Study and Learn",
+          "url": "https://www.microsoft.com/en-us/education/blog/2026/07/study-and-learn-ai-built-for-learning-in-microsoft-365-copilot/?msockid=33348aca553063b115a19f8554cb62c1"
+        },
+        {
+          "label": "Broward County Public Schools",
+          "url": "https://www.microsoft.com/en/customers/story/26258-broward-county-public-schools-microsoft-365-copilot?msockid=33348aca553063b115a19f8554cb62c1"
+        },
+        {
+          "label": "University of North Carolina",
+          "url": "https://www.microsoft.com/en/customers/story/26599-unc-health-microsoft-fabric"
+        },
+        {
+          "label": "AI divide of the next decade",
+          "url": "https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/"
+        }
+      ]
+    },
     {
       "title": "Microsoft Purview: Data Loss Prevention-Upgraded inline protection for Microsoft Entra-managed apps in Edge for Business",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571397",
@@ -2739,32 +2840,6 @@
         "AWS Security"
       ],
       "body": "Bulletin ID: 2026-089-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/25/2026 12:00 PM PDT Description: Strands Agents is an open-source Python SDK for building and running AI agents. The strands-agents-tools package provides pre-built tools for use with the SDK, including the python_repl tool, which executes Python code on the agent's host, and the batch tool, which invokes several other tools in a single call. Before executing code, python_repl prompts the operator for approval. We identified CVE-2026-78379, a consent bypass in the python_repl tool. Improper neutralization of input used for LLM prompting in the python_repl tool in Amazon Strands Agents Tools before 0.8.5 might allow remote actors to execute arbitrary Python code on the agent's host by bypassing the human consent gate, via a crafted prompt that forwards non_interactive_mode as a keyword argument through the batch tool. Impacted versions: < 0.8.5 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-85786 - Incomplete fix for CVE-2026-75936 memory-amplification denial of service in Amazon ion-java",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-100-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-100-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-85786, memory-amplification denial of service via...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-100-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-85786, memory-amplification denial of service via highly compressed data expansion. ion-java 1.12.0 added a GZIP auto-decompression opt-out for CVE-2026-75936, but the implementation of the opt-out in 1.12.0 was insufficient to address the issue. Impacted versions: < 1.12.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
