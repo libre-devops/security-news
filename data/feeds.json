@@ -1,8 +1,204 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-17T16:34:04.911786+00:00",
-  "totalArticles": 143,
+  "lastUpdated": "2026-09-17T21:06:18.305763+00:00",
+  "totalArticles": 142,
   "articles": [
+    {
+      "title": "CVE-2026-92943 - Improper validation of certificate with host mismatch in AWS IoT Device SDK for Python",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-114-aws/",
+      "published": "2026-09-17T19:18:01+00:00",
+      "summary": "Bulletin ID: 2026-115-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/17/2026 12:00 PM PDT Description: AWS IoT Device SDK for Python (AWSIoTPythonSDK) is an open source SDK that lets IoT devices and gateways connect to AWS IoT Core over MQTT. We identified...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-115-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/17/2026 12:00 PM PDT Description: AWS IoT Device SDK for Python (AWSIoTPythonSDK) is an open source SDK that lets IoT devices and gateways connect to AWS IoT Core over MQTT. We identified CVE-2026-92943 in the MQTT client TLS connection layer, where the client did not validate that the server certificate matched the AWS IoT Core endpoint hostname. On Python 3.7 and later, an adversary-in-the-middle positioned on the network could present a certificate issued for an unrelated hostname by any certificate authority in the device trust store, impersonate the AWS IoT Core endpoint, read device telemetry, and inject arbitrary MQTT messages that the device processes as authentic. Both SDK default connection paths were affected: X.509 mutual authentication on port 8883 and WebSocket with SigV4 on port 443. The port 443 ALPN path was not affected. Impacted versions: >=1.5.3 AND <=1.6.0 (on Python 3.7 and later) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "[In preview] Public Preview: Azure Payments HSM v2",
+      "link": "https://azure.microsoft.com/updates?id=570509",
+      "published": "2026-09-17T18:36:44+00:00",
+      "summary": "Azure Payments HSM v2 is a highly available, single-tenant Payment HSM service for payment processing, credential issuance, PIN processing, key management, and authentication data protection. Customers retain exclusive administrative control of an isolate",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "From guidance to action: Security fundamentals that materially reduce risk",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/17/from-guidance-to-action-security-fundamentals-that-materially-reduce-risk/",
+      "published": "2026-09-17T17:00:00+00:00",
+      "summary": "AI has made fundamental changes to the operating environment for cybersecurity. Explore exposure management guidance on recommended controls and take action and stay ahead of cyberthreats. The post From guidance to action: Security fundamentals that materially reduce risk appeared first on...",
+      "author": "Ron Pessner",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "AI has already made fundamental changes to the operating environment for cybersecurity. Cyberattackers are testing more paths, adapting their techniques, and moving across digital environments with greater speed and persistence. The weaknesses they exploit remain familiar: excessive permissions, unprotected authentication flows, unpatched systems, exposed execution paths, and gaps between controls. What has changed is how quickly these weaknesses can combine into attack paths that cross identities, endpoints, applications, networks, and AI systems. A single foothold can become a broader compromise, making it increasingly difficult for security teams to determine which risks matter most and where to act first as their organizations adopt AI. We introduced Secure Now within Microsoft Security Exposure Management in May 2026 to help practitioners prioritize the action they need to take to be prepared for this shift. It provides actionable guidance for strengthening the foundational security needed for AI adoption, with recommendations focused on areas where autonomous attacks can create outsized exposure. Explore actionable cyberthreat guidance on Secure Now We continue to see evidence that AI is reshaping the threat landscape. These developments reinforce many of the foundational practices we use internally to secure Microsoft, while also expanding our understanding of where organizations need additional visibility, governance, and control. The examples in this blog illustrate how familiar weaknesses are evolving in the AI era and why continuous exposure reduction remains essential. When AI agents test their boundaries Recent frontier model-related agentic security disclosures offered early lessons in how autonomous agents may test the boundaries of their instructions and environments. In an incident disclosed by OpenAI, agents moved beyond their intended isolation, exploited vulnerabilities in shared Hugging Face infrastructure, and reached production systems. In separate incidents disclosed by Anthropic, agents exploited familiar weaknesses, including SQL injection, exposed credentials, weak passwords, and a malicious PyPI package. Our customers are asking us how they can reduce this risk by governing agent identities and tools, isolating execution, restricting outbound connectivity, monitoring behavior, and defending against increasingly autonomous external cyberthreats, so that an unexpected agent action or exposed weakness do not become a path across...",
+      "links": [
+        {
+          "label": "Secure Now",
+          "url": "https://aka.ms/securenow"
+        },
+        {
+          "label": "Microsoft Security Exposure Management",
+          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-security-exposure-management"
+        },
+        {
+          "label": "an incident disclosed by OpenAI",
+          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+        },
+        {
+          "label": "separate incidents disclosed by Anthropic",
+          "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
+        },
+        {
+          "label": "Explore recommended controls for this attack path.",
+          "url": "https://security.microsoft.com/securenow"
+        },
+        {
+          "label": "CaptiveCrunch",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/"
+        },
+        {
+          "label": "attackers impersonating IT support through Microsoft Teams",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/02/impersonating-it-support-threat-actors-turn-remote-session-into-enterprise-wide-access/"
+        },
+        {
+          "label": "Zero Trust principles",
+          "url": "https://www.microsoft.com/en-us/security/business/zero-trust"
+        },
+        {
+          "label": "eligible",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2267193"
+        },
+        {
+          "label": "Get started now",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/request-fasttrack-assistance-microsoft-365?view=o365-worldwide"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        }
+      ]
+    },
+    {
+      "title": "Improving email security outcomes with real-world Microsoft Defender insights",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/17/improving-email-security-outcomes-with-real-world-microsoft-defender-insights/",
+      "published": "2026-09-17T16:00:00+00:00",
+      "summary": "The latest email security benchmarking reports show strong Microsoft Defender performance across pre-delivery and post-delivery scenarios and reveal where threats and defenses continue to evolve. The post Improving email security outcomes with real-world Microsoft Defender insights appeared first...",
+      "author": "Rob Lefferts",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Every benchmark tells a story. The most valuable ones tell us where to improve next. For five consecutive quarters Microsoft has published email security benchmarking reports to provide greater transparency into real-world protection outcomes. The results have shown strong Microsoft Defender performance across pre-delivery and post-delivery scenarios, while revealing where threats and defenses continue to evolve. This quarter’s benchmark examines how continuous measurement informs protection across prevention, detection, and adaptation, and how those insights are helping improve customer outcomes. Read the latest Microsoft benchmarking data for email security Key takeaways Defender again missed the fewest high-severity threats among the solutions evaluated, about 55% fewer than the next-closest secure email gateway (SEG) vendor. Layered security adds the most value in promotional and bulk filtering and works; gains for spam and malicious email remain comparatively modest. Benchmarking results for SEG vendors In the latest quarterly SEG comparison from May 2026 through July 2026, Defender missed 221 high-severity threats per 1,000 protected users, 55.4% fewer than the next-closest SEG vendor. The benchmark measures missed threats instead of the total number of malicious emails that were caught and filtered, because catch totals can reflect differences in threat volume and exposure across vendor environments. By normalizing missed threats per 1,000 users we are able to provide a more consistent side-by-side comparison. Figure 1: High-severity email threats missed by SEG vendors (May 2026 through July 2026), measured as threats missed per 1,000 users protected. Data source: Microsoft Defender. If you’ve read our previous blogs, you’ll see that missed threats have increased across multiple reporting periods, including for Microsoft. This aligns with broader trends we’re seeing as AI makes it easier for cyberattackers to gather public information, tailor messages, and create more convincing impersonation attempts. It reinforces the need for protection that continuously adapts. Benchmarking results for ICES vendors Effective email detection combines pre-delivery filtering with post-delivery detection and remediation. This benchmark helps customers evaluate where each layer contributes measurable value. Similarly to previous quarters, integrated cloud email security (ICES) solutions continue adding the most value in promotional and bulk filtering. We saw an...",
+      "links": [
+        {
+          "label": "Microsoft Defender",
+          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-defender-office-365"
+        },
+        {
+          "label": "Read the latest Microsoft benchmarking data for email security",
+          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-defender-office-365/performance-benchmarking"
+        },
+        {
+          "label": "Promotions folder",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/declutter-and-defend-reducing-promotional-mail-noise-with-microsoft-defender/4511732"
+        },
+        {
+          "label": "prompt injection protection",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/defending-the-inbox-against-prompt-injection-attacks/4534636"
+        },
+        {
+          "label": "benchmarking site",
+          "url": "https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365/performance-benchmarking"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        },
+        {
+          "label": "Microsoft Security",
+          "url": "https://www.linkedin.com/showcase/microsoft-security/"
+        },
+        {
+          "label": "@MSFTSecurity",
+          "url": "https://twitter.com/@MSFTSecurity"
+        },
+        {
+          "label": "Improving email security outcomes with real-world Microsoft Defender insights",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/17/improving-email-security-outcomes-with-real-world-microsoft-defender-insights/"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog"
+        }
+      ]
+    },
     {
       "title": "What we’ve learned from Microsoft’s own AI transformation",
       "link": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
@@ -2940,32 +3136,6 @@
       "links": []
     },
     {
-      "title": "CVE-2026-78379 - Consent bypass in Strands Agents Tools python_repl tool",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-089-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-089-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/25/2026 12:00 PM PDT Description: Strands Agents is an open-source Python SDK for building and running AI agents. The strands-agents-tools package provides pre-built tools for use with the SDK,...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-089-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/25/2026 12:00 PM PDT Description: Strands Agents is an open-source Python SDK for building and running AI agents. The strands-agents-tools package provides pre-built tools for use with the SDK, including the python_repl tool, which executes Python code on the agent's host, and the batch tool, which invokes several other tools in a single call. Before executing code, python_repl prompts the operator for approval. We identified CVE-2026-78379, a consent bypass in the python_repl tool. Improper neutralization of input used for LLM prompting in the python_repl tool in Amazon Strands Agents Tools before 0.8.5 might allow remote actors to execute arbitrary Python code on the agent's host by bypassing the human consent gate, via a crafted prompt that forwards non_interactive_mode as a keyword argument through the batch tool. Impacted versions: < 0.8.5 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "Threat matrix: Mapping threats across cloud web applications",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/",
       "published": "2026-09-09T21:30:00+00:00",
@@ -3892,77 +4062,6 @@
       ]
     },
     {
-      "title": "Cybersecurity IR Workshop: The workshop you shouldn’t miss",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/01/cybersecurity-ir-workshop-you-shouldnt-miss/",
-      "published": "2026-09-01T18:55:35+00:00",
-      "summary": "Cyber resilience starts before a crisis. Gain practical insights from DART to strengthen readiness and response. The post Cybersecurity IR Workshop: The workshop you shouldn’t miss appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Defender Experts Cybersecurity Incident Response",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article What is the Cybersecurity Incident Response Readiness Workshop?Our approach: How we assess your maturityLearn more Cybersecurity incidents can unfold in hours, but response plans often fail at the point of execution: ownership is unclear, investigation findings is difficult to access, and critical decisions are delayed. That is why incident response cannot be something your organization figures out in real time. The Detection and Response Team (DART) – the Microsoft team that delivers Defender Experts Cybersecurity Incident Response – has supported organizations across 54 countries and regions through some of their most challenging security moments; and while we sincerely hope you never need to call us in the middle of a live incident, we do want to help you prepare for that possibility before it becomes real. That’s exactly what the Cybersecurity Incident Response Readiness Workshop is designed to do. What is the Cybersecurity Incident Response Readiness Workshop? The Cybersecurity Incident Response Workshop is a collaborative, scenario driven workshop designed to evaluate your organization’s incident response (IR) plan against realistic, real-world security events, guided by DART researchers. Rather than reviewing your plan in isolation, we work through simulated incidents together. Participants navigate realistic attack scenarios, present investigation findings, discuss decisions, and receive direct feedback from responders with extensive experience handling complex incidents worldwide. What makes DART’s approach different? DART’s approach combines active participation with lessons drawn from frontline incident response. Instead of reviewing a plan as a static document, the Cybersecurity Incident Response Workshop exercises how people, processes, and technology work together under pressure. Participants practice detection, containment, and response decisions while DART security researchers provide feedback grounded in real-world incident experience. The workshop creates a controlled environment for teams to test how they detect, investigate, contain, and communicate during an incident. DART security researchers examine how people, processes, and technology work together across identity, endpoint, cloud, and communications, including whether the organization’s tools, logs, and telemetry support timely decisions against real threat actor behaviors. Additionally, the workshop includes threat hunting exercises that let incident response...",
-      "links": [
-        {
-          "label": "What is the Cybersecurity Incident Response Readiness Workshop?",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-is-the-cybersecurity-incident-response-readiness-workshop"
-        },
-        {
-          "label": "Our approach: How we assess your maturity",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#our-approach-how-we-assess-your-maturity"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "visit our website",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender-experts-cybersecurity-incident-response"
-        },
-        {
-          "label": "Microsoft Threat Intelligence Blog",
-          "url": "https://aka.ms/threatintelblog"
-        },
-        {
-          "label": "LinkedIn",
-          "url": "https://www.linkedin.com/showcase/microsoft-threat-intelligence"
-        },
-        {
-          "label": "X (formerly Twitter)",
-          "url": "https://x.com/MsftSecIntel"
-        },
-        {
-          "label": "Bluesky",
-          "url": "https://bsky.app/profile/threatintel.microsoft.com"
-        },
-        {
-          "label": "Microsoft Threat Intelligence podcast",
-          "url": "https://thecyberwire.com/podcasts/microsoft-threat-intelligence"
-        },
-        {
-          "label": "Cybersecurity IR Workshop: The workshop you shouldn’t miss",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/01/cybersecurity-ir-workshop-you-shouldnt-miss/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
-        }
-      ]
-    },
-    {
       "title": "[Launched] Generally Available: Azure Firewall auto-learn SNAT routes",
       "link": "https://azure.microsoft.com/updates?id=570474",
       "published": "2026-09-01T17:10:38+00:00",
@@ -4221,12 +4320,12 @@
       "published": "2026-08-29T03:43:27+00:00",
       "summary": "Microsoft Threat Intelligence provides analysis of a ClickFix campaign that uses fake CAPTCHA prompts, DLL sideloading, and a reverse tunnel, with detections and hunting guidance. The post TerminalFix campaign deploys a reverse tunnel through multistage intrusion appeared first on Microsoft...",
       "author": "Microsoft Security Research, Sagar Patil, Suriyaraj Natarajan and Parasharan Raghavan",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
@@ -4242,15 +4341,15 @@
       "links": [
         {
           "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
         },
         {
           "label": "Application Control for Windows",
@@ -4945,132 +5044,6 @@
       "tags": [
         "Microsoft Message Center",
         "Microsoft Purview"
-      ]
-    },
-    {
-      "title": "(Updated) Microsoft Entra: Windows Hello for Business and macOS Platform SSO as standalone MFA factors",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450134",
-      "published": "2026-08-18T20:28:17.920000+00:00",
-      "summary": "Updated August 18, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1450134",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated August 18, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication scenarios.Today, WHfB and macOS PSSO can satisfy MFA requirements during primary sign-in, but users may still be required to register and use an additional passkey or authentication method for certain step-up authentication prompts, Authentication Strength policies, and sign-in frequency checks.After this rollout, users who authenticate with WHfB or macOS PSSO will be able to satisfy supported MFA requirements without registering an additional passkey. This change helps organizations expand the use of phishing-resistant authentication methods and reduce reliance on less secure authentication methods. As part of this change, a user's WHfB and macOS PSSO credentials will be displayed in My Security Info as auto-registered passkeys.[Rollout schedule]General Availability (Worldwide, GCC): Beginning in early October 2026 and expected to complete in late November 2026[Impact on your organization]Who is affectedOrganizations using Microsoft Entra IDUsers who authenticate with Windows Hello for BusinessUsers who authenticate with macOS Platform SSOOrganizations using Conditional Access Authentication Strength policiesPlatforms and servicesMicrosoft Entra IDWindows Hello for BusinessmacOS Platform SSOConditional AccessAuthentication Strength policiesWhat will happenAfter rollout:Users signing in with WHfB or macOS PSSO can complete supported MFA challenges without requiring a separate passkey.WHfB and macOS PSSO will satisfy supported MFA requirements for step-up authentication scenarios.WHfB and macOS PSSO can be used during 2FA to satisfy supported Authentication Strength policy requirements.WHfB and macOS PSSO can be used during 2FA to satisfy supported sign-in frequency challenge requirements.Users whose only MFA method is WHfB or macOS PSSO will be considered MFA-capable.Users who sign in with only a password will no longer be automatically prompted to register an additional MFA method if WHfB or macOS PSSO is their only registered MFA credential.Users with WHfB or macOS PSSO credentials, will be able to see them listed in My Security Info as auto-registered passkeys.[Action required and recommendations]No configuration changes are required.We recommend reviewing user onboarding and MFA registration processes before rollout. Because WHfB and macOS PSSO credentials are device-bound, users may not be able to complete MFA challenges from devices where those credentials are not available.Recommended actions:Update onboarding guidance to ensure users register at least one portable MFA method.Consider requiring users to register a synced passkey or Microsoft Authenticator passkey in addition to WHfB or macOS PSSO.Review custom Authentication Strength policies to confirm WHfB and macOS PSSO are allowed where appropriate.Update user documentation because users with only WHfB or macOS PSSO registered will no longer be automatically guided to register an additional MFA method.Learn more (To be updated closer to GA rollout.)Plan a Windows Hello for Business deployment | Security | Windows | Microsoft LearnPrepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "Plan a Windows Hello for Business deployment | Security | Windows | Microsoft Learn",
-          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/"
-        },
-        {
-          "label": "Prepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn",
-          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/prepare-users"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "Smarter signals, broader coverage: UEBA anomalies on top of Behaviors layer and new data sources",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/smarter-signals-broader-coverage-ueba-anomalies-on-top-of/ba-p/4544384",
-      "published": "2026-08-18T18:39:45+00:00",
-      "summary": "Co-authors: Ron Shlomo and Ryan Smith Security teams don't struggle with a lack of security signals. The real challenge is understanding which activity matters, why it stands out, and where to focus first. Microsoft Sentinel's Behaviors layer already helps analysts transform raw security events...",
-      "author": "SaraSamokovlija",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel",
-        "Threat Intelligence",
-        "AWS Security"
-      ],
-      "body": "Co-authors: Ron Shlomo and Ryan Smith Security teams don't struggle with a lack of security signals. The real challenge is understanding which activity matters, why it stands out, and where to focus first. Microsoft Sentinel's Behaviors layer already helps analysts transform raw security events into meaningful behavioral patterns. Today, we're making that experience both smarter and broader. What if every behavior could immediately tell you not only what happened, but why it matters? We're bringing UEBA anomaly intelligence directly into the Behaviors layer, so every behavior now includes anomaly insights together with explainable context. At the same time, UEBA expands beyond identity signals to support network and cloud data sources, enabling richer behavioral insights across more of your environment and helping security teams detect suspicious activity wherever it occurs. If you're new to these capabilities, we recommend reviewing our previous announcements on the UEBA expansion and the Behaviors public preview, which provide additional background on the Behaviors layer and its underlying UEBA capabilities. What's new in Sentinel UEBA and Behaviors layer Microsoft Sentinel’s Behaviors layer aggregates and sequences individual events into meaningful behavioral patterns, giving SOC teams the security context of who did what to whom and why it matters in one place, instead of sifting through raw telemetry in separated tables. With this release, we're expanding the Behaviors layer. It now includes UEBA Anomalies and contextual enrichments directly within each behavior. In addition, the Behaviors layer now supports Fortinet logs via the CommonSecurityLog table. We're also expanding Classical UEBA beyond identity signals by adding support for network and cloud data sources: AWS GuardDuty, Check Point, Zscaler and Fortinet (via CommonSecurityLog). Together, these enhancements allow the SOC to receive a richer context and explainable anomaly detection for every behavior across a broader portion of the environment. Adding context to every behavior—use case The following example illustrates how UEBA Anomalies on Behaviors help analysts quickly identify suspicious activity by adding context to every behavior. Scenario: Detecting a compromised FortiGate device An attacker gains administrative access to a FortiGate firewall and begins making configuration changes to establish persistence and enable future access. Individually, each action may appear legitimate....",
-      "links": [
-        {
-          "label": "UEBA expansion",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/microsoft-sentinel%E2%80%99s-ai-driven-ueba-ushers-in-the-next-era-of-behavioral-analyti/4448390"
-        },
-        {
-          "label": "Behaviors public preview",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/turn-complexity-into-clarity-introducing-the-new-ueba-behaviors-layer-in-microso/4484493"
-        },
-        {
-          "label": "Behaviors layer is enabled",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#enable-the-ueba-behaviors-layer"
-        },
-        {
-          "label": "supported data sources are connected",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#supported-data-sources-and-behaviors"
-        },
-        {
-          "label": "UEBA",
-          "url": "https://review.learn.microsoft.com/en-us/azure/sentinel/enable-entity-behavior-analytics?branch=pr-en-us-8156&tabs=azure"
-        },
-        {
-          "label": "Behaviors layer:",
-          "url": "https://review.learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer"
-        }
-      ]
-    },
-    {
-      "title": "[In preview] Public Preview: Ipv6 support in Azure Firewall",
-      "link": "https://azure.microsoft.com/updates?id=569520",
-      "published": "2026-08-18T17:25:30+00:00",
-      "summary": "Azure Firewall now supports IPv6 in public preview, enabling customers to configure Azure Firewall and Firewall Policy in dual-stack mode for both IPv4 and IPv6 traffic. This preview allows native IPv6 network-rule filtering and DNS Proxy support, helping",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     }
   ]
