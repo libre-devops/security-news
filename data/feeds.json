@@ -1,8 +1,47 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-18T10:50:39.807228+00:00",
-  "totalArticles": 133,
+  "lastUpdated": "2026-09-18T16:05:29.847883+00:00",
+  "totalArticles": 134,
   "articles": [
+    {
+      "title": "Microsoft Entra ID: Follow-up on SMS first-factor sign-in retirement and upcoming changes",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1474104",
+      "published": "2026-09-18T15:13:38.363000+00:00",
+      "summary": "[What and why]To improve security and reduce reliance on vulnerable authentication methods, Microsoft is continuing the retirement of SMS first-factor sign-in in Microsoft Entra ID. Microsoft recommends phishing-resistant authentication methods, such as passkeys, as the preferred sign-in experience...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1474104",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]To improve security and reduce reliance on vulnerable authentication methods, Microsoft is continuing the retirement of SMS first-factor sign-in in Microsoft Entra ID. Microsoft recommends phishing-resistant authentication methods, such as passkeys, as the preferred sign-in experience because they help reduce the risk of phishing, fraud, and account compromise associated with phone-based authentication.Microsoft previously retired SMS first-factor sign-in for Microsoft Entra ID Free tenants and stopped enabling SMS sign-in for newly created tenants. This communication provides an update on the next phase of the retirement effort and actions organizations should take to prepare. Microsoft has announced previous retirement actions in Message Center posts MC1426371, MC1448374, and MC1449181.This retirement applies only to Microsoft Entra ID workforce tenant authentication scenarios. It does not apply to Azure AD B2C or Microsoft Entra External ID customer identity scenarios.[Rollout schedule]Worldwide and GCC: Beginning February 1, 2027, SMS first-factor sign-in will be retired for Microsoft Entra ID tenants.[Impact on your organization]Who is affectedOrganizations that:Allow users to sign in using SMS first-factor authentication.Rely on SMS first-factor sign-in as a primary authentication method.Platforms and servicesMicrosoft Entra IDSMS first-factor passwordless sign-in (SignInNoPassword)What will happenAfter February 1, 2027:Users will no longer be able to authenticate by using their phone number and an SMS one-time passcode as a primary sign-in method.Existing SMS first-factor sign-in configurations will no longer be honored.Management and configuration experiences for SMS first-factor sign-in will be removed from Microsoft administration experiences.Attempts to sign in by using a registered phone number and SMS one-time passcode will be blocked.Users who have another registered authentication method can continue signing in.Organizations that do not migrate affected users before the retirement date may experience sign-in disruptions.[Action required and recommendations]If your organization uses SMS first-factor sign-in, complete the following actions before February 1, 2027:Identify users currently using SMS first-factor sign-in.Ensure affected users register an alternative authentication method before February 1, 2027.Communicate this change to affected users to prevent sign-in disruptions.Migrate users to passkeys or other phishing-resistant authentication methods.Review authentication method policies and remove dependencies on SMS first-factor sign-in.Review available authentication alternatives and migration guidance.The retirement of SMS sign-in as a first-factor authentication method applies even when you use Choose Your Own Telephony Provider to continue using SMS or voice as multifactor authentication method. If your organization currently uses SMS sign-in for first-factor authentication, migrate users to supported alternatives based on their scenarios. Alternatives include passkeys, QR code authentication, FIDO2 security keys, and other authentication methods supported by Microsoft Entra ID.Learn moreSMS-based user sign-in for Microsoft Entra ID - Microsoft Entra ID | Microsoft Learn[Compliance considerations]QuestionAnswerDoes this change modify how users access Microsoft 365 resources or services?Users who currently rely on SMS first-factor authentication must use another registered authentication method after February 1, 2027.Does this change require admin action to maintain user access?Administrators should identify affected users and ensure alternative authentication methods are registered before the retirement date.Does this change affect Conditional Access policies?Organizations may need to review authentication-related policies and dependencies that currently rely on SMS first-factor sign-in.Does this change alter how admins can monitor, report on, or demonstrate compliance activities?Management and configuration experiences for SMS first-factor sign-in will be removed from Microsoft Entra administration experiences.Does the change include an admin control and can it be controlled through Entra ID group membership?Existing SMS first-factor sign-in configurations will no longer be honored after the retirement date, requiring administrators to transition users to supported authentication methods.",
+      "links": [
+        {
+          "label": "Choose Your Own Telephony Provider",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-phone-providers"
+        },
+        {
+          "label": "SMS-based user sign-in for Microsoft Entra ID - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/howto-authentication-sms-signin#enable-the-sms-based-authentication-method"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
     {
       "title": "Chromium: CVE-2026-0899 Out of bounds memory access in V8",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0899",
@@ -373,7 +412,7 @@
       "links": []
     },
     {
-      "title": "Microsoft’s commitment for AI in education; protecting students, strengthening learning",
+      "title": "Microsoft’s commitment for AI in education: Protecting students, strengthening learning",
       "link": "https://blogs.microsoft.com/blog/2026/09/16/microsofts-commitment-for-ai-in-education/",
       "published": "2026-09-16T18:59:58+00:00",
       "summary": "Microsoft has been in the business of education for five decades. Since the earliest days of this company, we have worked alongside educators, students, families and educational leaders through each new wave of technology — and we have learned what helps learning and what gets in the way. That...",
