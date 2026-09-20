@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-19T20:17:16.258807+00:00",
-  "totalArticles": 132,
+  "lastUpdated": "2026-09-20T04:09:38.568417+00:00",
+  "totalArticles": 131,
   "articles": [
     {
       "title": "Microsoft Purview: Data Lifecycle Management-Legacy Teams retention policies covering Copilot will be treated as Teams-only",
@@ -4728,57 +4728,6 @@
         {
           "label": "System-preferred authentication | Authentication | Microsoft Entra ID | Microsoft Entra | Microsoft Learn",
           "url": "https://learn.microsoft.com/entra/identity/authentication/concept-system-preferred-authentication"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "Microsoft Entra ID: Retirement of custom CSS layout and positioning properties in company branding",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1458474",
-      "published": "2026-08-21T00:38:16.937000+00:00",
-      "summary": "[What and why]Action required only for organizations that use custom CSS layout and positioning properties. Organizations that were not using Custom CSS as of July 21, 2026, are not affected and cannot begin using it going forward. Microsoft Entra External ID tenants are not affected by this...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1458474",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]Action required only for organizations that use custom CSS layout and positioning properties. Organizations that were not using Custom CSS as of July 21, 2026, are not affected and cannot begin using it going forward. Microsoft Entra External ID tenants are not affected by this change.You're receiving this notification because you're associated with one or more Azure subscriptions that currently use Microsoft Entra ID.As previously communicated in MC1435782, Microsoft is updating Microsoft Entra ID company branding to enhance the security of branded sign-in experiences. To support Microsoft's Secure Future Initiative (SFI) and strengthen protection against phishing attacks, Microsoft Entra ID will retire support for custom CSS layout and positioning properties used in company branding beginning late October 2026.This change helps deliver more secure, reliable, and consistent sign-in experiences while continuing to support branding customization. By limiting the use of layout and positioning modifications that can alter the appearance of sign-in pages, Microsoft is reducing opportunities for deceptive or misleading sign-in experiences.Note that since the previous update in MC1435782, we are retiring an additional set of properties to further secure your branded sign-in experience and harden against phishing risk. These properties will be retired by late October 2026 and may require you to take action if they are used in your configuration. [Rollout schedule]July 21, 2026: Organizations that are not already using these custom CSS properties can no longer begin using them in Microsoft Entra ID custom branding configurations.Late October 2026: Microsoft Entra ID will retire custom CSS layout and positioning properties globally.Later in 2027: Microsoft Entra plans to move towards full custom CSS retirement, with advance notice provided.[Impact on your organization]Who is affectedAdministrators who manage Microsoft Entra ID custom branding (including Company branding and Branding themes)Organizations that currently use custom CSS layout and positioning properties in custom branding configurationsPlatforms and servicesMicrosoft Entra IDCompany brandingBranding themesWeb-based branded sign-in experiencesWhat will happenBeginning July 21, 2026, Microsoft Entra ID will no longer allow new use of custom CSS in custom branding configurations.Existing branding customizations that use the retired properties will continue to work until October 26, 2026.After late October 2026, Microsoft Entra ID will no longer honor the retired CSS layout and positioning properties.Branding elements will remain visible but will revert to their default placement and presentation.Branding configurations that depend on the retired properties may display differently after the retirement takes effect.The following CSS properties are being retired:offsetoffset-pathoffset-distancemargin-blockmargin-block-startmargin-block-endmargin-inlinemargin-inline-startmargin-inline-endordergrid-areagrid-columngrid-column-startgrid-column-endgrid-rowgrid-row-startgrid-row-endisolationoverflow-xoverflow-yoverflow-blockoverflow-inlinecontent-visibilityclipmaskmask-image-webkit-mask-webkit-mask-image[Action required and recommendations]If your organization uses any of the retired CSS properties listed above, action is required before October 26, 2026.Recommended actions:Review Microsoft Entra ID company branding configurations.To download your existing custom CSS file, navigate to the Custom branding blade in the Entra Admin Center. Then, click Edit > Layout > Custom CSS > Download.Identify any branding customizations that rely on the retired CSS properties.Remove or redesign customizations that depend on these properties.Test branded sign-in experiences to ensure they display as expected after the retirement date.Communicate any planned branding updates to internal stakeholders as needed.Learn moreDeprecation of custom CSS positioning properties - CSS template reference guide | Fundamentals | Microsoft Entra | Microsoft LearnConfigure your company branding | Fundamentals | Microsoft Entra | Microsoft LearnCustomize the sign-in experience for your application with branding themes | Fundamentals | Microsoft Entra | Microsoft LearnMicrosoft Entra ID enhances security of branded sign-ins | Microsoft Entra Blog Microsoft Secure Future Initiative (SFI)[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "Deprecation of custom CSS positioning properties - CSS template reference guide | Fundamentals | Microsoft Entra |...",
-          "url": "https://learn.microsoft.com/entra/fundamentals/reference-company-branding-css-template#deprecation-of-custom-css-positioning-properties"
-        },
-        {
-          "label": "Configure your company branding | Fundamentals | Microsoft Entra | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/fundamentals/how-to-customize-branding"
-        },
-        {
-          "label": "Customize the sign-in experience for your application with branding themes | Fundamentals | Microsoft Entra | Microsoft...",
-          "url": "https://learn.microsoft.com/entra/fundamentals/how-to-customize-branding-themes-apps"
-        },
-        {
-          "label": "Microsoft Entra ID enhances security of branded sign-ins | Microsoft Entra Blog",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/microsoft-entra-id-enhances-security-of-branded-sign-ins/4537471"
-        },
-        {
-          "label": "Microsoft Secure Future Initiative (SFI)",
-          "url": "https://www.microsoft.com/trust-center/security/secure-future-initiative"
         }
       ],
       "products": [
