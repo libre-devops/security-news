@@ -1,8 +1,83 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-22T11:13:50.305630+00:00",
-  "totalArticles": 133,
+  "lastUpdated": "2026-09-22T16:36:01.098925+00:00",
+  "totalArticles": 134,
   "articles": [
+    {
+      "title": "Unmasking EvilTokens: Getting to the root of device code phishing",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/",
+      "published": "2026-09-22T15:00:00+00:00",
+      "summary": "EvilTokens has quickly become one of the top PhaaS platforms, enabling device code phishing attacks through AI-assisted lures, automated infrastructure, and token theft. In collaboration with partners, Microsoft Digital Crimes Unit (DCU) facilitated a disruption of EvilTokens infrastructure and...",
+      "author": "Microsoft Threat Intelligence, Microsoft Defender Experts and Microsoft Security Research",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Threat Intelligence",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article What is device code phishing?EvilTokens platform and operationsEvilTokens phishing emailsMitigation and protection guidanceMicrosoft Defender XDR detectionsHunting queries Following its emergence in February 2026, EvilTokens quickly became one of the most widely used phishing-as-a-service (PhaaS) platforms, providing cybercriminals with AI capabilities for tailoring phishing lures and analyzing compromised inboxes to identify high-value targets. This AI-powered cybercrime platform facilitated sophisticated business email compromise (BEC) campaigns that compromised more than 12,000 inboxes in over 10,000 organizations worldwide. EvilTokens enabled threat actors to abuse the device code authentication flow, steal tokens, and compromise organizational accounts at scale using an AI-driven infrastructure and automating multiple parts of the attack chain. The toolkit offered a plethora of prebuilt phishing templates and landing pages with an AI-powered assistant to aid in structuring target-specific emails. Stolen tokens are used for email exfiltration and persistence, often through the creation of malicious inbox rules that conceal communications. In some cases, tokens can also be used to grant new devices access to a victim’s inbox, a particularly durable method to maintain persistence. Microsoft Threat Intelligence tracks the threat actor behind the development and support of the EvilTokens phish kit as Storm-2992. Post-compromise, EvilTokens enabled threat actors to utilize AI assistants to sift through victim mailbox activity and engineer a phishing message based on the accessible email content. EvilTokens also allowed threat actors to conduct Microsoft Graph reconnaissance to map organizational structure and permissions, enabling continued access and potential lateral movement while tokens remain valid. While token-targeting phishing is not new, it has become far more common and industrialized over the last several years as organizations adopted multifactor authentication (MFA). To evade detection, EvilTokens uses a multi-stage delivery pipeline designed to bypass traditional email gateways and endpoint security. Targets are lured through deceptive emails that use 44 different themes, including invoices and request for proposals (RFPs), or shared files. These emails contained malicious URLs, PDF attachments, and HTML files. Campaigns leveraging EvilTokens have impacted organizations in various industries, including wholesale distribution,...",
+      "links": [
+        {
+          "label": "What is device code phishing?",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-is-device-code-phishing"
+        },
+        {
+          "label": "EvilTokens platform and operations",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#eviltokens-platform-and-operations"
+        },
+        {
+          "label": "EvilTokens phishing emails",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#eviltokens-phishing-emails"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Microsoft Defender XDR detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-xdr-detections"
+        },
+        {
+          "label": "Hunting queries",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
+        },
+        {
+          "label": "Microsoft’s Digital Crimes Unit (DCU) facilitated a coordinated disruption of infrastructure used to operate the...",
+          "url": "https://aka.ms/ETDisruption"
+        },
+        {
+          "label": "Microsoft Defender",
+          "url": "https://www.microsoft.com/security/business/microsoft-defender"
+        },
+        {
+          "label": "device code authentication",
+          "url": "https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-device-code"
+        },
+        {
+          "label": "Teams devices, and conferencing devices",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-teams-devices-device-code-flow"
+        },
+        {
+          "label": "a phishing campaign aligned with EvilTokens",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/06/ai-enabled-device-code-phishing-campaign-april-2026/"
+        },
+        {
+          "label": "blocking device code flow wherever possible",
+          "url": "https://learn.microsoft.com/entra/identity/conditional-access/policy-block-authentication-flows"
+        }
+      ]
+    },
     {
       "title": "[Launched] Generally Available: Azure Functions support for PowerShell 7.6",
       "link": "https://azure.microsoft.com/updates?id=572219",
@@ -704,10 +779,10 @@
       ]
     },
     {
-      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
+      "title": "Iranian cyber targeting of dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
+      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -734,10 +809,10 @@
       ]
     },
     {
-      "title": "Iranian cyber targeting of dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
+      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
+      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
