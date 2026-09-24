@@ -1,8 +1,56 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-24T16:47:46.534516+00:00",
-  "totalArticles": 136,
+  "lastUpdated": "2026-09-24T21:19:12.359210+00:00",
+  "totalArticles": 137,
   "articles": [
+    {
+      "title": "Issues with Amazon Athena ODBC Driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-013-aws/",
+      "published": "2026-09-24T17:49:06+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-5747 - Out-of-bounds Write in Firecracker virtio-pci Transport",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-015-aws/",
+      "published": "2026-09-24T17:49:06+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
     {
       "title": "[Launched] Generally Available: Instant Access for VM restore points",
       "link": "https://azure.microsoft.com/updates?id=572573",
@@ -25,6 +73,156 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Beyond the ransomware: Tracking Storm-2570’s consistent tradecraft across deployments",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/24/beyond-ransomware-tracking-storm-2570-consistent-tradecraft-across-deployments/",
+      "published": "2026-09-24T16:00:00+00:00",
+      "summary": "Storm-2570 is a ransomware affiliate that uses consistent post-compromise tools and techniques across deployments involving Qilin, DragonForce, Anubis, and BERT ransomware, and provides guidance to help defenders detect and disrupt this activity before ransomware deployment. The post Beyond the...",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Who is Storm-2570?Storm-2570 attack chain: From initial foothold to impactWhat Storm-2570 activity means for defendersMitigation and protection guidanceMicrosoft Defender detectionsHunting queries Activity associated with Storm-2570, a ransomware affiliate linked to multiple ransomware payloads, illustrates how tracking and responding to ransomware attacks by payload alone can obscure the affiliates carrying out intrusions and the recurring behaviors that defenders can use to detect and disrupt them. Microsoft Threat Intelligence has observed Storm-2570 using consistent post-compromise tools and techniques across deployments involving Qilin, DragonForce, Anubis, and BERT ransomware. Across multiple investigations, Storm-2570 has maintained largely uniform tradecraft, infrastructure overlaps, and repeated use of the same remote access and cloud exfiltration tooling despite operating across multiple ransomware ecosystems. These findings reinforce the value of examining threat actor behavior across the attack chain rather than treating each ransomware payload as an isolated activity set. Recurring remote access, credential access, lateral movement, security tampering, and data exfiltration activity can help defenders connect related intrusions and respond before ransomware deployment, even when the final payload changes. In this blog post, we delve into the attack techniques attributed to Storm-2570. While Storm-2570’s methodology aligns with the tactics, techniques, and procedures (TTPs) of many tracked ransomware actors, analysis of their post-compromise tactics provides essential insights into how organizations can harden and defend against ransomware threat actors, informing opportunities to disrupt attackers even if they have gained initial access to a network. At the end of this blog, we also provide a comprehensive recommendation section with detection details. Who is Storm-2570? Storm-2570 is a ransomware affiliate that Microsoft Threat Intelligence has tracked since April 2025. We assess that Storm-2570 has operated across multiple ransomware as a service (RaaS) ecosystems, including Qilin, DragonForce, Anubis, and BERT. To date, Microsoft Threat Intelligence has observed Storm-2570 in multiple investigated intrusions affecting organizations in United States, Canada, United Kingdom, Spain, Netherlands, and Puerto Rico, including healthcare and public health, education, government agencies and services, financial services, energy,...",
+      "links": [
+        {
+          "label": "Who is Storm-2570?",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#who-is-storm-2570"
+        },
+        {
+          "label": "Storm-2570 attack chain: From initial foothold to impact",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#storm-2570-attack-chain-from-initial-foothold-to-impact"
+        },
+        {
+          "label": "What Storm-2570 activity means for defenders",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-storm-2570-activity-means-for-defenders"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Microsoft Defender detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+        },
+        {
+          "label": "Hunting queries",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+        },
+        {
+          "label": "ransomware as a service (RaaS)",
+          "url": "https://www.microsoft.com/en-us/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/"
+        },
+        {
+          "label": "defend against lateral movement techniques",
+          "url": "https://learn.microsoft.com/defender-endpoint/attack-surface-reduction-rules-reference#block-process-creations-originating-from-psexec-and-wmi-commands"
+        },
+        {
+          "label": "protecting lateral movement pathways",
+          "url": "https://www.microsoft.com/en-us/security/blog/2022/10/26/how-to-prevent-lateral-movement-attacks-using-microsoft-365-defender/"
+        },
+        {
+          "label": "defending against ransomware guidance",
+          "url": "https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/#defending-against-ransomware?ocid=magicti_ta_blog"
+        },
+        {
+          "label": "tamper protection",
+          "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?ocid=magicti_ta_learndoc"
+        },
+        {
+          "label": "enable DisableLocalAdminMerge to prevent modification of antivirus exclusions via GPO",
+          "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune?ocid=magicti_ta_learndoc#tamper-protection-for-antivirus-exclusions"
+        }
+      ]
+    },
+    {
+      "title": "​​​​​​​​What’s new in Microsoft Security: September 2026​​",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/24/whats-new-in-microsoft-security-september-2026/",
+      "published": "2026-09-24T16:00:00+00:00",
+      "summary": "This month's updates help you discover and control local AI agents, extend Zero Trust to agent traffic, and strengthen SOC foundations. The post ​​​​​​​​What’s new in Microsoft Security: September 2026​​ appeared first on Microsoft Security Blog.",
+      "author": "Alym Rayani",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "AI agents are now running on employee devices, cloud platforms, and across developer workflows. Security teams need to see those agents, govern what they can reach, and contain them when something goes wrong. This month’s updates help you discover and control local AI agents, extend Zero Trust to agent traffic, and strengthen the security operations center (SOC) foundations that AI-era operations depend on. Here’s what’s new: Extend protection and support investigations with Microsoft Defender Bring more context into email investigation and hunting with Microsoft Security Copilot Available for organizations using both Microsoft Defender and Microsoft Security Copilot, a new email detonation summary delivers AI-generated explanations of URL and file sandboxing results, helping SOC teams investigate faster by reducing the manual effort required to correlate detonation evidence and contextual signals. Prevent and disrupt threats with Microsoft Defender Protect sensitive data in motion with Microsoft Purview and Microsoft Entra Stop sensitive data from reaching shadow AI over the network Now generally available, Microsoft Purview and Microsoft Entra Global Secure Access bring data security to the network across human actions and on-behalf-of (OBO) agentic traffic. Context-aware Microsoft Purview classification and policies are enforced by Entra at the network layer. Organizations can discover sensitive files and text in real time and block them from being shared to risky destinations. For example, if an employee or OBO agent tries to upload a sensitive document to an unsanctioned AI tool, the policy can stop the transfer before the data leaves. Prevent employees from sharing proprietary or sensitive organizational data to potentially risky locations such as consumer AI apps. Protect, investigate, and clean up enterprise data with Microsoft Purview Manage labeling at enterprise scale with less administrative overhead Microsoft Purview auto-labeling helps organizations automatically apply data security controls to sensitive content at enterprise scale. New auto-labeling enhancements improve policy scale, admin experience, and reporting. Policies now support simulations of up to 20 million items and up to 50,000 sites through adaptive scopes. Administrators can edit a policy without re-running simulation. New audit insights and reporting show policy coverage and processing activity. Together, these enhancements help organizations scale auto-labeling across...",
+      "links": [
+        {
+          "label": "Zero Trust",
+          "url": "https://www.microsoft.com/en-us/security/business/zero-trust"
+        },
+        {
+          "label": "Microsoft Defender",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender"
+        },
+        {
+          "label": "Microsoft Security Copilot",
+          "url": "https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot"
+        },
+        {
+          "label": "new email detonation summary",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/security-copilot-in-email-entity#detonation-summary"
+        },
+        {
+          "label": "Microsoft Purview",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-purview"
+        },
+        {
+          "label": "Microsoft Purview auto-labeling",
+          "url": "https://learn.microsoft.com/en-us/purview/deploymentmodels/depmod-secure-by-default-step1"
+        },
+        {
+          "label": "search, hold, review, and export content",
+          "url": "https://learn.microsoft.com/en-us/purview/edisc-data-sources"
+        },
+        {
+          "label": "archive inactive SharePoint content",
+          "url": "https://learn.microsoft.com/en-us/purview/retention-settings#archiving-retained-sharepoint-files"
+        },
+        {
+          "label": "Priority Cleanup",
+          "url": "https://learn.microsoft.com/en-us/purview/priority-cleanup-permanent-deletion"
+        },
+        {
+          "label": "Explore Microsoft Purview data compliance solutions",
+          "url": "https://www.microsoft.com/en-us/security/business/risk-management/microsoft-purview-data-compliance"
+        },
+        {
+          "label": "Microsoft Intune Enterprise Application Management",
+          "url": "https://www.microsoft.com/en-us/security/business/endpoint-management/microsoft-intune-enterprise-application-management"
+        },
+        {
+          "label": "Microsoft Cloud PKI",
+          "url": "https://www.microsoft.com/en-us/security/business/endpoint-management/microsoft-cloud-pki"
+        }
       ]
     },
     {
@@ -482,6 +680,198 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
+      "published": "2026-09-22T19:49:51+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-028-aws/",
+      "published": "2026-09-22T19:49:30+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-8838 - Remote Code Execution in amazon-redshift-python-driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-033-aws/",
+      "published": "2026-09-22T19:49:30+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 & CVE-2026-8597)",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/",
+      "published": "2026-09-22T19:49:29+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-13762 and CVE-2026-13763 - Issue with HTTP/2 multi-frame request body inspection in AWS WAF",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-048-aws/",
+      "published": "2026-09-22T19:49:10+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Issue with containerd CRI Plugin - CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, CVE-2026-47262",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-046-aws/",
+      "published": "2026-09-22T19:49:08+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-15746 - Credential disclosure in Strands Agents Tools elasticsearch_memory tool",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-056-aws/",
+      "published": "2026-09-22T19:48:47+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-15737 - Sensitive content disclosure via OpenTelemetry spans in AgentCore Python SDK",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-058-aws/",
+      "published": "2026-09-22T19:48:46+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
       ]
     },
     {
@@ -3014,32 +3404,6 @@
       ]
     },
     {
-      "title": "CVE-2026-13762 and CVE-2026-13763 - Issue with HTTP/2 multi-frame request body inspection in AWS WAF",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-048-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-048-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 06/29/2026 11:15 PM PDT Description: AWS WAF is a web application firewall that monitors the HTTP(S) requests that are forwarded to your protected web application resources. We identified...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-048-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 06/29/2026 11:15 PM PDT Description: AWS WAF is a web application firewall that monitors the HTTP(S) requests that are forwarded to your protected web application resources. We identified CVE-2026-13762 and CVE-2026-13763, which are issues affecting HTTP/2 multi-frame request body inspection by AWS WAF. CVE-2026-13762 affects AWS WAF deployment with CloudFront. This issue was remediated server-side; no customer action is required. CVE-2026-13763 affects AWS WAF deployment with AWS Application Load Balancer (ALB). Under certain conditions, a crafted multi-frame HTTP/2 request could cause only a partial request body to be inspected. This issue has been addressed on ALB, and customers can ensure full protection by configuring how AWS WAF inspects HTTP/2 request bodies on their ALB. Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "CVE-2026-85781 - Unverified access point ownership in Amazon EFS CSI Driver",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-099-aws/",
       "published": "2026-09-09T21:30:11+00:00",
@@ -3063,32 +3427,6 @@
         "AWS Security"
       ],
       "body": "Bulletin ID: 2026-099-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 11:45 AM PDT Description: The Amazon EFS CSI Driver is an open-source Kubernetes Container Storage Interface (CSI) driver that lets Kubernetes workloads use Amazon EFS file systems. We identified CVE-2026-85781, an issue in the driver's volume-deletion logic. When the controller is configured with the non-default --delete-access-point-root-dir=true option, it did not verify that the EFS access point referenced by a PersistentVolume's volume handle belonged to the file system referenced by that same volume handle. An authenticated Kubernetes user with permission to create PersistentVolumes could use a crafted volume handle to cause the controller to recursively delete directories from an Amazon EFS file system that the user was not otherwise authorized to modify. This issue does not affect Amazon EFS itself; Amazon EFS access controls operated as designed. Impacted versions: <=3.4.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-021-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/29 12:00 PM PDT Description: FreeRTOS-Plus-TCP is a scalable, open source, and thread-safe TCP/IP stack for FreeRTOS. - CVE-2026-7422: Insufficient packet validation in the IPv4 and IPv6...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-021-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/29 12:00 PM PDT Description: FreeRTOS-Plus-TCP is a scalable, open source, and thread-safe TCP/IP stack for FreeRTOS. - CVE-2026-7422: Insufficient packet validation in the IPv4 and IPv6 receive paths allows an adjacent network device to send a packet that bypasses checksum and minimum-size validation by spoofing the Ethernet source MAC address to match one of the target device's own registered endpoints. - CVE-2026-7423: Integer underflow in the ICMP and ICMPv6 echo reply handlers allows an adjacent network device to cause a denial of service (device crash) when outgoing ping support is enabled, because header sizes are subtracted from a packet length field without validating the field is large enough, resulting in a heap out-of-bounds read. Impacted versions: >=V4.0.0 AND <=V4.2.5, >=V4.3.0 AND <=V4.4.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
@@ -3168,32 +3506,6 @@
       ]
     },
     {
-      "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 & CVE-2026-8597)",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-031-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 05/14/2026 13:00 PM PDT Description: Amazon SageMaker Python SDK is an open-source library for training and deploying machine learning models on Amazon SageMaker. The ModelBuilder component...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-031-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 05/14/2026 13:00 PM PDT Description: Amazon SageMaker Python SDK is an open-source library for training and deploying machine learning models on Amazon SageMaker. The ModelBuilder component simplifies model deployment by automating model artifact preparation and SageMaker model creation. We identified two issues affecting the model artifact integrity verification mechanism in the ModelBuilder/Serve component: - CVE-2026-8596: We identified a cleartext storage of sensitive information issue in the ModelBuilder/Serve component. When building models using ModelBuilder, the SDK stored an HMAC signing key as a container environment variable (SAGEMAKER_SERVE_SECRET_KEY). This key was returned in plaintext by SageMaker describe APIs (DescribeModel, DescribeEndpointConfig, DescribeModelPackage). A remote authenticated actor with permissions to call these APIs and S3 write access to the model artifact path could extract the key, forge valid integrity signatures for specially crafted model artifacts, and achieve code execution in inference containers. - CVE-2026-8597: We identified a missing integrity verification issue in the Triton inference handler. The Triton handler deserialized model artifacts without performing integrity verification before execution. A remote authenticated actor with S3 write access to the model artifact path could replace model artifacts with a specially crafted pickle payload that would be deserialized without verification, achieving code execution in inference containers. Impacted versions: Amazon SageMaker Python SDK >= v2.199.0 AND <= v2.257.1, >= v3.0.0 AND <= v3.7.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "CVE-2026-75897 - Uncontrolled resource consumption in OpenSearch Dashboards capabilities route",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-082-aws/",
       "published": "2026-09-09T21:30:11+00:00",
@@ -3220,32 +3532,6 @@
       "links": []
     },
     {
-      "title": "CVE-2026-15746 - Credential disclosure in Strands Agents Tools elasticsearch_memory tool",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-056-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-056-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/15/2026 11:30 AM PDT Description: Strands Agents is an open-source Python SDK for building and running AI agents. The strands-agents-tools package provides pre-built tools for use with the SDK,...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-056-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/15/2026 11:30 AM PDT Description: Strands Agents is an open-source Python SDK for building and running AI agents. The strands-agents-tools package provides pre-built tools for use with the SDK, including the elasticsearch_memory tool for agent memory storage. We identified CVE-2026-15746, a server-side request forgery (SSRF) issue in the elasticsearch_memory tool. The tool exposed its connection parameters (es_url, cloud_id, api_key) as fields the large language model (LLM) could control through the tool schema. When a caller omitted the api_key parameter, the tool fell back to the operator's ELASTICSEARCH_API_KEY environment variable and sent it to whichever host the LLM specified. A crafted prompt could cause the tool to connect to a threat-actor-controlled server and disclose the operator's Elasticsearch API key in the Authorization header. Impacted versions: < 0.7.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "CVE-2026-18656 & CVE-2026-18657 - Issue with Kiro IDE and CLI - Executable Resolution from Untrusted Project Directory on Windows",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-074-aws/",
       "published": "2026-09-09T21:30:11+00:00",
@@ -3269,32 +3555,6 @@
         "AWS Security"
       ],
       "body": "Bulletin ID: 2026-074-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/04/2026 12:30 PM PDT Description: Kiro is an agentic IDE and command-line interface users install on their desktop. We identified CVE-2026-18656 and CVE-2026-18657, an issue where an uncontrolled search path element on Windows might allow an actor to execute arbitrary code via a maliciously crafted project directory containing a planted executable that is resolved before the system PATH when a local user opens the directory. Impacted versions: - Kiro IDE for Windows between versions 1.0.0 through 1.0.212 - Kiro CLI for Windows prior to v2.10.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "Issues with Amazon Athena ODBC Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-013-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-013-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/03 13:00 PM PDT Description: The Amazon Athena ODBC driver implements standard ODBC application program interfaces (APIs). The ODBC driver provides access to Amazon Athena from any C/C++...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-013-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/03 13:00 PM PDT Description: The Amazon Athena ODBC driver implements standard ODBC application program interfaces (APIs). The ODBC driver provides access to Amazon Athena from any C/C++ application. The Amazon Athena ODBC driver provides 64-bit ODBC drivers for Windows, Linux and MAC operating systems. We identified the following: - CVE-2026-5485: OS command injection in browser-based authentication component (Linux only, fixed in 2.0.5.1) - CVE-2026-35558: Improper neutralization of special elements in authentication components - CVE-2026-35559: Out-of-bounds write in query processing components - CVE-2026-35560: Improper certificate validation in identity provider connection components - CVE-2026-35561: Insufficient authentication security controls in browser-based authentication components - CVE-2026-35562: Allocation of resources without limits in parsing components Impacted versions: CVE-2026-5485 was addressed in 2.0.5.1 (Linux only). The remaining five (CVE-2026-35558 through CVE-2026-35562) were addressed in version 2.1.0.0 and apply to all supported platforms Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
@@ -3376,32 +3636,6 @@
       "links": []
     },
     {
-      "title": "Issue with containerd CRI Plugin - CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, CVE-2026-47262",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-046-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-046-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 06/18/2026 17:30 PM PDT Description: containerd is an open-source container runtime used by Kubernetes via the Container Runtime Interface (CRI) plugin. It underpins AWS managed container services...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-046-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 06/18/2026 17:30 PM PDT Description: containerd is an open-source container runtime used by Kubernetes via the Container Runtime Interface (CRI) plugin. It underpins AWS managed container services including Amazon Elastic Kubernetes Service (Amazon EKS), Amazon Elastic Container Service (Amazon ECS), AWS Fargate, Bottlerocket, and Amazon Linux. AWS identified five issues in the containerd CRI plugin affecting versions 1.7 through 2.3. - CVE-2026-50195 (GHSA-cvxm-645q-p574) - CRI checkpoint import, local image tag poisoning - CVE-2026-53488 (GHSA-xhf5-7wjv-pqxp) - image-config LABEL -> host-root command exec - CVE-2026-53492 (GHSA-33vj-92qq-66hc) - CDI annotation smuggling during checkpoint restore - CVE-2026-53489 (GHSA-rgh6-rfwx-v388) - arbitrary host file read via symlink in checkpoint restore - CVE-2026-47262 (GHSA-jpcc-p29g-p8mq) - image-triggered runtime DoS Impacted versions: containerd 1.7, 2.0, 2.1, 2.2, 2.3 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "CVE-2026-16317 and CVE-2026-16318: Issues with s2n-tls: an open-source implementation of the TLS/SSL protocols",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-062-aws/",
       "published": "2026-09-09T21:30:11+00:00",
@@ -3454,32 +3688,6 @@
       "links": []
     },
     {
-      "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-028-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-028-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/05/08 11:30 AM PDT Description: Amazon Redshift JDBC Driver is a Type 4 JDBC driver that provides database connectivity through the standard JDBC application program interfaces (APIs). We...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-028-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/05/08 11:30 AM PDT Description: Amazon Redshift JDBC Driver is a Type 4 JDBC driver that provides database connectivity through the standard JDBC application program interfaces (APIs). We identified an issue in Amazon Redshift JDBC Driver versions prior to 2.2.2. Under certain conditions, the driver could load and execute arbitrary classes when processing JDBC connection URL parameters. An actor who can influence the connection URL could potentially execute code in the application context. Impacted versions: Amazon Redshift JDBC Driver < 2.2.2 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "CVE-2026-19642 & CVE-2026-19643 - Memory-safety issues in the Base64 decoder in the AWS SDK for C++",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-080-aws/",
       "published": "2026-09-09T21:30:11+00:00",
@@ -3503,84 +3711,6 @@
         "AWS Security"
       ],
       "body": "Bulletin ID: 2026-080-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/12/2026 12:30 PM PDT Description: The AWS SDK for C++ is an open-source library that provides C++ developers with APIs for AWS services. Its core library includes a Base64 codec used by the generated service clients for a variety of features.We identified the following CVEs: - CVE-2026-19642 - Out-of-bounds write in the Base64 decoder in the AWS SDK for C++ - CVE-2026-19643 - Out-of-bounds read in the Base64 decoder in the AWS SDK for C++ For CVE-2026-19642, certain inputs to the Base64 decoder might cause the decoder to write past the end of its heap-allocated output buffer, which might crash or corrupt memory in the process performing the decode. Remote code execution has not been demonstrated. For CVE-2026-19643, certain inputs to the Base64 decoder, on some platforms, might cause the decoder to read outside the bounds of its decode table, which might crash the process performing the decode. For both issues, impact is confined to the process of the application performing the decode. Impacted Versions: AWS SDK for C++: <= 1.11.861 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-15737 - Sensitive content disclosure via OpenTelemetry spans in AgentCore Python SDK",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-058-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-058-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/16/2026 10:15 AM PDT Description: Bedrock AgentCore Python SDK (bedrock-agentcore) is an open-source Python library that provides client tools for building AI agents on the Amazon Bedrock...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-058-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 07/16/2026 10:15 AM PDT Description: Bedrock AgentCore Python SDK (bedrock-agentcore) is an open-source Python library that provides client tools for building AI agents on the Amazon Bedrock AgentCore platform. We identified CVE-2026-15737 in the OpenTelemetry instrumentation of the SDK. Affected versions wrote raw user prompts and complete agent responses into OpenTelemetry span attributes on every invocation without filtering or masking. These spans flow into the customer's aws/spans CloudWatch log group, where a local authenticated user with CloudWatch Logs read access could access the potentially sensitive content. Impacted versions: 1.4.8, 1.5.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-8838 - Remote Code Execution in amazon-redshift-python-driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-033-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-033-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 05/18/2026 13:45 PM PDT Description: amazon-redshift-python-driver is the official Python connector for Amazon Redshift. We identified a code injection issue in versions 2.1.13 and earlier that could...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-033-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 05/18/2026 13:45 PM PDT Description: amazon-redshift-python-driver is the official Python connector for Amazon Redshift. We identified a code injection issue in versions 2.1.13 and earlier that could allow a rogue server or man-in-the-middle to execute arbitrary code on the client. Impacted versions: <=2.1.13 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-5747 - Out-of-bounds Write in Firecracker virtio-pci Transport",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-015-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-015-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/07 15:30 PM PDT Description: Firecracker is an open source virtualization technology that is purpose-built for creating and managing secure, multi-tenant container and function-based...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-015-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 2026/04/07 15:30 PM PDT Description: Firecracker is an open source virtualization technology that is purpose-built for creating and managing secure, multi-tenant container and function-based services. We identified CVE-2026-5747, an out-of-bounds write issue in the virtio PCI transport in Firecracker 1.13.0 through 1.14.3 and 1.15.0 on x86_64 and aarch64 that might allow a local guest user with root privileges to crash the Firecracker VMM process or potentially execute arbitrary code on the host via modification of virtio queue configuration registers after device activation. Achieving code execution on the host requires additional preconditions, such as the use of a custom guest kernel or specific snapshot configurations. No AWS service is affected. Impacted versions: Firecracker >= 1.13.0 AND <= 1.14.3 AND 1.15.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
@@ -4027,77 +4157,6 @@
       ]
     },
     {
-      "title": "How to secure edge AI in customer-owned environments",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/04/secure-edge-ai-customer-owned-environments/",
-      "published": "2026-09-04T19:10:10+00:00",
-      "summary": "As AI moves into customer-owned environments, organizations need new ways to verify the systems, software, and AI assets they trust before releasing sensitive data, credentials, and models. The post How to secure edge AI in customer-owned environments appeared first on Microsoft Security Blog.",
-      "author": "Shayak Lahiri",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Edge AI changes the trust model for AI systemsConstrain model actions through deterministic mediationEstablish trust before releasing sensitive assetsVerify runtime before releasing sensitive assetsVerify artifacts that shape model behaviorNext steps Edge AI moves model execution, model IP, customer data, and system authority into infrastructure the customer owns and operates. That changes who must verify the stack before sensitive assets are released. Edge AI includes AI systems where inference runs on or near the device, sensor, or other local environments where data is produced and acted on, rather than relying entirely on a centralized cloud service. It is chosen for cost, model selection, sovereignty, latency, and disconnected operation. Edge AI changes the trust model for AI systems In Cloud AI, separate companies own and attest the hardware, platform, and model weights. Edge AI deployments often place customers in control of more of the AI stack. This changes the security model because the customer is now responsible for establishing trust across the environment where the AI operates. In Edge AI, attacks such as prompt injection, model tampering, or malicious firmware updates can occur in the same environment that stores the model, customer data, credentials, and access to physical systems. This shifts trust decisions that were previously handled by cloud providers to the customer. Both the model provider and the customer now share risk: the provider’s models run on customer-owned infrastructure, while the customer must protect the systems, data, and models operating in that environment. What changes with Edge AI? Customers operate more of the AI stack. AI systems can be influenced by prompts, retrieval data, agent instructions, and runtime inputs. Models, credentials, and data can live in environments outside the provider’s direct control. Traditional software security controls alone are not enough. What should organizations do? Verify runtimes using attestation. Verify AI artifacts using provenance. Constrain model actions through mediation. Bind and release sensitive assets only to trusted environments. Our post on threat modeling for AI systems covers safety and security issues related to the underlying model. These concerns apply to Edge AI as well. Edge AI adds another question: before releasing weights, keys, or data, what evidence shows the runtime and loaded components can be trusted? Why Edge AI increases exposure An Edge...",
-      "links": [
-        {
-          "label": "Edge AI changes the trust model for AI systems",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#edge-ai-changes-the-trust-model-for-ai-systems"
-        },
-        {
-          "label": "Constrain model actions through deterministic mediation",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#constrain-model-actions-through-deterministic-mediation"
-        },
-        {
-          "label": "Establish trust before releasing sensitive assets",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#establish-trust-before-releasing-sensitive-assets"
-        },
-        {
-          "label": "Verify runtime before releasing sensitive assets",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#verify-runtime-before-releasing-sensitive-assets"
-        },
-        {
-          "label": "Verify artifacts that shape model behavior",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#verify-artifacts-that-shape-model-behavior"
-        },
-        {
-          "label": "Next steps",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#next-steps"
-        },
-        {
-          "label": "Edge AI",
-          "url": "https://learn.microsoft.com/en-us/azure/azure-local/overview"
-        },
-        {
-          "label": "post on threat modeling for AI systems",
-          "url": "https://aka.ms/aithreatmodeling"
-        },
-        {
-          "label": "post on defense in depth for autonomous AI agents",
-          "url": "https://aka.ms/agenticdefense"
-        },
-        {
-          "label": "How to secure edge AI in customer-owned environments",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/04/secure-edge-ai-customer-owned-environments/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
-        }
-      ]
-    },
-    {
       "title": "(Updated) Microsoft Entra ID: Optimizations for passkey registration experience",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1440968",
       "published": "2026-09-04T16:33:45.320000+00:00",
@@ -4133,14 +4192,19 @@
       "published": "2026-09-03T16:00:00+00:00",
       "summary": "Invisible Unicode characters popularized for hiding instructions from AI models are now being used to obfuscate words before email filters parse them. The post ASCII smuggling crosses over from AI prompt injection to phishing evasion appeared first on Microsoft Security Blog.",
       "author": "Microsoft Security Research, Noam Kochavi and Sarah Wolstencroft",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        },
         {
           "id": "ai-security",
           "name": "AI Security",
@@ -4148,41 +4212,42 @@
         }
       ],
       "tags": [
+        "Threat Intelligence",
         "AI Security"
       ],
       "body": "In this article What is ASCII smuggling?Writing a practical ASCII-smuggling signatureWhat we observed: ASCII smuggling repurposed for phishingWhat is known and what is newIs there a detection gap?Mitigation and protection guidanceReferencesLearn More Microsoft researchers observed a high-volume phishing campaign using invisible Unicode tag characters, a technique popularized in AI prompt injection research as ASCII Smuggling. Instead of using these characters to hide instructions from people while exposing them to AI models, the attacker used them to split financial lure words such as ‘funding’ to prevent email filters from parsing them. The finding emerged from Microsoft Defender for Office 365 prompt injection protection research, showing how AI-era evasion techniques can surface in traditional phishing campaigns. In Microsoft telemetry, hits on a hunting signature designed to detect ASCII-smuggling increased sharply beginning February 9, 2026, and remained elevated on weekdays for approximately three months. Microsoft Defender for Office 365 telemetry showed that the majority of messages were flagged by layered protections rather than by reliance on a single Unicode-specific signal. What is ASCII smuggling? “ASCII smuggling” refers to the use of invisible or non-rendering Unicode characters to hide content inside text that looks normal. The most abused range is the Unicode Tags block, U+E0000 to U+E007F. This block contains a shadow copy of the printable ASCII characters (for example, U+E0041 mirrors ‘A’, U+E0061 mirrors ‘a’). The block was originally intended for language tagging and is now largely deprecated. The important property for an attacker is this: most of these code points are not rendered by typical fonts and user interfaces. A string can therefore carry a message that is not readable to a human but will be processed by any language model or other software that receives a copy of the email content. Why the AI-security world made it famous Over the past year, ASCII smuggling became a recurring technique in the prompt injection and cross-prompt injection (XPIA) literature. The attack pattern is straightforward: An attacker hides instructions inside invisible tag characters embedded in a web page, document, email, or other content. A human (and many user interfaces) sees nothing unusual. An AI assistant that ingests the raw text does “see” the hidden characters, decodes them as text, and may be induced to follow threat actor-controlled...",
       "links": [
         {
           "label": "What is ASCII smuggling?",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-is-ascii-smuggling"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-is-ascii-smuggling"
         },
         {
           "label": "Writing a practical ASCII-smuggling signature",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#writing-a-practical-ascii-smuggling-signature"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#writing-a-practical-ascii-smuggling-signature"
         },
         {
           "label": "What we observed: ASCII smuggling repurposed for phishing",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-we-observed-ascii-smuggling-repurposed-for-phishing"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-we-observed-ascii-smuggling-repurposed-for-phishing"
         },
         {
           "label": "What is known and what is new",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-is-known-and-what-is-new"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-is-known-and-what-is-new"
         },
         {
           "label": "Is there a detection gap?",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#is-there-a-detection-gap"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#is-there-a-detection-gap"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
         },
         {
           "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
         },
         {
           "label": "Microsoft Defender for Office 365",
