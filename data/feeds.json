@@ -1,8 +1,34 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-23T21:17:27.006846+00:00",
-  "totalArticles": 134,
+  "lastUpdated": "2026-09-24T03:55:34.174359+00:00",
+  "totalArticles": 137,
   "articles": [
+    {
+      "title": "Microsoft Purview: Information Protection-Auto-labeling per-policy coverage report",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=572677",
+      "published": "2026-09-23T22:59:12+00:00",
+      "summary": "For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation snapshot. This helps admins understand enforcement progress for a specific policy against the data state captured during simulation, while also identifying files that were not found in the simulation snapshot but were processed during enforcement.GA date: November CY2026",
+      "links": []
+    },
     {
       "title": "Retirement: Support for PowerShell 7.4 ends on November 10, 2026",
       "link": "https://azure.microsoft.com/updates?id=572770",
@@ -119,6 +145,150 @@
         {
           "label": "Microsoft Security Blog",
           "url": "https://www.microsoft.com/en-us/security/blog"
+        }
+      ]
+    },
+    {
+      "title": "Integrated Security Operations Center in Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/integrated-security-operations-center-in-microsoft-defender/ba-p/4559097",
+      "published": "2026-09-23T16:00:00+00:00",
+      "summary": "AI is transforming the attacker’s operating model, accelerating threats to unprecedented speed and scale. Yet many security operations centers still depend on fragmented data, tools, intelligence, and workflows. Analysts spend valuable time rebuilding context and coordinating action across systems,...",
+      "author": "TomerBrand",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "defender-cloud-apps",
+          "name": "Microsoft Defender for Cloud Apps",
+          "score": 11
+        },
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "defender-identity",
+          "name": "Microsoft Defender for Identity",
+          "score": 11
+        },
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 7
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Cloud",
+        "Microsoft Defender for Cloud Apps",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Defender for Identity",
+        "Microsoft Defender for Office 365",
+        "Microsoft Sentinel",
+        "AI Security",
+        "Threat Intelligence"
+      ],
+      "body": "AI is transforming the attacker’s operating model, accelerating threats to unprecedented speed and scale. Yet many security operations centers still depend on fragmented data, tools, intelligence, and workflows. Analysts spend valuable time rebuilding context and coordinating action across systems, while the economics of operating the SOC become increasingly difficult to sustain. Security operations need a new operating model, one that brings protection and operations together and gives people and agents the shared context they need to defend at scale. On September 23, 2026, Microsoft announced the public preview of Integrated Security Operations Center (ISOC) in Microsoft Defender. The ISOC benefit enables eligible Microsoft Defender Suite, Microsoft 365 E5 and E7 customers to unlock more value from their existing investments by bringing XDR, SIEM, threat intelligence, automation, and AI together in Microsoft Defender. A new foundation for security operations The ISOC benefit brings protection and operations together in Microsoft Defender, helping eligible customers get more from their Microsoft investments and build the foundation for agentic security. Customers benefit from: Native threat protection: Microsoft Defender provides threat protection solutions across identities, endpoints, SaaS apps, email and collaboration tools, and cloud workloads. Integrated security operations: SIEM capabilities are now available out-of-the-box in Microsoft Defender, giving eligible customers access to security operations capabilities without requiring a traditional SIEM deployment. Built-in retention: Retention for eligible customers will extend from 30 to 90 days across all Microsoft Defender data, Azure Activity, and Office 365 Activity, starting November 15, 2026. Expand visibility: Starting October 1, eligible customers can expand visibility with more than 500 connectors, using a $2.40 per GB pay-as-you-go ingestion meter. Regional pricing and other terms may vary. Built for future: Bring signals, context, and workflows together in one integrated experience, establishing the foundation for agentic AI security that helps accelerate investigation and response, and improve security outcomes. Start with Microsoft Defender data. Expand when you need to. ISOC builds on the security data already available across Microsoft Defender and other select Microsoft sources, providing a rich, Microsoft-native foundation for integrated security operations. Supported Microsoft...",
+      "links": [
+        {
+          "label": "announced",
+          "url": "https://aka.ms/ISOCannouncement"
+        },
+        {
+          "label": "Read blog to learn more.",
+          "url": "https://aka.ms/caseindefender"
+        },
+        {
+          "label": "Microsoft Sentinel",
+          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel-siem?msockid=34a85b8083e96e6b32864c5b820e6f60#Industryrecognition"
+        },
+        {
+          "label": "https://aka.ms/ISOCDefender",
+          "url": "https://aka.ms/ISOCDefender"
+        },
+        {
+          "label": "Documentation",
+          "url": "https://aka.ms/ISOC-documentation"
+        }
+      ]
+    },
+    {
+      "title": "Reimagining Case Management in Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/reimagining-case-management-in-microsoft-defender/ba-p/4558044",
+      "published": "2026-09-23T15:35:09+00:00",
+      "summary": "Security work extends beyond the signal Identifying a threat, exposure, or data risk is only the start. Security teams still need to assign ownership, bring together the right context, coordinate investigation and response, document decisions, track actions, and maintain accountability through...",
+      "author": "Yaron_Abershitz",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Threat Intelligence"
+      ],
+      "body": "Security work extends beyond the signal Identifying a threat, exposure, or data risk is only the start. Security teams still need to assign ownership, bring together the right context, coordinate investigation and response, document decisions, track actions, and maintain accountability through resolution. That work is not identical across organizations. Each team has its own responsibilities, processes, service-level commitments, and automation. Security teams need a work model they can adapt to how their organization operates, rather than forcing every security matter through a fixed workflow. The operating model is also changing as AI agents take on more investigation and response work. Analysts, automation, and agents need a shared workspace where work can be delegated, reviewed, and advanced with the right context and human oversight. Introducing the Case: the operational unit that brings together security context, people, process, automation, and actions to manage security work through resolution. Introducing Case Management in Microsoft Defender We are introducing Case Management in Microsoft Defender, starting with Incident Cases, your new home for incident response. Incident Cases bring together the familiar incident experience with powerful new case capabilities, combining alert correlation, response actions, workflow management, collaboration, automation, and lifecycle tracking in a single working experience. Incident Cases become the primary working entity for incident response in Microsoft Defender. They bring the context analysts rely on, including the attack story, alerts, affected assets, evidence, and response information, into the same workspace used to assign work, coordinate the response, track progress, and maintain the operational record. Incident Cases build on the Defender Incident experience and the customer investments around it. The result is not a separate ticket layered on top of an investigation. It is one place to understand the security matter and drive the work required to resolve it. Figure 1. An Incident Case brings investigation context and operational workflow into one experience. One workspace for the complete response Case Management expands the incident response experience around the work security teams need to perform, not only the information they need to review. Adapt the workflow to how your organization operates Security teams can shape Case records and lifecycle management around their operating model. Custom...",
+      "links": [
+        {
+          "label": "https://aka.ms/casedemovideo",
+          "url": "https://aka.ms/casedemovideo"
+        },
+        {
+          "label": "Project Perception",
+          "url": "https://www.bing.com/ck/a?!&&p=bce1e20cdad5b05c59cd7e36a91c912fa831a29fe16c8a90693a7f749091ab09JmltdHM9MTc4OTA4NDgwMA&ptn=3&ver=2&hsh=4&fclid=0c575727-a727-61c7-0ffd-4117a6e06054&psq=project+perception+microsoft&u=a1aHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS9lbi11cy9zZWN1cml0eS9idXNpbmVzcy9haS1wb3dlcmVkLWN5YmVyc2VjdXJpdHkvcHJvamVjdC1wZXJjZXB0aW9uLWFnZW50aWMtc3lzdGVtP21zb2NraWQ9MGM1NzU3MjdhNzI3NjFjNzBmZmQ0MTE3YTZlMDYwNTQ"
+        },
+        {
+          "label": "Microsoft Learn",
+          "url": "https://aka.ms/caselearningdocs"
+        },
+        {
+          "label": "Read the Integrated Security Operations Center (ISOC) announcement",
+          "url": "https://aka.ms/ISOCannouncement"
         }
       ]
     },
