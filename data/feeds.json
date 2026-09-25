@@ -1,52 +1,148 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-25T16:52:33.279085+00:00",
-  "totalArticles": 133,
+  "lastUpdated": "2026-09-25T21:17:15.798987+00:00",
+  "totalArticles": 130,
   "articles": [
+    {
+      "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
+      "published": "2026-09-25T20:30:00+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-028-aws/",
+      "published": "2026-09-25T20:30:00+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Issues with Amazon Athena ODBC Driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-013-aws/",
+      "published": "2026-09-25T20:26:30+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-5747 - Out-of-bounds Write in Firecracker virtio-pci Transport",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-015-aws/",
+      "published": "2026-09-25T20:26:30+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
     {
       "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
       "published": "2026-09-25T15:35:08+00:00",
       "summary": "Microsoft details JADEPUFFER-linked Azure reconnaissance, resource deletion, and credential access using compromised service principals, identifying the activity as associated with Storm-3168 and providing guidance for defenders. The post Storm-3168: Agentic-driven cloud attacks using compromised...",
       "author": "Microsoft Security Research, Yossi Weizman and Tushar Mudi",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Threat Intelligence"
+        "General Security"
       ],
       "body": "In this article Attack overviewTechnical analysisMitigation and protection guidanceReferencesLearn More Microsoft Security Research has identified malicious cloud activity associated with JADEPUFFER, a threat actor discovered by Sysdig in July 2026 and reported to be the first documented agentic ransomware operation. Our investigation found an extensive Azure-focused resource destruction activity using compromised service principals and cloud credential collection that could be used to facilitate future exfiltration. These findings expand the publicly documented activity associated with JADEPUFFER, tracked by Microsoft as Storm-3168, demonstrating an evolution in the threat actor’s cloud operations and providing the first detailed view into its Azure activity. We identified bulk destructive operations in a compromised Azure environment. The destructive operations were facilitated by compromising service principals and targeted Azure Storage Accounts, SQL databases, Key Vaults, Function Apps, recovery protection locks, Virtual Machines, and App Services. Organizations can reduce exposure by protecting workload identities and secrets, enforcing least privilege, safeguarding recovery resources, and enabling relevant Microsoft Defender for Cloud protections. Publicly exposed credentials remain usable until revoked or rotated; removing the original disclosure alone does not remediate the exposure. This activity highlights a broader shift toward AI-orchestrated attacks, where threat actors can coordinate complex post-compromise operations across cloud environments with greater speed and scale. As these capabilities evolve, defenders must similarly use AI to investigate and respond across large environments. Rather than requiring analysts to manually follow each individual action, efforts such as Project Perception and MDASH are intended to support a model in which defenders can investigate and respond across increasingly large and complex environments using AI. Attack overview Microsoft observed two compromised service principals belonging to the same tenant. One performed reconnaissance and resource discovery. The other performed discovery, destructive operations, and credential collection. Discovery before destruction For the impacted tenant, in early June 2026, one of the compromised service principals enumerated Azure Virtual Machines, subscriptions, resource groups and resources for about 15 hours and 30 minutes with 300+ successful read operations. This...",
       "links": [
         {
           "label": "Attack overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-overview"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-overview"
         },
         {
           "label": "Technical analysis",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#technical-analysis"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#technical-analysis"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
         },
         {
           "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
         },
         {
           "label": "Microsoft Defender for Cloud",
@@ -319,54 +415,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Issues with Amazon Athena ODBC Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-013-aws/",
-      "published": "2026-09-24T17:49:06+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-5747 - Out-of-bounds Write in Firecracker virtio-pci Transport",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-015-aws/",
-      "published": "2026-09-24T17:49:06+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
       ]
     },
     {
@@ -878,54 +926,6 @@
           "label": "Read the Integrated Security Operations Center (ISOC) announcement",
           "url": "https://aka.ms/ISOCannouncement"
         }
-      ]
-    },
-    {
-      "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
-      "published": "2026-09-22T19:49:51+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-028-aws/",
-      "published": "2026-09-22T19:49:30+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
       ]
     },
     {
@@ -3847,40 +3847,40 @@
       "published": "2026-09-09T17:41:18+00:00",
       "summary": "Passkey-themed social engineering is being used to compromise identities and enable broader cloud attacks. Learn how threat actors establish MFA persistence, abuse Microsoft Graph for reconnaissance, and access SharePoint, OneDrive, and email data, along with key detection and mitigation guidance....",
       "author": "Microsoft Security Research, Krithika Ramakrishnan, Bharat Vaghela, Vaibhav Deshmukh, Subhajit Ghosh, Anusha Chakraborty, Akash Chaudhuri, Victor Chingtham and Ivan Macalintal",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
         }
       ],
       "tags": [
-        "General Security"
+        "Threat Intelligence"
       ],
       "body": "In this article Attack chain overviewAttributionMitigation and protection guidanceLearn more Microsoft Security Research is tracking active cloud-based intrusions spanning multiple accounts in which unusual sign-ins were followed by threat actor-added authentication methods, high-volume Microsoft Graph activity, SharePoint and OneDrive downloads, and email collection through REST APIs. Microsoft Security Research assesses that this sequence is consistent with automated collection from compromised cloud identities using proxy-associated infrastructure, the activity has been observed since May 2026. The activity begins with identity-focused social engineering and impersonation infrastructure, proceeds through authentication persistence and cloud reconnaissance, and is followed by targeted data access and activity consistent with data collection and potential exfiltration. Domains, IP addresses, and hosting providers can change quickly, but the recurring sequence of identity compromise, persistence, reconnaissance, content discovery, and exfiltration provides a more durable basis for investigation. Defenders should investigate this sequence across identity, Microsoft Graph, SharePoint, OneDrive, and Exchange signals, then revoke sessions and remove unauthorized authentication methods for confirmed compromises. Attack chain overview Figure 1. Observed attack sequence showing identity compromise through social engineering, MFA persistence, Microsoft Graph reconnaissance, and cloud data collection/exfiltration. Step 1-2 : Initial access: Passkey and SSO lures The attack often begins with a seemingly routine call or message on a user’s personal phone number from someone claiming to be from the organization’s IT helpdesk. The caller creates a sense of urgency, explaining that a passkey, multifactor authentication (MFA), or single sign-on (SSO) configuration must be updated immediately to avoid disruption. Employees are directed to a website that closely resembles a legitimate Microsoft sign-in experience and may receive the link through SMS messages sent directly to their personal mobile phones. Despite the frequent use of passkey-themed lures, passkey enrollment is often not the actor’s true objective. Instead, the passkey narrative serves as a convincing pretext to guide victims through adversary-in-the-middle (AiTM) phishing or device-code authentication flows. In AiTM scenarios, the actor captures credentials and session tokens; in device code attacks, the...",
       "links": [
         {
           "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
         },
         {
           "label": "Attribution",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attribution"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attribution"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
         },
         {
           "label": "Microsoft Security Copilot in Microsoft Defender",
@@ -4986,78 +4986,6 @@
       ],
       "tags": [
         "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "[Launched] Generally Available: Azure Bastion shareable link expiration",
-      "link": "https://azure.microsoft.com/updates?id=570020",
-      "published": "2026-08-26T16:57:56+00:00",
-      "summary": "Azure Bastion shareable link expiration is now generally available. When creating a shareable link, administrators can specify the date and time when the link should expire. After the configured expiration time, the link can no longer be used to connect t",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "[In preview] Public Preview: IPv6 dual-stack support for Azure Bastion",
-      "link": "https://azure.microsoft.com/updates?id=570025",
-      "published": "2026-08-26T16:56:29+00:00",
-      "summary": "Azure Bastion support for IPv4 and IPv6 dual-stack configurations is now available in public preview. Customers can configure a newly created Bastion deployment with both IPv4 and IPv6 public IP addresses. IPv6 is supported for connections between the use",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "[Launched] Generally Available: Connect to AKS clusters using Azure Bastion",
-      "link": "https://azure.microsoft.com/updates?id=570030",
-      "published": "2026-08-26T16:55:25+00:00",
-      "summary": "Azure Bastion integration with Azure Kubernetes Service is now generally available. Customers can establish a secure tunnel from their local machine through Azure Bastion to an AKS cluster API server. The integration enables customers to use standard Kube",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     }
   ]
