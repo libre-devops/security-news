@@ -1,8 +1,158 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-25T11:28:32.832357+00:00",
-  "totalArticles": 132,
+  "lastUpdated": "2026-09-25T16:52:33.279085+00:00",
+  "totalArticles": 133,
   "articles": [
+    {
+      "title": "Storm-3168: Agentic-driven cloud attacks using compromised service principals",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/25/storm-3168-agentic-driven-cloud-attacks-using-compromised-service-principals/",
+      "published": "2026-09-25T15:35:08+00:00",
+      "summary": "Microsoft details JADEPUFFER-linked Azure reconnaissance, resource deletion, and credential access using compromised service principals, identifying the activity as associated with Storm-3168 and providing guidance for defenders. The post Storm-3168: Agentic-driven cloud attacks using compromised...",
+      "author": "Microsoft Security Research, Yossi Weizman and Tushar Mudi",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Threat Intelligence",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Attack overviewTechnical analysisMitigation and protection guidanceReferencesLearn More Microsoft Security Research has identified malicious cloud activity associated with JADEPUFFER, a threat actor discovered by Sysdig in July 2026 and reported to be the first documented agentic ransomware operation. Our investigation found an extensive Azure-focused resource destruction activity using compromised service principals and cloud credential collection that could be used to facilitate future exfiltration. These findings expand the publicly documented activity associated with JADEPUFFER, tracked by Microsoft as Storm-3168, demonstrating an evolution in the threat actor’s cloud operations and providing the first detailed view into its Azure activity. We identified bulk destructive operations in a compromised Azure environment. The destructive operations were facilitated by compromising service principals and targeted Azure Storage Accounts, SQL databases, Key Vaults, Function Apps, recovery protection locks, Virtual Machines, and App Services. Organizations can reduce exposure by protecting workload identities and secrets, enforcing least privilege, safeguarding recovery resources, and enabling relevant Microsoft Defender for Cloud protections. Publicly exposed credentials remain usable until revoked or rotated; removing the original disclosure alone does not remediate the exposure. This activity highlights a broader shift toward AI-orchestrated attacks, where threat actors can coordinate complex post-compromise operations across cloud environments with greater speed and scale. As these capabilities evolve, defenders must similarly use AI to investigate and respond across large environments. Rather than requiring analysts to manually follow each individual action, efforts such as Project Perception and MDASH are intended to support a model in which defenders can investigate and respond across increasingly large and complex environments using AI. Attack overview Microsoft observed two compromised service principals belonging to the same tenant. One performed reconnaissance and resource discovery. The other performed discovery, destructive operations, and credential collection. Discovery before destruction For the impacted tenant, in early June 2026, one of the compromised service principals enumerated Azure Virtual Machines, subscriptions, resource groups and resources for about 15 hours and 30 minutes with 300+ successful read operations. This...",
+      "links": [
+        {
+          "label": "Attack overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-overview"
+        },
+        {
+          "label": "Technical analysis",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#technical-analysis"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
+        },
+        {
+          "label": "Microsoft Defender for Cloud",
+          "url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction"
+        },
+        {
+          "label": "Project Perception",
+          "url": "https://www.microsoft.com/en-us/security/business/ai-powered-cybersecurity/project-perception-agentic-system"
+        },
+        {
+          "label": "MDASH",
+          "url": "https://learn.microsoft.com/en-us/security-exposure-management/ai-code-security-overview"
+        },
+        {
+          "label": "Azure resource locks",
+          "url": "https://learn.microsoft.com/en-us/azure/storage/common/lock-account-resource?tabs=portal"
+        },
+        {
+          "label": "Microsoft Defender for Cloud overview",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+        },
+        {
+          "label": "Microsoft Entra Workload ID documentation",
+          "url": "https://learn.microsoft.com/en-us/entra/workload-id/"
+        },
+        {
+          "label": "protecting secrets with Defender for Cloud",
+          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/secrets-scanning"
+        }
+      ]
+    },
+    {
+      "title": "Introducing the new Copilot with Home, Code and Autopilot",
+      "link": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "published": "2026-09-25T12:03:50+00:00",
+      "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition. Today we’re introducing the new Copilot to connect the tools people rely on with the next generation of capabilities they’ll...",
+      "author": "Jared Spataro",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition. Today we’re introducing the new Copilot to connect the tools people rely on with the next generation of capabilities they’ll need to build, customize and scale AI across work. The Copilot app now has three new capabilities: Home is your new starting point, where Chat and Cowork come together — and with Office in Copilot, the full power of Word, Excel and PowerPoint is now built into the experience. Code lets everyone build their own solutions with the tools to run them safely, and it’s powered by the same underlying technology as GitHub Copilot. And Autopilot is a persistent, proactive and personal agent that keeps working even when you’re not. Home and Code will start rolling out in our Frontier program in the coming weeks and Autopilot is expanding to private preview at the end of the month. We’re also excited to share new FinOps for AI capabilities to help you manage spend and get the most value from Copilot and agents. YouTube Video Click here to load media A new experience for every mode of work Home is your new starting point in Copilot, where Chat and Cowork come together in one place. As work moves constantly between meetings, chats, documents, emails, apps and agents, Home is where you get your bearings, keeping you grounded and moving forward. You can review recent activity, get suggestions on what Copilot can help with, and pick up work right where you left off. Chat is instant and conversational — ready for quick questions, lookups, draft-creation and keeping you in the loop on every turn. Cowork is for work you delegate. You define the task and it runs end-to-end to return a completed result: an RFP response, a launch kit, a customer briefing, a financial close package or any other complex work worth iterating on. And coming soon, you won’t need to choose a mode: simply state what you need to accomplish, and Copilot will route the work to Chat, Cowork or Code — whichever capability is right for the job. We’re also bringing the full power of Word, Excel and PowerPoint to Copilot with Office in Copilot. Now you can get to real work fast: no broken formatting, no stray versions, no rebuilding the context in another app. From Home you can ask Copilot to draft a launch brief, model a budget, build a deck, or pick up a file your team is already working on, and it creates or...",
+      "links": [
+        {
+          "label": "Cowork",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/"
+        },
+        {
+          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/09/OMB-Home-FINAL-2.png",
+          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/09/OMB-Home-FINAL-2.png"
+        },
+        {
+          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/09/OMB-Code-FINAL-2.png",
+          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/09/OMB-Code-FINAL-2.png"
+        },
+        {
+          "label": "Microsoft Copilot Managed Runtime",
+          "url": "https://aka.ms/CopilotManagedRuntime-Blog"
+        },
+        {
+          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/09/OMB-Autopilot-FINAL-2.png",
+          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/09/OMB-Autopilot-FINAL-2.png"
+        },
+        {
+          "label": "now grounded",
+          "url": "https://aka.ms/BizAppsInWorkIQ/Blog"
+        },
+        {
+          "label": "here",
+          "url": "https://aka.ms/Sept25/EvolvingModel"
+        },
+        {
+          "label": "committed to investing",
+          "url": "https://aka.ms/finopsforai/optimization"
+        },
+        {
+          "label": "Frontier program",
+          "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/frontier-program"
+        },
+        {
+          "label": "Microsoft Ignite",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fignite.microsoft.com%2Fhome%3Fwt.mc_ID%3Dmsignite26_ciarmar_corp_np_oo_Copilot_BlogCTACopilot_0352&data=05%7C02%7CJessica.Voelker%40microsoft.com%7C022d43bbf01b4bc667e108df15b1c45b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639253525377252688%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Mbv%2BFZixxUSvdipgawzLAZ8YPh6JKAIlDh5MJbj4Q4s%3D&reserved=0"
+        },
+        {
+          "label": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
+        },
+        {
+          "label": "The Official Microsoft Blog",
+          "url": "https://blogs.microsoft.com"
+        }
+      ]
+    },
     {
       "title": "Chromium: CVE-2025-2135 Type Confusion in V8",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-2135",
@@ -2698,10 +2848,10 @@
       ]
     },
     {
-      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
+      "title": "Iranian cyber targeting of dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
+      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -2728,10 +2878,10 @@
       ]
     },
     {
-      "title": "Iranian cyber targeting of dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
+      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
+      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -4891,30 +5041,6 @@
       "link": "https://azure.microsoft.com/updates?id=570030",
       "published": "2026-08-26T16:55:25+00:00",
       "summary": "Azure Bastion integration with Azure Kubernetes Service is now generally available. Customers can establish a secure tunnel from their local machine through Azure Bastion to an AKS cluster API server. The integration enables customers to use standard Kube",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "[Launched] Generally Available: Azure SRE Agent VNet Integration",
-      "link": "https://azure.microsoft.com/updates?id=569695",
-      "published": "2026-08-26T16:51:31+00:00",
-      "summary": "Azure SRE Agent VNet Integration is now generally available. VNet integration enables Azure SRE Agent to operate within your existing network controls, including Network Security Groups (NSGs), private DNS, and firewall policies, etc. With VNet support, t",
       "author": "Microsoft",
       "source": "Azure Service Updates",
       "source_id": "azure_updates",
