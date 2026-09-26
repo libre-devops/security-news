@@ -1,8 +1,83 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-26T16:03:42.737865+00:00",
-  "totalArticles": 135,
+  "lastUpdated": "2026-09-26T20:49:35.045167+00:00",
+  "totalArticles": 136,
   "articles": [
+    {
+      "title": "CoreDNS in AKS: service discovery, upstream DNS, and failover",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/coredns-in-aks-service-discovery-upstream-dns-and-failover/ba-p/4559925",
+      "published": "2026-09-25T21:06:37+00:00",
+      "summary": "Table of Contents 1. Where CoreDNS fits in AKS 2. How a pod gets a DNS answer Cluster Service names Names handled by another DNS server LocalDNS can change the first hop 3. What AKS manages and what you can customize 4. How CoreDNS selects and checks upstream servers Selection policy chooses the...",
+      "author": "varghesejoji",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Table of Contents 1. Where CoreDNS fits in AKS 2. How a pod gets a DNS answer Cluster Service names Names handled by another DNS server LocalDNS can change the first hop 3. What AKS manages and what you can customize 4. How CoreDNS selects and checks upstream servers Selection policy chooses the starting server A missing reply and an error reply are different Health checks change later selections 5. What failure tests on AKS showed 6. Troubleshooting the right part of the DNS path 7. A repeatable way to validate CoreDNS behavior 8. Conclusion and next steps Try it now Learn more Connect and contribute 1. Where CoreDNS fits in AKS A pod can resolve another Kubernetes Service but fail to resolve a database name outside the cluster. CoreDNS can be running normally in both cases. That distinction matters because several problems can look like the same DNS outage: A cluster Service name fails. The namespace, Service record, or path from the pod to cluster DNS may be wrong. A name outside the cluster fails. CoreDNS may be reachable, but the upstream server or its network path may not be. A lookup eventually succeeds, but the application fails. The application may have stopped waiting before DNS returned an answer. CoreDNS is the default cluster DNS service in AKS. It runs as pods in kube-system, rather than as code inside your application or as a server hosted in the AKS control plane. It has two important jobs: Kubernetes service discovery: Answer names associated with Kubernetes resources, so workloads do not have to track changing addresses. Upstream forwarding: Send queries that require another DNS server to the configured upstream resolvers. Microsoft's AKS DNS concepts guide explains this architecture. The key operational lesson is simple: CoreDNS is part of the resolution path, but it is not the owner of every DNS answer. Who this is for: Platform engineers, application developers, and operations teams who want a practical understanding of CoreDNS in AKS. 2. How a pod gets a DNS answer For a typical pod using dnsPolicy: ClusterFirst, without a node-local DNS layer, the path looks like this: Application in a pod -> cluster DNS Service: kube-dns -> CoreDNS pod -> Kubernetes Service information: answer a cluster Service name -> upstream DNS server: forward a name handled outside the cluster -> DNS answer returns to the application The Service is still named kube-dns even when CoreDNS handles its traffic. That name does not mean the cluster is running the...",
+      "links": [
+        {
+          "label": "1. Where CoreDNS fits in AKS",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_1"
+        },
+        {
+          "label": "2. How a pod gets a DNS answer",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_2"
+        },
+        {
+          "label": "Cluster Service names",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_3"
+        },
+        {
+          "label": "Names handled by another DNS server",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_4"
+        },
+        {
+          "label": "LocalDNS can change the first hop",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_5"
+        },
+        {
+          "label": "3. What AKS manages and what you can customize",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_6"
+        },
+        {
+          "label": "4. How CoreDNS selects and checks upstream servers",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_7"
+        },
+        {
+          "label": "Selection policy chooses the starting server",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_8"
+        },
+        {
+          "label": "A missing reply and an error reply are different",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_9"
+        },
+        {
+          "label": "Health checks change later selections",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_10"
+        },
+        {
+          "label": "5. What failure tests on AKS showed",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_11"
+        },
+        {
+          "label": "6. Troubleshooting the right part of the DNS path",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_12"
+        }
+      ]
+    },
     {
       "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
