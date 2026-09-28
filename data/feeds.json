@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-27T21:06:26.872277+00:00",
-  "totalArticles": 135,
+  "lastUpdated": "2026-09-28T04:31:53.707494+00:00",
+  "totalArticles": 134,
   "articles": [
     {
       "title": "CoreDNS in AKS: service discovery, upstream DNS, and failover",
@@ -5070,81 +5070,6 @@
         {
           "label": "Turn Complexity into Clarity: Introducing the New UEBA Behaviors Layer in Microsoft Sentinel | Microsoft Community Hub",
           "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/turn-complexity-into-clarity-introducing-the-new-ueba-behaviors-layer-in-microso/4484493"
-        }
-      ]
-    },
-    {
-      "title": "TerminalFix campaign deploys a reverse tunnel through multistage intrusion",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/08/28/terminalfix-campaign-deploys-reverse-tunnel-through-multistage-intrusion/",
-      "published": "2026-08-29T03:43:27+00:00",
-      "summary": "Microsoft Threat Intelligence provides analysis of a ClickFix campaign that uses fake CAPTCHA prompts, DLL sideloading, and a reverse tunnel, with detections and hunting guidance. The post TerminalFix campaign deploys a reverse tunnel through multistage intrusion appeared first on Microsoft...",
-      "author": "Microsoft Security Research, Sagar Patil, Suriyaraj Natarajan and Parasharan Raghavan",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Attack chain overviewMitigation and protection guidanceLearn more Microsoft Threat Intelligence has observed a TerminalFix campaign, a variant of ClickFix, targeting organizations across multiple industries. The campaign uses compromised websites to display a fake Cloudflare CAPTCHA verification overlay that tricks users into copying and executing a malicious PowerShell command. While traditional ClickFix campaigns direct victims to the Windows Run dialog, TerminalFix campaigns apply the same technique but direct users to Windows Terminal or PowerShell instead, increasing the likelihood that complex, multi-line scripts execute successfully. Unlike earlier ClickFix variants that typically deliver a single infostealer, this TerminalFix campaign deploys a sophisticated multi-stage attack chain that combines DLL sideloading, steganographic payload extraction, extensive Active Directory reconnaissance, and a custom reverse-tunnel implant – giving the attacker persistent, network-level proxy access through the compromised host. Once executed, the PowerShell command masquerades as a Cloudflare verification process while downloading a ZIP archive containing a legitimate binary (LockScreenContentServer.exe) and a malicious DLL (dui70.dll) used for sideloading. The sideloaded DLL drives an elaborate second stage: downloading payloads concealed inside PNG images using steganography, establishing dual persistence through Registry Run keys and scheduled tasks, conducting thorough domain reconnaissance—including domain trust enumeration, domain admin discovery, Active Directory user description harvesting, and targeted server ping sweeps—and ultimately deploying a Python-based reverse-tunnel C2 implant that tunnels arbitrary TCP traffic back through an encrypted WebSocket channel to attacker infrastructure. This type of intrusion is particularly dangerous because it provides attackers with direct access to an organization’s internal network through the reverse tunnel. The observed reconnaissance and reverse-tunnel capability could enable an attacker to identify and reach additional systems from a compromised host. Microsoft did not observe the downstream actions described below in the analyzed chain. Organizations should treat affected devices as potential network pivot points and investigate for lateral movement and credential exposure. In the hands-on-keyboard phase that typically follows, attackers leverage this access to escalate privileges, disable...",
-      "links": [
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "Application Control for Windows",
-          "url": "https://learn.microsoft.com/en-us/windows/security/application-security/application-control/app-control-for-business/appcontrol"
-        },
-        {
-          "label": "Microsoft Defender for Office 365",
-          "url": "https://learn.microsoft.com/defender-office-365/mdo-about"
-        },
-        {
-          "label": "recheck links on click",
-          "url": "https://learn.microsoft.com/defender-office-365/safe-links-about"
-        },
-        {
-          "label": "delete sent mail",
-          "url": "https://learn.microsoft.com/defender-office-365/zero-hour-auto-purge"
-        },
-        {
-          "label": "safe attachments policies",
-          "url": "https://learn.microsoft.com/defender-office-365/safe-attachments-about"
-        },
-        {
-          "label": "enterprise-managed browsers",
-          "url": "https://learn.microsoft.com/deployedge/microsoft-edge-for-business"
-        },
-        {
-          "label": "data compliance policies",
-          "url": "https://learn.microsoft.com/deployedge/microsoft-edge-for-business-config-recommendations"
-        },
-        {
-          "label": "network protection",
-          "url": "https://learn.microsoft.com/defender-endpoint/network-protection"
-        },
-        {
-          "label": "web protection",
-          "url": "https://learn.microsoft.com/defender-endpoint/web-protection-overview"
         }
       ]
     }
