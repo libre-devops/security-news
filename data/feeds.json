@@ -1,8 +1,83 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-28T13:19:33.241876+00:00",
+  "lastUpdated": "2026-09-28T23:03:55.012924+00:00",
   "totalArticles": 137,
   "articles": [
+    {
+      "title": "NeedyMantis: Unpacking a post-compromise malware family used in targeted operations",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/",
+      "published": "2026-09-28T15:00:00+00:00",
+      "summary": "Microsoft Threat Intelligence identified NeedyMantis, a modular post-compromise malware framework used in targeted intrusions that combines custom loaders, encrypted archives, and extensible components to maintain long-term access and support follow-on operations. The post NeedyMantis: Unpacking a...",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Observed operators and targetingMalware packaging and distributionNeedyMantis architecture and capabilitiesMitigation and protection guidanceHunting queriesIndicators of compromise Microsoft Threat Intelligence has identified NeedyMantis, a modular post-compromise malware family observed in a limited number of targeted operations affecting telecommunications organizations, universities, medical nonprofits, intergovernmental organizations, and government contractors. Based on observed activity, NeedyMantis is typically deployed after a threat actor has already established access to a target environment, indicating that the malware is used to maintain long-term access and support follow-on operations. NeedyMantis activity dates back to at least October 2025. We discovered the malware family while analyzing and pivoting from research and indicators of compromise associated with the DAEMON Tools supply chain compromise, which Kaspersky previously reported on as part of its investigation into the campaign. Observed activity involving NeedyMantis has thus far aligned with activity that Microsoft associates with threat actors operating from China, although Microsoft has not determined whether all observed activity is attributable to the same operator. While NeedyMantis employs techniques commonly used by modern malware, its architecture combines multiple loaders, custom encrypted file archives, a custom executable file format, and modular components that enable operators to evade analysis and extend functionality through additional modules. These characteristics, combined with its use in targeted intrusions, make NeedyMantis a useful case study for understanding how threat actors establish and maintain long-term access within victim environments. In this blog, we analyze the NeedyMantis malware framework. We examine its packaging and deployment, custom archive format, loader architecture, command-and-control (C2) communications, and modular design. We also provide indicators of compromise (IOCs), Microsoft Defender detections, and mitigation guidance to help organizations defend against this threat and related activity. Observed operators and targeting At the time of writing, Microsoft has observed at least one threat actor using NeedyMantis malware: Storm-3069. Storm-3069 is Microsoft Threat Intelligence’s designator for activity associated with the DAEMON Tools supply chain compromise. While Microsoft assesses the activity originates from...",
+      "links": [
+        {
+          "label": "Observed operators and targeting",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#observed-operators-and-targeting"
+        },
+        {
+          "label": "Malware packaging and distribution",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#malware-packaging-and-distribution"
+        },
+        {
+          "label": "NeedyMantis architecture and capabilities",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#needymantis-architecture-and-capabilities"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Hunting queries",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+        },
+        {
+          "label": "Indicators of compromise",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
+        },
+        {
+          "label": "Kaspersky previously reported",
+          "url": "https://securelist.com/tr/daemon-tools-backdoor/119654/"
+        },
+        {
+          "label": "WinSparkle software update component",
+          "url": "https://winsparkle.org/"
+        },
+        {
+          "label": "Poedit translation software",
+          "url": "https://poedit.com/"
+        },
+        {
+          "label": "cloud-delivered protection",
+          "url": "https://learn.microsoft.com/defender-endpoint/enable-cloud-protection-microsoft-defender-antivirus"
+        },
+        {
+          "label": "block at first sight",
+          "url": "https://learn.microsoft.com/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus"
+        },
+        {
+          "label": "Endpoint Detection and Response (EDR) in block mode",
+          "url": "https://learn.microsoft.com/defender-endpoint/edr-in-block-mode"
+        }
+      ]
+    },
     {
       "title": "From Domain Lists to Decisions: Scaling WHOIS Threat Intelligence with MDTI and Microsoft Graph",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/from-domain-lists-to-decisions-scaling-whois-threat-intelligence/ba-p/4560384",
@@ -3219,10 +3294,10 @@
       ]
     },
     {
-      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
+      "title": "Iranian cyber targeting of dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
+      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -3249,10 +3324,10 @@
       ]
     },
     {
-      "title": "Iranian cyber targeting of dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
+      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
+      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -4064,81 +4139,6 @@
       ],
       "body": "Bulletin ID: 2026-092-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/31/2026 11:30 AM PDT Description: OpenSearch is an open-source search and analytics engine. We identified CVE-2026-83497 where a remote authenticated user with basic read/search permissions can run arbitrary code on the server by providing a crafted cursor parameter to the plugins/sql endpoint. Affected Products & Versions: OpenSearch SQL Plugin (open-source, self-managed): - Affected: v2.8 to v3.6 - Fixed: versions 3.7 and 2.19.6 Amazon OpenSearch Service (AWS Managed): - Affected: v2.9 to v3.5 - Fixed: v2.9 to v3.5 (via service software update) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
-    },
-    {
-      "title": "Threat matrix: Mapping threats across cloud web applications",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/09/threat-matrix-mapping-threats-across-cloud-web-applications/",
-      "published": "2026-09-09T21:30:00+00:00",
-      "summary": "Microsoft introduces the Cloud Web Applications Threat Matrix, a MITRE ATT&CK-aligned framework that helps defenders understand, prioritize, and mitigate threats to cloud-hosted web apps and serverless platforms. The post Threat matrix: Mapping threats across cloud web applications appeared first...",
-      "author": "Microsoft Security Research and Lior Leizerovich",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article OverviewTechnique CatalogPrivilege EscalationMitigation and protection guidanceReferencesLearn more Microsoft introduces the cloud web applications threat matrix, a MITRE ATT&CK-aligned framework that helps defenders understand, prioritize, and mitigate threats to cloud-hosted web apps and serverless platforms. Cloud-hosted web applications and serverless platforms create attack paths that can cross application code, managed runtimes, workload identities, deployment pipelines, and connected cloud resources. Investigating the application and underlying cloud platform separately can leave gaps in how defenders understand those paths. Microsoft developed the Cloud web applications threat matrix to organize relevant techniques using MITRE ATT&CK tactics. The matrix can help security teams assess visibility gaps, prioritize hardening, and plan investigations across cloud-native environments. This blog introduces the framework, examines selected techniques, and outlines defensive priorities for reducing exposure. Overview Cloud-hosted web applications and serverless platforms let teams deploy and scale application logic quickly, but they also create attack paths that cross application code, managed runtimes, identities, deployment pipelines, and connected cloud services. These paths can be difficult to detect when the application layer and underlying cloud platform are investigated separately. To provide a clear and consistent view of the threat landscape affecting cloud hosted web applications and serverless environments, we organize techniques using the MITRE ATT&CK format. Building on Microsoft’s previously published threat matrices for Kubernetes and storage services, this matrix expands coverage for cloud web applications– applications that execute code in a managed environment, are often tightly integrated with other cloud resources, and are commonly exposed to the internet. The attack techniques presented in this matrix are divided into the following tactics, aligned with the MITRE ATT&CK framework: Resource Development Initial Access Execution Persistence Privilege Escalation Defense Evasion Credential Access Discovery Lateral Movement Collection Impact Figure 1. Cloud web applications threat matrix organized by MITRE ATT&CK tactics. Technique Catalog Below, we walk through each tactic and describe its techniques in more detail. Resource Development The resource development tactic consists of techniques that adversaries use to establish...",
-      "links": [
-        {
-          "label": "Overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#overview"
-        },
-        {
-          "label": "Technique Catalog",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#technique-catalog"
-        },
-        {
-          "label": "Privilege Escalation",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#privilege-escalation"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "Cloud web applications threat matrix",
-          "url": "https://aka.ms/CloudWebAppsThreatMatrix"
-        },
-        {
-          "label": "MITRE ATT&CK",
-          "url": "https://attack.mitre.org/"
-        },
-        {
-          "label": "Kubernetes",
-          "url": "http://aka.ms/KubernetesThreatMatrix"
-        },
-        {
-          "label": "storage services",
-          "url": "https://microsoft.github.io/Threat-matrix-for-storage-services/"
-        },
-        {
-          "label": "Microsoft Threat Intelligence Blog",
-          "url": "https://aka.ms/threatintelblog"
-        },
-        {
-          "label": "LinkedIn",
-          "url": "https://www.linkedin.com/showcase/microsoft-threat-intelligence"
-        }
-      ]
     },
     {
       "title": "Passkey-themed social engineering leads to identity and cloud compromise",
