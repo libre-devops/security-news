@@ -1,8 +1,90 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-28T23:03:55.012924+00:00",
-  "totalArticles": 137,
+  "lastUpdated": "2026-09-29T05:00:17.219915+00:00",
+  "totalArticles": 138,
   "articles": [
+    {
+      "title": "Microsoft Entra ID: Enhance protection of the authentication experience by blocking external script injection",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1481309",
+      "published": "2026-09-28T23:44:16.920000+00:00",
+      "summary": "[What and why]As part of Microsoft's Secure Future Initiative, we are strengthening the security of the Microsoft Entra ID sign-in experience by introducing additional Content Security Policy (CSP) protections. This change helps protect users from threats such as cross-site scripting (XSS) by...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1481309",
+      "services": [
+        "Microsoft Entra",
+        "Microsoft 365 suite"
+      ],
+      "body": "[What and why]As part of Microsoft's Secure Future Initiative, we are strengthening the security of the Microsoft Entra ID sign-in experience by introducing additional Content Security Policy (CSP) protections. This change helps protect users from threats such as cross-site scripting (XSS) by allowing only trusted Microsoft-hosted scripts to run during authentication and blocking unauthorized or externally injected code.This post is a reminder of our previous announcement (MC1191924), which communicated this upcoming security change and the actions organizations may need to take before rollout. [Rollout schedule]General Availability (Worldwide): Beginning in mid-October 2026 and expected to complete by late October 2026[Impact on your organization]Who is affectedOrganizations whose users authenticate through Microsoft Entra ID sign-in pages hosted on login.microsoftonline.comOrganizations using browser extensions, monitoring tools, customization tools, or other solutions that inject scripts into the sign-in experienceMicrosoft Entra External ID tenants are not affectedPlatforms and servicesMicrosoft Entra IDWeb-based authentication experiences using login.microsoftonline.comBrowser-based sign-in experiences across supported browsersWhat will happenA new Content Security Policy (CSP) header will be added to Microsoft Entra ID sign-in pages.Scripts will be permitted only from trusted Microsoft content delivery network (CDN) domains.Inline script execution will be restricted to trusted Microsoft-authorized sources.Browser extensions and tools that inject scripts into Microsoft Entra ID sign-in pages may stop functioning.Users will continue to be able to sign in even if unsupported script injection tools no longer function.This change is enabled by default as part of the service update and does not require tenant configuration.Microsoft Authentication Library (MSAL) and API-based authentication flows are not affected because CSP enforcement applies only to browser-based sign-in experiences using login.microsoftonline.com.[Action required and recommendations]If your organization does not use tools or extensions that inject code into Microsoft Entra ID sign-in pages, no action is required.If your organization uses tools that inject code into the sign-in experience:Review the CSP guidance and assess whether any tools, browser extensions, or custom solutions rely on script injection.Test affected authentication workflows ahead of rollout.Replace or update any solutions that depend on script injection into Microsoft Entra sign-in pages.Communicate potential impacts to help desk and identity administration teams.Update internal documentation if it references affected authentication customizations.Learn moreContent Security Policy (CSP) rollout in Microsoft Entra ID - Microsoft identity platform | Microsoft LearnCSP ⟶ script-src GuideCSP Nonce ⟶ Script & Style AttributeEnhance protection of Microsoft Entra ID authentication by blocking external script injection | Microsoft Community HubSecure Future Initiative – Secure by Design | Microsoftwhy-xss-still-matters-msrcs-perspective-on-a-25-year-old-threat[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Content Security Policy (CSP) rollout in Microsoft Entra ID - Microsoft identity platform | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity-platform/content-security-policy"
+        },
+        {
+          "label": "CSP ⟶ script-src Guide",
+          "url": "https://content-security-policy.com/script-src/"
+        },
+        {
+          "label": "CSP Nonce ⟶ Script & Style Attribute",
+          "url": "https://content-security-policy.com/nonce/"
+        },
+        {
+          "label": "Enhance protection of Microsoft Entra ID authentication by blocking external script injection | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/enhance-protection-of-microsoft-entra-id-authentication-by-blocking-external-scr/4435200"
+        },
+        {
+          "label": "Secure Future Initiative – Secure by Design | Microsoft",
+          "url": "https://www.microsoft.com/trust-center/security/secure-future-initiative?msockid=22346ecb805f631739b27a6e81726266"
+        },
+        {
+          "label": "why-xss-still-matters-msrcs-perspective-on-a-25-year-old-threat",
+          "url": "https://www.microsoft.com/msrc/blog/2025/09/why-xss-still-matters-msrcs-perspective-on-a-25-year-old-threat"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Information Protection-Auto-labeling scale increase for SharePoint and OneDrive",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571309",
+      "published": "2026-09-28T22:58:08+00:00",
+      "summary": "We are increasing the maximum auto-labeling capacity for SharePoint and OneDrive from 100,000 up to 500,000 files per tenant per day. This helps organizations label and protect more of their data at rest, faster, closing labeling gaps across existing content. With sensitivity labels and protection...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "We are increasing the maximum auto-labeling capacity for SharePoint and OneDrive from 100,000 up to 500,000 files per tenant per day. This helps organizations label and protect more of their data at rest, faster, closing labeling gaps across existing content. With sensitivity labels and protection settings applied to more files sooner, organizations can better prepare their data estate for Microsoft 365 Copilot with greater confidence.GA date: November CY2026",
+      "links": []
+    },
     {
       "title": "NeedyMantis: Unpacking a post-compromise malware family used in targeted operations",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/",
@@ -3860,30 +3942,6 @@
           "label": "Microsoft Security Blog",
           "url": "https://www.microsoft.com/en-us/security/blog"
         }
-      ]
-    },
-    {
-      "title": "Microsoft Purview: Endpoint Data Loss Prevention-Archive File Classification Behavior Change for Windows Endpoints",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=570965",
-      "published": "2026-09-09T22:36:54+00:00",
-      "summary": "We are updating archive file classification behavior on Windows endpoints to align with cloud workloads. This change improves consistency, reduces noise in event reporting, and enhances performance when processing archive files.GA date: October CY2026Preview date: September CY2026",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
       ]
     },
     {
