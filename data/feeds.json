@@ -1,8 +1,261 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-29T12:26:13.175219+00:00",
-  "totalArticles": 139,
+  "lastUpdated": "2026-09-29T22:02:10.789736+00:00",
+  "totalArticles": 140,
   "articles": [
+    {
+      "title": "​​Beyond source code: A path to the keys to the kingdom",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
+      "published": "2026-09-29T16:00:00+00:00",
+      "summary": "Explore how Storm-3068 turned a compromised identity into broader cloud access and the steps organizations can take to defend their identities, pipelines, and cloud infrastructure. The post ​​Beyond source code: A path to the keys to the kingdom appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Defender Experts Cybersecurity Incident Response",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "What began as a single compromised identity quickly expanded into an organization’s development and cloud environments. In our latest Cyberattack Series report, we examine how the Microsoft Detection and Response Team (DART)—the team that delivers Microsoft Defender Experts Cybersecurity Incident Response—investigated activity by Storm-3068, a threat actor that turned a successful self-service password reset into access to Azure DevOps, development pipelines, and Kubernetes resources. By leveraging legitimate identity and cloud services rather than malware or software exploits, the threat actor established persistent access, enumerated repositories, and obtained credentials that opened a path into connected cloud infrastructure. This case highlights a growing challenge for defenders: when identities, source code, pipelines, and production environments are tightly linked, a single account compromise can provide a pathway to much broader access across the organization. Read on to learn more or access the full report. Read the full cyberattack report What happened? The intrusion began with Storm-3068 gaining access to a user account through a self-service password reset process and then taking full control of the identity by registering its own authentication methods. With persistent access established, the threat actor shifted its focus to Azure DevOps using legitimate administrative tools and automated scripts to enumerate repositories, projects, pipelines, and deployment environments. TACTIC: Trusted pipelines were exploitedRather than deploying malware, the threat actor modified development pipelines to collect Kubernetes credentials and expand access into cloud infrastructure.​​ Azure DevOps proved to be a high-value target because it sat at the intersection of identity, software development, and cloud operations. By mapping trusted deployment paths and connected resources, the threat actor was able to identify opportunities to expand beyond the initial compromise. The investigation revealed that Storm-3068 created a malicious pipeline designed to harvest Kubernetes credentials at scale. The pipeline deployed a kube agent and executed multiple jobs intended to collect kubeconfig files containing cluster connection details and authentication information. Leveraging the permissions of the compromised account, the threat actor deployed the pipeline that was authorized to access more than 50 resources and authenticated to services. In addition to deploying...",
+      "links": [
+        {
+          "label": "Microsoft Defender Experts Cybersecurity Incident Response",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender-experts-cybersecurity-incident-response?msockid=2f650b5d62a36ba416111c8063e66a5c"
+        },
+        {
+          "label": "Storm-3068",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming"
+        },
+        {
+          "label": "access the full report",
+          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/Cyberattacks-Series-Report-Q3-2026.pdf"
+        },
+        {
+          "label": "Azure DevOps",
+          "url": "https://azure.microsoft.com/en-us/products/devops/?msockid=2f650b5d62a36ba416111c8063e66a5c"
+        },
+        {
+          "label": "Kubernetes",
+          "url": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-kubernetes/?msockid=2f650b5d62a36ba416111c8063e66a5c"
+        },
+        {
+          "label": "multifactor authentication",
+          "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-mfa-multi-factor-authentication"
+        },
+        {
+          "label": "DART",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender-experts-cybersecurity-incident-response"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        },
+        {
+          "label": "Microsoft Security",
+          "url": "https://www.linkedin.com/showcase/microsoft-security/"
+        },
+        {
+          "label": "@MSFTSecurity",
+          "url": "https://twitter.com/@MSFTSecurity"
+        },
+        {
+          "label": "​​Beyond source code: A path to the keys to the kingdom",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-100308 - GluonTS arbitrary command execution during model deserialization",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-119-aws/",
+      "published": "2026-09-29T15:17:30+00:00",
+      "summary": "Bulletin ID: 2026-119-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/29/2026 08:00 AM PDT Description: GluonTS is an open source library for deep learning based time series models. We identified CVE-2026-100308 that allows arbitrary command execution upon...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-119-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/29/2026 08:00 AM PDT Description: GluonTS is an open source library for deep learning based time series models. We identified CVE-2026-100308 that allows arbitrary command execution upon deserialization of untrusted model artifacts. Deserialization of untrusted data in the model loading component in Amazon GluonTS before 0.17.0 might allow context-dependent attackers to execute arbitrary operating system commands with the privileges of the loading process via a crafted serialized model directory. The issue arises whenever a user calls Predictor.deserialize() or any RepresentablePredictor.deserialize() on a model directory they do not fully control. Impacted versions: <0.17.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. View article",
+      "links": [
+        {
+          "label": "View article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-119-aws/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-028-aws/",
+      "published": "2026-09-29T15:16:31+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
+      "published": "2026-09-29T15:16:30+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Issues with Amazon Athena ODBC Driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-013-aws/",
+      "published": "2026-09-29T15:16:30+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Star Blizzard refines phishing and malware delivery with the RedFlick technique",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/",
+      "published": "2026-09-29T15:00:00+00:00",
+      "summary": "Since January 2026, Microsoft has observed Russian state threat actor Star Blizzard evolve their detection evasion capabilities through large-scale phishing campaigns, the use of accounts on compromised websites, and a novel malware delivery technique, tracked by Microsoft as “RedFlick”. The post...",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Star Blizzard TTPs observed in 2026Defending against Star Blizzard and RedFlick-related activityMicrosoft Defender detectionsHunting queriesIndicators of compromise Since January 2026, Microsoft has observed Russian state threat actor Star Blizzard evolve their detection evasion capabilities through large-scale phishing campaigns, the use of accounts on compromised websites, and a novel malware delivery technique that Microsoft tracks as “RedFlick”. These changes represent a notable shift in the actor’s operational tradecraft and support ongoing cyberespionage activity targeting Ukrainian individuals and institutions as well as international non-government organizations (NGOs), Western think tanks, governments, and other organizations associated with international policy—particularly those with a nexus in supporting Ukraine. As part of this evolution, Star Blizzard adopted RedFlick, a malware delivery technique that helps evade detection by initiating a set of scheduled tasks to deploy the actor’s custom backdoor, CosmicPulse. This technique is a notable departure from the actor’s previous use of ClickFix-based infection chains which required victims to complete multiple actions before CosmicPulse could be installed. By contrast, the RedFlick infection flow only requires a single user interaction, reducing friction in the compromise process. Combined with the actor’s shift toward large-scale phishing operations during the same period, these changes likely improve Star Blizzard’s ability to reach more targets, evade detection, and increase the likelihood of successful compromise. This blog provides updated technical analysis of Star Blizzard’s tactics, techniques, and procedures (TTPs) observed throughout 2026, building on our 2025 and 2023 blogs. It details the actor’s evolving phishing, persistence, and malware delivery techniques, and provides recommendations, indicators of compromise (IOCs), detections, and hunting guidance to help organizations identify and defend against RedFlick-related activity. As with any observed nation-state actor activity, Microsoft directly notifies customers that have been targeted or compromised, providing them with recommendations and mitigations to secure their accounts. Star Blizzard TTPs observed in 2026 Star Blizzard is attributed by the United States Cybersecurity and Infrastructure Agency (CISA) as subordinate to the Russian Federal Security Service Centre (FSB) Centre 18. Star Blizzard periodically...",
+      "links": [
+        {
+          "label": "Star Blizzard TTPs observed in 2026",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#star-blizzard-ttps-observed-in-2026"
+        },
+        {
+          "label": "Defending against Star Blizzard and RedFlick-related activity",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#defending-against-star-blizzard-and-redflick-related-activity"
+        },
+        {
+          "label": "Microsoft Defender detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+        },
+        {
+          "label": "Hunting queries",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+        },
+        {
+          "label": "Indicators of compromise",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
+        },
+        {
+          "label": "2025",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/01/16/new-star-blizzard-spear-phishing-campaign-targets-whatsapp-accounts/"
+        },
+        {
+          "label": "2023",
+          "url": "https://www.microsoft.com/en-us/security/blog/2023/12/07/star-blizzard-increases-sophistication-and-evasion-in-ongoing-attacks/"
+        },
+        {
+          "label": "attributed",
+          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-341a"
+        },
+        {
+          "label": "report",
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/new-malware-russia-coldriver"
+        },
+        {
+          "label": "previously reported",
+          "url": "https://www.microsoft.com/security/blog/2023/12/07/star-blizzard-increases-sophistication-and-evasion-in-ongoing-attacks/"
+        },
+        {
+          "label": "reported",
+          "url": "https://x.com/threatinsight/status/2037560142880006266"
+        },
+        {
+          "label": "reported",
+          "url": "https://dslua.org/publications/spearphishing-via-fake-urc-2026-invitations-targets-ukrainian-csos/"
+        }
+      ]
+    },
     {
       "title": "Chromium CVE-2026-91728: Integer overflow",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-91728",
@@ -1344,102 +1597,6 @@
           "label": "6. Troubleshooting the right part of the DNS path",
           "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k3cldkgu_12"
         }
-      ]
-    },
-    {
-      "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
-      "published": "2026-09-25T20:30:00+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-028-aws/",
-      "published": "2026-09-25T20:30:00+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "Issues with Amazon Athena ODBC Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-013-aws/",
-      "published": "2026-09-25T20:26:30+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-5747 - Out-of-bounds Write in Firecracker virtio-pci Transport",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-015-aws/",
-      "published": "2026-09-25T20:26:30+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
       ]
     },
     {
@@ -3427,10 +3584,10 @@
       ]
     },
     {
-      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
+      "title": "Iranian cyber targeting of dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
+      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -3457,10 +3614,10 @@
       ]
     },
     {
-      "title": "Iranian cyber targeting of dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
+      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
+      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -3839,68 +3996,68 @@
       "published": "2026-09-10T17:23:05+00:00",
       "summary": "Microsoft examines an AI-assisted business email compromise campaign that used executive impersonation and fake invoices to target finance teams with ACH payment fraud. The post Protecting organizations from AI-assisted executive impersonation and invoice fraud appeared first on Microsoft Security...",
       "author": "Microsoft Security Research",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 7
         }
       ],
       "tags": [
-        "General Security"
+        "Threat Intelligence"
       ],
       "body": "In this article Attack chain overviewEmail DeliveryDomain registrationGenerative AI usageMitigation and protection guidanceMicrosoft Defender detectionsMicrosoft Security CopilotThreat intelligence reportsMITRE ATT&CK Techniques observedIndicators of compromise (IOC)Learn More Threat actors are increasingly improving their tactics to make suspicious emails look like legitimate email notifications to potential victims, deploying techniques that impersonate internally sent emails from executive team members. While this technique is not new, the adoption of AI has enabled threat actors to improve their campaign templates and construct emails tailored to their recipients. Additionally, threat actors are incorporating multiple techniques within the same email to improve the overall narrative further. In this blog, we will discuss a recent campaign observed using third-party email delivery infrastructure to send out over a million financial fraud scam emails that displayed multiple indicators consistent with the use of generative AI during email template creation. The threat actor impersonated CEOs of multiple target companies, attempting to convince accounts payable departments of the same companies to process an Automated Clearing House (ACH) payment of nearly $50,000. To add legitimacy, the actor included a forwarded email thread (and a fabricated invoice) between the impersonated CEO and ServiceNow (which was also being impersonated). Attack chain overview The campaign follows steps before and during the execution of the campaign: threat actors register impersonation domains, send executive-themed payment requests through trusted infrastructure, embed fabricated invoices and supporting conversations, and attempt to convince finance personnel to initiate ACH transfers. Figure 1: Attack chain showing domain registration, executive impersonation, invoice fraud delivery, ACH payment execution, and financial theft. Email Delivery Between August 3 and 5, Microsoft detected a campaign consisting of more than a million emails targeting enterprise users. The attacker used multiple third-party email service accounts to send out the emails. A huge majority of these emails were sent to users in the United States (87.7% of the total campaign). Figure 2. Campaign timeline. Figure 3. Industry distribution of targeted enterprises of this campaign with ‘IT services & business advisory’ along with ‘Consumer goods’ and others. Unlike traditional invoice scams that rely on a...",
       "links": [
         {
           "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
         },
         {
           "label": "Email Delivery",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#email-delivery"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#email-delivery"
         },
         {
           "label": "Domain registration",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#domain-registration"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#domain-registration"
         },
         {
           "label": "Generative AI usage",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#generative-ai-usage"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#generative-ai-usage"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
         },
         {
           "label": "Microsoft Security Copilot",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-security-copilot"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-security-copilot"
         },
         {
           "label": "Threat intelligence reports",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#threat-intelligence-reports"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#threat-intelligence-reports"
         },
         {
           "label": "MITRE ATT&CK Techniques observed",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitre-att-ck-techniques-observed"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitre-att-ck-techniques-observed"
         },
         {
           "label": "Indicators of compromise (IOC)",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise-ioc"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise-ioc"
         },
         {
           "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
         },
         {
           "label": "automatic attack disruption",
@@ -3930,69 +4087,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Detect and disrupt AI-themed attacks with Microsoft Defender",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/",
-      "published": "2026-09-10T16:00:00+00:00",
-      "summary": "See how Microsoft Defender detects and disrupts AI-themed phishing, malware, and multi-stage attacks across the attack chain. The post Detect and disrupt AI-themed attacks with Microsoft Defender appeared first on Microsoft Security Blog.",
-      "author": "Rob Lefferts",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "Every wave of technology excitement creates a new opportunity for cyberattackers, and AI is no exception. Microsoft Threat Intelligence has published research showing a growing set of campaigns that impersonate popular AI platforms and tools, including ChatGPT, Microsoft Copilot, DeepSeek, and Claude.1 The goal is to make phishing, search-driven malware campaigns, and malvertising—which is malicious advertising that uses online ads to lure users to harmful sites, downloads, or redirect chains—more convincing. A ChatGPT-themed phishing campaign sent up to 100,000 emails in a single day, tricking users into updating their ChatGPT Plus payment information and stealing personal and credit card data. These campaigns do not represent a compromise of the AI services being referenced. They represent something more familiar—cyberattackers doing what they have always done: borrowing trust. Right now, AI brands can carry significant trust and curiosity, making them attractive themes for cyberattackers to exploit. Prevent and disrupt cyberthreats with Microsoft Defender Understanding why this trend matters and what it means for security teams is critical to shaping a modern protection strategy. The tactics are the same ones cyberattackers have always refined: urgency, curiosity, and impersonation of something familiar to lower a user’s guard. What has changed is the wrapper. A message about a new model release, a policy update from a familiar AI assistant, or a plugin that promises to make the workday easier is today’s version of the fake invoice or the shipping notification. AI-themed lures deserve attention not because they are a passing trend tied to one product cycle, but because AI remains a genuine source of excitement and urgency for employees and consumers alike, and cyberattackers are exploiting the human instinct to explore what is new, useful, or urgent. The attack pattern is evolving Microsoft’s research team recently observed several AI brand campaigns including: A ChatGPT-themed phishing kit built to harvest credit card data. A Claude-themed campaign that harvested credentials and access tokens through adversary-in-the-middle (AiTM) techniques. Malvertising for a fake AI Windows plugin that delivered the Vidar stealer. Fraudulent DeepSeek installers distributed through GitHub. In one case, an initial access broker tracked as Storm-3075 used AI-themed malvertising to distribute payloads for multiple downstream actors, a sign of how quickly this tactic is...",
-      "links": [
-        {
-          "label": "Prevent and disrupt cyberthreats with Microsoft Defender",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender"
-        },
-        {
-          "label": "attack disruption",
-          "url": "https://aka.ms/disrupt-ebook"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "AI brands as bait: How threat actors are using the AI hype in social engineering",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/06/08/ai-brands-as-bait-how-threat-actors-are-using-the-ai-hype-in-social-engineering/"
-        },
-        {
-          "label": "Detect and disrupt AI-themed attacks with Microsoft Defender",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/10/detect-and-disrupt-ai-themed-attacks-with-microsoft-defender/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
-        }
       ]
     },
     {
