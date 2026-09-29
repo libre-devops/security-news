@@ -1,8 +1,107 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-29T05:00:17.219915+00:00",
-  "totalArticles": 138,
+  "lastUpdated": "2026-09-29T12:26:13.175219+00:00",
+  "totalArticles": 139,
   "articles": [
+    {
+      "title": "Chromium CVE-2026-91728: Integer overflow",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-91728",
+      "published": "2026-09-29T08:46:34+00:00",
+      "summary": "Information published.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-91745: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-91745",
+      "published": "2026-09-29T08:46:17+00:00",
+      "summary": "Information published.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "New Microsoft data innovations unlock what only your business knows",
+      "link": "https://blogs.microsoft.com/blog/2026/09/28/new-microsoft-data-innovations-unlock-what-only-your-business-knows/",
+      "published": "2026-09-29T06:30:04+00:00",
+      "summary": "Every organization has knowledge that is uniquely its own: the way its business operates, the data it has built over time, the expertise of its people and the context behind thousands of everyday decisions. As powerful AI models become more widely available, that unique business intelligence...",
+      "author": "Jessica Hawk",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Every organization has knowledge that is uniquely its own: the way its business operates, the data it has built over time, the expertise of its people and the context behind thousands of everyday decisions. As powerful AI models become more widely available, that unique business intelligence matters more than ever. The difference will come from how effectively organizations combine those models with the data, expertise and business context that make them unique. Turning that intelligence into lasting advantage requires three elements to work together: human ambition to set the direction, intelligence grounded in the organization’s unique knowledge and trust to provide the foundation for operating at scale. Microsoft’s approach is designed to bring those elements together so organizations can build on what they know and create greater value over time. That value can compound through a continuous learning loop, where AI draws on an organization’s data and expertise, improves the systems and experiences it creates and generates better outcomes over time without making the organization dependent on any single model provider. Today at the European Microsoft Fabric + SQL Community Conference in Barcelona, we are introducing advances across Microsoft Fabric and Azure Databases that help organizations put their data estate at the heart of a successful AI strategy. Fabric IQ: Bring your unique business context into Microsoft Copilot As Microsoft Copilot evolves across Home, Code and Autopilot, access to trusted business context becomes essential. Fabric IQ brings governed business context into Copilot, grounding experiences in the Power BI semantic models, metrics, relationships and business definitions organizations already trust. With Fabric IQ in Microsoft Copilot Chat and Cowork now generally available, users can ask business questions and receive answers grounded in governed Power BI data, while Cowork can use those insights as part of broader multistep work. Integration with the new Code experience is coming through the Frontier program. That means when someone asks Copilot for the latest sales forecast or another critical business metric, the answer can be grounded in the same semantic model that powers the organization’s reports, helping avoid confusion about which number is correct. For Power BI customers, this extends the semantic foundation they already have into Microsoft Copilot while preserving existing access controls and governance. I experienced...",
+      "links": [
+        {
+          "label": "European Microsoft Fabric + SQL Community Conference",
+          "url": "https://espc.tech/conference/fabcon-europe-2026/"
+        },
+        {
+          "label": "shared our vision for autonomous data engineering",
+          "url": "https://blogs.microsoft.com/blog/2026/01/05/microsoft-announces-acquisition-of-osmos-to-accelerate-autonomous-data-engineering-in-fabric/"
+        },
+        {
+          "label": "At Ignite",
+          "url": "https://ignite.microsoft.com/en-US/home?ef_id=_k_4e8bc0ea4e71145fc166aa50e09f8dd5_k_&OCID=AIDcmmkyjzmort_SEM__k_4e8bc0ea4e71145fc166aa50e09f8dd5_k_&msclkid=4e8bc0ea4e71145fc166aa50e09f8dd5"
+        },
+        {
+          "label": "today’s blog",
+          "url": "https://aka.ms/FabCon-SQLCon-Barcelona"
+        },
+        {
+          "label": "New Microsoft data innovations unlock what only your business knows",
+          "url": "https://blogs.microsoft.com/blog/2026/09/28/new-microsoft-data-innovations-unlock-what-only-your-business-knows/"
+        },
+        {
+          "label": "The Official Microsoft Blog",
+          "url": "https://blogs.microsoft.com"
+        }
+      ]
+    },
     {
       "title": "Microsoft Entra ID: Enhance protection of the authentication experience by blocking external script injection",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1481309",
@@ -1731,54 +1830,6 @@
       ]
     },
     {
-      "title": "Chromium CVE-2026-95287: Missing authorization in Navigation",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95287",
-      "published": "2026-09-25T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-95288: UI misrepresentation in Mobile",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95288",
-      "published": "2026-09-25T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
       "title": "Introducing the new Copilot with Home, Code and Autopilot",
       "link": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
       "published": "2026-09-25T12:03:50+00:00",
@@ -3376,10 +3427,10 @@
       ]
     },
     {
-      "title": "Iranian cyber targeting of dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
+      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
+      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -3406,10 +3457,10 @@
       ]
     },
     {
-      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
+      "title": "Iranian cyber targeting of dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
+      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
