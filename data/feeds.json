@@ -1,8 +1,82 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-30T04:47:02.280025+00:00",
-  "totalArticles": 139,
+  "lastUpdated": "2026-09-30T12:11:11.771641+00:00",
+  "totalArticles": 141,
   "articles": [
+    {
+      "title": "Scaling classification and labeling: an interactive reference architecture update",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/scaling-classification-and-labeling-an-interactive-reference/ba-p/4560925",
+      "published": "2026-09-30T02:33:27+00:00",
+      "summary": "In April, I published a set of referential architecture diagrams for Microsoft Purview — Microsoft Purview Referential Architecture Diagrams. They have been useful in workshops and training sessions for a simple reason: one picture is worth a thousand words - attempting to explain the complex in a...",
+      "author": "MaximeBombardier",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "In April, I published a set of referential architecture diagrams for Microsoft Purview — Microsoft Purview Referential Architecture Diagrams. They have been useful in workshops and training sessions for a simple reason: one picture is worth a thousand words - attempting to explain the complex in a single image. Today I'm publishing an update focused on classification and labeling — and on the wave of public previews that make auto-labeling something you can scale across the entire estate with ease. Detailed view mode ➡️ Download the interactive architecture on GitHub here. It's a self-contained HTML file - and it's a lot more than this picture!Once in GitHub, click on this icon on the top right bar to download Why now: auto-labeling scales to the whole estate The most consequential change is surprisingly small. An auto-labeling policy can now be kept on while you edit it, without re-triggering simulation. Anyone who has run auto-labeling at scale knows why that matters. Until now, tuning a policy meant turning enforcement off, re-simulating, waiting, and turning it back on — delays every time you refined a rule. That friction made it challenging for organizations from broadening scope as fast as they wanted to. Removing it changes the operating model: you can simulate once with your conditions and expand scope (sites) when you're ready, without hitting the simulation limit. It arrives alongside a set of previews that lift every ceiling that used to cap the motion: Capacity is up 5x. Auto-labeling for SharePoint and OneDrive moves from 100,000 to up to 500,000 files per tenant per day (Roadmap ID 567890). Simulation goes from 4M to 20M items, so you can model against a real estate rather than a sample. Policy scope gets much bigger. Select up to 1,000 individual SharePoint sites per policy, adaptive scopes support up to 50,000 sites, and you can filter sites by the SiteTemplate property when configuring a policy (Roadmap ID 570445, MC1469958). Reporting finally tells you what happened. Audit and reporting now summarize the sensitive information types detected when labels are applied, and a new 30-day chart shows files processed per day so you can watch policy throughput. A per-policy coverage report correlates files processed during enforcement to the latest simulation run — including the files that enforcement processed but simulation never saw (Roadmap ID 568935). SharePoint library default labels now reach data at rest, applying the library's default...",
+      "links": [
+        {
+          "label": "Microsoft Purview Referential Architecture Diagrams",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/microsoft-purview-referential-architecture-diagrams/4510925"
+        },
+        {
+          "label": "here",
+          "url": "https://github.com/microsoft/purview/blob/main/purview-classification-labeling-reference-architecture.html"
+        }
+      ]
+    },
+    {
+      "title": "Microsoft Purview Referential Architecture Diagrams",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/microsoft-purview-referential-architecture-diagrams/ba-p/4510925",
+      "published": "2026-09-30T01:56:58+00:00",
+      "summary": "The Microsoft Purview architecture diagrams provide a referential view of how data classification, sensitivity labeling, Data Loss Prevention (DLP) and Insider Risk operate across Microsoft 365 workloads. These diagrams are intended to help organisations understand where policy evaluation occurs,...",
+      "author": "MaximeBombardier",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "The Microsoft Purview architecture diagrams provide a referential view of how data classification, sensitivity labeling, Data Loss Prevention (DLP) and Insider Risk operate across Microsoft 365 workloads. These diagrams are intended to help organisations understand where policy evaluation occurs, how signals flow between services, and how enforcement is applied consistently. Rather than prescribing a single deployment model, the diagrams illustrate common architectural patterns used to protect sensitive data across endpoints, email, and collaboration services. 2026-09-09 - New Classification and auto-labeling interactive referential architecture now available here: Scaling classification and labeling: an interactive reference architecture update | Microsoft Community Hub. Classification: How Content Sensitivity Is Determined This diagram shows how content is classified across Microsoft 365 workloads and connected locations. Key points highlighted in the diagram: Classification can occur in the client, in transport, or in the service, depending on workload and policy. Multiple classifier types are supported, including Sensitive Information Types (SITs) - deterministic patterns and keywords, and several advanced classifier models such as Exact Data Match, document fingerprinting and trainable classifiers. Classification informs about what's in the content and results are reused by downstream controls such as DLP, auto-labeling, data lifecycle management, eDiscovery and more. Classification is performed real time or near real time as content is created, modified, or transmitted. Classification acts as the core signal for Purview data protection. All enforcement decisions shown in later diagrams rely on these classification outcomes. Sensitivity Labelling: A Unified Control Plane The labeling diagram illustrates how sensitivity labels are applied and enforced consistently across Microsoft 365. Key points highlighted in the diagram: Labels are organizational signals. they are end user facing and provides a consistent approach in training users on data security hygiene. They are your unified control plane across your data estate. Labels can be applied manually, with layered defaults, and/or automatically, depending on workload and configuration. Labels travel with content across SharePoint, OneDrive, Teams, Outlook, Office apps and more. Label configuration can enforce protections such as encryption, watermarking, external access controls, and DLP on label....",
+      "links": [
+        {
+          "label": "Scaling classification and labeling: an interactive reference architecture update | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/scaling-classification-and-labeling-an-interactive-reference-architecture-update/4560925"
+        },
+        {
+          "label": "downloadable in PowerPoint format here",
+          "url": "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fpurview%2Frefs%2Fheads%2Fmain%2Fpurview-blueprints%2FPurview%2520architecture%2520diagrams.pptx&wdOrigin=BROWSELINK"
+        },
+        {
+          "label": "Purview Deployment blueprints here",
+          "url": "https://aka.ms/PurviewBlueprints"
+        }
+      ]
+    },
     {
       "title": "Phishing Abuses RMM Tools for Persistent Access",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
@@ -3588,10 +3662,10 @@
       ]
     },
     {
-      "title": "Iranian cyber targeting of dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
+      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
+      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -3618,10 +3692,10 @@
       ]
     },
     {
-      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
+      "title": "Iranian cyber targeting of dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
+      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
