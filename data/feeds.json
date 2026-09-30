@@ -1,79 +1,230 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-30T12:11:11.771641+00:00",
-  "totalArticles": 141,
+  "lastUpdated": "2026-09-30T22:01:14.227376+00:00",
+  "totalArticles": 139,
   "articles": [
     {
-      "title": "Scaling classification and labeling: an interactive reference architecture update",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/scaling-classification-and-labeling-an-interactive-reference/ba-p/4560925",
-      "published": "2026-09-30T02:33:27+00:00",
-      "summary": "In April, I published a set of referential architecture diagrams for Microsoft Purview — Microsoft Purview Referential Architecture Diagrams. They have been useful in workshops and training sessions for a simple reason: one picture is worth a thousand words - attempting to explain the complex in a...",
-      "author": "MaximeBombardier",
-      "source": "Microsoft Purview",
-      "source_id": "purview",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
+      "title": "​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
+      "published": "2026-09-30T19:31:00+00:00",
+      "summary": "This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what’s next: Your guide to Microsoft Security at...",
+      "author": "Lindsay Myers",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Data Security",
-      "board_id": "microsoftpurviewblog",
+      "source_category": "Security Blog",
+      "board_id": null,
       "products": [
         {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Microsoft Purview"
+        "General Security"
       ],
-      "body": "In April, I published a set of referential architecture diagrams for Microsoft Purview — Microsoft Purview Referential Architecture Diagrams. They have been useful in workshops and training sessions for a simple reason: one picture is worth a thousand words - attempting to explain the complex in a single image. Today I'm publishing an update focused on classification and labeling — and on the wave of public previews that make auto-labeling something you can scale across the entire estate with ease. Detailed view mode ➡️ Download the interactive architecture on GitHub here. It's a self-contained HTML file - and it's a lot more than this picture!Once in GitHub, click on this icon on the top right bar to download Why now: auto-labeling scales to the whole estate The most consequential change is surprisingly small. An auto-labeling policy can now be kept on while you edit it, without re-triggering simulation. Anyone who has run auto-labeling at scale knows why that matters. Until now, tuning a policy meant turning enforcement off, re-simulating, waiting, and turning it back on — delays every time you refined a rule. That friction made it challenging for organizations from broadening scope as fast as they wanted to. Removing it changes the operating model: you can simulate once with your conditions and expand scope (sites) when you're ready, without hitting the simulation limit. It arrives alongside a set of previews that lift every ceiling that used to cap the motion: Capacity is up 5x. Auto-labeling for SharePoint and OneDrive moves from 100,000 to up to 500,000 files per tenant per day (Roadmap ID 567890). Simulation goes from 4M to 20M items, so you can model against a real estate rather than a sample. Policy scope gets much bigger. Select up to 1,000 individual SharePoint sites per policy, adaptive scopes support up to 50,000 sites, and you can filter sites by the SiteTemplate property when configuring a policy (Roadmap ID 570445, MC1469958). Reporting finally tells you what happened. Audit and reporting now summarize the sensitive information types detected when labels are applied, and a new 30-day chart shows files processed per day so you can watch policy throughput. A per-policy coverage report correlates files processed during enforcement to the latest simulation run — including the files that enforcement processed but simulation never saw (Roadmap ID 568935). SharePoint library default labels now reach data at rest, applying the library's default...",
+      "body": "In this article Why you should attend Microsoft IgniteMake the most of your time at Microsoft Ignite Explore the Security sessions at Microsoft Ignite 2026 Build your schedule In the agentic era, the stakes are higher: AI agents now act with real access to your identities, your data, and your cloud, so every adoption decision is a trust decision. That is why security is a through line at Microsoft Ignite 2026, from a Security Pre-Day before the event opens to a security segment in the keynote, and four security themes across all four days. Join us in San Francisco from November 17 to 20, 2026, or online. See the Microsoft Security roadmap first, get hands-on with new agentic security solutions, and connect directly with the experts, partners, and peers who can help you make it real. This year we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. Register for Microsoft Ignite 2026 Why you should attend Microsoft Ignite Understand where Microsoft is placing its bets. See what is being announced, what is shipping next, and what it means for your architecture, your security operations center (SOC), and your governance model. Build skills you can use immediately. Technical breakouts run from level 200 to level 400, paired with instructor-led labs and onsite certifications, so you leave with implementation guidance rather than slideware. Pressure-test your plans with the people who built it. Bring your real architecture, deployment, and roadmap questions to Microsoft engineers, MVPs, and the product teams behind these tools. See the proof, not the promise. Customer stories, live demos, and partner solutions show what is already working in production today. Connect with the people who make it real. Expert meetups, connection pods, table talks, and evening events put you alongside security practitioners, leaders, Microsoft partners, and peers working the same problems. Make the most of your time at Microsoft Ignite Whether you join us in San Francisco or online, you will have access to a full slate of experiences designed to help you connect, learn, and grow as a security professional. Here is what is in store. Start a day early at the Security Pre-Day On Monday, November 16, 2026, from 1:00 PM PT to 5:00 PM PT, the Security Pre-Day gives you four hours with Microsoft Security leaders and external industry voices before the...",
       "links": [
         {
-          "label": "Microsoft Purview Referential Architecture Diagrams",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/microsoft-purview-referential-architecture-diagrams/4510925"
+          "label": "Why you should attend Microsoft Ignite",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-you-should-attend-microsoft-ignite"
         },
         {
-          "label": "here",
-          "url": "https://github.com/microsoft/purview/blob/main/purview-classification-labeling-reference-architecture.html"
+          "label": "Make the most of your time at Microsoft Ignite",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#make-the-most-of-your-time-at-microsoft-ignite"
+        },
+        {
+          "label": "Explore the Security sessions at Microsoft Ignite 2026",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#explore-the-security-sessions-at-microsoft-ignite-2026"
+        },
+        {
+          "label": "Build your schedule",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#build-your-schedule"
+        },
+        {
+          "label": "Join us in San Francisco from November 17 to 20, 2026",
+          "url": "https://ignite.microsoft.com/home?wt.mc_ID=msignite26_ciarmar_corp_np_oo_securitysite_SecBlogSecureWhatsNext_0545"
+        },
+        {
+          "label": "Fill out the interest form",
+          "url": "https://aka.ms/SecuretheNight2026"
+        },
+        {
+          "label": "Microsoft Intelligent Security Association (MISA)",
+          "url": "https://www.microsoft.com/en-us/security/business/intelligent-security-association"
+        },
+        {
+          "label": "Zero Trust",
+          "url": "https://www.microsoft.com/en-us/security/business/zero-trust"
+        },
+        {
+          "label": "Microsoft Defender",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender"
+        },
+        {
+          "label": "Microsoft Purview",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-purview"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
         }
       ]
     },
     {
-      "title": "Microsoft Purview Referential Architecture Diagrams",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/microsoft-purview-referential-architecture-diagrams/ba-p/4510925",
-      "published": "2026-09-30T01:56:58+00:00",
-      "summary": "The Microsoft Purview architecture diagrams provide a referential view of how data classification, sensitivity labeling, Data Loss Prevention (DLP) and Insider Risk operate across Microsoft 365 workloads. These diagrams are intended to help organisations understand where policy evaluation occurs,...",
-      "author": "MaximeBombardier",
-      "source": "Microsoft Purview",
-      "source_id": "purview",
+      "title": "What’s new in Microsoft Sentinel: September 2026",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-september-2026/ba-p/4560902",
+      "published": "2026-09-30T16:00:00+00:00",
+      "summary": "Welcome back to What's new in Microsoft Sentinel. In September, Case Management brings investigation and collaboration together in Microsoft Defender, with a shared workspace to track work through resolution. Defender unified RBAC custom roles for granular delegated admin privileges (GDAP) give you...",
+      "author": "vkokkengada",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
       "source_group": "TechCommunity",
       "source_kind": "techcommunity",
       "vendor": "Microsoft",
-      "source_category": "Data Security",
-      "board_id": "microsoftpurviewblog",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
       "products": [
         {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
         }
       ],
       "tags": [
-        "Microsoft Purview"
+        "Microsoft Sentinel"
       ],
-      "body": "The Microsoft Purview architecture diagrams provide a referential view of how data classification, sensitivity labeling, Data Loss Prevention (DLP) and Insider Risk operate across Microsoft 365 workloads. These diagrams are intended to help organisations understand where policy evaluation occurs, how signals flow between services, and how enforcement is applied consistently. Rather than prescribing a single deployment model, the diagrams illustrate common architectural patterns used to protect sensitive data across endpoints, email, and collaboration services. 2026-09-09 - New Classification and auto-labeling interactive referential architecture now available here: Scaling classification and labeling: an interactive reference architecture update | Microsoft Community Hub. Classification: How Content Sensitivity Is Determined This diagram shows how content is classified across Microsoft 365 workloads and connected locations. Key points highlighted in the diagram: Classification can occur in the client, in transport, or in the service, depending on workload and policy. Multiple classifier types are supported, including Sensitive Information Types (SITs) - deterministic patterns and keywords, and several advanced classifier models such as Exact Data Match, document fingerprinting and trainable classifiers. Classification informs about what's in the content and results are reused by downstream controls such as DLP, auto-labeling, data lifecycle management, eDiscovery and more. Classification is performed real time or near real time as content is created, modified, or transmitted. Classification acts as the core signal for Purview data protection. All enforcement decisions shown in later diagrams rely on these classification outcomes. Sensitivity Labelling: A Unified Control Plane The labeling diagram illustrates how sensitivity labels are applied and enforced consistently across Microsoft 365. Key points highlighted in the diagram: Labels are organizational signals. they are end user facing and provides a consistent approach in training users on data security hygiene. They are your unified control plane across your data estate. Labels can be applied manually, with layered defaults, and/or automatically, depending on workload and configuration. Labels travel with content across SharePoint, OneDrive, Teams, Outlook, Office apps and more. Label configuration can enforce protections such as encryption, watermarking, external access controls, and DLP on label....",
+      "body": "Welcome back to What's new in Microsoft Sentinel. In September, Case Management brings investigation and collaboration together in Microsoft Defender, with a shared workspace to track work through resolution. Defender unified RBAC custom roles for granular delegated admin privileges (GDAP) give you finer control over what managed security service providers (MSSPs) and other partners can access. In Sentinel data lake, a single Codeless Connector Framework (CCF) connector can bring in data from many accounts, and our connector catalog has passed 500 data connectors. Read on for the details. Sentinel innovations: Sentinel SIEM Sentinel data lake Sentinel SIEM Case Management (Public Preview) Starting September 23, 2026, Case Management brings investigation and collaboration together in one experience in Defender. With Incident Cases, you can investigate, coordinate response, assign work, capture notes, and track progress through resolution, all from a shared workspace that holds investigation context alongside tasks and workflow tracking. Your existing Sentinel automation, playbooks, workbooks, and integrations carry over unchanged. This builds on the integrated security operations (ISOC) vision of bringing the context and workflows practitioners need to investigate and respond together in Defender. Read our Case Management blog, see the documentation, and watch the demo to learn more. Unified RBAC custom roles (Public Preview) If you work with a managed security service provider (MSSP) or manage multiple tenants, giving partners the right level of access is simpler. Granular delegated admin privileges (GDAP) sets which partner groups can be delegated access to your tenant, and Defender unified role-based access control (RBAC) sets what they can see and do once delegated. You can assign unified RBAC custom roles to GDAP remote tenant groups and scope each role down to specific security products, data sources, and data collections so partners receive only the access they need. GDAP previously only supported Microsoft Entra directory roles, which often meant handing partners more access than the job needed. Anyone who is a member of a remote tenant group receives its permissions. Your partner manages who belongs to the group, while you keep control of the role and its scope. Learn more. Sentinel data lake Multi-account support for codeless connectors (Public Preview) A single connector built on the Codeless Connector Framework (CCF) can bring data from many...",
       "links": [
         {
-          "label": "Scaling classification and labeling: an interactive reference architecture update | Microsoft Community Hub",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/scaling-classification-and-labeling-an-interactive-reference-architecture-update/4560925"
+          "label": "Sentinel SIEM",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-siem"
         },
         {
-          "label": "downloadable in PowerPoint format here",
-          "url": "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2Fpurview%2Frefs%2Fheads%2Fmain%2Fpurview-blueprints%2FPurview%2520architecture%2520diagrams.pptx&wdOrigin=BROWSELINK"
+          "label": "Sentinel data lake",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-datalake"
         },
         {
-          "label": "Purview Deployment blueprints here",
-          "url": "https://aka.ms/PurviewBlueprints"
+          "label": "ISOC",
+          "url": "https://aka.ms/isocannouncement"
+        },
+        {
+          "label": "our Case Management blog",
+          "url": "https://aka.ms/caseindefender"
+        },
+        {
+          "label": "the documentation",
+          "url": "https://aka.ms/caselearningdocs"
+        },
+        {
+          "label": "the demo",
+          "url": "https://aka.ms/casedemovideo"
+        },
+        {
+          "label": "Learn more.",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/create-custom-rbac-roles"
+        },
+        {
+          "label": "Codeless Connector Framework (CCF)",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/isv/create-codeless-connector"
+        },
+        {
+          "label": "Learn more.",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-multi-account-support-for-microsoft-sentinel-codeless-connectors/4544380"
+        },
+        {
+          "label": "Find your connector.",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference#sentinel-data-connectors"
+        },
+        {
+          "label": "Integrated Security Operations Center in Microsoft Defender",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/integrated-security-operations-center-in-microsoft-defender/4559097"
+        },
+        {
+          "label": "ISOC in Microsoft Defender (preview)",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/isoc-overview"
+        }
+      ]
+    },
+    {
+      "title": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
+      "published": "2026-09-30T14:00:00+00:00",
+      "summary": "Microsoft Threat Intelligence examines CVE-2026-73570 exploitation in Zimbra, including observed attack paths, detection opportunities, and mitigation guidance. The post Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570 appeared first on Microsoft Security...",
+      "author": "Microsoft Security Research, Mahesh Mandava and Rajesh Kumar Natarajan",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Attack chain overviewMitigation and protection guidanceReferencesLearn More Microsoft Threat Intelligence identified and tracked exploitation of CVE-2026-73570, an unauthenticated OS command injection vulnerability in the Zimbra Collaboration Suite SNMP notification path. Exploitation can be triggered by a specially crafted email against internet-facing Zimbra servers when the optional zimbra-snmp package is installed and SNMP notifications are enabled, without requiring authentication or user interaction. Following successful exploitation, observed activity included deployment of JSP web shells and reverse shells, privilege escalation, persistent remote-access tooling, and memory-backed execution. Threat actors also accessed email and collected authentication and mailbox data, with archive creation and subsequent transfer activity observed. The activity included both automated payload delivery and hands-on-keyboard operations on compromised mail servers. Microsoft observed affected organizations in more than one region and industry. Based on the environments investigated, exploitation was not limited to a single sector or geographic area. The diagram combines behaviors observed across multiple confirmed compromises; no single host necessarily exhibited every stage. From remediation to public disclosure CVE-2026-73570 is an unauthenticated OS command-injection vulnerability in the Zimbra Collaboration Suite SNMP notification path. An attacker can send a specially crafted SMTP request that introduces untrusted input into SNMP notification processing. If the input is not sufficiently sanitized, embedded shell commands can execute with the privileges of the zimbra service account. Exploitation requires the optional zimbra-snmp package to be installed and SNMP notifications to be enabled. Zimbra version 10.1.20, released July 20, 2026, contains the relevant remediation. CVE-2026-73570 was publicly disclosed on August 13, 2026. Microsoft telemetry identified activity targeting the same injection path during the interval between those events. Attack chain overview Figure 1. CVE-2026-73570 attack chain, mapped to MITRE ATT&CK tactics and composited across all confirmed compromises. Pre-disclosure reconnaissance and pre-exploitation probing Between July 28 and August 7, after a fix became available on July 20 but before public disclosure on August 13, Microsoft observed two distinct out-of-band scanning tools probing the vulnerable injection...",
+      "links": [
+        {
+          "label": "Attack chain overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "NVD: CVE-2026-73570",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-73570"
+        },
+        {
+          "label": "Zimbra Security Advisories – Zimbra :: Tech Center",
+          "url": "https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories"
+        },
+        {
+          "label": "Zimbra Releases/10.1.20 – Zimbra :: Tech Center",
+          "url": "https://wiki.zimbra.com/wiki/Zimbra_Releases/10.1.20"
+        },
+        {
+          "label": "CISA Known Exploited Vulnerabilities Catalog: CVE-2026-73570",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-73570"
+        },
+        {
+          "label": "Microsoft Threat Intelligence Blog",
+          "url": "https://aka.ms/threatintelblog"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/showcase/microsoft-threat-intelligence"
+        },
+        {
+          "label": "X (formerly Twitter)",
+          "url": "https://x.com/MsftSecIntel"
+        },
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/threatintel.microsoft.com"
         }
       ]
     },
@@ -256,78 +407,6 @@
           "label": "View article",
           "url": "https://aws.amazon.com/security/security-bulletins/2026-119-aws/"
         }
-      ]
-    },
-    {
-      "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-028-aws/",
-      "published": "2026-09-29T15:16:31+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
-      "published": "2026-09-29T15:16:30+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "Issues with Amazon Athena ODBC Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-013-aws/",
-      "published": "2026-09-29T15:16:30+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
       ]
     },
     {
@@ -2185,6 +2264,10 @@
           "url": "https://aka.ms/BizAppsInWorkIQ/Blog"
         },
         {
+          "label": "plugin registry",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-the-plugin-registry---one-place-to-discover-and-govern-plugins-for-m/4559682"
+        },
+        {
           "label": "here",
           "url": "https://aka.ms/Sept25/EvolvingModel"
         },
@@ -2203,10 +2286,6 @@
         {
           "label": "Introducing the new Copilot with Home, Code and Autopilot",
           "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
-        },
-        {
-          "label": "The Official Microsoft Blog",
-          "url": "https://blogs.microsoft.com"
         }
       ]
     },
@@ -2794,9 +2873,9 @@
       ]
     },
     {
-      "title": "CVE-2026-8838 - Remote Code Execution in amazon-redshift-python-driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-033-aws/",
-      "published": "2026-09-22T19:49:30+00:00",
+      "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 & CVE-2026-8597)",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/",
+      "published": "2026-09-22T19:49:29+00:00",
       "summary": "",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
@@ -2818,8 +2897,8 @@
       ]
     },
     {
-      "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 & CVE-2026-8597)",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/",
+      "title": "CVE-2026-11400 and CVE-2026-11401",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-039-aws/",
       "published": "2026-09-22T19:49:29+00:00",
       "summary": "",
       "author": "aws@amazon.com",
@@ -2866,9 +2945,57 @@
       ]
     },
     {
-      "title": "Issue with containerd CRI Plugin - CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, CVE-2026-47262",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-046-aws/",
-      "published": "2026-09-22T19:49:08+00:00",
+      "title": "CVE-2026-13769 – Insecure file permissions in AWS CLI",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-049-aws/",
+      "published": "2026-09-22T19:49:10+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-12957 and CVE-2026-12958 - Issues in Language Servers for AWS and Amazon Q Developer Plugins",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-047-aws/",
+      "published": "2026-09-22T19:49:09+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-15895: OS command injection in jsii-diff in AWS jsii",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-057-aws/",
+      "published": "2026-09-22T19:48:47+00:00",
       "summary": "",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
@@ -2938,32 +3065,8 @@
       ]
     },
     {
-      "title": "CVE-2026-16317 and CVE-2026-16318: Issues with s2n-tls: an open-source implementation of the TLS/SSL protocols",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-062-aws/",
-      "published": "2026-09-22T19:48:46+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-15737 - Sensitive content disclosure via OpenTelemetry spans in AgentCore Python SDK",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-058-aws/",
+      "title": "CVE-2026-16796 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-065-aws/",
       "published": "2026-09-22T19:48:46+00:00",
       "summary": "",
       "author": "aws@amazon.com",
@@ -3039,48 +3142,48 @@
       "published": "2026-09-22T15:00:00+00:00",
       "summary": "EvilTokens has quickly become one of the top PhaaS platforms, enabling device code phishing attacks through AI-assisted lures, automated infrastructure, and token theft. In collaboration with partners, Microsoft Digital Crimes Unit (DCU) facilitated a disruption of EvilTokens infrastructure and...",
       "author": "Microsoft Threat Intelligence, Microsoft Defender Experts and Microsoft Security Research",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
         }
       ],
       "tags": [
-        "General Security"
+        "Threat Intelligence"
       ],
       "body": "In this article What is device code phishing?EvilTokens platform and operationsEvilTokens phishing emailsMitigation and protection guidanceMicrosoft Defender XDR detectionsHunting queries Following its emergence in February 2026, EvilTokens quickly became one of the most widely used phishing-as-a-service (PhaaS) platforms, providing cybercriminals with AI capabilities for tailoring phishing lures and analyzing compromised inboxes to identify high-value targets. This AI-powered cybercrime platform facilitated sophisticated business email compromise (BEC) campaigns that compromised more than 12,000 inboxes in over 10,000 organizations worldwide. EvilTokens enabled threat actors to abuse the device code authentication flow, steal tokens, and compromise organizational accounts at scale using an AI-driven infrastructure and automating multiple parts of the attack chain. The toolkit offered a plethora of prebuilt phishing templates and landing pages with an AI-powered assistant to aid in structuring target-specific emails. Stolen tokens are used for email exfiltration and persistence, often through the creation of malicious inbox rules that conceal communications. In some cases, tokens can also be used to grant new devices access to a victim’s inbox, a particularly durable method to maintain persistence. Microsoft Threat Intelligence tracks the threat actor behind the development and support of the EvilTokens phish kit as Storm-2992. Post-compromise, EvilTokens enabled threat actors to utilize AI assistants to sift through victim mailbox activity and engineer a phishing message based on the accessible email content. EvilTokens also allowed threat actors to conduct Microsoft Graph reconnaissance to map organizational structure and permissions, enabling continued access and potential lateral movement while tokens remain valid. While token-targeting phishing is not new, it has become far more common and industrialized over the last several years as organizations adopted multifactor authentication (MFA). To evade detection, EvilTokens uses a multi-stage delivery pipeline designed to bypass traditional email gateways and endpoint security. Targets are lured through deceptive emails that use 44 different themes, including invoices and request for proposals (RFPs), or shared files. These emails contained malicious URLs, PDF attachments, and HTML files. Campaigns leveraging EvilTokens have impacted organizations in various industries, including wholesale distribution,...",
       "links": [
         {
           "label": "What is device code phishing?",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-is-device-code-phishing"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-is-device-code-phishing"
         },
         {
           "label": "EvilTokens platform and operations",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#eviltokens-platform-and-operations"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#eviltokens-platform-and-operations"
         },
         {
           "label": "EvilTokens phishing emails",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#eviltokens-phishing-emails"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#eviltokens-phishing-emails"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Microsoft Defender XDR detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-xdr-detections"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-xdr-detections"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
         },
         {
           "label": "Microsoft’s Digital Crimes Unit (DCU) facilitated a coordinated disruption of infrastructure used to operate the...",
@@ -3244,81 +3347,6 @@
       ]
     },
     {
-      "title": "From guidance to action: Security fundamentals that materially reduce risk",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/17/from-guidance-to-action-security-fundamentals-that-materially-reduce-risk/",
-      "published": "2026-09-17T17:00:00+00:00",
-      "summary": "AI has made fundamental changes to the operating environment for cybersecurity. Explore exposure management guidance on recommended controls and take action and stay ahead of cyberthreats. The post From guidance to action: Security fundamentals that materially reduce risk appeared first on...",
-      "author": "Ron Pessner",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "AI has already made fundamental changes to the operating environment for cybersecurity. Cyberattackers are testing more paths, adapting their techniques, and moving across digital environments with greater speed and persistence. The weaknesses they exploit remain familiar: excessive permissions, unprotected authentication flows, unpatched systems, exposed execution paths, and gaps between controls. What has changed is how quickly these weaknesses can combine into attack paths that cross identities, endpoints, applications, networks, and AI systems. A single foothold can become a broader compromise, making it increasingly difficult for security teams to determine which risks matter most and where to act first as their organizations adopt AI. We introduced Secure Now within Microsoft Security Exposure Management in May 2026 to help practitioners prioritize the action they need to take to be prepared for this shift. It provides actionable guidance for strengthening the foundational security needed for AI adoption, with recommendations focused on areas where autonomous attacks can create outsized exposure. Explore actionable cyberthreat guidance on Secure Now We continue to see evidence that AI is reshaping the threat landscape. These developments reinforce many of the foundational practices we use internally to secure Microsoft, while also expanding our understanding of where organizations need additional visibility, governance, and control. The examples in this blog illustrate how familiar weaknesses are evolving in the AI era and why continuous exposure reduction remains essential. When AI agents test their boundaries Recent frontier model-related agentic security disclosures offered early lessons in how autonomous agents may test the boundaries of their instructions and environments. In an incident disclosed by OpenAI, agents moved beyond their intended isolation, exploited vulnerabilities in shared Hugging Face infrastructure, and reached production systems. In separate incidents disclosed by Anthropic, agents exploited familiar weaknesses, including SQL injection, exposed credentials, weak passwords, and a malicious PyPI package. Our customers are asking us how they can reduce this risk by governing agent identities and tools, isolating execution, restricting outbound connectivity, monitoring behavior, and defending against increasingly autonomous external cyberthreats, so that an unexpected agent action or exposed weakness do not become a path across...",
-      "links": [
-        {
-          "label": "Secure Now",
-          "url": "https://aka.ms/securenow"
-        },
-        {
-          "label": "Microsoft Security Exposure Management",
-          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-security-exposure-management"
-        },
-        {
-          "label": "an incident disclosed by OpenAI",
-          "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
-        },
-        {
-          "label": "separate incidents disclosed by Anthropic",
-          "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals"
-        },
-        {
-          "label": "Explore recommended controls for this attack path.",
-          "url": "https://security.microsoft.com/securenow"
-        },
-        {
-          "label": "CaptiveCrunch",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/"
-        },
-        {
-          "label": "attackers impersonating IT support through Microsoft Teams",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/02/impersonating-it-support-threat-actors-turn-remote-session-into-enterprise-wide-access/"
-        },
-        {
-          "label": "Zero Trust principles",
-          "url": "https://www.microsoft.com/en-us/security/business/zero-trust"
-        },
-        {
-          "label": "eligible",
-          "url": "https://go.microsoft.com/fwlink/?linkid=2267193"
-        },
-        {
-          "label": "Get started now",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/enterprise/request-fasttrack-assistance-microsoft-365?view=o365-worldwide"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        }
-      ]
-    },
-    {
       "title": "What we’ve learned from Microsoft’s own AI transformation",
       "link": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
       "published": "2026-09-17T14:00:05+00:00",
@@ -3440,6 +3468,32 @@
       "tags": [
         "NCSC Guidance"
       ]
+    },
+    {
+      "title": "CVE-2026-86831: Improper validation of pod identifier uniqueness in aws-network-policy-agent in Amazon EKS",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-113-aws/",
+      "published": "2026-09-16T20:16:23+00:00",
+      "summary": "Bulletin ID: 2026-113-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/16/2026 12:30 PM PDT Description: Network Policy Agent is an EKS Policy management feature. We identified CVE-2026-86831, a cross-namespace NetworkPolicy bypass in Amazon EKS Network Policy Agent...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-113-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/16/2026 12:30 PM PDT Description: Network Policy Agent is an EKS Policy management feature. We identified CVE-2026-86831, a cross-namespace NetworkPolicy bypass in Amazon EKS Network Policy Agent (aws-network-policy-agent) before v1.4.0. Pod identifiers are constructed by concatenating the pod name and namespace with a hyphen delimiter, which is a legal character in both Kubernetes pod names and namespace names. This ambiguity can produce identical identifiers for pods across different namespaces, potentially allowing NetworkPolicy enforcement to be bypassed. Impacted versions: - 1.14.0<1.22.3 Amazon VPC CNI Managed Add-on - < v1.4.0 Network Policy Agent Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
     },
     {
       "title": "Microsoft’s commitment for AI in education: Protecting students, strengthening learning",
@@ -3662,10 +3716,10 @@
       ]
     },
     {
-      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
+      "title": "Iranian cyber targeting of dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
+      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -3692,10 +3746,10 @@
       ]
     },
     {
-      "title": "Iranian cyber targeting of dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
+      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
+      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -3851,32 +3905,6 @@
       ]
     },
     {
-      "title": "CVE-2026-86830 - Incorrect privilege assignment in Temporary Elevated Access Management (TEAM) for AWS IAM Identity Center",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-112-aws/",
-      "published": "2026-09-14T18:04:59+00:00",
-      "summary": "Bulletin ID: 2026-112-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/14/2026 10:45 AM PDT Description: Temporary Elevated Access Management (TEAM) is an open source AWS sample solution for managing temporary elevated access via AWS IAM Identity Center. We...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-112-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/14/2026 10:45 AM PDT Description: Temporary Elevated Access Management (TEAM) is an open source AWS sample solution for managing temporary elevated access via AWS IAM Identity Center. We identified CVE-2026-86830, where an authenticated user with application-level access could gain unintended temporary elevated access to AWS accounts managed by TEAM. Impacted versions: <1.5.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "[In preview] Public Preview: HTTP/3 over QUIC support in Azure Application Gateway",
       "link": "https://azure.microsoft.com/updates?id=571123",
       "published": "2026-09-14T17:55:00+00:00",
@@ -4012,6 +4040,32 @@
       ]
     },
     {
+      "title": "CVE-2026-89332 - Kiro IDE Sensitive Workspace Data Exfiltration via Agent-Written Workspace Configuration",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-111-aws/",
+      "published": "2026-09-11T19:08:25+00:00",
+      "summary": "Bulletin ID: 2026-111-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 12:00 PM PDT Description: Kiro IDE is an agentic development environment that makes it easy for developers to ship real engineering work with the help of AI agents. We identified...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-111-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 12:00 PM PDT Description: Kiro IDE is an agentic development environment that makes it easy for developers to ship real engineering work with the help of AI agents. We identified CVE-2026-89332, where the Kiro agent could modify a workspace's settings file in an untrusted workspace in Kiro IDE. A specially crafted repository could use this to point the Kiro Powers registry URL, which Kiro fetches when the Powers panel is opened, at an external endpoint, sending potentially sensitive workspace data to that endpoint. Kiro presented the edit to the user for approval, showing the inserted data and the URL, but the file was already written to disk, so opening the Powers panel before responding to the prompt made the request anyway. Impacted versions: Kiro IDE < 0.8.135 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
       "title": "CVE-2026-89090 - Denial of service in the event stream header decoder in AWS SDK for Go v2",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-110-aws/",
       "published": "2026-09-11T17:09:09+00:00",
@@ -4036,37 +4090,6 @@
       ],
       "body": "Bulletin ID: 2026-110-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 10:00 AM PDT Description: An issue exists in the the EventStream header decoder in AWS SDK for Go v2 in versions predating 2026-03-23. An actor can send a malformed EventStream response frame containing a crafted header value type byte outside the valid range, which can cause the host process to terminate. Impacted versions: < 2026-03-23 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
-    },
-    {
-      "title": "CVE-2026-18061 - XML External Entity (XXE) in AWS Advanced JDBC Wrapper RemoteQueryCachePlugin",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-109-aws/",
-      "published": "2026-09-11T16:37:01+00:00",
-      "summary": "Bulletin ID: 2026-109-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 09:30 AM PDT Description: The AWS Advanced JDBC Wrapper is an open-source library that enhances existing JDBC drivers with AWS-specific capabilities such as Aurora failover, IAM...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-109-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 09:30 AM PDT Description: The AWS Advanced JDBC Wrapper is an open-source library that enhances existing JDBC drivers with AWS-specific capabilities such as Aurora failover, IAM authentication, and automated SQL query caching for applications connecting to Amazon Aurora, RDS MySQL, and RDS MariaDB. We identified CVE-2026-18061, an improper restriction of XML external entity (XXE) references in the optional RemoteQueryCachePlugin. When this plugin is enabled with a shared cache, an actor with write access to that cache infrastructure might place crafted XML in a cached column value. When an application subsequently reads that cached result as XML, the wrapper's XML parsers resolve external entities, which might allow the actor to disclose sensitive files readable by the application process, including stored database and IAM role credentials. Impacted versions: >= 3.3.0 and <= 4.2.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": [
-        {
-          "label": "AWS Advanced JDBC Wrapper",
-          "url": "https://github.com/aws/aws-advanced-jdbc-wrapper"
-        }
-      ]
     },
     {
       "title": "Protecting organizations from AI-assisted executive impersonation and invoice fraud",
@@ -4192,9 +4215,9 @@
       ]
     },
     {
-      "title": "CVE-2026-19642 & CVE-2026-19643 - Memory-safety issues in the Base64 decoder in the AWS SDK for C++",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-080-aws/",
-      "published": "2026-09-09T21:35:25+00:00",
+      "title": "CVE-2026-18830 - Issue with Amazon Bedrock AgentCore harness – Insufficient Input Validation",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-073-aws/",
+      "published": "2026-09-09T21:35:24+00:00",
       "summary": "",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
@@ -4266,6 +4289,58 @@
       "links": []
     },
     {
+      "title": "CVE-2026-18428 - OpenSearch SQL Plugin - Async Query Validation Bypass",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-081-aws/",
+      "published": "2026-09-09T21:30:11+00:00",
+      "summary": "Bulletin ID: 2026-081-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/13/2026 10:30 AM PDT Description: OpenSearch SQL plugin is a plugin that enables SQL and PPL query capabilities on OpenSearch clusters, including direct query integration with external data...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-081-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/13/2026 10:30 AM PDT Description: OpenSearch SQL plugin is a plugin that enables SQL and PPL query capabilities on OpenSearch clusters, including direct query integration with external data sources via Apache Spark. An issue exists where the Flint extension query handler validates SQL queries without sufficient restrictions, allowing a user with async query access to bypass the SQL grammar deny list via the direct query endpoint. Affected Products & Versions: OpenSearch SQL Plugin (open-source, self-managed): - Affected: v2.13 to v3.6 - Fixed: versions 3.7 and 2.19.6 Amazon OpenSearch Service (AWS Managed): - Affected: v2.13 to v3.5 - Fixed: v2.13 to v3.5 (via service software update) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "CVE-2026-85788 - Issue with awslabs mysql-mcp-server",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-103-aws/",
+      "published": "2026-09-09T21:30:11+00:00",
+      "summary": "Bulletin ID: 2026-103-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/09/2026 09:30 AM PDT Description: We identified an issue in awslabs.mysql-mcp-server (an open-source, self-hosted Model Context Protocol server distributed via github.com/awslabs/mcp and PyPI). In...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-103-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/09/2026 09:30 AM PDT Description: We identified an issue in awslabs.mysql-mcp-server (an open-source, self-hosted Model Context Protocol server distributed via github.com/awslabs/mcp and PyPI). In affected versions, under certain conditions the read-only enforcement could be circumvented via SQL inline comments, allowing a statement to run that the read-only check was expected to block. The read-only mode provided by the server is a best-effort safeguard and is not a substitute for correctly scoped database permissions; the effective boundary is the permissions of the configured MySQL user. This issue does not affect the confidentiality or integrity of any AWS service. awslabs.mysql-mcp-server is a client-side, self-managed package; customers control installation and the privileges of the database credentials they configure. Impacted versions: awslabs.mysql-mcp-server <= 1.0.21 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
       "title": "CVE-2026-81838 - Zip Slip path traversal in awsdac (diagram-as-code)",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-090-aws/",
       "published": "2026-09-09T21:30:11+00:00",
@@ -4289,6 +4364,84 @@
         "AWS Security"
       ],
       "body": "Bulletin ID: 2026-090-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/27/2026 13:00 PM PDT Description: awsdac (diagram-as-code) is a CLI tool that generates AWS architecture diagrams from YAML definitions, enabling version-controlled, code-driven diagramming. We identified CVE-2026-81838, a Zip Slip (path traversal) issue. When awsdac extracts a zip archive referenced by a ZipFile resource in a definition file, a crafted archive can write files outside the intended cache directory, to any path writable by the user running awsdac. Depending on the file written, this can lead to arbitrary code execution. Leveraging this issue requires processing a definition file from an untrusted source. This can occur when: - awsdac is run without definition trust restrictions (versions prior to 0.22.4 had no trust distinction; version 0.22.4 and later require the −−allow−untrusted−definitions flag), or - a definition file is loaded from the local filesystem ('Type: LocalFile'), which bypasses the definition URL allowlist. CI/CD environments that process definition files from untrusted or semi-trusted sources are the primary risk scenario. awsdac is a client-side CLI tool that renders architecture diagrams locally. This issue does not affect any AWS service, AWS account, or customer data. The impact is limited to the machine on which awsdac runs. Impacted versions: awsdac: versions 0.10 through 0.23 (inclusive) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "CVE-2026-81849 - Path traversal in the aws:downloadContent plugin in amazon-ssm-agent",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-091-aws/",
+      "published": "2026-09-09T21:30:11+00:00",
+      "summary": "Bulletin ID: 2026-091-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/28/2026 11:00 AM PDT Description: AWS Systems Manager Agent (amazon-ssm-agent) is Amazon software that runs on Amazon Elastic Compute Cloud (Amazon EC2) instances, edge devices, on-premises...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-091-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/28/2026 11:00 AM PDT Description: AWS Systems Manager Agent (amazon-ssm-agent) is Amazon software that runs on Amazon Elastic Compute Cloud (Amazon EC2) instances, edge devices, on-premises servers, and virtual machines (VMs). Amazon-ssm-agent makes it possible for Systems Manager to update, manage, and configure these resources. We identified CVE-2026-81849, where an improper limitation of a pathname to a restricted directory in the aws:downloadContent plugin in amazon-ssm-agent before 3.3.4515.0 might allow an authenticated remote user whose ssm:SendCommand permission is restricted to the AWS-DownloadContent document, to write arbitrary files outside the intended download directory with root privileges, via crafted object keys in the S3 source the document is directed to retrieve. This issue may lead to arbitrary code execution as root if specific sensitive files are overwritten. To remediate this issue, customers should upgrade amazon-ssm-agent to version 3.3.4515.0 or later. Impacted versions: Amazon amazon-ssm-agent from 2.0.767.0 to 3.3.4364.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "CVE-2026-85787 - An incomplete list of disallowed inputs in the SQL validation component in Amazon awslabs postgres-mcp-server to modify data beyond the read-only scope",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-101-aws/",
+      "published": "2026-09-09T21:30:11+00:00",
+      "summary": "Bulletin ID: 2026-101-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 13:00 PM PDT Description: We have identified CVE-2026-85787, an incomplete list of disallowed inputs in the SQL validation component in Amazon awslabs postgres-mcp-server before version...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-101-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 13:00 PM PDT Description: We have identified CVE-2026-85787, an incomplete list of disallowed inputs in the SQL validation component in Amazon awslabs postgres-mcp-server before version 1.1.7 might allow an unauthenticated actor to modify data beyond the read-only scope by placing crafted SQL into the content that is submitted when an authenticated user interacts with the MCP server. Impacted versions: any pypi package version < 1.1.7 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "CVE-2026-75935 and CVE-2026-75936 - Issue with Amazon ion-java - Memory-amplification denial of service",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-083-aws/",
+      "published": "2026-09-09T21:30:11+00:00",
+      "summary": "Bulletin ID: 2026-083-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/18/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-75935, memory-amplification denial of service via...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-083-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/18/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-75935, memory-amplification denial of service via declared-length preallocation, and CVE-2026-75936, memory-amplification denial of service via highly compressed data expansion. Affected versions: < 1.12.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
@@ -4341,84 +4494,6 @@
         "AWS Security"
       ],
       "body": "Bulletin ID: 2026-102-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/08/2026 12:30 PM PDT Description: A stored cross-site scripting (XSS) issue in the Vega expression function implementation in OpenSearch Dashboards allows a remote authenticated actor with dashboard write permissions to execute arbitrary JavaScript in the context of other users' browser sessions by saving a crafted Vega visualization. Affedted products & versions: OpenSearch Dashboards (open-source, self-managed): - Affected: v2.0.0, v2.1.0, v2.2.0, v2.3.0, v2.4.0, v2.5.0, v.2.6.0, v2.7.0, v2.8.0, v2.9.0, v2.10.0, v2.11.0, v2.12.0, v2.13.0, v2.14.0, v2.15.0, v2.16.0, v2.17.0, v2.18.0, v2.19.0, v3.0.0, v3.1.0, v3.2.0, v3.3.0, v3.4.0, v3.5.0 - Fixed: v2.19.5 and v3.6.0 Amazon OpenSearch Service (AWS Managed): - Affected: v2.3.0, v2.5.0, v2.7.0, v2.9.0, v2.11.0, v2.13.0, v2.15.0, v2.17.0, v2.19.0, v3.1.0, v3.3.0, v3.5.0 - Fixed: v2.3.0, v2.5.0, v2.7.0, v2.9.0, v2.11.0, v2.13.0, v2.15.0, v2.17.0, v2.19.0 and v3.1.0, v3.3.0, v3.5.0 Amazon OpenSearch Serverless: - Not affected Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-78379 - Consent bypass in Strands Agents Tools python_repl tool",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-089-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-089-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/25/2026 12:00 PM PDT Description: Strands Agents is an open-source Python SDK for building and running AI agents. The strands-agents-tools package provides pre-built tools for use with the SDK,...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-089-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/25/2026 12:00 PM PDT Description: Strands Agents is an open-source Python SDK for building and running AI agents. The strands-agents-tools package provides pre-built tools for use with the SDK, including the python_repl tool, which executes Python code on the agent's host, and the batch tool, which invokes several other tools in a single call. Before executing code, python_repl prompts the operator for approval. We identified CVE-2026-78379, a consent bypass in the python_repl tool. Improper neutralization of input used for LLM prompting in the python_repl tool in Amazon Strands Agents Tools before 0.8.5 might allow remote actors to execute arbitrary Python code on the agent's host by bypassing the human consent gate, via a crafted prompt that forwards non_interactive_mode as a keyword argument through the batch tool. Impacted versions: < 0.8.5 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-85786 - Incomplete fix for CVE-2026-75936 memory-amplification denial of service in Amazon ion-java",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-100-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-100-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-85786, memory-amplification denial of service via...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-100-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-85786, memory-amplification denial of service via highly compressed data expansion. ion-java 1.12.0 added a GZIP auto-decompression opt-out for CVE-2026-75936, but the implementation of the opt-out in 1.12.0 was insufficient to address the issue. Impacted versions: < 1.12.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-83497 - OpenSearch SQL Plugin - Unrestricted Java Deserialization in Cursor Pagination",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-092-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-092-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/31/2026 11:30 AM PDT Description: OpenSearch is an open-source search and analytics engine. We identified CVE-2026-83497 where a remote authenticated user with basic read/search permissions can...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-092-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/31/2026 11:30 AM PDT Description: OpenSearch is an open-source search and analytics engine. We identified CVE-2026-83497 where a remote authenticated user with basic read/search permissions can run arbitrary code on the server by providing a crafted cursor parameter to the plugins/sql endpoint. Affected Products & Versions: OpenSearch SQL Plugin (open-source, self-managed): - Affected: v2.8 to v3.6 - Fixed: versions 3.7 and 2.19.6 Amazon OpenSearch Service (AWS Managed): - Affected: v2.9 to v3.5 - Fixed: v2.9 to v3.5 (via service software update) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
@@ -4901,81 +4976,6 @@
       "links": []
     },
     {
-      "title": "Impersonating IT support: how threat actors turn a remote session into enterprise-wide access",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/02/impersonating-it-support-threat-actors-turn-remote-session-into-enterprise-wide-access/",
-      "published": "2026-09-02T22:51:18+00:00",
-      "summary": "Microsoft Threat Intelligence observed a human-operated intrusion campaign that abuses Microsoft Teams external collaboration to impersonate IT support, gain remote access, and deploy a Node.js-based implant. Learn how attackers move from social engineering to lateral movement using legitimate...",
-      "author": "Microsoft Security Research, Sagar Patil, Arlette Umuhire Sangwa, Jesse Birch and Ravikant Tiwari",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Risk to enterprise environmentsAttack chain overviewMitigation and response recommendationsLearn more Microsoft Threat Intelligence has observed a human-operated intrusion campaign that abuses Microsoft Teams external collaboration to impersonate IT or helpdesk personnel and socially engineer users into granting an interactive remote session. Once remote control is established via RMM tools, the threat actor uses PowerShell to download and silently install a malicious MSI package, which in turn stages a portable Node.js runtime and an obfuscated JavaScript implant that provides persistent command execution and command and control (C2). Unlike commodity phishing that ends with an infostealer, this campaign follows a full hands-on-keyboard playbook. After the implant is deployed, the threat actor performs extensive host and Active Directory reconnaissance, periodically captures screenshots of the victim’s desktop, executes follow-on payloads through trusted Windows binaries, and pivots across the enterprise over Windows Remote Management (WinRM) toward high-value assets such as domain controllers. The intrusion relies heavily on legitimate tooling, including Microsoft Teams, remote support software, Windows Installer, Node.js, and native administrative protocols, allowing the activity to blend into expected enterprise operations at nearly every stage. This intrusion pattern is especially high-impact because it hands an external operator credential-backed, interactive access to internal infrastructure. The reconnaissance and lateral movement patterns observed: domain enumeration, server discovery, and WinRM pivoting toward identity systems, are consistent with intrusion activity that can precede data theft, extortion, ransomware deployment, or other follow-on objectives, in which threat actors map the environment, escalate privileges, disable security controls, exfiltrate business-relevant data, and ultimately deploy ransomware across the organization. In this blog, we share our analysis of this attack chain, from initial Microsoft Teams contact through internal lateral movement, along with mitigation and hunting guidance to help defenders detect and disrupt this user-initiated access pathway before it escalates into broader compromise. Risk to enterprise environments By abusing enterprise collaboration workflows instead of traditional email-based phishing, the threat actor initiates contact through Microsoft Teams in a way that appears...",
-      "links": [
-        {
-          "label": "Risk to enterprise environments",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#risk-to-enterprise-environments"
-        },
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Mitigation and response recommendations",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-response-recommendations"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "Microsoft Defender for Office 365",
-          "url": "https://learn.microsoft.com/defender-office-365/mdo-about"
-        },
-        {
-          "label": "Safe Links",
-          "url": "https://learn.microsoft.com/defender-office-365/safe-links-about"
-        },
-        {
-          "label": "Zero-hour auto purge (ZAP)",
-          "url": "https://learn.microsoft.com/defender-office-365/zero-hour-auto-purge"
-        },
-        {
-          "label": "Security best practices for Microsoft Teams",
-          "url": "https://learn.microsoft.com/en-us/MicrosoftTeams/teams-security-best-practices-for-safer-messaging"
-        },
-        {
-          "label": "external collaboration policies",
-          "url": "https://learn.microsoft.com/en-us/microsoftteams/trusted-organizations-external-meetings-chat"
-        },
-        {
-          "label": "external sender notifications",
-          "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-support-teams-about"
-        },
-        {
-          "label": "Microsoft Entra Conditional Access",
-          "url": "https://learn.microsoft.com/entra/identity/conditional-access/overview"
-        },
-        {
-          "label": "ASR rules",
-          "url": "https://learn.microsoft.com/defender-endpoint/attack-surface-reduction-rules-deployment-implement"
-        }
-      ]
-    },
-    {
       "title": "[In preview] Public Preview: Azure Front Door profile and route level WAF policies",
       "link": "https://azure.microsoft.com/updates?id=569804",
       "published": "2026-09-02T17:00:51+00:00",
@@ -5227,105 +5227,6 @@
         {
           "label": "https://aka.ms/purviewlayeredprotection",
           "url": "https://aka.ms/purviewlayeredprotection"
-        }
-      ]
-    },
-    {
-      "title": "What’s new in Microsoft Sentinel: August 2026",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-august-2026/ba-p/4551405",
-      "published": "2026-08-31T16:00:00+00:00",
-      "summary": "Welcome back to What's new in Microsoft Sentinel. This August, Sentinel innovation kicks off with the AI-powered playbook generator, generally available to all Sentinel customers in the Microsoft Defender portal. Meanwhile, User and Entity Behavior Analytics (UEBA) anomalies enter public preview on...",
-      "author": "spalani",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Sentinel",
-        "Microsoft Security Copilot",
-        "Threat Intelligence",
-        "AWS Security"
-      ],
-      "body": "Welcome back to What's new in Microsoft Sentinel. This August, Sentinel innovation kicks off with the AI-powered playbook generator, generally available to all Sentinel customers in the Microsoft Defender portal. Meanwhile, User and Entity Behavior Analytics (UEBA) anomalies enter public preview on the Behaviors layer, with coverage across Fortinet, AWS GuardDuty, Check Point, and Zscaler. In Sentinel data lake, nested API support in the Codeless Connector Framework (CCF) enters public preview to connect data sources whose APIs span multiple calls, and multi-account data ingestion is now generally available for Auth0, CrowdStrike, and Salesforce. Finally, the free Microsoft Threat Intelligence connector for unified SecOps, marking the final phase of MDTI convergence, is now generally available in the Defender portal. Read on for the details, and explore our resources at the end to go deeper. Sentinel innovations: Sentinel SIEM Sentinel data lake Sentinel SIEM AI-powered playbook generator expanded to all Sentinel customers in the Defender portal [Generally Available] Go from intent to action faster with the AI-powered playbook generator. It is available to all Sentinel customers using the Defender portal with no Security Copilot enablement or additional cost required. Describe the response you want in natural language and generate an editable, code-based playbook complete with tests, documentation, and a visual flow. Figure 1: Automatically-created visual flow diagram of the playbook. To get started, confirm you have Automation Playbooks Unified RBAC Read and Write permissions, then select Automation > + Create > Playbook Generator. Read our blog to learn more. UEBA Anomalies are now built on top of Behaviors, along with expanded coverage through new data sources [Public Preview] Understand what happened and why it matters in one place. Sentinel adds UEBA anomaly insights and explainable context directly to the Behaviors layer, while expanding coverage across Fortinet, AWS GuardDuty, Check Point, and Zscaler data. This helps you identify unusual activity across identity, network, and cloud environments, reduce investigation time, and focus on the highest-risk behaviors. Enable the Behaviors layer, connect supported data sources, and explore the Insights column in the BehaviorInfo table to get started. Read our blog to learn more and watch our training video for a guided walkthrough. Sentinel data lake Nested API support in Codeless Connector Framework...",
-      "links": [
-        {
-          "label": "Sentinel SIEM",
-          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-siem"
-        },
-        {
-          "label": "Sentinel data lake",
-          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-lake"
-        },
-        {
-          "label": "Read our blog",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/ai-powered-playbook-generator-now-available-to-more-customers/4544385"
-        },
-        {
-          "label": "Read our blog",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/smarter-signals-broader-coverage-ueba-anomalies-on-top-of-behaviors-layer-and-ne/4544384"
-        },
-        {
-          "label": "watch our training video",
-          "url": "https://www.youtube.com/watch?v=73XRo0U6qDQ"
-        },
-        {
-          "label": "Read our blog",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-nested-api-support-comes-to-microsoft-sentinel-ccf/4537026"
-        },
-        {
-          "label": "Nested API Lab",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/building-a-ccf-nested-api-pull-connector-a-technical-lab-walkthrough/4537027"
-        },
-        {
-          "label": "finding your supported Sentinel data connector",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference"
-        },
-        {
-          "label": "Read the blog",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/mdti-convergence-in-microsoft-sentinel-and-defender-xdr-is-complete/4541279"
-        },
-        {
-          "label": "Investigate anomalies on UEBA behaviors in Microsoft Sentinel | Microsoft Learn",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/ueba-anomalies-on-behaviors"
-        },
-        {
-          "label": "UEBA behaviors layer pricing model in Microsoft Sentinel | Microsoft Learn",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/entity-behaviors-layer#pricing-model"
-        },
-        {
-          "label": "Turn Complexity into Clarity: Introducing the New UEBA Behaviors Layer in Microsoft Sentinel | Microsoft Community Hub",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/turn-complexity-into-clarity-introducing-the-new-ueba-behaviors-layer-in-microso/4484493"
         }
       ]
     }
