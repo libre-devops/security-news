@@ -1,8 +1,83 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-09-29T22:02:10.789736+00:00",
-  "totalArticles": 140,
+  "lastUpdated": "2026-09-30T04:47:02.280025+00:00",
+  "totalArticles": 139,
   "articles": [
+    {
+      "title": "Phishing Abuses RMM Tools for Persistent Access",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
+      "published": "2026-09-29T21:39:27+00:00",
+      "summary": "Microsoft observed phishing campaigns that abused MSP360 RMM to deploy ScreenConnect, creating redundant remote-access channels for follow-on activity The post Phishing Abuses RMM Tools for Persistent Access appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Security Research, Parasharan Raghavan, Deva Kanna Kannan, Sai Chakri and Microsoft Defender Experts",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article Attack chain overviewMitigation and protection guidanceLearn More In July 2026, Microsoft Defender Experts observed phishing campaigns targeting organizations across multiple industries that distributed a masqueraded MSP360 Remote Monitoring and Management (RMM) installer through meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content. Once executed, the legitimate MSP360 installer, distributed under a deceptive file name established remote management access on affected devices and enabled threat actors to gain an initial foothold using trusted administrative software. Microsoft observed the MSP360 deployment being used to download and install a ConnectWise ScreenConnect client, creating a secondary remote-access channel that provided redundant access to compromised systems. Microsoft did not observe exploitation of ScreenConnect software itself; rather, threat actors abused legitimately obtained remote administration software to establish and maintain access. After access was established, threat actors used these remote administration channels to deploy additional tools and conduct post-compromise activity, including information collection and credential-access operations. This activity highlights how threat actors continue to abuse legitimate remote administration software to blend into normal IT operations while maintaining persistent access and reducing detection opportunities. Microsoft Defender for Endpoint detects suspicious and uncommon remote-management activity, while the hunting queries and mitigations in this post can help organizations identify and restrict unapproved RMM use. Attack chain overview The observed multi-stage intrusion chain began when phishing lures delivered a legitimate, digitally signed MSP360 RMM v2.5.0.67 installer under deceptive filenames. Following successful User Account Control (UAC) elevation, the installer established MSP360 services for persistent access and leveraged the RMM agent to invoke PowerShell, download, and silently install ConnectWise ScreenConnect. This effectively introduced a second remote administration channel on the compromised device, which the threat actor subsequently used to transfer and execute additional tooling supporting credential access, local data collection, and other post-compromise activity. Figure 1. Attack chain showing phishing delivering a masqueraded MSP360 RMM installer that deploys ScreenConnect for persistent remote...",
+      "links": [
+        {
+          "label": "Attack chain overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "publisher rule condition",
+          "url": "https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create?ocid=magicti_ta_learndoc"
+        },
+        {
+          "label": "block certificat",
+          "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/indicators-enhancements-allow-block-by-certificates-amp-more/ba-p/1377586"
+        },
+        {
+          "label": "cloud-delivered protection",
+          "url": "https://learn.microsoft.com/defender-endpoint/cloud-protection-microsoft-defender-antivirus"
+        },
+        {
+          "label": "attack surface reduction rule",
+          "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction"
+        },
+        {
+          "label": "Use advanced protection against ransomware",
+          "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference"
+        },
+        {
+          "label": "MITRE ATT&CK framework",
+          "url": "https://attack.mitre.org/"
+        },
+        {
+          "label": "T1583.001 Acquire Infrastructure: Domains",
+          "url": "https://attack.mitre.org/techniques/T1583/001/"
+        },
+        {
+          "label": "T1583.006 Acquire Infrastructure: Web Services",
+          "url": "https://attack.mitre.org/techniques/T1583/006/"
+        },
+        {
+          "label": "T1566.002 Phishing: Spearphishing Link",
+          "url": "https://attack.mitre.org/techniques/T1566/002/"
+        }
+      ]
+    },
     {
       "title": "​​Beyond source code: A path to the keys to the kingdom",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
@@ -3170,77 +3245,6 @@
       ]
     },
     {
-      "title": "Improving email security outcomes with real-world Microsoft Defender insights",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/17/improving-email-security-outcomes-with-real-world-microsoft-defender-insights/",
-      "published": "2026-09-17T16:00:00+00:00",
-      "summary": "The latest email security benchmarking reports show strong Microsoft Defender performance across pre-delivery and post-delivery scenarios and reveal where threats and defenses continue to evolve. The post Improving email security outcomes with real-world Microsoft Defender insights appeared first...",
-      "author": "Rob Lefferts",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Every benchmark tells a story. The most valuable ones tell us where to improve next. For five consecutive quarters Microsoft has published email security benchmarking reports to provide greater transparency into real-world protection outcomes. The results have shown strong Microsoft Defender performance across pre-delivery and post-delivery scenarios, while revealing where threats and defenses continue to evolve. This quarter’s benchmark examines how continuous measurement informs protection across prevention, detection, and adaptation, and how those insights are helping improve customer outcomes. Read the latest Microsoft benchmarking data for email security Key takeaways Defender again missed the fewest high-severity threats among the solutions evaluated, about 55% fewer than the next-closest secure email gateway (SEG) vendor. Layered security adds the most value in promotional and bulk filtering and works; gains for spam and malicious email remain comparatively modest. Benchmarking results for SEG vendors In the latest quarterly SEG comparison from May 2026 through July 2026, Defender missed 221 high-severity threats per 1,000 protected users, 55.4% fewer than the next-closest SEG vendor. The benchmark measures missed threats instead of the total number of malicious emails that were caught and filtered, because catch totals can reflect differences in threat volume and exposure across vendor environments. By normalizing missed threats per 1,000 users we are able to provide a more consistent side-by-side comparison. Figure 1: High-severity email threats missed by SEG vendors (May 2026 through July 2026), measured as threats missed per 1,000 users protected. Data source: Microsoft Defender. If you’ve read our previous blogs, you’ll see that missed threats have increased across multiple reporting periods, including for Microsoft. This aligns with broader trends we’re seeing as AI makes it easier for cyberattackers to gather public information, tailor messages, and create more convincing impersonation attempts. It reinforces the need for protection that continuously adapts. Benchmarking results for ICES vendors Effective email detection combines pre-delivery filtering with post-delivery detection and remediation. This benchmark helps customers evaluate where each layer contributes measurable value. Similarly to previous quarters, integrated cloud email security (ICES) solutions continue adding the most value in promotional and bulk filtering. We saw an...",
-      "links": [
-        {
-          "label": "Microsoft Defender",
-          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-defender-office-365"
-        },
-        {
-          "label": "Read the latest Microsoft benchmarking data for email security",
-          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-defender-office-365/performance-benchmarking"
-        },
-        {
-          "label": "Promotions folder",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/declutter-and-defend-reducing-promotional-mail-noise-with-microsoft-defender/4511732"
-        },
-        {
-          "label": "prompt injection protection",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/defending-the-inbox-against-prompt-injection-attacks/4534636"
-        },
-        {
-          "label": "benchmarking site",
-          "url": "https://www.microsoft.com/security/business/siem-and-xdr/microsoft-defender-office-365/performance-benchmarking"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "Improving email security outcomes with real-world Microsoft Defender insights",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/17/improving-email-security-outcomes-with-real-world-microsoft-defender-insights/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
-        }
-      ]
-    },
-    {
       "title": "What we’ve learned from Microsoft’s own AI transformation",
       "link": "https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/",
       "published": "2026-09-17T14:00:05+00:00",
@@ -4965,87 +4969,6 @@
         {
           "label": "The Official Microsoft Blog",
           "url": "https://blogs.microsoft.com"
-        }
-      ]
-    },
-    {
-      "title": "Counterfeit installers to system compromise: Tracking a deceptive software download campaign",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/",
-      "published": "2026-09-01T22:48:28+00:00",
-      "summary": "An active campaign is impersonating legitimate software vendors to deliver malware through look-alike download pages and regenerated installer archives. Microsoft Defender Experts shares observed attack techniques, Defender XDR detections, indicators of compromise, and practical mitigations to help...",
-      "author": "Microsoft Security Research, Microsoft Defender Experts and Parth Jomadkar",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 10
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence",
-        "Microsoft Defender XDR"
-      ],
-      "body": "In this article Attack chain overviewCampaign scope and targetingMitigation and protection guidanceReferencesLearn more Microsoft Defender Experts is tracking an active malware campaign that uses counterfeit software-download websites to impersonate trusted vendors and distribute malicious installers. The campaign has targeted users looking to download popular software and has resulted in compromises across multiple organizations and industries, primarily affecting China-based operations of multinational organizations and Chinese-speaking users. Microsoft has observed victims across healthcare, manufacturing, gaming, technology, logistics, government, and education sectors. Once executed, the malicious installers deploy malware that establishes persistence, attempts to weaken security protections, and communicates with attacker-controlled infrastructure. Microsoft assesses with moderate confidence that this activity is consistent with the publicly reported Silver Fox (also known as Yinhu, 银狐) fake software campaign but has not attributed it to a nation-state actor. Microsoft Defender detected and disrupted activity across multiple stages of the attack, including automated containment through attack disruption. Organizations should prioritize preventing downloads from untrusted software sources and ensure protections such as SmartScreen, network protection, tamper protection, and Microsoft Defender XDR are enabled to help identify, block, and respond to related activity. Attack chain overview The campaign follows a consistent attack chain from a spoofed vendor download page to a self-protecting, persistent implant. The stages below trace that chain — initial access, delivery, execution, persistence, privilege escalation, defense evasion, and command and control. Figure 1. Diagram showing the campaign attack chain from spoofed download page to archive delivery, execution, persistence, defense evasion, and command-and-control. Campaign scope and targeting Microsoft observed affected devices predominantly associated with China-based operations and Chinese-speaking users, consistent with the Chinese-language lure content and the .com.cn and .hl.cn infrastructure. Confirmed activity spans medical devices and healthcare, manufacturing, gaming, technology, logistics, government, and higher education across multiple organizations and industries. Initial access: spoofed software-download sites The entry point is a fraudulent software-download website that spoofs a...",
-      "links": [
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Campaign scope and targeting",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#campaign-scope-and-targeting"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "Block executable files from running unless they meet a prevalence, age, or trusted list criterion",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"
-        },
-        {
-          "label": "Block execution of potentially obfuscated scripts",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-execution-of-potentially-obfuscated-scripts"
-        },
-        {
-          "label": "Block use of copied or impersonated system tools",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#block-use-of-copied-or-impersonated-system-tools"
-        },
-        {
-          "label": "Use advanced protection against ransomware",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-reference#use-advanced-protection-against-ransomware"
-        },
-        {
-          "label": "Microsoft Security Copilot in Microsoft Defender",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-in-microsoft-365-defender"
-        },
-        {
-          "label": "create their own prompts",
-          "url": "https://learn.microsoft.com/copilot/security/prompting-security-copilot#create-your-own-prompts"
-        },
-        {
-          "label": "prebuilt promptbooks",
-          "url": "https://learn.microsoft.com/copilot/security/using-promptbooks"
         }
       ]
     },
