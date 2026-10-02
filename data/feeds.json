@@ -1,8 +1,58 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-01T22:29:08.354634+00:00",
-  "totalArticles": 138,
+  "lastUpdated": "2026-10-02T04:49:44.561244+00:00",
+  "totalArticles": 139,
   "articles": [
+    {
+      "title": "Microsoft Purview: Data Lifecycle Management – Ensure regulatory compliance by deleting inactive OneDrives and mailboxes for departing employees",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569721",
+      "published": "2026-10-01T23:00:07+00:00",
+      "summary": "Enables admins to delete both content and containers for departed users at scale thereby keeping your tenant compliant without any manual effort.GA date: December CY2026Preview date: November CY2026",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "Microsoft Entra ID: Passkey support for B2B users",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569432",
+      "published": "2026-10-01T23:00:07+00:00",
+      "summary": "B2B users, including internal guest users and external users, will be able to register and sign in with passkeys issued by a resource tenant to meet that tenant's multifactor authentication (MFA) requirements. Today, passkeys are supported for member users in their home tenant. With this update,...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "B2B users, including internal guest users and external users, will be able to register and sign in with passkeys issued by a resource tenant to meet that tenant's multifactor authentication (MFA) requirements. Today, passkeys are supported for member users in their home tenant. With this update, B2B users can register a resource tenant passkey from the resource tenant's My Security Info page, or in-line during a proof-up prompt or passkey registration campaign, and then use it to satisfy the resource tenant's MFA requirements. This change is on by default. B2B users already in scope for passkeys in your Authentication methods policy will be enabled automatically. No action is required to turn it on. If you want to review or adjust who's affected, update your Authentication methods policy, passkey registration campaign, Conditional Access policies, and user scoping before rollout.GA date: October CY2026",
+      "links": []
+    },
     {
       "title": "Microsoft Entra App Gallery: Self-service onboarding for new applications",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1485054",
@@ -90,6 +140,41 @@
         {
           "label": "The Official Microsoft Blog",
           "url": "https://blogs.microsoft.com"
+        }
+      ]
+    },
+    {
+      "title": "Meet the New Microsoft Purview Classifiers Experience: Your Admin Playbook for Public Preview",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/meet-the-new-microsoft-purview-classifiers-experience-your-admin/ba-p/4561324",
+      "published": "2026-10-01T15:01:07+00:00",
+      "summary": "Microsoft Purview Unified Classification Management Experience Feature overview and administrator playbook OverviewThe new Classifiers experience brings supported Microsoft Purview classification types into one place where administrators can discover, create, inspect, and manage classifiers. It...",
+      "author": "Sarahzin_Shane",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "Microsoft Purview Unified Classification Management Experience Feature overview and administrator playbook OverviewThe new Classifiers experience brings supported Microsoft Purview classification types into one place where administrators can discover, create, inspect, and manage classifiers. It adds practical visibility into classified-item counts and policy dependencies so administrators can make more informed, lower-risk changes. Why this experience is important Classification underpins data protection, data loss prevention, and data security. As classifier inventories grow, administrators need a consistent way to understand what exists, where it is used, and what could be affected by a change. Centralized visibilitySearch and filter supported classifiers from a unified inventory instead of navigating separate management locations. Safer change decisionsReview classified-item counts and affected policies before editing or deleting a classifier. Stronger governanceEstablish clear ownership, testing, approval, validation, and review expectations. Better coverage analysisUse matched-item information and Data Explorer to understand where classifications occur and where gaps may exist. What administrators can do Discover supported classifier types and understand what the organization already uses. Create classifiers from a single entry point with type-specific preparation guidance. Review classified-item counts and inspect policies that depend on a classifier. Validate matched items across supported data sources and investigate unexpected coverage. Access Classifiers through Information Protection, Data Loss Prevention, or Data Security Posture Management, depending on tenant availability. Supported classification capabilities include sensitive information types, named entities, Exact Data Match, trainable classifiers, credentials, document fingerprinting, optical character recognition, and on-demand classification. How the experience can help Reduce context switching: Use one inventory to find and inspect supported classifiers. Understand impact earlier: Identify policy dependencies before a change reaches enforcement. Improve accountability: Connect classifiers to business owners, policy owners, and reviewers. Standardize operations: Apply the same lifecycle to routine maintenance, quality improvements, and retirement decisions. How the admin playbook helps The companion playbook turns the preview into a practical operating guide. It is designed to be the...",
+      "links": [
+        {
+          "label": "Public documentation",
+          "url": "https://go.microsoft.com/fwlink/?LinkId=2375148"
+        },
+        {
+          "label": "Administrator playbook",
+          "url": "https://sarahzin22.github.io/PurviewBlogTechCommunityHTMLs/Admin%20Playbook%20Unified%20Classification%20Management%20Experience.html"
         }
       ]
     },
@@ -196,6 +281,41 @@
         {
           "label": "Microsoft Security Blog",
           "url": "https://www.microsoft.com/en-us/security/blog"
+        }
+      ]
+    },
+    {
+      "title": "Scaling classification and labeling: an interactive reference architecture update",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/scaling-classification-and-labeling-an-interactive-reference/ba-p/4560925",
+      "published": "2026-10-01T02:25:59+00:00",
+      "summary": "In April, I published a set of referential architecture diagrams for Microsoft Purview — Microsoft Purview Referential Architecture Diagrams. They have been useful in workshops and training sessions for a simple reason: one picture is worth a thousand words - attempting to explain the complex in a...",
+      "author": "MaximeBombardier",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "In April, I published a set of referential architecture diagrams for Microsoft Purview — Microsoft Purview Referential Architecture Diagrams. They have been useful in workshops and training sessions for a simple reason: one picture is worth a thousand words - attempting to explain the complex in a single image. Today I'm publishing an update focused on classification and labeling — and on the wave of public previews that make auto-labeling something you can scale across the entire estate with ease. Detailed view mode ➡️ Download the interactive architecture on GitHub here. It's a self-contained HTML file - and it's a lot more than this picture! Why now: auto-labeling scales to the whole estate The most consequential change is surprisingly small. An auto-labeling policy can now be kept on while you edit it, without re-triggering simulation. Anyone who has run auto-labeling at scale knows why that matters. Until now, tuning a policy meant turning enforcement off, re-simulating, waiting, and turning it back on — delays every time you refined a rule. That friction made it challenging for organizations from broadening scope as fast as they wanted to. Removing it changes the operating model: you can simulate once with your conditions and expand scope (sites) when you're ready, without hitting the simulation limit. It arrives alongside a set of previews that lift every ceiling that used to cap the motion: Capacity is up 5x. Auto-labeling for SharePoint and OneDrive moves from 100,000 to up to 500,000 files per tenant per day (Roadmap ID 567890). Simulation goes from 4M to 20M items, so you can model against a real estate rather than a sample. Policy scope gets much bigger. Select up to 1,000 individual SharePoint sites per policy, adaptive scopes support up to 50,000 sites, and you can filter sites by the SiteTemplate property when configuring a policy (Roadmap ID 570445, MC1469958). Reporting finally tells you what happened. Audit and reporting now summarize the sensitive information types detected when labels are applied, and a new 30-day chart shows files processed per day so you can watch policy throughput. A per-policy coverage report correlates files processed during enforcement to the latest simulation run — including the files that enforcement processed but simulation never saw (Roadmap ID 568935). SharePoint library default labels now reach data at rest, applying the library's default label to existing files instead of only new or edited ones (Roadmap...",
+      "links": [
+        {
+          "label": "Microsoft Purview Referential Architecture Diagrams",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/microsoft-purview-referential-architecture-diagrams/4510925"
+        },
+        {
+          "label": "here",
+          "url": "https://microsoft.github.io/purview/purview-classification-labeling-reference-architecture.html"
         }
       ]
     },
@@ -421,41 +541,6 @@
         {
           "label": "Bluesky",
           "url": "https://bsky.app/profile/threatintel.microsoft.com"
-        }
-      ]
-    },
-    {
-      "title": "Scaling classification and labeling: an interactive reference architecture update",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/scaling-classification-and-labeling-an-interactive-reference/ba-p/4560925",
-      "published": "2026-09-30T02:33:27+00:00",
-      "summary": "In April, I published a set of referential architecture diagrams for Microsoft Purview — Microsoft Purview Referential Architecture Diagrams. They have been useful in workshops and training sessions for a simple reason: one picture is worth a thousand words - attempting to explain the complex in a...",
-      "author": "MaximeBombardier",
-      "source": "Microsoft Purview",
-      "source_id": "purview",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Data Security",
-      "board_id": "microsoftpurviewblog",
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "In April, I published a set of referential architecture diagrams for Microsoft Purview — Microsoft Purview Referential Architecture Diagrams. They have been useful in workshops and training sessions for a simple reason: one picture is worth a thousand words - attempting to explain the complex in a single image. Today I'm publishing an update focused on classification and labeling — and on the wave of public previews that make auto-labeling something you can scale across the entire estate with ease. Detailed view mode ➡️ Download the interactive architecture on GitHub here. It's a self-contained HTML file - and it's a lot more than this picture!Once in GitHub, click on this icon on the top right bar to download Why now: auto-labeling scales to the whole estate The most consequential change is surprisingly small. An auto-labeling policy can now be kept on while you edit it, without re-triggering simulation. Anyone who has run auto-labeling at scale knows why that matters. Until now, tuning a policy meant turning enforcement off, re-simulating, waiting, and turning it back on — delays every time you refined a rule. That friction made it challenging for organizations from broadening scope as fast as they wanted to. Removing it changes the operating model: you can simulate once with your conditions and expand scope (sites) when you're ready, without hitting the simulation limit. It arrives alongside a set of previews that lift every ceiling that used to cap the motion: Capacity is up 5x. Auto-labeling for SharePoint and OneDrive moves from 100,000 to up to 500,000 files per tenant per day (Roadmap ID 567890). Simulation goes from 4M to 20M items, so you can model against a real estate rather than a sample. Policy scope gets much bigger. Select up to 1,000 individual SharePoint sites per policy, adaptive scopes support up to 50,000 sites, and you can filter sites by the SiteTemplate property when configuring a policy (Roadmap ID 570445, MC1469958). Reporting finally tells you what happened. Audit and reporting now summarize the sensitive information types detected when labels are applied, and a new 30-day chart shows files processed per day so you can watch policy throughput. A per-policy coverage report correlates files processed during enforcement to the latest simulation run — including the files that enforcement processed but simulation never saw (Roadmap ID 568935). SharePoint library default labels now reach data at rest, applying the library's default...",
-      "links": [
-        {
-          "label": "Microsoft Purview Referential Architecture Diagrams",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/microsoft-purview-referential-architecture-diagrams/4510925"
-        },
-        {
-          "label": "here",
-          "url": "https://github.com/microsoft/purview/blob/main/purview-classification-labeling-reference-architecture.html"
         }
       ]
     },
@@ -3743,58 +3828,6 @@
       "tags": [
         "Microsoft Purview"
       ]
-    },
-    {
-      "title": "Microsoft Purview: Data Loss Prevention-Upgraded inline protection for Microsoft Entra-managed apps in Edge for Business",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571397",
-      "published": "2026-09-15T23:00:36+00:00",
-      "summary": "Microsoft Purview is upgrading inline data protection for Microsoft Entra-managed apps in Edge for Business. The experience integrates with a Microsoft Entra Conditional Access grant control and simplifies configuration while removing current Purview policy restrictions. Admins can now use expanded...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "Microsoft Purview is upgrading inline data protection for Microsoft Entra-managed apps in Edge for Business. The experience integrates with a Microsoft Entra Conditional Access grant control and simplifies configuration while removing current Purview policy restrictions. Admins can now use expanded conditions and condition combinations, multiple activities per rule, simulation mode, configurable alerts and notifications, and rule match activities are visible in activity explorer.GA date: January CY2027Preview date: November CY2026",
-      "links": []
-    },
-    {
-      "title": "Microsoft Purview: Data Loss Prevention-Expanded inline protection for unmanaged apps in Edge for Business",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571396",
-      "published": "2026-09-15T23:00:36+00:00",
-      "summary": "Microsoft Purview collection and data loss prevention (DLP) policies will support browser inline protection for a significantly broader set of unmanaged generative AI apps in Edge for Business. Admins can use existing Purview policy experiences to detect and protect sensitive data shared through...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "Microsoft Purview collection and data loss prevention (DLP) policies will support browser inline protection for a significantly broader set of unmanaged generative AI apps in Edge for Business. Admins can use existing Purview policy experiences to detect and protect sensitive data shared through supported browser activities, helping extend consistent data security controls across more destinations.GA date: January CY2027Preview date: November CY2026",
-      "links": []
     },
     {
       "title": "(Updated) Microsoft Entra: Passkeys by default and retirement of Microsoft-provided SMS and voice authentication",
