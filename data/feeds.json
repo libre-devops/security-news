@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-03T15:57:46.456493+00:00",
-  "totalArticles": 136,
+  "lastUpdated": "2026-10-03T20:47:13.299557+00:00",
+  "totalArticles": 135,
   "articles": [
     {
       "title": "Chromium: CVE-2025-10502 Heap buffer overflow in ANGLE",
@@ -5023,87 +5023,6 @@
       ],
       "tags": [
         "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "ASCII smuggling crosses over from AI prompt injection to phishing evasion",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/03/ascii-smuggling-crosses-over-from-ai-prompt-injection-to-phishing-evasion/",
-      "published": "2026-09-03T16:00:00+00:00",
-      "summary": "Invisible Unicode characters popularized for hiding instructions from AI models are now being used to obfuscate words before email filters parse them. The post ASCII smuggling crosses over from AI prompt injection to phishing evasion appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Security Research, Noam Kochavi and Sarah Wolstencroft",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Threat Intelligence",
-        "AI Security"
-      ],
-      "body": "In this article What is ASCII smuggling?Writing a practical ASCII-smuggling signatureWhat we observed: ASCII smuggling repurposed for phishingWhat is known and what is newIs there a detection gap?Mitigation and protection guidanceReferencesLearn More Microsoft researchers observed a high-volume phishing campaign using invisible Unicode tag characters, a technique popularized in AI prompt injection research as ASCII Smuggling. Instead of using these characters to hide instructions from people while exposing them to AI models, the attacker used them to split financial lure words such as ‘funding’ to prevent email filters from parsing them. The finding emerged from Microsoft Defender for Office 365 prompt injection protection research, showing how AI-era evasion techniques can surface in traditional phishing campaigns. In Microsoft telemetry, hits on a hunting signature designed to detect ASCII-smuggling increased sharply beginning February 9, 2026, and remained elevated on weekdays for approximately three months. Microsoft Defender for Office 365 telemetry showed that the majority of messages were flagged by layered protections rather than by reliance on a single Unicode-specific signal. What is ASCII smuggling? “ASCII smuggling” refers to the use of invisible or non-rendering Unicode characters to hide content inside text that looks normal. The most abused range is the Unicode Tags block, U+E0000 to U+E007F. This block contains a shadow copy of the printable ASCII characters (for example, U+E0041 mirrors ‘A’, U+E0061 mirrors ‘a’). The block was originally intended for language tagging and is now largely deprecated. The important property for an attacker is this: most of these code points are not rendered by typical fonts and user interfaces. A string can therefore carry a message that is not readable to a human but will be processed by any language model or other software that receives a copy of the email content. Why the AI-security world made it famous Over the past year, ASCII smuggling became a recurring technique in the prompt injection and cross-prompt injection (XPIA) literature. The attack pattern is straightforward: An attacker hides instructions inside invisible tag characters embedded in a web page, document, email, or other content. A human (and many user interfaces) sees nothing unusual. An AI assistant that ingests the raw text does “see” the hidden characters, decodes them as text, and may be induced to follow threat actor-controlled...",
-      "links": [
-        {
-          "label": "What is ASCII smuggling?",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-is-ascii-smuggling"
-        },
-        {
-          "label": "Writing a practical ASCII-smuggling signature",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#writing-a-practical-ascii-smuggling-signature"
-        },
-        {
-          "label": "What we observed: ASCII smuggling repurposed for phishing",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-we-observed-ascii-smuggling-repurposed-for-phishing"
-        },
-        {
-          "label": "What is known and what is new",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-is-known-and-what-is-new"
-        },
-        {
-          "label": "Is there a detection gap?",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#is-there-a-detection-gap"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
-        },
-        {
-          "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "Microsoft Defender for Office 365",
-          "url": "https://learn.microsoft.com/en-us/defender-office-365/"
-        },
-        {
-          "label": "Microsoft Defender for Office 365 prompt injection protection",
-          "url": "https://learn.microsoft.com/en-us/defender-office-365/step-by-step-guides/prompt-injection-protection-defender-for-office-365"
-        },
-        {
-          "label": "T1566",
-          "url": "https://attack.mitre.org/techniques/T1566/"
-        },
-        {
-          "label": "T1027",
-          "url": "https://attack.mitre.org/techniques/T1027/"
-        }
       ]
     }
   ]
