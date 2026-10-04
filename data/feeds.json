@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-04T12:00:26.113816+00:00",
-  "totalArticles": 135,
+  "lastUpdated": "2026-10-04T21:02:43.225774+00:00",
+  "totalArticles": 133,
   "articles": [
     {
       "title": "Chromium: CVE-2025-2137 Out of bounds read in V8",
@@ -4900,129 +4900,6 @@
           "label": "CVE-2022-26923",
           "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2022-26923"
         }
-      ]
-    },
-    {
-      "title": "Check This Out! (CTO!) Guide (September 2026)",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/check-this-out-cto-guide-september-2026/ba-p/4553591",
-      "published": "2026-09-04T20:18:34+00:00",
-      "summary": "Member: TysonPaul | Microsoft Community Hub Retirement of Microsoft HPC Pack Team Blog: Azure High Performance Computing (HPC) Author: XinXin Published: 08/25/2026 Summary: Microsoft HPC Pack, a Windows-based HPC scheduler, will be retired, with support ending August 27, 2027. No new updates,...",
-      "author": "TysonPaul",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 7
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        },
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "AI Security",
-        "Microsoft Security Copilot",
-        "Splunk Security",
-        "Threat Intelligence"
-      ],
-      "body": "Member: TysonPaul | Microsoft Community Hub Retirement of Microsoft HPC Pack Team Blog: Azure High Performance Computing (HPC) Author: XinXin Published: 08/25/2026 Summary: Microsoft HPC Pack, a Windows-based HPC scheduler, will be retired, with support ending August 27, 2027. No new updates, features, or enhancements will be provided after this date, and only limited security support is available during the retirement period. Customers are advised to migrate to Azure Batch or other Azure services for HPC workloads. Existing deployments will not be forcibly disabled but will be unsupported after the retirement date. Microsoft encourages early migration planning and feedback to facilitate a smooth transition and address customer concerns. Azure DNS + Traffic Manager linked records Team Blog: Azure Networking Author: atiy Published: 08/26/2026 Summary: Azure DNS Traffic Manager linked records allow direct, managed integration between Azure DNS and Traffic Manager profiles, enabling endpoint IP addresses to be returned without an intermediate CNAME. This improves DNS responses, supports zone-apex routing, and enhances DNSSEC compatibility while preserving Traffic Manager’s routing intelligence, health monitoring, and failover. The article provides a practical guide for configuring, validating, and testing this feature, currently in public preview, using a multi-region Contoso scenario. The feature simplifies DNS architecture and client experience, making global routing more seamless and secure, especially for root domains. Azure Virtual Network routing appliance is now generally available Team Blog: Azure Networking Author: Anshu_Verma Published: 08/04/2026 Summary: Azure Virtual Network routing appliance is now generally available, offering a managed, platform-native routing service for high-performance connectivity across Azure virtual networks. Designed for modern cloud demands—including AI, private connectivity, IPv6 adoption, and multi-region architectures—it enables scalable hub-and-spoke and private network models, simplifies operations, and supports both IPv4 and IPv6. With built-in resiliency, Azure-native management, configurable bandwidth, and integrated monitoring, it helps organizations build large-scale, efficient, and innovative network infrastructures, accelerating cloud and AI initiatives while reducing operational complexity. Introducing the new Microsoft 365 Setup experience: A personalized dashboard for admins Team Blog: FastTrack Author:...",
-      "links": [
-        {
-          "label": "Member: TysonPaul | Microsoft Community Hub",
-          "url": "https://techcommunity.microsoft.com/users/tysonpaul/322025"
-        },
-        {
-          "label": "Retirement of Microsoft HPC Pack",
-          "url": "https://techcommunity.microsoft.com/blog/azurehighperformancecomputingblog/retirement-of-microsoft-hpc-pack/4550183"
-        },
-        {
-          "label": "Azure High Performance Computing (HPC)",
-          "url": "https://techcommunity.microsoft.com/category/azure/blog/azurehighperformancecomputingblog"
-        },
-        {
-          "label": "XinXin",
-          "url": "https://techcommunity.microsoft.com/users/xinxin/1593644"
-        },
-        {
-          "label": "Azure DNS + Traffic Manager linked records",
-          "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/azure-dns--traffic-manager-linked-records/4548221"
-        },
-        {
-          "label": "Azure Networking",
-          "url": "https://techcommunity.microsoft.com/category/azure/blog/azurenetworkingblog"
-        },
-        {
-          "label": "atiy",
-          "url": "https://techcommunity.microsoft.com/users/atiy/3601757"
-        },
-        {
-          "label": "Azure Virtual Network routing appliance is now generally available",
-          "url": "https://techcommunity.microsoft.com/blog/azurenetworkingblog/azure-virtual-network-routing-appliance-is-now-generally-available/4543616"
-        },
-        {
-          "label": "Anshu_Verma",
-          "url": "https://techcommunity.microsoft.com/users/anshu_verma/2767305"
-        },
-        {
-          "label": "Introducing the new Microsoft 365 Setup experience: A personalized dashboard for admins",
-          "url": "https://techcommunity.microsoft.com/blog/fasttrackblog/introducing-the-new-microsoft-365-setup-experience-a-personalized-dashboard-for-/4551387"
-        },
-        {
-          "label": "FastTrack",
-          "url": "https://techcommunity.microsoft.com/category/fasttrack/blog/fasttrackblog"
-        },
-        {
-          "label": "johnvincent",
-          "url": "https://techcommunity.microsoft.com/users/johnvincent/3643833"
-        }
-      ]
-    },
-    {
-      "title": "(Updated) Microsoft Entra ID: Optimizations for passkey registration experience",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1440968",
-      "published": "2026-09-04T16:33:45.320000+00:00",
-      "summary": "Updated September 4, 2026: We have updated the timeline. Thank you for your patience. [What and why]We're rolling out optimizations to passkey registration across Microsoft Entra ID. These changes improve how passkey registration is handled through Registration Campaign, Authentication Strengths,...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1440968",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated September 4, 2026: We have updated the timeline. Thank you for your patience. [What and why]We're rolling out optimizations to passkey registration across Microsoft Entra ID. These changes improve how passkey registration is handled through Registration Campaign, Authentication Strengths, and My Sign-Ins.The updated registration logic will more consistently:Guide users to register passkey types that comply with administrator configured passkey profile restrictions, reducing unsuccessful or non-compliant registration attempts.Prioritize registration of a passkey that is local to the user's current device when permitted by policy.These improvements are designed to increase successful passkey registrations, reduce registration friction, and help organizations strengthen adoption of phishing resistant authentication methods.There are no user interface changes associated with this update.[Rollout schedule]General Availability (Worldwide and GCC): Beginning in late August 2026 and expected to complete by mid-September 2026 (previously late August)[Impact on your organization]Who is affectedUsers who register passkeys through Registration Campaign, Authentication Strengths, or My Sign-InsOrganizations using passkey profiles, including Synced-only, Device-bound-only, Attestation Enforced, and AAGUID-restricted configurationsOrganizations using AAGUID-restricted passkey profiles will benefit from these registration optimizations. The greatest benefit is expected for Microsoft-supported passkey experiences. Other AAGUID-restricted providers continue to be supported and can be configured as before.Platforms and servicesMicrosoft Entra ID Registration CampaignAuthentication StrengthsMy Sign-Ins self-service passkey registrationMicrosoft-supported passkey experiences for AAGUID-restricted profiles:Entra passkey on WindowsMicrosoft Authenticator passkeyiCloud Keychain passkeyGoogle Password Manager passkeyWhat will happenUsers will continue to register passkeys through the same registration screens and entry points they use today.Registration will more consistently align with administrator configured passkey profile requirements.When permitted by policy, registration will prioritize a passkey native to the user's current device to improve the sign-in experience.[Action required and recommendations]No action is required.Organizations should continue driving passkey adoption through Registration Campaign and Authentication Strengths. These optimizations are intended to improve the likelihood of successful passkey registration while helping users remain compliant with organizational passkey policies.[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
       ]
     }
   ]
