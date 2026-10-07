@@ -1,8 +1,82 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-06T22:30:26.350369+00:00",
-  "totalArticles": 134,
+  "lastUpdated": "2026-10-07T05:06:53.158313+00:00",
+  "totalArticles": 136,
   "articles": [
+    {
+      "title": "Microsoft Purview: Data Lifecycle Management-Increase in expansion limit for auto-expanding archive beyond 1.5 TB",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573702",
+      "published": "2026-10-06T22:56:31+00:00",
+      "summary": "Previously, auto-expanding archive mailbox expansion was supported only up to 1.5 TB, after which mailboxes would become inoperative. Archive mailboxes can now automatically expand beyond the 1.5 TB limit, ensuring uninterrupted retention and enabling scalable archive growth as storage thresholds...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "Previously, auto-expanding archive mailbox expansion was supported only up to 1.5 TB, after which mailboxes would become inoperative. Archive mailboxes can now automatically expand beyond the 1.5 TB limit, ensuring uninterrupted retention and enabling scalable archive growth as storage thresholds are reached. This capability to expand archives beyond 1.5 TB will be available to customers with eligible E5 licenses.GA date: November CY2026",
+      "links": []
+    },
+    {
+      "title": "Microsoft Purview: Data Lifecycle Management-Graph API Support for Archive Mailboxes",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573701",
+      "published": "2026-10-06T22:56:31+00:00",
+      "summary": "Access to Archive mailboxes (Main + Auxiliary) through Microsoft Graph. The goal is to give users a single, seamless Archive view, even though Archive data may physically reside across multiple auxiliary mailboxes with EWS Graph APIs being deprecated.GA date: November CY2026",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Permissions audit log improvements",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573447",
+      "published": "2026-10-06T22:56:31+00:00",
+      "summary": "Improving permission checks when users access the Microsoft Purview portal. Enhanced audit logs will provide clearer visibility into role and scoped-role access decisions, helping administrators troubleshoot access issues and monitor authorization outcomes.GA date: October CY2026",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
     {
       "title": "CVE-2026-105812 and CVE-2026-106032: Issue with Bedrock AgentCore Starter Toolkit - Import Agent Code Injection and SSRF",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-127-aws/",
@@ -3039,32 +3113,6 @@
       ]
     },
     {
-      "title": "Microsoft Purview: Information Protection-Auto-labeling per-policy coverage report",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=572677",
-      "published": "2026-09-23T22:59:12+00:00",
-      "summary": "For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "For each enforced auto-labeling policy, admins can view how files processed during enforcement correlate to the latest simulation run. The per-policy coverage report shows volumes of files that have been labeled or are not yet labeled, and whether those files were included in the last simulation snapshot. This helps admins understand enforcement progress for a specific policy against the data state captured during simulation, while also identifying files that were not found in the simulation snapshot but were processed during enforcement.GA date: November CY2026",
-      "links": []
-    },
-    {
       "title": "Retirement: Support for PowerShell 7.4 ends on November 10, 2026",
       "link": "https://azure.microsoft.com/updates?id=572770",
       "published": "2026-09-23T16:50:05+00:00",
@@ -3881,10 +3929,10 @@
       ]
     },
     {
-      "title": "Microsoft Purview: DSPM-Copilot Readiness and Data Explorer",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571157",
+      "title": "Microsoft Purview: Data Loss Prevention-Upgraded inline protection for Microsoft Entra-managed apps in Edge for Business",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=571397",
       "published": "2026-09-15T23:00:36+00:00",
-      "summary": "We’re introducing the new readiness for Microsoft Copilot and data explorer experiences in Microsoft Purview Data Security Posture Management (DSPM). These new capabilities provide data security teams with greater visibility into their organization’s data security posture and help them assess...",
+      "summary": "Microsoft Purview is upgrading inline data protection for Microsoft Entra-managed apps in Edge for Business. The experience integrates with a Microsoft Entra Conditional Access grant control and simplifies configuration while removing current Purview policy restrictions. Admins can now use expanded...",
       "author": "Microsoft",
       "source": "Microsoft 365 Roadmap",
       "source_id": "m365_roadmap",
@@ -3903,7 +3951,7 @@
       "tags": [
         "Microsoft Purview"
       ],
-      "body": "We’re introducing the new readiness for Microsoft Copilot and data explorer experiences in Microsoft Purview Data Security Posture Management (DSPM). These new capabilities provide data security teams with greater visibility into their organization’s data security posture and help them assess risks, investigate findings, and prioritize remediation. The readiness for Microsoft Copilot experience in Purview DSPM helps organizations assess and improve their data readiness for Microsoft Copilot. It brings together insights into sensitive data exposure, oversharing, and protection coverage, helping security teams identify risks and assess progress toward a more secure Microsoft Copilot deployment. The new data explorer experience in Purview DSPM provides a centralized investigation experience that helps organizations understand where sensitive data exists across sites, review site-level access, and explore relevant data through preset views. It brings together sites, sensitive data, and preset views, to support more efficient investigations and reduce context switching.GA date: January CY2027Preview date: November CY2026",
+      "body": "Microsoft Purview is upgrading inline data protection for Microsoft Entra-managed apps in Edge for Business. The experience integrates with a Microsoft Entra Conditional Access grant control and simplifies configuration while removing current Purview policy restrictions. Admins can now use expanded conditions and condition combinations, multiple activities per rule, simulation mode, configurable alerts and notifications, and rule match activities are visible in activity explorer.GA date: March CY2027Preview date: February CY2027",
       "links": []
     },
     {
