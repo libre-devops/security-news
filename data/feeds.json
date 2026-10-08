@@ -1,8 +1,56 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-08T05:17:20.634181+00:00",
-  "totalArticles": 140,
+  "lastUpdated": "2026-10-08T13:04:35.991220+00:00",
+  "totalArticles": 141,
   "articles": [
+    {
+      "title": "Chromium: CVE-2025-11215 Off by one error in V8",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11215",
+      "published": "2026-10-08T08:51:10+00:00",
+      "summary": "Information published.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2025-11219 Use after free in V8",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-11219",
+      "published": "2026-10-08T08:50:46+00:00",
+      "summary": "Information published.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "(Updated) Microsoft Entra: Authenticated password change in My Sign-Ins",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1437671",
@@ -31,6 +79,49 @@
       ],
       "tags": [
         "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Introducing the Microsoft Sentinel ASIM EmailEvent schema",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/introducing-the-microsoft-sentinel-asim-emailevent-schema/ba-p/4562581",
+      "published": "2026-10-07T20:21:05+00:00",
+      "summary": "Email remains one of the most common entry points for security threats. Yet email products often describe the same activity with different table names, fields, and values. This makes it harder to build detections and investigations that work consistently across data sources. The Microsoft Sentinel...",
+      "author": "JamesAde",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel"
+      ],
+      "body": "Email remains one of the most common entry points for security threats. Yet email products often describe the same activity with different table names, fields, and values. This makes it harder to build detections and investigations that work consistently across data sources. The Microsoft Sentinel Advanced Security Information Model, or ASIM, EmailEvent schema is now available. It provides a common structure for email delivery and inspection events, helping customers and partners create security content that works across supported email data sources. A consistent view of email security activity EmailEvent standardizes the information analysts need to understand what happened to an email and why. It covers: Email delivery and inspection events Sender, source, and recipient information Message subject, size, direction, and delivery location URLs and file attachments SPF, DKIM, and DMARC authentication results Delivery actions such as delivered, blocked, quarantined, or deleted Threat, risk, confidence, tactic, technique, and remediation details Instead of learning a different data model for every product, analysts can query the normalized EmailEvent fields. Parser developers map each source's native data to the same schema. How it works Consider an email that contains a suspicious attachment. The email security product records the sender, recipients, attachment, authentication results, inspection verdict, and final action. A connector collects that event. A parser or Data Collection Rule maps the source fields to EmailEvent. Microsoft Sentinel can then query the normalized record using the same field names used for other supported email sources. This common structure separates security content from the details of a specific product. When another source adds an EmailEvent parser, existing source-independent queries and detections can work with that source without being rewritten around its native field names. Why it matters Simpler analytics: Write queries against one consistent set of email fields. Broader coverage: Apply source-independent security content across normalized email sources. Faster investigations: Compare delivery, authentication, attachment, URL, and threat details without translating different data models. Easier integration: Give connector and parser developers a defined contract for bringing new email telemetry into ASIM. EmailEvent does not replace the rich native data produced by email security products. It provides a consistent...",
+      "links": [
+        {
+          "label": "Normalization Email Schema MS Learn",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-email"
+        },
+        {
+          "label": "Learn about normalization and ASIM",
+          "url": "https://aka.ms/AboutASIM"
+        },
+        {
+          "label": "Explore the EmailEvent implementation in Azure-Sentinel",
+          "url": "https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimEmailEvent"
+        },
+        {
+          "label": "Deploy ASIM parsers",
+          "url": "https://aka.ms/DeployASIM"
+        }
       ]
     },
     {
@@ -3030,54 +3121,6 @@
     {
       "title": "Chromium CVE-2026-95280: Race condition in V8",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95280",
-      "published": "2026-09-25T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-95281: Buffer overflow in ANGLE",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95281",
-      "published": "2026-09-25T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-95282: Use after free in Platform",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95282",
       "published": "2026-09-25T14:00:00+00:00",
       "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
       "author": "Microsoft",
