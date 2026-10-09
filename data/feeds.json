@@ -1,8 +1,86 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-09T12:51:06.007308+00:00",
-  "totalArticles": 142,
+  "lastUpdated": "2026-10-09T22:26:10.912612+00:00",
+  "totalArticles": 133,
   "articles": [
+    {
+      "title": "CVE-2026-13762 and CVE-2026-13763 - Issue with HTTP/2 multi-frame request body inspection in AWS WAF",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-048-aws/",
+      "published": "2026-10-09T18:19:17+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Issue with containerd CRI Plugin - CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, CVE-2026-47262",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-046-aws/",
+      "published": "2026-10-09T18:19:17+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "(Updated) Microsoft Entra: Authenticated password change in My Sign-Ins",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1437671",
+      "published": "2026-10-09T16:43:01.717000+00:00",
+      "summary": "Updated October 9, 2026: We have updated the content. Thank you for your patience. [What and Why]We're introducing a new Microsoft Entra capability that Allow password change after secure sign-in directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key,...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1437671",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated October 9, 2026: We have updated the content. Thank you for your patience. [What and Why]We're introducing a new Microsoft Entra capability that Allow password change after secure sign-in directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key, or Windows Hello for Business. Users can complete this action even if they don't know their current password and without using self-service password reset (SSPR) or contacting the helpdesk.Many organizations are adopting allowed password changes after secure sign-ins but still maintain passwords for legacy applications and services. This update helps reduce password-related support requests and removes a common barrier to adoption. The feature is disabled by default and requires administrator enablement before users can access it.[Rollout Schedule]General Availability (Worldwide and GCC): Beginning end of October 2026 (previously mid-October) and expected to complete by end of November 2026 (previously late October)[Impact on Your Organization]Who is affectedMicrosoft Entra administrators who manage password change settingsUsers who have a registered allowed password change after secure sign-in method (passkey, FIDO2 security key, or Windows Hello for Business) and also maintain a passwordOrganizations that choose to enable the featurePlatforms/ServicesMicrosoft EntraMy Sign-Ins (mysignins.microsoft.com)What will happenBecause this feature is off by default, there is no change to your users' experience unless you turn it on. After the feature is enabled, eligible users will see a new Change password option in My Sign-Ins.Users can authenticate set a new password without knowing their existing password.Users are not required to enroll in or use SSPR to complete this action.Administrators can choose to enable or disable the capability through Microsoft Entra management interfaces available at release.Authentication continues to require a strong password change method, such as a passkey, FIDO2 security key, or Windows Hello for Business.The setting is tenant-wide: you can turn it on for your entire tenant or leave it off for everyone. There is no per-user or per-group scoping. [Action Required/Recommendations]No action is required.If your organization plans to support allowed password changes after secure sign-in:Review your password management and allowed password changes after secure sign-in strategy.Evaluate whether enabling this capability aligns with your organization's security and support requirements.Communicate the new self-service capability to helpdesk and support teams.Update internal user guidance and documentation as needed.If your organization chooses to offer allowed password changes after secure sign-in, enable the feature through the Microsoft Entra admin experience or supported APIs when it becomes available in October 2026.Learn more Microsoft Learn documentation will be available when the feature releases in October. [Compliance Considerations]QuestionAnswerDoes the change include an admin control?Yes. The feature is disabled by default and requires explicit administrator enablement.Does the change modify how users can access or correct their personal data?Yes. Users gain a new self-service method to update their password using an existing allowed password change after secure sign-in.",
+      "links": [],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
     {
       "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
@@ -76,6 +154,30 @@
           "label": "KB5101681 (OS Build 28000.2608) for 26H1",
           "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/07/july-28-2026-kb5101681-preview"
         }
+      ]
+    },
+    {
+      "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 & CVE-2026-8597)",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/",
+      "published": "2026-10-08T18:49:39+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
       ]
     },
     {
@@ -364,36 +466,6 @@
       ]
     },
     {
-      "title": "(Updated) Microsoft Entra: Authenticated password change in My Sign-Ins",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1437671",
-      "published": "2026-10-07T22:09:11.710000+00:00",
-      "summary": "Updated October 7, 2026: We have updated the timeline and content. Thank you for your patience. [What and Why]We're introducing a new Microsoft Entra capability that allows authenticated password changes directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1437671",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated October 7, 2026: We have updated the timeline and content. Thank you for your patience. [What and Why]We're introducing a new Microsoft Entra capability that allows authenticated password changes directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key, or Windows Hello for Business. Users can complete this action even if they don't know their current password and without using self-service password reset (SSPR) or contacting the helpdesk.Many organizations are adopting authenticated password change but still maintain passwords for legacy applications and services. This update helps reduce password-related support requests and removes a common barrier to adoption. The feature is disabled by default and requires administrator enablement before users can access it.[Rollout Schedule]General Availability (Worldwide and GCC): Beginning in mid-October 2026 and expected to complete by late October 2026[Impact on Your Organization]Who is affectedMicrosoft Entra administrators who manage password change settingsUsers who have a registered authenticated password change method (passkey, FIDO2 security key, or Windows Hello for Business) and also maintain a passwordOrganizations that choose to enable the featurePlatforms/ServicesMicrosoft EntraMy Sign-Ins (mysignins.microsoft.com)What will happenBecause this feature is off by default, there is no change to your users' experience unless you turn it on. After the feature is enabled, eligible users will see a new Change password option in My Sign-Ins.Users can authenticate set a new password without knowing their existing password.Users are not required to enroll in or use SSPR to complete this action.Administrators can choose to enable or disable the capability through Microsoft Entra management interfaces available at release.Authentication continues to require a strong password change method, such as a passkey, FIDO2 security key, or Windows Hello for Business.The setting is tenant-wide: you can turn it on for your entire tenant or leave it off for everyone. There is no per-user or per-group scoping. [Action Required/Recommendations]No action is required.If your organization plans to support authenticated password change:Review your password management and authenticated password change strategy.Evaluate whether enabling this capability aligns with your organization's security and support requirements.Communicate the new self-service capability to helpdesk and support teams.Update internal user guidance and documentation as needed.If your organization chooses to offer authenticated password changes, enable the feature through the Microsoft Entra admin experience or supported APIs when it becomes available in October 2026.Learn more Microsoft Learn documentation will be available when the feature releases in October. [Compliance Considerations]QuestionAnswerDoes the change include an admin control?Yes. The feature is disabled by default and requires explicit administrator enablement.Does the change modify how users can access or correct their personal data?Yes. Users gain a new self-service method to update their password using an existing authenticated password change.",
-      "links": [],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
       "title": "Introducing the Microsoft Sentinel ASIM EmailEvent schema",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/introducing-the-microsoft-sentinel-asim-emailevent-schema/ba-p/4562581",
       "published": "2026-10-07T20:21:05+00:00",
@@ -437,10 +509,10 @@
       ]
     },
     {
-      "title": "CVE-2026-107352 - Missing authorization checks in Amazon Athena engine version 3 request handling",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-128-aws/",
-      "published": "2026-10-07T20:19:18+00:00",
-      "summary": "Bulletin ID: 2026-128-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/07/2026 13:00 PM PDT Description: Missing authorization checks in Amazon Athena engine version 3 request handling could have allowed an authenticated user to read limited query metadata (AWS...",
+      "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
+      "published": "2026-10-07T20:16:45+00:00",
+      "summary": "",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
       "source_id": "aws_security",
@@ -458,9 +530,55 @@
       ],
       "tags": [
         "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-8178 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-028-aws/",
+      "published": "2026-10-07T20:16:45+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
       ],
-      "body": "Bulletin ID: 2026-128-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/07/2026 13:00 PM PDT Description: Missing authorization checks in Amazon Athena engine version 3 request handling could have allowed an authenticated user to read limited query metadata (AWS account identifiers and SQL statement text) from other AWS accounts. AWS remediated the issue on September 1, 2026, and has confirmed no customer metadata was accessed. Query results, credentials, and Amazon S3 data were not affected. No customer action is required. Resolution: This issue was addressed service-side on September 1, 2026. Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Issues with Amazon Athena ODBC Driver",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-013-aws/",
+      "published": "2026-10-07T20:16:44+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
     },
     {
       "title": "3 lessons from frontier AI vulnerability research",
@@ -983,6 +1101,32 @@
       "tags": [
         "General Security"
       ]
+    },
+    {
+      "title": "CVE-2026-104019 - OS command injection in the Studio Space startup script in Amazon SageMaker Distribution",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-125-aws/",
+      "published": "2026-10-02T20:25:48+00:00",
+      "summary": "Bulletin ID: 2026-125-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/02/2026 13:00 PM PDT Description: Amazon SageMaker Unified Studio is an AWS service that unifies data, analytics, and AI development. It lets you find and access your organization's data and act...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-125-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/02/2026 13:00 PM PDT Description: Amazon SageMaker Unified Studio is an AWS service that unifies data, analytics, and AI development. It lets you find and access your organization's data and act on it with integrated, purpose-built tools. We identified CVE-2026-104019, an issue with the startup of SageMaker Spaces in SageMaker Unified Studio. The startup script in a SageMaker Space performs a network validation against all the available SageMaker connections in a project. Under certain conditions, improper sanitization of connection details during this validation could allow arbitrary code to be executed in the Space of another project member. In projects with the Trusted Identity Propagation feature enabled, this issue could result in a user with project contributor permissions (or higher) gaining access to another member's temporary execution role credentials and calling downstream trusted identity propagation-enabled AWS services on their behalf. We implemented a fix to all supported SageMaker Distribution versions to sanitize connection details during the startup validation process. The fix is deployed globally and will apply to all Spaces automatically on the next startup. Impacted versions: - 2.8.x - 2.13.x: all versions affected, no fix (end of support) - 2.14.x: < 2.14.12, fixed in 2.14.12 - 3.3.x - 3.8.x: all versions affected, no fix (end of support) - 3.9.x: < 3.9.12, fixed in 3.9.12 - 4.0.x: < 4.0.11, fixed in 4.0.11 - 4.1.x: < 4.1.11, fixed in 4.1.11 - 4.2.x: < 4.2.8, fixed in 4.2.8 - 4.3.x: < 4.3.5, fixed in 4.3.5 - 4.4.x: < 4.4.3, fixed in 4.4.3 - 4.5.x: not affected - < 2.8.0 and < 3.3.0: not affected Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
     },
     {
       "title": "From Domain Lists to Decisions: Scaling WHOIS Threat Intelligence with MDTI and Microsoft Graph",
@@ -1778,6 +1922,37 @@
         {
           "label": "​​Beyond source code: A path to the keys to the kingdom",
           "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-100308 - GluonTS arbitrary command execution during model deserialization",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-119-aws/",
+      "published": "2026-09-29T15:17:30+00:00",
+      "summary": "Bulletin ID: 2026-119-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/29/2026 08:00 AM PDT Description: GluonTS is an open source library for deep learning based time series models. We identified CVE-2026-100308 that allows arbitrary command execution upon...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-119-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/29/2026 08:00 AM PDT Description: GluonTS is an open source library for deep learning based time series models. We identified CVE-2026-100308 that allows arbitrary command execution upon deserialization of untrusted model artifacts. Deserialization of untrusted data in the model loading component in Amazon GluonTS before 0.17.0 might allow context-dependent attackers to execute arbitrary operating system commands with the privileges of the loading process via a crafted serialized model directory. The issue arises whenever a user calls Predictor.deserialize() or any RepresentablePredictor.deserialize() on a model directory they do not fully control. Impacted versions: <0.17.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. View article",
+      "links": [
+        {
+          "label": "View article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-119-aws/"
         }
       ]
     },
@@ -3405,6 +3580,10 @@
           "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/"
         },
         {
+          "label": "Office in Copilot",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-office-in-the-new-microsoft-copilot-app/4561230"
+        },
+        {
           "label": "https://blogs.microsoft.com/wp-content/uploads/2026/09/OMB-Home-FINAL-2.png",
           "url": "https://blogs.microsoft.com/wp-content/uploads/2026/09/OMB-Home-FINAL-2.png"
         },
@@ -3443,10 +3622,6 @@
         {
           "label": "Microsoft Ignite",
           "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fignite.microsoft.com%2Fhome%3Fwt.mc_ID%3Dmsignite26_ciarmar_corp_np_oo_Copilot_BlogCTACopilot_0352&data=05%7C02%7CJessica.Voelker%40microsoft.com%7C022d43bbf01b4bc667e108df15b1c45b%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639253525377252688%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Mbv%2BFZixxUSvdipgawzLAZ8YPh6JKAIlDh5MJbj4Q4s%3D&reserved=0"
-        },
-        {
-          "label": "Introducing the new Copilot with Home, Code and Autopilot",
-          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/"
         }
       ]
     },
@@ -3862,102 +4037,6 @@
       ]
     },
     {
-      "title": "CVE-2026-13762 and CVE-2026-13763 - Issue with HTTP/2 multi-frame request body inspection in AWS WAF",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-048-aws/",
-      "published": "2026-09-22T19:49:10+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-13769 – Insecure file permissions in AWS CLI",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-049-aws/",
-      "published": "2026-09-22T19:49:10+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-12957 and CVE-2026-12958 - Issues in Language Servers for AWS and Amazon Q Developer Plugins",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-047-aws/",
-      "published": "2026-09-22T19:49:09+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-15895: OS command injection in jsii-diff in AWS jsii",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-057-aws/",
-      "published": "2026-09-22T19:48:47+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "CVE-2026-15746 - Credential disclosure in Strands Agents Tools elasticsearch_memory tool",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-056-aws/",
       "published": "2026-09-22T19:48:47+00:00",
@@ -4006,8 +4085,8 @@
       ]
     },
     {
-      "title": "CVE-2026-16796 - Improper neutralization of argument delimiters in AWS Bedrock AgentCore Python SDK install_packages()",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-065-aws/",
+      "title": "CVE-2026-16317 and CVE-2026-16318: Issues with s2n-tls: an open-source implementation of the TLS/SSL protocols",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-062-aws/",
       "published": "2026-09-22T19:48:46+00:00",
       "summary": "",
       "author": "aws@amazon.com",
@@ -4785,32 +4864,6 @@
       ]
     },
     {
-      "title": "CVE-2026-89332 - Kiro IDE Sensitive Workspace Data Exfiltration via Agent-Written Workspace Configuration",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-111-aws/",
-      "published": "2026-09-11T19:08:25+00:00",
-      "summary": "Bulletin ID: 2026-111-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 12:00 PM PDT Description: Kiro IDE is an agentic development environment that makes it easy for developers to ship real engineering work with the help of AI agents. We identified...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-111-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 12:00 PM PDT Description: Kiro IDE is an agentic development environment that makes it easy for developers to ship real engineering work with the help of AI agents. We identified CVE-2026-89332, where the Kiro agent could modify a workspace's settings file in an untrusted workspace in Kiro IDE. A specially crafted repository could use this to point the Kiro Powers registry URL, which Kiro fetches when the Powers panel is opened, at an external endpoint, sending potentially sensitive workspace data to that endpoint. Kiro presented the edit to the user for approval, showing the inserted data and the URL, but the file was already written to disk, so opening the Powers panel before responding to the prompt made the request anyway. Impacted versions: Kiro IDE < 0.8.135 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "CVE-2026-89090 - Denial of service in the event stream header decoder in AWS SDK for Go v2",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-110-aws/",
       "published": "2026-09-11T17:09:09+00:00",
@@ -4835,6 +4888,37 @@
       ],
       "body": "Bulletin ID: 2026-110-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 10:00 AM PDT Description: An issue exists in the the EventStream header decoder in AWS SDK for Go v2 in versions predating 2026-03-23. An actor can send a malformed EventStream response frame containing a crafted header value type byte outside the valid range, which can cause the host process to terminate. Impacted versions: < 2026-03-23 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
+    },
+    {
+      "title": "CVE-2026-18061 - XML External Entity (XXE) in AWS Advanced JDBC Wrapper RemoteQueryCachePlugin",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-109-aws/",
+      "published": "2026-09-11T16:37:01+00:00",
+      "summary": "Bulletin ID: 2026-109-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 09:30 AM PDT Description: The AWS Advanced JDBC Wrapper is an open-source library that enhances existing JDBC drivers with AWS-specific capabilities such as Aurora failover, IAM...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-109-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 09:30 AM PDT Description: The AWS Advanced JDBC Wrapper is an open-source library that enhances existing JDBC drivers with AWS-specific capabilities such as Aurora failover, IAM authentication, and automated SQL query caching for applications connecting to Amazon Aurora, RDS MySQL, and RDS MariaDB. We identified CVE-2026-18061, an improper restriction of XML external entity (XXE) references in the optional RemoteQueryCachePlugin. When this plugin is enabled with a shared cache, an actor with write access to that cache infrastructure might place crafted XML in a cached column value. When an application subsequently reads that cached result as XML, the wrapper's XML parsers resolve external entities, which might allow the actor to disclose sensitive files readable by the application process, including stored database and IAM role credentials. Impacted versions: >= 3.3.0 and <= 4.2.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": [
+        {
+          "label": "AWS Advanced JDBC Wrapper",
+          "url": "https://github.com/aws/aws-advanced-jdbc-wrapper"
+        }
+      ]
     },
     {
       "title": "Protecting organizations from AI-assisted executive impersonation and invoice fraud",
@@ -4957,363 +5041,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-18830 - Issue with Amazon Bedrock AgentCore harness – Insufficient Input Validation",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-073-aws/",
-      "published": "2026-09-09T21:35:24+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-18656 & CVE-2026-18657 - Issue with Kiro IDE and CLI - Executable Resolution from Untrusted Project Directory on Windows",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-074-aws/",
-      "published": "2026-09-09T21:35:24+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-85781 - Unverified access point ownership in Amazon EFS CSI Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-099-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-099-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 11:45 AM PDT Description: The Amazon EFS CSI Driver is an open-source Kubernetes Container Storage Interface (CSI) driver that lets Kubernetes workloads use Amazon EFS file systems. We...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-099-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 11:45 AM PDT Description: The Amazon EFS CSI Driver is an open-source Kubernetes Container Storage Interface (CSI) driver that lets Kubernetes workloads use Amazon EFS file systems. We identified CVE-2026-85781, an issue in the driver's volume-deletion logic. When the controller is configured with the non-default --delete-access-point-root-dir=true option, it did not verify that the EFS access point referenced by a PersistentVolume's volume handle belonged to the file system referenced by that same volume handle. An authenticated Kubernetes user with permission to create PersistentVolumes could use a crafted volume handle to cause the controller to recursively delete directories from an Amazon EFS file system that the user was not otherwise authorized to modify. This issue does not affect Amazon EFS itself; Amazon EFS access controls operated as designed. Impacted versions: <=3.4.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-18428 - OpenSearch SQL Plugin - Async Query Validation Bypass",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-081-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-081-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/13/2026 10:30 AM PDT Description: OpenSearch SQL plugin is a plugin that enables SQL and PPL query capabilities on OpenSearch clusters, including direct query integration with external data...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-081-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/13/2026 10:30 AM PDT Description: OpenSearch SQL plugin is a plugin that enables SQL and PPL query capabilities on OpenSearch clusters, including direct query integration with external data sources via Apache Spark. An issue exists where the Flint extension query handler validates SQL queries without sufficient restrictions, allowing a user with async query access to bypass the SQL grammar deny list via the direct query endpoint. Affected Products & Versions: OpenSearch SQL Plugin (open-source, self-managed): - Affected: v2.13 to v3.6 - Fixed: versions 3.7 and 2.19.6 Amazon OpenSearch Service (AWS Managed): - Affected: v2.13 to v3.5 - Fixed: v2.13 to v3.5 (via service software update) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-85788 - Issue with awslabs mysql-mcp-server",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-103-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-103-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/09/2026 09:30 AM PDT Description: We identified an issue in awslabs.mysql-mcp-server (an open-source, self-hosted Model Context Protocol server distributed via github.com/awslabs/mcp and PyPI). In...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-103-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/09/2026 09:30 AM PDT Description: We identified an issue in awslabs.mysql-mcp-server (an open-source, self-hosted Model Context Protocol server distributed via github.com/awslabs/mcp and PyPI). In affected versions, under certain conditions the read-only enforcement could be circumvented via SQL inline comments, allowing a statement to run that the read-only check was expected to block. The read-only mode provided by the server is a best-effort safeguard and is not a substitute for correctly scoped database permissions; the effective boundary is the permissions of the configured MySQL user. This issue does not affect the confidentiality or integrity of any AWS service. awslabs.mysql-mcp-server is a client-side, self-managed package; customers control installation and the privileges of the database credentials they configure. Impacted versions: awslabs.mysql-mcp-server <= 1.0.21 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-81838 - Zip Slip path traversal in awsdac (diagram-as-code)",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-090-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-090-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/27/2026 13:00 PM PDT Description: awsdac (diagram-as-code) is a CLI tool that generates AWS architecture diagrams from YAML definitions, enabling version-controlled, code-driven diagramming. We...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-090-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/27/2026 13:00 PM PDT Description: awsdac (diagram-as-code) is a CLI tool that generates AWS architecture diagrams from YAML definitions, enabling version-controlled, code-driven diagramming. We identified CVE-2026-81838, a Zip Slip (path traversal) issue. When awsdac extracts a zip archive referenced by a ZipFile resource in a definition file, a crafted archive can write files outside the intended cache directory, to any path writable by the user running awsdac. Depending on the file written, this can lead to arbitrary code execution. Leveraging this issue requires processing a definition file from an untrusted source. This can occur when: - awsdac is run without definition trust restrictions (versions prior to 0.22.4 had no trust distinction; version 0.22.4 and later require the −−allow−untrusted−definitions flag), or - a definition file is loaded from the local filesystem ('Type: LocalFile'), which bypasses the definition URL allowlist. CI/CD environments that process definition files from untrusted or semi-trusted sources are the primary risk scenario. awsdac is a client-side CLI tool that renders architecture diagrams locally. This issue does not affect any AWS service, AWS account, or customer data. The impact is limited to the machine on which awsdac runs. Impacted versions: awsdac: versions 0.10 through 0.23 (inclusive) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-81849 - Path traversal in the aws:downloadContent plugin in amazon-ssm-agent",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-091-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-091-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/28/2026 11:00 AM PDT Description: AWS Systems Manager Agent (amazon-ssm-agent) is Amazon software that runs on Amazon Elastic Compute Cloud (Amazon EC2) instances, edge devices, on-premises...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-091-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/28/2026 11:00 AM PDT Description: AWS Systems Manager Agent (amazon-ssm-agent) is Amazon software that runs on Amazon Elastic Compute Cloud (Amazon EC2) instances, edge devices, on-premises servers, and virtual machines (VMs). Amazon-ssm-agent makes it possible for Systems Manager to update, manage, and configure these resources. We identified CVE-2026-81849, where an improper limitation of a pathname to a restricted directory in the aws:downloadContent plugin in amazon-ssm-agent before 3.3.4515.0 might allow an authenticated remote user whose ssm:SendCommand permission is restricted to the AWS-DownloadContent document, to write arbitrary files outside the intended download directory with root privileges, via crafted object keys in the S3 source the document is directed to retrieve. This issue may lead to arbitrary code execution as root if specific sensitive files are overwritten. To remediate this issue, customers should upgrade amazon-ssm-agent to version 3.3.4515.0 or later. Impacted versions: Amazon amazon-ssm-agent from 2.0.767.0 to 3.3.4364.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-85787 - An incomplete list of disallowed inputs in the SQL validation component in Amazon awslabs postgres-mcp-server to modify data beyond the read-only scope",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-101-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-101-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 13:00 PM PDT Description: We have identified CVE-2026-85787, an incomplete list of disallowed inputs in the SQL validation component in Amazon awslabs postgres-mcp-server before version...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-101-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/04/2026 13:00 PM PDT Description: We have identified CVE-2026-85787, an incomplete list of disallowed inputs in the SQL validation component in Amazon awslabs postgres-mcp-server before version 1.1.7 might allow an unauthenticated actor to modify data beyond the read-only scope by placing crafted SQL into the content that is submitted when an authenticated user interacts with the MCP server. Impacted versions: any pypi package version < 1.1.7 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-75935 and CVE-2026-75936 - Issue with Amazon ion-java - Memory-amplification denial of service",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-083-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-083-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/18/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-75935, memory-amplification denial of service via...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-083-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/18/2026 12:30 PM PDT Description: ion-java is a Java library that implements the Amazon Ion data format specification. We identified CVE-2026-75935, memory-amplification denial of service via declared-length preallocation, and CVE-2026-75936, memory-amplification denial of service via highly compressed data expansion. Affected versions: < 1.12.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-75897 - Uncontrolled resource consumption in OpenSearch Dashboards capabilities route",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-082-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-082-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/18/2026 10:00 AM PDT Description: OpenSearch Dashboards is the open-source visualization and management UI for OpenSearch, and ships as part of Amazon OpenSearch Service. We identified...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-082-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 08/18/2026 10:00 AM PDT Description: OpenSearch Dashboards is the open-source visualization and management UI for OpenSearch, and ships as part of Amazon OpenSearch Service. We identified CVE-2026-75897, an improper input validation in the capabilities route handler in OpenSearch Dashboards. The handler does not bound the size of the request payload, which might allow remote attackers to cause a denial of service via a crafted HTTP request. Affected Products and Versions: OpenSearch \"Plugin Type\" Plugin (open-source, self-managed): - Affected: All versions from 1.3.0 through 3.7.0 inclusive, including all 2.x releases up to and including 2.19.6. The issue is inherited from upstream Kibana and is also present in Kibana 7.7.1 through 7.10.2. - Fixed: 3.8.0 Amazon OpenSearch Service (AWS Managed): - Affected: Engine versions OpenSearch 1.3, 2.11, 2.13, 2.15, 2.17, 2.19, 3.1, 3.3, and 3.5, and Elasticsearch-compatibility versions using Kibana 7.9 and 7.10. - Fixed: A patched service software release is available for all affected versions. Apply the latest available service software update to your domain. Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-84942 - Stored Cross-Site Scripting via Vega Expression Function Bypass in OpenSearch Dashboards",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
-      "published": "2026-09-09T21:30:11+00:00",
-      "summary": "Bulletin ID: 2026-102-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/08/2026 12:30 PM PDT Description: A stored cross-site scripting (XSS) issue in the Vega expression function implementation in OpenSearch Dashboards allows a remote authenticated actor with...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-102-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/08/2026 12:30 PM PDT Description: A stored cross-site scripting (XSS) issue in the Vega expression function implementation in OpenSearch Dashboards allows a remote authenticated actor with dashboard write permissions to execute arbitrary JavaScript in the context of other users' browser sessions by saving a crafted Vega visualization. Affedted products & versions: OpenSearch Dashboards (open-source, self-managed): - Affected: v2.0.0, v2.1.0, v2.2.0, v2.3.0, v2.4.0, v2.5.0, v.2.6.0, v2.7.0, v2.8.0, v2.9.0, v2.10.0, v2.11.0, v2.12.0, v2.13.0, v2.14.0, v2.15.0, v2.16.0, v2.17.0, v2.18.0, v2.19.0, v3.0.0, v3.1.0, v3.2.0, v3.3.0, v3.4.0, v3.5.0 - Fixed: v2.19.5 and v3.6.0 Amazon OpenSearch Service (AWS Managed): - Affected: v2.3.0, v2.5.0, v2.7.0, v2.9.0, v2.11.0, v2.13.0, v2.15.0, v2.17.0, v2.19.0, v3.1.0, v3.3.0, v3.5.0 - Fixed: v2.3.0, v2.5.0, v2.7.0, v2.9.0, v2.11.0, v2.13.0, v2.15.0, v2.17.0, v2.19.0 and v3.1.0, v3.3.0, v3.5.0 Amazon OpenSearch Serverless: - Not affected Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "Passkey-themed social engineering leads to identity and cloud compromise",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/09/passkey-themed-social-engineering-leads-identity-cloud-compromise/",
-      "published": "2026-09-09T17:41:18+00:00",
-      "summary": "Passkey-themed social engineering is being used to compromise identities and enable broader cloud attacks. Learn how threat actors establish MFA persistence, abuse Microsoft Graph for reconnaissance, and access SharePoint, OneDrive, and email data, along with key detection and mitigation guidance....",
-      "author": "Microsoft Security Research, Krithika Ramakrishnan, Bharat Vaghela, Vaibhav Deshmukh, Subhajit Ghosh, Anusha Chakraborty, Akash Chaudhuri, Victor Chingtham and Ivan Macalintal",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Attack chain overviewAttributionMitigation and protection guidanceLearn more Microsoft Security Research is tracking active cloud-based intrusions spanning multiple accounts in which unusual sign-ins were followed by threat actor-added authentication methods, high-volume Microsoft Graph activity, SharePoint and OneDrive downloads, and email collection through REST APIs. Microsoft Security Research assesses that this sequence is consistent with automated collection from compromised cloud identities using proxy-associated infrastructure, the activity has been observed since May 2026. The activity begins with identity-focused social engineering and impersonation infrastructure, proceeds through authentication persistence and cloud reconnaissance, and is followed by targeted data access and activity consistent with data collection and potential exfiltration. Domains, IP addresses, and hosting providers can change quickly, but the recurring sequence of identity compromise, persistence, reconnaissance, content discovery, and exfiltration provides a more durable basis for investigation. Defenders should investigate this sequence across identity, Microsoft Graph, SharePoint, OneDrive, and Exchange signals, then revoke sessions and remove unauthorized authentication methods for confirmed compromises. Attack chain overview Figure 1. Observed attack sequence showing identity compromise through social engineering, MFA persistence, Microsoft Graph reconnaissance, and cloud data collection/exfiltration. Step 1-2 : Initial access: Passkey and SSO lures The attack often begins with a seemingly routine call or message on a user’s personal phone number from someone claiming to be from the organization’s IT helpdesk. The caller creates a sense of urgency, explaining that a passkey, multifactor authentication (MFA), or single sign-on (SSO) configuration must be updated immediately to avoid disruption. Employees are directed to a website that closely resembles a legitimate Microsoft sign-in experience and may receive the link through SMS messages sent directly to their personal mobile phones. Despite the frequent use of passkey-themed lures, passkey enrollment is often not the actor’s true objective. Instead, the passkey narrative serves as a convincing pretext to guide victims through adversary-in-the-middle (AiTM) phishing or device-code authentication flows. In AiTM scenarios, the actor captures credentials and session tokens; in device code attacks, the...",
-      "links": [
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Attribution",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attribution"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "Microsoft Security Copilot in Microsoft Defender",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-in-microsoft-365-defender"
-        },
-        {
-          "label": "create their own prompts",
-          "url": "https://learn.microsoft.com/copilot/security/prompting-security-copilot#create-your-own-prompts"
-        },
-        {
-          "label": "prebuilt promptbooks",
-          "url": "https://learn.microsoft.com/copilot/security/using-promptbooks"
-        },
-        {
-          "label": "use the following reports in Microsoft products",
-          "url": "https://security.microsoft.com/threatanalytics3/96d46483-8257-41a0-93bd-e50922ab8842"
-        },
-        {
-          "label": "T1591 Gather Victim Org Information",
-          "url": "https://attack.mitre.org/techniques/T1591/"
-        },
-        {
-          "label": "T1598.003 Phishing for Information: Spear-phishing Link",
-          "url": "https://attack.mitre.org/techniques/T1598/003/"
-        },
-        {
-          "label": "T1583.001 Acquire Infrastructure: Domains",
-          "url": "https://attack.mitre.org/techniques/T1583/001/"
-        },
-        {
-          "label": "T1585.002 Establish Accounts: Email Accounts",
-          "url": "https://attack.mitre.org/techniques/T1585/002/"
-        }
       ]
     }
   ]
