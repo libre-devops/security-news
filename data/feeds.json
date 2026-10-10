@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-10T12:09:17.144887+00:00",
-  "totalArticles": 132,
+  "lastUpdated": "2026-10-10T21:21:20.734629+00:00",
+  "totalArticles": 130,
   "articles": [
     {
       "title": "CVE-2026-13762 and CVE-2026-13763 - Issue with HTTP/2 multi-frame request body inspection in AWS WAF",
@@ -4918,105 +4918,6 @@
           "label": "AWS Advanced JDBC Wrapper",
           "url": "https://github.com/aws/aws-advanced-jdbc-wrapper"
         }
-      ]
-    },
-    {
-      "title": "Protecting organizations from AI-assisted executive impersonation and invoice fraud",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/10/protecting-organizations-ai-assisted-executive-impersonation-invoice-fraud/",
-      "published": "2026-09-10T17:23:05+00:00",
-      "summary": "Microsoft examines an AI-assisted business email compromise campaign that used executive impersonation and fake invoices to target finance teams with ACH payment fraud. The post Protecting organizations from AI-assisted executive impersonation and invoice fraud appeared first on Microsoft Security...",
-      "author": "Microsoft Security Research",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Attack chain overviewEmail DeliveryDomain registrationGenerative AI usageMitigation and protection guidanceMicrosoft Defender detectionsMicrosoft Security CopilotThreat intelligence reportsMITRE ATT&CK Techniques observedIndicators of compromise (IOC)Learn More Threat actors are increasingly improving their tactics to make suspicious emails look like legitimate email notifications to potential victims, deploying techniques that impersonate internally sent emails from executive team members. While this technique is not new, the adoption of AI has enabled threat actors to improve their campaign templates and construct emails tailored to their recipients. Additionally, threat actors are incorporating multiple techniques within the same email to improve the overall narrative further. In this blog, we will discuss a recent campaign observed using third-party email delivery infrastructure to send out over a million financial fraud scam emails that displayed multiple indicators consistent with the use of generative AI during email template creation. The threat actor impersonated CEOs of multiple target companies, attempting to convince accounts payable departments of the same companies to process an Automated Clearing House (ACH) payment of nearly $50,000. To add legitimacy, the actor included a forwarded email thread (and a fabricated invoice) between the impersonated CEO and ServiceNow (which was also being impersonated). Attack chain overview The campaign follows steps before and during the execution of the campaign: threat actors register impersonation domains, send executive-themed payment requests through trusted infrastructure, embed fabricated invoices and supporting conversations, and attempt to convince finance personnel to initiate ACH transfers. Figure 1: Attack chain showing domain registration, executive impersonation, invoice fraud delivery, ACH payment execution, and financial theft. Email Delivery Between August 3 and 5, Microsoft detected a campaign consisting of more than a million emails targeting enterprise users. The attacker used multiple third-party email service accounts to send out the emails. A huge majority of these emails were sent to users in the United States (87.7% of the total campaign). Figure 2. Campaign timeline. Figure 3. Industry distribution of targeted enterprises of this campaign with ‘IT services & business advisory’ along with ‘Consumer goods’ and others. Unlike traditional invoice scams that rely on a...",
-      "links": [
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Email Delivery",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#email-delivery"
-        },
-        {
-          "label": "Domain registration",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#domain-registration"
-        },
-        {
-          "label": "Generative AI usage",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#generative-ai-usage"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
-        },
-        {
-          "label": "Microsoft Security Copilot",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-security-copilot"
-        },
-        {
-          "label": "Threat intelligence reports",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#threat-intelligence-reports"
-        },
-        {
-          "label": "MITRE ATT&CK Techniques observed",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitre-att-ck-techniques-observed"
-        },
-        {
-          "label": "Indicators of compromise (IOC)",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise-ioc"
-        },
-        {
-          "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "automatic attack disruption",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/configure-attack-disruption"
-        }
-      ]
-    },
-    {
-      "title": "[Launched] Generally Available: TLS/SSL certificate and end-to-end TLS encryption support for Azure Functions Flex Consumption",
-      "link": "https://azure.microsoft.com/updates?id=570940",
-      "published": "2026-09-10T16:12:49+00:00",
-      "summary": "Azure Functions Flex Consumption support for TLS/SSL certificates is now generally available through a new site-scoped certificate model. Each function app can hold up to 3 private (.pfx) and 3 public (.cer) certificates uploaded directly, imported from A",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     }
   ]
