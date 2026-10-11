@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-11T12:23:00.539983+00:00",
-  "totalArticles": 130,
+  "lastUpdated": "2026-10-11T21:39:49.199532+00:00",
+  "totalArticles": 128,
   "articles": [
     {
       "title": "CVE-2026-13762 and CVE-2026-13763 - Issue with HTTP/2 multi-frame request body inspection in AWS WAF",
@@ -4861,63 +4861,6 @@
       ],
       "tags": [
         "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "CVE-2026-89090 - Denial of service in the event stream header decoder in AWS SDK for Go v2",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-110-aws/",
-      "published": "2026-09-11T17:09:09+00:00",
-      "summary": "Bulletin ID: 2026-110-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 10:00 AM PDT Description: An issue exists in the the EventStream header decoder in AWS SDK for Go v2 in versions predating 2026-03-23. An actor can send a malformed EventStream response...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-110-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 10:00 AM PDT Description: An issue exists in the the EventStream header decoder in AWS SDK for Go v2 in versions predating 2026-03-23. An actor can send a malformed EventStream response frame containing a crafted header value type byte outside the valid range, which can cause the host process to terminate. Impacted versions: < 2026-03-23 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-18061 - XML External Entity (XXE) in AWS Advanced JDBC Wrapper RemoteQueryCachePlugin",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-109-aws/",
-      "published": "2026-09-11T16:37:01+00:00",
-      "summary": "Bulletin ID: 2026-109-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 09:30 AM PDT Description: The AWS Advanced JDBC Wrapper is an open-source library that enhances existing JDBC drivers with AWS-specific capabilities such as Aurora failover, IAM...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-109-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/11/2026 09:30 AM PDT Description: The AWS Advanced JDBC Wrapper is an open-source library that enhances existing JDBC drivers with AWS-specific capabilities such as Aurora failover, IAM authentication, and automated SQL query caching for applications connecting to Amazon Aurora, RDS MySQL, and RDS MariaDB. We identified CVE-2026-18061, an improper restriction of XML external entity (XXE) references in the optional RemoteQueryCachePlugin. When this plugin is enabled with a shared cache, an actor with write access to that cache infrastructure might place crafted XML in a cached column value. When an application subsequently reads that cached result as XML, the wrapper's XML parsers resolve external entities, which might allow the actor to disclose sensitive files readable by the application process, including stored database and IAM role credentials. Impacted versions: >= 3.3.0 and <= 4.2.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": [
-        {
-          "label": "AWS Advanced JDBC Wrapper",
-          "url": "https://github.com/aws/aws-advanced-jdbc-wrapper"
-        }
       ]
     }
   ]
