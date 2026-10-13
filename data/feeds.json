@@ -1,8 +1,89 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-13T00:20:54.369682+00:00",
-  "totalArticles": 130,
+  "lastUpdated": "2026-10-13T13:50:41.157868+00:00",
+  "totalArticles": 127,
   "articles": [
+    {
+      "title": "Locking down PAWs internet access when GSA drops",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/locking-down-paws-internet-access-when-gsa-drops/ba-p/4553963",
+      "published": "2026-10-13T09:13:15+00:00",
+      "summary": "By: Christian Friedel-Jain - Sr. Security Consultant | James Noyce - Sr. Security Solution Engineer Introduction Privileged Access Workstations (PAWs) are among the most sensitive endpoints in any organization. A PAW, in most of our Microsoft consulting projects, exists to do one job safely:...",
+      "author": "ChristianFriedel-Jain",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint",
+        "Threat Intelligence"
+      ],
+      "body": "By: Christian Friedel-Jain - Sr. Security Consultant | James Noyce - Sr. Security Solution Engineer Introduction Privileged Access Workstations (PAWs) are among the most sensitive endpoints in any organization. A PAW, in most of our Microsoft consulting projects, exists to do one job safely: administer cloud services from a hardened device that is only ever allowed to reach a small, tightly controlled set of internet destinations. But an endpoint’s security posture is ultimately defined by its behavior under failure conditions. When we moved the internet access restriction for our PAW devices from a locally enforced restriction (more about that later) to a solution based on Microsoft Global Secure Access (GSA), we immediately identified a gap under failure conditions – but first a quick grounding on the moving parts. Global Secure Access (What is Global Secure Access?) is Microsoft’s umbrella term for Microsoft Entra Internet Access and Microsoft Entra Private Access — the components of Microsoft’s Security Service Edge solution. For a PAW device we are leveraging Microsoft Entra Internet Access as an identity centric secure web gateway solution to control exactly which internet destinations the workstation can reach, by applying a fine-grained set of rules and policies enforced through Conditional Access in Microsoft Entra. This configuration provides us better filtering capabilities, like web content filtering (Global Secure Access web content filtering) with TLS inspection (TLSi) (Global Secure Access transport layer security inspection) and additional features like Threat Intelligence (Global Secure Access threat intelligence), but it comes also with a downside. Currently by default, if the GSA client encounters an issue or cannot connect to its required GSA edge services, the GSA client will fall back to a fail-open state, rather than to a fail-close state. Difference between those two modes: Fail-Open: When a security or control mechanism fails, access is still allowed. Fail-Close: When the security or control mechanism fails, access is blocked. This blog post covers above problem and showcases a solution we built, as part of our projects, to achieve a “Fail-Close” state rather than having the current “Fail-Open” behavior. The enforcement of the “Fail-Close” solution we developed works at two independent layers, both are deployable through Microsoft Intune: A network layer: Windows Defender Firewall network profiles, a rule set with Windows Firewall...",
+      "links": [
+        {
+          "label": "What is Global Secure Access?",
+          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access"
+        },
+        {
+          "label": "Global Secure Access web content filtering",
+          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-configure-web-content-filtering?tabs=microsoft-entra-admin-center"
+        },
+        {
+          "label": "Global Secure Access transport layer security inspection",
+          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/concept-transport-layer-security"
+        },
+        {
+          "label": "Global Secure Access threat intelligence",
+          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-configure-threat-intelligence"
+        },
+        {
+          "label": "Windows Firewall Dynamic Keywords",
+          "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/dynamic-keywords"
+        },
+        {
+          "label": "Microsoft Defender Firewall",
+          "url": "https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-deployment#set-rules-in-the-endpoint-protection-configuration-profile-for-microsoft-defender-firewall"
+        },
+        {
+          "label": "URL lock proxy",
+          "url": "https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-deployment#url-lock-proxy"
+        },
+        {
+          "label": "Service Level Agreement performance for Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-sla-performance#recent-worldwide-sla-performance"
+        },
+        {
+          "label": "Windows Firewall Network Profiles",
+          "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/#firewall-profiles"
+        },
+        {
+          "label": "AutoResolve dynamic keyword addresses",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/ics/firewall-dynamic-keywords#autoresolve-dynamic-keyword-addresses"
+        },
+        {
+          "label": "Use reusable groups of settings policies in Microsoft Intune",
+          "url": "https://learn.microsoft.com/en-us/intune/device-security/reusable-settings-groups"
+        },
+        {
+          "label": "FQDN and IP addresses where the Global Secure Access service receives traffic",
+          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-points-of-presence#fqdn-and-ip-addresses-where-the-global-secure-access-service-receives-traffic"
+        }
+      ]
+    },
     {
       "title": "Microsoft Purview: Data Loss Prevention-Apply Purview network data security DLP policies to all websites, or all websites except specific cloud apps, through Entra GSA Internet Access integration",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575285",
@@ -1250,81 +1331,6 @@
       ]
     },
     {
-      "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
-      "published": "2026-10-08T20:44:28+00:00",
-      "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security...",
-      "author": "Microsoft Security Research, Lora Randolph, Tahmina Ahmad and Karina Sirota Goodley",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Why post-quantum authentication presents a different challengeWhy organizations should begin preparing nowMicrosoft's perspective on readinessTesting the future certificate ecosystemExpanding end-to-end testingWhat organizations can do todayLooking aheadLearn more Post-quantum cryptography (PQC) planning often focuses on protecting encrypted data, but authentication systems must also evolve. Certificates, trust anchors, PKI services, applications, devices, and hardware security modules may all be affected by new algorithms and larger certificate chains. Microsoft’s Post-Quantum Cryptography (PQC) Transport Layer Security (TLS) Pilot Program helps eligible certificate authorities evaluate interoperability and operational readiness in controlled environments. Organizations should begin now by inventorying certificate dependencies, assessing vendor roadmaps, identifying long-lived infrastructure, and creating non-production test environments. Early testing can surface compatibility and process gaps before post-quantum authentication is required at scale. By the end of this article, security leaders, public key infrastructure (PKI) administrators, and architects will understand the key certificate dependencies, migration risks, and practical first steps for post-quantum authentication readiness. Why post-quantum authentication presents a different challenge Much of the current PQC readiness discussion focuses on confidentiality and the ‘harvest now, decrypt later’ risk, in which adversaries collect encrypted data today with the expectation that future quantum computers could decrypt it. Authentication introduces a different set of challenges. While confidentiality protections primarily focus on safeguarding encrypted communications, authentication depends on a broad ecosystem of technologies and trust relationships. Certificates and private keys must be issued, distributed, stored, validated, renewed, and managed across diverse environments and vendors. Changes to cryptographic algorithms can therefore have implications that extend beyond cryptographic correctness into operational processes, interoperability, and infrastructure readiness. Organizations frequently understand where TLS protects their communications. Fewer organizations have a complete inventory of every system that issues, validates, stores, distributes, or depends on certificates. As the industry moves toward post-quantum authentication, security teams will need greater...",
-      "links": [
-        {
-          "label": "Why post-quantum authentication presents a different challenge",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-post-quantum-authentication-presents-a-different-challenge"
-        },
-        {
-          "label": "Why organizations should begin preparing now",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-organizations-should-begin-preparing-now"
-        },
-        {
-          "label": "Microsoft's perspective on readiness",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-s-perspective-on-readiness"
-        },
-        {
-          "label": "Testing the future certificate ecosystem",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#testing-the-future-certificate-ecosystem"
-        },
-        {
-          "label": "Expanding end-to-end testing",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#expanding-end-to-end-testing"
-        },
-        {
-          "label": "What organizations can do today",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-organizations-can-do-today"
-        },
-        {
-          "label": "Looking ahead",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#looking-ahead"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "ML-DSA-87",
-          "url": "https://csrc.nist.gov/pubs/fips/204/final"
-        },
-        {
-          "label": "According to the Microsoft Trusted Root Program Annoucement,",
-          "url": "https://github.com/TrustedRootProgram/Program-Requirements/blob/main/Announcements.md"
-        },
-        {
-          "label": "https://aka.ms/rootcert",
-          "url": "https://aka.ms/rootcert"
-        },
-        {
-          "label": "KB5101681 (OS Build 28000.2608) for 26H1",
-          "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/07/july-28-2026-kb5101681-preview"
-        }
-      ]
-    },
-    {
       "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 & CVE-2026-8597)",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/",
       "published": "2026-10-08T18:49:39+00:00",
@@ -1749,81 +1755,6 @@
       ]
     },
     {
-      "title": "3 lessons from frontier AI vulnerability research",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
-      "published": "2026-10-07T16:00:00+00:00",
-      "summary": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel. The post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog.",
-      "author": "Taesoo Kim",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Shift 1. From frontier capability to scaleShift 2. From token consumption to reasoning economicsShift 3. Validation and remediation as a continuous learning loopTransferring security research to help open source projectsOpen-source vulnerability reporting snapshotMeasured costs of automated validationFORGE OSS Bug Hunt Party: Human coordination at scale (Hackathon)Akrites: Coordinated effort to remediate vulnerabilitiesWhat’s next for FORGE Lab? The mission of Microsoft Security’s Frontier Offensive Research & Generative Exploitation (FORGE) Lab is to advance the frontier of autonomous security engineering. We’re building a team that enables AI-native vulnerability research at Microsoft, pushing the boundaries of finding and fixing zero-day vulnerabilities. Four principles guide that work: autonomy over labor, defense through offense, building ecosystems over individual examples, and understanding over findings. This post reflects those principles in practice across Windows, the Linux kernel, and widely used open-source projects. Learn more about the Microsoft FORGE Lab From May 2026 through September 2026, FORGE helped discover Windows vulnerabilities assigned 140 common vulnerabilities and exposures (CVEs), including 52 addressed in September 2026’s security release alone. The work reaches well beyond Windows. FORGE members submitted 155 internally validated reports across 23 open-source projects, including the Linux kernel. And through Akrites, a Linux Foundation initiative that coordinates confidential remediation and disclosure for vulnerabilities in critical open-source software, one of our Linux reports became the first Akrites submission to result in a patch merged into the Linux kernel. These results demonstrate that agentic discovery can operate at meaningful volume, but they also expose the next constraint. Finding a difficult vulnerability proves an agent’s frontier capability. Repeatedly converting such findings into security updates requires a different kind of system—one that can move credible work through validation, remediation, and release. Discovery creates security value only when validation and remediation can keep pace. For security leaders, the question is no longer only whether AI can find vulnerabilities, but whether an organization can validate and fix them as fast as they are found. Three lessons follow, each marking a shift in how we approach vulnerability research: From frontier capability to scale. From token...",
-      "links": [
-        {
-          "label": "Shift 1. From frontier capability to scale",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-1-from-frontier-capability-to-scale"
-        },
-        {
-          "label": "Shift 2. From token consumption to reasoning economics",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-2-from-token-consumption-to-reasoning-economics"
-        },
-        {
-          "label": "Shift 3. Validation and remediation as a continuous learning loop",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-3-validation-and-remediation-as-a-continuous-learning-loop"
-        },
-        {
-          "label": "Transferring security research to help open source projects",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#transferring-security-research-to-help-open-source-projects"
-        },
-        {
-          "label": "Open-source vulnerability reporting snapshot",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#open-source-vulnerability-reporting-snapshot"
-        },
-        {
-          "label": "Measured costs of automated validation",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#measured-costs-of-automated-validation"
-        },
-        {
-          "label": "FORGE OSS Bug Hunt Party: Human coordination at scale (Hackathon)",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#forge-oss-bug-hunt-party-human-coordination-at-scale-hackathon"
-        },
-        {
-          "label": "Akrites: Coordinated effort to remediate vulnerabilities",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#akrites-coordinated-effort-to-remediate-vulnerabilities"
-        },
-        {
-          "label": "What’s next for FORGE Lab?",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-s-next-for-forge-lab"
-        },
-        {
-          "label": "Frontier Offensive Research & Generative Exploitation (FORGE) Lab",
-          "url": "https://github.com/microsoft/forge-lab"
-        },
-        {
-          "label": "one of our Linux reports",
-          "url": "https://lore.kernel.org/all/aqyUc_7c19MgzAG7@kernel.org/"
-        },
-        {
-          "label": "May 2026 introduction",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/"
-        }
-      ]
-    },
-    {
       "title": "Chromium: CVE-2025-0611 Object corruption in V8",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-0612",
       "published": "2026-10-07T08:48:07+00:00",
@@ -2074,81 +2005,6 @@
       ],
       "body": "Bulletin ID: 2026-127-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/06/2026 13:30 PM PDT Description: bedrock-agentcore-starter-toolkit is an AWS-maintained open-source Python package, distributed via GitHub and PyPI, that provides a command-line interface for importing Amazon Bedrock Agents into local development environments. We identified CVE-2026-105812, a code injection issue that could allow arbitrary code execution when a specially crafted agent is imported and subsequently run or deployed, and CVE-2026-106032, an external reference handling issue that could cause unintended network requests or local file access during agent import. Affected versions: >= 0.1.4 and <= 0.3.13 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
-    },
-    {
-      "title": "CISO perspectives on managing vulnerability risks in the age of AI",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
-      "published": "2026-10-06T16:00:00+00:00",
-      "summary": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management. The post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog.",
-      "author": "Freddy Dezeure and Sesha Mani",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Most of what has been written about AI and vulnerability management focuses on speed: how much faster frontier AI models can scan code, find weaknesses, design patches, and build exploits than any human team. That part is true, and it matters to how we remediate vulnerabilities. The more challenging question is what happens after the scan? Frontier AI models are about to hand every security team a far larger set of findings than they have ever had to work through. The real test for chief information security officers (CISOs) and IT security leaders is not how fast they can patch. It is whether they can keep the balance between patching quickly and patching correctly, at a scale no human review process was built for. This shift creates both new challenges and new opportunities. The same AI capabilities accelerating cyberattackers are also enabling defenders to identify exposures earlier, automate remediation, and build more resilient security programs. Not every vulnerability will be patched in time, so the controls that limit what an attacker can do by defense in depth matter more than ever. CISOs can dramatically improve the security posture of their Microsoft infrastructure by deploying Microsoft Baseline Security Mode (BSM), building on how Microsoft protects Microsoft. Learn more about Microsoft Baseline Security Mode How do frontier AI models change vulnerability management for CISOs? Microsoft uses frontier AI models to find vulnerabilities in its code base and mitigate them at controlled pace. Potential vulnerabilities are reviewed on validity, severity, and potential impact. As we have explained in previous blogs, many steps in our vulnerability handling and disclosure processes now are AI-powered, allowing them to scale. Most vulnerabilities in cloud software are being mitigated by Microsoft without customer intervention. For on-premises Microsoft software, customers should continue to expect a substantial increase in the number of vulnerabilities released on Patch Tuesdays relative to historic volumes before the advent of frontier AI models earlier this year—September 2026 saw a record number, close to 1,000.1 Due to the non-deterministic nature of AI models, different runs by the same model or with different models may yield different results. With better models becoming available over time, AI-powered vulnerability scanning of our existing code base and new code should become part of our standard security assurance. We use a ‘harness’ layer...",
-      "links": [
-        {
-          "label": "Microsoft Baseline Security Mode (BSM)",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/baseline-security-mode/baseline-security-mode-settings?view=o365-worldwide"
-        },
-        {
-          "label": "AI-powered",
-          "url": "https://www.microsoft.com/en-us/msrc/blog/2026/04/strengthening-secure-software-global-scale-how-msrc-is-evolving-with-ai"
-        },
-        {
-          "label": "allowing them to scale",
-          "url": "https://blogs.windows.com/windowsexperience/2026/07/09/evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discovery/"
-        },
-        {
-          "label": "substantial increase in the number of vulnerabilities",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/beyond-the-benchmark-advancing-security-at-ai-speed/?msockid=1be26702317361321156722530016039"
-        },
-        {
-          "label": "codename MDASH",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/"
-        },
-        {
-          "label": "strengthen their security posture",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/11/05/securing-critical-infrastructure-why-europes-risk-based-regulations-matter/"
-        },
-        {
-          "label": "new Microsoft Security Exposure Management page",
-          "url": "https://security.microsoft.com/securenow"
-        },
-        {
-          "label": "coordinate the scanning and patching",
-          "url": "https://akrites.org/"
-        },
-        {
-          "label": "Secure Future Initiative (SFI) report",
-          "url": "https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative/sfi-progress-report-july-2026"
-        },
-        {
-          "label": "Microsoft Baseline Security Mode (BSM)",
-          "url": "https://www.microsoft.com/insidetrack/blog/hardening-our-digital-defenses-with-microsoft-baseline-security-mode/"
-        },
-        {
-          "label": "exceptions can be made and removed",
-          "url": "https://www.microsoft.com/insidetrack/blog/deploying-microsoft-baseline-security-mode-at-microsoft-our-virtuous-learning-cycle/?msockid=0d94169e268868132c2003c927326968"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        }
-      ]
     },
     {
       "title": "Incident affecting ASOS customers",
@@ -3334,12 +3190,12 @@
       "published": "2026-09-28T15:00:00+00:00",
       "summary": "Microsoft Threat Intelligence identified NeedyMantis, a modular post-compromise malware framework used in targeted intrusions that combines custom loaders, encrypted archives, and extensible components to maintain long-term access and support follow-on operations. The post NeedyMantis: Unpacking a...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
@@ -3355,27 +3211,27 @@
       "links": [
         {
           "label": "Observed operators and targeting",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#observed-operators-and-targeting"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#observed-operators-and-targeting"
         },
         {
           "label": "Malware packaging and distribution",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#malware-packaging-and-distribution"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#malware-packaging-and-distribution"
         },
         {
           "label": "NeedyMantis architecture and capabilities",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#needymantis-architecture-and-capabilities"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#needymantis-architecture-and-capabilities"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
         },
         {
           "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
         },
         {
           "label": "Kaspersky previously reported",
@@ -3551,44 +3407,44 @@
       "published": "2026-09-25T15:35:08+00:00",
       "summary": "Microsoft details JADEPUFFER-linked Azure reconnaissance, resource deletion, and credential access using compromised service principals, identifying the activity as associated with Storm-3168 and providing guidance for defenders. The post Storm-3168: Agentic-driven cloud attacks using compromised...",
       "author": "Microsoft Security Research, Yossi Weizman and Tushar Mudi",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Threat Intelligence"
+        "General Security"
       ],
       "body": "In this article Attack overviewTechnical analysisMitigation and protection guidanceReferencesLearn More Microsoft Security Research has identified malicious cloud activity associated with JADEPUFFER, a threat actor discovered by Sysdig in July 2026 and reported to be the first documented agentic ransomware operation. Our investigation found an extensive Azure-focused resource destruction activity using compromised service principals and cloud credential collection that could be used to facilitate future exfiltration. These findings expand the publicly documented activity associated with JADEPUFFER, tracked by Microsoft as Storm-3168, demonstrating an evolution in the threat actor’s cloud operations and providing the first detailed view into its Azure activity. We identified bulk destructive operations in a compromised Azure environment. The destructive operations were facilitated by compromising service principals and targeted Azure Storage Accounts, SQL databases, Key Vaults, Function Apps, recovery protection locks, Virtual Machines, and App Services. Organizations can reduce exposure by protecting workload identities and secrets, enforcing least privilege, safeguarding recovery resources, and enabling relevant Microsoft Defender for Cloud protections. Publicly exposed credentials remain usable until revoked or rotated; removing the original disclosure alone does not remediate the exposure. This activity highlights a broader shift toward AI-orchestrated attacks, where threat actors can coordinate complex post-compromise operations across cloud environments with greater speed and scale. As these capabilities evolve, defenders must similarly use AI to investigate and respond across large environments. Rather than requiring analysts to manually follow each individual action, efforts such as Project Perception and MDASH are intended to support a model in which defenders can investigate and respond across increasingly large and complex environments using AI. Attack overview Microsoft observed two compromised service principals belonging to the same tenant. One performed reconnaissance and resource discovery. The other performed discovery, destructive operations, and credential collection. Discovery before destruction For the impacted tenant, in early June 2026, one of the compromised service principals enumerated Azure Virtual Machines, subscriptions, resource groups and resources for about 15 hours and 30 minutes with 300+ successful read operations. This...",
       "links": [
         {
           "label": "Attack overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-overview"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-overview"
         },
         {
           "label": "Technical analysis",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#technical-analysis"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#technical-analysis"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
         },
         {
           "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
         },
         {
           "label": "Microsoft Defender for Cloud",
@@ -3869,18 +3725,18 @@
       "published": "2026-09-24T16:00:00+00:00",
       "summary": "Storm-2570 is a ransomware affiliate that uses consistent post-compromise tools and techniques across deployments involving Qilin, DragonForce, Anubis, and BERT ransomware, and provides guidance to help defenders detect and disrupt this activity before ransomware deployment. The post Beyond the...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 8
+          "score": 3
         }
       ],
       "tags": [
@@ -3890,27 +3746,27 @@
       "links": [
         {
           "label": "Who is Storm-2570?",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#who-is-storm-2570"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#who-is-storm-2570"
         },
         {
           "label": "Storm-2570 attack chain: From initial foothold to impact",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#storm-2570-attack-chain-from-initial-foothold-to-impact"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#storm-2570-attack-chain-from-initial-foothold-to-impact"
         },
         {
           "label": "What Storm-2570 activity means for defenders",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-storm-2570-activity-means-for-defenders"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-storm-2570-activity-means-for-defenders"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
         },
         {
           "label": "ransomware as a service (RaaS)",
@@ -4844,87 +4700,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Locking down PAWs internet access when GSA drops",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/locking-down-paws-internet-access-when-gsa-drops/ba-p/4553963",
-      "published": "2026-09-14T08:38:19+00:00",
-      "summary": "By: Christian Friedel-Jain - Sr. Security Consultant | James Noyce - Sr. Security Solution Engineer Introduction Privileged Access Workstations (PAWs) are among the most sensitive endpoints in any organization. A PAW, in most of our Microsoft consulting projects, exists to do one job safely:...",
-      "author": "ChristianFriedel-Jain",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint",
-        "Threat Intelligence"
-      ],
-      "body": "By: Christian Friedel-Jain - Sr. Security Consultant | James Noyce - Sr. Security Solution Engineer Introduction Privileged Access Workstations (PAWs) are among the most sensitive endpoints in any organization. A PAW, in most of our Microsoft consulting projects, exists to do one job safely: administer cloud services from a hardened device that is only ever allowed to reach a small, tightly controlled set of internet destinations. But an endpoint’s security posture is ultimately defined by its behavior under failure conditions. When we moved the internet access restriction for our PAW devices from a locally enforced restriction (more about that later) to a solution based on Microsoft Global Secure Access (GSA), we immediately identified a gap under failure conditions – but first a quick grounding on the moving parts. Global Secure Access (What is Global Secure Access?) is Microsoft’s umbrella term for Microsoft Entra Internet Access and Microsoft Entra Private Access — the components of Microsoft’s Security Service Edge solution. For a PAW device we are leveraging Microsoft Entra Internet Access as an identity centric secure web gateway solution to control exactly which internet destinations the workstation can reach, by applying a fine-grained set of rules and policies enforced through Conditional Access in Microsoft Entra. This configuration provides us better filtering capabilities, like web content filtering (Global Secure Access web content filtering) with TLS inspection (TLSi) (Global Secure Access transport layer security inspection) and additional features like Threat Intelligence (Global Secure Access threat intelligence), but it comes also with a downside. Currently by default, if the GSA client encounters an issue or cannot connect to its required GSA edge services, the GSA client will fall back to a fail-open state, rather than to a fail-close state. Difference between those two modes: Fail-Open: When a security or control mechanism fails, access is still allowed. Fail-Close: When the security or control mechanism fails, access is blocked. This blog post covers above problem and showcases a solution we built, as part of our projects, to achieve a “Fail-Close” state rather than having the current “Fail-Open” behavior. The enforcement of the “Fail-Close” solution we developed works at two independent layers, both are deployable through Microsoft Intune: A network layer: Windows Defender Firewall network profiles, a rule set with Windows Firewall...",
-      "links": [
-        {
-          "label": "What is Global Secure Access?",
-          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access"
-        },
-        {
-          "label": "Global Secure Access web content filtering",
-          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-configure-web-content-filtering?tabs=microsoft-entra-admin-center"
-        },
-        {
-          "label": "Global Secure Access transport layer security inspection",
-          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/concept-transport-layer-security"
-        },
-        {
-          "label": "Global Secure Access threat intelligence",
-          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-configure-threat-intelligence"
-        },
-        {
-          "label": "Windows Firewall Dynamic Keywords",
-          "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/dynamic-keywords"
-        },
-        {
-          "label": "Microsoft Defender Firewall",
-          "url": "https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-deployment#set-rules-in-the-endpoint-protection-configuration-profile-for-microsoft-defender-firewall"
-        },
-        {
-          "label": "URL lock proxy",
-          "url": "https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-deployment#url-lock-proxy"
-        },
-        {
-          "label": "Service Level Agreement performance for Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/reference-sla-performance#recent-worldwide-sla-performance"
-        },
-        {
-          "label": "Windows Firewall Network Profiles",
-          "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/network-security/windows-firewall/#firewall-profiles"
-        },
-        {
-          "label": "AutoResolve dynamic keyword addresses",
-          "url": "https://learn.microsoft.com/en-us/windows/win32/ics/firewall-dynamic-keywords#autoresolve-dynamic-keyword-addresses"
-        },
-        {
-          "label": "Use reusable groups of settings policies in Microsoft Intune",
-          "url": "https://learn.microsoft.com/en-us/intune/device-security/reusable-settings-groups"
-        },
-        {
-          "label": "FQDN and IP addresses where the Global Secure Access service receives traffic",
-          "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-points-of-presence#fqdn-and-ip-addresses-where-the-global-secure-access-service-receives-traffic"
-        }
       ]
     }
   ]
