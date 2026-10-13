@@ -1,8 +1,265 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-13T13:50:41.157868+00:00",
-  "totalArticles": 127,
+  "lastUpdated": "2026-10-13T22:26:15.358386+00:00",
+  "totalArticles": 133,
   "articles": [
+    {
+      "title": "Action may be required: Review who can create agents in Microsoft Entra",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1506733",
+      "published": "2026-10-13T22:14:34.210000+00:00",
+      "summary": "[What and why]Microsoft Entra is changing who can create agent blueprints by default. Starting November 4, default users will be able to create new agent blueprints unless an administrator turns off Users can create agent blueprints. This means that users without built-in or custom Entra roles will...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1506733",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]Microsoft Entra is changing who can create agent blueprints by default. Starting November 4, default users will be able to create new agent blueprints unless an administrator turns off Users can create agent blueprints. This means that users without built-in or custom Entra roles will be able to create new agent blueprints in their organization. From now until rollout begins, you can set your tenant preferences to prepare for this rollout. If you do not want users in your organization to create new agent blueprints and their identities, follow the instructions below. [Rollout schedule]Worldwide: Beginning in early November 2026 and expected to complete by late November 2026[Impact on your organization]Who is affectedOrganizations using Microsoft EntraDefault users who don't have a built-in or custom Microsoft Entra rolePlatforms and servicesMicrosoft EntraWhat will happenDefault users will be able to create agent blueprints unless an administrator turns off Users can create agent blueprints. If you set the toggle to No, default users will not be able to create new agents. Supported administrators and users assigned the Agent ID Developer role can continue to create them. If you change this toggle now, your tenant won't change right away. Your setting takes effect when the rollout begins in early November.[Action required and recommendations]If default users should be allowed to create agents in your organization, no action is required. Choosing to allow users to create agent blueprints will not begin until the functionality is available in your tenant.To restrict creation:Sign in to the Microsoft Entra admin center using this link.Go to Entra ID > Users > User settings.Under Default user role permissions, find Users can create agent blueprints.Set the toggle to No, then save the change.For more information and instructions on setting the toggle for your organization, see Manage who can create agent blueprints here.This change affects new agent blueprint creation by default users. It does not:Change or remove existing agent blueprints.Change who can create agent identities from existing blueprints.Block an app or an agent from creating identitiesAffect creation requirements within platforms such as Microsoft Foundry or Security Copilot, such as requiring licenses and Azure subscriptions.The new setting is independent of Users can register applications. Review both settings separately.Learn moreDelegate application management administrator permissions - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Microsoft Entra admin center",
+          "url": "https://entra.microsoft.com/?exp.enableAgentIdentityBlueprintsUserSetting=true#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/UserSettings"
+        },
+        {
+          "label": "here",
+          "url": "https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-app-roles#restrict-who-can-create-agents"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center",
+        "Microsoft Security Copilot"
+      ]
+    },
+    {
+      "title": "Microsoft Entra: Changes to AgentIdentity.CreateAsManager permission for agent identities",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1506728",
+      "published": "2026-10-13T22:12:41.560000+00:00",
+      "summary": "[What and why]Microsoft Entra Agent ID is enforcing tighter restrictions for autonomous creation of an agent’s own identities. Currently, all agents are granted AgentIdentity.CreateAsManager upon creation without administrator approval. Starting November 4, Microsoft Entra will no longer...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1506728",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]Microsoft Entra Agent ID is enforcing tighter restrictions for autonomous creation of an agent’s own identities. Currently, all agents are granted AgentIdentity.CreateAsManager upon creation without administrator approval. Starting November 4, Microsoft Entra will no longer automatically grant AgentIdentity.CreateAsManager to agent blueprint principals, and creation of identities will need an admin to grant consent.Agents that use app-only authentication to create their own agent identities must be explicitly granted the AgentIdentity.CreateAsManager Microsoft Graph application permission or move to another supported authorization model before enforcement reaches their tenant.[Rollout schedule]General Availability (Worldwide): Beginning in early November 2026 and expected to complete by late November 2026[Impact on your organization]Who is affectedOrganizations using Microsoft Entra No action is required if your organization doesn't have an agent that depends on the automatic AgentIdentity.CreateAsManager grant.Platforms and servicesMicrosoft EntraWhat will happenToday, an agent blueprint principal is granted AgentIdentity.CreateAsManager automatically. This implicit grant allows the principal to create agent identities without a tenant-admin granting an app-role assignment.After enforcement, an administrator must grant the Microsoft Graph application permission AgentIdentity.CreateAsManager to agents that needs this authority.This change:Makes app-only agent identity creation authority visible, auditable, and revocable.Makes AgentIdentity.CreateAsManager revocable if consentedAffects existing and future agents.Doesn't remove existing agent identities or agent blueprints.Doesn't remove the ability for agent identity blueprints to create agent identities, when AgentIdentity.CreateAsManager is explicitly granted by an administratorDoesn't affect an agent that uses a directory role to authorize creation of agent identities.[Action required and recommendations]No action is required if your organization doesn't have an agent that depends on the automatic AgentIdentity.CreateAsManager grant.Identify agents that create agent identities without a signed-in user.Sign in to the Microsoft Entra admin center.Go to Entra ID>Audit Logs.Set the Category to \"ApplicationManagement\"Set the Activity filter to \"Add Service Principal\"Find events where the Initiated By (actor) Type is Application and the Target is an agent identity.For each affected agent:Sign in to the Microsoft Entra admin center.Go to Entra ID>Agent blueprints>Search for your agent blueprint>Granted permissionsReview if the Agent has any other granted permissions that may allow for creation of agent identities. If there are no other permissions allowing for creation, this agent relies on AgentIdentity.CreateAsManager.Starting October 16, you may grant the explicit AgentIdentity.CreateAsManager Microsoft Graph application permission through tenant-wide admin consent or manual app-role creation. Granting it earlier will cause an error. A successful grant appears in the Granted Permissions table with “An administrator” in the Granted By column.Test app-only agent identity creation before enforcement begins.Update operational guidance for a failed request after enforcement.If an app-only request relies only on the automatic grant after enforcement reaches your tenant, the request will fail with a 403 authorization error.Learn moreFor more about how to grant your agents access to resources, visit Grant agents access to Microsoft 365 resources | Microsoft Learn. For the Microsoft Graph permission reference on AgentIdentity.CreateAsManager, visit Microsoft Graph permissions reference - Microsoft Graph | Microsoft Learn.[Compliance considerations]No specific compliance impacts have been identified for this configuration update.",
+      "links": [
+        {
+          "label": "Microsoft Entra admin center",
+          "url": "https://entra.microsoft.com/#view/Microsoft_AAD_IAM/AuditLogList.ReactView"
+        },
+        {
+          "label": "tenant-wide admin consent",
+          "url": "https://learn.microsoft.com/entra/identity/enterprise-apps/grant-admin-consent"
+        },
+        {
+          "label": "manual app-role creation",
+          "url": "https://learn.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0"
+        },
+        {
+          "label": "Grant agents access to Microsoft 365 resources | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/agent-id/grant-agent-access-microsoft-365"
+        },
+        {
+          "label": "Microsoft Graph permissions reference - Microsoft Graph | Microsoft Learn",
+          "url": "https://learn.microsoft.com/graph/permissions-reference#agentidentitycreateasmanager"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "(Updated) Microsoft Entra: Allow password change after secure sign-in with My Sign-Ins",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1437671",
+      "published": "2026-10-13T16:45:08.037000+00:00",
+      "summary": "Updated October 9, 2026: We have updated the content. Thank you for your patience. [What and Why]We're introducing a new Microsoft Entra capability that allows password change after secure sign-in directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key,...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1437671",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated October 9, 2026: We have updated the content. Thank you for your patience. [What and Why]We're introducing a new Microsoft Entra capability that allows password change after secure sign-in directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key, or Windows Hello for Business. Users can complete this action even if they don't know their current password and without using self-service password reset (SSPR) or contacting the helpdesk.Many organizations are adopting allowed password changes after secure sign-ins but still maintain passwords for legacy applications and services. This update helps reduce password-related support requests and removes a common barrier to adoption. The feature is disabled by default and requires administrator enablement before users can access it.[Rollout Schedule]General Availability (Worldwide and GCC): Beginning end of October 2026 (previously mid-October) and expected to complete by end of November 2026 (previously late October)[Impact on Your Organization]Who is affectedMicrosoft Entra administrators who manage password change settingsUsers who have a registered allowed password change after secure sign-in method (passkey, FIDO2 security key, or Windows Hello for Business) and also maintain a passwordOrganizations that choose to enable the featurePlatforms/ServicesMicrosoft EntraMy Sign-Ins (mysignins.microsoft.com)What will happenBecause this feature is off by default, there is no change to your users' experience unless you turn it on. After the feature is enabled, eligible users will see a new Change password option in My Sign-Ins.Users can authenticate set a new password without knowing their existing password.Users are not required to enroll in or use SSPR to complete this action.Administrators can choose to enable or disable the capability through Microsoft Entra management interfaces available at release.Authentication continues to require a strong password change method, such as a passkey, FIDO2 security key, or Windows Hello for Business.The setting is tenant-wide: you can turn it on for your entire tenant or leave it off for everyone. There is no per-user or per-group scoping. [Action Required/Recommendations]No action is required.If your organization plans to support allowed password changes after secure sign-in:Review your password management and allowed password changes after secure sign-in strategy.Evaluate whether enabling this capability aligns with your organization's security and support requirements.Communicate the new self-service capability to helpdesk and support teams.Update internal user guidance and documentation as needed.If your organization chooses to offer allowed password changes after secure sign-in, enable the feature through the Microsoft Entra admin experience or supported APIs when it becomes available in October 2026.Learn more Microsoft Learn documentation will be available when the feature releases in October. [Compliance Considerations]QuestionAnswerDoes the change include an admin control?Yes. The feature is disabled by default and requires explicit administrator enablement.Does the change modify how users can access or correct their personal data?Yes. Users gain a new self-service method to update their password using an existing allowed password change after secure sign-in.",
+      "links": [],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Check This Out! (CTO!) Guide (October 2026)",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/check-this-out-cto-guide-october-2026/ba-p/4564188",
+      "published": "2026-10-13T15:24:57+00:00",
+      "summary": "Member: TysonPaul | Microsoft Community Hub Azure Key Vault Control Plane API Update: Required Upgrade for Azure CLI and Azure PowerShell Users Team Blog: Azure Tools Author: Alex-wdy Published: 09/01/2026 Summary: Azure Key Vault control plane API versions before 2026-02-01 will stop working on...",
+      "author": "TysonPaul",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint",
+        "Threat Intelligence"
+      ],
+      "body": "Member: TysonPaul | Microsoft Community Hub Azure Key Vault Control Plane API Update: Required Upgrade for Azure CLI and Azure PowerShell Users Team Blog: Azure Tools Author: Alex-wdy Published: 09/01/2026 Summary: Azure Key Vault control plane API versions before 2026-02-01 will stop working on February 27, 2027. This affects only management operations, such as creating/updating vaults, network rules, access policies, and RBAC settings—not data plane operations like reading or writing secrets, keys, or certificates. Users of Azure CLI or Az PowerShell must upgrade before the deadline: Azure CLI to 2.90.0+ using `az upgrade`, or Az.KeyVault to 6.6.1+ / Az package to 16.3.0+ using `Update-Module`. Without upgrading, Key Vault management operations using older APIs will fail, with no opt-out or extension available. Introducing bicep docs: generate documentation from your Bicep modules Team Blog: Azure Tools Author: jaredfholgate Published: 09/24/2026 Summary: Bicep CLI v0.47.16 introduces the experimental `bicep docs generate` command, which creates documentation directly from Bicep modules. It generates README files covering resources, parameters, types, outputs, examples, references, and metadata, helping prevent documentation drift. Users can preview output, customize destinations, document multiple modules with patterns, and enforce freshness in CI. Documentation can be customized with Scriban templates, custom values, and alternative outputs like JSON or HTML. Usage examples are automatically discovered, and the feature is also available via JSON-RPC. Microsoft is seeking feedback as the feature evolves. System Center 2022 Update Rollup 4 Team Blog: System Center Author: AakashMSFT Published: 09/29/2026 Summary: System Center 2022 Update Rollup 4 delivers stability, security, and compatibility improvements across the suite. Virtual Machine Manager adds support for newer Linux distributions, improves VM deployment/networking, console stability, authentication, and SCOM integration. Operations Manager gains OpenSSL 3.x distro support, Ubuntu 26 support, improved web console reliability, Linux monitoring, and admin-only PowerShell widget editing. Service Manager adds MSOLEDBSQL19 and Microsoft Graph API support. Orchestrator improves runbook parameter handling and updates its command-line wizard to 64-bit. Data Protection Manager enhances SQL encryption support, recovery reliability, console/PowerShell stability, and accessibility. You Get One Exchange...",
+      "links": [
+        {
+          "label": "Member: TysonPaul | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/users/tysonpaul/322025"
+        },
+        {
+          "label": "Azure Key Vault Control Plane API Update: Required Upgrade for Azure CLI and Azure PowerShell Users",
+          "url": "https://techcommunity.microsoft.com/blog/azuretoolsblog/azure-key-vault-control-plane-api-update-required-upgrade-for-azure-cli-and-azur/4552476"
+        },
+        {
+          "label": "Azure Tools",
+          "url": "https://techcommunity.microsoft.com/category/azure/blog/azuretoolsblog"
+        },
+        {
+          "label": "Alex-wdy",
+          "url": "https://techcommunity.microsoft.com/users/alex-wdy/1467559"
+        },
+        {
+          "label": "Introducing bicep docs: generate documentation from your Bicep modules",
+          "url": "https://techcommunity.microsoft.com/blog/azuretoolsblog/introducing-bicep-docs-generate-documentation-from-your-bicep-modules/4559737"
+        },
+        {
+          "label": "jaredfholgate",
+          "url": "https://techcommunity.microsoft.com/users/jaredfholgate/1621258"
+        },
+        {
+          "label": "System Center 2022 Update Rollup 4",
+          "url": "https://techcommunity.microsoft.com/blog/systemcenterblog/system-center-2022-update-rollup-4/4560834"
+        },
+        {
+          "label": "System Center",
+          "url": "https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog"
+        },
+        {
+          "label": "AakashMSFT",
+          "url": "https://techcommunity.microsoft.com/users/aakashmsft/464069"
+        },
+        {
+          "label": "You Get One Exchange Left: Rethinking Azure Commitments Before February 2027",
+          "url": "https://techcommunity.microsoft.com/blog/finopsblog/you-get-one-exchange-left-rethinking-azure-commitments-before-february-2027/4552401"
+        },
+        {
+          "label": "FinOps",
+          "url": "https://techcommunity.microsoft.com/category/azure/blog/finopsblog"
+        },
+        {
+          "label": "Madhura Amlekar",
+          "url": "https://techcommunity.microsoft.com/users/madhura%20amlekar/196693"
+        }
+      ]
+    },
+    {
+      "title": "ADV260001 ADV260001 Hardening changes for ReFS volumes on removable media",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/ADV260001",
+      "published": "2026-10-13T14:00:00+00:00",
+      "summary": "Starting with Windows updates released on and after October 13, 2026, Microsoft is making hardening changes to the [Resilient File System (ReFS)](https://learn.microsoft.com/windows-server/storage/refs/refs-overview). This change is not enable by default until 2027. Please see [Hardening changes...",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Starting with Windows updates released on and after October 13, 2026, Microsoft is making hardening changes to the [Resilient File System (ReFS)](https://learn.microsoft.com/windows-server/storage/refs/refs-overview). This change is not enable by default until 2027. Please see [Hardening changes for ReFS volumes on removable media](https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/10/hardening-changes-for-refs-volumes-on-removable-media) for more information.",
+      "links": []
+    },
+    {
+      "title": "ADV990001 Latest Servicing Stack Updates",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/ADV990001",
+      "published": "2026-10-13T14:00:00+00:00",
+      "summary": "Advisory updated to announce new versions of Servicing Stack Updates are available. Please see the FAQ for details.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Locking down PAWs internet access when GSA drops",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/locking-down-paws-internet-access-when-gsa-drops/ba-p/4553963",
@@ -1301,33 +1558,78 @@
       ]
     },
     {
-      "title": "(Updated) Microsoft Entra: Authenticated password change in My Sign-Ins",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1437671",
-      "published": "2026-10-09T16:43:01.717000+00:00",
-      "summary": "Updated October 9, 2026: We have updated the content. Thank you for your patience. [What and Why]We're introducing a new Microsoft Entra capability that Allow password change after secure sign-in directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key,...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
+      "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
+      "published": "2026-10-08T20:44:28+00:00",
+      "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security...",
+      "author": "Microsoft Security Research, Lora Randolph, Tahmina Ahmad and Karina Sirota Goodley",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
-      "source_kind": "graph",
+      "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Service Announcements",
+      "source_category": "Security Blog",
       "board_id": null,
-      "message_id": "MC1437671",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated October 9, 2026: We have updated the content. Thank you for your patience. [What and Why]We're introducing a new Microsoft Entra capability that Allow password change after secure sign-in directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key, or Windows Hello for Business. Users can complete this action even if they don't know their current password and without using self-service password reset (SSPR) or contacting the helpdesk.Many organizations are adopting allowed password changes after secure sign-ins but still maintain passwords for legacy applications and services. This update helps reduce password-related support requests and removes a common barrier to adoption. The feature is disabled by default and requires administrator enablement before users can access it.[Rollout Schedule]General Availability (Worldwide and GCC): Beginning end of October 2026 (previously mid-October) and expected to complete by end of November 2026 (previously late October)[Impact on Your Organization]Who is affectedMicrosoft Entra administrators who manage password change settingsUsers who have a registered allowed password change after secure sign-in method (passkey, FIDO2 security key, or Windows Hello for Business) and also maintain a passwordOrganizations that choose to enable the featurePlatforms/ServicesMicrosoft EntraMy Sign-Ins (mysignins.microsoft.com)What will happenBecause this feature is off by default, there is no change to your users' experience unless you turn it on. After the feature is enabled, eligible users will see a new Change password option in My Sign-Ins.Users can authenticate set a new password without knowing their existing password.Users are not required to enroll in or use SSPR to complete this action.Administrators can choose to enable or disable the capability through Microsoft Entra management interfaces available at release.Authentication continues to require a strong password change method, such as a passkey, FIDO2 security key, or Windows Hello for Business.The setting is tenant-wide: you can turn it on for your entire tenant or leave it off for everyone. There is no per-user or per-group scoping. [Action Required/Recommendations]No action is required.If your organization plans to support allowed password changes after secure sign-in:Review your password management and allowed password changes after secure sign-in strategy.Evaluate whether enabling this capability aligns with your organization's security and support requirements.Communicate the new self-service capability to helpdesk and support teams.Update internal user guidance and documentation as needed.If your organization chooses to offer allowed password changes after secure sign-in, enable the feature through the Microsoft Entra admin experience or supported APIs when it becomes available in October 2026.Learn more Microsoft Learn documentation will be available when the feature releases in October. [Compliance Considerations]QuestionAnswerDoes the change include an admin control?Yes. The feature is disabled by default and requires explicit administrator enablement.Does the change modify how users can access or correct their personal data?Yes. Users gain a new self-service method to update their password using an existing allowed password change after secure sign-in.",
-      "links": [],
       "products": [
         {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Microsoft Message Center"
+        "General Security"
+      ],
+      "body": "In this article Why post-quantum authentication presents a different challengeWhy organizations should begin preparing nowMicrosoft's perspective on readinessTesting the future certificate ecosystemExpanding end-to-end testingWhat organizations can do todayLooking aheadLearn more Post-quantum cryptography (PQC) planning often focuses on protecting encrypted data, but authentication systems must also evolve. Certificates, trust anchors, PKI services, applications, devices, and hardware security modules may all be affected by new algorithms and larger certificate chains. Microsoft’s Post-Quantum Cryptography (PQC) Transport Layer Security (TLS) Pilot Program helps eligible certificate authorities evaluate interoperability and operational readiness in controlled environments. Organizations should begin now by inventorying certificate dependencies, assessing vendor roadmaps, identifying long-lived infrastructure, and creating non-production test environments. Early testing can surface compatibility and process gaps before post-quantum authentication is required at scale. By the end of this article, security leaders, public key infrastructure (PKI) administrators, and architects will understand the key certificate dependencies, migration risks, and practical first steps for post-quantum authentication readiness. Why post-quantum authentication presents a different challenge Much of the current PQC readiness discussion focuses on confidentiality and the ‘harvest now, decrypt later’ risk, in which adversaries collect encrypted data today with the expectation that future quantum computers could decrypt it. Authentication introduces a different set of challenges. While confidentiality protections primarily focus on safeguarding encrypted communications, authentication depends on a broad ecosystem of technologies and trust relationships. Certificates and private keys must be issued, distributed, stored, validated, renewed, and managed across diverse environments and vendors. Changes to cryptographic algorithms can therefore have implications that extend beyond cryptographic correctness into operational processes, interoperability, and infrastructure readiness. Organizations frequently understand where TLS protects their communications. Fewer organizations have a complete inventory of every system that issues, validates, stores, distributes, or depends on certificates. As the industry moves toward post-quantum authentication, security teams will need greater...",
+      "links": [
+        {
+          "label": "Why post-quantum authentication presents a different challenge",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-post-quantum-authentication-presents-a-different-challenge"
+        },
+        {
+          "label": "Why organizations should begin preparing now",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-organizations-should-begin-preparing-now"
+        },
+        {
+          "label": "Microsoft's perspective on readiness",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-s-perspective-on-readiness"
+        },
+        {
+          "label": "Testing the future certificate ecosystem",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#testing-the-future-certificate-ecosystem"
+        },
+        {
+          "label": "Expanding end-to-end testing",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#expanding-end-to-end-testing"
+        },
+        {
+          "label": "What organizations can do today",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-organizations-can-do-today"
+        },
+        {
+          "label": "Looking ahead",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#looking-ahead"
+        },
+        {
+          "label": "Learn more",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "ML-DSA-87",
+          "url": "https://csrc.nist.gov/pubs/fips/204/final"
+        },
+        {
+          "label": "According to the Microsoft Trusted Root Program Annoucement,",
+          "url": "https://github.com/TrustedRootProgram/Program-Requirements/blob/main/Announcements.md"
+        },
+        {
+          "label": "https://aka.ms/rootcert",
+          "url": "https://aka.ms/rootcert"
+        },
+        {
+          "label": "KB5101681 (OS Build 28000.2608) for 26H1",
+          "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/07/july-28-2026-kb5101681-preview"
+        }
       ]
     },
     {
@@ -1755,6 +2057,81 @@
       ]
     },
     {
+      "title": "3 lessons from frontier AI vulnerability research",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
+      "published": "2026-10-07T16:00:00+00:00",
+      "summary": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel. The post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog.",
+      "author": "Taesoo Kim",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article Shift 1. From frontier capability to scaleShift 2. From token consumption to reasoning economicsShift 3. Validation and remediation as a continuous learning loopTransferring security research to help open source projectsOpen-source vulnerability reporting snapshotMeasured costs of automated validationFORGE OSS Bug Hunt Party: Human coordination at scale (Hackathon)Akrites: Coordinated effort to remediate vulnerabilitiesWhat’s next for FORGE Lab? The mission of Microsoft Security’s Frontier Offensive Research & Generative Exploitation (FORGE) Lab is to advance the frontier of autonomous security engineering. We’re building a team that enables AI-native vulnerability research at Microsoft, pushing the boundaries of finding and fixing zero-day vulnerabilities. Four principles guide that work: autonomy over labor, defense through offense, building ecosystems over individual examples, and understanding over findings. This post reflects those principles in practice across Windows, the Linux kernel, and widely used open-source projects. Learn more about the Microsoft FORGE Lab From May 2026 through September 2026, FORGE helped discover Windows vulnerabilities assigned 140 common vulnerabilities and exposures (CVEs), including 52 addressed in September 2026’s security release alone. The work reaches well beyond Windows. FORGE members submitted 155 internally validated reports across 23 open-source projects, including the Linux kernel. And through Akrites, a Linux Foundation initiative that coordinates confidential remediation and disclosure for vulnerabilities in critical open-source software, one of our Linux reports became the first Akrites submission to result in a patch merged into the Linux kernel. These results demonstrate that agentic discovery can operate at meaningful volume, but they also expose the next constraint. Finding a difficult vulnerability proves an agent’s frontier capability. Repeatedly converting such findings into security updates requires a different kind of system—one that can move credible work through validation, remediation, and release. Discovery creates security value only when validation and remediation can keep pace. For security leaders, the question is no longer only whether AI can find vulnerabilities, but whether an organization can validate and fix them as fast as they are found. Three lessons follow, each marking a shift in how we approach vulnerability research: From frontier capability to scale. From token...",
+      "links": [
+        {
+          "label": "Shift 1. From frontier capability to scale",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-1-from-frontier-capability-to-scale"
+        },
+        {
+          "label": "Shift 2. From token consumption to reasoning economics",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-2-from-token-consumption-to-reasoning-economics"
+        },
+        {
+          "label": "Shift 3. Validation and remediation as a continuous learning loop",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-3-validation-and-remediation-as-a-continuous-learning-loop"
+        },
+        {
+          "label": "Transferring security research to help open source projects",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#transferring-security-research-to-help-open-source-projects"
+        },
+        {
+          "label": "Open-source vulnerability reporting snapshot",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#open-source-vulnerability-reporting-snapshot"
+        },
+        {
+          "label": "Measured costs of automated validation",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#measured-costs-of-automated-validation"
+        },
+        {
+          "label": "FORGE OSS Bug Hunt Party: Human coordination at scale (Hackathon)",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#forge-oss-bug-hunt-party-human-coordination-at-scale-hackathon"
+        },
+        {
+          "label": "Akrites: Coordinated effort to remediate vulnerabilities",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#akrites-coordinated-effort-to-remediate-vulnerabilities"
+        },
+        {
+          "label": "What’s next for FORGE Lab?",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-s-next-for-forge-lab"
+        },
+        {
+          "label": "Frontier Offensive Research & Generative Exploitation (FORGE) Lab",
+          "url": "https://github.com/microsoft/forge-lab"
+        },
+        {
+          "label": "one of our Linux reports",
+          "url": "https://lore.kernel.org/all/aqyUc_7c19MgzAG7@kernel.org/"
+        },
+        {
+          "label": "May 2026 introduction",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/"
+        }
+      ]
+    },
+    {
       "title": "Chromium: CVE-2025-0611 Object corruption in V8",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-0612",
       "published": "2026-10-07T08:48:07+00:00",
@@ -2005,6 +2382,81 @@
       ],
       "body": "Bulletin ID: 2026-127-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/06/2026 13:30 PM PDT Description: bedrock-agentcore-starter-toolkit is an AWS-maintained open-source Python package, distributed via GitHub and PyPI, that provides a command-line interface for importing Amazon Bedrock Agents into local development environments. We identified CVE-2026-105812, a code injection issue that could allow arbitrary code execution when a specially crafted agent is imported and subsequently run or deployed, and CVE-2026-106032, an external reference handling issue that could cause unintended network requests or local file access during agent import. Affected versions: >= 0.1.4 and <= 0.3.13 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
+    },
+    {
+      "title": "CISO perspectives on managing vulnerability risks in the age of AI",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
+      "published": "2026-10-06T16:00:00+00:00",
+      "summary": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management. The post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog.",
+      "author": "Freddy Dezeure and Sesha Mani",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Most of what has been written about AI and vulnerability management focuses on speed: how much faster frontier AI models can scan code, find weaknesses, design patches, and build exploits than any human team. That part is true, and it matters to how we remediate vulnerabilities. The more challenging question is what happens after the scan? Frontier AI models are about to hand every security team a far larger set of findings than they have ever had to work through. The real test for chief information security officers (CISOs) and IT security leaders is not how fast they can patch. It is whether they can keep the balance between patching quickly and patching correctly, at a scale no human review process was built for. This shift creates both new challenges and new opportunities. The same AI capabilities accelerating cyberattackers are also enabling defenders to identify exposures earlier, automate remediation, and build more resilient security programs. Not every vulnerability will be patched in time, so the controls that limit what an attacker can do by defense in depth matter more than ever. CISOs can dramatically improve the security posture of their Microsoft infrastructure by deploying Microsoft Baseline Security Mode (BSM), building on how Microsoft protects Microsoft. Learn more about Microsoft Baseline Security Mode How do frontier AI models change vulnerability management for CISOs? Microsoft uses frontier AI models to find vulnerabilities in its code base and mitigate them at controlled pace. Potential vulnerabilities are reviewed on validity, severity, and potential impact. As we have explained in previous blogs, many steps in our vulnerability handling and disclosure processes now are AI-powered, allowing them to scale. Most vulnerabilities in cloud software are being mitigated by Microsoft without customer intervention. For on-premises Microsoft software, customers should continue to expect a substantial increase in the number of vulnerabilities released on Patch Tuesdays relative to historic volumes before the advent of frontier AI models earlier this year—September 2026 saw a record number, close to 1,000.1 Due to the non-deterministic nature of AI models, different runs by the same model or with different models may yield different results. With better models becoming available over time, AI-powered vulnerability scanning of our existing code base and new code should become part of our standard security assurance. We use a ‘harness’ layer...",
+      "links": [
+        {
+          "label": "Microsoft Baseline Security Mode (BSM)",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/baseline-security-mode/baseline-security-mode-settings?view=o365-worldwide"
+        },
+        {
+          "label": "AI-powered",
+          "url": "https://www.microsoft.com/en-us/msrc/blog/2026/04/strengthening-secure-software-global-scale-how-msrc-is-evolving-with-ai"
+        },
+        {
+          "label": "allowing them to scale",
+          "url": "https://blogs.windows.com/windowsexperience/2026/07/09/evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discovery/"
+        },
+        {
+          "label": "substantial increase in the number of vulnerabilities",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/beyond-the-benchmark-advancing-security-at-ai-speed/?msockid=1be26702317361321156722530016039"
+        },
+        {
+          "label": "codename MDASH",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/"
+        },
+        {
+          "label": "strengthen their security posture",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/11/05/securing-critical-infrastructure-why-europes-risk-based-regulations-matter/"
+        },
+        {
+          "label": "new Microsoft Security Exposure Management page",
+          "url": "https://security.microsoft.com/securenow"
+        },
+        {
+          "label": "coordinate the scanning and patching",
+          "url": "https://akrites.org/"
+        },
+        {
+          "label": "Secure Future Initiative (SFI) report",
+          "url": "https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative/sfi-progress-report-july-2026"
+        },
+        {
+          "label": "Microsoft Baseline Security Mode (BSM)",
+          "url": "https://www.microsoft.com/insidetrack/blog/hardening-our-digital-defenses-with-microsoft-baseline-security-mode/"
+        },
+        {
+          "label": "exceptions can be made and removed",
+          "url": "https://www.microsoft.com/insidetrack/blog/deploying-microsoft-baseline-security-mode-at-microsoft-our-virtuous-learning-cycle/?msockid=0d94169e268868132c2003c927326968"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        }
+      ]
     },
     {
       "title": "Incident affecting ASOS customers",
@@ -3190,12 +3642,12 @@
       "published": "2026-09-28T15:00:00+00:00",
       "summary": "Microsoft Threat Intelligence identified NeedyMantis, a modular post-compromise malware framework used in targeted intrusions that combines custom loaders, encrypted archives, and extensible components to maintain long-term access and support follow-on operations. The post NeedyMantis: Unpacking a...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
@@ -3211,27 +3663,27 @@
       "links": [
         {
           "label": "Observed operators and targeting",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#observed-operators-and-targeting"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#observed-operators-and-targeting"
         },
         {
           "label": "Malware packaging and distribution",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#malware-packaging-and-distribution"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#malware-packaging-and-distribution"
         },
         {
           "label": "NeedyMantis architecture and capabilities",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#needymantis-architecture-and-capabilities"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#needymantis-architecture-and-capabilities"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
         },
         {
           "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
         },
         {
           "label": "Kaspersky previously reported",
@@ -3407,44 +3859,44 @@
       "published": "2026-09-25T15:35:08+00:00",
       "summary": "Microsoft details JADEPUFFER-linked Azure reconnaissance, resource deletion, and credential access using compromised service principals, identifying the activity as associated with Storm-3168 and providing guidance for defenders. The post Storm-3168: Agentic-driven cloud attacks using compromised...",
       "author": "Microsoft Security Research, Yossi Weizman and Tushar Mudi",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
         }
       ],
       "tags": [
-        "General Security"
+        "Threat Intelligence"
       ],
       "body": "In this article Attack overviewTechnical analysisMitigation and protection guidanceReferencesLearn More Microsoft Security Research has identified malicious cloud activity associated with JADEPUFFER, a threat actor discovered by Sysdig in July 2026 and reported to be the first documented agentic ransomware operation. Our investigation found an extensive Azure-focused resource destruction activity using compromised service principals and cloud credential collection that could be used to facilitate future exfiltration. These findings expand the publicly documented activity associated with JADEPUFFER, tracked by Microsoft as Storm-3168, demonstrating an evolution in the threat actor’s cloud operations and providing the first detailed view into its Azure activity. We identified bulk destructive operations in a compromised Azure environment. The destructive operations were facilitated by compromising service principals and targeted Azure Storage Accounts, SQL databases, Key Vaults, Function Apps, recovery protection locks, Virtual Machines, and App Services. Organizations can reduce exposure by protecting workload identities and secrets, enforcing least privilege, safeguarding recovery resources, and enabling relevant Microsoft Defender for Cloud protections. Publicly exposed credentials remain usable until revoked or rotated; removing the original disclosure alone does not remediate the exposure. This activity highlights a broader shift toward AI-orchestrated attacks, where threat actors can coordinate complex post-compromise operations across cloud environments with greater speed and scale. As these capabilities evolve, defenders must similarly use AI to investigate and respond across large environments. Rather than requiring analysts to manually follow each individual action, efforts such as Project Perception and MDASH are intended to support a model in which defenders can investigate and respond across increasingly large and complex environments using AI. Attack overview Microsoft observed two compromised service principals belonging to the same tenant. One performed reconnaissance and resource discovery. The other performed discovery, destructive operations, and credential collection. Discovery before destruction For the impacted tenant, in early June 2026, one of the compromised service principals enumerated Azure Virtual Machines, subscriptions, resource groups and resources for about 15 hours and 30 minutes with 300+ successful read operations. This...",
       "links": [
         {
           "label": "Attack overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-overview"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-overview"
         },
         {
           "label": "Technical analysis",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#technical-analysis"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#technical-analysis"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
         },
         {
           "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
         },
         {
           "label": "Microsoft Defender for Cloud",
@@ -3474,30 +3926,6 @@
           "label": "protecting secrets with Defender for Cloud",
           "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/secrets-scanning"
         }
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-95274: Improper output encoding in DevTools",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-95274",
-      "published": "2026-09-25T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
@@ -3648,30 +4076,6 @@
       ]
     },
     {
-      "title": "Chromium CVE-2026-87625: Use after free in V8",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87625",
-      "published": "2026-09-25T08:44:32+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
       "title": "Chromium CVE-2026-87601: Race condition in V8",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-87601",
       "published": "2026-09-25T08:44:22+00:00",
@@ -3725,18 +4129,18 @@
       "published": "2026-09-24T16:00:00+00:00",
       "summary": "Storm-2570 is a ransomware affiliate that uses consistent post-compromise tools and techniques across deployments involving Qilin, DragonForce, Anubis, and BERT ransomware, and provides guidance to help defenders detect and disrupt this activity before ransomware deployment. The post Beyond the...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 3
+          "score": 8
         }
       ],
       "tags": [
@@ -3746,27 +4150,27 @@
       "links": [
         {
           "label": "Who is Storm-2570?",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#who-is-storm-2570"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#who-is-storm-2570"
         },
         {
           "label": "Storm-2570 attack chain: From initial foothold to impact",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#storm-2570-attack-chain-from-initial-foothold-to-impact"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#storm-2570-attack-chain-from-initial-foothold-to-impact"
         },
         {
           "label": "What Storm-2570 activity means for defenders",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-storm-2570-activity-means-for-defenders"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-storm-2570-activity-means-for-defenders"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
         },
         {
           "label": "ransomware as a service (RaaS)",
@@ -4368,10 +4772,10 @@
       ]
     },
     {
-      "title": "Cyber Adversary Simulation (CyAS): scheme documents now available",
-      "link": "https://www.ncsc.gov.uk/blogs/cyber-adversary-simulation-cyas-scheme-documents-now-available",
+      "title": "Adversary simulation: what you need to know",
+      "link": "https://www.ncsc.gov.uk/guidance/adversary-simulation-what-you-need-to-know",
       "published": "2026-09-17T12:00:00+00:00",
-      "summary": "Our view of good cyber adversary simulation – and how assured providers can deliver it.",
+      "summary": "Adversary simulation ('red teaming') tests your ability to prevent, detect and respond to cyber attacks.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -4392,10 +4796,10 @@
       ]
     },
     {
-      "title": "Adversary simulation: what you need to know",
-      "link": "https://www.ncsc.gov.uk/guidance/adversary-simulation-what-you-need-to-know",
+      "title": "Cyber Adversary Simulation (CyAS): scheme documents now available",
+      "link": "https://www.ncsc.gov.uk/blogs/cyber-adversary-simulation-cyas-scheme-documents-now-available",
       "published": "2026-09-17T12:00:00+00:00",
-      "summary": "Adversary simulation ('red teaming') tests your ability to prevent, detect and respond to cyber attacks.",
+      "summary": "Our view of good cyber adversary simulation – and how assured providers can deliver it.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -4560,10 +4964,10 @@
       ]
     },
     {
-      "title": "Iranian cyber targeting of dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
+      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
+      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -4590,10 +4994,10 @@
       ]
     },
     {
-      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
+      "title": "Iranian cyber targeting of dissidents, activists and journalists",
+      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
       "published": "2026-09-15T12:00:00+00:00",
-      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
+      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
