@@ -1,8 +1,138 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-14T11:28:12.253515+00:00",
-  "totalArticles": 135,
+  "lastUpdated": "2026-10-14T16:50:07.332477+00:00",
+  "totalArticles": 137,
   "articles": [
+    {
+      "title": "Secure Linux desktops with Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/secure-linux-desktops-with-microsoft-defender/ba-p/4560822",
+      "published": "2026-10-14T16:00:00+00:00",
+      "summary": "As more developers begin to use Linux desktops, they become more attractive to attackers: high-privilege, high-value, and easy for admins to overlook. A developer using Linux for day-to-day development may interact with source code repositories, continuous integration and continuous delivery...",
+      "author": "Megha_Priya",
+      "source": "Microsoft Defender for Endpoint",
+      "source_id": "defender_endpoint",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Endpoint Security",
+      "board_id": "microsoftdefenderatpblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint"
+      ],
+      "body": "As more developers begin to use Linux desktops, they become more attractive to attackers: high-privilege, high-value, and easy for admins to overlook. A developer using Linux for day-to-day development may interact with source code repositories, continuous integration and continuous delivery (CI/CD) pipelines, cloud infrastructure, container environments and internal development platforms. If their workstation is compromised, an attacker doesn’t just gain access to a laptop, but a foothold in the pipelines that build and ship the organization’s software. As Linux adoption expands beyond the data center, organizations need a consistent approach to protecting Linux wherever it is used. That’s why we’ve extended our industry-leading endpoint protection in Microsoft Defender, bringing enterprise-grade protection, detection, vulnerability management and response capabilities to Linux workstations. Enterprise-grade protection for Linux desktops Defender support for Linux workstations spans all three key areas of endpoint security: Protect and detect Endpoint detection and response (EDR) Microsoft Defender next-gen antivirus Threat analytics Exposure management Microsoft Defender Vulnerability Management Device inventory Security settings management Investigate and respond Advanced hunting Live response Device isolation The result is broader Linux protection, delivered through the tools and processes security teams already trust. Give security teams a consistent and simplified view across the endpoint estate With Defender on Linux desktops, organizations can: Onboard quickly using the deployment methods already validated for Linux servers Reduce operational complexity by protecting Linux desktops and servers with one agent and one security operations experience Improve visibility across heterogeneous endpoint environments Strengthen developer workstation security where users interact with source code, cloud infrastructure and other critical resources Accelerate investigation and response through a consistent security operations experience Defender protects Linux desktops with the same deployment organizations already use to protect Linux servers. There is no separate desktop-specific agent to deploy or maintain, and existing deployment packages, deployment methods and security capabilities on Linux servers extend directly to Linux workstations. Deployment options in the Microsoft Defender portal Defender automatically identifies whether a Linux device is a...",
+      "links": [
+        {
+          "label": "what’s new in Defender",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint#september-2026"
+        },
+        {
+          "label": "pre-requisites",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites#supported-linux-distributions"
+        },
+        {
+          "label": "website",
+          "url": "https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        },
+        {
+          "label": "Microsoft Security",
+          "url": "https://www.linkedin.com/showcase/microsoft-security/"
+        },
+        {
+          "label": "@MSFTSecurity",
+          "url": "https://twitter.com/@MSFTSecurity"
+        }
+      ]
+    },
+    {
+      "title": "The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/",
+      "published": "2026-10-14T13:00:00+00:00",
+      "summary": "Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators (tracked as Storm-2990), and an illicit marketplace (tracked as Storm-3119) selling tools and infrastructure for large-scale phishing. In collaboration with law enforcement agencies...",
+      "author": "Microsoft Threat Intelligence and Microsoft Digital Crimes Unit",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article Uncovering the shadow world of a phishing kit ecosystemStorm-3119: YAM Store, the power brokerStorm-2990: The Iron Man System phishing kitDownstream activity from Storm-2990 phishing kitsMitigation and protection guidanceMicrosoft Defender detections Over the past year, Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators, developers, and an illicit marketplace selling tools and infrastructure for large-scale phishing, enabling cybercriminal operations worldwide. Threat actors purchased and used these tools and infrastructure, including phishing kits and access to compromised or fraudulent Microsoft or Google cloud environments and related credentials, to target organizations across the healthcare, financial services, wholesale distribution, and information technology (IT) sectors in Japan, the United States, Australia, and India. In collaboration with law enforcement agencies and other partners worldwide, Microsoft’s Digital Crimes Unit (DCU) facilitated a disruption of the ecosystem’s primary developers and infrastructure. Microsoft’s research into one phishing kit unraveled a larger ecosystem, including the phishing kit developers, an infrastructure dealer, and the threat actors who buy from both. In this blog, we examine several phishing kits marketed and sold through YAM Store, an underground marketplace tracked by Microsoft as Storm-3119. We share our analysis of the technical aspects of this Chinese-language phishing kit ecosystem, the shared infrastructure, provisioning methods, and downstream activity by threat actors using these tools. Figure 1: Heat map of most impacted countries by combined Storm-3119 and Storm-2990-related activity. Uncovering the shadow world of a phishing kit ecosystem Microsoft, alongside industry partner Resecurity, identified three phishing kits sold through the YAM Store that make up this Chinese-language cybercriminal network: CoGUI (also known as NX or FA), Haozi (also known as Phoenix), and Iron Man System. Microsoft tracks the cluster of activity and the developers behind all three phishing kits as Storm-2990. Since January 2026, the threat actors behind these kits have been responsible for facilitating the sending of over one billion phishing emails and SMS messages to over 75 thousand organizations worldwide. Microsoft assesses with high confidence that these phishing kits were developed by Chinese-speaking threat actors, and, despite...",
+      "links": [
+        {
+          "label": "Uncovering the shadow world of a phishing kit ecosystem",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#uncovering-the-shadow-world-of-a-phishing-kit-ecosystem"
+        },
+        {
+          "label": "Storm-3119: YAM Store, the power broker",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#storm-3119-yam-store-the-power-broker"
+        },
+        {
+          "label": "Storm-2990: The Iron Man System phishing kit",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#storm-2990-the-iron-man-system-phishing-kit"
+        },
+        {
+          "label": "Downstream activity from Storm-2990 phishing kits",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#downstream-activity-from-storm-2990-phishing-kits"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Microsoft Defender detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+        },
+        {
+          "label": "Microsoft’s Digital Crimes Unit (DCU) facilitated a disruption of the ecosystem’s primary developers and infrastructure",
+          "url": "https://aka.ms/YamCOGUIIronMan"
+        },
+        {
+          "label": "Resecurity",
+          "url": "https://www.resecurity.com/blog/article/iron-man-yamstore-powering-a-global-phishing-as-a-service-ecosystem"
+        },
+        {
+          "label": "protecting personal and business information",
+          "url": "https://www.microsoft.com/security/business/security-101/what-is-email-security"
+        },
+        {
+          "label": "Review our recommended settings",
+          "url": "https://learn.microsoft.com/defender-office-365/recommended-settings-for-eop-and-office365"
+        },
+        {
+          "label": "Safe Links policy",
+          "url": "https://learn.microsoft.com/defender-office-365/safe-links-about#safe-links-settings-for-email-messages"
+        },
+        {
+          "label": "Microsoft Authenticator app for passkeys and MFA",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-enable-authenticator-passkey"
+        }
+      ]
+    },
     {
       "title": "GCP-2026-068",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
@@ -3473,18 +3603,18 @@
       "published": "2026-09-29T15:00:00+00:00",
       "summary": "Since January 2026, Microsoft has observed Russian state threat actor Star Blizzard evolve their detection evasion capabilities through large-scale phishing campaigns, the use of accounts on compromised websites, and a novel malware delivery technique, tracked by Microsoft as “RedFlick”. The post...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 6
+          "score": 11
         }
       ],
       "tags": [
@@ -3494,23 +3624,23 @@
       "links": [
         {
           "label": "Star Blizzard TTPs observed in 2026",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#star-blizzard-ttps-observed-in-2026"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#star-blizzard-ttps-observed-in-2026"
         },
         {
           "label": "Defending against Star Blizzard and RedFlick-related activity",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#defending-against-star-blizzard-and-redflick-related-activity"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#defending-against-star-blizzard-and-redflick-related-activity"
         },
         {
           "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
         },
         {
           "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
         },
         {
           "label": "2025",
@@ -4833,10 +4963,10 @@
       ]
     },
     {
-      "title": "Adversary simulation: what you need to know",
-      "link": "https://www.ncsc.gov.uk/guidance/adversary-simulation-what-you-need-to-know",
+      "title": "Cyber Adversary Simulation (CyAS): scheme documents now available",
+      "link": "https://www.ncsc.gov.uk/blogs/cyber-adversary-simulation-cyas-scheme-documents-now-available",
       "published": "2026-09-17T12:00:00+00:00",
-      "summary": "Adversary simulation ('red teaming') tests your ability to prevent, detect and respond to cyber attacks.",
+      "summary": "Our view of good cyber adversary simulation – and how assured providers can deliver it.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -4857,10 +4987,10 @@
       ]
     },
     {
-      "title": "Cyber Adversary Simulation (CyAS): scheme documents now available",
-      "link": "https://www.ncsc.gov.uk/blogs/cyber-adversary-simulation-cyas-scheme-documents-now-available",
+      "title": "Adversary simulation: what you need to know",
+      "link": "https://www.ncsc.gov.uk/guidance/adversary-simulation-what-you-need-to-know",
       "published": "2026-09-17T12:00:00+00:00",
-      "summary": "Our view of good cyber adversary simulation – and how assured providers can deliver it.",
+      "summary": "Adversary simulation ('red teaming') tests your ability to prevent, detect and respond to cyber attacks.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
