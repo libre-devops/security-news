@@ -1,8 +1,97 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-13T22:26:15.358386+00:00",
-  "totalArticles": 133,
+  "lastUpdated": "2026-10-14T04:11:06.584614+00:00",
+  "totalArticles": 135,
   "articles": [
+    {
+      "title": "(Updated) Microsoft Entra: Windows Hello for Business and macOS Platform SSO as standalone MFA factors",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450134",
+      "published": "2026-10-13T23:51:25.613000+00:00",
+      "summary": "Updated October 13, 2026: We have updated the timeline. Thank you for your patience. [What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1450134",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated October 13, 2026: We have updated the timeline. Thank you for your patience. [What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication scenarios.Today, WHfB and macOS PSSO can satisfy MFA requirements during primary sign-in, but users may still be required to register and use an additional passkey or authentication method for certain step-up authentication prompts, Authentication Strength policies, and sign-in frequency checks.After this rollout, users who authenticate with WHfB or macOS PSSO will be able to satisfy supported MFA requirements without registering an additional passkey. This change helps organizations expand the use of phishing-resistant authentication methods and reduce reliance on less secure authentication methods. As part of this change, a user's WHfB and macOS PSSO credentials will be displayed in My Security Info as auto-registered passkeys.[Rollout schedule]General Availability (Worldwide, GCC): Beginning in early October 2026 and expected to complete in mid-December 2026 (previously late November)[Impact on your organization]Who is affectedOrganizations using Microsoft Entra IDUsers who authenticate with Windows Hello for BusinessUsers who authenticate with macOS Platform SSOOrganizations using Conditional Access Authentication Strength policiesPlatforms and servicesMicrosoft Entra IDWindows Hello for BusinessmacOS Platform SSOConditional AccessAuthentication Strength policiesWhat will happenAfter rollout:Users signing in with WHfB or macOS PSSO can complete supported MFA challenges without requiring a separate passkey.WHfB and macOS PSSO will satisfy supported MFA requirements for step-up authentication scenarios.WHfB and macOS PSSO can be used during 2FA to satisfy supported Authentication Strength policy requirements.WHfB and macOS PSSO can be used during 2FA to satisfy supported sign-in frequency challenge requirements.Users whose only MFA method is WHfB or macOS PSSO will be considered MFA-capable.Users who sign in with only a password will no longer be automatically prompted to register an additional MFA method if WHfB or macOS PSSO is their only registered MFA credential.Users with WHfB or macOS PSSO credentials, will be able to see them listed in My Security Info as auto-registered passkeys.[Action required and recommendations]No configuration changes are required.We recommend reviewing user onboarding and MFA registration processes before rollout. Because WHfB and macOS PSSO credentials are device-bound, users may not be able to complete MFA challenges from devices where those credentials are not available.Recommended actions:Update onboarding guidance to ensure users register at least one portable MFA method.Consider requiring users to register a synced passkey or Microsoft Authenticator passkey in addition to WHfB or macOS PSSO.Review custom Authentication Strength policies to confirm WHfB and macOS PSSO are allowed where appropriate.Update user documentation because users with only WHfB or macOS PSSO registered will no longer be automatically guided to register an additional MFA method.Learn more (To be updated closer to GA rollout.)Plan a Windows Hello for Business deployment | Security | Windows | Microsoft LearnPrepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Plan a Windows Hello for Business deployment | Security | Windows | Microsoft Learn",
+          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/"
+        },
+        {
+          "label": "Prepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn",
+          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/prepare-users"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Data Loss Prevention-Admin Units Support for Copilot & Cowork DLP",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575287",
+      "published": "2026-10-13T23:01:05+00:00",
+      "summary": "Microsoft Purview Data Loss Prevention is extending Administrative Units support to Microsoft 365 Copilot, Copilot Chat, and Cowork. This enables organizations to delegate management of supported Copilot DLP policies to administrators within their assigned Administrative Units, supporting regional,...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "Microsoft Purview Data Loss Prevention is extending Administrative Units support to Microsoft 365 Copilot, Copilot Chat, and Cowork. This enables organizations to delegate management of supported Copilot DLP policies to administrators within their assigned Administrative Units, supporting regional, departmental, and regulatory boundaries without granting tenant-wide policy-management permissions. Existing tenant-wide policies continue to apply, and configuration is optional for organizations choosing to use Administrative Unit (AU)-scoped management.GA date: November CY2026Preview date: October CY2026",
+      "links": []
+    },
+    {
+      "title": "Microsoft Purview: Information Protection-Auto-labeling for legacy Office files",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=574363",
+      "published": "2026-10-13T23:01:05+00:00",
+      "summary": "Microsoft Purview server-side auto-labeling will support legacy Microsoft Office file formats, including Word (.doc), Excel (.xls), and PowerPoint (.ppt). Organizations can automatically evaluate and apply sensitivity labels to these files in SharePoint and OneDrive.GA date: November CY2026Preview...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
     {
       "title": "Action may be required: Review who can create agents in Microsoft Entra",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1506733",
@@ -2670,30 +2759,6 @@
       ],
       "body": "Bulletin ID: 2026-120-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/01/2026 08:30 AM PDT Description: The Amazon EFS CSI Driver is a Container Storage Interface driver that allows Kubernetes clusters to use Amazon Elastic File System. We identified CVE-2026-103505, where an actor with PersistentVolume creation privileges can inject additional mount options through the mounttargetipmap volumeAttribute. Appending comma-separated values to a value inside that JSON map causes the mount utility to parse them as separate mount options. Impacted versions: >= v3.1.0 AND <= v3.4.2 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
-    },
-    {
-      "title": "Microsoft Purview: Data Lifecycle Management – Ensure regulatory compliance by deleting inactive OneDrives and mailboxes for departing employees",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=569721",
-      "published": "2026-10-01T23:00:07+00:00",
-      "summary": "Enables admins to delete both content and containers for departed users at scale thereby keeping your tenant compliant without any manual effort.GA date: December CY2026Preview date: November CY2026",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ]
     },
     {
       "title": "Microsoft Entra App Gallery: Self-service onboarding for new applications",
