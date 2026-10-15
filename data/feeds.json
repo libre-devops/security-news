@@ -1,13 +1,13 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-15T11:04:53.932346+00:00",
-  "totalArticles": 138,
+  "lastUpdated": "2026-10-15T16:35:46.429568+00:00",
+  "totalArticles": 137,
   "articles": [
     {
-      "title": "Using TLS to protect data",
-      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
+      "title": "Post-quantum updates to our TLS guidance",
+      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
+      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -28,10 +28,10 @@
       ]
     },
     {
-      "title": "Post-quantum updates to our TLS guidance",
-      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
+      "title": "Using TLS to protect data",
+      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
+      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -289,6 +289,61 @@
       ],
       "tags": [
         "AWS Security"
+      ]
+    },
+    {
+      "title": "Secure Linux desktops with Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/secure-linux-desktops-with-microsoft-defender/ba-p/4560822",
+      "published": "2026-10-14T16:00:00+00:00",
+      "summary": "As more developers begin to use Linux desktops, they become more attractive to attackers: high-privilege, high-value, and easy for admins to overlook. A developer using Linux for day-to-day development may interact with source code repositories, continuous integration and continuous delivery...",
+      "author": "Megha_Priya",
+      "source": "Microsoft Defender for Endpoint",
+      "source_id": "defender_endpoint",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Endpoint Security",
+      "board_id": "microsoftdefenderatpblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint"
+      ],
+      "body": "As more developers begin to use Linux desktops, they become more attractive to attackers: high-privilege, high-value, and easy for admins to overlook. A developer using Linux for day-to-day development may interact with source code repositories, continuous integration and continuous delivery (CI/CD) pipelines, cloud infrastructure, container environments and internal development platforms. If their workstation is compromised, an attacker doesn’t just gain access to a laptop, but a foothold in the pipelines that build and ship the organization’s software. As Linux adoption expands beyond the data center, organizations need a consistent approach to protecting Linux wherever it is used. That’s why we’ve extended our industry-leading endpoint protection in Microsoft Defender, bringing enterprise-grade protection, detection, vulnerability management and response capabilities to Linux workstations. Enterprise-grade protection for Linux desktops Defender support for Linux workstations spans all three key areas of endpoint security: Protect and detect Endpoint detection and response (EDR) Microsoft Defender next-gen antivirus Threat analytics Exposure management Microsoft Defender Vulnerability Management Device inventory Security settings management Investigate and respond Advanced hunting Live response Device isolation The result is broader Linux protection, delivered through the tools and processes security teams already trust. Give security teams a consistent and simplified view across the endpoint estate With Defender on Linux desktops, organizations can: Onboard quickly using the deployment methods already validated for Linux servers Reduce operational complexity by protecting Linux desktops and servers with one agent and one security operations experience Improve visibility across heterogeneous endpoint environments Strengthen developer workstation security where users interact with source code, cloud infrastructure and other critical resources Accelerate investigation and response through a consistent security operations experience Defender protects Linux desktops with the same deployment organizations already use to protect Linux servers. There is no separate desktop-specific agent to deploy or maintain, and existing deployment packages, deployment methods and security capabilities on Linux servers extend directly to Linux workstations. Deployment options in the Microsoft Defender portal Defender automatically identifies whether a Linux device is a...",
+      "links": [
+        {
+          "label": "what’s new in Defender",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint#september-2026"
+        },
+        {
+          "label": "pre-requisites",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites#supported-linux-distributions"
+        },
+        {
+          "label": "website",
+          "url": "https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        },
+        {
+          "label": "Microsoft Security",
+          "url": "https://www.linkedin.com/showcase/microsoft-security/"
+        },
+        {
+          "label": "@MSFTSecurity",
+          "url": "https://twitter.com/@MSFTSecurity"
+        }
       ]
     },
     {
@@ -5004,10 +5059,10 @@
       ]
     },
     {
-      "title": "Adversary simulation: what you need to know",
-      "link": "https://www.ncsc.gov.uk/guidance/adversary-simulation-what-you-need-to-know",
+      "title": "Cyber Adversary Simulation (CyAS): scheme documents now available",
+      "link": "https://www.ncsc.gov.uk/blogs/cyber-adversary-simulation-cyas-scheme-documents-now-available",
       "published": "2026-09-17T12:00:00+00:00",
-      "summary": "Adversary simulation ('red teaming') tests your ability to prevent, detect and respond to cyber attacks.",
+      "summary": "Our view of good cyber adversary simulation – and how assured providers can deliver it.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -5028,10 +5083,10 @@
       ]
     },
     {
-      "title": "Cyber Adversary Simulation (CyAS): scheme documents now available",
-      "link": "https://www.ncsc.gov.uk/blogs/cyber-adversary-simulation-cyas-scheme-documents-now-available",
+      "title": "Adversary simulation: what you need to know",
+      "link": "https://www.ncsc.gov.uk/guidance/adversary-simulation-what-you-need-to-know",
       "published": "2026-09-17T12:00:00+00:00",
-      "summary": "Our view of good cyber adversary simulation – and how assured providers can deliver it.",
+      "summary": "Adversary simulation ('red teaming') tests your ability to prevent, detect and respond to cyber attacks.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -5193,66 +5248,6 @@
       ],
       "tags": [
         "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "Iranian cyber targeting of dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
-      "published": "2026-09-15T12:00:00+00:00",
-      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
-      "author": "",
-      "source": "NCSC Security Feed",
-      "source_id": "ncsc_security",
-      "source_group": "Official NCSC",
-      "source_kind": "rss",
-      "vendor": "NCSC",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ncsc-guidance",
-          "name": "NCSC Guidance",
-          "score": 6
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "NCSC Guidance",
-        "Threat Intelligence"
-      ]
-    },
-    {
-      "title": "UK and allies expose spyware used by Iranian state actors to target dissidents, activists and journalists",
-      "link": "https://www.ncsc.gov.uk/news/uk-allies-expose-spyware-iranian-state-actors-target-dissidents-activists-journalists",
-      "published": "2026-09-15T12:00:00+00:00",
-      "summary": "UK and allies provide advice to help organisations and individuals at risk detect and counter the threat from CHOSEN BRICK malware.",
-      "author": "",
-      "source": "NCSC Security Feed",
-      "source_id": "ncsc_security",
-      "source_group": "Official NCSC",
-      "source_kind": "rss",
-      "vendor": "NCSC",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ncsc-guidance",
-          "name": "NCSC Guidance",
-          "score": 6
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "NCSC Guidance",
-        "Threat Intelligence"
       ]
     }
   ]
