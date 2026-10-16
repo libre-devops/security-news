@@ -1,8 +1,437 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-16T16:20:14.810200+00:00",
-  "totalArticles": 133,
+  "lastUpdated": "2026-10-16T20:42:31.259528+00:00",
+  "totalArticles": 135,
   "articles": [
+    {
+      "title": "CVE-2026-16756 - Allocation of resources without limits in the default aws-smithy-http-server serve() path allows unauthenticated Slowloris denial of service",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-064-aws/",
+      "published": "2026-10-16T17:37:32+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Incomplete fix for CVE-2025-4318 code injection in Amazon @aws-amplify/codegen-ui-react",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-066-aws/",
+      "published": "2026-10-16T17:37:32+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-16317 and CVE-2026-16318: Issues with s2n-tls: an open-source implementation of the TLS/SSL protocols",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-062-aws/",
+      "published": "2026-10-16T17:37:32+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-102551 & CVE-2026-102552 - Issue with FreeRTOS-Plus-TCP",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-139-aws/",
+      "published": "2026-10-16T17:34:49+00:00",
+      "summary": "Bulletin ID: 2026-139-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/16/2026 10:15 AM PDT Description: FreeRTOS-Plus-TCP is an open-source, thread-safe TCP/IP stack for the FreeRTOS kernel, distributed by Amazon for use on embedded and IoT devices. AWS identified...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-139-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/16/2026 10:15 AM PDT Description: FreeRTOS-Plus-TCP is an open-source, thread-safe TCP/IP stack for the FreeRTOS kernel, distributed by Amazon for use on embedded and IoT devices. AWS identified two issues with FreeRTOS-Plus-TCP, affecting multiple versions. CVE-2026-102551: improper verification of the source of a communication channel in the IPv6 Router Advertisement handler. The handler does not fully validate that a received Router Advertisement originates from an on-link source before acting on it. Under certain conditions, a remote third-party might influence an endpoint's IPv6 gateway, prefix, and address configuration, potentially enabling interception of the device's IPv6 traffic. This issue is reachable in the library's default configuration, where ipconfigUSE_IPv6 and ipconfigUSE_RA are both enabled. CVE-2026-102552: improper verification of the source of a communication channel in the DNS resolver. The resolver does not fully validate that a DNS reply originates from the server that was queried before accepting it. Under certain conditions, a remote third-party might insert a chosen address into the device's DNS cache, potentially redirecting the device's subsequent connections for the affected name. Impacted versions: - CVE-2026-102551 (Router Advertisement): <= V4.4.1 - CVE-2026-102552 (DNS resolver): <= V4.4.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "[Launched] Generally Available: External key management for Azure Key Vault Managed HSM",
+      "link": "https://azure.microsoft.com/updates?id=574296",
+      "published": "2026-10-16T16:50:27+00:00",
+      "summary": "External key management for Azure Key Vault Managed HSM is now generally available in all Azure public regions. For organizations with regulatory or sovereignty requirements to retain physical control of key-encryption keys, it lets Azure services that su",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Managing open-weight model risk in enterprise deployments",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
+      "published": "2026-10-16T16:00:00+00:00",
+      "summary": "New whitepaper from Microsoft and NVIDIA helps enterprises manage open-weight AI model risks with a shared taxonomy, evaluations, and controls. The post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Security Blog.",
+      "author": "Michael Scovetta",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models. Open-weight models are an important part of that landscape. They give enterprises access to model weights and greater flexibility to inspect, evaluate, modify, and run models within their own environments. While that flexibility can be valuable, it also affects how enterprises evaluate models, where they implement safeguards, and who is responsible for maintaining those safeguards over time. As enterprises choose which models to deploy, the relevant question is broader than whether a model is open-weight or closed-weight. Enterprises need to understand what they are using the model for, what could go wrong in that context, and what evidence and controls they need to manage risks. Today, Microsoft and NVIDIA are publishing Risk Management for Open-Weight Models in Enterprise, the first in a planned series of joint resources intended to help enterprises address those questions. The paper introduces a shared risk taxonomy and an approach to managing model risks grounded in established standards and frameworks, including International Organization for Standardization (ISO) standards and the National Institute of Standards and Technology (NIST) AI Risk Management Framework. The paper reflects a core idea: weight openness alone does not determine an AI system’s risk. Risk depends on the model, use case, deployment, and safeguards. Read the whitepaper: Risk Management for Open-Weight Models in Enterprise Understanding risk in the deployment context Open- and closed-weight models can share many of the same underlying risks, but how those risks materialize depends on the deployment. A model used to help an employee draft a document presents different considerations than the same model used in a customer-facing workflow, just as a standalone inference endpoint differs from a system connected to external data or tools. The architecture matters too. A risk may originate in the model, while the most effective control may sit in the inference environment, application, or surrounding operational processes. The joint guidance looks beyond the model label to factors including provenance, intended use, users, deployment conditions, and surrounding controls. This first paper focuses primarily on model-layer risks. Evaluating a model alone does not establish the safety of an agent or application: teams must also assess its permissions, data access,...",
+      "links": [
+        {
+          "label": "Risk Management for Open-Weight Models in Enterprise",
+          "url": "https://github.com/NVIDIA/OpenEnterpriseRiskManagementGuidance/blob/main/Papers/Risk%20Management%20Guidance.pdf"
+        },
+        {
+          "label": "Explore the joint repository and technical resources",
+          "url": "https://github.com/NVIDIA/OpenEnterpriseRiskManagementGuidance"
+        },
+        {
+          "label": "Microsoft Foundry evaluations",
+          "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/built-in-evaluators"
+        },
+        {
+          "label": "content-safety controls",
+          "url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/guardrails-overview"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        },
+        {
+          "label": "Microsoft Security",
+          "url": "https://www.linkedin.com/showcase/microsoft-security/"
+        },
+        {
+          "label": "@MSFTSecurity",
+          "url": "https://twitter.com/@MSFTSecurity"
+        },
+        {
+          "label": "Managing open-weight model risk in enterprise deployments",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog"
+        }
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-106258: Uninitialized resource",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106258",
+      "published": "2026-10-16T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-106263: Improper input validation",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106263",
+      "published": "2026-10-16T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-106264: Missing authorization",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106264",
+      "published": "2026-10-16T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-106268: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106268",
+      "published": "2026-10-16T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-106270: Incorrect authorization",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106270",
+      "published": "2026-10-16T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-106271: Missing authorization",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106271",
+      "published": "2026-10-16T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-106273: Uninitialized resource",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106273",
+      "published": "2026-10-16T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-106274: Incorrect reference resolution",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106274",
+      "published": "2026-10-16T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-106276: UI misrepresentation",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106276",
+      "published": "2026-10-16T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-106278: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106278",
+      "published": "2026-10-16T14:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "Chromium CVE-2026-106287: Information loss",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106287",
@@ -244,246 +673,6 @@
       ]
     },
     {
-      "title": "Chromium CVE-2026-106295: Incorrect authorization",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106295",
-      "published": "2026-10-16T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-106416: Code injection",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106416",
-      "published": "2026-10-16T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-106297: Incorrect authorization",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106297",
-      "published": "2026-10-16T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-106417: Integer overflow",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106417",
-      "published": "2026-10-16T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-106299: Improper input validation",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106299",
-      "published": "2026-10-16T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-106418: Missing authorization",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106418",
-      "published": "2026-10-16T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-106300: Race condition",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106300",
-      "published": "2026-10-16T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-106420: Incorrect calculation",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106420",
-      "published": "2026-10-16T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-106301: Confused deputy",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106301",
-      "published": "2026-10-16T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-106421: Use after free",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-106421",
-      "published": "2026-10-16T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
       "title": "Issue in the Linux kernel virtio-net/TAP networking path affecting KVM-based hypervisors",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-137-aws/",
       "published": "2026-10-15T19:03:20+00:00",
@@ -508,6 +697,54 @@
       ],
       "body": "Bulletin ID: 2026-137-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/15/2026 10:30 AM PDT Description: AWS is aware of an issue in the Linux kernel's virtio-net/TAP networking path (CVE-2026-99999) that affects KVM-based hypervisors running unpatched Linux kernel versions 4.4 through 6.18. This issue could allow an actor with privileged access inside a guest virtual machine to send specially crafted network packets that corrupt host kernel memory that could result in disclosure of host memory or a denial of service. AWS-managed compute and container services, including Amazon EC2 instances, AWS Lambda, and AWS Fargate, are not affected. There is no action required for customers using these services. Affected products & versions: Customers who self-manage virtual machines using virtio-net and KVM, including those using virtual machine monitors such as Firecracker, on hosts running affected, unpatched Linux kernel versions. Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
+    },
+    {
+      "title": "CVE-2026-15746 - Credential disclosure in Strands Agents Tools elasticsearch_memory tool",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-056-aws/",
+      "published": "2026-10-15T16:37:45+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "Issue with Amazon SageMaker Python SDK - Model artifact integrity verification issues (CVE-2026-8596 & CVE-2026-8597)",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-031-aws/",
+      "published": "2026-10-15T16:37:03+00:00",
+      "summary": "",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
     },
     {
       "title": "Using TLS to protect data",
@@ -582,57 +819,9 @@
       ]
     },
     {
-      "title": "CVE-2026-16756 - Allocation of resources without limits in the default aws-smithy-http-server serve() path allows unauthenticated Slowloris denial of service",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-064-aws/",
-      "published": "2026-10-14T18:38:44+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-16317 and CVE-2026-16318: Issues with s2n-tls: an open-source implementation of the TLS/SSL protocols",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-062-aws/",
-      "published": "2026-10-14T18:38:44+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "CVE-2026-13762 and CVE-2026-13763 - Issue with HTTP/2 multi-frame request body inspection in AWS WAF",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-048-aws/",
-      "published": "2026-10-14T18:38:30+00:00",
+      "published": "2026-10-14T19:53:01+00:00",
       "summary": "",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
@@ -656,7 +845,7 @@
     {
       "title": "Issue with containerd CRI Plugin - CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, CVE-2026-47262",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-046-aws/",
-      "published": "2026-10-14T18:38:30+00:00",
+      "published": "2026-10-14T19:53:01+00:00",
       "summary": "",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
@@ -680,7 +869,7 @@
     {
       "title": "Issue with FreeRTOS-Plus-TCP - MAC Address Validation Bypass and ICMP Echo Reply Integer Underflow",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-021-aws/",
-      "published": "2026-10-14T18:37:57+00:00",
+      "published": "2026-10-14T19:52:26+00:00",
       "summary": "",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
@@ -704,7 +893,7 @@
     {
       "title": "Issues with Amazon Athena ODBC Driver",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-013-aws/",
-      "published": "2026-10-14T18:37:56+00:00",
+      "published": "2026-10-14T19:52:25+00:00",
       "summary": "",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
@@ -3058,32 +3247,6 @@
       ]
     },
     {
-      "title": "CVE-2026-104019 - OS command injection in the Studio Space startup script in Amazon SageMaker Distribution",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-125-aws/",
-      "published": "2026-10-02T20:25:48+00:00",
-      "summary": "Bulletin ID: 2026-125-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/02/2026 13:00 PM PDT Description: Amazon SageMaker Unified Studio is an AWS service that unifies data, analytics, and AI development. It lets you find and access your organization's data and act...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-125-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/02/2026 13:00 PM PDT Description: Amazon SageMaker Unified Studio is an AWS service that unifies data, analytics, and AI development. It lets you find and access your organization's data and act on it with integrated, purpose-built tools. We identified CVE-2026-104019, an issue with the startup of SageMaker Spaces in SageMaker Unified Studio. The startup script in a SageMaker Space performs a network validation against all the available SageMaker connections in a project. Under certain conditions, improper sanitization of connection details during this validation could allow arbitrary code to be executed in the Space of another project member. In projects with the Trusted Identity Propagation feature enabled, this issue could result in a user with project contributor permissions (or higher) gaining access to another member's temporary execution role credentials and calling downstream trusted identity propagation-enabled AWS services on their behalf. We implemented a fix to all supported SageMaker Distribution versions to sanitize connection details during the startup validation process. The fix is deployed globally and will apply to all Spaces automatically on the next startup. Impacted versions: - 2.8.x - 2.13.x: all versions affected, no fix (end of support) - 2.14.x: < 2.14.12, fixed in 2.14.12 - 3.3.x - 3.8.x: all versions affected, no fix (end of support) - 3.9.x: < 3.9.12, fixed in 3.9.12 - 4.0.x: < 4.0.11, fixed in 4.0.11 - 4.1.x: < 4.1.11, fixed in 4.1.11 - 4.2.x: < 4.2.8, fixed in 4.2.8 - 4.3.x: < 4.3.5, fixed in 4.3.5 - 4.4.x: < 4.4.3, fixed in 4.4.3 - 4.5.x: not affected - < 2.8.0 and < 3.3.0: not affected Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "From Domain Lists to Decisions: Scaling WHOIS Threat Intelligence with MDTI and Microsoft Graph",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/from-domain-lists-to-decisions-scaling-whois-threat-intelligence/ba-p/4560384",
       "published": "2026-10-02T18:25:51+00:00",
@@ -3752,81 +3915,6 @@
         {
           "label": "T1566.002 Phishing: Spearphishing Link",
           "url": "https://attack.mitre.org/techniques/T1566/002/"
-        }
-      ]
-    },
-    {
-      "title": "​​Beyond source code: A path to the keys to the kingdom",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
-      "published": "2026-09-29T16:00:00+00:00",
-      "summary": "Explore how Storm-3068 turned a compromised identity into broader cloud access and the steps organizations can take to defend their identities, pipelines, and cloud infrastructure. The post ​​Beyond source code: A path to the keys to the kingdom appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Defender Experts Cybersecurity Incident Response",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "What began as a single compromised identity quickly expanded into an organization’s development and cloud environments. In our latest Cyberattack Series report, we examine how the Microsoft Detection and Response Team (DART)—the team that delivers Microsoft Defender Experts Cybersecurity Incident Response—investigated activity by Storm-3068, a threat actor that turned a successful self-service password reset into access to Azure DevOps, development pipelines, and Kubernetes resources. By leveraging legitimate identity and cloud services rather than malware or software exploits, the threat actor established persistent access, enumerated repositories, and obtained credentials that opened a path into connected cloud infrastructure. This case highlights a growing challenge for defenders: when identities, source code, pipelines, and production environments are tightly linked, a single account compromise can provide a pathway to much broader access across the organization. Read on to learn more or access the full report. Read the full cyberattack report What happened? The intrusion began with Storm-3068 gaining access to a user account through a self-service password reset process and then taking full control of the identity by registering its own authentication methods. With persistent access established, the threat actor shifted its focus to Azure DevOps using legitimate administrative tools and automated scripts to enumerate repositories, projects, pipelines, and deployment environments. TACTIC: Trusted pipelines were exploitedRather than deploying malware, the threat actor modified development pipelines to collect Kubernetes credentials and expand access into cloud infrastructure.​​ Azure DevOps proved to be a high-value target because it sat at the intersection of identity, software development, and cloud operations. By mapping trusted deployment paths and connected resources, the threat actor was able to identify opportunities to expand beyond the initial compromise. The investigation revealed that Storm-3068 created a malicious pipeline designed to harvest Kubernetes credentials at scale. The pipeline deployed a kube agent and executed multiple jobs intended to collect kubeconfig files containing cluster connection details and authentication information. Leveraging the permissions of the compromised account, the threat actor deployed the pipeline that was authorized to access more than 50 resources and authenticated to services. In addition to deploying...",
-      "links": [
-        {
-          "label": "Microsoft Defender Experts Cybersecurity Incident Response",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender-experts-cybersecurity-incident-response?msockid=2f650b5d62a36ba416111c8063e66a5c"
-        },
-        {
-          "label": "Storm-3068",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming"
-        },
-        {
-          "label": "access the full report",
-          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/Cyberattacks-Series-Report-Q3-2026.pdf"
-        },
-        {
-          "label": "Azure DevOps",
-          "url": "https://azure.microsoft.com/en-us/products/devops/?msockid=2f650b5d62a36ba416111c8063e66a5c"
-        },
-        {
-          "label": "Kubernetes",
-          "url": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-kubernetes/?msockid=2f650b5d62a36ba416111c8063e66a5c"
-        },
-        {
-          "label": "multifactor authentication",
-          "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-mfa-multi-factor-authentication"
-        },
-        {
-          "label": "DART",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender-experts-cybersecurity-incident-response"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "​​Beyond source code: A path to the keys to the kingdom",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/"
         }
       ]
     },
@@ -4702,30 +4790,6 @@
       ]
     },
     {
-      "title": "Incomplete fix for CVE-2025-4318 code injection in Amazon @aws-amplify/codegen-ui-react",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-066-aws/",
-      "published": "2026-09-22T19:48:45+00:00",
-      "summary": "",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "Retirement: Support for Node.js 22 ends on April 30, 2027",
       "link": "https://azure.microsoft.com/updates?id=572771",
       "published": "2026-09-22T19:22:34+00:00",
@@ -5056,81 +5120,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Microsoft’s commitment for AI in education: Protecting students, strengthening learning",
-      "link": "https://blogs.microsoft.com/blog/2026/09/16/microsofts-commitment-for-ai-in-education/",
-      "published": "2026-09-16T18:59:58+00:00",
-      "summary": "Microsoft has been in the business of education for five decades. Since the earliest days of this company, we have worked alongside educators, students, families and educational leaders through each new wave of technology — and we have learned what helps learning and what gets in the way. That...",
-      "author": "Justin Spelhaug",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "AI",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Microsoft has been in the business of education for five decades. Since the earliest days of this company, we have worked alongside educators, students, families and educational leaders through each new wave of technology — and we have learned what helps learning and what gets in the way. That commitment continues today, in a technological moment unlike any we have seen. AI can personalize learning, reduce administrative burden, accelerate research and expand access to high-quality instruction. It also brings real risk. Educators and parents are asking whether students are still doing the thinking, and whether the tools their children use are safe. Those are the right questions. At its core, teaching and inspiring students to become their best selves is a deeply human endeavor. Education is built on a meaningful partnership among educators, students and families that helps unlock human potential and shape brighter futures. No one company understands entirely how AI will reshape education. But uncertainty calls for more care, not less. That is why Microsoft is taking a holistic approach, grounded in five principles. Safety, privacy, security and transparency by design Educators remain in control and at the center of AI use in the classroom AI designed to support students’ learning, not replace their thinking AI strengthens education systems, from learning to discovery Every student prepared for an AI powered future 1. Safety, privacy, security and transparency by design Every AI system used in education should be designed with robust safeguards that protect student privacy, enhance safety, reduce risk – including safeguards that address bias – and provide the transparency that students, educators and parents deserve. We believe institutions should never have to choose between innovation and trust. Security, privacy and transparency are foundational to Microsoft’s approach in education. That is why last week, we signed a landmark agreement with the American Federation of Teachers (AFT) and introduced a new Privacy & Safety Standard for Schools covering Microsoft Education products. The agreement represents the first time a major technology company and one of America’s largest teachers’ unions have come together to define what trusted AI should look like within these products. The Standard limits how Microsoft Education products can use student and educator data, requires human oversight for consequential decisions, provides meaningful transparency for...",
-      "links": [
-        {
-          "label": "Privacy & Safety Standard for Schools",
-          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/AI-Safety-and-Privacy-Standard-Fact-Sheet.pdf"
-        },
-        {
-          "label": "Ashley Hernandez is using Copilot to develop differentiated, sensory-aware materials for students with complex...",
-          "url": "https://unlocked.microsoft.com/copilot-special-education-teacher/"
-        },
-        {
-          "label": "Education Insiders Program",
-          "url": "https://eduinsider.powerappsportals.com/"
-        },
-        {
-          "label": "Teach in Microsoft 365 Copilot",
-          "url": "https://www.microsoft.com/en-us/education/products/copilot-in-education?msockid=33348aca553063b115a19f8554cb62c1#copilot-teach"
-        },
-        {
-          "label": "Microsoft Elevate for Educators",
-          "url": "https://elevateforeducators.microsoft.com"
-        },
-        {
-          "label": "learning science",
-          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/education/4105800-Microsoft-Learning-by-Design-white-paper.pdf"
-        },
-        {
-          "label": "Minecraft Education",
-          "url": "https://education.minecraft.net/en-us"
-        },
-        {
-          "label": "Learning Accelerators",
-          "url": "https://www.microsoft.com/en-us/education/learning-tools/learning-accelerators?msockid=33348aca553063b115a19f8554cb62c1"
-        },
-        {
-          "label": "Study and Learn",
-          "url": "https://www.microsoft.com/en-us/education/blog/2026/07/study-and-learn-ai-built-for-learning-in-microsoft-365-copilot/?msockid=33348aca553063b115a19f8554cb62c1"
-        },
-        {
-          "label": "Broward County Public Schools",
-          "url": "https://www.microsoft.com/en/customers/story/26258-broward-county-public-schools-microsoft-365-copilot?msockid=33348aca553063b115a19f8554cb62c1"
-        },
-        {
-          "label": "University of North Carolina",
-          "url": "https://www.microsoft.com/en/customers/story/26599-unc-health-microsoft-fabric"
-        },
-        {
-          "label": "AI divide of the next decade",
-          "url": "https://blogs.microsoft.com/on-the-issues/2026/05/07/the-state-of-global-ai-diffusion-in-2026/"
-        }
       ]
     }
   ]
