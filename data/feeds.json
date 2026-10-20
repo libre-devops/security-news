@@ -1,8 +1,91 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-20T04:07:49.715601+00:00",
-  "totalArticles": 133,
+  "lastUpdated": "2026-10-20T11:09:39.384698+00:00",
+  "totalArticles": 136,
   "articles": [
+    {
+      "title": "Introducing a new AI chapter in the NCSC research problem book",
+      "link": "https://www.ncsc.gov.uk/blogs/introducing-new-ai-chapter-ncsc-research-problem-book",
+      "published": "2026-10-20T12:00:00+00:00",
+      "summary": "A revolution is underway at the intersection of AI and cyber security.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "Advancing digital sovereignty with greater control and choice",
+      "link": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+      "published": "2026-10-20T08:20:02+00:00",
+      "summary": "Across my conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on their most important systems while maintaining the control those systems require. This challenge is becoming more important...",
+      "author": "Douglas Phillips",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Across my conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on their most important systems while maintaining the control those systems require. This challenge is becoming more important as advanced cloud and AI capabilities move into public services, regulated processes and essential operations. Organizations are considering more than where data resides. They also seek to understand who can access and operate their systems, how sensitive digital assets remain protected, which technology dependencies matter most and whether critical services can continue as regulatory, geopolitical, security or network conditions change. Digital sovereignty should give organizations greater control and security over the technology they depend on, while continuing to innovate. Last year, we introduced Microsoft Sovereign Cloud to give customers more choice in how they address these requirements. Since then, we have continued to turn our commitments into practical capabilities across public cloud and customer-operated environments, while expanding how we enable partners to address sovereignty requirements in their local markets. Today, we are sharing the next stage of that work. A continuum of control, built around the workload Our approach to digital sovereignty starts with the workload. Each workload carries different requirements for data, operations, technology dependencies, continuity and risk. Microsoft Sovereign Cloud is designed to make it easier for organizations to apply the appropriate level of control to each workload without forcing every application into the same deployment model. Those needs can vary widely across organizations. A public-facing digital service may benefit from the scale and pace of innovation in the public cloud. A system supporting essential operations may need to continue running locally if connectivity is disrupted. An AI workload handling highly sensitive data may require models, data and processing to remain within a customer-controlled environment. Microsoft Sovereign Cloud is designed around this workload-based approach, providing a continuum of management, control and options across Sovereign Public Cloud, Sovereign Private Cloud and the Sovereign Partner Ecosystem. Organizations can apply the level of control appropriate to each workload while maintaining a consistent approach to governance and operations across their...",
+      "links": [
+        {
+          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Digital-Sovereignty-Image-2.jpg",
+          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Digital-Sovereignty-Image-2.jpg"
+        },
+        {
+          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Digital-Sovereignty-Image-1.jpg",
+          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Digital-Sovereignty-Image-1.jpg"
+        },
+        {
+          "label": "Microsoft Sovereign Cloud",
+          "url": "https://www.microsoft.com/sovereignty"
+        },
+        {
+          "label": "Sovereign Landing Zone architecture guidance",
+          "url": "https://aka.ms/sovereign/slz"
+        },
+        {
+          "label": "Sovereign Public Cloud Tech Community blog",
+          "url": "https://aka.ms/SovMoment2026Public"
+        },
+        {
+          "label": "Sovereign Private Cloud Tech Community blo",
+          "url": "https://aka.ms/SovMoment2026Private"
+        },
+        {
+          "label": "Advancing digital sovereignty with greater control and choice",
+          "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/"
+        },
+        {
+          "label": "The Official Microsoft Blog",
+          "url": "https://blogs.microsoft.com"
+        }
+      ]
+    },
     {
       "title": "Where Does My Microsoft Entra ID Data Reside? Understanding Azure Regions and Data Residency",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/where-does-my-microsoft-entra-id-data-reside-understanding-azure/ba-p/4565946",
@@ -51,6 +134,61 @@
         {
           "label": "https://www.microsoft.com/en-us/trust-center/privacy/data-location",
           "url": "https://www.microsoft.com/en-us/trust-center/privacy/data-location"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting playbook for Auto labelling in SharePoint and OneDrive",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/troubleshooting-playbook-for-auto-labelling-in-sharepoint-and/ba-p/4564103",
+      "published": "2026-10-19T18:38:09+00:00",
+      "summary": "Auto-labeling policies are how most organizations label the backlog of files at rest, and with the tenant ceiling now up to 500,000 files a day, more teams run them at scale. When a policy doesn't label what you expect, the cause is almost always a missing prerequisite, simulation behavior or the...",
+      "author": "Harysh9",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "Auto-labeling policies are how most organizations label the backlog of files at rest, and with the tenant ceiling now up to 500,000 files a day, more teams run them at scale. When a policy doesn't label what you expect, the cause is almost always a missing prerequisite, simulation behavior or the label-precedence rules. I've put the field fixes in one place: run the checklist, find your symptoms, apply the fix. Scope: SharePoint and OneDrive, with Exchange differences called out. How service-side auto-labeling works Auto-labeling policies run in the service, not in Office apps. A policy (label + rules + scope) must complete at least one simulation; once it's on, SharePoint and OneDrive label matching files at rest, up to the tenant's daily maximum. Figure 1. Service-side auto-labeling lifecycle and where to look when it stalls Pre-flight checklist Missing any one of these typically makes a policy run without labeling anything, and without an error. E5/P2-tier license (Microsoft 365 E5, E5 Compliance, E5 Information Protection & Governance, or AIP P2) PDF support enabled if PDFs are in scope (EnableSensitivityLabelforPDF = True) Compliance Administrator or Information protection or Compliance Data Administrator role (Data Classification Content Viewer to preview matches) Label published to at least one user, scoped to “Files & other data assets”, and not a parent label Auto-labeling available in your region (the page is visible in the Microsoft Purview portal) Encrypting labels use “Assign permissions now” and never expire; no S/MIME Unified audit log turned on (required for simulation) When files are created or edited with SIT, they are classified immediately. However, corner cases to check include Custom SIT created or edited after the file’s last change, and New SIT requiring old files to be checked again; these require on-demand classification. Sensitivity labels enabled for SharePoint/OneDrive files (EnableAIPIntegration = True) OneDrive accounts associated with their users (detached accounts aren’t supported) Limits that matter (October 2026) Setting or limit October 2026 value Auto-labeled files per tenant per day 500,000, shared by all SharePoint/OneDrive policies (was 100,000; rolling out, MC1461154) Auto-labeling policies per tenant Up to 100 policies Explicitly selected locations per policy 1,000 SharePoint sites (was 100) SharePoint adaptive scope Up to 50,000 sites (configure with PowerShell) Simulation size and duration Up to 20,000,000...",
+      "links": [
+        {
+          "label": "https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically",
+          "url": "https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically"
+        },
+        {
+          "label": "https://learn.microsoft.com/en-us/troubleshoot/microsoft-365/purview/sensitivity-labels/auto-labeling-failures-sharepoin...",
+          "url": "https://learn.microsoft.com/en-us/troubleshoot/microsoft-365/purview/sensitivity-labels/auto-labeling-failures-sharepoint-onedrive"
+        },
+        {
+          "label": "https://learn.microsoft.com/en-us/purview/auto-label-simulation-results",
+          "url": "https://learn.microsoft.com/en-us/purview/auto-label-simulation-results"
+        },
+        {
+          "label": "https://learn.microsoft.com/en-us/purview/auto-label-insights-tab",
+          "url": "https://learn.microsoft.com/en-us/purview/auto-label-insights-tab"
+        },
+        {
+          "label": "https://learn.microsoft.com/en-us/purview/sensitivity-labels-sharepoint-onedrive-files",
+          "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels-sharepoint-onedrive-files"
+        },
+        {
+          "label": "https://learn.microsoft.com/en-us/purview/sensitivity-labels-sharepoint-default-label",
+          "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels-sharepoint-default-label"
+        },
+        {
+          "label": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-autosensitivitylabelpolicy",
+          "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-autosensitivitylabelpolicy"
         }
       ]
     },
@@ -1913,10 +2051,10 @@
       "links": []
     },
     {
-      "title": "Post-quantum updates to our TLS guidance",
-      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
+      "title": "Using TLS to protect data",
+      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
+      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -1937,10 +2075,10 @@
       ]
     },
     {
-      "title": "Using TLS to protect data",
-      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
+      "title": "Post-quantum updates to our TLS guidance",
+      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
+      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
