@@ -1,13 +1,13 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-21T11:25:37.471542+00:00",
-  "totalArticles": 137,
+  "lastUpdated": "2026-10-21T16:52:45.151600+00:00",
+  "totalArticles": 136,
   "articles": [
     {
       "title": "Critical security issue affecting PHP",
       "link": "https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php",
       "published": "2026-10-21T12:00:00+00:00",
-      "summary": "The NCSC is encouraging UK organisations to prepare for immediate updating of systems using PHP.",
+      "summary": "Updated: The NCSC is encouraging UK organisations to take immediate action to mitigate a security issue affecting PHP (CVE-2026-109618 and CVE-2026-109619).",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -25,6 +25,918 @@
       ],
       "tags": [
         "NCSC Guidance"
+      ]
+    },
+    {
+      "title": "GCP-2026-070",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-070",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-10-21Description Description Severity Notes Two remote code execution vulnerabilities were found in the open-source PHP language. While Google Cloud itself is not vulnerable, users of this language running on Google Cloud may be vulnerable. The following language versions are...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-10-21Description Description Severity Notes Two remote code execution vulnerabilities were found in the open-source PHP language. While Google Cloud itself is not vulnerable, users of this language running on Google Cloud may be vulnerable. The following language versions are affected by this vulnerability: All PHP versions between 5.4 and 8.5 The following framework versions include fixes for this vulnerability: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 What should I do? Customers should take immediate action to protect their workloads by redeploying their workloads with updated dependencies. Some workloads may be automatically patched and updated to the latest PHP if they are on Google App Engine Standard or one of Cloud Run, Cloud Run functions with automatic updates enabled. See the blog post for more information. How can Google help? Customers using Artifact Analysis receive notifications of these vulnerabilities on both new and existing artifacts to help them identify at-risk workloads. Critical CVE-2026-109618 CVE-2026-109619",
+      "links": [
+        {
+          "label": "open-source PHP language",
+          "url": "https://www.php.net/archive/2026.php#2026-10-20-1"
+        },
+        {
+          "label": "blog post",
+          "url": "https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619"
+        },
+        {
+          "label": "CVE-2026-109618",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109618"
+        },
+        {
+          "label": "CVE-2026-109619",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109619"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-069",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-069",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-10-19Description Description Severity Notes Security vulnerabilities were discovered in Istio and Envoy Proxy (ISTIO-SECURITY-2026-007). For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High GHSA-w44g-8m76-8gc5 GHSA-7p2q-4xvg-vxc6...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-068",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-10-14Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action is required. This vulnerability was...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-10-14Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action is required. This vulnerability was patched on August 27, 2026. What vulnerabilities are being addressed? An authenticated user could escalate privileges and impersonate a service account in the Google Cloud project. Critical CVE-2026-85298",
+      "links": [
+        {
+          "label": "CVE-2026-85298",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-85298"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-067",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-067",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-10-12Description Description Severity Notes A Denial-of-Service (DoS) vulnerability was discovered in Envoy Proxy when an HTTP filter (such as ext_proc with route_cache_action: RETAIN) mutates the :path header after route selection on a route configured with prefix_rewrite. For...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-066",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-066",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What vulnerabilities are being addressed? An authenticated attacker could read and exfiltrate arbitrary Google-internal files using a crafted attachment path. High CVE-2026-81375",
+      "links": [
+        {
+          "label": "CVE-2026-81375",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-81375"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-065",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-065",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-09-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the JavaScript Task in Application Integration versions prior to June 28, 2026. What should I do? No customer action is required. This vulnerability was patched on June...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-09-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the JavaScript Task in Application Integration versions prior to June 28, 2026. What should I do? No customer action is required. This vulnerability was patched on June 28, 2026. What vulnerabilities are being addressed? An authenticated user with standard permissions could use a specially crafted script to run arbitrary code on the shared production servers. Critical CVE-2026-81867",
+      "links": [
+        {
+          "label": "CVE-2026-81867",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-81867"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-064",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-064",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-09-28Description Description Severity Notes An Incorrect Authorization vulnerability was discovered in the task configuration in Application Integration versions prior to June 17, 2026. What should I do? No customer action is required. This vulnerability was patched on June 17,...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-09-28Description Description Severity Notes An Incorrect Authorization vulnerability was discovered in the task configuration in Application Integration versions prior to June 17, 2026. What should I do? No customer action is required. This vulnerability was patched on June 17, 2026. What vulnerabilities are being addressed? An authenticated user could use an internal-only task type to execute arbitrary internal RPCs from the Google-internal production network under a privileged identity. Critical CVE-2026-19759",
+      "links": [
+        {
+          "label": "CVE-2026-19759",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-19759"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-063",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-063",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-09-16Description Description Severity Notes An Improper Privilege Management vulnerability in Google Security Operations SOAR was patched with version 6.3.85, and no customer action is needed. The vulnerability allowed an authenticated attacker to escalate privileges to system-level...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-09-16Description Description Severity Notes An Improper Privilege Management vulnerability in Google Security Operations SOAR was patched with version 6.3.85, and no customer action is needed. The vulnerability allowed an authenticated attacker to escalate privileges to system-level administrative access using a crafted internal authentication header. What should I do? No customer action is required. All customers have been automatically upgraded to the fixed version: 6.3.85 or higher. Critical CVE-2026-15587",
+      "links": [
+        {
+          "label": "CVE-2026-15587",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-15587"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-062",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-062",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-09-11Description Description Severity Notes Multiple security vulnerabilities were discovered in Slurm that affect Cluster Toolkit blueprints that reference specific image versions. These vulnerabilities affect the slurmstepd daemon, RPC request handling, and the accounting...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-09-11Description Description Severity Notes Multiple security vulnerabilities were discovered in Slurm that affect Cluster Toolkit blueprints that reference specific image versions. These vulnerabilities affect the slurmstepd daemon, RPC request handling, and the accounting database. What should I do? For instructions and more details, see the Cluster Toolkit security bulletin. High CVE-2026-65107 CVE-2026-65108 CVE-2026-65109 CVE-2026-65138 CVE-2026-65139 CVE-2026-65140 CVE-2026-65165 CVE-2026-65168",
+      "links": [
+        {
+          "label": "Cluster Toolkit security bulletin",
+          "url": "https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-062"
+        },
+        {
+          "label": "CVE-2026-65107",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65107"
+        },
+        {
+          "label": "CVE-2026-65108",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65108"
+        },
+        {
+          "label": "CVE-2026-65109",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65109"
+        },
+        {
+          "label": "CVE-2026-65138",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65138"
+        },
+        {
+          "label": "CVE-2026-65139",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65139"
+        },
+        {
+          "label": "CVE-2026-65140",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65140"
+        },
+        {
+          "label": "CVE-2026-65165",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65165"
+        },
+        {
+          "label": "CVE-2026-65168",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65168"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-061",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-061",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-09-09Description Description Severity Notes A security vulnerability (GHSA-p7v4-vr35-mj6f, CVE assignment pending) in containerd's CRI implementation allows a container restored from an untrusted checkpoint through the CreateContainer API to bypass the destination security context...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-09-09Description Description Severity Notes A security vulnerability (GHSA-p7v4-vr35-mj6f, CVE assignment pending) in containerd's CRI implementation allows a container restored from an untrusted checkpoint through the CreateContainer API to bypass the destination security context and execute with elevated privileges. GKE clusters are not vulnerable by default. GKE node images do not include the criu tool. What should I do? No immediate customer action is required for default clusters. If you install custom runtime software or node tools on your nodes that include the criu binary, refer to the security bulletin for recommended actions. What vulnerabilities are being addressed? For more information, see the GKE security bulletin. Medium GHSA-p7v4-vr35-mj6f",
+      "links": [
+        {
+          "label": "GHSA-p7v4-vr35-mj6f",
+          "url": "https://github.com/containerd/containerd/security/advisories/GHSA-p7v4-vr35-mj6f"
+        },
+        {
+          "label": "GKE security bulletin",
+          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-061"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-060",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-060",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-09-04Updated: 2026-09-08Description Description Severity Notes 2026-09-08 Update: Added link to the Cluster Toolkit security bulletin. A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. What...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-09-04Updated: 2026-09-08Description Description Severity Notes 2026-09-08 Update: Added link to the Cluster Toolkit security bulletin. A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. What should I do? For instructions and more details, see the following bulletins: Cluster Toolkit security bulletin Cluster Director security bulletin High CVE-2026-65107",
+      "links": [
+        {
+          "label": "Cluster Toolkit security bulletin",
+          "url": "https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-060"
+        },
+        {
+          "label": "Cluster Director security bulletin",
+          "url": "https://docs.cloud.google.com/cluster-director/docs/security-bulletins#gcp-2026-060"
+        },
+        {
+          "label": "CVE-2026-65107",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-65107"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-059",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-059",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-09-04Description Description Severity Notes A Missing Authorization vulnerability was discovered in the HTTP Connector in Integration Connectors versions prior to December 11, 2025. What should I do? No customer action is required. This vulnerability was patched on December 11,...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-09-04Description Description Severity Notes A Missing Authorization vulnerability was discovered in the HTTP Connector in Integration Connectors versions prior to December 11, 2025. What should I do? No customer action is required. This vulnerability was patched on December 11, 2025. What vulnerabilities are being addressed? An authenticated attacker could use an unauthorized service account attachment to escalate privileges and take over a Google Cloud project. High CVE-2026-4644",
+      "links": [
+        {
+          "label": "CVE-2026-4644",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4644"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-058",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-058",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-09-02Description Description Severity Notes A missing project permission check in GKE Multi-Cloud (CreateAttachedCluster, CreateAwsCluster, CreateAzureCluster) APIs allowed an attacker to register an attached cluster into an arbitrary target project's Workload Identity Federation...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-09-02Description Description Severity Notes A missing project permission check in GKE Multi-Cloud (CreateAttachedCluster, CreateAwsCluster, CreateAzureCluster) APIs allowed an attacker to register an attached cluster into an arbitrary target project's Workload Identity Federation for GKE. This registration allowed unauthorized creation of Workload Identity tokens and impersonation of Kubernetes Service Accounts that have bindings in the target project through the Workload Identity Federation for GKE configuration. For instructions and more details, see the GKE security bulletin Critical",
+      "links": [
+        {
+          "label": "GKE security bulletin",
+          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-058"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-057",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-057",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-08-26Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-08-26Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549 CVE-2026-50572 CVE-2026-73546 CVE-2026-48521 CVE-2026-73551 CVE-2026-73511 CVE-2026-73548 CVE-2026-73550 CVE-2026-73553",
+      "links": [
+        {
+          "label": "Cloud Service Mesh security bulletin",
+          "url": "https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-057"
+        },
+        {
+          "label": "CVE-2026-73513",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73513"
+        },
+        {
+          "label": "CVE-2026-73552",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73552"
+        },
+        {
+          "label": "CVE-2026-73512",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73512"
+        },
+        {
+          "label": "CVE-2026-73547",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73547"
+        },
+        {
+          "label": "CVE-2026-73549",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73549"
+        },
+        {
+          "label": "CVE-2026-50572",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-50572"
+        },
+        {
+          "label": "CVE-2026-73546",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73546"
+        },
+        {
+          "label": "CVE-2026-48521",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-48521"
+        },
+        {
+          "label": "CVE-2026-73551",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73551"
+        },
+        {
+          "label": "CVE-2026-73511",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73511"
+        },
+        {
+          "label": "CVE-2026-73548",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73548"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-056",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-056",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-08-26Description Description Severity Notes An Improper Input Validation vulnerability was discovered in the JDBC driver in BigQuery Data Transfer Service versions prior to May 1, 2026. What should I do? No customer action is required. This vulnerability was patched on May 1, 2026....",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-08-26Description Description Severity Notes An Improper Input Validation vulnerability was discovered in the JDBC driver in BigQuery Data Transfer Service versions prior to May 1, 2026. What should I do? No customer action is required. This vulnerability was patched on May 1, 2026. What vulnerabilities are being addressed? An authenticated attacker could use crafted JDBC connection string parameters to achieve remote code execution in the connector container and escalate privileges in the tenant project. Critical CVE-2026-12717",
+      "links": [
+        {
+          "label": "JDBC driver",
+          "url": "https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery"
+        },
+        {
+          "label": "CVE-2026-12717",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-12717"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-055",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-055",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-08-25Description Description Severity Notes A critical unauthenticated Remote Code Execution (RCE) vulnerability exists in Next.js and libheif when processing malicious image files. Google Cloud infrastructure is not directly vulnerable, but customer workloads running Next.js on...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-08-25Description Description Severity Notes A critical unauthenticated Remote Code Execution (RCE) vulnerability exists in Next.js and libheif when processing malicious image files. Google Cloud infrastructure is not directly vulnerable, but customer workloads running Next.js on Google Cloud (e.g., Cloud Run, GKE, App Engine) may be affected. What should I do? Google Cloud backend services are not directly impacted, and no action is required to secure the underlying Google Cloud infrastructure. However, customers hosting Next.js applications on Google Cloud must take immediate action to secure their own workloads. We recommend that you manually upgrade your Next.js deployments to one of the following versions (or later) in your package.json: 16.3.3 15.5.24 Customers utilizing libheif should monitor for upstream OS patches and rebuild their container base images accordingly. Redeploy your updated workloads to ensure running containers utilize the patched versions. What vulnerabilities are being addressed? The vulnerabilities, GHSA-2xp9-vwfh-vxw4 and GHSA-g89c-p67h-r497, allow an attacker to execute arbitrary code within the context of the application by supplying a crafted image file during Next.js image optimization. This issue occurs due to how the underlying libheif library processes clean aperture boxes in HEIF/AVIF images. High GHSA-2xp9-vwfh-vxw4 GHSA-g89c-p67h-r497",
+      "links": [
+        {
+          "label": "GHSA-2xp9-vwfh-vxw4",
+          "url": "https://github.com/vercel/next.js/security/advisories/GHSA-2xp9-vwfh-vxw4"
+        },
+        {
+          "label": "GHSA-g89c-p67h-r497",
+          "url": "https://github.com/strukturag/libheif/security/advisories/GHSA-g89c-p67h-r497"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-054",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-054",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-08-11Description Description Severity Notes A vulnerability (CVE-2026-6726, also known as TCGVRT0010) has been identified in the Trusted Computing Group's TPM 2.0 reference implementation code, affecting all published revisions of the code (v1.16, v1.38, v1.59, v1.83, v184). What...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-08-11Description Description Severity Notes A vulnerability (CVE-2026-6726, also known as TCGVRT0010) has been identified in the Trusted Computing Group's TPM 2.0 reference implementation code, affecting all published revisions of the code (v1.16, v1.38, v1.59, v1.83, v184). What should I do? No customer action is required. Google will proactively update your systems during your standard and planned maintenance windows. What vulnerabilities are being addressed? For more information, see the Compute Engine security bulletin. High CVE-2026-6726",
+      "links": [
+        {
+          "label": "Compute Engine security bulletin",
+          "url": "https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-054"
+        },
+        {
+          "label": "CVE-2026-6726",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-6726"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-053",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-053",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-08-11Description Description Severity Notes Google is aware of several security vulnerabilities affecting Intel® Trust Domain Extensions (TDX) firmware that can compromise confidential guest integrity. These vulnerabilities could allow a privileged host adversary to bypass...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-08-11Description Description Severity Notes Google is aware of several security vulnerabilities affecting Intel® Trust Domain Extensions (TDX) firmware that can compromise confidential guest integrity. These vulnerabilities could allow a privileged host adversary to bypass attestation checks, access restricted registers, or decrypt normally protected guest memory. What Google products are affected? All Confidential VM instances relying on Intel TDX technology. What should I do? Google has proactively applied these firmware upgrades to our server fleet to mitigate these vulnerabilities. No action is required for customers that did not receive a separate direct advisory to upgrade. For more information, see Intel's PSIRT technical advisories: INTEL-TA-01404, INTEL-TA-01428, INTEL-TA-01419, INTEL-TA-01439, INTEL-TA-01442, INTEL-TA-01436. High CVE-2025-31938 CVE-2025-35973 CVE-2025-31356 CVE-2026-20898 CVE-2026-20713 CVE-2026-20901 CVE-2026-20885 CVE-2026-20705 CVE-2026-20775",
+      "links": [
+        {
+          "label": "INTEL-TA-01404",
+          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01404.html"
+        },
+        {
+          "label": "INTEL-TA-01428",
+          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01428.html"
+        },
+        {
+          "label": "INTEL-TA-01419",
+          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01419.html"
+        },
+        {
+          "label": "INTEL-TA-01439",
+          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01439.html"
+        },
+        {
+          "label": "INTEL-TA-01442",
+          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01442.html"
+        },
+        {
+          "label": "INTEL-TA-01436",
+          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01436.html"
+        },
+        {
+          "label": "CVE-2025-31938",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31938"
+        },
+        {
+          "label": "CVE-2025-35973",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-35973"
+        },
+        {
+          "label": "CVE-2025-31356",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31356"
+        },
+        {
+          "label": "CVE-2026-20898",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20898"
+        },
+        {
+          "label": "CVE-2026-20713",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20713"
+        },
+        {
+          "label": "CVE-2026-20901",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20901"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-052",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-052",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-08-07Description Description Severity Notes A security vulnerability has been identified in the Kernel-based Virtual Machine (KVM) x86 shadow Memory Management Unit (MMU) impacting both Intel and AMD platforms. What should I do? No action is required for managed Compute Engine...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-08-07Description Description Severity Notes A security vulnerability has been identified in the Kernel-based Virtual Machine (KVM) x86 shadow Memory Management Unit (MMU) impacting both Intel and AMD platforms. What should I do? No action is required for managed Compute Engine virtual machines. Because the vulnerability resides in the host hypervisor, Google has mitigated all affected Intel and AMD-based host infrastructure transparently via live patching without requiring customer VM downtime, reboots, or manual upgrades. If you operate self-managed virtualized environments or custom host hypervisors outside standard managed Compute Engine infrastructure, you should ensure your host Linux kernel is updated with the upstream patch as soon as it is made available by your operating system distribution vendor. What vulnerabilities are being addressed? This is a KVM vulnerability that could lead to a VM escape. There has been no active exploitation observed, and this is a proactive patching effort. None CVE-2026-64561",
+      "links": [
+        {
+          "label": "CVE-2026-64561",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-64561"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-051",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-051",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-07-31Description2026-08-04 Update: The VMware patch release version is 1.33.1200, not 1.33.1100 as stated in the initial bulletin. Description Severity The following vulnerabilities have been discovered in containerd (the GDC container runtime). These vulnerabilities allow attackers...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-07-31Description2026-08-04 Update: The VMware patch release version is 1.33.1200, not 1.33.1100 as stated in the initial bulletin. Description Severity The following vulnerabilities have been discovered in containerd (the GDC container runtime). These vulnerabilities allow attackers with permissions to create Pods to bypass Kubernetes security boundaries and perform host compromise, cache poisoning, and denial of service. While these vulnerabilities are critical in the context of containerd, the requirement to have cluster privileges to create Pods to exploit them means they are considered High according to GDC (software only) vulnerability classification. CVE-2026-50195 (Critical): containerd's CRI checkpoint import process fails to validate image references. An attacker with permissions to create Pods can use a crafted checkpoint image to poison the node's local image cache, causing other pods to use a malicious image. CVE-2026-53488 (Critical): CRI plugin propagates labels from an image config to a container without validation. This may result in executing an arbitrary command on the host. CVE-2026-53492 (Critical): CRI implementation improperly trusts Container Device Interface (CDI) annotations during container restoration. This allows an attacker to inject arbitrary CDI configurations (such as host mounts and device nodes) into restored containers, bypassing resource allocation and device plugin enforcement. CVE-2026-53489 (High): CRI plugin restores container.log without validating a symlinked path, allowing an attacker to read arbitrary host files via kubectl logs. CVE-2026-47262 (Moderate): A vulnerability in containerd allows a maliciously crafted image to cause memory exhaustion (DoS) of the containerd process. These vulnerabilities affect all GDC (software only) configurations using Ubuntu node images. What should I do? For GDC software only on bare metal, the following patches will contain fixes for the vulnerabilities issue: 1.34.800 1.33.1100 For GDC software only on VMware, the following patches will contain fixes for the vulnerabilities: 1.34.800 1.33.1200 High",
+      "links": []
+    },
+    {
+      "title": "GCP-2026-050",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-050",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-07-29Description Description Severity Notes Per advisory VMSA-2026-0006, multiple vulnerabilities in VMware ESXi, and vCenter were privately reported to Broadcom. We are in the process of applying the necessary patches supplied by Broadcom. There are no known workarounds for these...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-07-29Description Description Severity Notes Per advisory VMSA-2026-0006, multiple vulnerabilities in VMware ESXi, and vCenter were privately reported to Broadcom. We are in the process of applying the necessary patches supplied by Broadcom. There are no known workarounds for these reported vulnerabilities. Once patched, your VMware Engine deployments should be running vCenter and ESXi 8.0 U3k. What should I do? Google recommends customers to monitor their workloads on VMware Engine for any unusual activities. Critical VMSA-2026-0006 CVE-2026-59309 CVE-2026-59310 CVE-2026-47876 CVE-2026-41703 CVE-2026-41709",
+      "links": [
+        {
+          "label": "VMSA-2026-0006",
+          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/38017"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-049",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-049",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-07-22Description Description Severity Notes A reflected Cross-Site Scripting (XSS) vulnerability was discovered in Google Cloud Looker. An attacker could craft a malicious URL that, when opened by an authenticated administrator, would allow the attacker to execute arbitrary scripts...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-07-22Description Description Severity Notes A reflected Cross-Site Scripting (XSS) vulnerability was discovered in Google Cloud Looker. An attacker could craft a malicious URL that, when opened by an authenticated administrator, would allow the attacker to execute arbitrary scripts on their behalf and potentially compromise the administrator account. What should I do? For Looker-hosted instances, no action is required. For self-hosted Looker instances, update your Looker instances as soon as possible. This vulnerability has been patched in all supported versions of Looker for self-hosted instances. The following versions have all been updated to fix this vulnerability: Looker 26.8.7 and all later versions Looker 26.6.28+ Looker 26.4.36+ Looker 26.2.47+ Looker 26.0.66+ Looker 25.18.68+ Looker 25.12.65+ Looker 25.6.103+ What vulnerabilities are being addressed? For more information, see CVE-2026-15810. High CVE-2026-15810",
+      "links": [
+        {
+          "label": "CVE-2026-15810",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-15810"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-048",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-048",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-07-13Description Description Severity Notes A privilege escalation vulnerability was addressed in Developer Connect. Previously, for GitLab Enterprise and Bitbucket Data Center connections, when Secret Manager secrets were retrieved, permissions were checked against the Developer...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-07-13Description Description Severity Notes A privilege escalation vulnerability was addressed in Developer Connect. Previously, for GitLab Enterprise and Bitbucket Data Center connections, when Secret Manager secrets were retrieved, permissions were checked against the Developer Connect service agent (P4SA) credentials only. Developer Connect now validates that both the calling principal and the P4SA have the required permissions on the referenced secrets. For instructions and more details, see the Developer Connect security bulletin. Medium",
+      "links": [
+        {
+          "label": "Developer Connect security bulletin",
+          "url": "https://docs.cloud.google.com/developer-connect/docs/security-bulletins#gcp-2026-048"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-047",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-047",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-07-13Description Description Severity Notes A Missing Authorization vulnerability was discovered in repositories in BigQuery, Dataform, and Colab Enterprise. What should I do? No customer action is required. Google has already applied mitigations to all impacted products and...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-07-13Description Description Severity Notes A Missing Authorization vulnerability was discovered in repositories in BigQuery, Dataform, and Colab Enterprise. What should I do? No customer action is required. Google has already applied mitigations to all impacted products and services. What vulnerabilities are being addressed? During repository creation, an authenticated attacker could potentially escalate their permissions and perform cross-tenant repository takeover. Critical CVE-2026-14934",
+      "links": [
+        {
+          "label": "CVE-2026-14934",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-14934"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-046",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-046",
+      "published": "2026-10-21T04:49:22+00:00",
+      "summary": "Published: 2026-07-06Description Description Severity Notes A virtualization vulnerability has been identified in the KVM x86 shadow paging and nested virtualization configurations. Because an attacker operating a virtual machine with nested virtualization could escape hypervisor boundary isolation...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-07-06Description Description Severity Notes A virtualization vulnerability has been identified in the KVM x86 shadow paging and nested virtualization configurations. Because an attacker operating a virtual machine with nested virtualization could escape hypervisor boundary isolation to compromise the underlying physical host, any x86 virtual machine (whether nested or non-nested) hosted on an Intel-based server supporting nested virtualization is potentially exposed. What should I do? Google is deploying live hypervisor hotpatches across all managed Compute Engine host servers globally. No action is required for managed Compute Engine virtual machines or Google Kubernetes Engine clusters. Because remediation is performed transparently at the physical host hypervisor level, customer VM downtime, reboots, or manual upgrades are not required. Customers operating self-managed virtualized environments or custom host hypervisors outside standard managed Compute Engine infrastructure should ensure their host Linux kernel is updated with the upstream patch as soon as it is made available by their operating system vendor. What vulnerabilities are being addressed? The vulnerability (CVE-2026-53359) exploits a use-after-free error in the x86 shadow paging and nested page table translation routines. Google has observed no evidence of active customer exploitation in production environments. Live patching and host-level monitoring have been implemented globally to mitigate risk and detect exploit attempts. High/S0 CVE-2026-53359 (Januscape)",
+      "links": [
+        {
+          "label": "CVE-2026-53359",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-53359"
+        }
       ]
     },
     {
@@ -575,899 +1487,6 @@
           "label": "Security blog",
           "url": "https://www.microsoft.com/security/blog/"
         }
-      ]
-    },
-    {
-      "title": "GCP-2026-069",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-069",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-10-19Description Description Severity Notes Security vulnerabilities were discovered in Istio and Envoy Proxy (ISTIO-SECURITY-2026-007). For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High GHSA-w44g-8m76-8gc5 GHSA-7p2q-4xvg-vxc6...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-068",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-10-14Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action is required. This vulnerability was...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-10-14Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action is required. This vulnerability was patched on August 27, 2026. What vulnerabilities are being addressed? An authenticated user could escalate privileges and impersonate a service account in the Google Cloud project. Critical CVE-2026-85298",
-      "links": [
-        {
-          "label": "CVE-2026-85298",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-85298"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-067",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-067",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-10-12Description Description Severity Notes A Denial-of-Service (DoS) vulnerability was discovered in Envoy Proxy when an HTTP filter (such as ext_proc with route_cache_action: RETAIN) mutates the :path header after route selection on a route configured with prefix_rewrite. For...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-066",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-066",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What vulnerabilities are being addressed? An authenticated attacker could read and exfiltrate arbitrary Google-internal files using a crafted attachment path. High CVE-2026-81375",
-      "links": [
-        {
-          "label": "CVE-2026-81375",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-81375"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-065",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-065",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-09-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the JavaScript Task in Application Integration versions prior to June 28, 2026. What should I do? No customer action is required. This vulnerability was patched on June...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the JavaScript Task in Application Integration versions prior to June 28, 2026. What should I do? No customer action is required. This vulnerability was patched on June 28, 2026. What vulnerabilities are being addressed? An authenticated user with standard permissions could use a specially crafted script to run arbitrary code on the shared production servers. Critical CVE-2026-81867",
-      "links": [
-        {
-          "label": "CVE-2026-81867",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-81867"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-064",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-064",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-09-28Description Description Severity Notes An Incorrect Authorization vulnerability was discovered in the task configuration in Application Integration versions prior to June 17, 2026. What should I do? No customer action is required. This vulnerability was patched on June 17,...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-28Description Description Severity Notes An Incorrect Authorization vulnerability was discovered in the task configuration in Application Integration versions prior to June 17, 2026. What should I do? No customer action is required. This vulnerability was patched on June 17, 2026. What vulnerabilities are being addressed? An authenticated user could use an internal-only task type to execute arbitrary internal RPCs from the Google-internal production network under a privileged identity. Critical CVE-2026-19759",
-      "links": [
-        {
-          "label": "CVE-2026-19759",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-19759"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-063",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-063",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-09-16Description Description Severity Notes An Improper Privilege Management vulnerability in Google Security Operations SOAR was patched with version 6.3.85, and no customer action is needed. The vulnerability allowed an authenticated attacker to escalate privileges to system-level...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-16Description Description Severity Notes An Improper Privilege Management vulnerability in Google Security Operations SOAR was patched with version 6.3.85, and no customer action is needed. The vulnerability allowed an authenticated attacker to escalate privileges to system-level administrative access using a crafted internal authentication header. What should I do? No customer action is required. All customers have been automatically upgraded to the fixed version: 6.3.85 or higher. Critical CVE-2026-15587",
-      "links": [
-        {
-          "label": "CVE-2026-15587",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-15587"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-062",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-062",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-09-11Description Description Severity Notes Multiple security vulnerabilities were discovered in Slurm that affect Cluster Toolkit blueprints that reference specific image versions. These vulnerabilities affect the slurmstepd daemon, RPC request handling, and the accounting...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-11Description Description Severity Notes Multiple security vulnerabilities were discovered in Slurm that affect Cluster Toolkit blueprints that reference specific image versions. These vulnerabilities affect the slurmstepd daemon, RPC request handling, and the accounting database. What should I do? For instructions and more details, see the Cluster Toolkit security bulletin. High CVE-2026-65107 CVE-2026-65108 CVE-2026-65109 CVE-2026-65138 CVE-2026-65139 CVE-2026-65140 CVE-2026-65165 CVE-2026-65168",
-      "links": [
-        {
-          "label": "Cluster Toolkit security bulletin",
-          "url": "https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-062"
-        },
-        {
-          "label": "CVE-2026-65107",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65107"
-        },
-        {
-          "label": "CVE-2026-65108",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65108"
-        },
-        {
-          "label": "CVE-2026-65109",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65109"
-        },
-        {
-          "label": "CVE-2026-65138",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65138"
-        },
-        {
-          "label": "CVE-2026-65139",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65139"
-        },
-        {
-          "label": "CVE-2026-65140",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65140"
-        },
-        {
-          "label": "CVE-2026-65165",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65165"
-        },
-        {
-          "label": "CVE-2026-65168",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65168"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-061",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-061",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-09-09Description Description Severity Notes A security vulnerability (GHSA-p7v4-vr35-mj6f, CVE assignment pending) in containerd's CRI implementation allows a container restored from an untrusted checkpoint through the CreateContainer API to bypass the destination security context...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-09Description Description Severity Notes A security vulnerability (GHSA-p7v4-vr35-mj6f, CVE assignment pending) in containerd's CRI implementation allows a container restored from an untrusted checkpoint through the CreateContainer API to bypass the destination security context and execute with elevated privileges. GKE clusters are not vulnerable by default. GKE node images do not include the criu tool. What should I do? No immediate customer action is required for default clusters. If you install custom runtime software or node tools on your nodes that include the criu binary, refer to the security bulletin for recommended actions. What vulnerabilities are being addressed? For more information, see the GKE security bulletin. Medium GHSA-p7v4-vr35-mj6f",
-      "links": [
-        {
-          "label": "GHSA-p7v4-vr35-mj6f",
-          "url": "https://github.com/containerd/containerd/security/advisories/GHSA-p7v4-vr35-mj6f"
-        },
-        {
-          "label": "GKE security bulletin",
-          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-061"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-060",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-060",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-09-04Updated: 2026-09-08Description Description Severity Notes 2026-09-08 Update: Added link to the Cluster Toolkit security bulletin. A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. What...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-04Updated: 2026-09-08Description Description Severity Notes 2026-09-08 Update: Added link to the Cluster Toolkit security bulletin. A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. What should I do? For instructions and more details, see the following bulletins: Cluster Toolkit security bulletin Cluster Director security bulletin High CVE-2026-65107",
-      "links": [
-        {
-          "label": "Cluster Toolkit security bulletin",
-          "url": "https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-060"
-        },
-        {
-          "label": "Cluster Director security bulletin",
-          "url": "https://docs.cloud.google.com/cluster-director/docs/security-bulletins#gcp-2026-060"
-        },
-        {
-          "label": "CVE-2026-65107",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-65107"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-059",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-059",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-09-04Description Description Severity Notes A Missing Authorization vulnerability was discovered in the HTTP Connector in Integration Connectors versions prior to December 11, 2025. What should I do? No customer action is required. This vulnerability was patched on December 11,...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-04Description Description Severity Notes A Missing Authorization vulnerability was discovered in the HTTP Connector in Integration Connectors versions prior to December 11, 2025. What should I do? No customer action is required. This vulnerability was patched on December 11, 2025. What vulnerabilities are being addressed? An authenticated attacker could use an unauthorized service account attachment to escalate privileges and take over a Google Cloud project. High CVE-2026-4644",
-      "links": [
-        {
-          "label": "CVE-2026-4644",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4644"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-058",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-058",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-09-02Description Description Severity Notes A missing project permission check in GKE Multi-Cloud (CreateAttachedCluster, CreateAwsCluster, CreateAzureCluster) APIs allowed an attacker to register an attached cluster into an arbitrary target project's Workload Identity Federation...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-02Description Description Severity Notes A missing project permission check in GKE Multi-Cloud (CreateAttachedCluster, CreateAwsCluster, CreateAzureCluster) APIs allowed an attacker to register an attached cluster into an arbitrary target project's Workload Identity Federation for GKE. This registration allowed unauthorized creation of Workload Identity tokens and impersonation of Kubernetes Service Accounts that have bindings in the target project through the Workload Identity Federation for GKE configuration. For instructions and more details, see the GKE security bulletin Critical",
-      "links": [
-        {
-          "label": "GKE security bulletin",
-          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-058"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-057",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-057",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-08-26Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-08-26Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549 CVE-2026-50572 CVE-2026-73546 CVE-2026-48521 CVE-2026-73551 CVE-2026-73511 CVE-2026-73548 CVE-2026-73550 CVE-2026-73553",
-      "links": [
-        {
-          "label": "Cloud Service Mesh security bulletin",
-          "url": "https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-057"
-        },
-        {
-          "label": "CVE-2026-73513",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73513"
-        },
-        {
-          "label": "CVE-2026-73552",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73552"
-        },
-        {
-          "label": "CVE-2026-73512",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73512"
-        },
-        {
-          "label": "CVE-2026-73547",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73547"
-        },
-        {
-          "label": "CVE-2026-73549",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73549"
-        },
-        {
-          "label": "CVE-2026-50572",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-50572"
-        },
-        {
-          "label": "CVE-2026-73546",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73546"
-        },
-        {
-          "label": "CVE-2026-48521",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-48521"
-        },
-        {
-          "label": "CVE-2026-73551",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73551"
-        },
-        {
-          "label": "CVE-2026-73511",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73511"
-        },
-        {
-          "label": "CVE-2026-73548",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-73548"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-056",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-056",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-08-26Description Description Severity Notes An Improper Input Validation vulnerability was discovered in the JDBC driver in BigQuery Data Transfer Service versions prior to May 1, 2026. What should I do? No customer action is required. This vulnerability was patched on May 1, 2026....",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-08-26Description Description Severity Notes An Improper Input Validation vulnerability was discovered in the JDBC driver in BigQuery Data Transfer Service versions prior to May 1, 2026. What should I do? No customer action is required. This vulnerability was patched on May 1, 2026. What vulnerabilities are being addressed? An authenticated attacker could use crafted JDBC connection string parameters to achieve remote code execution in the connector container and escalate privileges in the tenant project. Critical CVE-2026-12717",
-      "links": [
-        {
-          "label": "JDBC driver",
-          "url": "https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery"
-        },
-        {
-          "label": "CVE-2026-12717",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-12717"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-055",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-055",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-08-25Description Description Severity Notes A critical unauthenticated Remote Code Execution (RCE) vulnerability exists in Next.js and libheif when processing malicious image files. Google Cloud infrastructure is not directly vulnerable, but customer workloads running Next.js on...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-08-25Description Description Severity Notes A critical unauthenticated Remote Code Execution (RCE) vulnerability exists in Next.js and libheif when processing malicious image files. Google Cloud infrastructure is not directly vulnerable, but customer workloads running Next.js on Google Cloud (e.g., Cloud Run, GKE, App Engine) may be affected. What should I do? Google Cloud backend services are not directly impacted, and no action is required to secure the underlying Google Cloud infrastructure. However, customers hosting Next.js applications on Google Cloud must take immediate action to secure their own workloads. We recommend that you manually upgrade your Next.js deployments to one of the following versions (or later) in your package.json: 16.3.3 15.5.24 Customers utilizing libheif should monitor for upstream OS patches and rebuild their container base images accordingly. Redeploy your updated workloads to ensure running containers utilize the patched versions. What vulnerabilities are being addressed? The vulnerabilities, GHSA-2xp9-vwfh-vxw4 and GHSA-g89c-p67h-r497, allow an attacker to execute arbitrary code within the context of the application by supplying a crafted image file during Next.js image optimization. This issue occurs due to how the underlying libheif library processes clean aperture boxes in HEIF/AVIF images. High GHSA-2xp9-vwfh-vxw4 GHSA-g89c-p67h-r497",
-      "links": [
-        {
-          "label": "GHSA-2xp9-vwfh-vxw4",
-          "url": "https://github.com/vercel/next.js/security/advisories/GHSA-2xp9-vwfh-vxw4"
-        },
-        {
-          "label": "GHSA-g89c-p67h-r497",
-          "url": "https://github.com/strukturag/libheif/security/advisories/GHSA-g89c-p67h-r497"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-054",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-054",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-08-11Description Description Severity Notes A vulnerability (CVE-2026-6726, also known as TCGVRT0010) has been identified in the Trusted Computing Group's TPM 2.0 reference implementation code, affecting all published revisions of the code (v1.16, v1.38, v1.59, v1.83, v184). What...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-08-11Description Description Severity Notes A vulnerability (CVE-2026-6726, also known as TCGVRT0010) has been identified in the Trusted Computing Group's TPM 2.0 reference implementation code, affecting all published revisions of the code (v1.16, v1.38, v1.59, v1.83, v184). What should I do? No customer action is required. Google will proactively update your systems during your standard and planned maintenance windows. What vulnerabilities are being addressed? For more information, see the Compute Engine security bulletin. High CVE-2026-6726",
-      "links": [
-        {
-          "label": "Compute Engine security bulletin",
-          "url": "https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-054"
-        },
-        {
-          "label": "CVE-2026-6726",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-6726"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-053",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-053",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-08-11Description Description Severity Notes Google is aware of several security vulnerabilities affecting Intel® Trust Domain Extensions (TDX) firmware that can compromise confidential guest integrity. These vulnerabilities could allow a privileged host adversary to bypass...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-08-11Description Description Severity Notes Google is aware of several security vulnerabilities affecting Intel® Trust Domain Extensions (TDX) firmware that can compromise confidential guest integrity. These vulnerabilities could allow a privileged host adversary to bypass attestation checks, access restricted registers, or decrypt normally protected guest memory. What Google products are affected? All Confidential VM instances relying on Intel TDX technology. What should I do? Google has proactively applied these firmware upgrades to our server fleet to mitigate these vulnerabilities. No action is required for customers that did not receive a separate direct advisory to upgrade. For more information, see Intel's PSIRT technical advisories: INTEL-TA-01404, INTEL-TA-01428, INTEL-TA-01419, INTEL-TA-01439, INTEL-TA-01442, INTEL-TA-01436. High CVE-2025-31938 CVE-2025-35973 CVE-2025-31356 CVE-2026-20898 CVE-2026-20713 CVE-2026-20901 CVE-2026-20885 CVE-2026-20705 CVE-2026-20775",
-      "links": [
-        {
-          "label": "INTEL-TA-01404",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01404.html"
-        },
-        {
-          "label": "INTEL-TA-01428",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01428.html"
-        },
-        {
-          "label": "INTEL-TA-01419",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01419.html"
-        },
-        {
-          "label": "INTEL-TA-01439",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01439.html"
-        },
-        {
-          "label": "INTEL-TA-01442",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01442.html"
-        },
-        {
-          "label": "INTEL-TA-01436",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01436.html"
-        },
-        {
-          "label": "CVE-2025-31938",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31938"
-        },
-        {
-          "label": "CVE-2025-35973",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-35973"
-        },
-        {
-          "label": "CVE-2025-31356",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31356"
-        },
-        {
-          "label": "CVE-2026-20898",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20898"
-        },
-        {
-          "label": "CVE-2026-20713",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20713"
-        },
-        {
-          "label": "CVE-2026-20901",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20901"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-052",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-052",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-08-07Description Description Severity Notes A security vulnerability has been identified in the Kernel-based Virtual Machine (KVM) x86 shadow Memory Management Unit (MMU) impacting both Intel and AMD platforms. What should I do? No action is required for managed Compute Engine...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-08-07Description Description Severity Notes A security vulnerability has been identified in the Kernel-based Virtual Machine (KVM) x86 shadow Memory Management Unit (MMU) impacting both Intel and AMD platforms. What should I do? No action is required for managed Compute Engine virtual machines. Because the vulnerability resides in the host hypervisor, Google has mitigated all affected Intel and AMD-based host infrastructure transparently via live patching without requiring customer VM downtime, reboots, or manual upgrades. If you operate self-managed virtualized environments or custom host hypervisors outside standard managed Compute Engine infrastructure, you should ensure your host Linux kernel is updated with the upstream patch as soon as it is made available by your operating system distribution vendor. What vulnerabilities are being addressed? This is a KVM vulnerability that could lead to a VM escape. There has been no active exploitation observed, and this is a proactive patching effort. None CVE-2026-64561",
-      "links": [
-        {
-          "label": "CVE-2026-64561",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-64561"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-051",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-051",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-07-31Description2026-08-04 Update: The VMware patch release version is 1.33.1200, not 1.33.1100 as stated in the initial bulletin. Description Severity The following vulnerabilities have been discovered in containerd (the GDC container runtime). These vulnerabilities allow attackers...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-07-31Description2026-08-04 Update: The VMware patch release version is 1.33.1200, not 1.33.1100 as stated in the initial bulletin. Description Severity The following vulnerabilities have been discovered in containerd (the GDC container runtime). These vulnerabilities allow attackers with permissions to create Pods to bypass Kubernetes security boundaries and perform host compromise, cache poisoning, and denial of service. While these vulnerabilities are critical in the context of containerd, the requirement to have cluster privileges to create Pods to exploit them means they are considered High according to GDC (software only) vulnerability classification. CVE-2026-50195 (Critical): containerd's CRI checkpoint import process fails to validate image references. An attacker with permissions to create Pods can use a crafted checkpoint image to poison the node's local image cache, causing other pods to use a malicious image. CVE-2026-53488 (Critical): CRI plugin propagates labels from an image config to a container without validation. This may result in executing an arbitrary command on the host. CVE-2026-53492 (Critical): CRI implementation improperly trusts Container Device Interface (CDI) annotations during container restoration. This allows an attacker to inject arbitrary CDI configurations (such as host mounts and device nodes) into restored containers, bypassing resource allocation and device plugin enforcement. CVE-2026-53489 (High): CRI plugin restores container.log without validating a symlinked path, allowing an attacker to read arbitrary host files via kubectl logs. CVE-2026-47262 (Moderate): A vulnerability in containerd allows a maliciously crafted image to cause memory exhaustion (DoS) of the containerd process. These vulnerabilities affect all GDC (software only) configurations using Ubuntu node images. What should I do? For GDC software only on bare metal, the following patches will contain fixes for the vulnerabilities issue: 1.34.800 1.33.1100 For GDC software only on VMware, the following patches will contain fixes for the vulnerabilities: 1.34.800 1.33.1200 High",
-      "links": []
-    },
-    {
-      "title": "GCP-2026-050",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-050",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-07-29Description Description Severity Notes Per advisory VMSA-2026-0006, multiple vulnerabilities in VMware ESXi, and vCenter were privately reported to Broadcom. We are in the process of applying the necessary patches supplied by Broadcom. There are no known workarounds for these...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-07-29Description Description Severity Notes Per advisory VMSA-2026-0006, multiple vulnerabilities in VMware ESXi, and vCenter were privately reported to Broadcom. We are in the process of applying the necessary patches supplied by Broadcom. There are no known workarounds for these reported vulnerabilities. Once patched, your VMware Engine deployments should be running vCenter and ESXi 8.0 U3k. What should I do? Google recommends customers to monitor their workloads on VMware Engine for any unusual activities. Critical VMSA-2026-0006 CVE-2026-59309 CVE-2026-59310 CVE-2026-47876 CVE-2026-41703 CVE-2026-41709",
-      "links": [
-        {
-          "label": "VMSA-2026-0006",
-          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/38017"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-049",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-049",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-07-22Description Description Severity Notes A reflected Cross-Site Scripting (XSS) vulnerability was discovered in Google Cloud Looker. An attacker could craft a malicious URL that, when opened by an authenticated administrator, would allow the attacker to execute arbitrary scripts...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-07-22Description Description Severity Notes A reflected Cross-Site Scripting (XSS) vulnerability was discovered in Google Cloud Looker. An attacker could craft a malicious URL that, when opened by an authenticated administrator, would allow the attacker to execute arbitrary scripts on their behalf and potentially compromise the administrator account. What should I do? For Looker-hosted instances, no action is required. For self-hosted Looker instances, update your Looker instances as soon as possible. This vulnerability has been patched in all supported versions of Looker for self-hosted instances. The following versions have all been updated to fix this vulnerability: Looker 26.8.7 and all later versions Looker 26.6.28+ Looker 26.4.36+ Looker 26.2.47+ Looker 26.0.66+ Looker 25.18.68+ Looker 25.12.65+ Looker 25.6.103+ What vulnerabilities are being addressed? For more information, see CVE-2026-15810. High CVE-2026-15810",
-      "links": [
-        {
-          "label": "CVE-2026-15810",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-15810"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-048",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-048",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-07-13Description Description Severity Notes A privilege escalation vulnerability was addressed in Developer Connect. Previously, for GitLab Enterprise and Bitbucket Data Center connections, when Secret Manager secrets were retrieved, permissions were checked against the Developer...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-07-13Description Description Severity Notes A privilege escalation vulnerability was addressed in Developer Connect. Previously, for GitLab Enterprise and Bitbucket Data Center connections, when Secret Manager secrets were retrieved, permissions were checked against the Developer Connect service agent (P4SA) credentials only. Developer Connect now validates that both the calling principal and the P4SA have the required permissions on the referenced secrets. For instructions and more details, see the Developer Connect security bulletin. Medium",
-      "links": [
-        {
-          "label": "Developer Connect security bulletin",
-          "url": "https://docs.cloud.google.com/developer-connect/docs/security-bulletins#gcp-2026-048"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-047",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-047",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-07-13Description Description Severity Notes A Missing Authorization vulnerability was discovered in repositories in BigQuery, Dataform, and Colab Enterprise. What should I do? No customer action is required. Google has already applied mitigations to all impacted products and...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-07-13Description Description Severity Notes A Missing Authorization vulnerability was discovered in repositories in BigQuery, Dataform, and Colab Enterprise. What should I do? No customer action is required. Google has already applied mitigations to all impacted products and services. What vulnerabilities are being addressed? During repository creation, an authenticated attacker could potentially escalate their permissions and perform cross-tenant repository takeover. Critical CVE-2026-14934",
-      "links": [
-        {
-          "label": "CVE-2026-14934",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-14934"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-046",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-046",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-07-06Description Description Severity Notes A virtualization vulnerability has been identified in the KVM x86 shadow paging and nested virtualization configurations. Because an attacker operating a virtual machine with nested virtualization could escape hypervisor boundary isolation...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-07-06Description Description Severity Notes A virtualization vulnerability has been identified in the KVM x86 shadow paging and nested virtualization configurations. Because an attacker operating a virtual machine with nested virtualization could escape hypervisor boundary isolation to compromise the underlying physical host, any x86 virtual machine (whether nested or non-nested) hosted on an Intel-based server supporting nested virtualization is potentially exposed. What should I do? Google is deploying live hypervisor hotpatches across all managed Compute Engine host servers globally. No action is required for managed Compute Engine virtual machines or Google Kubernetes Engine clusters. Because remediation is performed transparently at the physical host hypervisor level, customer VM downtime, reboots, or manual upgrades are not required. Customers operating self-managed virtualized environments or custom host hypervisors outside standard managed Compute Engine infrastructure should ensure their host Linux kernel is updated with the upstream patch as soon as it is made available by their operating system vendor. What vulnerabilities are being addressed? The vulnerability (CVE-2026-53359) exploits a use-after-free error in the x86 shadow paging and nested page table translation routines. Google has observed no evidence of active customer exploitation in production environments. Live patching and host-level monitoring have been implemented globally to mitigate risk and detect exploit attempts. High/S0 CVE-2026-53359 (Januscape)",
-      "links": [
-        {
-          "label": "CVE-2026-53359",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-53359"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-045",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-045",
-      "published": "2026-10-19T08:26:41+00:00",
-      "summary": "Published: 2026-06-29Description Description Severity Notes A vulnerability was detected in Envoy Proxy where blocked QPACK decoding can cause a Denial-of-Service Attack against the HTTP/3 stack. For instructions and more details, see the Cloud Service Mesh security bulletin. High...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
       ]
     },
     {
@@ -5346,30 +5365,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "One does not simply defend agentically",
-      "link": "https://www.ncsc.gov.uk/blogs/one-does-not-simply-defend-agentically",
-      "published": "2026-09-21T12:00:00+00:00",
-      "summary": "Defenders can’t use AI in the same way attackers can, but there’s much they can do to unlock the potential of agentic cyber defence.",
-      "author": "",
-      "source": "NCSC Security Feed",
-      "source_id": "ncsc_security",
-      "source_group": "Official NCSC",
-      "source_kind": "rss",
-      "vendor": "NCSC",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ncsc-guidance",
-          "name": "NCSC Guidance",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "NCSC Guidance"
       ]
     }
   ]
