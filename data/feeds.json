@@ -1,8 +1,32 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-21T03:56:29.612893+00:00",
-  "totalArticles": 133,
+  "lastUpdated": "2026-10-21T11:25:37.471542+00:00",
+  "totalArticles": 137,
   "articles": [
+    {
+      "title": "Critical security issue affecting PHP",
+      "link": "https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php",
+      "published": "2026-10-21T12:00:00+00:00",
+      "summary": "The NCSC is encouraging UK organisations to prepare for immediate updating of systems using PHP.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
     {
       "title": "Microsoft Purview: Endpoint Data Loss Prevention-View-only access to device onboarding with the View-Only Device Management role",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577187",
@@ -28,6 +52,167 @@
       ],
       "body": "Microsoft Purview Data Loss Prevention is introducing more granular, role-based access to the Devices page under Settings → Device Onboarding. Previously, viewing or managing device onboarding required broad administrative roles (such as Compliance Administrator, Global Administrator, or Security Administrator). With this update, organizations can grant access using least-privilege Purview role-based access control (RBAC) roles scoped specifically to device operations. A new View-Only Device Management role enables users, such as auditors or security analysts, to view device onboarding status, search for devices, review configuration details, and export device data, without granting permission to change onboarding configuration or other administrative settings. Existing administrative roles continue to have full access, so current workflows are unaffected. This change helps organizations follow the principle of least privilege and simplifies granting read-only visibility into device onboarding without over-provisioning permissions.GA date: January CY2027Preview date: December CY2026",
       "links": []
+    },
+    {
+      "title": "Manage all your Microsoft Sentinel data in one place with Unified Data Management (Public Preview)",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/manage-all-your-microsoft-sentinel-data-in-one-place-with/ba-p/4565940",
+      "published": "2026-10-20T19:34:43+00:00",
+      "summary": "As security teams bring in more data from more sources and use it across SIEM and XDR workflows, decisions about connector health, ingestion volume, and cost optimization get harder. Today, we’re announcing the public preview of Unified Data Management for Microsoft Sentinel, available in the new...",
+      "author": "amybook",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Sentinel"
+      ],
+      "body": "As security teams bring in more data from more sources and use it across SIEM and XDR workflows, decisions about connector health, ingestion volume, and cost optimization get harder. Today, we’re announcing the public preview of Unified Data Management for Microsoft Sentinel, available in the new Data & connectors experience in the Microsoft Defender portal, so you can monitor and manage your data from a single place. What Unified Data Management is and why it matters Unified Data Management brings connectors, tables, and ingestion health together. Instead of moving between separate pages, you can see your full data landscape, spot issues, and act on them from one view. It’s designed to help you quickly answer questions like: Which connectors are configured and which need attention? Which tables are receiving data? Are there ingestion spikes, drops, or stale data patterns? Which tables drive the most ingestion volume? What schema, transformations, and retention settings apply to a table? You’ll find it under Setup & configuration > Data & connectors, organized into three tabs: Overview, Connectors, and Tables. Overview: See health at a glance The Overview tab gives you a workspace-level snapshot of ingestion and health, so you can catch data issues before they impact analytics, detections, investigations, or reporting. It surfaces: Ingestion volume: Daily ingestion split by Analytics tier and Data Lake tier for your selected time range. Connectors that need attention: Connectors with credential errors, ingestion failures, or outages, including error type, failure count, and last successful ingestion. Table ingestion fluctuations: Tables with unexpected volume changes, grouped into spikes and drops. Data ingestion volume by table: Your top ingesting tables, ranked by daily volume. Ingestion latency by table: How long it takes for data to become available after it’s generated. Together, these insights help you troubleshoot connector failures, track down cost spikes, validate that new connectors are flowing, and catch unexpected changes in volume. Figure 1: The Overview tab shows daily ingestion volume by tier alongside data health insights, including connectors that need attention and tables with unexpected volume spikes or drops. Connectors: One inventory for unified and classic connectors The Connectors tab puts unified data connectors and Sentinel classic data connectors side by side, so it’s easier to see which data sources are onboarded and how they're...",
+      "links": [
+        {
+          "label": "unified data connectors",
+          "url": "https://learn.microsoft.com/azure/sentinel/unified-connector"
+        },
+        {
+          "label": "Sentinel classic data connectors",
+          "url": "https://learn.microsoft.com/azure/sentinel/connect-data-sources"
+        },
+        {
+          "label": "Codeless Connector Framework (CCF)",
+          "url": "https://learn.microsoft.com/azure/sentinel/isv/create-codeless-connector"
+        },
+        {
+          "label": "Microsoft Defender portal",
+          "url": "https://security.microsoft.com/"
+        },
+        {
+          "label": "Manage data in Microsoft Sentinel and Defender",
+          "url": "https://learn.microsoft.com/azure/sentinel/manage-data-overview"
+        },
+        {
+          "label": "Configure data connectors",
+          "url": "https://learn.microsoft.com/azure/sentinel/configure-data-connector"
+        },
+        {
+          "label": "Manage your existing tables and data",
+          "url": "https://learn.microsoft.com/azure/sentinel/manage-table-tiers-retention"
+        },
+        {
+          "label": "Monitor the health of your Microsoft Sentinel data connectors",
+          "url": "https://learn.microsoft.com/azure/sentinel/monitor-data-connector-health"
+        },
+        {
+          "label": "Public Preview: Nested API Support Comes to Microsoft Sentinel CCF",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-nested-api-support-comes-to-microsoft-sentinel-ccf/4537026"
+        },
+        {
+          "label": "Logs Ingestion API in Azure Monitor",
+          "url": "https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview"
+        }
+      ]
+    },
+    {
+      "title": "Cloud Security Billing, Simplified: Introducing the Defender Workload Unit",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/cloud-security-billing-simplified-introducing-the-defender/ba-p/4559743",
+      "published": "2026-10-20T19:02:27+00:00",
+      "summary": "That's the thinking behind an upcoming improvement to Microsoft Defender for Cloud: the Defender Workload Unit, or DWU. It's a new billing model and product experience that translates workload-specific usage into a common billing unit, with one unit price and one place to estimate and track costs....",
+      "author": "danielacardon",
+      "source": "Microsoft Defender for Cloud",
+      "source_id": "defender_cloud",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Cloud Security",
+      "board_id": "microsoftdefendercloudblog",
+      "products": [
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Cloud",
+        "Microsoft Security Copilot"
+      ],
+      "body": "That's the thinking behind an upcoming improvement to Microsoft Defender for Cloud: the Defender Workload Unit, or DWU. It's a new billing model and product experience that translates workload-specific usage into a common billing unit, with one unit price and one place to estimate and track costs. Why we’re improving our billing model We heard two things consistently: cloud security pricing can be complex, and tracking cost can take real work. DWU simplifies this with one unit price. Workload usage still converts behind the scenes. What changes is that organizations see a single unit and have one place to estimate, track, and explain cloud security spend. How DWU helps: Simplify pricing. Bring multiple workload-specific measures under one common billing model. Simplify onboarding and expansion. Make it easier to enable and extend protection across cloud environments. Match how you evaluate cloud security. Understand protection across your entire cloud environment, rather than workload by workload. Reduce cost-tracking friction. Make costs easier to estimate, track, and explain. One thing we deliberately kept unchanged: billing stays tied to what is used. How it compares DWU translates workload-specific usage into a common billing unit with a consistent per-unit price. Each workload continues to convert into DWUs according to its applicable usage measure. Workloads still count behind the scenes, including servers, databases, storage, containers, posture management, APIs, AI services, app services, Key Vault, and Azure Resource Manager. What changes are what customers see: one unit and one price. Workload-specific usage is converted into DWUs and aggregated across your environment, based on a consistent global per-unit price calculated hourly and billed monthly. Estimation, reporting, and billing use the same DWU framework, making it easier to understand how usage translates into cost. What changes is how customers estimate, buy, manage, and track consumption. DWU brings together changes to the billing model, supporting tools, and management experience. Here is how the new experience compares with the existing model. Existing PAYG model With DWU Estimating cost Manual mapping, plan by plan Signed-in estimator, formula visible. Sizing environment Manual inventory Read-only discovery script; your data stays with you Tracking spend Multiple billing signals Defender portal dashboard, detail in Azure Cost Management Database plans Multiple instance/hour-based...",
+      "links": [
+        {
+          "label": "A 30-day platform trial",
+          "url": "https://go.microsoft.com/fwlink/?LinkId=2378653"
+        },
+        {
+          "label": "Cloud Security Cost Estimator",
+          "url": "https://www.microsoft.com/security/business/cloud-security/cost-estimator"
+        },
+        {
+          "label": "start onboarding",
+          "url": "https://go.microsoft.com/fwlink/?LinkId=2381134"
+        }
+      ]
+    },
+    {
+      "title": "Expanded cross-tenant delegated access in Microsoft Defender is generally available",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/expanded-cross-tenant-delegated-access-in-microsoft-defender-is/ba-p/4565941",
+      "published": "2026-10-20T17:24:44+00:00",
+      "summary": "Security operations rarely stop at a single tenant boundary. Managed security service providers (MSSPs) protect many customer environments, and central security teams often operate across a tenant estate spanning business units, regions, or subsidiaries. In both cases, teams need to delegate...",
+      "author": "Robi Czitron",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel"
+      ],
+      "body": "Security operations rarely stop at a single tenant boundary. Managed security service providers (MSSPs) protect many customer environments, and central security teams often operate across a tenant estate spanning business units, regions, or subsidiaries. In both cases, teams need to delegate security work without granting broad access or managing permissions one analyst at a time. Today, we’re announcing the general availability of cross-tenant delegated administration in Microsoft Defender, built on the same governance relationship model as Microsoft Entra Tenant Governance. Organizations can now use a consistent governance model to establish cross-tenant relationships, delegate access to partner or central security teams, and enforce least-privilege permissions across their tenant estate. We’re also extending delegated access to support Microsoft Sentinel resources and enabling granular permissions for delegated users through Defender unified RBAC, reducing the need for separate access models across identity and security. With the consistent access model, MSSPs partners (non-CSP) and multitenant organizations can run security operations across tenants, while each customer or governed tenant decides exactly what access to grant. Govern access across your tenant estate Microsoft Entra Tenant Governance helps organizations establish least-privilege governance relationships across related tenants. The same governance relationship model now extends into Microsoft Defender and Sentinel, enabling MSSPs and central security teams to manage security operations across governed environments without requiring separate local administrator identities in each tenant. This model helps organizations: Scale without multiplying identities. Analysts use their home-tenant accounts instead of requiring local administrator or Microsoft Entra B2B guest accounts in every governed tenant. Apply least privilege. Each governed tenant controls the roles and resource scopes assigned to remote tenant groups. Simplify ongoing administration. The partner or central team keeps access current by managing membership in its own security groups rather than maintaining individual assignments across customer tenants. Support integrated security operations. MSSPs and multitenant organizations can use a consistent governance relationship to support delegated operations across Microsoft Defender and Sentinel. Bring identity and security access together. Use a consistent governance relationship...",
+      "links": [
+        {
+          "label": "Configure delegated access with governance relationships for multitenant organizations",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/governance-relationships"
+        },
+        {
+          "label": "Manage unified role-based access control in multitenant management",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/mto-urbac"
+        },
+        {
+          "label": "Create custom roles with Microsoft Defender unified RBAC",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/create-custom-rbac-roles"
+        },
+        {
+          "label": "Microsoft Entra tenant governance documentation",
+          "url": "https://aka.ms/TenantGovernance/Docs"
+        }
+      ]
     },
     {
       "title": "[Launched] Generally Available: Service tag match condition for Azure Front Door Premium WAF",
@@ -1935,10 +2120,10 @@
       "links": []
     },
     {
-      "title": "Using TLS to protect data",
-      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
+      "title": "Post-quantum updates to our TLS guidance",
+      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
+      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -1959,10 +2144,10 @@
       ]
     },
     {
-      "title": "Post-quantum updates to our TLS guidance",
-      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
+      "title": "Using TLS to protect data",
+      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
+      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
