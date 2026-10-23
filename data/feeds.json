@@ -1,8 +1,253 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-23T16:44:22.433254+00:00",
-  "totalArticles": 149,
+  "lastUpdated": "2026-10-23T21:10:50.830867+00:00",
+  "totalArticles": 154,
   "articles": [
+    {
+      "title": "Protect against Brotli CVE-2026-111497 with Azure Web Application Firewall (WAF)",
+      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/protect-against-brotli-cve-2026-111497-with-azure-web/ba-p/4567288",
+      "published": "2026-10-23T20:17:17+00:00",
+      "summary": "Google Brotli versions 1.0.3 through 1.2.0 contain a buffer overflow vulnerability in the Brotli decoder, according to the recently published CVE-2026-111497. A remote, unauthenticated attacker can send a crafted Brotli-compressed stream to corrupt decoder memory, expose sensitive memory contents,...",
+      "author": "yuvalpery",
+      "source": "Azure Network Security",
+      "source_id": "network_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Network Security",
+      "board_id": "azurenetworksecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Google Brotli versions 1.0.3 through 1.2.0 contain a buffer overflow vulnerability in the Brotli decoder, according to the recently published CVE-2026-111497. A remote, unauthenticated attacker can send a crafted Brotli-compressed stream to corrupt decoder memory, expose sensitive memory contents, cause a denial of service, or potentially run arbitrary code. Any application that decompresses untrusted Brotli data may be affected. This includes Node.js and Python applications that bundle the vulnerable decoder, and services that accept request bodies with the Content-Encoding: br header. We strongly recommend upgrading Brotli to a patched version: 1.0.10, 1.1.1 or 1.2.1 (Brotli releases). If you use Node.js, upgrade to 22.23.4, 24.22.1 or 26.12.1 (Node.js security release). If you can't patch your applications right away, Azure WAF on Application Gateway and Azure Front Door can help mitigate the inbound attack vector, which is Brotli-compressed request bodies sent to your application. Note: Azure WAF inspects only inbound requests to your application. It can't protect applications that fetch and decompress Brotli-encoded responses from external servers. Those applications must be patched. Built-in protection enabled by default If you use Azure WAF with DRS 2.2, on Application Gateway or Azure Front Door Premium, you're protected by default against the crafted requests we analyzed. Rule 920450 (Paranoia Level 1, enabled by default) checks requests against a list of restricted headers, and DRS 2.2 adds Content-Encoding to that list. The rule has a critical anomaly score, so a single match blocks the request when the WAF policy is in Prevention mode. Earlier rule set versions don't restrict this header. If you're still on DRS 2.1, CRS 3.2 or earlier, we recommend upgrading to DRS 2.2 to get the latest protection. To learn how, see Upgrade CRS or DRS ruleset version. Custom rule to mitigate CVE-2026-111497 We recommend the custom rule below for: WAF policies still on DRS 2.1 or earlier, while you plan the upgrade. WAF policies where rule 920450 is disabled or overridden. Azure Front Door Standard, which supports custom rules only. Managed rule sets require Azure Front Door Premium. The custom rule blocks any request whose Content-Encoding header includes the br (Brotli) coding, which this attack uses. This rule may also block legitimate clients sending Brotli-compressed request bodies. If you aren't sure whether your application accepts them, set the action...",
+      "links": [
+        {
+          "label": "CVE-2026-111497",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111497"
+        },
+        {
+          "label": "Brotli releases",
+          "url": "https://github.com/google/brotli/releases"
+        },
+        {
+          "label": "Node.js security release",
+          "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases#nodejs-brotli-decoder-out-of-bounds-write-permits-remote-code-execution-cve-2026-111497---high"
+        },
+        {
+          "label": "Upgrade CRS or DRS ruleset version.",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/upgrade-ruleset-version"
+        },
+        {
+          "label": "Learn more",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-request-size-limits"
+        },
+        {
+          "label": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-waf-rules-overview"
+        },
+        {
+          "label": "Azure Front Door",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules"
+        }
+      ]
+    },
+    {
+      "title": "Bracing for BlockNtlmv1SSO",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/bracing-for-blockntlmv1sso/ba-p/4567273",
+      "published": "2026-10-23T18:14:10+00:00",
+      "summary": "Hi all. Jerry Devore dropping in for a minute to share some insights about the BlockNtlmv1SSO setting that went into effect with the October 2026 update. Why the change was necessary When MS-CHAPv2 is used for solutions like VPN, Wi-Fi, NPS, and RADIUS, the authentication flow leverages the MD4...",
+      "author": "JerryDevore",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Hi all. Jerry Devore dropping in for a minute to share some insights about the BlockNtlmv1SSO setting that went into effect with the October 2026 update. Why the change was necessary When MS-CHAPv2 is used for solutions like VPN, Wi-Fi, NPS, and RADIUS, the authentication flow leverages the MD4 hash of the account’s password to respond to a challenge. If that sounds familiar, then you have at least a basic understanding of NTLM. The problem is that this relic from 1998 (NT 4.0 SP4) produces a response to the challenge that is cryptographically equivalent to NTLMv1. So, while a device using MS-CHAPv2 can have NTLMv1 disabled, it is still exposing the same type of challenge response that makes NTLMv1 trivial to crack. The Change B ack in August 2025, an update added support for the registry setting BlockNtlmv1SSO (HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0). The update did not create the registry setting, but it caused devices to start auditing for the use of \"NTLMv1-derived credentials\". With the October 2026 update, the default for Windows devices is to block the use of NTLMv1-derived credentials. This means that organizations that are still dependent on CHAPv2 are going to be impacted. Bracing for Impact For organizations that have already blocked NTLMv1 in their domains, there is no required action because MS-CHAPv2 using domain credentials is already impossible. For everyone else, you might want to do your due diligence before letting the October update rip if you are not certain whether you have any dependencies on MS-CHAPv2. The documentation for this change mentions events 4024 (Warning) and 4025 (Error) which are logged to the NTLM log of the client (Microsoft-Windows-NTLM/Operational). Those events are extremely helpful, but very few organizations are forwarding the client NTLM logs to their SIEM. Possibly a better approach The October 2026 update giveth and the October update taketh away. What do I mean by that? Besides taking away NTLMv1-derived credentials, the update backported the enhanced NTLM auditing events to Server 2019 and Server 2022. As a result, you can leverage your domain controllers’ logs to determine if you have any MS-CHAPv2 dependencies prior to updating your endpoints. Here is an example of a 4033 event logged on a domain controller when the VPN server forwarded the challenge response for \"credential validation\". We can tell this was CHAPv2 because a true NTLMv1 authentication would have populated the other...",
+      "links": [
+        {
+          "label": "Jerry Devore",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjerry-devore-3035b722%2F&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697178661%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=adUhJNmv5Ww%2Bl78MiFdmcn7t3%2BUs90R8BG22T1StXBI%3D&reserved=0"
+        },
+        {
+          "label": "documentation",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fservicing%2Fos%2Fwindows%2Fdocs%2F2025%2F08%2Fupcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697188812%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=mgV94yHsMsJelovuNtTqiMnhGK1ecPVmHwpzd6y5MUU%3D&reserved=0"
+        },
+        {
+          "label": "enhanced NTLM auditing events",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fservicing%2Fos%2Fwindows%2F2025%2F07%2Foverview-of-ntlm-auditing-enhancements-in-windows-11-version-24h2-and-windows-server-2025&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697199126%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=ayMcORp8U%2FyGms2rD775eT5gt9ooiw10TsWZE0VkR6Y%3D&reserved=0"
+        },
+        {
+          "label": "enhanced NTLM auditing",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fservicing%2Fos%2Fwindows%2F2025%2F07%2Foverview-of-ntlm-auditing-enhancements-in-windows-11-version-24h2-and-windows-server-2025&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697209097%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=EySDGQdn4mFd%2BpqLvc0Cc%2BEMXIvDgFu7%2F%2FvTRFKo21A%3D&reserved=0"
+        }
+      ]
+    },
+    {
+      "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+      "published": "2026-10-23T18:12:19+00:00",
+      "summary": "Microsoft Threat Intelligence analyzes the LiteLLM 1.107.0 compromise, including Python startup hooks, credential theft, remote code loading, detections, and mitigations. The post Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks appeared first on...",
+      "author": "Microsoft Security Research, Mahesh Mandava, Srinivasan Govindarajan, Sagar Patil and Suriyaraj Natarajan",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Attack overview Technical detailsMitigation and protection guidanceIndicators of compromiseReferencesLearn More On October 21, 2026, a compromised LiteLLM 1.107.0 release was published to the Python Package Index (PyPI) and distributed through official container images. The malicious package added files that Python could execute during normal interpreter initialization. An application did not need to import LiteLLM for the payload to run: starting Python in an affected environment could be enough. Microsoft analyzed two execution paths in the affected wheels: a credential collector launched through a path extension, and a Unix-oriented loader persisted through site-specific configuration. The collector targeted authentication material across developer tools, AI applications, cloud environments, browsers, and infrastructure. A separate database module attempted to read selected credential and model-configuration records from the LiteLLM proxy. Endpoint observations on Windows and macOS matched the recovered collector’s discovery, encryption, and outbound-connection behavior. In one Windows example, a routine Python invocation to install an unrelated dependency activated the collector. This distinction matters for response: investigators should not start Python or pip inside a suspect environment to determine whether the malicious package is present. This blog explains the startup mechanisms, the credentials the payload could reach, and the evidence defenders can use to investigate exposure. It also provides Microsoft Defender detection information, advanced hunting queries, and recovery guidance. Removing the package or a release tag is not sufficient recovery. Organizations must address the affected Python environment, any surviving processes, and credentials accessible to the compromised identity. Attack overview LiteLLM is commonly deployed as a gateway between applications and model providers. In that position it may have access to model-provider API keys, database connection strings, workload identities, routing configuration, and tenant policy data. The same package is also used on developer workstations, build agents, test systems, and containers, which widened the set of environments that could be exposed by the compromised release. According to LiteLLM maintainers, stolen developer GitHub credentials were used to alter the release workflow and redirect it to the lookalike repository Berri-AI/litellm rather than the legitimate...",
+      "links": [
+        {
+          "label": "Attack overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-overview"
+        },
+        {
+          "label": "Technical details",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#technical-details"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Indicators of compromise",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "maintainers",
+          "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026"
+        },
+        {
+          "label": "secure software supply chain practices",
+          "url": "https://www.microsoft.com/en-us/securityengineering/sdl/practices/sscs?msockid=2bb1167811446f881835013410836e11"
+        },
+        {
+          "label": "revoke user access in Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/entra/identity/users/users-revoke-access"
+        },
+        {
+          "label": "best practices for a secure software supply chain",
+          "url": "https://learn.microsoft.com/nuget/concepts/security-best-practices"
+        },
+        {
+          "label": "dependency scanning in Azure DevOps",
+          "url": "https://learn.microsoft.com/azure/devops/repos/security/github-advanced-security-dependency-scanning?view=azure-devops"
+        },
+        {
+          "label": "control outbound internet access from Azure",
+          "url": "https://learn.microsoft.com/azure/networking/design-guide/outbound-egress?pivots=lift-shift"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-85788 - Issue with awslabs mysql-mcp-server",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-103-aws/",
+      "published": "2026-10-23T17:44:25+00:00",
+      "summary": "Read this article",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-84942 - Stored Cross-Site Scripting via Vega Expression Function Bypass in OpenSearch Dashboards",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-102-aws/",
+      "published": "2026-10-23T17:43:59+00:00",
+      "summary": "Read this article",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-85787 - An incomplete list of disallowed inputs in the SQL validation component in Amazon awslabs postgres-mcp-server to modify data beyond the read-only scope",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-101-aws/",
+      "published": "2026-10-23T17:43:25+00:00",
+      "summary": "Read this article",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
     {
       "title": "Microsoft Authenticator: Usability improvements for iOS and Android",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1521604",
@@ -173,6 +418,92 @@
       ]
     },
     {
+      "title": "Turn threat intelligence into informed action with Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/turn-threat-intelligence-into-informed-action-with-microsoft/ba-p/4566636",
+      "published": "2026-10-22T17:06:53+00:00",
+      "summary": "Every new threat raises a familiar set of questions. Is it targeting our industry? Are we exposed? What should we investigate first? Answering those questions takes more than another feed or a longer list of indicators. It takes intelligence that brings the relevant context together and helps your...",
+      "author": "Yoni_Nave",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Sentinel",
+        "Threat Intelligence"
+      ],
+      "body": "Every new threat raises a familiar set of questions. Is it targeting our industry? Are we exposed? What should we investigate first? Answering those questions takes more than another feed or a longer list of indicators. It takes intelligence that brings the relevant context together and helps your team understand which threats matter to your organization and where to investigate next. With the new Threat Intelligence experience in Microsoft Defender, we're bringing Microsoft threat intelligence, third-party sources, and your team's own insights together around the way you work. Threat Intelligence Overview helps you prioritize the threats most relevant to your organization. Threat Intelligence Explorer gives analysts a centralized experience to search, filter, and investigate the intelligence behind them. Focus on the threats that matter to your organization A threat can be significant globally without being your team's most urgent concern. Your industry, the regions where you operate, and what's happening in your environment all shape what deserves attention. Threat Intelligence Overview puts that context at the center of your starting page. The personalized dashboard brings the external threat landscape together with insights about your organization, highlighting relevant threats, their impact, and your exposure. You can focus on industries and regions of interest, see threats actively affecting your organization, and identify where a closer investigation is needed. For an analyst planning the day's research or a security leader reviewing emerging risks, the starting point is the same: what matters to us right now? From there, you can move into Explorer to examine the intelligence behind a threat. Figure 1:Prioritize threats using a personalized view of the threat landscape, organizational impact, and exposure. Bring Microsoft, third-party, and your own intelligence into the same investigation A Microsoft report may explain how an actor operates. A third-party feed may identify infrastructure associated with that activity. Your own team may have intelligence from a previous investigation. Each contributes a different part of the picture. Threat Intelligence Explorer lets you work with those sources together. Microsoft Research articles and indicators sit alongside connected third-party feeds and intelligence curated by your organization. Start with what you know: an actor's name, a CVE, a domain, or an IP address. Free-text search finds matching...",
+      "links": [
+        {
+          "label": "convergence of Microsoft Defender Threat Intelligence into Microsoft Sentinel and Defender XDR",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/mdti-convergence-in-microsoft-sentinel-and-defender-xdr-is-complete/4541279"
+        },
+        {
+          "label": "Microsoft Defender XDR prerequisites",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/prerequisites"
+        },
+        {
+          "label": "Explore threat intelligence with Intel Explorer",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/threat-intelligence-explorer"
+        },
+        {
+          "label": "Transition to the new Threat intelligence experience",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/threat-intelligence-transition"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-115416 - Incorrect authorization checks in Amazon Athena engine version 3 query processing",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-144-aws/",
+      "published": "2026-10-22T16:58:02+00:00",
+      "summary": "Bulletin ID: 2026-144-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/22/2026 09:30 AM PDT Description: Amazon Athena is an interactive query service that allows you to analyze data in Amazon S3 using standard SQL. We identified CVE-2026-115416, an issue in Amazon...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-144-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/22/2026 09:30 AM PDT Description: Amazon Athena is an interactive query service that allows you to analyze data in Amazon S3 using standard SQL. We identified CVE-2026-115416, an issue in Amazon Athena engine version 3 query processing where incorrect authorization checks could have allowed an authenticated user to read AWS account identifiers and SQL statement text query metadata from other AWS accounts. Query results, and data stored in Amazon S3 or other data sources, were not accessible through this issue. Impacted versions: Amazon Athena engine version 3 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-144-aws/"
+        }
+      ]
+    },
+    {
       "title": "Azure WAF custom rules for PHP2Shell mitigation",
       "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/azure-waf-custom-rules-for-php2shell-mitigation/ba-p/4566684",
       "published": "2026-10-22T13:56:46+00:00",
@@ -292,6 +623,68 @@
       ],
       "tags": [
         "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "PHP web runtimes (CVE-2026-109618 and CVE-2026-109619)",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-143-aws/",
+      "published": "2026-10-21T21:34:50+00:00",
+      "summary": "Bulletin ID: 2026-143-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/21/2026 14:30 PM PDT Summary: Two critical vulnerabilities in PHP (CVE-2026-109618 and CVE-2026-109619) allow an unauthenticated remote actor to execute code, access process-accessible data, or...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-143-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/21/2026 14:30 PM PDT Summary: Two critical vulnerabilities in PHP (CVE-2026-109618 and CVE-2026-109619) allow an unauthenticated remote actor to execute code, access process-accessible data, or cause denial of service on affected PHP workers. Customers running affected PHP versions (8.2–8.5 below the fixed releases, and end-of-life 5.4–8.1) should upgrade immediately to a patched release (8.5.12, 8.4.27, 8.3.36, or 8.2.35); configuration changes alone are not complete mitigations. AWS has identified a limited set of services that run affected PHP versions and is actively deploying mitigations and updates. Review the full bulletin for per-service status, mitigation guidance, and AWS WAF compensating controls. Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-143-aws/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-112408 - Missing bucket ownership verification in Amazon SageMaker Python SDK default_bucket()",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-142-aws/",
+      "published": "2026-10-21T21:32:10+00:00",
+      "summary": "Bulletin ID: 2026-142-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/21/2026 12:30 PM PDT Description: The Amazon SageMaker Python SDK is an open-source library for training and deploying machine learning models on Amazon SageMaker. We identified CVE-2026-112408,...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-142-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/21/2026 12:30 PM PDT Description: The Amazon SageMaker Python SDK is an open-source library for training and deploying machine learning models on Amazon SageMaker. We identified CVE-2026-112408, an issue in the default_bucket() function. The SDK uses a predictably named Amazon S3 bucket and does not check that the caller's AWS account owns it. A remote actor who creates that bucket first could achieve code execution in a remote SageMaker execution environment and obtain IAM credentials. Impacted versions: - V2: < 2.257.3 - V3: >= 3.0.0 and < 3.10.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-142-aws/"
+        }
       ]
     },
     {
@@ -1500,68 +1893,6 @@
       "links": []
     },
     {
-      "title": "CVE-2026-112407 - Incorrect privilege assignment in AWS CICD-toolchain-for-serverless-applications",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-141-aws/",
-      "published": "2026-10-20T20:39:30+00:00",
-      "summary": "Bulletin ID: 2026-141-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/20/2026 13:30 PM PDT Description: CICD-toolchain-for-serverless-applications is an AWS sample application that provisions a CI/CD pipeline for serverless applications through the AWS Serverless...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-141-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/20/2026 13:30 PM PDT Description: CICD-toolchain-for-serverless-applications is an AWS sample application that provisions a CI/CD pipeline for serverless applications through the AWS Serverless Application Repository. We identified CVE-2026-112407, an incorrect privilege assignment in the IAM policy of AWS CICD-toolchain-for-serverless-applications before 1.0.11 that allows remote authenticated users with push access to the application source repository to escalate privileges and access or modify resources outside the application stack in the same AWS account via application templates deployed by the toolchain pipeline. Impacted versions: =1.0.7 AND <=1.0.10 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read the article",
-      "links": [
-        {
-          "label": "Read the article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-141-aws/"
-        }
-      ]
-    },
-    {
-      "title": "CVE-2026-112380 - Missing authorization in the WhatsApp channel in Kiro Crew",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-140-aws/",
-      "published": "2026-10-20T20:19:42+00:00",
-      "summary": "Bulletin ID: 2026-140-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/20/2026 13:00 PM PDT Description: Kiro Crew is an open-source personal AI agent that can be reached from a web dashboard, a CLI, or messaging channels such as WhatsApp, and that runs tools on the...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-140-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/20/2026 13:00 PM PDT Description: Kiro Crew is an open-source personal AI agent that can be reached from a web dashboard, a CLI, or messaging channels such as WhatsApp, and that runs tools on the operator's machine. We identified CVE-2026-112380, an authorization issue in the WhatsApp channel and the internal subagent run-control endpoints. In certain configurations where a WhatsApp group was added to an operator's allowed groups, or where the direct-message policy was set to open, a member of that WhatsApp group could send instructions to another session's subagent. The subagent then executed those instructions on the operator's machine under that session's approval policy, and the resulting audit trail was attributed to the operator rather than the actual sender. The default configuration is not affected: whatsapp.groups defaults to empty and whatsapp.dm_policy defaults to self, so a group that is not explicitly listed is dropped before dispatch. Impacted versions: >=0.4.0 AND <0.7.2 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read the article",
-      "links": [
-        {
-          "label": "Read the article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-140-aws/"
-        }
-      ]
-    },
-    {
       "title": "Manage all your Microsoft Sentinel data in one place with Unified Data Management (Public Preview)",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/manage-all-your-microsoft-sentinel-data-in-one-place-with/ba-p/4565940",
       "published": "2026-10-20T19:34:43+00:00",
@@ -1817,7 +2148,7 @@
       "tags": [
         "General Security"
       ],
-      "body": "Across my conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on their most important systems while maintaining the control those systems require. This challenge is becoming more important as advanced cloud and AI capabilities move into public services, regulated processes and essential operations. Organizations are considering more than where data resides. They also seek to understand who can access and operate their systems, how sensitive digital assets remain protected, which technology dependencies matter most and whether critical services can continue as regulatory, geopolitical, security or network conditions change. Digital sovereignty should give organizations greater control and security over the technology they depend on, while continuing to innovate. Last year, we introduced Microsoft Sovereign Cloud to give customers more choice in how they address these requirements. Since then, we have continued to turn our commitments into practical capabilities across public cloud and customer-operated environments, while expanding how we enable partners to address sovereignty requirements in their local markets. Today, we are sharing the next stage of that work. A continuum of control, built around the workload Our approach to digital sovereignty starts with the workload. Each workload carries different requirements for data, operations, technology dependencies, continuity and risk. Microsoft Sovereign Cloud is designed to make it easier for organizations to apply the appropriate level of control to each workload without forcing every application into the same deployment model. Those needs can vary widely across organizations. A public-facing digital service may benefit from the scale and pace of innovation in the public cloud. A system supporting essential operations may need to continue running locally if connectivity is disrupted. An AI workload handling highly sensitive data may require models, data and processing to remain within a customer-controlled environment. Microsoft Sovereign Cloud is designed around this workload-based approach, providing a continuum of management, control and options across Sovereign Public Cloud, Sovereign Private Cloud and the Sovereign Partner Ecosystem. Organizations can apply the level of control appropriate to each workload while maintaining a consistent approach to governance and operations across their...",
+      "body": "Across my conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on their most important systems while maintaining the control those systems require. This challenge is becoming more important as advanced cloud and AI capabilities move into public services, regulated processes and essential operations. Organizations are considering more than where data resides. They also seek to understand who can access and operate their systems, how sensitive digital assets remain protected, which technology dependencies matter most and whether critical services can continue as regulatory, geopolitical, security or network conditions change. Digital sovereignty should give organizations greater control and security over the technology they depend on, while continuing to innovate. Last year, we introduced Microsoft Sovereign Cloud to give customers more choice in how they address these requirements. Since then, we have continued to turn our commitments into practical capabilities across public cloud and customer-operated environments, while expanding how we enable partners to address sovereignty requirements in their local markets. Today, we are sharing the next stage of that work. YouTube Video Click here to load media A continuum of control, built around the workload Our approach to digital sovereignty starts with the workload. Each workload carries different requirements for data, operations, technology dependencies, continuity and risk. Microsoft Sovereign Cloud is designed to make it easier for organizations to apply the appropriate level of control to each workload without forcing every application into the same deployment model. Those needs can vary widely across organizations. A public-facing digital service may benefit from the scale and pace of innovation in the public cloud. A system supporting essential operations may need to continue running locally if connectivity is disrupted. An AI workload handling highly sensitive data may require models, data and processing to remain within a customer-controlled environment. Microsoft Sovereign Cloud is designed around this workload-based approach, providing a continuum of management, control and options across Sovereign Public Cloud, Sovereign Private Cloud and the Sovereign Partner Ecosystem. Organizations can apply the level of control appropriate to each workload while maintaining a consistent approach to...",
       "links": [
         {
           "label": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Digital-Sovereignty-Image-2.jpg",
@@ -2084,6 +2415,58 @@
           "url": "https://www.microsoft.com/security/blog/"
         }
       ]
+    },
+    {
+      "title": "CVE-2026-102551 & CVE-2026-102552 - Issue with FreeRTOS-Plus-TCP",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-139-aws/",
+      "published": "2026-10-16T17:34:49+00:00",
+      "summary": "Bulletin ID: 2026-139-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/16/2026 10:15 AM PDT Description: FreeRTOS-Plus-TCP is an open-source, thread-safe TCP/IP stack for the FreeRTOS kernel, distributed by Amazon for use on embedded and IoT devices. AWS identified...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-139-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/16/2026 10:15 AM PDT Description: FreeRTOS-Plus-TCP is an open-source, thread-safe TCP/IP stack for the FreeRTOS kernel, distributed by Amazon for use on embedded and IoT devices. AWS identified two issues with FreeRTOS-Plus-TCP, affecting multiple versions. CVE-2026-102551: improper verification of the source of a communication channel in the IPv6 Router Advertisement handler. The handler does not fully validate that a received Router Advertisement originates from an on-link source before acting on it. Under certain conditions, a remote third-party might influence an endpoint's IPv6 gateway, prefix, and address configuration, potentially enabling interception of the device's IPv6 traffic. This issue is reachable in the library's default configuration, where ipconfigUSE_IPv6 and ipconfigUSE_RA are both enabled. CVE-2026-102552: improper verification of the source of a communication channel in the DNS resolver. The resolver does not fully validate that a DNS reply originates from the server that was queried before accepting it. Under certain conditions, a remote third-party might insert a chosen address into the device's DNS cache, potentially redirecting the device's subsequent connections for the affected name. Impacted versions: - CVE-2026-102551 (Router Advertisement): <= V4.4.1 - CVE-2026-102552 (DNS resolver): <= V4.4.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "CVE-2026-109587 & CVE-2026-109588 - Issue with FreeRTOS-Kernel",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-138-aws/",
+      "published": "2026-10-16T17:34:49+00:00",
+      "summary": "Bulletin ID: 2026-138-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/16/2026 10:00 AM PDT Description: FreeRTOS-Kernel is a real-time operating system kernel for microcontrollers and small microprocessors, distributed by Amazon. AWS identified two issues with the...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-138-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/16/2026 10:00 AM PDT Description: FreeRTOS-Kernel is a real-time operating system kernel for microcontrollers and small microprocessors, distributed by Amazon. AWS identified two issues with the FreeRTOS-Kernel Arm Cortex-R82 (Armv8-R AArch64) MPU port, affecting multiple versions. CVE-2026-109587: incorrect authorization in the Arm Cortex-R82 MPU port. On MPU-enabled builds, the port does not correctly enforce the memory-region boundaries assigned to an unprivileged task when it passes a buffer argument to an MPU system call. Under certain conditions, an unprivileged task might read and write privileged kernel memory outside the regions assigned to it. This issue affects Arm Cortex-R82 builds with configENABLE_MPU=1; applications that do not use the FreeRTOS MPU are not affected. CVE-2026-109588: numeric truncation in the MPU buffer authorization check on the Arm Cortex-R82 MPU port. On MPU-enabled builds, the buffer-length validation does not correctly account for the full length of a buffer passed to a stream buffer system call. Under certain conditions, an unprivileged task might read or write privileged kernel memory beyond the validated buffer window. This issue affects Arm Cortex-R82 builds with configENABLE_MPU=1; applications that do not use the FreeRTOS MPU are not affected. Impacted versions: - CVE-2026-109587 (MPU region authorization): V11.3.0 and V11.3.1 (Arm Cortex-R82 builds with configENABLE_MPU=1) - CVE-2026-109588 (MPU buffer length truncation): V11.3.0 and V11.3.1 (Arm Cortex-R82 builds with configENABLE_MPU=1) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
     },
     {
       "title": "[Launched] Generally Available: External key management for Azure Key Vault Managed HSM",
@@ -3439,58 +3822,6 @@
       ]
     },
     {
-      "title": "CVE-2026-108096: Improper authorization in query resolvers for SQL-backed models in AWS Amplify API Category",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-133-aws/",
-      "published": "2026-10-09T18:13:24+00:00",
-      "summary": "Bulletin ID: 2026-133-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/09/2026 11:00 AM PDT Description: AWS Amplify API Category is a CDK Construct library for defining GraphQL data models with authorization rules as AWS AppSync APIs. We identified CVE-2026-108096,...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-133-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/09/2026 11:00 AM PDT Description: AWS Amplify API Category is a CDK Construct library for defining GraphQL data models with authorization rules as AWS AppSync APIs. We identified CVE-2026-108096, where improper authorization in the query resolvers generated by @aws-amplify/graphql-index-transformer might allow an authenticated remote user to read records owned by other users of the same application via crafted queries. Impacted versions: - @aws-amplify/graphql-index-transformer >=2.2.0, <3.1.2; - @aws-amplify/graphql-api-construct >=1.4.0, <1.21.4; - @aws-amplify/data-construct <1.17.4 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "CVE-2026-107783 - Insertion of sensitive information into log file in AWS Tools for PowerShell",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-132-aws/",
-      "published": "2026-10-09T15:56:44+00:00",
-      "summary": "Bulletin ID: 2026-132-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/09/2026 08:30 AM PDT Description: AWS Tools for PowerShell V5 lets developers and administrators manage their AWS services from the PowerShell scripting environment. We identified CVE-2026-107783,...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-132-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/09/2026 08:30 AM PDT Description: AWS Tools for PowerShell V5 lets developers and administrators manage their AWS services from the PowerShell scripting environment. We identified CVE-2026-107783, where insertion of sensitive information into log file in AWS Tools for PowerShell before 5.0.306 might allow local users to recover an IAM user's cleartext AWS Management Console password from command output and log artifacts. Impacted versions: <= v5.0.305 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
       "published": "2026-10-08T20:44:28+00:00",
@@ -3564,32 +3895,6 @@
           "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/07/july-28-2026-kb5101681-preview"
         }
       ]
-    },
-    {
-      "title": "CVE-2026-107608: Improper link resolution in asset bundling output handling in aws-cdk-lib",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-131-aws/",
-      "published": "2026-10-08T19:44:26+00:00",
-      "summary": "Bulletin ID: 2026-131-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/08/2026 12:30 PM PDT Description: AWS CDK is an open source framework that allows customers to build cloud infrastructure using their favorite programming language (Python, Typescript, C#, Go)....",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-131-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/08/2026 12:30 PM PDT Description: AWS CDK is an open source framework that allows customers to build cloud infrastructure using their favorite programming language (Python, Typescript, C#, Go). That infrastructure is then able to be deployed with AWS CDK command line commands to AWS CloudFormation. We identified CVE-2026-107608, which is an issue where Docker files could be configured to insert symlinked files into the output of the AWS CDK asset bundling process when it was invoked with a Docker file. When bundling an asset using AWS CDK with a docker file, prior to 2.267.0, it was possible for a docker file to insert a symlinked file or directory into the output of asset bundling without the symlink having been provided as input to the bundling process. Impacted versions: All aws-cdk-lib versions before 2.267.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
     },
     {
       "title": "CVE-2026-107332 - Insecure default file permissions on cached credentials in AWS Toolkit for Visual Studio Code",
@@ -3895,6 +4200,32 @@
         "AWS Security"
       ],
       "body": "Bulletin ID: 2026-128-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/07/2026 13:00 PM PDT Description: Missing authorization checks in Amazon Athena engine version 3 request handling could have allowed an authenticated user to read limited query metadata (AWS account identifiers and SQL statement text) from other AWS accounts. AWS remediated the issue on September 1, 2026, and has confirmed no customer metadata was accessed. Query results, credentials, and Amazon S3 data were not affected. No customer action is required. Resolution: This issue was addressed service-side on September 1, 2026. Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
+      "title": "CVE-2026-105811 - Authorization bypass through a user-controlled key in the Amazon Q Business Lambda hook sample in QnABot on AWS",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-126-aws/",
+      "published": "2026-10-07T18:25:26+00:00",
+      "summary": "Bulletin ID: 2026-126-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/06/2026 13:00 PM PDT Description: QnABot on AWS is a sample solution of a multi-channel, multi-language conversational interface (chatbot) that responds to your customer's questions, answers, and...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-126-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/06/2026 13:00 PM PDT Description: QnABot on AWS is a sample solution of a multi-channel, multi-language conversational interface (chatbot) that responds to your customer's questions, answers, and feedback. We identified CVE-2026-105811 in the optional Amazon Q Business Lambda hook sample of QnABot on AWS. The Amazon Q Business Lambda hook sample (q-business-lambda-hook) is an optional integration sample included in the QnABot on AWS repository. It requires separate, manual deployment and additional setup; it is not deployed automatically with QnABot. Customers who have not deployed this sample are not affected and do not need to take action. Authorization bypass through a user-controlled key in the sample included with QnABot on AWS versions 7.0.0 through 7.4.5 might allow an authenticated remote user to read arbitrary Amazon S3 objects in the deploying AWS account. To remediate this issue, affected customers should update the QnABot on AWS stack to version 7.4.6 or later and then redeploy the Amazon Q Business Lambda hook sample stack. Updating the QnABot on AWS stack alone does not deliver the fix. Impacted versions: >=7.0.0, <7.4.6 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
@@ -4274,10 +4605,10 @@
       ]
     },
     {
-      "title": "CVE-2026-103956, CVE-2026-103957, and CVE-2026-103958 - Issues in Loom for AWS",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-124-aws/",
-      "published": "2026-10-02T19:21:29+00:00",
-      "summary": "Bulletin ID: 2026-124-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/02/2026 12:00 PM PDT Description: Loom is an AWS Labs open-source AI agent orchestration platform. We have identified and addressed three issues in Loom for AWS, described below. We recommend...",
+      "title": "CVE-2026-104019 - OS command injection in the Studio Space startup script in Amazon SageMaker Distribution",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-125-aws/",
+      "published": "2026-10-02T20:25:48+00:00",
+      "summary": "Bulletin ID: 2026-125-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/02/2026 13:00 PM PDT Description: Amazon SageMaker Unified Studio is an AWS service that unifies data, analytics, and AI development. It lets you find and access your organization's data and act...",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
       "source_id": "aws_security",
@@ -4296,7 +4627,7 @@
       "tags": [
         "AWS Security"
       ],
-      "body": "Bulletin ID: 2026-124-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/02/2026 12:00 PM PDT Description: Loom is an AWS Labs open-source AI agent orchestration platform. We have identified and addressed three issues in Loom for AWS, described below. We recommend upgrading to the latest version (1.7.0) and ensuring any forked or derivative code is patched to incorporate the new fixes. - CVE-2026-103956 ‐ Authentication bypass in Loom for AWS (CWE-306, CWE-1188) An issue in the authentication dependency in Loom for AWS versions <1.6.1 allowed any network client to obtain full administrative authority over the agent control plane ‐ including registering tool servers, reading stored integration credentials, and rewriting IAM role policies attached to managed agent roles ‐ via any request to the application API in a deployment where no identity provider was configured. This issue was addressed in version 1.6.1, released 2026-08-04. - CVE-2026-103957 ‐ OAuth2 token and credential disclosure via outbound request handling in Loom for AWS (CWE-918, CWE-201) An issue in the OAuth2 discovery handling in Loom for AWS versions <1.7.0 allowed an authenticated user with the mcp:write or a2a:write scope to configure a well-known discovery URL whose document directed the backend to send OAuth2 client secrets or another user's access token to a third-party-controlled endpoint. The 1.6.1 release blocked internal-address reach for this code path but did not fully address the token disclosure. This issue was fully addressed in version 1.7.0. - CVE-2026-103958 ‐ Outbound request handling issue in tool server and remote agent connections in Loom for AWS (CWE-918) An issue in the tool server (MCP) and remote agent (A2A) connection handling in Loom for AWS versions <1.7.0 allowed an authenticated user with the mcp:write or a2a:write scope to direct connection requests to arbitrary internal network locations — including the container's credential-vending endpoint ‐ and read the responses. This issue was addressed in version 1.7.0. Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "body": "Bulletin ID: 2026-125-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/02/2026 13:00 PM PDT Description: Amazon SageMaker Unified Studio is an AWS service that unifies data, analytics, and AI development. It lets you find and access your organization's data and act on it with integrated, purpose-built tools. We identified CVE-2026-104019, an issue with the startup of SageMaker Spaces in SageMaker Unified Studio. The startup script in a SageMaker Space performs a network validation against all the available SageMaker connections in a project. Under certain conditions, improper sanitization of connection details during this validation could allow arbitrary code to be executed in the Space of another project member. In projects with the Trusted Identity Propagation feature enabled, this issue could result in a user with project contributor permissions (or higher) gaining access to another member's temporary execution role credentials and calling downstream trusted identity propagation-enabled AWS services on their behalf. We implemented a fix to all supported SageMaker Distribution versions to sanitize connection details during the startup validation process. The fix is deployed globally and will apply to all Spaces automatically on the next startup. Impacted versions: - 2.8.x - 2.13.x: all versions affected, no fix (end of support) - 2.14.x: < 2.14.12, fixed in 2.14.12 - 3.3.x - 3.8.x: all versions affected, no fix (end of support) - 3.9.x: < 3.9.12, fixed in 3.9.12 - 4.0.x: < 4.0.11, fixed in 4.0.11 - 4.1.x: < 4.1.11, fixed in 4.1.11 - 4.2.x: < 4.2.8, fixed in 4.2.8 - 4.3.x: < 4.3.5, fixed in 4.3.5 - 4.4.x: < 4.4.3, fixed in 4.4.3 - 4.5.x: not affected - < 2.8.0 and < 3.3.0: not affected Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
     },
     {
@@ -4420,32 +4751,6 @@
       "tags": [
         "Microsoft Message Center"
       ]
-    },
-    {
-      "title": "CVE-2026-104002: Fail-open error handling in the data masking utility in Powertools for AWS Lambda (Python)",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-123-aws/",
-      "published": "2026-10-01T21:15:48+00:00",
-      "summary": "Bulletin ID: 2026-123-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/01/2026 14:00 PM PDT Description: Powertools for AWS Lambda (Python) is a developer toolkit that implements serverless best practices and increases developer velocity. We identified...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-123-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/01/2026 14:00 PM PDT Description: Powertools for AWS Lambda (Python) is a developer toolkit that implements serverless best practices and increases developer velocity. We identified CVE-2026-104002, a fail-open error handling issue within the data masking utility of Powertools for AWS Lambda (Python). This issue might allow actors to read sensitive field values that the application intended to mask. Impacted versions: >=3.6.0 AND <=3.34.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
     },
     {
       "title": "Microsoft 365 and LinkedIn leadership update",
@@ -4655,81 +4960,6 @@
         {
           "label": "here",
           "url": "https://microsoft.github.io/purview/purview-classification-labeling-reference-architecture.html"
-        }
-      ]
-    },
-    {
-      "title": "​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
-      "published": "2026-09-30T19:31:00+00:00",
-      "summary": "This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what’s next: Your guide to Microsoft Security at...",
-      "author": "Lindsay Myers",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Why you should attend Microsoft IgniteMake the most of your time at Microsoft Ignite Explore the Security sessions at Microsoft Ignite 2026 Build your schedule In the agentic era, the stakes are higher: AI agents now act with real access to your identities, your data, and your cloud, so every adoption decision is a trust decision. That is why security is a through line at Microsoft Ignite 2026, from a Security Pre-Day before the event opens to a security segment in the keynote, and four security themes across all four days. Join us in San Francisco from November 17 to 20, 2026, or online. See the Microsoft Security roadmap first, get hands-on with new agentic security solutions, and connect directly with the experts, partners, and peers who can help you make it real. This year we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. Register for Microsoft Ignite 2026 Why you should attend Microsoft Ignite Understand where Microsoft is placing its bets. See what is being announced, what is shipping next, and what it means for your architecture, your security operations center (SOC), and your governance model. Build skills you can use immediately. Technical breakouts run from level 200 to level 400, paired with instructor-led labs and onsite certifications, so you leave with implementation guidance rather than slideware. Pressure-test your plans with the people who built it. Bring your real architecture, deployment, and roadmap questions to Microsoft engineers, MVPs, and the product teams behind these tools. See the proof, not the promise. Customer stories, live demos, and partner solutions show what is already working in production today. Connect with the people who make it real. Expert meetups, connection pods, table talks, and evening events put you alongside security practitioners, leaders, Microsoft partners, and peers working the same problems. Make the most of your time at Microsoft Ignite Whether you join us in San Francisco or online, you will have access to a full slate of experiences designed to help you connect, learn, and grow as a security professional. Here is what is in store. Start a day early at the Security Pre-Day On Monday, November 16, 2026, from 1:00 PM PT to 5:00 PM PT, the Security Pre-Day gives you four hours with Microsoft Security leaders and external industry voices before the...",
-      "links": [
-        {
-          "label": "Why you should attend Microsoft Ignite",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-you-should-attend-microsoft-ignite"
-        },
-        {
-          "label": "Make the most of your time at Microsoft Ignite",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#make-the-most-of-your-time-at-microsoft-ignite"
-        },
-        {
-          "label": "Explore the Security sessions at Microsoft Ignite 2026",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#explore-the-security-sessions-at-microsoft-ignite-2026"
-        },
-        {
-          "label": "Build your schedule",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#build-your-schedule"
-        },
-        {
-          "label": "Join us in San Francisco from November 17 to 20, 2026",
-          "url": "https://ignite.microsoft.com/home?wt.mc_ID=msignite26_ciarmar_corp_np_oo_securitysite_SecBlogSecureWhatsNext_0545"
-        },
-        {
-          "label": "Fill out the interest form",
-          "url": "https://aka.ms/SecuretheNight2026"
-        },
-        {
-          "label": "Microsoft Intelligent Security Association (MISA)",
-          "url": "https://www.microsoft.com/en-us/security/business/intelligent-security-association"
-        },
-        {
-          "label": "Zero Trust",
-          "url": "https://www.microsoft.com/en-us/security/business/zero-trust"
-        },
-        {
-          "label": "Microsoft Defender",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender"
-        },
-        {
-          "label": "Microsoft Purview",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-purview"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
         }
       ]
     },
@@ -4994,6 +5224,37 @@
         {
           "label": "T1566.002 Phishing: Spearphishing Link",
           "url": "https://attack.mitre.org/techniques/T1566/002/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-100308 - GluonTS arbitrary command execution during model deserialization",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-119-aws/",
+      "published": "2026-09-29T15:17:30+00:00",
+      "summary": "Bulletin ID: 2026-119-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/29/2026 08:00 AM PDT Description: GluonTS is an open source library for deep learning based time series models. We identified CVE-2026-100308 that allows arbitrary command execution upon...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-119-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 09/29/2026 08:00 AM PDT Description: GluonTS is an open source library for deep learning based time series models. We identified CVE-2026-100308 that allows arbitrary command execution upon deserialization of untrusted model artifacts. Deserialization of untrusted data in the model loading component in Amazon GluonTS before 0.17.0 might allow context-dependent attackers to execute arbitrary operating system commands with the privileges of the loading process via a crafted serialized model directory. The issue arises whenever a user calls Predictor.deserialize() or any RepresentablePredictor.deserialize() on a model directory they do not fully control. Impacted versions: <0.17.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. View article",
+      "links": [
+        {
+          "label": "View article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-119-aws/"
         }
       ]
     },
@@ -5643,54 +5904,6 @@
           "label": "enable DisableLocalAdminMerge to prevent modification of antivirus exclusions via GPO",
           "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune?ocid=magicti_ta_learndoc#tamper-protection-for-antivirus-exclusions"
         }
-      ]
-    },
-    {
-      "title": "Retirement: Support for PowerShell 7.4 ends on November 10, 2026",
-      "link": "https://azure.microsoft.com/updates?id=572770",
-      "published": "2026-09-23T16:50:05+00:00",
-      "summary": "Support for PowerShell 7.4 will end on November 10, 2026, please transition to PowerShell 7.6. Your Azure Function apps will continue to run, but security patches and updates will no longer be provided and customer support for PowerShell 7.4 will be disco",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Retirement: Support for .NET 8 and .NET 9 ends on November 10, 2026—upgrade your apps to .NET 10",
-      "link": "https://azure.microsoft.com/updates?id=572838",
-      "published": "2026-09-23T16:46:49+00:00",
-      "summary": "Support for .NET 8 and .NET 9 will end on November 10, 2026. Please transition to .NET 10 by that date. Your Azure Function Apps will continue to operate, but security updates will no longer be provided, and support for .NET 8 and .NET 9 on Azure Function",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     }
   ]
