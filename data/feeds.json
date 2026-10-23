@@ -1,6 +1,6 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-23T04:00:23.980900+00:00",
+  "lastUpdated": "2026-10-23T11:15:24.826096+00:00",
   "totalArticles": 152,
   "articles": [
     {
@@ -91,40 +91,9 @@
       ]
     },
     {
-      "title": "CVE-2026-115414 - OS Command Injection Issue in SAM CLI Terraform Hook",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
-      "published": "2026-10-22T18:50:58+00:00",
-      "summary": "Bulletin ID: 2026-145-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/22/2026 11:30 AM PDT Description: AWS SAM CLI is an open-source framework for building serverless applications. We identified CVE-2026-115414, an OS command injection issue in the Terraform hook...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-145-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/22/2026 11:30 AM PDT Description: AWS SAM CLI is an open-source framework for building serverless applications. We identified CVE-2026-115414, an OS command injection issue in the Terraform hook (sam build --hook-name terraform) in AWS SAM CLI. The Terraform hook generates a Makefile recipe that interpolates a Terraform resource address without fully neutralizing shell metacharacters, which could allow an actor who can influence the Terraform configuration or plan file consumed by a build to execute arbitrary commands as the build user on the host running the build. Impacted versions: >=1.63.0, <=1.166.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
-      "links": [
-        {
-          "label": "Read this article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-145-aws/"
-        }
-      ]
-    },
-    {
       "title": "Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations",
       "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/addressing-php2shell-cve-2026-109618-and-cve-2026-109619-upgrade/ba-p/4566623",
-      "published": "2026-10-22T17:38:29+00:00",
+      "published": "2026-10-22T19:41:32+00:00",
       "summary": "Written in collaboration with yuvalpery​ and Gunjan Jain​ Introduction Today, two critical remote code execution (RCE) vulnerabilities were disclosed in PHP. We strongly recommend that customers upgrade to a patched version of PHP as soon as possible. Upgrading is the only way to fully remediate...",
       "author": "saikishor",
       "source": "Azure Network Security",
@@ -169,6 +138,37 @@
         {
           "label": "security guidance",
           "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-115414 - OS Command Injection Issue in SAM CLI Terraform Hook",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
+      "published": "2026-10-22T18:50:58+00:00",
+      "summary": "Bulletin ID: 2026-145-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/22/2026 11:30 AM PDT Description: AWS SAM CLI is an open-source framework for building serverless applications. We identified CVE-2026-115414, an OS command injection issue in the Terraform hook...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-145-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/22/2026 11:30 AM PDT Description: AWS SAM CLI is an open-source framework for building serverless applications. We identified CVE-2026-115414, an OS command injection issue in the Terraform hook (sam build --hook-name terraform) in AWS SAM CLI. The Terraform hook generates a Makefile recipe that interpolates a Terraform resource address without fully neutralizing shell metacharacters, which could allow an actor who can influence the Terraform configuration or plan file consumed by a build to execute arbitrary commands as the build user on the host running the build. Impacted versions: >=1.63.0, <=1.166.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-145-aws/"
         }
       ]
     },
@@ -2764,10 +2764,10 @@
       "links": []
     },
     {
-      "title": "Using TLS to protect data",
-      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
+      "title": "Post-quantum updates to our TLS guidance",
+      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
+      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -2788,10 +2788,10 @@
       ]
     },
     {
-      "title": "Post-quantum updates to our TLS guidance",
-      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
+      "title": "Using TLS to protect data",
+      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
+      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
