@@ -1,8 +1,64 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-22T21:20:15.420773+00:00",
-  "totalArticles": 150,
+  "lastUpdated": "2026-10-23T04:00:23.980900+00:00",
+  "totalArticles": 152,
   "articles": [
+    {
+      "title": "Microsoft Authenticator: Usability improvements for iOS and Android",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1521604",
+      "published": "2026-10-22T23:11:18.703000+00:00",
+      "summary": "[What and why]We’re updating Microsoft Authenticator with several usability improvements across iOS and Android. These updates include a refreshed home experience, clearer guidance for accounts that need to be restored, improvements to restoration and sign-in flows, and additional prompts designed...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1521604",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]We’re updating Microsoft Authenticator with several usability improvements across iOS and Android. These updates include a refreshed home experience, clearer guidance for accounts that need to be restored, improvements to restoration and sign-in flows, and additional prompts designed to help keep Authenticator working reliably. Availability and timing vary by platform.[Rollout schedule]General Availability (Worldwide, GCC, GCC High, and DoD): Beginning in October 2026 and expected to complete in November 2026The improved restoration experience for push notifications and passwordless sign-in will be available on iOS first, with Android planned to follow in January 2027.[Impact on your organization]Who is affectedUsers of Microsoft Authenticator on iOS and AndroidPlatforms and servicesMicrosoft Authenticator for iOS and AndroidWhat will happenImproved Authenticator home experience, iOS and Android: The Authenticator home page is being updated to improve the experience when users view and manage their accounts. On Android, this update will be available in November 2026.iOs:Android:Clearer notification for accounts that haven’t been restored, iOS and Android: Users with accounts that have not yet been restored will see a banner informing them that those accounts require attention. Improved first-run guidance for account restoration, iOS and Android: The first-run experience will more clearly show which accounts need to be restored, giving users additional context during Authenticator setup.App rating prompt during sign-in, iOS only: Users may see an option to rate Microsoft Authenticator as part of the sign-in experience, giving them an opportunity to provide feedback about the app. Improved restoration experience for push notifications and passwordless sign-in: The restoration flow is being improved for users who use push notifications and passwordless sign-in. This improvement will be available on iOS first, with Android planned for January 2027. Prompt to exclude Authenticator from battery optimization, Android only: After successfully completing an interactive authentication, users may see a non-blocking prompt to exclude Authenticator from Android battery optimization. Excluding the app from battery optimization helps users stay signed in and continue receiving work or school notifications. The prompt will not block authentication.[Action required and recommendations]No configuration action is specified in this request.Inform your help desk and security operations teams about the updated Authenticator experiences.Update internal user guidance and screenshots that show the previous Authenticator experiences.[Compliance considerations]No compliance considerations identified.",
+      "links": [],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Introducing IRM Alert classification",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576710",
+      "published": "2026-10-22T22:58:40+00:00",
+      "summary": "Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert classification will help tenants to better classify risk within alerts to support reporting and tuning needs. This will replace existing dismissal reasons.GA date: January CY2027Preview date: November CY2026",
+      "links": []
+    },
     {
       "title": "CVE-2026-115419 - Unintended disclosure of data element to wrong session in Strands Agents SDK A2A Server",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-146-aws/",
@@ -4100,10 +4156,10 @@
       ]
     },
     {
-      "title": "Microsoft Purview: Data Lifecycle Management-Increase in expansion limit for auto-expanding archive beyond 1.5 TB",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573702",
+      "title": "Microsoft Purview: Data Lifecycle Management-Graph API Support for Archive Mailboxes",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=573701",
       "published": "2026-10-06T22:56:31+00:00",
-      "summary": "Previously, auto-expanding archive mailbox expansion was supported only up to 1.5 TB, after which mailboxes would become inoperative. Archive mailboxes can now automatically expand beyond the 1.5 TB limit, ensuring uninterrupted retention and enabling scalable archive growth as storage thresholds...",
+      "summary": "Access to Archive mailboxes (Main + Auxiliary) through Microsoft Graph. The goal is to give users a single, seamless Archive view, even though Archive data may physically reside across multiple auxiliary mailboxes with EWS Graph APIs being deprecated.GA date: December CY2026",
       "author": "Microsoft",
       "source": "Microsoft 365 Roadmap",
       "source_id": "m365_roadmap",
@@ -4121,9 +4177,7 @@
       ],
       "tags": [
         "Microsoft Purview"
-      ],
-      "body": "Previously, auto-expanding archive mailbox expansion was supported only up to 1.5 TB, after which mailboxes would become inoperative. Archive mailboxes can now automatically expand beyond the 1.5 TB limit, ensuring uninterrupted retention and enabling scalable archive growth as storage thresholds are reached. This capability to expand archives beyond 1.5 TB will be available to customers with eligible E5 licenses.GA date: November CY2026",
-      "links": []
+      ]
     },
     {
       "title": "CVE-2026-105812 and CVE-2026-106032: Issue with Bedrock AgentCore Starter Toolkit - Import Agent Code Injection and SSRF",
