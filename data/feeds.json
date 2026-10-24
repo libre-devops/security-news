@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-24T03:54:51.178469+00:00",
-  "totalArticles": 152,
+  "lastUpdated": "2026-10-24T10:34:38.993746+00:00",
+  "totalArticles": 154,
   "articles": [
     {
       "title": "GCP-2026-071",
@@ -932,6 +932,104 @@
       ]
     },
     {
+      "title": "Protect against Brotli CVE-2026-111497 with Azure Web Application Firewall (WAF)",
+      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/protect-against-brotli-cve-2026-111497-with-azure-web/ba-p/4567288",
+      "published": "2026-10-23T20:17:17+00:00",
+      "summary": "Google Brotli versions 1.0.3 through 1.2.0 contain a buffer overflow vulnerability in the Brotli decoder, according to the recently published CVE-2026-111497. A remote, unauthenticated attacker can send a crafted Brotli-compressed stream to corrupt decoder memory, expose sensitive memory contents,...",
+      "author": "yuvalpery",
+      "source": "Azure Network Security",
+      "source_id": "network_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Network Security",
+      "board_id": "azurenetworksecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Google Brotli versions 1.0.3 through 1.2.0 contain a buffer overflow vulnerability in the Brotli decoder, according to the recently published CVE-2026-111497. A remote, unauthenticated attacker can send a crafted Brotli-compressed stream to corrupt decoder memory, expose sensitive memory contents, cause a denial of service, or potentially run arbitrary code. Any application that decompresses untrusted Brotli data may be affected. This includes Node.js and Python applications that bundle the vulnerable decoder, and services that accept request bodies with the Content-Encoding: br header. We strongly recommend upgrading Brotli to a patched version: 1.0.10, 1.1.1 or 1.2.1 (Brotli releases). If you use Node.js, upgrade to 22.23.4, 24.22.1 or 26.12.1 (Node.js security release). If you can't patch your applications right away, Azure WAF on Application Gateway and Azure Front Door can help mitigate the inbound attack vector, which is Brotli-compressed request bodies sent to your application. Note: Azure WAF inspects only inbound requests to your application. It can't protect applications that fetch and decompress Brotli-encoded responses from external servers. Those applications must be patched. Built-in protection enabled by default If you use Azure WAF with DRS 2.2, on Application Gateway or Azure Front Door Premium, you're protected by default against the crafted requests we analyzed. Rule 920450 (Paranoia Level 1, enabled by default) checks requests against a list of restricted headers, and DRS 2.2 adds Content-Encoding to that list. The rule has a critical anomaly score, so a single match blocks the request when the WAF policy is in Prevention mode. Earlier rule set versions don't restrict this header. If you're still on DRS 2.1, CRS 3.2 or earlier, we recommend upgrading to DRS 2.2 to get the latest protection. To learn how, see Upgrade CRS or DRS ruleset version. Custom rule to mitigate CVE-2026-111497 We recommend the custom rule below for: WAF policies still on DRS 2.1 or earlier, while you plan the upgrade. WAF policies where rule 920450 is disabled or overridden. Azure Front Door Standard, which supports custom rules only. Managed rule sets require Azure Front Door Premium. The custom rule blocks any request whose Content-Encoding header includes the br (Brotli) coding, which this attack uses. This rule may also block legitimate clients sending Brotli-compressed request bodies. If you aren't sure whether your application accepts them, set the action...",
+      "links": [
+        {
+          "label": "CVE-2026-111497",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111497"
+        },
+        {
+          "label": "Brotli releases",
+          "url": "https://github.com/google/brotli/releases"
+        },
+        {
+          "label": "Node.js security release",
+          "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases#nodejs-brotli-decoder-out-of-bounds-write-permits-remote-code-execution-cve-2026-111497---high"
+        },
+        {
+          "label": "Upgrade CRS or DRS ruleset version.",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/upgrade-ruleset-version"
+        },
+        {
+          "label": "Learn more",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-request-size-limits"
+        },
+        {
+          "label": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-waf-rules-overview"
+        },
+        {
+          "label": "Azure Front Door",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules"
+        }
+      ]
+    },
+    {
+      "title": "Bracing for BlockNtlmv1SSO",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/bracing-for-blockntlmv1sso/ba-p/4567273",
+      "published": "2026-10-23T18:14:10+00:00",
+      "summary": "Hi all. Jerry Devore dropping in for a minute to share some insights about the BlockNtlmv1SSO setting that went into effect with the October 2026 update. Why the change was necessary When MS-CHAPv2 is used for solutions like VPN, Wi-Fi, NPS, and RADIUS, the authentication flow leverages the MD4...",
+      "author": "JerryDevore",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Hi all. Jerry Devore dropping in for a minute to share some insights about the BlockNtlmv1SSO setting that went into effect with the October 2026 update. Why the change was necessary When MS-CHAPv2 is used for solutions like VPN, Wi-Fi, NPS, and RADIUS, the authentication flow leverages the MD4 hash of the account’s password to respond to a challenge. If that sounds familiar, then you have at least a basic understanding of NTLM. The problem is that this relic from 1998 (NT 4.0 SP4) produces a response to the challenge that is cryptographically equivalent to NTLMv1. So, while a device using MS-CHAPv2 can have NTLMv1 disabled, it is still exposing the same type of challenge response that makes NTLMv1 trivial to crack. The Change B ack in August 2025, an update added support for the registry setting BlockNtlmv1SSO (HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0). The update did not create the registry setting, but it caused devices to start auditing for the use of \"NTLMv1-derived credentials\". With the October 2026 update, the default for Windows devices is to block the use of NTLMv1-derived credentials. This means that organizations that are still dependent on CHAPv2 are going to be impacted. Bracing for Impact For organizations that have already blocked NTLMv1 in their domains, there is no required action because MS-CHAPv2 using domain credentials is already impossible. For everyone else, you might want to do your due diligence before letting the October update rip if you are not certain whether you have any dependencies on MS-CHAPv2. The documentation for this change mentions events 4024 (Warning) and 4025 (Error) which are logged to the NTLM log of the client (Microsoft-Windows-NTLM/Operational). Those events are extremely helpful, but very few organizations are forwarding the client NTLM logs to their SIEM. Possibly a better approach The October 2026 update giveth and the October update taketh away. What do I mean by that? Besides taking away NTLMv1-derived credentials, the update backported the enhanced NTLM auditing events to Server 2019 and Server 2022. As a result, you can leverage your domain controllers’ logs to determine if you have any MS-CHAPv2 dependencies prior to updating your endpoints. Here is an example of a 4033 event logged on a domain controller when the VPN server forwarded the challenge response for \"credential validation\". We can tell this was CHAPv2 because a true NTLMv1 authentication would have populated the other...",
+      "links": [
+        {
+          "label": "Jerry Devore",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjerry-devore-3035b722%2F&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697178661%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=adUhJNmv5Ww%2Bl78MiFdmcn7t3%2BUs90R8BG22T1StXBI%3D&reserved=0"
+        },
+        {
+          "label": "documentation",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fservicing%2Fos%2Fwindows%2Fdocs%2F2025%2F08%2Fupcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697188812%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=mgV94yHsMsJelovuNtTqiMnhGK1ecPVmHwpzd6y5MUU%3D&reserved=0"
+        },
+        {
+          "label": "enhanced NTLM auditing events",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fservicing%2Fos%2Fwindows%2F2025%2F07%2Foverview-of-ntlm-auditing-enhancements-in-windows-11-version-24h2-and-windows-server-2025&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697199126%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=ayMcORp8U%2FyGms2rD775eT5gt9ooiw10TsWZE0VkR6Y%3D&reserved=0"
+        },
+        {
+          "label": "enhanced NTLM auditing",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fservicing%2Fos%2Fwindows%2F2025%2F07%2Foverview-of-ntlm-auditing-enhancements-in-windows-11-version-24h2-and-windows-server-2025&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697209097%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=EySDGQdn4mFd%2BpqLvc0Cc%2BEMXIvDgFu7%2F%2FvTRFKo21A%3D&reserved=0"
+        }
+      ]
+    },
+    {
       "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
       "published": "2026-10-23T18:12:19+00:00",
@@ -1166,40 +1264,9 @@
       ]
     },
     {
-      "title": "CVE-2026-115414 - OS Command Injection Issue in SAM CLI Terraform Hook",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
-      "published": "2026-10-22T18:50:58+00:00",
-      "summary": "Bulletin ID: 2026-145-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/22/2026 11:30 AM PDT Description: AWS SAM CLI is an open-source framework for building serverless applications. We identified CVE-2026-115414, an OS command injection issue in the Terraform hook...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-145-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/22/2026 11:30 AM PDT Description: AWS SAM CLI is an open-source framework for building serverless applications. We identified CVE-2026-115414, an OS command injection issue in the Terraform hook (sam build --hook-name terraform) in AWS SAM CLI. The Terraform hook generates a Makefile recipe that interpolates a Terraform resource address without fully neutralizing shell metacharacters, which could allow an actor who can influence the Terraform configuration or plan file consumed by a build to execute arbitrary commands as the build user on the host running the build. Impacted versions: >=1.63.0, <=1.166.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
-      "links": [
-        {
-          "label": "Read this article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-145-aws/"
-        }
-      ]
-    },
-    {
       "title": "Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations",
       "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/addressing-php2shell-cve-2026-109618-and-cve-2026-109619-upgrade/ba-p/4566623",
-      "published": "2026-10-22T17:38:29+00:00",
+      "published": "2026-10-22T19:41:32+00:00",
       "summary": "Written in collaboration with yuvalpery​ and Gunjan Jain​ Introduction Today, two critical remote code execution (RCE) vulnerabilities were disclosed in PHP. We strongly recommend that customers upgrade to a patched version of PHP as soon as possible. Upgrading is the only way to fully remediate...",
       "author": "saikishor",
       "source": "Azure Network Security",
@@ -1244,6 +1311,37 @@
         {
           "label": "security guidance",
           "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-115414 - OS Command Injection Issue in SAM CLI Terraform Hook",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
+      "published": "2026-10-22T18:50:58+00:00",
+      "summary": "Bulletin ID: 2026-145-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/22/2026 11:30 AM PDT Description: AWS SAM CLI is an open-source framework for building serverless applications. We identified CVE-2026-115414, an OS command injection issue in the Terraform hook...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-145-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/22/2026 11:30 AM PDT Description: AWS SAM CLI is an open-source framework for building serverless applications. We identified CVE-2026-115414, an OS command injection issue in the Terraform hook (sam build --hook-name terraform) in AWS SAM CLI. The Terraform hook generates a Makefile recipe that interpolates a Terraform resource address without fully neutralizing shell metacharacters, which could allow an actor who can influence the Terraform configuration or plan file consumed by a build to execute arbitrary commands as the build user on the host running the build. Impacted versions: >=1.63.0, <=1.166.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-145-aws/"
         }
       ]
     },
