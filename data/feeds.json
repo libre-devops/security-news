@@ -1,8 +1,32 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-27T04:19:11.573639+00:00",
-  "totalArticles": 153,
+  "lastUpdated": "2026-10-27T11:49:41.865858+00:00",
+  "totalArticles": 154,
   "articles": [
+    {
+      "title": "From industry concern to practical action: the value of working with regulators",
+      "link": "https://www.ncsc.gov.uk/blogs/industry-concern-practical-action-value-working-regulators",
+      "published": "2026-10-27T12:00:00+00:00",
+      "summary": "How industry, the NCSC and the FCA worked together to help organisations share information while protecting market integrity",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
     {
       "title": "GCP-2026-073",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-073",
@@ -979,6 +1003,167 @@
       ]
     },
     {
+      "title": "Azure WAF custom rules for PHP2Shell mitigation",
+      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/azure-waf-custom-rules-for-php2shell-mitigation/ba-p/4566684",
+      "published": "2026-10-26T19:00:38+00:00",
+      "summary": "Written in collaboration with Gunjan Jain​ and yuvalpery​ As described in our earlier blog, Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations, we strongly recommend upgrading to a patched version of PHP as soon as possible. Upgrading PHP remains...",
+      "author": "saikishor",
+      "source": "Azure Network Security",
+      "source_id": "network_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Network Security",
+      "board_id": "azurenetworksecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Written in collaboration with Gunjan Jain​ and yuvalpery​ As described in our earlier blog, Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations, we strongly recommend upgrading to a patched version of PHP as soon as possible. Upgrading PHP remains the recommended and complete remediation for these vulnerabilities. For customers who are unable to upgrade immediately, this guidance provides WAF custom rules that can help reduce exposure to selected request patterns associated with exploitation techniques for these vulnerabilities. WAF custom rules The following three custom rules can be considered based on your application configuration and traffic patterns. Because custom rules can affect legitimate application traffic, review the potential application impact and validate the rules before enabling enforcement. Restrict PHP session upload progress PHP supports session upload progress for tracking file uploads. For applications that do not depend on this functionality, customers can use a custom rule to restrict multipart form requests containing PHP_SESSION_UPLOAD_PROGRESS. The rule checks for multipart/form-data requests whose inspected request body contains the PHP session upload progress token. Custom rule definitions: Azure Front Door WAF { \"name\": \"BlockPhpSessionUploadProgress\", \"priority\": 100, \"enabledState\": \"Enabled\", \"ruleType\": \"MatchRule\", \"action\": \"Block\", \"matchConditions\": [ { \"matchVariable\": \"RequestHeader\", \"selector\": \"Content-Type\", \"operator\": \"Contains\", \"negateCondition\": false, \"transforms\": [\"Lowercase\"], \"matchValue\": [\"multipart/form-data\"] }, { \"matchVariable\": \"RequestBody\", \"operator\": \"Contains\", \"negateCondition\": false, \"matchValue\": [\"php_session_upload_progress\"], \"transforms\": [\"Lowercase\"] } ] } Application Gateway and Application Gateway for Container (AGC) WAF { \"name\": \"BlockPhpSessionUploadProgress\", \"priority\": 90, \"ruleType\": \"MatchRule\", \"action\": \"Block\", \"state\": \"Enabled\", \"matchConditions\": [ { \"matchVariables\": [ { \"variableName\": \"RequestHeaders\", \"selector\": \"Content-Type\" } ], \"operator\": \"Contains\", \"negationConditon\": false, \"matchValues\": [ \"multipart/form-data\" ], \"transforms\": [ \"Lowercase\" ] }, { \"matchVariables\": [ { \"variableName\": \"PostArgs\" } ], \"operator\": \"Contains\", \"negationConditon\": false, \"matchValues\": [ \"php_session_upload_progress\" ], \"transforms\": [ \"Lowercase\" ] } ] } This rule reduces exposure through the PHP session-upload-progress...",
+      "links": [
+        {
+          "label": "Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations",
+          "url": "https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/addressing-php2shell-cve-2026-109618-and-cve-2026-109619-upgrade-guidance-and-az/4566623"
+        },
+        {
+          "label": "CVE-2026-109618",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109618"
+        },
+        {
+          "label": "CVE-2026-109619",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109619"
+        },
+        {
+          "label": "here",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-waf-rules-overview"
+        },
+        {
+          "label": "here",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules"
+        },
+        {
+          "label": "Upgrading to a patched version of PHP",
+          "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
+        }
+      ]
+    },
+    {
+      "title": "Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations",
+      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/addressing-php2shell-cve-2026-109618-and-cve-2026-109619-upgrade/ba-p/4566623",
+      "published": "2026-10-26T18:19:55+00:00",
+      "summary": "Written in collaboration with yuvalpery​ and Gunjan Jain​ Introduction Today, two critical remote code execution (RCE) vulnerabilities were disclosed in PHP. We strongly recommend that customers upgrade to a patched version of PHP as soon as possible. Upgrading is the only way to fully remediate...",
+      "author": "saikishor",
+      "source": "Azure Network Security",
+      "source_id": "network_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Network Security",
+      "board_id": "azurenetworksecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Written in collaboration with yuvalpery​ and Gunjan Jain​ Introduction Today, two critical remote code execution (RCE) vulnerabilities were disclosed in PHP. We strongly recommend that customers upgrade to a patched version of PHP as soon as possible. Upgrading is the only way to fully remediate these vulnerabilities. Read more on the PHP official website. Microsoft has been part of the coordinated industry response to these vulnerabilities, working alongside the PHP Foundation, Wiz, security researchers, and other industry partners to help protect customers. Azure Web Application Firewall (WAF) has developed mitigations against known exploitation patterns to provide an additional layer of protection while customers apply the PHP security updates. These protections are intended to complement patching and are not a replacement for it. About the vulnerabilities: CVE-2026-109618 - RCE via OOM corruption CVE-2026-109619- RCE via stale global state Both vulnerabilities can be exploited over the network without privileges or user interaction, with a high potential impact on confidentiality, integrity, and availability. The vulnerabilities relate to PHP handling of memory when a request terminates abnormally, for example due to memory exhaustion or a fatal error. Under certain conditions, improper memory handling could allow an attacker to achieve remote code execution. Fixed versions: 8.5.12, 8.4.27, 8.3.36, 8.2.35. Refer to vendor guidancefor patching of different versions of PHP. Recommended action: upgrade PHP We recommend that customers: Upgrade all PHP deployments to a patched version, including virtual machines, containers, base images, and platform runtimes. We suggest prioritizing internet-facing workloads. Rebuild and redeploy container images that include their own PHP runtime, since updating the host does not update PHP inside an image. Migrate to a supported PHP branch if the branch currently in use no longer receives security fixes. Treat the Azure WAF mitigations below as a temporary, supplementary measure. They address a specific technique and do not remediate the underlying vulnerabilities. Azure WAF protection If you are unable to upgrade PHP to a patched version immediately, apply the following mitigations in the interim - Azure Front Door WAF: Apply the mitigation using custom rules for request-side mitigation and enable the managed rule for response-side mitigation. Application Gateway WAF: Apply the mitigation using custom rules for...",
+      "links": [
+        {
+          "label": "Read more on the PHP official website.",
+          "url": "https://www.php.net/archive/2026.php"
+        },
+        {
+          "label": "CVE-2026-109618",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109618"
+        },
+        {
+          "label": "CVE-2026-109619",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109619"
+        },
+        {
+          "label": "Azure WAF custom rules for PHP2Shell mitigation.",
+          "url": "https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/azure-waf-custom-rules-for-php2shell-mitigation/4566684"
+        },
+        {
+          "label": "Rewrite HTTP headers and URL with Azure Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-url"
+        },
+        {
+          "label": "Learn more",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-request-size-limits"
+        },
+        {
+          "label": "security guidance",
+          "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
+        }
+      ]
+    },
+    {
+      "title": "Protect against Brotli CVE-2026-111497 with Azure Web Application Firewall (WAF)",
+      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/protect-against-brotli-cve-2026-111497-with-azure-web/ba-p/4567288",
+      "published": "2026-10-26T18:19:26+00:00",
+      "summary": "Google Brotli versions 1.0.3 through 1.2.0 contain a buffer overflow vulnerability in the Brotli decoder, according to the recently published CVE-2026-111497. A remote, unauthenticated attacker can send a crafted Brotli-compressed stream to corrupt decoder memory, expose sensitive memory contents,...",
+      "author": "yuvalpery",
+      "source": "Azure Network Security",
+      "source_id": "network_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Network Security",
+      "board_id": "azurenetworksecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Google Brotli versions 1.0.3 through 1.2.0 contain a buffer overflow vulnerability in the Brotli decoder, according to the recently published CVE-2026-111497. A remote, unauthenticated attacker can send a crafted Brotli-compressed stream to corrupt decoder memory, expose sensitive memory contents, cause a denial of service, or potentially run arbitrary code. Any application that decompresses untrusted Brotli data may be affected. This includes Node.js and Python applications that bundle the vulnerable decoder, and services that accept request bodies with the Content-Encoding: br header. We strongly recommend upgrading Brotli to a patched version: 1.0.10, 1.1.1 or 1.2.1 (Brotli releases). If you use Node.js, upgrade to 22.23.4, 24.22.1 or 26.12.1 (Node.js security release). If you can't patch your applications right away, Azure WAF on Application Gateway, Application Gateway for Containers and Azure Front Door can help mitigate the inbound attack vector, which is Brotli-compressed request bodies sent to your application. Note: Azure WAF inspects only inbound requests to your application. It can't protect applications that fetch and decompress Brotli-encoded responses from external servers. Those applications must be patched. Built-in protection enabled by default If you use Azure WAF with DRS 2.2, on Application Gateway or Azure Front Door Premium, you're protected by default against the crafted requests we analyzed. Rule 920450 (Paranoia Level 1, enabled by default) checks requests against a list of restricted headers, and DRS 2.2 adds Content-Encoding to that list. The rule has a critical anomaly score, so a single match blocks the request when the WAF policy is in Prevention mode. Earlier rule set versions don't restrict this header. If you're still on DRS 2.1, CRS 3.2 or earlier, we recommend upgrading to DRS 2.2 to get the latest protection. To learn how, see Upgrade CRS or DRS ruleset version. Custom rule to mitigate CVE-2026-111497 We recommend the custom rule below for: WAF policies still on DRS 2.1 or earlier, while you plan the upgrade. WAF policies where rule 920450 is disabled or overridden. Azure Front Door Standard, which supports custom rules only. Managed rule sets require Azure Front Door Premium. WAF policies attached to Azure Application Gateway for Containers The custom rule blocks any request whose Content-Encoding header includes the br (Brotli) coding, which this attack uses. This rule may also block legitimate clients sending...",
+      "links": [
+        {
+          "label": "CVE-2026-111497",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111497"
+        },
+        {
+          "label": "Brotli releases",
+          "url": "https://github.com/google/brotli/releases"
+        },
+        {
+          "label": "Node.js security release",
+          "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases#nodejs-brotli-decoder-out-of-bounds-write-permits-remote-code-execution-cve-2026-111497---high"
+        },
+        {
+          "label": "Upgrade CRS or DRS ruleset version.",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/upgrade-ruleset-version"
+        },
+        {
+          "label": "Learn more",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-request-size-limits"
+        },
+        {
+          "label": "Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-waf-rules-overview"
+        },
+        {
+          "label": "Azure Front Door",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules"
+        }
+      ]
+    },
+    {
       "title": "Proofpoint’s Core Email Protection API solution joins the Microsoft Defender ICES vendor ecosystem",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/proofpoint-s-core-email-protection-api-solution-joins-the/ba-p/4567264",
       "published": "2026-10-26T16:00:00+00:00",
@@ -1207,61 +1392,6 @@
       ]
     },
     {
-      "title": "Protect against Brotli CVE-2026-111497 with Azure Web Application Firewall (WAF)",
-      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/protect-against-brotli-cve-2026-111497-with-azure-web/ba-p/4567288",
-      "published": "2026-10-23T20:17:17+00:00",
-      "summary": "Google Brotli versions 1.0.3 through 1.2.0 contain a buffer overflow vulnerability in the Brotli decoder, according to the recently published CVE-2026-111497. A remote, unauthenticated attacker can send a crafted Brotli-compressed stream to corrupt decoder memory, expose sensitive memory contents,...",
-      "author": "yuvalpery",
-      "source": "Azure Network Security",
-      "source_id": "network_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Network Security",
-      "board_id": "azurenetworksecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Google Brotli versions 1.0.3 through 1.2.0 contain a buffer overflow vulnerability in the Brotli decoder, according to the recently published CVE-2026-111497. A remote, unauthenticated attacker can send a crafted Brotli-compressed stream to corrupt decoder memory, expose sensitive memory contents, cause a denial of service, or potentially run arbitrary code. Any application that decompresses untrusted Brotli data may be affected. This includes Node.js and Python applications that bundle the vulnerable decoder, and services that accept request bodies with the Content-Encoding: br header. We strongly recommend upgrading Brotli to a patched version: 1.0.10, 1.1.1 or 1.2.1 (Brotli releases). If you use Node.js, upgrade to 22.23.4, 24.22.1 or 26.12.1 (Node.js security release). If you can't patch your applications right away, Azure WAF on Application Gateway and Azure Front Door can help mitigate the inbound attack vector, which is Brotli-compressed request bodies sent to your application. Note: Azure WAF inspects only inbound requests to your application. It can't protect applications that fetch and decompress Brotli-encoded responses from external servers. Those applications must be patched. Built-in protection enabled by default If you use Azure WAF with DRS 2.2, on Application Gateway or Azure Front Door Premium, you're protected by default against the crafted requests we analyzed. Rule 920450 (Paranoia Level 1, enabled by default) checks requests against a list of restricted headers, and DRS 2.2 adds Content-Encoding to that list. The rule has a critical anomaly score, so a single match blocks the request when the WAF policy is in Prevention mode. Earlier rule set versions don't restrict this header. If you're still on DRS 2.1, CRS 3.2 or earlier, we recommend upgrading to DRS 2.2 to get the latest protection. To learn how, see Upgrade CRS or DRS ruleset version. Custom rule to mitigate CVE-2026-111497 We recommend the custom rule below for: WAF policies still on DRS 2.1 or earlier, while you plan the upgrade. WAF policies where rule 920450 is disabled or overridden. Azure Front Door Standard, which supports custom rules only. Managed rule sets require Azure Front Door Premium. The custom rule blocks any request whose Content-Encoding header includes the br (Brotli) coding, which this attack uses. This rule may also block legitimate clients sending Brotli-compressed request bodies. If you aren't sure whether your application accepts them, set the action...",
-      "links": [
-        {
-          "label": "CVE-2026-111497",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111497"
-        },
-        {
-          "label": "Brotli releases",
-          "url": "https://github.com/google/brotli/releases"
-        },
-        {
-          "label": "Node.js security release",
-          "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases#nodejs-brotli-decoder-out-of-bounds-write-permits-remote-code-execution-cve-2026-111497---high"
-        },
-        {
-          "label": "Upgrade CRS or DRS ruleset version.",
-          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/upgrade-ruleset-version"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-request-size-limits"
-        },
-        {
-          "label": "Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-waf-rules-overview"
-        },
-        {
-          "label": "Azure Front Door",
-          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules"
-        }
-      ]
-    },
-    {
       "title": "Bracing for BlockNtlmv1SSO",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/bracing-for-blockntlmv1sso/ba-p/4567273",
       "published": "2026-10-23T18:14:10+00:00",
@@ -1467,57 +1597,6 @@
       ]
     },
     {
-      "title": "Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations",
-      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/addressing-php2shell-cve-2026-109618-and-cve-2026-109619-upgrade/ba-p/4566623",
-      "published": "2026-10-22T19:41:32+00:00",
-      "summary": "Written in collaboration with yuvalpery​ and Gunjan Jain​ Introduction Today, two critical remote code execution (RCE) vulnerabilities were disclosed in PHP. We strongly recommend that customers upgrade to a patched version of PHP as soon as possible. Upgrading is the only way to fully remediate...",
-      "author": "saikishor",
-      "source": "Azure Network Security",
-      "source_id": "network_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Network Security",
-      "board_id": "azurenetworksecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Written in collaboration with yuvalpery​ and Gunjan Jain​ Introduction Today, two critical remote code execution (RCE) vulnerabilities were disclosed in PHP. We strongly recommend that customers upgrade to a patched version of PHP as soon as possible. Upgrading is the only way to fully remediate these vulnerabilities. Read more on the PHP official website. Microsoft has been part of the coordinated industry response to these vulnerabilities, working alongside the PHP Foundation, Wiz, security researchers, and other industry partners to help protect customers. Azure Web Application Firewall (WAF) has developed mitigations against known exploitation patterns to provide an additional layer of protection while customers apply the PHP security updates. These protections are intended to complement patching and are not a replacement for it. About the vulnerabilities: CVE-2026-109618 - RCE via OOM corruption CVE-2026-109619- RCE via stale global state Both vulnerabilities can be exploited over the network without privileges or user interaction, with a high potential impact on confidentiality, integrity, and availability. The vulnerabilities relate to PHP handling of memory when a request terminates abnormally, for example due to memory exhaustion or a fatal error. Under certain conditions, improper memory handling could allow an attacker to achieve remote code execution. Fixed versions: 8.5.12, 8.4.27, 8.3.36, 8.2.35. Refer to vendor guidancefor patching of different versions of PHP. Recommended action: upgrade PHP We recommend that customers: Upgrade all PHP deployments to a patched version, including virtual machines, containers, base images, and platform runtimes. We suggest prioritizing internet-facing workloads. Rebuild and redeploy container images that include their own PHP runtime, since updating the host does not update PHP inside an image. Migrate to a supported PHP branch if the branch currently in use no longer receives security fixes. Treat the Azure WAF mitigations below as a temporary, supplementary measure. They address a specific technique and do not remediate the underlying vulnerabilities. Azure WAF protection If you are unable to upgrade PHP to a patched version immediately, apply the following mitigations in the interim - Azure Front Door WAF: Apply the mitigation using custom rules for request-side mitigation and enable the managed rule for response-side mitigation. Application Gateway WAF: Apply the mitigation using custom rules for...",
-      "links": [
-        {
-          "label": "Read more on the PHP official website.",
-          "url": "https://www.php.net/archive/2026.php"
-        },
-        {
-          "label": "CVE-2026-109618",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109618"
-        },
-        {
-          "label": "CVE-2026-109619",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109619"
-        },
-        {
-          "label": "Azure WAF custom rules for PHP2Shell mitigation.",
-          "url": "https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/azure-waf-custom-rules-for-php2shell-mitigation/4566684"
-        },
-        {
-          "label": "Rewrite HTTP headers and URL with Azure Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-url"
-        },
-        {
-          "label": "security guidance",
-          "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
-        }
-      ]
-    },
-    {
       "title": "CVE-2026-115414 - OS Command Injection Issue in SAM CLI Terraform Hook",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
       "published": "2026-10-22T18:50:58+00:00",
@@ -1631,57 +1710,6 @@
         {
           "label": "Read this article",
           "url": "https://aws.amazon.com/security/security-bulletins/2026-144-aws/"
-        }
-      ]
-    },
-    {
-      "title": "Azure WAF custom rules for PHP2Shell mitigation",
-      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/azure-waf-custom-rules-for-php2shell-mitigation/ba-p/4566684",
-      "published": "2026-10-22T13:56:46+00:00",
-      "summary": "Written in collaboration with Gunjan Jain​ and yuvalpery​ As described in our earlier blog, Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations, we strongly recommend upgrading to a patched version of PHP as soon as possible. Upgrading PHP remains...",
-      "author": "saikishor",
-      "source": "Azure Network Security",
-      "source_id": "network_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Network Security",
-      "board_id": "azurenetworksecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Written in collaboration with Gunjan Jain​ and yuvalpery​ As described in our earlier blog, Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations, we strongly recommend upgrading to a patched version of PHP as soon as possible. Upgrading PHP remains the recommended and complete remediation for these vulnerabilities. For customers who are unable to upgrade immediately, this guidance provides WAF custom rules that can help reduce exposure to selected request patterns associated with exploitation techniques for these vulnerabilities. WAF custom rules The following three custom rules can be considered based on your application configuration and traffic patterns. Because custom rules can affect legitimate application traffic, review the potential application impact and validate the rules before enabling enforcement. Restrict PHP session upload progress PHP supports session upload progress for tracking file uploads. For applications that do not depend on this functionality, customers can use a custom rule to restrict multipart form requests containing PHP_SESSION_UPLOAD_PROGRESS. The rule checks for multipart/form-data requests whose inspected request body contains the PHP session upload progress token. Custom rule definitions: Azure Front Door WAF { \"name\": \"BlockPhpSessionUploadProgress\", \"priority\": 100, \"enabledState\": \"Enabled\", \"ruleType\": \"MatchRule\", \"action\": \"Block\", \"matchConditions\": [ { \"matchVariable\": \"RequestHeader\", \"selector\": \"Content-Type\", \"operator\": \"Contains\", \"negateCondition\": false, \"transforms\": [\"Lowercase\"], \"matchValue\": [\"multipart/form-data\"] }, { \"matchVariable\": \"RequestBody\", \"operator\": \"Contains\", \"negateCondition\": false, \"matchValue\": [\"php_session_upload_progress\"], \"transforms\": [\"Lowercase\"] } ] } Application Gateway and Application Gateway for Container (AGC) WAF { \"name\": \"BlockPhpSessionUploadProgress\", \"priority\": 90, \"ruleType\": \"MatchRule\", \"action\": \"Block\", \"state\": \"Enabled\", \"matchConditions\": [ { \"matchVariables\": [ { \"variableName\": \"RequestHeaders\", \"selector\": \"Content-Type\" } ], \"operator\": \"Contains\", \"negationConditon\": false, \"matchValues\": [ \"multipart/form-data\" ], \"transforms\": [ \"Lowercase\" ] }, { \"matchVariables\": [ { \"variableName\": \"PostArgs\" } ], \"operator\": \"Contains\", \"negationConditon\": false, \"matchValues\": [ \"php_session_upload_progress\" ], \"transforms\": [ \"Lowercase\" ] } ] } This rule reduces exposure through the PHP session-upload-progress...",
-      "links": [
-        {
-          "label": "Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations",
-          "url": "https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/addressing-php2shell-cve-2026-109618-and-cve-2026-109619-upgrade-guidance-and-az/4566623"
-        },
-        {
-          "label": "CVE-2026-109618",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109618"
-        },
-        {
-          "label": "CVE-2026-109619",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109619"
-        },
-        {
-          "label": "here",
-          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-waf-rules-overview"
-        },
-        {
-          "label": "here",
-          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules"
-        },
-        {
-          "label": "Upgrading to a patched version of PHP",
-          "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
         }
       ]
     },
@@ -3311,10 +3339,10 @@
       "links": []
     },
     {
-      "title": "Post-quantum updates to our TLS guidance",
-      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
+      "title": "Using TLS to protect data",
+      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
+      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -3335,10 +3363,10 @@
       ]
     },
     {
-      "title": "Using TLS to protect data",
-      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
+      "title": "Post-quantum updates to our TLS guidance",
+      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
+      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
