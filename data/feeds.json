@@ -1,8 +1,120 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-27T21:57:57.229936+00:00",
-  "totalArticles": 157,
+  "lastUpdated": "2026-10-28T04:49:26.072336+00:00",
+  "totalArticles": 158,
   "articles": [
+    {
+      "title": "Microsoft Authenticator: Improved backup and restore experience for Android",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1528006",
+      "published": "2026-10-27T23:21:50.177000+00:00",
+      "summary": "[What and why]We’re improving the backup and restore experience in Microsoft Authenticator for Android. When setting up Authenticator on a new device, users will receive guidance tailored to whether they still have access to their previous device. They will also receive guidance on using...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1528006",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]We’re improving the backup and restore experience in Microsoft Authenticator for Android. When setting up Authenticator on a new device, users will receive guidance tailored to whether they still have access to their previous device. They will also receive guidance on using Authenticator passkeys for cross-device sign-in. This experience is already available on iOS.To use backup and restore on a new Android device, users must enable Google One backup and screen lock.[Rollout schedule]General Availability (Worldwide, GCC, GCC High, and DoD): Beginning in mid-January 2027 and expected to complete in mid-January 2027[Impact on your organization]Who is affectedUsers of Microsoft Authenticator on AndroidPlatforms and servicesMicrosoft Authenticator for AndroidWhat will happenWhen setting up Authenticator on a new Android device, users will see clearer guidance based on whether they still have access to their previous device.Users will receive guidance for using Authenticator passkeys for cross-device sign-in.Work or school accounts are not backed up. This is not changing.Backup will continue to support TOTP credentials for Microsoft personal accounts and third-party accounts.Users must enable Google One backup and screen lock to use this backup and restore experience.Backup and restore is supported only when Microsoft Authenticator is installed in the Android personal profile. It is not supported when Authenticator is installed in an Android work profile.[Action required and recommendations]No admin action is required.Organizations may choose to inform users about the updated restore experience on Android devices.[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Microsoft Entra ID: Reminder to migrate from Microsoft-provided SMS and voice authentication",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1528000",
+      "published": "2026-10-27T23:17:02.053000+00:00",
+      "summary": "[What and why]This is a reminder of the upcoming retirement of Microsoft-provided SMS and voice authentication in Microsoft Entra ID, previously announced in MC1426371 (July 13, 2026) and MC1434201 (GCC, July 20, 2026).Microsoft-provided SMS and voice authentication will retire starting February 1,...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1528000",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]This is a reminder of the upcoming retirement of Microsoft-provided SMS and voice authentication in Microsoft Entra ID, previously announced in MC1426371 (July 13, 2026) and MC1434201 (GCC, July 20, 2026).Microsoft-provided SMS and voice authentication will retire starting February 1, 2027. Complete your migration before rollout begins to avoid interrupting users' sign-in experience.SMS and voice are vulnerable to phishing and SIM-swap attacks. Microsoft recommends passkeys for stronger, phishing-resistant protection. You can also migrate to another supported authentication method or retain SMS and voice by configuring a customer-managed telecom provider (CYOT) through the Microsoft Security Store.[Rollout schedule]Retirement (Worldwide and GCC): Beginning February 1, 2027, and expected to complete in early February 2027.Complete migration or configure CYOT before February 1, 2027, rather than waiting for the rollout to reach your tenant.[Impact on your organization]Who is affectedOrganizations and users that rely on Microsoft-provided SMS or voice authenticationCustomer-managed telecom providers configured through the Microsoft Security Store are not affected.Platforms and servicesMicrosoft Entra ID authenticationWhat will happenUsers with another registered sign-in method will use that method. They will not be required to register a passkey to continue signing in.Users whose only registered sign-in method is SMS or voice can use SMS or voice one final time to verify their identity. They must then register a passkey before continuing sign-in.[Action required and recommendations]If your organization uses Microsoft-provided SMS or voice, complete these steps before February 1, 2027:Identify affected users. Review who relies on SMS or voice, especially users with no other registered sign-in method.Complete migration. Help affected users register and start using passkeys or another supported authentication method before rollout begins.Configure CYOT if you need to retain SMS or voice. Configure a customer-managed telecom provider through the Microsoft Security Store before rollout begins.Notify users and your helpdesk. Explain the deadline, required actions, and the passkey-registration requirement for users who only have SMS or voice registered.If your organization does not use Microsoft-provided SMS or voice, no action is required for this retirement.Learn moreMigration guidancePasskeys in Microsoft Entra IDChoose a telephony provider for SMS and voice authentication - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Migration guidance",
+          "url": "https://aka.ms/passkeybydefault"
+        },
+        {
+          "label": "Passkeys in Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passkeys-fido2"
+        },
+        {
+          "label": "Choose a telephony provider for SMS and voice authentication - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-phone-providers"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "(Updated) Microsoft Entra: Windows Hello for Business and macOS Platform SSO as standalone MFA factors",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450134",
+      "published": "2026-10-27T22:54:39.213000+00:00",
+      "summary": "Updated October 27, 2026: We have updated the timeline. Thank you for your patience. [What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1450134",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated October 27, 2026: We have updated the timeline. Thank you for your patience. [What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication scenarios.Today, WHfB and macOS PSSO can satisfy MFA requirements during primary sign-in, but users may still be required to register and use an additional passkey or authentication method for certain step-up authentication prompts, Authentication Strength policies, and sign-in frequency checks.After this rollout, users who authenticate with WHfB or macOS PSSO will be able to satisfy supported MFA requirements without registering an additional passkey. This change helps organizations expand the use of phishing-resistant authentication methods and reduce reliance on less secure authentication methods. As part of this change, a user's WHfB and macOS PSSO credentials will be displayed in My Security Info as auto-registered passkeys.[Rollout schedule]General Availability (Worldwide, GCC): Beginning in early November 2026 (previously early October) and expected to complete in late December 2026 (previously mid-December)[Impact on your organization]Who is affectedOrganizations using Microsoft Entra IDUsers who authenticate with Windows Hello for BusinessUsers who authenticate with macOS Platform SSOOrganizations using Conditional Access Authentication Strength policiesPlatforms and servicesMicrosoft Entra IDWindows Hello for BusinessmacOS Platform SSOConditional AccessAuthentication Strength policiesWhat will happenAfter rollout:Users signing in with WHfB or macOS PSSO can complete supported MFA challenges without requiring a separate passkey.WHfB and macOS PSSO will satisfy supported MFA requirements for step-up authentication scenarios.WHfB and macOS PSSO can be used during 2FA to satisfy supported Authentication Strength policy requirements.WHfB and macOS PSSO can be used during 2FA to satisfy supported sign-in frequency challenge requirements.Users whose only MFA method is WHfB or macOS PSSO will be considered MFA-capable.Users who sign in with only a password will no longer be automatically prompted to register an additional MFA method if WHfB or macOS PSSO is their only registered MFA credential.Users with WHfB or macOS PSSO credentials, will be able to see them listed in My Security Info as auto-registered passkeys.[Action required and recommendations]No configuration changes are required.We recommend reviewing user onboarding and MFA registration processes before rollout. Because WHfB and macOS PSSO credentials are device-bound, users may not be able to complete MFA challenges from devices where those credentials are not available.Recommended actions:Update onboarding guidance to ensure users register at least one portable MFA method.Consider requiring users to register a synced passkey or Microsoft Authenticator passkey in addition to WHfB or macOS PSSO.Review custom Authentication Strength policies to confirm WHfB and macOS PSSO are allowed where appropriate.Update user documentation because users with only WHfB or macOS PSSO registered will no longer be automatically guided to register an additional MFA method.Learn more (To be updated closer to GA rollout.)Plan a Windows Hello for Business deployment | Security | Windows | Microsoft LearnPrepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Plan a Windows Hello for Business deployment | Security | Windows | Microsoft Learn",
+          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/"
+        },
+        {
+          "label": "Prepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn",
+          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/prepare-users"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
     {
       "title": "[Launched] Generally Available: Azure Front Door profile and route level WAF policies",
       "link": "https://azure.microsoft.com/updates?id=578153",
@@ -3729,45 +3841,6 @@
       ]
     },
     {
-      "title": "(Updated) Microsoft Entra: Windows Hello for Business and macOS Platform SSO as standalone MFA factors",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450134",
-      "published": "2026-10-13T23:51:25.613000+00:00",
-      "summary": "Updated October 13, 2026: We have updated the timeline. Thank you for your patience. [What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1450134",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated October 13, 2026: We have updated the timeline. Thank you for your patience. [What and why]Microsoft Entra will soon recognize Windows Hello for Business (WHfB) and macOS Platform Single Sign-On (PSSO) as standalone multifactor authentication (MFA) factors in supported authentication scenarios.Today, WHfB and macOS PSSO can satisfy MFA requirements during primary sign-in, but users may still be required to register and use an additional passkey or authentication method for certain step-up authentication prompts, Authentication Strength policies, and sign-in frequency checks.After this rollout, users who authenticate with WHfB or macOS PSSO will be able to satisfy supported MFA requirements without registering an additional passkey. This change helps organizations expand the use of phishing-resistant authentication methods and reduce reliance on less secure authentication methods. As part of this change, a user's WHfB and macOS PSSO credentials will be displayed in My Security Info as auto-registered passkeys.[Rollout schedule]General Availability (Worldwide, GCC): Beginning in early October 2026 and expected to complete in mid-December 2026 (previously late November)[Impact on your organization]Who is affectedOrganizations using Microsoft Entra IDUsers who authenticate with Windows Hello for BusinessUsers who authenticate with macOS Platform SSOOrganizations using Conditional Access Authentication Strength policiesPlatforms and servicesMicrosoft Entra IDWindows Hello for BusinessmacOS Platform SSOConditional AccessAuthentication Strength policiesWhat will happenAfter rollout:Users signing in with WHfB or macOS PSSO can complete supported MFA challenges without requiring a separate passkey.WHfB and macOS PSSO will satisfy supported MFA requirements for step-up authentication scenarios.WHfB and macOS PSSO can be used during 2FA to satisfy supported Authentication Strength policy requirements.WHfB and macOS PSSO can be used during 2FA to satisfy supported sign-in frequency challenge requirements.Users whose only MFA method is WHfB or macOS PSSO will be considered MFA-capable.Users who sign in with only a password will no longer be automatically prompted to register an additional MFA method if WHfB or macOS PSSO is their only registered MFA credential.Users with WHfB or macOS PSSO credentials, will be able to see them listed in My Security Info as auto-registered passkeys.[Action required and recommendations]No configuration changes are required.We recommend reviewing user onboarding and MFA registration processes before rollout. Because WHfB and macOS PSSO credentials are device-bound, users may not be able to complete MFA challenges from devices where those credentials are not available.Recommended actions:Update onboarding guidance to ensure users register at least one portable MFA method.Consider requiring users to register a synced passkey or Microsoft Authenticator passkey in addition to WHfB or macOS PSSO.Review custom Authentication Strength policies to confirm WHfB and macOS PSSO are allowed where appropriate.Update user documentation because users with only WHfB or macOS PSSO registered will no longer be automatically guided to register an additional MFA method.Learn more (To be updated closer to GA rollout.)Plan a Windows Hello for Business deployment | Security | Windows | Microsoft LearnPrepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "Plan a Windows Hello for Business deployment | Security | Windows | Microsoft Learn",
-          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/"
-        },
-        {
-          "label": "Prepare users to provision and use Windows Hello for Business | Security | Windows | Microsoft Learn",
-          "url": "https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/deploy/prepare-users"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
       "title": "Microsoft Purview: Data Loss Prevention-Admin Units Support for Copilot & Cowork DLP",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575287",
       "published": "2026-10-13T23:01:05+00:00",
@@ -4103,30 +4176,6 @@
           "label": "FQDN and IP addresses where the Global Secure Access service receives traffic",
           "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-points-of-presence#fqdn-and-ip-addresses-where-the-global-secure-access-service-receives-traffic"
         }
-      ]
-    },
-    {
-      "title": "Microsoft Purview: Data Loss Prevention-Apply Purview network data security DLP policies to all websites, or all websites except specific cloud apps, through Entra GSA Internet Access integration",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575285",
-      "published": "2026-10-12T23:01:05+00:00",
-      "summary": "With this feature, admins can scope their network data security data loss prevention policies, integrated with Entra GSA Internet Access, to apply to all websites (.) or all websites except specific cloud apps, allowing them to apply protection to cloud apps and websites that are not in the...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
       ]
     },
     {
