@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-28T04:49:26.072336+00:00",
-  "totalArticles": 158,
+  "lastUpdated": "2026-10-28T12:23:51.886924+00:00",
+  "totalArticles": 152,
   "articles": [
     {
       "title": "Microsoft Authenticator: Improved backup and restore experience for Android",
@@ -1711,81 +1711,6 @@
       ]
     },
     {
-      "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
-      "published": "2026-10-23T18:12:19+00:00",
-      "summary": "Microsoft Threat Intelligence analyzes the LiteLLM 1.107.0 compromise, including Python startup hooks, credential theft, remote code loading, detections, and mitigations. The post Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks appeared first on...",
-      "author": "Microsoft Security Research, Mahesh Mandava, Srinivasan Govindarajan, Sagar Patil and Suriyaraj Natarajan",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Attack overview Technical detailsMitigation and protection guidanceIndicators of compromiseReferencesLearn More On October 21, 2026, a compromised LiteLLM 1.107.0 release was published to the Python Package Index (PyPI) and distributed through official container images. The malicious package added files that Python could execute during normal interpreter initialization. An application did not need to import LiteLLM for the payload to run: starting Python in an affected environment could be enough. Microsoft analyzed two execution paths in the affected wheels: a credential collector launched through a path extension, and a Unix-oriented loader persisted through site-specific configuration. The collector targeted authentication material across developer tools, AI applications, cloud environments, browsers, and infrastructure. A separate database module attempted to read selected credential and model-configuration records from the LiteLLM proxy. Endpoint observations on Windows and macOS matched the recovered collector’s discovery, encryption, and outbound-connection behavior. In one Windows example, a routine Python invocation to install an unrelated dependency activated the collector. This distinction matters for response: investigators should not start Python or pip inside a suspect environment to determine whether the malicious package is present. This blog explains the startup mechanisms, the credentials the payload could reach, and the evidence defenders can use to investigate exposure. It also provides Microsoft Defender detection information, advanced hunting queries, and recovery guidance. Removing the package or a release tag is not sufficient recovery. Organizations must address the affected Python environment, any surviving processes, and credentials accessible to the compromised identity. Attack overview LiteLLM is commonly deployed as a gateway between applications and model providers. In that position it may have access to model-provider API keys, database connection strings, workload identities, routing configuration, and tenant policy data. The same package is also used on developer workstations, build agents, test systems, and containers, which widened the set of environments that could be exposed by the compromised release. According to LiteLLM maintainers, stolen developer GitHub credentials were used to alter the release workflow and redirect it to the lookalike repository Berri-AI/litellm rather than the legitimate...",
-      "links": [
-        {
-          "label": "Attack overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-overview"
-        },
-        {
-          "label": "Technical details",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#technical-details"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
-        },
-        {
-          "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "maintainers",
-          "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026"
-        },
-        {
-          "label": "secure software supply chain practices",
-          "url": "https://www.microsoft.com/en-us/securityengineering/sdl/practices/sscs?msockid=2bb1167811446f881835013410836e11"
-        },
-        {
-          "label": "revoke user access in Microsoft Entra ID",
-          "url": "https://learn.microsoft.com/entra/identity/users/users-revoke-access"
-        },
-        {
-          "label": "best practices for a secure software supply chain",
-          "url": "https://learn.microsoft.com/nuget/concepts/security-best-practices"
-        },
-        {
-          "label": "dependency scanning in Azure DevOps",
-          "url": "https://learn.microsoft.com/azure/devops/repos/security/github-advanced-security-dependency-scanning?view=azure-devops"
-        },
-        {
-          "label": "control outbound internet access from Azure",
-          "url": "https://learn.microsoft.com/azure/networking/design-guide/outbound-egress?pivots=lift-shift"
-        }
-      ]
-    },
-    {
       "title": "Microsoft Authenticator: Usability improvements for iOS and Android",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1521604",
       "published": "2026-10-22T23:11:18.703000+00:00",
@@ -2128,44 +2053,44 @@
       "published": "2026-10-21T18:23:55+00:00",
       "summary": "Storm-0940 used ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, enabling application credential abuse across Microsoft 365 environments. The post AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise appeared first on Microsoft Security Blog.",
       "author": "Microsoft Security Research and Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 7
         }
       ],
       "tags": [
-        "General Security"
+        "Threat Intelligence"
       ],
       "body": "In this article What’s happeningWhat is ARTEX?Mitigation and protection guidanceReferencesLearn more As early as September 2026, Storm-0940, a China-state aligned actor, used the agentic AI penetration testing framework ARTEX to automate attacks targeting hundreds of organizations globally across a broad range of industries. Several of these Storm-0940 ARTEX-driven attacks have resulted in the actor obtaining privileged access to an organization’s cloud infrastructure – including multiple instances where the time from initial targeting to privileged access was less than 3 hours. Microsoft assesses that Storm-0940 was responsible for the recently disclosed ConnectWise supply chain compromise of a multi-tenant application. This activity demonstrates how threat actors are integrating agentic AI into existing offensive security workflows and allows them to scale their operations exponentially. Agents are not constrained by factors affecting humans – they can work around the clock, on weekends, and on holidays and attempt multiple breach paths simultaneously enabling significantly reduced time from selecting a target to achieving objectives, increasing the speed and impact of complex attacks like supply chain compromises. Storm-0940’s use of ARTEX accelerated the speed of compromised application abuse to authenticate to Microsoft 365 customer environments through applications that had already been granted access. This allowed the threat actor to operate without requiring an interactive user sign-in. In multiple affected environments, Microsoft observed AI-accelerated follow-on activity through Microsoft Graph, including reconnaissance, application credential changes, and attempts to modify privileges that could enable expanded or persistent access. The activity conducted by the threat actor through the usage of ARTEX framework did not result from a compromise of or a vulnerability in Microsoft corporate systems, products, or services. Although Microsoft identified Storm-0940-initiated authentication and follow-on activity in multiple customer environments, the presence of an affected application or successful threat actor authentication does not necessarily indicate that customer data was accessed or exfiltrated. Microsoft Defender XDR provides detections and hunting queries for suspicious Microsoft Graph activity and activity associated with known threat infrastructure. Customers should review service principal sign-ins, investigate unexpected application...",
       "links": [
         {
           "label": "What’s happening",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-s-happening"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-s-happening"
         },
         {
           "label": "What is ARTEX?",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-is-artex"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#what-is-artex"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
         },
         {
           "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
         },
         {
           "label": "ConnectWise supply chain compromise",
@@ -2865,81 +2790,6 @@
       ]
     },
     {
-      "title": "Agents are your newest insiders. Security must move at their speed.",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
-      "published": "2026-10-19T13:00:00+00:00",
-      "summary": "New capabilities in Microsoft 365 E7 and Project Perception help organizations contain agent risk and adapt protection continuously. The post Agents are your newest insiders. Security must move at their speed. appeared first on Microsoft Security Blog.",
-      "author": "Nadim Abdo",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Agents are rapidly becoming part of how work gets done. They can support a range of activities from writing code and researching products to analyzing revenue, processing expenses, and acting across the systems that run the business. To be most useful, they often need access to company data, applications, tools, and other agents. That access is what makes agents more capable. With that capability can come insider risk. This does not mean agents are inherently malicious. It means they are capable tools that can be granted access to important systems by users. They can make mistakes, be manipulated, or be compromised. Their models can produce variable outputs, their context can change, and their plans can evolve as they work. An agent that operates as intended when a task begins may respond differently as context or inputs change. Depending on how they are designed and deployed, agents can operate continuously, at machine speed and scale. Learn how to secure your agentic estate at speed and scale Satya Nadella, Chairman and Chief Executive Officer of Microsoft, recently described the trust architecture this new era requires: we must separate the supply of intelligence from the authority over it. We should not ask a model to be its own security authority. The controls that determine what it can access, what actions it can take, and whether it should continue operating must sit outside the model, where the model cannot bypass or tamper with them. “The most trustworthy agentic system will not be the one with the model we trust most. It will be the one designed that enables us to trust the model least.”Satya Nadella Project Perception—Securing your agentic insider We introduced Project Perception and the Microsoft cyber stack to help organizations defend with agents. Today, we are extending Perception to secure the agentic insider. Guardian Agents help security teams operate continuously, at machine speed and scale, while sensors, context, and actuators across the cyber stack help understand changing agent risk and continuously adapt protection in response. Project Perception and Microsoft Agent 365 share signals, context, and a unified registry giving IT and security teams a consistent view of agents and risk, with the controls each needs. This builds on a simple security principle: surround non-deterministic intelligence with deterministic controls, independent evidence, and containment boundaries. Assume an agent can fail or be compromised. Observe it...",
-      "links": [
-        {
-          "label": "Learn how to secure your agentic estate at speed and scale",
-          "url": "https://www.microsoft.com/en-us/security/business/solutions/security-for-ai"
-        },
-        {
-          "label": "recently described",
-          "url": "https://snscratchpad.com/posts/models-as-insider-risks/"
-        },
-        {
-          "label": "Project Perception",
-          "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/"
-        },
-        {
-          "label": "extending Perception to secure the agentic insider",
-          "url": "https://aka.ms/AA13thd5"
-        },
-        {
-          "label": "Microsoft Agent 365",
-          "url": "https://www.microsoft.com/en-us/microsoft-agent-365"
-        },
-        {
-          "label": "60 supported local agents",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/ai-agent-support-matrix"
-        },
-        {
-          "label": "Microsoft Entra Agent ID",
-          "url": "https://learn.microsoft.com/en-us/entra/agent-id/what-is-microsoft-entra-agent-id"
-        },
-        {
-          "label": "Zero Trust",
-          "url": "https://www.microsoft.com/en-us/security/business/zero-trust"
-        },
-        {
-          "label": "Microsoft Entra Conditional Access",
-          "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-conditional-access"
-        },
-        {
-          "label": "Microsoft Ignite",
-          "url": "https://ignite.microsoft.com/home?wt.mc_ID=msignite26_ciarmar_corp_np_oo_securitysite_SecBlogSecureWhatsNext_0545"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        }
-      ]
-    },
-    {
       "title": "CVE-2026-102551 & CVE-2026-102552 - Issue with FreeRTOS-Plus-TCP",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-139-aws/",
       "published": "2026-10-16T17:34:49+00:00",
@@ -3013,73 +2863,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "Managing open-weight model risk in enterprise deployments",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
-      "published": "2026-10-16T16:00:00+00:00",
-      "summary": "New whitepaper from Microsoft and NVIDIA helps enterprises manage open-weight AI model risks with a shared taxonomy, evaluations, and controls. The post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Security Blog.",
-      "author": "Michael Scovetta",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models. Open-weight models are an important part of that landscape. They give enterprises access to model weights and greater flexibility to inspect, evaluate, modify, and run models within their own environments. While that flexibility can be valuable, it also affects how enterprises evaluate models, where they implement safeguards, and who is responsible for maintaining those safeguards over time. As enterprises choose which models to deploy, the relevant question is broader than whether a model is open-weight or closed-weight. Enterprises need to understand what they are using the model for, what could go wrong in that context, and what evidence and controls they need to manage risks. Today, Microsoft and NVIDIA are publishing Risk Management for Open-Weight Models in Enterprise, the first in a planned series of joint resources intended to help enterprises address those questions. The paper introduces a shared risk taxonomy and an approach to managing model risks grounded in established standards and frameworks, including International Organization for Standardization (ISO) standards and the National Institute of Standards and Technology (NIST) AI Risk Management Framework. The paper reflects a core idea: weight openness alone does not determine an AI system’s risk. Risk depends on the model, use case, deployment, and safeguards. Read the whitepaper: Risk Management for Open-Weight Models in Enterprise Understanding risk in the deployment context Open- and closed-weight models can share many of the same underlying risks, but how those risks materialize depends on the deployment. A model used to help an employee draft a document presents different considerations than the same model used in a customer-facing workflow, just as a standalone inference endpoint differs from a system connected to external data or tools. The architecture matters too. A risk may originate in the model, while the most effective control may sit in the inference environment, application, or surrounding operational processes. The joint guidance looks beyond the model label to factors including provenance, intended use, users, deployment conditions, and surrounding controls. This first paper focuses primarily on model-layer risks. Evaluating a model alone does not establish the safety of an agent or application: teams must also assess its permissions, data access,...",
-      "links": [
-        {
-          "label": "Risk Management for Open-Weight Models in Enterprise",
-          "url": "https://github.com/NVIDIA/OpenEnterpriseRiskManagementGuidance/blob/main/Papers/Risk%20Management%20Guidance.pdf"
-        },
-        {
-          "label": "Explore the joint repository and technical resources",
-          "url": "https://github.com/NVIDIA/OpenEnterpriseRiskManagementGuidance"
-        },
-        {
-          "label": "Microsoft Foundry evaluations",
-          "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/built-in-evaluators"
-        },
-        {
-          "label": "content-safety controls",
-          "url": "https://learn.microsoft.com/en-us/azure/foundry/guardrails/guardrails-overview"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "Managing open-weight model risk in enterprise deployments",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
-        }
       ]
     },
     {
@@ -3747,52 +3530,52 @@
       "published": "2026-10-14T13:00:00+00:00",
       "summary": "Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators (tracked as Storm-2990), and an illicit marketplace (tracked as Storm-3119) selling tools and infrastructure for large-scale phishing. In collaboration with law enforcement agencies...",
       "author": "Microsoft Threat Intelligence and Microsoft Digital Crimes Unit",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
         }
       ],
       "tags": [
-        "General Security"
+        "Threat Intelligence"
       ],
       "body": "In this article Uncovering the shadow world of a phishing kit ecosystemStorm-3119: YAM Store, the power brokerStorm-2990: The Iron Man System phishing kitDownstream activity from Storm-2990 phishing kitsMitigation and protection guidanceMicrosoft Defender detectionsHunting queries Over the past year, Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators, developers, and an illicit marketplace selling tools and infrastructure for large-scale phishing, enabling cybercriminal operations worldwide. Threat actors purchased and used these tools and infrastructure, including phishing kits and access to compromised or fraudulent Microsoft or Google cloud environments and related credentials, to target organizations across the healthcare, financial services, wholesale distribution, and information technology (IT) sectors in Japan, the United States, Australia, and India. In collaboration with law enforcement agencies and other partners worldwide, Microsoft’s Digital Crimes Unit (DCU) facilitated a disruption of the ecosystem’s primary developers and infrastructure. Microsoft’s research into one phishing kit unraveled a larger ecosystem, including the phishing kit developers, an infrastructure dealer, and the threat actors who buy from both. In this blog, we examine several phishing kits marketed and sold through YAM Store, an underground marketplace tracked by Microsoft as Storm-3119. We share our analysis of the technical aspects of this Chinese-language phishing kit ecosystem, the shared infrastructure, provisioning methods, and downstream activity by threat actors using these tools. Figure 1: Heat map of most impacted countries by combined Storm-3119 and Storm-2990-related activity. Uncovering the shadow world of a phishing kit ecosystem Microsoft, alongside industry partner Resecurity, identified three phishing kits sold through the YAM Store that make up this Chinese-language cybercriminal network: CoGUI (also known as NX or FA), Haozi (also known as Phoenix), and Iron Man System. Microsoft tracks the cluster of activity and the developers behind all three phishing kits as Storm-2990. Since January 2026, the threat actors behind these kits have been responsible for facilitating the sending of over one billion phishing emails and SMS messages to over 75 thousand organizations worldwide. Microsoft assesses with high confidence that these phishing kits were developed by Chinese-speaking threat actors,...",
       "links": [
         {
           "label": "Uncovering the shadow world of a phishing kit ecosystem",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#uncovering-the-shadow-world-of-a-phishing-kit-ecosystem"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#uncovering-the-shadow-world-of-a-phishing-kit-ecosystem"
         },
         {
           "label": "Storm-3119: YAM Store, the power broker",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#storm-3119-yam-store-the-power-broker"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#storm-3119-yam-store-the-power-broker"
         },
         {
           "label": "Storm-2990: The Iron Man System phishing kit",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#storm-2990-the-iron-man-system-phishing-kit"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#storm-2990-the-iron-man-system-phishing-kit"
         },
         {
           "label": "Downstream activity from Storm-2990 phishing kits",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#downstream-activity-from-storm-2990-phishing-kits"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#downstream-activity-from-storm-2990-phishing-kits"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
         },
         {
           "label": "Microsoft’s Digital Crimes Unit (DCU) facilitated a disruption of the ecosystem’s primary developers and infrastructure",
@@ -4258,81 +4041,6 @@
       ]
     },
     {
-      "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
-      "published": "2026-10-08T20:44:28+00:00",
-      "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security...",
-      "author": "Microsoft Security Research, Lora Randolph, Tahmina Ahmad and Karina Sirota Goodley",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Why post-quantum authentication presents a different challengeWhy organizations should begin preparing nowMicrosoft's perspective on readinessTesting the future certificate ecosystemExpanding end-to-end testingWhat organizations can do todayLooking aheadLearn more Post-quantum cryptography (PQC) planning often focuses on protecting encrypted data, but authentication systems must also evolve. Certificates, trust anchors, PKI services, applications, devices, and hardware security modules may all be affected by new algorithms and larger certificate chains. Microsoft’s Post-Quantum Cryptography (PQC) Transport Layer Security (TLS) Pilot Program helps eligible certificate authorities evaluate interoperability and operational readiness in controlled environments. Organizations should begin now by inventorying certificate dependencies, assessing vendor roadmaps, identifying long-lived infrastructure, and creating non-production test environments. Early testing can surface compatibility and process gaps before post-quantum authentication is required at scale. By the end of this article, security leaders, public key infrastructure (PKI) administrators, and architects will understand the key certificate dependencies, migration risks, and practical first steps for post-quantum authentication readiness. Why post-quantum authentication presents a different challenge Much of the current PQC readiness discussion focuses on confidentiality and the ‘harvest now, decrypt later’ risk, in which adversaries collect encrypted data today with the expectation that future quantum computers could decrypt it. Authentication introduces a different set of challenges. While confidentiality protections primarily focus on safeguarding encrypted communications, authentication depends on a broad ecosystem of technologies and trust relationships. Certificates and private keys must be issued, distributed, stored, validated, renewed, and managed across diverse environments and vendors. Changes to cryptographic algorithms can therefore have implications that extend beyond cryptographic correctness into operational processes, interoperability, and infrastructure readiness. Organizations frequently understand where TLS protects their communications. Fewer organizations have a complete inventory of every system that issues, validates, stores, distributes, or depends on certificates. As the industry moves toward post-quantum authentication, security teams will need greater...",
-      "links": [
-        {
-          "label": "Why post-quantum authentication presents a different challenge",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-post-quantum-authentication-presents-a-different-challenge"
-        },
-        {
-          "label": "Why organizations should begin preparing now",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-organizations-should-begin-preparing-now"
-        },
-        {
-          "label": "Microsoft's perspective on readiness",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-s-perspective-on-readiness"
-        },
-        {
-          "label": "Testing the future certificate ecosystem",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#testing-the-future-certificate-ecosystem"
-        },
-        {
-          "label": "Expanding end-to-end testing",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#expanding-end-to-end-testing"
-        },
-        {
-          "label": "What organizations can do today",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-organizations-can-do-today"
-        },
-        {
-          "label": "Looking ahead",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#looking-ahead"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "ML-DSA-87",
-          "url": "https://csrc.nist.gov/pubs/fips/204/final"
-        },
-        {
-          "label": "According to the Microsoft Trusted Root Program Annoucement,",
-          "url": "https://github.com/TrustedRootProgram/Program-Requirements/blob/main/Announcements.md"
-        },
-        {
-          "label": "https://aka.ms/rootcert",
-          "url": "https://aka.ms/rootcert"
-        },
-        {
-          "label": "KB5101681 (OS Build 28000.2608) for 26H1",
-          "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/07/july-28-2026-kb5101681-preview"
-        }
-      ]
-    },
-    {
       "title": "CVE-2026-107332 - Insecure default file permissions on cached credentials in AWS Toolkit for Visual Studio Code",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-129-aws/",
       "published": "2026-10-08T17:43:09+00:00",
@@ -4630,81 +4338,6 @@
       "links": []
     },
     {
-      "title": "3 lessons from frontier AI vulnerability research",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
-      "published": "2026-10-07T16:00:00+00:00",
-      "summary": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel. The post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog.",
-      "author": "Taesoo Kim",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Shift 1. From frontier capability to scaleShift 2. From token consumption to reasoning economicsShift 3. Validation and remediation as a continuous learning loopTransferring security research to help open source projectsOpen-source vulnerability reporting snapshotMeasured costs of automated validationFORGE OSS Bug Hunt Party: Human coordination at scale (Hackathon)Akrites: Coordinated effort to remediate vulnerabilitiesWhat’s next for FORGE Lab? The mission of Microsoft Security’s Frontier Offensive Research & Generative Exploitation (FORGE) Lab is to advance the frontier of autonomous security engineering. We’re building a team that enables AI-native vulnerability research at Microsoft, pushing the boundaries of finding and fixing zero-day vulnerabilities. Four principles guide that work: autonomy over labor, defense through offense, building ecosystems over individual examples, and understanding over findings. This post reflects those principles in practice across Windows, the Linux kernel, and widely used open-source projects. Learn more about the Microsoft FORGE Lab From May 2026 through September 2026, FORGE helped discover Windows vulnerabilities assigned 140 common vulnerabilities and exposures (CVEs), including 52 addressed in September 2026’s security release alone. The work reaches well beyond Windows. FORGE members submitted 155 internally validated reports across 23 open-source projects, including the Linux kernel. And through Akrites, a Linux Foundation initiative that coordinates confidential remediation and disclosure for vulnerabilities in critical open-source software, one of our Linux reports became the first Akrites submission to result in a patch merged into the Linux kernel. These results demonstrate that agentic discovery can operate at meaningful volume, but they also expose the next constraint. Finding a difficult vulnerability proves an agent’s frontier capability. Repeatedly converting such findings into security updates requires a different kind of system—one that can move credible work through validation, remediation, and release. Discovery creates security value only when validation and remediation can keep pace. For security leaders, the question is no longer only whether AI can find vulnerabilities, but whether an organization can validate and fix them as fast as they are found. Three lessons follow, each marking a shift in how we approach vulnerability research: From frontier capability to scale. From token...",
-      "links": [
-        {
-          "label": "Shift 1. From frontier capability to scale",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-1-from-frontier-capability-to-scale"
-        },
-        {
-          "label": "Shift 2. From token consumption to reasoning economics",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-2-from-token-consumption-to-reasoning-economics"
-        },
-        {
-          "label": "Shift 3. Validation and remediation as a continuous learning loop",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-3-validation-and-remediation-as-a-continuous-learning-loop"
-        },
-        {
-          "label": "Transferring security research to help open source projects",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#transferring-security-research-to-help-open-source-projects"
-        },
-        {
-          "label": "Open-source vulnerability reporting snapshot",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#open-source-vulnerability-reporting-snapshot"
-        },
-        {
-          "label": "Measured costs of automated validation",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#measured-costs-of-automated-validation"
-        },
-        {
-          "label": "FORGE OSS Bug Hunt Party: Human coordination at scale (Hackathon)",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#forge-oss-bug-hunt-party-human-coordination-at-scale-hackathon"
-        },
-        {
-          "label": "Akrites: Coordinated effort to remediate vulnerabilities",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#akrites-coordinated-effort-to-remediate-vulnerabilities"
-        },
-        {
-          "label": "What’s next for FORGE Lab?",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-s-next-for-forge-lab"
-        },
-        {
-          "label": "Frontier Offensive Research & Generative Exploitation (FORGE) Lab",
-          "url": "https://github.com/microsoft/forge-lab"
-        },
-        {
-          "label": "one of our Linux reports",
-          "url": "https://lore.kernel.org/all/aqyUc_7c19MgzAG7@kernel.org/"
-        },
-        {
-          "label": "May 2026 introduction",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/"
-        }
-      ]
-    },
-    {
       "title": "SVD-2026-1005: Third-Party Package Updates in Splunk Add-on for Amazon Web Services - September 2026",
       "link": "https://advisory.splunk.com/advisories/SVD-2026-1005",
       "published": "2026-10-07T00:00:00+00:00",
@@ -4881,81 +4514,6 @@
       ],
       "body": "Bulletin ID: 2026-127-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/06/2026 13:30 PM PDT Description: bedrock-agentcore-starter-toolkit is an AWS-maintained open-source Python package, distributed via GitHub and PyPI, that provides a command-line interface for importing Amazon Bedrock Agents into local development environments. We identified CVE-2026-105812, a code injection issue that could allow arbitrary code execution when a specially crafted agent is imported and subsequently run or deployed, and CVE-2026-106032, an external reference handling issue that could cause unintended network requests or local file access during agent import. Affected versions: >= 0.1.4 and <= 0.3.13 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
-    },
-    {
-      "title": "CISO perspectives on managing vulnerability risks in the age of AI",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
-      "published": "2026-10-06T16:00:00+00:00",
-      "summary": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management. The post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog.",
-      "author": "Freddy Dezeure and Sesha Mani",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Most of what has been written about AI and vulnerability management focuses on speed: how much faster frontier AI models can scan code, find weaknesses, design patches, and build exploits than any human team. That part is true, and it matters to how we remediate vulnerabilities. The more challenging question is what happens after the scan? Frontier AI models are about to hand every security team a far larger set of findings than they have ever had to work through. The real test for chief information security officers (CISOs) and IT security leaders is not how fast they can patch. It is whether they can keep the balance between patching quickly and patching correctly, at a scale no human review process was built for. This shift creates both new challenges and new opportunities. The same AI capabilities accelerating cyberattackers are also enabling defenders to identify exposures earlier, automate remediation, and build more resilient security programs. Not every vulnerability will be patched in time, so the controls that limit what an attacker can do by defense in depth matter more than ever. CISOs can dramatically improve the security posture of their Microsoft infrastructure by deploying Microsoft Baseline Security Mode (BSM), building on how Microsoft protects Microsoft. Learn more about Microsoft Baseline Security Mode How do frontier AI models change vulnerability management for CISOs? Microsoft uses frontier AI models to find vulnerabilities in its code base and mitigate them at controlled pace. Potential vulnerabilities are reviewed on validity, severity, and potential impact. As we have explained in previous blogs, many steps in our vulnerability handling and disclosure processes now are AI-powered, allowing them to scale. Most vulnerabilities in cloud software are being mitigated by Microsoft without customer intervention. For on-premises Microsoft software, customers should continue to expect a substantial increase in the number of vulnerabilities released on Patch Tuesdays relative to historic volumes before the advent of frontier AI models earlier this year—September 2026 saw a record number, close to 1,000.1 Due to the non-deterministic nature of AI models, different runs by the same model or with different models may yield different results. With better models becoming available over time, AI-powered vulnerability scanning of our existing code base and new code should become part of our standard security assurance. We use a ‘harness’ layer...",
-      "links": [
-        {
-          "label": "Microsoft Baseline Security Mode (BSM)",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/baseline-security-mode/baseline-security-mode-settings?view=o365-worldwide"
-        },
-        {
-          "label": "AI-powered",
-          "url": "https://www.microsoft.com/en-us/msrc/blog/2026/04/strengthening-secure-software-global-scale-how-msrc-is-evolving-with-ai"
-        },
-        {
-          "label": "allowing them to scale",
-          "url": "https://blogs.windows.com/windowsexperience/2026/07/09/evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discovery/"
-        },
-        {
-          "label": "substantial increase in the number of vulnerabilities",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/beyond-the-benchmark-advancing-security-at-ai-speed/?msockid=1be26702317361321156722530016039"
-        },
-        {
-          "label": "codename MDASH",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/"
-        },
-        {
-          "label": "strengthen their security posture",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/11/05/securing-critical-infrastructure-why-europes-risk-based-regulations-matter/"
-        },
-        {
-          "label": "new Microsoft Security Exposure Management page",
-          "url": "https://security.microsoft.com/securenow"
-        },
-        {
-          "label": "coordinate the scanning and patching",
-          "url": "https://akrites.org/"
-        },
-        {
-          "label": "Secure Future Initiative (SFI) report",
-          "url": "https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative/sfi-progress-report-july-2026"
-        },
-        {
-          "label": "Microsoft Baseline Security Mode (BSM)",
-          "url": "https://www.microsoft.com/insidetrack/blog/hardening-our-digital-defenses-with-microsoft-baseline-security-mode/"
-        },
-        {
-          "label": "exceptions can be made and removed",
-          "url": "https://www.microsoft.com/insidetrack/blog/deploying-microsoft-baseline-security-mode-at-microsoft-our-virtuous-learning-cycle/?msockid=0d94169e268868132c2003c927326968"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        }
-      ]
     },
     {
       "title": "Incident affecting ASOS customers",
@@ -5365,6 +4923,81 @@
       ]
     },
     {
+      "title": "​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
+      "published": "2026-09-30T19:31:00+00:00",
+      "summary": "This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what’s next: Your guide to Microsoft Security at...",
+      "author": "Lindsay Myers",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article Why you should attend Microsoft IgniteMake the most of your time at Microsoft Ignite Explore the Security sessions at Microsoft Ignite 2026 Build your schedule In the agentic era, the stakes are higher: AI agents now act with real access to your identities, your data, and your cloud, so every adoption decision is a trust decision. That is why security is a through line at Microsoft Ignite 2026, from a Security Pre-Day before the event opens to a security segment in the keynote, and four security themes across all four days. Join us in San Francisco from November 17 to 20, 2026, or online. See the Microsoft Security roadmap first, get hands-on with new agentic security solutions, and connect directly with the experts, partners, and peers who can help you make it real. This year we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. Register for Microsoft Ignite 2026 Why you should attend Microsoft Ignite Understand where Microsoft is placing its bets. See what is being announced, what is shipping next, and what it means for your architecture, your security operations center (SOC), and your governance model. Build skills you can use immediately. Technical breakouts run from level 200 to level 400, paired with instructor-led labs and onsite certifications, so you leave with implementation guidance rather than slideware. Pressure-test your plans with the people who built it. Bring your real architecture, deployment, and roadmap questions to Microsoft engineers, MVPs, and the product teams behind these tools. See the proof, not the promise. Customer stories, live demos, and partner solutions show what is already working in production today. Connect with the people who make it real. Expert meetups, connection pods, table talks, and evening events put you alongside security practitioners, leaders, Microsoft partners, and peers working the same problems. Make the most of your time at Microsoft Ignite Whether you join us in San Francisco or online, you will have access to a full slate of experiences designed to help you connect, learn, and grow as a security professional. Here is what is in store. Start a day early at the Security Pre-Day On Monday, November 16, 2026, from 1:00 PM PT to 5:00 PM PT, the Security Pre-Day gives you four hours with Microsoft Security leaders and external industry voices before the...",
+      "links": [
+        {
+          "label": "Why you should attend Microsoft Ignite",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-you-should-attend-microsoft-ignite"
+        },
+        {
+          "label": "Make the most of your time at Microsoft Ignite",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#make-the-most-of-your-time-at-microsoft-ignite"
+        },
+        {
+          "label": "Explore the Security sessions at Microsoft Ignite 2026",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#explore-the-security-sessions-at-microsoft-ignite-2026"
+        },
+        {
+          "label": "Build your schedule",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#build-your-schedule"
+        },
+        {
+          "label": "Join us in San Francisco from November 17 to 20, 2026",
+          "url": "https://ignite.microsoft.com/home?wt.mc_ID=msignite26_ciarmar_corp_np_oo_securitysite_SecBlogSecureWhatsNext_0545"
+        },
+        {
+          "label": "Fill out the interest form",
+          "url": "https://aka.ms/SecuretheNight2026"
+        },
+        {
+          "label": "Microsoft Intelligent Security Association (MISA)",
+          "url": "https://www.microsoft.com/en-us/security/business/intelligent-security-association"
+        },
+        {
+          "label": "Zero Trust",
+          "url": "https://www.microsoft.com/en-us/security/business/zero-trust"
+        },
+        {
+          "label": "Microsoft Defender",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender"
+        },
+        {
+          "label": "Microsoft Purview",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-purview"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        }
+      ]
+    },
+    {
       "title": "What’s new in Microsoft Sentinel: September 2026",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-september-2026/ba-p/4560902",
       "published": "2026-09-30T16:00:00+00:00",
@@ -5445,12 +5078,12 @@
       "published": "2026-09-30T14:00:00+00:00",
       "summary": "Microsoft Threat Intelligence examines CVE-2026-73570 exploitation in Zimbra, including observed attack paths, detection opportunities, and mitigation guidance. The post Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570 appeared first on Microsoft Security...",
       "author": "Microsoft Security Research, Mahesh Mandava and Rajesh Kumar Natarajan",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
@@ -5466,19 +5099,19 @@
       "links": [
         {
           "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
         },
         {
           "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
         },
         {
           "label": "NVD: CVE-2026-73570",
@@ -5559,36 +5192,36 @@
       "published": "2026-09-29T21:39:27+00:00",
       "summary": "Microsoft observed phishing campaigns that abused MSP360 RMM to deploy ScreenConnect, creating redundant remote-access channels for follow-on activity The post Phishing Abuses RMM Tools for Persistent Access appeared first on Microsoft Security Blog.",
       "author": "Microsoft Security Research, Parasharan Raghavan, Deva Kanna Kannan, Sai Chakri and Microsoft Defender Experts",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Threat Intelligence"
+        "General Security"
       ],
       "body": "In this article Attack chain overviewMitigation and protection guidanceLearn More In July 2026, Microsoft Defender Experts observed phishing campaigns targeting organizations across multiple industries that distributed a masqueraded MSP360 Remote Monitoring and Management (RMM) installer through meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content. Once executed, the legitimate MSP360 installer, distributed under a deceptive file name established remote management access on affected devices and enabled threat actors to gain an initial foothold using trusted administrative software. Microsoft observed the MSP360 deployment being used to download and install a ConnectWise ScreenConnect client, creating a secondary remote-access channel that provided redundant access to compromised systems. Microsoft did not observe exploitation of ScreenConnect software itself; rather, threat actors abused legitimately obtained remote administration software to establish and maintain access. After access was established, threat actors used these remote administration channels to deploy additional tools and conduct post-compromise activity, including information collection and credential-access operations. This activity highlights how threat actors continue to abuse legitimate remote administration software to blend into normal IT operations while maintaining persistent access and reducing detection opportunities. Microsoft Defender for Endpoint detects suspicious and uncommon remote-management activity, while the hunting queries and mitigations in this post can help organizations identify and restrict unapproved RMM use. Attack chain overview The observed multi-stage intrusion chain began when phishing lures delivered a legitimate, digitally signed MSP360 RMM v2.5.0.67 installer under deceptive filenames. Following successful User Account Control (UAC) elevation, the installer established MSP360 services for persistent access and leveraged the RMM agent to invoke PowerShell, download, and silently install ConnectWise ScreenConnect. This effectively introduced a second remote administration channel on the compromised device, which the threat actor subsequently used to transfer and execute additional tooling supporting credential access, local data collection, and other post-compromise activity. Figure 1. Attack chain showing phishing delivering a masqueraded MSP360 RMM installer that deploys ScreenConnect for persistent remote...",
       "links": [
         {
           "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
         },
         {
           "label": "publisher rule condition",
@@ -5629,6 +5262,81 @@
       ]
     },
     {
+      "title": "​​Beyond source code: A path to the keys to the kingdom",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
+      "published": "2026-09-29T16:00:00+00:00",
+      "summary": "Explore how Storm-3068 turned a compromised identity into broader cloud access and the steps organizations can take to defend their identities, pipelines, and cloud infrastructure. The post ​​Beyond source code: A path to the keys to the kingdom appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Defender Experts Cybersecurity Incident Response",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "What began as a single compromised identity quickly expanded into an organization’s development and cloud environments. In our latest Cyberattack Series report, we examine how the Microsoft Detection and Response Team (DART)—the team that delivers Microsoft Defender Experts Cybersecurity Incident Response—investigated activity by Storm-3068, a threat actor that turned a successful self-service password reset into access to Azure DevOps, development pipelines, and Kubernetes resources. By leveraging legitimate identity and cloud services rather than malware or software exploits, the threat actor established persistent access, enumerated repositories, and obtained credentials that opened a path into connected cloud infrastructure. This case highlights a growing challenge for defenders: when identities, source code, pipelines, and production environments are tightly linked, a single account compromise can provide a pathway to much broader access across the organization. Read on to learn more or access the full report. Read the full cyberattack report What happened? The intrusion began with Storm-3068 gaining access to a user account through a self-service password reset process and then taking full control of the identity by registering its own authentication methods. With persistent access established, the threat actor shifted its focus to Azure DevOps using legitimate administrative tools and automated scripts to enumerate repositories, projects, pipelines, and deployment environments. TACTIC: Trusted pipelines were exploitedRather than deploying malware, the threat actor modified development pipelines to collect Kubernetes credentials and expand access into cloud infrastructure.​​ Azure DevOps proved to be a high-value target because it sat at the intersection of identity, software development, and cloud operations. By mapping trusted deployment paths and connected resources, the threat actor was able to identify opportunities to expand beyond the initial compromise. The investigation revealed that Storm-3068 created a malicious pipeline designed to harvest Kubernetes credentials at scale. The pipeline deployed a kube agent and executed multiple jobs intended to collect kubeconfig files containing cluster connection details and authentication information. Leveraging the permissions of the compromised account, the threat actor deployed the pipeline that was authorized to access more than 50 resources and authenticated to services. In addition to deploying...",
+      "links": [
+        {
+          "label": "Microsoft Defender Experts Cybersecurity Incident Response",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender-experts-cybersecurity-incident-response?msockid=2f650b5d62a36ba416111c8063e66a5c"
+        },
+        {
+          "label": "Storm-3068",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming"
+        },
+        {
+          "label": "access the full report",
+          "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/security/Cyberattacks-Series-Report-Q3-2026.pdf"
+        },
+        {
+          "label": "Azure DevOps",
+          "url": "https://azure.microsoft.com/en-us/products/devops/?msockid=2f650b5d62a36ba416111c8063e66a5c"
+        },
+        {
+          "label": "Kubernetes",
+          "url": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-kubernetes/?msockid=2f650b5d62a36ba416111c8063e66a5c"
+        },
+        {
+          "label": "multifactor authentication",
+          "url": "https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-mfa-multi-factor-authentication"
+        },
+        {
+          "label": "DART",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender-experts-cybersecurity-incident-response"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        },
+        {
+          "label": "Microsoft Security",
+          "url": "https://www.linkedin.com/showcase/microsoft-security/"
+        },
+        {
+          "label": "@MSFTSecurity",
+          "url": "https://twitter.com/@MSFTSecurity"
+        },
+        {
+          "label": "​​Beyond source code: A path to the keys to the kingdom",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/"
+        }
+      ]
+    },
+    {
       "title": "CVE-2026-100308 - GluonTS arbitrary command execution during model deserialization",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-119-aws/",
       "published": "2026-09-29T15:17:30+00:00",
@@ -5665,18 +5373,18 @@
       "published": "2026-09-29T15:00:00+00:00",
       "summary": "Since January 2026, Microsoft has observed Russian state threat actor Star Blizzard evolve their detection evasion capabilities through large-scale phishing campaigns, the use of accounts on compromised websites, and a novel malware delivery technique, tracked by Microsoft as “RedFlick”. The post...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 11
+          "score": 6
         }
       ],
       "tags": [
@@ -5686,23 +5394,23 @@
       "links": [
         {
           "label": "Star Blizzard TTPs observed in 2026",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#star-blizzard-ttps-observed-in-2026"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#star-blizzard-ttps-observed-in-2026"
         },
         {
           "label": "Defending against Star Blizzard and RedFlick-related activity",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#defending-against-star-blizzard-and-redflick-related-activity"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#defending-against-star-blizzard-and-redflick-related-activity"
         },
         {
           "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
         },
         {
           "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
         },
         {
           "label": "2025",
@@ -5847,12 +5555,12 @@
       "published": "2026-09-28T15:00:00+00:00",
       "summary": "Microsoft Threat Intelligence identified NeedyMantis, a modular post-compromise malware framework used in targeted intrusions that combines custom loaders, encrypted archives, and extensible components to maintain long-term access and support follow-on operations. The post NeedyMantis: Unpacking a...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
+      "source_category": "Security Blog",
       "board_id": null,
       "products": [
         {
@@ -5868,27 +5576,27 @@
       "links": [
         {
           "label": "Observed operators and targeting",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#observed-operators-and-targeting"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#observed-operators-and-targeting"
         },
         {
           "label": "Malware packaging and distribution",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#malware-packaging-and-distribution"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#malware-packaging-and-distribution"
         },
         {
           "label": "NeedyMantis architecture and capabilities",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#needymantis-architecture-and-capabilities"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#needymantis-architecture-and-capabilities"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
         },
         {
           "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
         },
         {
           "label": "Kaspersky previously reported",
@@ -5913,73 +5621,6 @@
         {
           "label": "Endpoint Detection and Response (EDR) in block mode",
           "url": "https://learn.microsoft.com/defender-endpoint/edr-in-block-mode"
-        }
-      ]
-    },
-    {
-      "title": "Exploitation of vulnerabilities affecting Citrix NetScaler ADC and Citrix NetScaler Gateway",
-      "link": "https://www.ncsc.gov.uk/news/exploitation-of-vulnerabilities-affecting-citrix-netscaler-adc-and-citrix-netscaler-gateway",
-      "published": "2026-09-28T12:00:00+00:00",
-      "summary": "The NCSC is urging UK organisations to promptly mitigate vulnerabilities affecting Citrix NetScaler ADC and Gateway, two of which are being actively exploited.",
-      "author": "",
-      "source": "NCSC Security Feed",
-      "source_id": "ncsc_security",
-      "source_group": "Official NCSC",
-      "source_kind": "rss",
-      "vendor": "NCSC",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ncsc-guidance",
-          "name": "NCSC Guidance",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Updating Purview DLP Sensitive Service Domain Groups with PowerShell",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/updating-purview-dlp-sensitive-service-domain-groups-with/ba-p/4560220",
-      "published": "2026-09-28T05:10:31+00:00",
-      "summary": "Introduction Microsoft Purview Data Loss Prevention (DLP) can use Sensitive Service Domain Groups to organize websites and other network destinations that are referenced by endpoint DLP rules. Administrators can manage these settings in the Purview portal, while PowerShell is useful when changes...",
-      "author": "SantoshPargi",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "Introduction Microsoft Purview Data Loss Prevention (DLP) can use Sensitive Service Domain Groups to organize websites and other network destinations that are referenced by endpoint DLP rules. Administrators can manage these settings in the Purview portal, while PowerShell is useful when changes must be repeatable, reviewed, and validated before they are committed. This article demonstrates how to retrieve the tenant policy configuration, identify an existing group, add new URL entries only when they are not already present, validate the change, commit it, and verify the final configuration. Important The SiteGroupsPsws object contains tenant-wide endpoint restriction settings. Test the script in a non-production tenant first, export the original configuration, and use change control. Microsoft documents Get-PolicyConfig and Set-PolicyConfig for viewing and modifying endpoint restrictions, but the internal shape of individual hashtable entries can evolve. Prerequisites Requirement Guidance Permissions Use an account assigned the required Microsoft Purview permissions for the configuration being changed. Microsoft states that Get-PolicyConfig and Set-PolicyConfig require permissions in Security & Compliance PowerShell. PowerShell module Install or update the ExchangeOnlineManagement module. Security & Compliance PowerShell uses this module for connectivity. Connection Connect to Security & Compliance PowerShell by using Connect-IPPSSession before running the policy configuration cmdlets. Existing group The target Sensitive Service Domain Group must already exist. This script updates a group named Claude; it does not create the group. Change controls Run the discovery and backup commands first, use -WhatIf before commit, and retain the exported JSON for rollback analysis. Step 1: Install the module and connect Install-Module -Name ExchangeOnlineManagement -Scope CurrentUserImport-Module ExchangeOnlineManagementConnect-IPPSSession Confirm that the policy configuration can be retrieved: Get-PolicyConfig | Format-List Step 2: Discover available group names List the names exposed in SiteGroupsPsws and confirm that the target group exists before making any change. (Get-PolicyConfig).SiteGroupsPsws | Where-Object { $_.ContainsKey(\"Name\") } | ForEach-Object { $_.Name } Step 3: Back up the current configuration Export the current SiteGroupsPsws representation before modifying the in-memory object. $BackupPath = \".\\SiteGroupsPsws-backup-{0}.json\" -f (Get-Date...",
-      "links": [
-        {
-          "label": "Get-PolicyConfig cmdlet reference",
-          "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/get-policyconfig?view=exchange-ps"
-        },
-        {
-          "label": "Set-PolicyConfig cmdlet reference...",
-          "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-policyconfig?view=exchange-ps"
-        },
-        {
-          "label": "Security & Compliance PowerShell overview...",
-          "url": "https://learn.microsoft.com/en-us/powershell/exchange/scc-powershell?view=exchange-ps"
-        },
-        {
-          "label": "Configure Endpoint DLP settings https://learn.microsoft.com/en-us/purview/dlp-configure-endpoint-settings",
-          "url": "https://learn.microsoft.com/en-us/purview/dlp-configure-endpoint-settings"
         }
       ]
     }
