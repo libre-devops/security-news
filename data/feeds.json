@@ -1,8 +1,469 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-29T12:33:19.889769+00:00",
-  "totalArticles": 156,
+  "lastUpdated": "2026-10-29T22:34:53.946908+00:00",
+  "totalArticles": 162,
   "articles": [
+    {
+      "title": "(Updated) Microsoft Authenticator: Usability improvements for iOS and Android",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1521604",
+      "published": "2026-10-29T20:51:10.513000+00:00",
+      "summary": "Updated October 29, 2026: We have updated the timeline. Thank you for your patience. [What and why]We’re updating Microsoft Authenticator with several usability improvements across iOS and Android. These updates include a refreshed home experience, clearer guidance for accounts that need to be...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1521604",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated October 29, 2026: We have updated the timeline. Thank you for your patience. [What and why]We’re updating Microsoft Authenticator with several usability improvements across iOS and Android. These updates include a refreshed home experience, clearer guidance for accounts that need to be restored, improvements to restoration and sign-in flows, and additional prompts designed to help keep Authenticator working reliably. Availability and timing vary by platform.[Rollout schedule]General Availability (Worldwide, GCC, GCC High, and DoD): Beginning in early November 2026 (previously October) and expected to complete in late November 2026The improved restoration experience for push notifications and passwordless sign-in will be available on iOS first, with Android planned to follow in January 2027.[Impact on your organization]Who is affectedUsers of Microsoft Authenticator on iOS and AndroidPlatforms and servicesMicrosoft Authenticator for iOS and AndroidWhat will happenImproved Authenticator home experience, iOS and Android: The Authenticator home page is being updated to improve the experience when users view and manage their accounts. On Android, this update will be available in November 2026.iOs:Android:Clearer notification for accounts that haven’t been restored, iOS and Android: Users with accounts that have not yet been restored will see a banner informing them that those accounts require attention. Improved first-run guidance for account restoration, iOS and Android: The first-run experience will more clearly show which accounts need to be restored, giving users additional context during Authenticator setup.App rating prompt during sign-in, iOS only: Users may see an option to rate Microsoft Authenticator as part of the sign-in experience, giving them an opportunity to provide feedback about the app. Improved restoration experience for push notifications and passwordless sign-in: The restoration flow is being improved for users who use push notifications and passwordless sign-in. This improvement will be available on iOS first, with Android planned for January 2027. Prompt to exclude Authenticator from battery optimization, Android only: After successfully completing an interactive authentication, users may see a non-blocking prompt to exclude Authenticator from Android battery optimization. Excluding the app from battery optimization helps users stay signed in and continue receiving work or school notifications. The prompt will not block authentication.[Action required and recommendations]No configuration action is specified in this request.Inform your help desk and security operations teams about the updated Authenticator experiences.Update internal user guidance and screenshots that show the previous Authenticator experiences.[Compliance considerations]No compliance considerations identified.",
+      "links": [],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "[Launched] Generally Available: HTTP DDoS ruleset for Azure Front Door Premium WAF",
+      "link": "https://azure.microsoft.com/updates?id=578681",
+      "published": "2026-10-29T17:09:49+00:00",
+      "summary": "Announcing the general availability of the HTTP DDoS ruleset for Azure Web Application Firewall (WAF) on Azure Front Door Premium. HTTP-layer DDoS attacks remain a leading cause of application downtime, and static controls such as IP filters and fixed rat",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-119115 - Incorrect authorization in issuer resolution in AWS Private CA Connector for Kubernetes",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-156-aws/",
+      "published": "2026-10-29T16:45:45+00:00",
+      "summary": "Bulletin ID: 2026-156-AWS Publication Date: 10/29/2026 09:30 AM PDT Description: We are aware of CVE-2026-119115, an incorrect authorization issue in the issuer resolution logic. In affected versions, under certain conditions, an authenticated user whose approval policy only authorizes a...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-156-AWS Publication Date: 10/29/2026 09:30 AM PDT Description: We are aware of CVE-2026-119115, an incorrect authorization issue in the issuer resolution logic. In affected versions, under certain conditions, an authenticated user whose approval policy only authorizes a namespace-scoped issuer could obtain certificates, including subordinate CA certificates, signed by a cluster-scoped issuer they are not authorized to use. Impacted versions: - aws-privateca-issuer before v1.10.1 - AWS Private CA Connector for Kubernetes EKS add-on before v1.10.1-eksbuild.1 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-156-aws/"
+        }
+      ]
+    },
+    {
+      "title": "Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice authentication",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1518029",
+      "published": "2026-10-29T16:27:01.897000+00:00",
+      "summary": "Updated October 26, 2026: We have updated the timeline. Thank you for your patience. [What and why]Microsoft Entra ID is adding safeguards to reduce automated abuse of telephony-based authentication. SMS and voice authentication options are not being removed. Some users who use SMS or voice for...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1518029",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated October 26, 2026: We have updated the timeline. Thank you for your patience. [What and why]Microsoft Entra ID is adding safeguards to reduce automated abuse of telephony-based authentication. SMS and voice authentication options are not being removed. Some users who use SMS or voice for first-factor sign-in may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before a code is sent.[Rollout schedule]Rollout began in mid-October 2026 and is ongoing. Users may see an anti-bot verification step for first-factor telephony-based authentications.[Impact on your organization]Who is affectedSome users who use SMS or voice as a first-factor sign-in methodPlatforms and servicesMicrosoft Entra ID telephony-based authentication using SMS or voice for first-factor sign-inWhat will happenSome users might see an additional risk-based anti-bot verification step (CAPTCHA) before Microsoft sends the telephony code.The experience is determined based on client behaviors, so not every user or sign-in attempt will be affected.If the verification experience does not load because of restrictive network or firewall settings, affected users might not be able to complete the flow until required endpoints are allowed. Endpoint guidance is included in the linked documentation below.[Action required and recommendations]Prepare your help desk and user communications for the possibility of an anti-bot verification step before a telephony code is sent.Review the linked documentation for network-readiness guidance, including any approved endpoint or allowlist requirements.Continue moving users to phishing-resistant authentication methods, such as passkeys, where possible.Learn more Understanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft LearnRisk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft LearnPasskeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Understanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-mfa-telephony-fraud"
+        },
+        {
+          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha"
+        },
+        {
+          "label": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft...",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Tracking AI adoption in North Korean threat actor tradecraft",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+      "published": "2026-10-29T16:00:00+00:00",
+      "summary": "As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed and efficiency of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. This blog breaks down how North Korean threat actors are...",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Stages of AI adoption by North Korean threat actorsAI use across North Korean threat operationsAI-assisted targeting and reconnaissanceAI-assisted social engineering and identity deceptionAI-assisted software and tooling developmentAI-assisted operational scaling and analysisMitigation and protection guidanceMicrosoft Defender detections As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed, efficiency, and complexity of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. Threat actors use AI as a force multiplier across their operations, particularly to accelerate and scale established workflows. Recent activities illustrate this AI-enabled acceleration and scaling: Jade Sleet launched campaigns through three front companies in a single week, Onyx Sleet generated dozens of tailored lures in minutes, Coral Sleet rapidly built a new capability to trojanize private source code repositories, and Diamond Sleet used AI to enhance tailored targeting workflows, including persona development and front company creation. Further, Onyx Sleet and Pearl Sleet are leveraging the open-source agentic AI penetration testing framework ARTEX to conduct operations, further indicating North Korea’s willingness to quickly adopt new AI technologies for their operations. The Democratic People’s Republic of Korea operates under extensive international sanctions and uses cyber operations and other illicit mechanisms to evade these restrictions and advance state objectives. Within this operating environment, North Korean threat actors have demonstrated the willingness to adopt new technologies that help sustain or advance existing operations. AI adoption by North Korean threat actors therefore largely supports existing goals and targeting priorities rather than representing a shift in actor motivations. North Korean threat actors conduct cyber operations primarily to generate revenue for the regime, collect strategic intelligence, and, in some cases, pursue politically motivated disruptive or destructive objectives. Across these objectives, North Korean threat actor tradecraft remains grounded in social engineering, malware delivery, and the abuse of legitimate tools. These operations commonly target cryptocurrency and financial organizations, information technology companies and software supply chains, government entities, and education-related...",
+      "links": [
+        {
+          "label": "Stages of AI adoption by North Korean threat actors",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#stages-of-ai-adoption-by-north-korean-threat-actors"
+        },
+        {
+          "label": "AI use across North Korean threat operations",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-use-across-north-korean-threat-operations"
+        },
+        {
+          "label": "AI-assisted targeting and reconnaissance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-assisted-targeting-and-reconnaissance"
+        },
+        {
+          "label": "AI-assisted social engineering and identity deception",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-assisted-social-engineering-and-identity-deception"
+        },
+        {
+          "label": "AI-assisted software and tooling development",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-assisted-software-and-tooling-development"
+        },
+        {
+          "label": "AI-assisted operational scaling and analysis",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-assisted-operational-scaling-and-analysis"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Microsoft Defender detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+        },
+        {
+          "label": "operationalize AI",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/"
+        },
+        {
+          "label": "Jasper Sleet",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/06/30/jasper-sleet-north-korean-remote-it-workers-evolving-tactics-to-infiltrate-organizations/"
+        },
+        {
+          "label": "Diamond Sleet",
+          "url": "https://www.microsoft.com/en-us/security/blog/2023/11/22/diamond-sleet-supply-chain-compromise-distributes-a-modified-cyberlink-installer/"
+        },
+        {
+          "label": "Sapphire Sleet",
+          "url": "https://www.microsoft.com/en-us/security/blog/tag/sapphire-sleet/"
+        }
+      ]
+    },
+    {
+      "title": "IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment/",
+      "published": "2026-10-29T16:00:00+00:00",
+      "summary": "IDC has named Microsoft a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises. The post IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment appeared first on Microsoft Security Blog.",
+      "author": "Rob Lefferts",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Today, we’re proud to share thatMicrosoft has been named a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises (Doc #US54123526, September 2026). The IDC Marketscape calls out three strengths that we believe matter most in endpoint security today: Autonomous attack disruption and predictive shielding contain ransomware and identity attacks in minutes, at a meaningful scale. Agentic AI through Security Copilot is now generally available, with measured gains in alert accuracy and analyst time saved. The company offers broad native cross-platform coverage plus sovereign cloud and data residency options for regulated and multinational customers. Read the IDC report IDC MarketScape vendor analysis model is designed to provide an overview of the competitive fitness of technology and suppliers in a given market. The research methodology utilizes a rigorous scoring methodology based on both qualitative and quantitative criteria that results in a single graphical illustration of each supplier’s position within a given market. The Capabilities score measures supplier product, go-to-market and business execution in the short-term. The Strategy score measures alignment of supplier strategies with customer requirements in a 3-5-year timeframe. Supplier market share is represented by the size of the icons. The most critical moment in any attack is when it moves from access to action. That’s when ransomware detonates, stolen credentials are put to work, and, increasingly, a manipulated AI agent turns a user’s own data and tools against them. And threat actors are now using teams of AI agents to execute attacks faster and more relentlessly. Between 2025 and 2026, Microsoft Security researchers observed a more than 15% increase in ransomware detonations against enterprises.1 When an attacker can move from first foothold to encryption in minutes, protection on the endpoint must act at the same speed, without waiting for a person to connect the dots. Protection that acts while the attack is still unfolding The IDC MarketScape highlights that “Automatic attack disruption contains compromised devices, users, and IP addresses in near real time, and predictive shielding proactively hardens likely next attacker moves.” Built into Microsoft Defender, attack disruption uses AI and signals from the endpoint and across identities, email, and cloud to recognize multistage attacks, such as ransomware, as they happen. It then automatically contains...",
+      "links": [
+        {
+          "label": "2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises",
+          "url": "https://idcdocserv.com/US54123526e_Microsoft"
+        },
+        {
+          "label": "Microsoft Defender",
+          "url": "https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint"
+        },
+        {
+          "label": "within 128 seconds of the first high-severity alert",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/08/04/129-seconds-disruption-microsoft-defender-stops-ransomware-qnet/?msockid=3bef1be87261641b09e20845732c65d6"
+        },
+        {
+          "label": "integrated security operations center (ISOC) in Microsoft Defender",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/"
+        },
+        {
+          "label": "The Alert Is Dead. The Blueprint for the Agentic SOC.",
+          "url": "https://ignite.microsoft.com/en-US/sessions/1787856622349001EKGC-1791588130792001CK8Y?source=sessions"
+        },
+        {
+          "label": "website.",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        },
+        {
+          "label": "Microsoft Security",
+          "url": "https://www.linkedin.com/showcase/microsoft-security/"
+        },
+        {
+          "label": "@MSFTSecurity",
+          "url": "https://twitter.com/@MSFTSecurity"
+        },
+        {
+          "label": "Microsoft 2026 Digital Defense Report",
+          "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/cybersecurity/reports/microsoft-digital-defense-report/"
+        },
+        {
+          "label": "IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor...",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment/"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog"
+        }
+      ]
+    },
+    {
+      "title": "Now generally available: Discover local AI agents with Microsoft Defender",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/now-generally-available-discover-local-ai-agents-with-microsoft/ba-p/4568216",
+      "published": "2026-10-29T16:00:00+00:00",
+      "summary": "As local agents have moved from experimentation into everyday work, traditional security visibility is no longer enough. Unlike static software, local agents such as coding assistants, command-line agents, desktop applications, and agentic development environments can operate on endpoints with...",
+      "author": "JoshBregman",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Endpoint",
+        "AI Security"
+      ],
+      "body": "As local agents have moved from experimentation into everyday work, traditional security visibility is no longer enough. Unlike static software, local agents such as coding assistants, command-line agents, desktop applications, and agentic development environments can operate on endpoints with access to a user's data, credentials, tools, and services. They can also connect to Model Context Protocol (MCP) servers that extend their access to additional tools and data. This change requires security teams to look beyond. They need to understand which local agents are running and where, which users and devices these agents are associated with, and which MCP servers these agents are configured to use. To address this challenge, at Microsoft Build 2026, we introduced new Microsoft Defender capabilities to help security teams discover and protect more than 20 types of local AI agents. Today, discovery of AI agents and their configured MCP servers on Windows and macOS is generally available, with discovery coverage expanded to more than 50 supported agents and MCP servers. On eligible, onboarded devices, Defender discovers supported agents by observing their activity and brings the agent, device, account, and configured MCP context together to give security teams visibility for their local agent environment. Beyond discovery, runtime protection for local agents for Windows continues to be available in preview, helping protect discovered agents as they operate. Teams can deploy runtime protection at scale from either the Microsoft Defender portal or the Microsoft Intune portal, with Intune-based deployment available in preview. Both discovery and runtime protection for local agents will be available for Microsoft Defender for Endpoint P2 and higher customers. See the local agents and associated MCPs operating in your environment In the Defender portal, security teams can see the discovered agents under Assets. The inventory associates each agent with the device and user account where it runs and includes details such as agent name, version, vendor, related process, and discovery history. Examples of supported local AI agents include: CLI agents: Claude Code, Codex CLI, Gemini CLI, GitHub Copilot CLI Desktop applications: ChatGPT Desktop, Claude Desktop, Codex Desktop, GitHub Copilot app, Microsoft Copilot app, Ollama Desktop, Perplexity Desktop Agentic IDEs: Cursor, Devin Desktop, Kiro IDE, Antigravity IDE VS Code extensions: Claude Code, Cline, Codex, Gemini Code...",
+      "links": [
+        {
+          "label": "discover and protect more than 20 types of local AI agents",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/the-next-frontier-in-endpoint-security-securing-local-ai-agents-with-microsoft-d/4524651"
+        },
+        {
+          "label": "AI agent support matrix",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/ai-agent-support-matrix"
+        },
+        {
+          "label": "Discover local AI agents with Microsoft Defender",
+          "url": "https://learn.microsoft.com/defender-endpoint/discover-local-ai-agents"
+        },
+        {
+          "label": "Set up AI agent runtime protection with Microsoft Defender for Endpoint",
+          "url": "https://learn.microsoft.com/defender-endpoint/configure-ai-agent-runtime-protection"
+        },
+        {
+          "label": "AI agent runtime protection demonstration",
+          "url": "https://learn.microsoft.com/defender-endpoint/defender-endpoint-demonstration-ai-agent-runtime-protection"
+        },
+        {
+          "label": "Microsoft Learn: Local AI agent discovery overview",
+          "url": "https://learn.microsoft.com/defender-endpoint/local-agent-discovery-overview"
+        },
+        {
+          "label": "Microsoft Learn: Local AI agent runtime protection",
+          "url": "https://learn.microsoft.com/defender-endpoint/ai-agent-runtime-protection-overview"
+        }
+      ]
+    },
+    {
+      "title": "Defending Linux in the age of AI-operated attacks",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-linux-in-the-age-of-ai-operated-attacks/ba-p/4557210",
+      "published": "2026-10-29T16:00:00+00:00",
+      "summary": "Linux supports cloud services, containers, developer environments, business-critical applications, and a growing share of AI infrastructure. That makes Linux both essential to modern enterprises and increasingly attractive to attackers. AI is compressing the time required to research targets, vary...",
+      "author": "tejaskashyap",
+      "source": "Microsoft Defender for Endpoint",
+      "source_id": "defender_endpoint",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Endpoint Security",
+      "board_id": "microsoftdefenderatpblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint",
+        "Threat Intelligence"
+      ],
+      "body": "Linux supports cloud services, containers, developer environments, business-critical applications, and a growing share of AI infrastructure. That makes Linux both essential to modern enterprises and increasingly attractive to attackers. AI is compressing the time required to research targets, vary payloads, and adapt when an attempt fails. Customers need protection that can recognize modern attacker behavior at runtime, continuously test effectiveness against realistic attacks, and learn and evolve with the threat landscape. That’s why Microsoft Defender is focused on three priorities for Linux: stronger runtime protection for fileless and in-memory attacks, continuous validation that proves protection remains effective, and AI-powered defense that can help security teams simulate attacks, investigate threats, close protection gaps, and reduce exploitable paths before compromise. A new Linux threat model The threat landscape has evolved from AI-assisted attacks, where people use AI to accelerate individual tasks, to AI-operated attacks, where AI coordinates more of the attack chain, and now it is moving to autonomous AI attacks that can adapt and act with limited human direction. Modern Linux attacks rarely depend on one file; they combine exposed services, stolen credentials, legitimate administration tools, scripts, containers, and cloud-native attack paths. As AI helps attackers generate and modify payloads at scale, adapt when an attempt fails, and move through the attack chain faster, defenders can no longer assume that every payload, script, or binary will resemble something they have seen before. Microsoft Security Research recently observed compromises involving a LiteLLM gateway, a RAGFlow deployment, and a Kestra workflow environment. The intrusion paths differed, but the objectives converged around credential theft, persistence, downstream access, and compute monetization. The broader lesson is that AI gateways, retrieval platforms, and orchestration services are becoming high-value control points where data, credentials, model connectivity, and workload execution meet. These examples also highlight a broader shift: attackers increasingly abuse legitimate services, tools, and workflows rather than relying solely on overtly malicious binaries. Viewed one event at a time, Bash, Python, curl, SSH, and network connections can appear legitimate. The security challenge is to understand their sequence, process relationships, destinations, and runtime...",
+      "links": [
+        {
+          "label": "recently observed",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/08/26/when-ai-infrastructure-becomes-target-securing-gateways-control-points/"
+        },
+        {
+          "label": "Project Perception",
+          "url": "https://www.microsoft.com/en-us/security/business/ai-powered-cybersecurity/project-perception-agentic-system"
+        }
+      ]
+    },
+    {
+      "title": "AKS Pod Scheduling Demystified",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/aks-pod-scheduling-demystified/ba-p/4567392",
+      "published": "2026-10-29T15:55:51+00:00",
+      "summary": "Table of Contents 1. The scheduling question 2. Capacity, allocatable, requests, and usage 3. One pod from arrival to completion Stage 1: Filtering. Can each node run the pod? Stage 2: Scoring. Which eligible node ranks highest? Stage 3: Binding. Where does the pod go? Stage 4: Runtime. Why can...",
+      "author": "varghesejoji",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Table of Contents 1. The scheduling question 2. Capacity, allocatable, requests, and usage 3. One pod from arrival to completion Stage 1: Filtering. Can each node run the pod? Stage 2: Scoring. Which eligible node ranks highest? Stage 3: Binding. Where does the pod go? Stage 4: Runtime. Why can worker C still become busy? Stage 5: Completion. What happens to its reservation? 4. Why memory can outweigh CPU 5. How to investigate an uneven placement pattern 6. How to prevent pods piling onto one node 7. Conclusion and references 1. The scheduling question Picture four Azure Kubernetes Service (AKS) worker nodes with the same hardware. One keeps receiving new batch Jobs even as its CPU usage climbs. The natural question is: why does Kubernetes send another pod to a node that already looks busy? The answer is that the scheduler does not work like a live CPU load balancer. Its normal resource checks rely on the requests declared by pods. The process has two decisions: Filtering: Which nodes can run the incoming pod? Scoring: Which of those eligible nodes is the best match according to scheduling rules? Binding and runtime come next. The example below follows the same pod through all five stages. 2. Capacity, allocatable, requests, and usage Term What it means Capacity The CPU and memory a node has. Allocatable The portion Kubernetes makes available to pods, after reservations for system services. Requests The CPU and memory a pod asks Kubernetes to reserve for scheduling. Actual usage The CPU and memory containers are using right now. Suppose a node has 16 allocatable CPU cores. Its running pods request 11 cores but are currently consuming 14 cores. Kubernetes counts 5 unrequested cores when deciding whether another pod fits, not 2 idle cores. A CPU limit is different from a request. A request influences placement; a limit can restrict how much CPU a container uses. 3. One pod from arrival to completion We'll follow one batch pod, batch-worker-01, across workers A, B, C, and D. Each worker has 16 allocatable CPU cores and 64 GiB allocatable memory. Figure 1. The entire scheduling journey, with decisions at filtering, scoring, runtime, and Job completion. Follow the same pod from top to bottom. Stage 1: Filtering. Can each node run the pod? A new pod arrives and asks for 0.25 CPU cores (250m) and 0.5 GiB memory (512Mi). The scheduler checks each worker. For CPU and memory, the fit rule uses the formular: Existing requests + Incoming pod request <= Node...",
+      "links": [
+        {
+          "label": "1. The scheduling question",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_3"
+        },
+        {
+          "label": "2. Capacity, allocatable, requests, and usage",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_10"
+        },
+        {
+          "label": "3. One pod from arrival to completion",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_15"
+        },
+        {
+          "label": "Stage 1: Filtering. Can each node run the pod?",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_20"
+        },
+        {
+          "label": "Stage 2: Scoring. Which eligible node ranks highest?",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_28"
+        },
+        {
+          "label": "Stage 3: Binding. Where does the pod go?",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_43"
+        },
+        {
+          "label": "Stage 4: Runtime. Why can worker C still become busy?",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_48"
+        },
+        {
+          "label": "Stage 5: Completion. What happens to its reservation?",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_59"
+        },
+        {
+          "label": "4. Why memory can outweigh CPU",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_64"
+        },
+        {
+          "label": "5. How to investigate an uneven placement pattern",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_71"
+        },
+        {
+          "label": "6. How to prevent pods piling onto one node",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_79"
+        },
+        {
+          "label": "7. Conclusion and references",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=coreinfrastructureandsecurityblog#community--1-mcetoc_1k5n3p847_86"
+        }
+      ]
+    },
     {
       "title": "CVE-2026-115415 - Secret masking bypass in the environment tool in Strands Agents Tools",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-154-aws/",
@@ -181,6 +642,87 @@
         {
           "label": "Microsoft Security Blog",
           "url": "https://www.microsoft.com/en-us/security/blog"
+        }
+      ]
+    },
+    {
+      "title": "Growing our connector ecosystem with 500+ Microsoft Sentinel connectors",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/growing-our-connector-ecosystem-with-500-microsoft-sentinel/ba-p/4567832",
+      "published": "2026-10-28T16:00:00+00:00",
+      "summary": "Connecting the modern security environment Having spent years working across Microsoft's cloud, AI, and customer-facing organizations. I have seen that technology delivers the greatest value when it works with the environments customers already operate. That's especially true in cybersecurity. Most...",
+      "author": "alihob",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel",
+        "Threat Intelligence"
+      ],
+      "body": "Connecting the modern security environment Having spent years working across Microsoft's cloud, AI, and customer-facing organizations. I have seen that technology delivers the greatest value when it works with the environments customers already operate. That's especially true in cybersecurity. Most organizations rely on a diverse mix of platforms, applications, and security solutions. Security teams need to bring signals from across that environment together so they can understand risk, investigate threats, and respond with confidence. As a Microsoft Security customer experience leader, one of my priorities is ensuring that we're helping connect these technologies and get more value from their existing investments. When security data remains fragmented across disconnected tools, teams can lose valuable context. When that data comes together, defenders gain a more complete view of their environment and can make faster, better-informed decisions. Expanding the connector ecosystem Microsoft recently announced the Integrated Security Operations Center (ISOC) in Microsoft Defender. ISOC brings together security signals, threat intelligence, AI, and protection capabilities into a unified experience. It gives humans defenders and AI agents shared context to reason across the environment, coordinate investigations, and strengthen protection. Today, we are expanding the connector ecosystem to more than 500 connectors that enable customers to bring data from Microsoft and diverse third-party sources into their security operations experience. By connecting more signals across the technology estate, organizations can build a more complete understanding of risk and uncover relationships that might otherwise remain fragmented across separate tools. Combined with Microsoft's threat intelligence, AI, and protection capabilities, those signals become actionable context that helps human defenders and AI agents make better decisions and coordinate protection at the speed of the threat. Growing through partnership The strength of this connector ecosystem reflects the work of Microsoft and our technology partners to support our shared customers. Together, we are helping organizations connect the technologies they rely on and bring more of their security data into a unified operational experience. Below we showcase just a portion of the many partners with solutions available in Microsoft Security Store today. We remain committed to expanding this ecosystem so customers can...",
+      "links": [
+        {
+          "label": "Integrated Security Operations Center (ISOC) in Microsoft Defender",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/"
+        },
+        {
+          "label": "Microsoft Security Store",
+          "url": "https://securitystore.microsoft.com/"
+        },
+        {
+          "label": "here",
+          "url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR92tCVr2XYpEifEVSbWz23hURU9IVkRUUVBST0lEM1NTVk9JS1o3WkYzWS4u&route=shorturlrequest%20for%20assistance"
+        },
+        {
+          "label": "Sentinel connector builder agent",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/building-microsoft-sentinel-connectors-in-minutes-with-the-sentinel-connector-bu/4544378"
+        },
+        {
+          "label": "our intake form.",
+          "url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR92tCVr2XYpEifEVSbWz23hURU9IVkRUUVBST0lEM1NTVk9JS1o3WkYzWS4u&route=shorturl"
+        },
+        {
+          "label": "What is Microsoft Sentinel",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/sentinel-overview"
+        },
+        {
+          "label": "Empower Real-Time Security with Microsoft Sentinel’s CCF Push Feature | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-announcement-empower-real-time-security-with-microsoft-sentinel%E2%80%99s/4483884"
+        },
+        {
+          "label": "Building a CCF Nested API Pull Connector: A Technical Lab Walkthrough",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/building-a-ccf-nested-api-pull-connector-a-technical-lab-walkthrough/4537027"
+        },
+        {
+          "label": "Accelerate connectors development using AI agent in Microsoft Sentinel | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/accelerate-connectors-development-using-ai-agent-in-microsoft-sentinel/4507019"
+        },
+        {
+          "label": "Extending Sentinel Data Integration: Azure Blob Storage Support for CCF Connectors | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/extending-sentinel-data-integration-azure-blob-storage-support-for-ccf-connector/4516896?"
+        },
+        {
+          "label": "Public Preview: Nested API Support Comes to Microsoft Sentinel CCF | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-nested-api-support-comes-to-microsoft-sentinel-ccf/4537026"
+        },
+        {
+          "label": "Public Preview: Multi-Account Support for Microsoft Sentinel Codeless Connectors | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-multi-account-support-for-microsoft-sentinel-codeless-connectors/4544380"
         }
       ]
     },
@@ -2268,54 +2810,6 @@
       ]
     },
     {
-      "title": "CVE-2026-89049 - Server-side request forgery in the Session Manager port forwarding functionality in AWS Systems Manager Agent",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-107-aws/",
-      "published": "2026-10-25T03:13:38+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-89090 - Denial of service in the event stream header decoder in AWS SDK for Go v2",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-110-aws/",
-      "published": "2026-10-25T03:13:38+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "CVE-2026-111943: eMudhra intermediate CA key recovery in AWS trust bundles",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-150-aws/",
       "published": "2026-10-25T03:07:57+00:00",
@@ -2496,33 +2990,34 @@
       ]
     },
     {
-      "title": "Microsoft Authenticator: Usability improvements for iOS and Android",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1521604",
-      "published": "2026-10-22T23:11:18.703000+00:00",
-      "summary": "[What and why]We’re updating Microsoft Authenticator with several usability improvements across iOS and Android. These updates include a refreshed home experience, clearer guidance for accounts that need to be restored, improvements to restoration and sign-in flows, and additional prompts designed...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
+      "title": "CVE-2026-115812 and CVE-2026-115813: Issue in Amazon Web Services Multi Model Server",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-148-aws/",
+      "published": "2026-10-23T17:45:37+00:00",
+      "summary": "Bulletin ID: 2026-148-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/23/2026 10:30 AM PDT Description: Amazon Web Services Multi Model Server (MMS) is an open source tool for serving machine learning models for inference. It was published by AWS on GitHub, PyPI,...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
       "board_id": null,
-      "message_id": "MC1521604",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]We’re updating Microsoft Authenticator with several usability improvements across iOS and Android. These updates include a refreshed home experience, clearer guidance for accounts that need to be restored, improvements to restoration and sign-in flows, and additional prompts designed to help keep Authenticator working reliably. Availability and timing vary by platform.[Rollout schedule]General Availability (Worldwide, GCC, GCC High, and DoD): Beginning in October 2026 and expected to complete in November 2026The improved restoration experience for push notifications and passwordless sign-in will be available on iOS first, with Android planned to follow in January 2027.[Impact on your organization]Who is affectedUsers of Microsoft Authenticator on iOS and AndroidPlatforms and servicesMicrosoft Authenticator for iOS and AndroidWhat will happenImproved Authenticator home experience, iOS and Android: The Authenticator home page is being updated to improve the experience when users view and manage their accounts. On Android, this update will be available in November 2026.iOs:Android:Clearer notification for accounts that haven’t been restored, iOS and Android: Users with accounts that have not yet been restored will see a banner informing them that those accounts require attention. Improved first-run guidance for account restoration, iOS and Android: The first-run experience will more clearly show which accounts need to be restored, giving users additional context during Authenticator setup.App rating prompt during sign-in, iOS only: Users may see an option to rate Microsoft Authenticator as part of the sign-in experience, giving them an opportunity to provide feedback about the app. Improved restoration experience for push notifications and passwordless sign-in: The restoration flow is being improved for users who use push notifications and passwordless sign-in. This improvement will be available on iOS first, with Android planned for January 2027. Prompt to exclude Authenticator from battery optimization, Android only: After successfully completing an interactive authentication, users may see a non-blocking prompt to exclude Authenticator from Android battery optimization. Excluding the app from battery optimization helps users stay signed in and continue receiving work or school notifications. The prompt will not block authentication.[Action required and recommendations]No configuration action is specified in this request.Inform your help desk and security operations teams about the updated Authenticator experiences.Update internal user guidance and screenshots that show the previous Authenticator experiences.[Compliance considerations]No compliance considerations identified.",
-      "links": [],
       "products": [
         {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 14
         }
       ],
       "tags": [
-        "Microsoft Message Center"
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-148-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/23/2026 10:30 AM PDT Description: Amazon Web Services Multi Model Server (MMS) is an open source tool for serving machine learning models for inference. It was published by AWS on GitHub, PyPI, and Docker Hub, and reached end of life; its source repository has been archived and read-only since November 20, 2025. CVE-2026-115812: An issue in model archive extraction could allow a crafted model archive to write files outside the intended directory, potentially resulting in code execution with the privileges of the MMS process. CVE-2026-115813: An issue in the model download path could allow the MMS management interface to be directed to make requests to unintended network destinations. Impacted versions: <=1.1.11 (all released versions) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-148-aws/"
+        }
       ]
     },
     {
@@ -4829,6 +5324,32 @@
       "links": []
     },
     {
+      "title": "CVE-2026-105811 - Authorization bypass through a user-controlled key in the Amazon Q Business Lambda hook sample in QnABot on AWS",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-126-aws/",
+      "published": "2026-10-07T18:25:26+00:00",
+      "summary": "Bulletin ID: 2026-126-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/06/2026 13:00 PM PDT Description: QnABot on AWS is a sample solution of a multi-channel, multi-language conversational interface (chatbot) that responds to your customer's questions, answers, and...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-126-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/06/2026 13:00 PM PDT Description: QnABot on AWS is a sample solution of a multi-channel, multi-language conversational interface (chatbot) that responds to your customer's questions, answers, and feedback. We identified CVE-2026-105811 in the optional Amazon Q Business Lambda hook sample of QnABot on AWS. The Amazon Q Business Lambda hook sample (q-business-lambda-hook) is an optional integration sample included in the QnABot on AWS repository. It requires separate, manual deployment and additional setup; it is not deployed automatically with QnABot. Customers who have not deployed this sample are not affected and do not need to take action. Authorization bypass through a user-controlled key in the sample included with QnABot on AWS versions 7.0.0 through 7.4.5 might allow an authenticated remote user to read arbitrary Amazon S3 objects in the deploying AWS account. To remediate this issue, affected customers should update the QnABot on AWS stack to version 7.4.6 or later and then redeploy the Amazon Q Business Lambda hook sample stack. Updating the QnABot on AWS stack alone does not deliver the fix. Impacted versions: >=7.0.0, <7.4.6 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
       "title": "3 lessons from frontier AI vulnerability research",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
       "published": "2026-10-07T16:00:00+00:00",
@@ -5082,81 +5603,6 @@
       "links": []
     },
     {
-      "title": "CISO perspectives on managing vulnerability risks in the age of AI",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
-      "published": "2026-10-06T16:00:00+00:00",
-      "summary": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management. The post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog.",
-      "author": "Freddy Dezeure and Sesha Mani",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Most of what has been written about AI and vulnerability management focuses on speed: how much faster frontier AI models can scan code, find weaknesses, design patches, and build exploits than any human team. That part is true, and it matters to how we remediate vulnerabilities. The more challenging question is what happens after the scan? Frontier AI models are about to hand every security team a far larger set of findings than they have ever had to work through. The real test for chief information security officers (CISOs) and IT security leaders is not how fast they can patch. It is whether they can keep the balance between patching quickly and patching correctly, at a scale no human review process was built for. This shift creates both new challenges and new opportunities. The same AI capabilities accelerating cyberattackers are also enabling defenders to identify exposures earlier, automate remediation, and build more resilient security programs. Not every vulnerability will be patched in time, so the controls that limit what an attacker can do by defense in depth matter more than ever. CISOs can dramatically improve the security posture of their Microsoft infrastructure by deploying Microsoft Baseline Security Mode (BSM), building on how Microsoft protects Microsoft. Learn more about Microsoft Baseline Security Mode How do frontier AI models change vulnerability management for CISOs? Microsoft uses frontier AI models to find vulnerabilities in its code base and mitigate them at controlled pace. Potential vulnerabilities are reviewed on validity, severity, and potential impact. As we have explained in previous blogs, many steps in our vulnerability handling and disclosure processes now are AI-powered, allowing them to scale. Most vulnerabilities in cloud software are being mitigated by Microsoft without customer intervention. For on-premises Microsoft software, customers should continue to expect a substantial increase in the number of vulnerabilities released on Patch Tuesdays relative to historic volumes before the advent of frontier AI models earlier this year—September 2026 saw a record number, close to 1,000.1 Due to the non-deterministic nature of AI models, different runs by the same model or with different models may yield different results. With better models becoming available over time, AI-powered vulnerability scanning of our existing code base and new code should become part of our standard security assurance. We use a ‘harness’ layer...",
-      "links": [
-        {
-          "label": "Microsoft Baseline Security Mode (BSM)",
-          "url": "https://learn.microsoft.com/en-us/microsoft-365/baseline-security-mode/baseline-security-mode-settings?view=o365-worldwide"
-        },
-        {
-          "label": "AI-powered",
-          "url": "https://www.microsoft.com/en-us/msrc/blog/2026/04/strengthening-secure-software-global-scale-how-msrc-is-evolving-with-ai"
-        },
-        {
-          "label": "allowing them to scale",
-          "url": "https://blogs.windows.com/windowsexperience/2026/07/09/evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discovery/"
-        },
-        {
-          "label": "substantial increase in the number of vulnerabilities",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/beyond-the-benchmark-advancing-security-at-ai-speed/?msockid=1be26702317361321156722530016039"
-        },
-        {
-          "label": "codename MDASH",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/"
-        },
-        {
-          "label": "strengthen their security posture",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/11/05/securing-critical-infrastructure-why-europes-risk-based-regulations-matter/"
-        },
-        {
-          "label": "new Microsoft Security Exposure Management page",
-          "url": "https://security.microsoft.com/securenow"
-        },
-        {
-          "label": "coordinate the scanning and patching",
-          "url": "https://akrites.org/"
-        },
-        {
-          "label": "Secure Future Initiative (SFI) report",
-          "url": "https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative/sfi-progress-report-july-2026"
-        },
-        {
-          "label": "Microsoft Baseline Security Mode (BSM)",
-          "url": "https://www.microsoft.com/insidetrack/blog/hardening-our-digital-defenses-with-microsoft-baseline-security-mode/"
-        },
-        {
-          "label": "exceptions can be made and removed",
-          "url": "https://www.microsoft.com/insidetrack/blog/deploying-microsoft-baseline-security-mode-at-microsoft-our-virtuous-learning-cycle/?msockid=0d94169e268868132c2003c927326968"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        }
-      ]
-    },
-    {
       "title": "Incident affecting ASOS customers",
       "link": "https://www.ncsc.gov.uk/news/incident-affecting-asos-customers",
       "published": "2026-10-06T12:00:00+00:00",
@@ -5379,6 +5825,32 @@
       "links": []
     },
     {
+      "title": "CVE-2026-97662 - Argument injection in AWS security-agent-mcp-server diff scan",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-121-aws/",
+      "published": "2026-10-01T18:16:35+00:00",
+      "summary": "Bulletin ID: 2026-121-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/01/2026 10:30 AM PDT Description: security-agent-mcp-server is an open-source Model Context Protocol (MCP) server, published by AWS in the awslabs/mcp repository, that AI assistants use to run...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-121-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/01/2026 10:30 AM PDT Description: security-agent-mcp-server is an open-source Model Context Protocol (MCP) server, published by AWS in the awslabs/mcp repository, that AI assistants use to run local security scans (including differential \"diff\" scans) over source code. We identified CVE-2026-97662, an argument injection issue in the diff scan operation: a crafted reference value supplied to the scan is interpreted as a command-line option rather than a revision, which lets a context-dependent actor create, overwrite, or truncate arbitrary files on the host outside the intended workspace directory, bypassing the server's workspace-confinement control. Impacted versions: >= 0.1.1 AND < 0.2.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "links": []
+    },
+    {
       "title": "Microsoft 365 and LinkedIn leadership update",
       "link": "https://blogs.microsoft.com/blog/2026/10/01/microsoft-365-and-linkedin-leadership-update/",
       "published": "2026-10-01T15:03:27+00:00",
@@ -5445,41 +5917,6 @@
         {
           "label": "Administrator playbook",
           "url": "https://sarahzin22.github.io/PurviewBlogTechCommunityHTMLs/Admin%20Playbook%20Unified%20Classification%20Management%20Experience.html"
-        }
-      ]
-    },
-    {
-      "title": "Preparing governments for an era of interconnected cyber risk",
-      "link": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
-      "published": "2026-10-01T14:00:00+00:00",
-      "summary": "According to this year’s Microsoft Digital Defense Report, government agencies and services were the sector most impacted by cyber threats in 2026, accounting for 27% of observed activity, up from 17% in 2025. The post Preparing governments for an era of interconnected cyber risk appeared first on...",
-      "author": "Matthew Thomas",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "According to this year’s Microsoft Digital Defense Report, government agencies and services were the sector most impacted by cyber threats in 2026, accounting for 27% of observed activity, up from 17% in 2025. Governments are also the most frequently targeted sectors for nation-state activity. They are attractive targets because they hold sensitive information, operate essential services, and sit at the center of networks of agencies, contractors, technology providers, and critical infrastructure operators. Dwell time, the period between when an attacker gains access and when defenders detect and stop them, also increased this year across multiple sectors. While organizations responded faster once an intrusion was identified, detecting threats early remains a challenge. Attackers increasingly gain access through techniques that mimic legitimate activity, making malicious behavior harder to spot. For example, phishing accounted for 23% of observed intrusions in 2026, up from 7% in 2025, highlighting the continued importance of compromised identities as an entry point for broader attacks. Taken together, the implication for governments is clear. Security in the AI era is no longer simply about preventing individual intrusions. It is about ensuring institutions can operate effectively in an environment where risks are interconnected, threats move faster, and attackers remain hidden longer. Public-private partnerships are also more important than ever for securing critical government infrastructure and developing the policies and regulations needed for emerging technologies. In this year’s report, which examines cyber threat trends observed between July 2025 and June 2026, Terrell Cox, Microsoft’s Corporate Vice President & Deputy Chief Information Security Officer, and I explore how these dynamics are reshaping cyber risk. In a companion blog, Terrell takes a closer look at what these findings mean for CISOs and security professionals. To strengthen resilience, governments should focus on five priorities: Prepare for a faster threat environmentAI is compressing the window for action. Adversaries are moving faster. A vulnerability’s discovery in the wild to active weaponization can be well below 24 hours. While the number of publicly disclosed software vulnerabilities (commonly tracked as CVEs) is projected to reach a record 72,000 in 2026. Governments best prepared for the future will be those that can rapidly gather and assess information, make decisions,...",
-      "links": [
-        {
-          "label": "Preparing governments for an era of interconnected cyber risk",
-          "url": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
         }
       ]
     },
@@ -5704,156 +6141,6 @@
         {
           "label": "Purview Deployment blueprints here",
           "url": "https://aka.ms/PurviewBlueprints"
-        }
-      ]
-    },
-    {
-      "title": "Phishing Abuses RMM Tools for Persistent Access",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
-      "published": "2026-09-29T21:39:27+00:00",
-      "summary": "Microsoft observed phishing campaigns that abused MSP360 RMM to deploy ScreenConnect, creating redundant remote-access channels for follow-on activity The post Phishing Abuses RMM Tools for Persistent Access appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Security Research, Parasharan Raghavan, Deva Kanna Kannan, Sai Chakri and Microsoft Defender Experts",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Attack chain overviewMitigation and protection guidanceLearn More In July 2026, Microsoft Defender Experts observed phishing campaigns targeting organizations across multiple industries that distributed a masqueraded MSP360 Remote Monitoring and Management (RMM) installer through meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content. Once executed, the legitimate MSP360 installer, distributed under a deceptive file name established remote management access on affected devices and enabled threat actors to gain an initial foothold using trusted administrative software. Microsoft observed the MSP360 deployment being used to download and install a ConnectWise ScreenConnect client, creating a secondary remote-access channel that provided redundant access to compromised systems. Microsoft did not observe exploitation of ScreenConnect software itself; rather, threat actors abused legitimately obtained remote administration software to establish and maintain access. After access was established, threat actors used these remote administration channels to deploy additional tools and conduct post-compromise activity, including information collection and credential-access operations. This activity highlights how threat actors continue to abuse legitimate remote administration software to blend into normal IT operations while maintaining persistent access and reducing detection opportunities. Microsoft Defender for Endpoint detects suspicious and uncommon remote-management activity, while the hunting queries and mitigations in this post can help organizations identify and restrict unapproved RMM use. Attack chain overview The observed multi-stage intrusion chain began when phishing lures delivered a legitimate, digitally signed MSP360 RMM v2.5.0.67 installer under deceptive filenames. Following successful User Account Control (UAC) elevation, the installer established MSP360 services for persistent access and leveraged the RMM agent to invoke PowerShell, download, and silently install ConnectWise ScreenConnect. This effectively introduced a second remote administration channel on the compromised device, which the threat actor subsequently used to transfer and execute additional tooling supporting credential access, local data collection, and other post-compromise activity. Figure 1. Attack chain showing phishing delivering a masqueraded MSP360 RMM installer that deploys ScreenConnect for persistent remote...",
-      "links": [
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "publisher rule condition",
-          "url": "https://learn.microsoft.com/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create?ocid=magicti_ta_learndoc"
-        },
-        {
-          "label": "block certificat",
-          "url": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/indicators-enhancements-allow-block-by-certificates-amp-more/ba-p/1377586"
-        },
-        {
-          "label": "cloud-delivered protection",
-          "url": "https://learn.microsoft.com/defender-endpoint/cloud-protection-microsoft-defender-antivirus"
-        },
-        {
-          "label": "attack surface reduction rule",
-          "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction"
-        },
-        {
-          "label": "Use advanced protection against ransomware",
-          "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference"
-        },
-        {
-          "label": "MITRE ATT&CK framework",
-          "url": "https://attack.mitre.org/"
-        },
-        {
-          "label": "T1583.001 Acquire Infrastructure: Domains",
-          "url": "https://attack.mitre.org/techniques/T1583/001/"
-        },
-        {
-          "label": "T1583.006 Acquire Infrastructure: Web Services",
-          "url": "https://attack.mitre.org/techniques/T1583/006/"
-        },
-        {
-          "label": "T1566.002 Phishing: Spearphishing Link",
-          "url": "https://attack.mitre.org/techniques/T1566/002/"
-        }
-      ]
-    },
-    {
-      "title": "Star Blizzard refines phishing and malware delivery with the RedFlick technique",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/",
-      "published": "2026-09-29T15:00:00+00:00",
-      "summary": "Since January 2026, Microsoft has observed Russian state threat actor Star Blizzard evolve their detection evasion capabilities through large-scale phishing campaigns, the use of accounts on compromised websites, and a novel malware delivery technique, tracked by Microsoft as “RedFlick”. The post...",
-      "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Star Blizzard TTPs observed in 2026Defending against Star Blizzard and RedFlick-related activityMicrosoft Defender detectionsHunting queriesIndicators of compromise Since January 2026, Microsoft has observed Russian state threat actor Star Blizzard evolve their detection evasion capabilities through large-scale phishing campaigns, the use of accounts on compromised websites, and a novel malware delivery technique that Microsoft tracks as “RedFlick”. These changes represent a notable shift in the actor’s operational tradecraft and support ongoing cyberespionage activity targeting Ukrainian individuals and institutions as well as international non-government organizations (NGOs), Western think tanks, governments, and other organizations associated with international policy—particularly those with a nexus in supporting Ukraine. As part of this evolution, Star Blizzard adopted RedFlick, a malware delivery technique that helps evade detection by initiating a set of scheduled tasks to deploy the actor’s custom backdoor, CosmicPulse. This technique is a notable departure from the actor’s previous use of ClickFix-based infection chains which required victims to complete multiple actions before CosmicPulse could be installed. By contrast, the RedFlick infection flow only requires a single user interaction, reducing friction in the compromise process. Combined with the actor’s shift toward large-scale phishing operations during the same period, these changes likely improve Star Blizzard’s ability to reach more targets, evade detection, and increase the likelihood of successful compromise. This blog provides updated technical analysis of Star Blizzard’s tactics, techniques, and procedures (TTPs) observed throughout 2026, building on our 2025 and 2023 blogs. It details the actor’s evolving phishing, persistence, and malware delivery techniques, and provides recommendations, indicators of compromise (IOCs), detections, and hunting guidance to help organizations identify and defend against RedFlick-related activity. As with any observed nation-state actor activity, Microsoft directly notifies customers that have been targeted or compromised, providing them with recommendations and mitigations to secure their accounts. Star Blizzard TTPs observed in 2026 Star Blizzard is attributed by the United States Cybersecurity and Infrastructure Agency (CISA) as subordinate to the Russian Federal Security Service Centre (FSB) Centre 18. Star Blizzard periodically...",
-      "links": [
-        {
-          "label": "Star Blizzard TTPs observed in 2026",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#star-blizzard-ttps-observed-in-2026"
-        },
-        {
-          "label": "Defending against Star Blizzard and RedFlick-related activity",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#defending-against-star-blizzard-and-redflick-related-activity"
-        },
-        {
-          "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
-        },
-        {
-          "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
-        },
-        {
-          "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
-        },
-        {
-          "label": "2025",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/01/16/new-star-blizzard-spear-phishing-campaign-targets-whatsapp-accounts/"
-        },
-        {
-          "label": "2023",
-          "url": "https://www.microsoft.com/en-us/security/blog/2023/12/07/star-blizzard-increases-sophistication-and-evasion-in-ongoing-attacks/"
-        },
-        {
-          "label": "attributed",
-          "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-341a"
-        },
-        {
-          "label": "report",
-          "url": "https://cloud.google.com/blog/topics/threat-intelligence/new-malware-russia-coldriver"
-        },
-        {
-          "label": "previously reported",
-          "url": "https://www.microsoft.com/security/blog/2023/12/07/star-blizzard-increases-sophistication-and-evasion-in-ongoing-attacks/"
-        },
-        {
-          "label": "reported",
-          "url": "https://x.com/threatinsight/status/2037560142880006266"
-        },
-        {
-          "label": "reported",
-          "url": "https://dslua.org/publications/spearphishing-via-fake-urc-2026-invitations-targets-ukrainian-csos/"
         }
       ]
     }
