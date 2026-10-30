@@ -1,8 +1,212 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-30T12:25:03.146029+00:00",
+  "lastUpdated": "2026-10-30T22:03:36.052895+00:00",
   "totalArticles": 161,
   "articles": [
+    {
+      "title": "(Updated) Microsoft Entra: Choose your own telephony provider now generally available",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1519855",
+      "published": "2026-10-30T19:34:52.450000+00:00",
+      "summary": "Updated October 30, 2026: We have updated this post with additional information as the feature is now generally available. Thank you for your patience. [What and why]Choose Your Own Telephony Provider (CYOT) is now generally available in Microsoft Entra ID. With CYOT, your organization can deliver...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1519855",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated October 30, 2026: We have updated this post with additional information as the feature is now generally available. Thank you for your patience. [What and why]Choose Your Own Telephony Provider (CYOT) is now generally available in Microsoft Entra ID. With CYOT, your organization can deliver SMS and voice authentication through a supported telecom provider of its choice. You purchase the provider's offer in Microsoft Security Store and manage the commercial relationship directly with the provider. Microsoft-provided SMS and voice authentication begins retiring on February 1, 2027. To keep SMS and voice authentication available for users who need it, set up CYOT before that date. Microsoft recommends phishing-resistant authentication methods, such as passkeys, instead of SMS or voice. Use telephony-based authentication only for users who have a business, regulatory, or technical need for it.[What you need to do]If your organization plans to use CYOT: Identify users who need SMS or voice. Confirm which users have a requirement that phishing-resistant methods can't meet. Choose a provider. Compare the supported telecom providers on coverage, channels, pricing, support, and compliance. Check purchasing requirements. Confirm that you have a paid Azure subscription that is eligible for Security Store purchases, and that you have the Owner role, or Contributor plus Role Based Access Control Administrator. Estimate costs. Review provider pricing and Azure hosting costs. Set up and roll out. Follow Set up SMS and voice. Start in evaluation mode, then increase traffic to your provider in stages. Complete your transition before February 1, 2027. Review the guidance for the retirement of Microsoft-provided SMS and voice authentication.Learn more Choose your own telephony provider for SMS and voice authentication Set up SMS and voice with your own telecom provider Troubleshoot SMS and voice Protect against telephony fraud Plan for resiliency and high availability Frequently asked questions Passkeys by default and retirement of Microsoft-provided SMS and voice authentication",
+      "links": [
+        {
+          "label": "supported telecom providers",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-phone-providers"
+        },
+        {
+          "label": "eligible for Security Store purchases",
+          "url": "https://learn.microsoft.com/security/store/customers/how-to-purchase-a-saas-solution-and-deploy-a-linked-solution"
+        },
+        {
+          "label": "Azure hosting costs.",
+          "url": "https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/blob/main/docs/COST-CALCULATOR.md"
+        },
+        {
+          "label": "Set up SMS and voice",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-set-up-sms-voice-api"
+        },
+        {
+          "label": "guidance for the retirement of Microsoft-provided SMS and voice authentication.",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
+        },
+        {
+          "label": "Troubleshoot SMS and voice",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/troubleshoot-voice-call-sms#monitor-and-troubleshoot-your-own-telephony-provider"
+        },
+        {
+          "label": "Protect against telephony fraud",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/choose-your-own-telephony-fraud-costs"
+        },
+        {
+          "label": "Plan for resiliency and high availability",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/choose-your-own-telephony-reliability"
+        },
+        {
+          "label": "Frequently asked questions",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/phone-providers-faq"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "CVE-2026-119117 - Insertion of sensitive information into a log file and process argument list in the Amazon Kinesis Producer Library for Java",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-159-aws/",
+      "published": "2026-10-30T18:18:40+00:00",
+      "summary": "Bulletin ID: 2026-159-AWS Publication Date: 10/30/2026 11:00 AM PDT Description: We published CVE-2026-119117. Insertion of sensitive information into a log file in Amazon Kinesis Producer Library for Java before 1.0.8, when the library's logger is configured at DEBUG log level, might allow local...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-159-AWS Publication Date: 10/30/2026 11:00 AM PDT Description: We published CVE-2026-119117. Insertion of sensitive information into a log file in Amazon Kinesis Producer Library for Java before 1.0.8, when the library's logger is configured at DEBUG log level, might allow local users to obtain the AWS credentials that the library resolved for the application. Separately, affected versions of the library pass these credentials to the native child process as command-line arguments, where a local user can read them from the process argument list. Impacted versions: - com.amazonaws:amazon-kinesis-producer <= 0.15.12 - oftware.amazon.kinesis:amazon-kinesis-producer < 1.0.8 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-159-aws/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-119086 - Missing type validation in xQueueSelectFromSet in FreeRTOS-Kernel",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-158-aws/",
+      "published": "2026-10-30T17:39:33+00:00",
+      "summary": "Bulletin ID: 2026-158-AWS Publication Date: 10/30/2026 10:30 AM PDT Description: FreeRTOS-Kernel is a real-time operating system kernel for microcontrollers and small microprocessors, distributed by Amazon. We identified CVE-2026-119086, the queue-set selection path does not fully validate that the...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-158-AWS Publication Date: 10/30/2026 10:30 AM PDT Description: FreeRTOS-Kernel is a real-time operating system kernel for microcontrollers and small microprocessors, distributed by Amazon. We identified CVE-2026-119086, the queue-set selection path does not fully validate that the referenced kernel object is a queue set before operating on it. On MPU-enabled builds with queue sets enabled, an unprivileged task can cause the kernel to write beyond the intended destination while executing in a privileged context, which affects the integrity of privileged execution. Applications that are built without queue sets are not affected. Impacted versions: >=V7.4.0 AND <=V11.3.2 (MPU-enabled ports with configUSE_QUEUE_SETS=1) Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-158-aws/"
+        }
+      ]
+    },
+    {
+      "title": "From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
+      "published": "2026-10-30T16:11:44+00:00",
+      "summary": "Teams support impersonation led to remote access, malicious runtime execution, and Certificate Services abuse through authentication relay and Kerberos. The post From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Security Research, Sagar Patil, Jesse Birch and Tal Tzhori",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article Activity overviewAttack chain overviewPortable runtime staging and execution variantsHost discovery and AD CS assessmentCase 1: ESC1 abuse and the cost of an identity exclusionCase 2: PetitPotam and ESC8 turn a workstation into a domain-controller identityWhy the response outcomes differedActionable investigation methodsReferencesLearn More Microsoft Threat Intelligence investigated two human-operated intrusions in which threat actors used Microsoft Teams messages and calls to impersonate IT or help desk personnel and socially engineer users into granting interactive remote access, primarily through Quick Assist. Once connected, the threat actors staged portable Python, Bun, or Java runtimes, performed host and network discovery, and assessed Active Directory Certificate Services (AD CS) for certificate-based authentication paths. Although the incidents began with the same social-engineering and remote-access pattern, they diverged at the certificate layer. In Case 1, the threat actor abused an Enterprise CA Security Configuration 1 (ESC1) -vulnerable certificate template to obtain authentication certificates for privileged accounts and performed DCSync. In Case 2, the threat actor used PetitPotam, a technique that causes a Windows server to authenticate to an attacker-controlled system. The attacker relayed the domain controller’s New Technology (NT) LAN Manager (NTLM) authentication to AD CS Web Enrollment (ESC8), obtained a certificate for the domain-controller account, and used it for certificate-based Kerberos authentication (PKINIT – Public Key Cryptography for Initial Authentication). This intrusion pattern is high impact because a user-approved remote session can become certificate-backed access to privileged identities and domain infrastructure. In Case 1, Microsoft Defender attack disruption restricted covered identities and blocked substantial follow-on activity, but a privileged identity excluded from automated containment remained usable and later supported data exfiltration. In Case 2, Defender generated ESC8-related alerts, after which the customer isolated the associated workstation and no further progression was observed. The activity did not exploit a vulnerability in Microsoft Teams; instead, it relied on social engineering and insecure or overly permissive AD CS configurations. In this blog, we analyze the shared attack chain, the ESC1 and ESC8 certificate-abuse paths, and the different response outcomes. We also...",
+      "links": [
+        {
+          "label": "Activity overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#activity-overview"
+        },
+        {
+          "label": "Attack chain overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+        },
+        {
+          "label": "Portable runtime staging and execution variants",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#portable-runtime-staging-and-execution-variants"
+        },
+        {
+          "label": "Host discovery and AD CS assessment",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#host-discovery-and-ad-cs-assessment"
+        },
+        {
+          "label": "Case 1: ESC1 abuse and the cost of an identity exclusion",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-1-esc1-abuse-and-the-cost-of-an-identity-exclusion"
+        },
+        {
+          "label": "Case 2: PetitPotam and ESC8 turn a workstation into a domain-controller identity",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#case-2-petitpotam-and-esc8-turn-a-workstation-into-a-domain-controller-identity"
+        },
+        {
+          "label": "Why the response outcomes differed",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-the-response-outcomes-differed"
+        },
+        {
+          "label": "Actionable investigation methods",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#actionable-investigation-methods"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "https://support.microsoft.com/help/5005413",
+          "url": "https://support.microsoft.com/help/5005413"
+        },
+        {
+          "label": "https://learn.microsoft.com/defender-for-identity/security-posture-assessments/certificates",
+          "url": "https://learn.microsoft.com/defender-for-identity/security-posture-assessments/certificates"
+        }
+      ]
+    },
     {
       "title": "(Updated) Microsoft Authenticator: Usability improvements for iOS and Android",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1521604",
@@ -2726,6 +2930,37 @@
       ]
     },
     {
+      "title": "CVE-2026-115418 - SQL injection in the database-query custom resource handlers in Amazon Web Services (AWS)",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-151-aws/",
+      "published": "2026-10-26T16:50:46+00:00",
+      "summary": "Bulletin ID: 2026-151-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/26/2026 09:30 AM PDT Description: The AWS Cloud Development Kit (CDK) @aws-cdk/aws-redshift-alpha module provides experimental constructs that manage Amazon Redshift users, tables and privileges....",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 14
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-151-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/26/2026 09:30 AM PDT Description: The AWS Cloud Development Kit (CDK) @aws-cdk/aws-redshift-alpha module provides experimental constructs that manage Amazon Redshift users, tables and privileges. We identified CVE-2026-115418, an issue where crafted user names, comments or passwords set in these constructs could change the SQL that runs with Amazon Redshift superuser privileges at deployment, including granting access to all cluster users. Exploiting the issue requires the ability to influence the CDK application's construct property values. Impacted versions: <2.274.0-alpha.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-151-aws/"
+        }
+      ]
+    },
+    {
       "title": "Proofpoint’s Core Email Protection API solution joins the Microsoft Defender ICES vendor ecosystem",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/proofpoint-s-core-email-protection-api-solution-joins-the/ba-p/4567264",
       "published": "2026-10-26T16:00:00+00:00",
@@ -3185,53 +3420,6 @@
       ],
       "tags": [
         "Splunk Security"
-      ]
-    },
-    {
-      "title": "Microsoft Entra: Choose your own telephony provider for SMS and voice authentication",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1519855",
-      "published": "2026-10-21T23:24:58.663000+00:00",
-      "summary": "[What and why]Starting October 30, 2026, Microsoft Entra ID will make Choose Your Own Telephony Provider (CYOT) generally available. CYOT enables organizations to use a supported third-party telecommunications provider for SMS and voice authentication. Organizations select a supported provider...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1519855",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]Starting October 30, 2026, Microsoft Entra ID will make Choose Your Own Telephony Provider (CYOT) generally available. CYOT enables organizations to use a supported third-party telecommunications provider for SMS and voice authentication. Organizations select a supported provider through Microsoft Security Store and manage their commercial relationship directly with the provider.Microsoft recommends phishing-resistant authentication methods, such as passkeys, instead of SMS or voice authentication. Organizations should use a telephony provider only for user populations that have a business, regulatory, or technical requirement for telephony-based authentication. [Rollout schedule]General Availability (Worldwide): Beginning October 30, 2026[Impact on your organization]Who is affectedOrganizations with users who require SMS or voice authentication for business, regulatory, or technical reasonsPlatforms and servicesMicrosoft Entra IDMicrosoft Security StoreWhat will happenStarting October 30, 2026, organizations can choose to configure a supported telephony provider for SMS and voice authentication.Your selected provider will deliver the SMS messages or voice calls users need to complete authentication.Microsoft Entra ID will continue to enforce authentication method policies and coordinate the authentication experience.Your organization will manage its commercial relationship with the selected provider.Microsoft-provided SMS and voice authentication is scheduled to be retired on February 1, 2027, for all users except Global Administrators and external users. The retirement date for Global Administrators and external users is July 1, 2027. Internal guest users remain subject to the February 1, 2027 retirement date.After the applicable retirement date, users whose only available MFA method is SMS or voice must register a passkey during sign-in unless the organization has configured a supported telephony provider. This registration prompt is blocking.[Action required and recommendations]If your organization plans to adopt CYOT:Identify affected users. Determine which users have a documented business, regulatory, or technical requirement for SMS or voice authentication.Evaluate phishing-resistant alternatives. Confirm that a phishing-resistant authentication method does not meet the requirements for those users.Review supported telephony providers. Compare providers based on geographic coverage, supported delivery channels, pricing, support, security, and compliance capabilities.Review organizational requirements. Work with the appropriate teams to review procurement, privacy, and regulatory requirements before selecting a provider.Plan your transition. Review Passkeys by default and retirement of Microsoft-provided SMS and voice authentication and plan your transition based on the retirement date applicable to each user population.Validate purchasing requirements. Review Purchase a SaaS solution and deploy a linked solution. Purchasing through Security Store requires an Azure billing subscription and resource group, plus the appropriate Azure subscription role.Estimate costs. Review provider pricing and expected Azure infrastructure charges before deployment.Learn moreChoose a telephony provider for SMS and voice authentication - Microsoft Entra ID | Microsoft LearnEstimate telephony provider and Azure hosting costs: ExternalPhoneProvider-AzureFunction-Sample/docs/COST-CALCULATOR.md at main · Azure-Samples/ExternalPhoneProvider-AzureFunction-SamplePasskeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft LearnPurchase and deploy a SaaS solution from Security Store - Microsoft Security Store | Microsoft Learn[Compliance considerations]QuestionAnswerDoes the change add any integration to third-party software products, and if so, what?Yes. The change enables organizations to use a supported third-party telephony provider for SMS and voice authentication. Organizations select a provider through Microsoft Security Store, and the selected provider delivers the SMS messages or voice calls used for authentication.",
-      "links": [
-        {
-          "label": "Choose a telephony provider for SMS and voice authentication - Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-phone-providers"
-        },
-        {
-          "label": "ExternalPhoneProvider-AzureFunction-Sample/docs/COST-CALCULATOR.md at main ·...",
-          "url": "https://github.com/Azure-Samples/ExternalPhoneProvider-AzureFunction-Sample/blob/main/docs/COST-CALCULATOR.md"
-        },
-        {
-          "label": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft...",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
-        },
-        {
-          "label": "Purchase and deploy a SaaS solution from Security Store - Microsoft Security Store | Microsoft Learn",
-          "url": "https://learn.microsoft.com/security/store/customers/how-to-purchase-a-saas-solution-and-deploy-a-linked-solution"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
       ]
     },
     {
@@ -5350,81 +5538,6 @@
       "links": []
     },
     {
-      "title": "3 lessons from frontier AI vulnerability research",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
-      "published": "2026-10-07T16:00:00+00:00",
-      "summary": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel. The post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog.",
-      "author": "Taesoo Kim",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Shift 1. From frontier capability to scaleShift 2. From token consumption to reasoning economicsShift 3. Validation and remediation as a continuous learning loopTransferring security research to help open source projectsOpen-source vulnerability reporting snapshotMeasured costs of automated validationFORGE OSS Bug Hunt Party: Human coordination at scale (Hackathon)Akrites: Coordinated effort to remediate vulnerabilitiesWhat’s next for FORGE Lab? The mission of Microsoft Security’s Frontier Offensive Research & Generative Exploitation (FORGE) Lab is to advance the frontier of autonomous security engineering. We’re building a team that enables AI-native vulnerability research at Microsoft, pushing the boundaries of finding and fixing zero-day vulnerabilities. Four principles guide that work: autonomy over labor, defense through offense, building ecosystems over individual examples, and understanding over findings. This post reflects those principles in practice across Windows, the Linux kernel, and widely used open-source projects. Learn more about the Microsoft FORGE Lab From May 2026 through September 2026, FORGE helped discover Windows vulnerabilities assigned 140 common vulnerabilities and exposures (CVEs), including 52 addressed in September 2026’s security release alone. The work reaches well beyond Windows. FORGE members submitted 155 internally validated reports across 23 open-source projects, including the Linux kernel. And through Akrites, a Linux Foundation initiative that coordinates confidential remediation and disclosure for vulnerabilities in critical open-source software, one of our Linux reports became the first Akrites submission to result in a patch merged into the Linux kernel. These results demonstrate that agentic discovery can operate at meaningful volume, but they also expose the next constraint. Finding a difficult vulnerability proves an agent’s frontier capability. Repeatedly converting such findings into security updates requires a different kind of system—one that can move credible work through validation, remediation, and release. Discovery creates security value only when validation and remediation can keep pace. For security leaders, the question is no longer only whether AI can find vulnerabilities, but whether an organization can validate and fix them as fast as they are found. Three lessons follow, each marking a shift in how we approach vulnerability research: From frontier capability to scale. From token...",
-      "links": [
-        {
-          "label": "Shift 1. From frontier capability to scale",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-1-from-frontier-capability-to-scale"
-        },
-        {
-          "label": "Shift 2. From token consumption to reasoning economics",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-2-from-token-consumption-to-reasoning-economics"
-        },
-        {
-          "label": "Shift 3. Validation and remediation as a continuous learning loop",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#shift-3-validation-and-remediation-as-a-continuous-learning-loop"
-        },
-        {
-          "label": "Transferring security research to help open source projects",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#transferring-security-research-to-help-open-source-projects"
-        },
-        {
-          "label": "Open-source vulnerability reporting snapshot",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#open-source-vulnerability-reporting-snapshot"
-        },
-        {
-          "label": "Measured costs of automated validation",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#measured-costs-of-automated-validation"
-        },
-        {
-          "label": "FORGE OSS Bug Hunt Party: Human coordination at scale (Hackathon)",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#forge-oss-bug-hunt-party-human-coordination-at-scale-hackathon"
-        },
-        {
-          "label": "Akrites: Coordinated effort to remediate vulnerabilities",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#akrites-coordinated-effort-to-remediate-vulnerabilities"
-        },
-        {
-          "label": "What’s next for FORGE Lab?",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-s-next-for-forge-lab"
-        },
-        {
-          "label": "Frontier Offensive Research & Generative Exploitation (FORGE) Lab",
-          "url": "https://github.com/microsoft/forge-lab"
-        },
-        {
-          "label": "one of our Linux reports",
-          "url": "https://lore.kernel.org/all/aqyUc_7c19MgzAG7@kernel.org/"
-        },
-        {
-          "label": "May 2026 introduction",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/"
-        }
-      ]
-    },
-    {
       "title": "SVD-2026-1005: Third-Party Package Updates in Splunk Add-on for Amazon Web Services - September 2026",
       "link": "https://advisory.splunk.com/advisories/SVD-2026-1005",
       "published": "2026-10-07T00:00:00+00:00",
@@ -5718,32 +5831,6 @@
       ]
     },
     {
-      "title": "CVE-2026-103505 - Mount Option Injection in Amazon EFS CSI Driver",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-120-aws/",
-      "published": "2026-10-02T16:38:11+00:00",
-      "summary": "Bulletin ID: 2026-120-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/01/2026 08:30 AM PDT Description: The Amazon EFS CSI Driver is a Container Storage Interface driver that allows Kubernetes clusters to use Amazon Elastic File System. We identified...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-120-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/01/2026 08:30 AM PDT Description: The Amazon EFS CSI Driver is a Container Storage Interface driver that allows Kubernetes clusters to use Amazon Elastic File System. We identified CVE-2026-103505, where an actor with PersistentVolume creation privileges can inject additional mount options through the mounttargetipmap volumeAttribute. Appending comma-separated values to a value inside that JSON map causes the mount utility to parse them as separate mount options. Impacted versions: >= v3.1.0 AND <= v3.4.2 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
       "title": "Microsoft Entra App Gallery: Self-service onboarding for new applications",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1485054",
       "published": "2026-10-01T21:40:33.250000+00:00",
@@ -5952,156 +6039,6 @@
         {
           "label": "here",
           "url": "https://microsoft.github.io/purview/purview-classification-labeling-reference-architecture.html"
-        }
-      ]
-    },
-    {
-      "title": "What’s new in Microsoft Sentinel: September 2026",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-september-2026/ba-p/4560902",
-      "published": "2026-09-30T16:00:00+00:00",
-      "summary": "Welcome back to What's new in Microsoft Sentinel. In September, Case Management brings investigation and collaboration together in Microsoft Defender, with a shared workspace to track work through resolution. Defender unified RBAC custom roles for granular delegated admin privileges (GDAP) give you...",
-      "author": "vkokkengada",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel"
-      ],
-      "body": "Welcome back to What's new in Microsoft Sentinel. In September, Case Management brings investigation and collaboration together in Microsoft Defender, with a shared workspace to track work through resolution. Defender unified RBAC custom roles for granular delegated admin privileges (GDAP) give you finer control over what managed security service providers (MSSPs) and other partners can access. In Sentinel data lake, a single Codeless Connector Framework (CCF) connector can bring in data from many accounts, and our connector catalog has passed 500 data connectors. Read on for the details. Sentinel innovations: Sentinel SIEM Sentinel data lake Sentinel SIEM Case Management (Public Preview) Starting September 23, 2026, Case Management brings investigation and collaboration together in one experience in Defender. With Incident Cases, you can investigate, coordinate response, assign work, capture notes, and track progress through resolution, all from a shared workspace that holds investigation context alongside tasks and workflow tracking. Your existing Sentinel automation, playbooks, workbooks, and integrations carry over unchanged. This builds on the integrated security operations (ISOC) vision of bringing the context and workflows practitioners need to investigate and respond together in Defender. Read our Case Management blog, see the documentation, and watch the demo to learn more. Unified RBAC custom roles (Public Preview) If you work with a managed security service provider (MSSP) or manage multiple tenants, giving partners the right level of access is simpler. Granular delegated admin privileges (GDAP) sets which partner groups can be delegated access to your tenant, and Defender unified role-based access control (RBAC) sets what they can see and do once delegated. You can assign unified RBAC custom roles to GDAP remote tenant groups and scope each role down to specific security products, data sources, and data collections so partners receive only the access they need. GDAP previously only supported Microsoft Entra directory roles, which often meant handing partners more access than the job needed. Anyone who is a member of a remote tenant group receives its permissions. Your partner manages who belongs to the group, while you keep control of the role and its scope. Learn more. Sentinel data lake Multi-account support for codeless connectors (Public Preview) A single connector built on the Codeless Connector Framework (CCF) can bring data from many...",
-      "links": [
-        {
-          "label": "Sentinel SIEM",
-          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-siem"
-        },
-        {
-          "label": "Sentinel data lake",
-          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-datalake"
-        },
-        {
-          "label": "ISOC",
-          "url": "https://aka.ms/isocannouncement"
-        },
-        {
-          "label": "our Case Management blog",
-          "url": "https://aka.ms/caseindefender"
-        },
-        {
-          "label": "the documentation",
-          "url": "https://aka.ms/caselearningdocs"
-        },
-        {
-          "label": "the demo",
-          "url": "https://aka.ms/casedemovideo"
-        },
-        {
-          "label": "Learn more.",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/create-custom-rbac-roles"
-        },
-        {
-          "label": "Codeless Connector Framework (CCF)",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/isv/create-codeless-connector"
-        },
-        {
-          "label": "Learn more.",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-multi-account-support-for-microsoft-sentinel-codeless-connectors/4544380"
-        },
-        {
-          "label": "Find your connector.",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference#sentinel-data-connectors"
-        },
-        {
-          "label": "Integrated Security Operations Center in Microsoft Defender",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/integrated-security-operations-center-in-microsoft-defender/4559097"
-        },
-        {
-          "label": "ISOC in Microsoft Defender (preview)",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/isoc-overview"
-        }
-      ]
-    },
-    {
-      "title": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
-      "published": "2026-09-30T14:00:00+00:00",
-      "summary": "Microsoft Threat Intelligence examines CVE-2026-73570 exploitation in Zimbra, including observed attack paths, detection opportunities, and mitigation guidance. The post Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570 appeared first on Microsoft Security...",
-      "author": "Microsoft Security Research, Mahesh Mandava and Rajesh Kumar Natarajan",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Attack chain overviewMitigation and protection guidanceReferencesLearn More Microsoft Threat Intelligence identified and tracked exploitation of CVE-2026-73570, an unauthenticated OS command injection vulnerability in the Zimbra Collaboration Suite SNMP notification path. Exploitation can be triggered by a specially crafted email against internet-facing Zimbra servers when the optional zimbra-snmp package is installed and SNMP notifications are enabled, without requiring authentication or user interaction. Following successful exploitation, observed activity included deployment of JSP web shells and reverse shells, privilege escalation, persistent remote-access tooling, and memory-backed execution. Threat actors also accessed email and collected authentication and mailbox data, with archive creation and subsequent transfer activity observed. The activity included both automated payload delivery and hands-on-keyboard operations on compromised mail servers. Microsoft observed affected organizations in more than one region and industry. Based on the environments investigated, exploitation was not limited to a single sector or geographic area. The diagram combines behaviors observed across multiple confirmed compromises; no single host necessarily exhibited every stage. From remediation to public disclosure CVE-2026-73570 is an unauthenticated OS command-injection vulnerability in the Zimbra Collaboration Suite SNMP notification path. An attacker can send a specially crafted SMTP request that introduces untrusted input into SNMP notification processing. If the input is not sufficiently sanitized, embedded shell commands can execute with the privileges of the zimbra service account. Exploitation requires the optional zimbra-snmp package to be installed and SNMP notifications to be enabled. Zimbra version 10.1.20, released July 20, 2026, contains the relevant remediation. CVE-2026-73570 was publicly disclosed on August 13, 2026. Microsoft telemetry identified activity targeting the same injection path during the interval between those events. Attack chain overview Figure 1. CVE-2026-73570 attack chain, mapped to MITRE ATT&CK tactics and composited across all confirmed compromises. Pre-disclosure reconnaissance and pre-exploitation probing Between July 28 and August 7, after a fix became available on July 20 but before public disclosure on August 13, Microsoft observed two distinct out-of-band scanning tools probing the vulnerable injection...",
-      "links": [
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
-        },
-        {
-          "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "NVD: CVE-2026-73570",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-73570"
-        },
-        {
-          "label": "Zimbra Security Advisories – Zimbra :: Tech Center",
-          "url": "https://wiki.zimbra.com/wiki/Zimbra_Security_Advisories"
-        },
-        {
-          "label": "Zimbra Releases/10.1.20 – Zimbra :: Tech Center",
-          "url": "https://wiki.zimbra.com/wiki/Zimbra_Releases/10.1.20"
-        },
-        {
-          "label": "CISA Known Exploited Vulnerabilities Catalog: CVE-2026-73570",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-73570"
-        },
-        {
-          "label": "Microsoft Threat Intelligence Blog",
-          "url": "https://aka.ms/threatintelblog"
-        },
-        {
-          "label": "LinkedIn",
-          "url": "https://www.linkedin.com/showcase/microsoft-threat-intelligence"
-        },
-        {
-          "label": "X (formerly Twitter)",
-          "url": "https://x.com/MsftSecIntel"
-        },
-        {
-          "label": "Bluesky",
-          "url": "https://bsky.app/profile/threatintel.microsoft.com"
         }
       ]
     }
