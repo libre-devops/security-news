@@ -1,8 +1,165 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-30T22:03:36.052895+00:00",
-  "totalArticles": 161,
+  "lastUpdated": "2026-10-31T04:46:38.814682+00:00",
+  "totalArticles": 163,
   "articles": [
+    {
+      "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/",
+      "published": "2026-10-31T01:02:57+00:00",
+      "summary": "Microsoft analyzes a malicious Claude Code–branded extension, its persistent SSH backdoor, and guidance to detect and remediate it. The post Inside a malicious Claude Code-branded extension and its persistent SSH backdoor appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Security Research",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article Attack chain overviewAttack chainHost reconnaissance collectionSSH authorization and tunnel identitiesProtocol Tunneling (T1572): reverse SSH forwardingPlatform-specific startup persistenceMitigation and protection guidanceImmediate actionsRemediation actionsFollow-up Investigation and recoveryMicrosoft Defender XDR detectionsThreat intelligence reportsMicrosoft Defender XDR Threat analytics Advanced hunting queriesMITRE ATT&CK techniquesIndicators of compromise (IOCs)Learn More On October 29, 2026, Cursor reported that a tampered copy of Claude Code extension (anthropic.claude-code, versions 2.1.313 and 2.1.312) was available and served in the Cursor extension marketplace for a few hours to attempt a supply-chain attack on Cursor users. Cursor reports that it was live from about 2:27 AM to 1:35 PM Pacific Daylight Time (PDT). We have confirmed that the malicious packages found on Cursor marketplace were never published nor distributed from Microsoft Visual Studio Marketplace and from npm @antropic-ai/claude-code, which were not affected by this incident. Anthropic confirmed to Microsoft that their systems were not compromised and they did not develop the malicious package posted in Cursor marketplace. At this time, all evidence suggests that the incident is limited to Cursor marketplace. Microsoft Threat Intelligence analyzed the injected JavaScript embedded in the malicious extension package. The injected loader runs when the extension module loads and attempts to add an attacker-controlled Secure Shell (SSH) key, enable the local SSH service, establish reverse SSH forwarding, configure persistence, and report host details. Successful remote access depends on host privileges, SSH configuration, and the attacker’s server configuration; however, the loader may still write keys and persistence artifacts even when tunnel access fails. Organizations should identify systems that installed or automatically updated to this version from the Cursor marketplace, preserve evidence, remove confirmed malicious artifacts, review endpoint and network telemetry, and rotate credentials or revoke sessions when investigation indicates exposure. Microsoft customers can use the detections and hunting guidance in this post after the listed coverage and query validation gates are complete. Attack chain overview A malicious artifact associated with the Cursor Marketplace incident included a JavaScript function that executed before the extension’s expected code....",
+      "links": [
+        {
+          "label": "Attack chain overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+        },
+        {
+          "label": "Attack chain",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain"
+        },
+        {
+          "label": "Host reconnaissance collection",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#host-reconnaissance-collection"
+        },
+        {
+          "label": "SSH authorization and tunnel identities",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ssh-authorization-and-tunnel-identities"
+        },
+        {
+          "label": "Protocol Tunneling (T1572): reverse SSH forwarding",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#protocol-tunneling-t1572-reverse-ssh-forwarding"
+        },
+        {
+          "label": "Platform-specific startup persistence",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#platform-specific-startup-persistence"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Immediate actions",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#immediate-actions"
+        },
+        {
+          "label": "Remediation actions",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#remediation-actions"
+        },
+        {
+          "label": "Follow-up Investigation and recovery",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#follow-up-investigation-and-recovery"
+        },
+        {
+          "label": "Microsoft Defender XDR detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-xdr-detections"
+        },
+        {
+          "label": "Threat intelligence reports",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#threat-intelligence-reports"
+        }
+      ]
+    },
+    {
+      "title": "(Updated) General Availability: Microsoft Entra passkeys on Windows",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1282568",
+      "published": "2026-10-30T23:22:34.160000+00:00",
+      "summary": "Updated October 30, 2026: We have updated the timeline. Thank you for your patience.[Introduction]Microsoft Entra passkeys on Windows will soon be Generally Available, enabling phishing‑resistant, passwordless sign‑in to Microsoft Entra‑protected resources from Windows devices.The Public Preview of...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1282568",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated October 30, 2026: We have updated the timeline. Thank you for your patience.[Introduction]Microsoft Entra passkeys on Windows will soon be Generally Available, enabling phishing‑resistant, passwordless sign‑in to Microsoft Entra‑protected resources from Windows devices.The Public Preview of this capability was previously announced in MC1247893.Users can create device‑bound passkeys stored in the Windows Hello container and authenticate using Windows Hello methods (face, fingerprint, or PIN). This expands passwordless authentication support to Windows devices that aren’t Microsoft Entra‑joined or registered, helping organizations strengthen security and reduce reliance on passwords across corporate‑managed, personal, and shared device scenarios.[When this will happen:]General Availability (Worldwide, GCC): We will begin rolling out in late April 2026 and expect to complete by mid‑June 2026.General Availability (GCC High, DoD): We will begin rolling out in early February 2027 (previously early October 2026) and expect to complete by late February 2027 (previously late October 2026)For Airgap: We will begin rolling out in early May 2027 and expect to complete by late May 2027.How this affects your organization:Who is affected:Organizations using Microsoft Entra ID with passkeys enabled in the Authentication Methods policy whose users sign in from Windows devices, including:Corporate‑managed PCsPersonal devicesShared devicesWhat will happen:With this General Availability release:Microsoft Entra passkeys on Windows will no longer require explicit opt‑in through Windows Hello AAGUID allow‑listing in a passkey (FIDO2) profile.This represents a change from Public Preview behavior, where administrators were required to explicitly allow Windows Hello AAGUIDs in a passkey profile for Microsoft Entra passkeys on Windows to function.If your passkey profile allows device‑bound, non‑attested passkeys:Users scoped to that profile will now be able to register and use Microsoft Entra passkeys on Windows by default without additional administrator configuration.As a result:Users in scope of passkey profiles that allow device‑bound, non‑attested passkeys may begin registering and using passkeys on Windows devices.If Conditional Access policies allow:Passkeys can be created and used on Windows devices that are not Microsoft Entra‑joined or registered, including personal or shared PCs.Each Windows device requires separate passkey registration per Entra account.Windows Hello for Business remains recommended for managed, Microsoft Entra‑joined or registered devices.Passkeys on Windows supplement unmanaged or shared device scenarios and do not support device sign‑in.Attestation is not currently supported for Microsoft Entra passkeys on Windows but is planned for a future update.What you can do to prepare:No action is required for most organizations.If you do not want users to register or use Microsoft Entra passkeys on Windows:Update the relevant passkey (FIDO2) profile to block Windows Hello AAGUIDs.Review existing passkey profiles that allow device‑bound, non‑attested passkeys.Add Windows Hello AAGUIDs to the block list in passkey profiles where passkey usage on Windows devices should not be permitted.Learn more: Enable Microsoft Entra passkey on Windows | Microsoft Learn (will be updated before GA rollout)[Compliance considerations:]Compliance areaExplanationDoes the change modify, interrupt, or disable Conditional Access policies?Existing Conditional Access policies continue to govern whether passkeys can be created or used on unmanaged Windows devices.Does the change include an admin control and can it be controlled through Entra ID group membership?Admins can control passkey availability through Authentication Methods policies and FIDO2 passkey profiles scoped to Microsoft Entra ID groups.Does the change allow a user to enable and disable the feature themselves?Users may register Microsoft Entra passkeys on Windows devices if permitted by administrator policy configuration.",
+      "links": [
+        {
+          "label": "Windows Hello AAGUIDs",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-authentication-entra-passkeys-on-windows#supported-windows-hello-passkey-authenticator-attestation-guids-aaguids)"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "(Update)Microsoft Entra ID: General Availability of passkey profiles and migration for existing Passkeys (FIDO2) tenants",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1221452",
+      "published": "2026-10-30T23:17:03.347000+00:00",
+      "summary": "Updated October 30, 2026: We have updated the timeline. Thank you for your patience.[Introduction]Starting in March 2026, Microsoft Entra ID will introduce passkey profiles and synced passkeys to General Availability (GA). This update allows administrators to opt in to a new passkey profiles...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1221452",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated October 30, 2026: We have updated the timeline. Thank you for your patience.[Introduction]Starting in March 2026, Microsoft Entra ID will introduce passkey profiles and synced passkeys to General Availability (GA). This update allows administrators to opt in to a new passkey profiles experience that supports group-based passkey configurations and introduces a new passkeyType property.Important: Only tenants that already have Passkeys (FIDO2) enabled are affected by this update.The passkeyType property enables admins to configure:Device-bound passkeysSynced passkeysBothIf your tenant already has Passkeys (FIDO2) enabled and you do not opt in to passkey profiles during the initial rollout window, your tenant will be automatically migrated to the passkey profiles schema at the date range specified below. When this occurs:Existing Passkey (FIDO2) authentication method configurations will be moved into a Default passkey profile.The passkeyType value will be set based on the tenant’s current attestation settings. Synced passkeys will be enabled for tenants with attestation enforcement disabled.No new authentication methods are enabled as part of this migration.This migration also impacts Authentication methods registration campaign set to “Microsoft managed” state, which uses passkey configuration settings to determine which registration prompts are shown to users.Authentication Methods Registration Campaign changes (Microsoft-Managed Only)Tenants are impacted when all the following conditions are met:The Passkeys (FIDO2) authentication method policy is EnabledAuthentication methods registration campaign is set to “Microsoft managed” stateAllow self-service setup is EnabledTarget specific AAGUIDs is not selected (no AAGUID restrictions configured)The Authentication Methods Registration Campaign state is set to Microsoft-managedThe tenant has at least one user enabled for both synced passkeys and device‑bound passkeysOnly users who are enabled for both synced passkeys and device‑bound passkeys, with no passkey profile restrictions configured (i.e. attestation enforcement, AAGUID restrictions), will receive a passkey registration nudge during sign‑in.For these tenants, Microsoft-managed registration campaign settings will be updated after passkey profile automatic migration is complete. We will roll out changes incrementally to in-scope tenants according to the timeline outlined below.[When this will happen]Passkey profile and Synced passkeys General AvailabilityPublic cloud Worldwide, GCC: Rollout begins in early March 2026 and is expected to complete by late March 2026GCC High, DoD clouds: Rollout begins in early May 2026 and is expected to complete by late May 2026USNat, USSec: Rollout begins in early April 2027 (previously early October 2026) and is expected to complete by late April 2027 (previously late October 2026)Automatic migration for existing passkeys (FIDO2) enabled tenantsPublic cloud Worldwide, GCC: Rollout begins in early May 2026 and is expected to complete by late June 2026GCC High, DoD clouds: Rollout begins in early February 2027 (previously early October 2026) and is expected to complete by late February 2027 (previously late October 2026)USNat, USSec: Rollout begins in early May 2027 (previously early October 2026) and is expected to complete by late May 2027 (previously late October 2026)Authentication Methods registration campaign changes in Microsoft-Managed state (for in-scope tenants):Public cloud Worldwide, GCC: Rollout begins in early May 2026 and is expected to complete by late June 2026[How this affects your organization]Automatic migration for existing passkeys (FIDO2) enabled tenants What will happen:If you have not opted in to passkey profiles by your automatic enablement period, your tenant will be migrated to passkey profiles.Your existing Passkey (FIDO2) configurations will be migrated into a Default passkey profileNew passkeyType property will be auto-populatedIf enforce attestation is enabled, then device-bound allowedIf enforce attestation is disabled, then device-bound and synced allowedAny existing key restrictions will remain intactAny existing user targets will be assigned to the Default passkey profileAuthentication Methods registration campaign changes in Microsoft-Managed state (for in-scope tenants) What will happen:Microsoft-managed registration campaign settings will be updated:\"Targeted authentication method” will change from Microsoft Authenticator to “passkeys (FIDO2)”.“Days allowed to snooze” setting will change from 3days to “1 day”. This setting will no longer be configurable.“Limited number of snoozes” setting will change from Enabled to \"Disabled”. This setting will no longer be configurable.The default user targeting will be updated from voice call or text message users to all multifactor authentication (MFA) capable users.What is the end user impact:Once the above changes have taken effect, users targeted in the registration campaign will begin to receive passkey registration nudges during sign-in flows after they have completed multifactor authentication.[What you can do to prepare]If you want a configuration different from the migration defaults, review the timeline above and opt in to passkey profiles before your tenant’s automatic enablement window begins. Then configure the Default passkey profile’s passkeyType to your preferred values.We also recommend:Review your registration campaign configuration, especially if its set to Microsoft-managed. If you do not want registration campaign to target passkeys, you can:Switch the registration campaign state to Enabled and continue targeting Microsoft Authenticator, orSet the registration campaign state to Disabled.Update runbooks and help content so your help desk and end users understand any changes in passkey availability or behavior.Learn more:Enable passkeys for your organization - Microsoft Entra ID | Microsoft LearnHow to Enable Passkey (FIDO2) Profiles in Microsoft Entra...",
+      "links": [
+        {
+          "label": "Enable passkeys for your organization - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-enable-passkey-fido2#enable-passkey-fido2-authentication-method"
+        },
+        {
+          "label": "How to Enable Passkey (FIDO2) Profiles in Microsoft Entra ID (preview) - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-authentication-passkey-profiles"
+        },
+        {
+          "label": "How to Enable Synced Passkeys (FIDO2) in Microsoft Entra ID (preview) - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-authentication-synced-passkeys"
+        },
+        {
+          "label": "Synced passkeys FAQ - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/synced-passkey-faq"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
     {
       "title": "(Updated) Microsoft Entra: Choose your own telephony provider now generally available",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1519855",
@@ -129,6 +286,93 @@
         {
           "label": "Read this article",
           "url": "https://aws.amazon.com/security/security-bulletins/2026-158-aws/"
+        }
+      ]
+    },
+    {
+      "title": "What’s new in Microsoft Sentinel: October 2026",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-october-2026/ba-p/4568804",
+      "published": "2026-10-30T16:44:57+00:00",
+      "summary": "Welcome back to What's new in Microsoft Sentinel. In October, cross-tenant delegated access reaches general availability so you can run security operations across tenants with least privilege, the Advanced Security Information Model (ASIM) EmailEvent schema gives you one consistent structure for...",
+      "author": "vkokkengada",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "security-copilot",
+          "name": "Microsoft Security Copilot",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR",
+        "Microsoft Sentinel",
+        "Microsoft Security Copilot"
+      ],
+      "body": "Welcome back to What's new in Microsoft Sentinel. In October, cross-tenant delegated access reaches general availability so you can run security operations across tenants with least privilege, the Advanced Security Information Model (ASIM) EmailEvent schema gives you one consistent structure for email events across sources, an SAP analytics rule helps you spot active use of custom apps with high or critical vulnerabilities, and Unified Data Management brings connectors, tables, and ingestion health together in the Microsoft Defender portal. Read on for the details, and don’t forget to register for our upcoming Microsoft Ignite conference below in additional resources. Sentinel innovations: Sentinel SIEM Sentinel data lake Sentinel SIEM Cross-tenant delegated access (Generally available) Cross-tenant delegated access in Defender lets you run security operations across tenants using the same governance relationship model as Microsoft Entra Tenant Governance. Whether you’re a managed security service provider (MSSP) or a central security team working across business units, regions, or subsidiaries, you sign in with your home-tenant account instead of maintaining local administrator or Microsoft Entra B2B guest accounts in every tenant. Delegated access also extends to Sentinel resources, with granular permissions assigned through Defender unified role-based access control (RBAC). Each governed tenant approves the relationship and decides exactly which roles and resource scopes to grant, while you keep access current by managing membership in your own security groups. This means you can scale cross-tenant security operations with least privilege and without separate access models for identity and security. Learn more. ASIM EmailEvent schema (Generally available) Email products often describe the same activity with different table names, fields, and values, which makes it harder to build detections and investigations that work consistently. The Advanced Security Information Model (ASIM) EmailEvent schema in Sentinel gives you a common structure for email delivery and inspection events across supported email data sources. EmailEvent normalizes the details you need to understand what happened to an email and why, including sender and recipient information, message subject, delivery location, URLs, file attachments, and email authentication results. This means you can write hunting queries, analytics rules, and workbooks against one consistent set of fields and...",
+      "links": [
+        {
+          "label": "Sentinel SIEM",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-siem"
+        },
+        {
+          "label": "Sentinel data lake",
+          "url": "https://techcommunity.microsoft.com/t5/s/gxcuf89792/rss/board?board.id=microsoftsentinelblog#community--1-datalake"
+        },
+        {
+          "label": "Learn more.",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/expanded-cross-tenant-delegated-access-in-microsoft-defender-is-generally-availa/4565941"
+        },
+        {
+          "label": "Learn more about the EmailEvent schema",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-email"
+        },
+        {
+          "label": "deploy ASIM parsers",
+          "url": "https://aka.ms/DeployASIM"
+        },
+        {
+          "label": "Learn more.",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/sap/sap-btp-security-content#sap-application-vulnerability-report-service-preview"
+        },
+        {
+          "label": "Learn more.",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/manage-all-your-microsoft-sentinel-data-in-one-place-with-unified-data-managemen/4565940"
+        },
+        {
+          "label": "Configure delegated access with governance relationships for multitenant organizations",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/governance-relationships"
+        },
+        {
+          "label": "Manage unified role-based access control in multitenant management",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/mto-urbac"
+        },
+        {
+          "label": "Create custom roles with Microsoft Defender unified RBAC",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/create-custom-rbac-roles"
+        },
+        {
+          "label": "Deploy the Microsoft Sentinel solution for SAP BTP",
+          "url": "https://learn.microsoft.com/en-us/azure/sentinel/sap/deploy-sap-btp-solution"
+        },
+        {
+          "label": "Manage data in Microsoft Sentinel and Defender",
+          "url": "https://learn.microsoft.com/azure/sentinel/manage-data-overview"
         }
       ]
     },
@@ -5140,81 +5384,6 @@
       "links": []
     },
     {
-      "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
-      "published": "2026-10-08T20:44:28+00:00",
-      "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security...",
-      "author": "Microsoft Security Research, Lora Randolph, Tahmina Ahmad and Karina Sirota Goodley",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article Why post-quantum authentication presents a different challengeWhy organizations should begin preparing nowMicrosoft's perspective on readinessTesting the future certificate ecosystemExpanding end-to-end testingWhat organizations can do todayLooking aheadLearn more Post-quantum cryptography (PQC) planning often focuses on protecting encrypted data, but authentication systems must also evolve. Certificates, trust anchors, PKI services, applications, devices, and hardware security modules may all be affected by new algorithms and larger certificate chains. Microsoft’s Post-Quantum Cryptography (PQC) Transport Layer Security (TLS) Pilot Program helps eligible certificate authorities evaluate interoperability and operational readiness in controlled environments. Organizations should begin now by inventorying certificate dependencies, assessing vendor roadmaps, identifying long-lived infrastructure, and creating non-production test environments. Early testing can surface compatibility and process gaps before post-quantum authentication is required at scale. By the end of this article, security leaders, public key infrastructure (PKI) administrators, and architects will understand the key certificate dependencies, migration risks, and practical first steps for post-quantum authentication readiness. Why post-quantum authentication presents a different challenge Much of the current PQC readiness discussion focuses on confidentiality and the ‘harvest now, decrypt later’ risk, in which adversaries collect encrypted data today with the expectation that future quantum computers could decrypt it. Authentication introduces a different set of challenges. While confidentiality protections primarily focus on safeguarding encrypted communications, authentication depends on a broad ecosystem of technologies and trust relationships. Certificates and private keys must be issued, distributed, stored, validated, renewed, and managed across diverse environments and vendors. Changes to cryptographic algorithms can therefore have implications that extend beyond cryptographic correctness into operational processes, interoperability, and infrastructure readiness. Organizations frequently understand where TLS protects their communications. Fewer organizations have a complete inventory of every system that issues, validates, stores, distributes, or depends on certificates. As the industry moves toward post-quantum authentication, security teams will need greater...",
-      "links": [
-        {
-          "label": "Why post-quantum authentication presents a different challenge",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-post-quantum-authentication-presents-a-different-challenge"
-        },
-        {
-          "label": "Why organizations should begin preparing now",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-organizations-should-begin-preparing-now"
-        },
-        {
-          "label": "Microsoft's perspective on readiness",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-s-perspective-on-readiness"
-        },
-        {
-          "label": "Testing the future certificate ecosystem",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#testing-the-future-certificate-ecosystem"
-        },
-        {
-          "label": "Expanding end-to-end testing",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#expanding-end-to-end-testing"
-        },
-        {
-          "label": "What organizations can do today",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-organizations-can-do-today"
-        },
-        {
-          "label": "Looking ahead",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#looking-ahead"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
-        },
-        {
-          "label": "ML-DSA-87",
-          "url": "https://csrc.nist.gov/pubs/fips/204/final"
-        },
-        {
-          "label": "According to the Microsoft Trusted Root Program Annoucement,",
-          "url": "https://github.com/TrustedRootProgram/Program-Requirements/blob/main/Announcements.md"
-        },
-        {
-          "label": "https://aka.ms/rootcert",
-          "url": "https://aka.ms/rootcert"
-        },
-        {
-          "label": "KB5101681 (OS Build 28000.2608) for 26H1",
-          "url": "https://support.microsoft.com/en-us/servicing/os/windows-11/2026/07/july-28-2026-kb5101681-preview"
-        }
-      ]
-    },
-    {
       "title": "CVE-2026-107608: Improper link resolution in asset bundling output handling in aws-cdk-lib",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-131-aws/",
       "published": "2026-10-08T19:44:26+00:00",
@@ -6004,41 +6173,6 @@
         {
           "label": "Administrator playbook",
           "url": "https://sarahzin22.github.io/PurviewBlogTechCommunityHTMLs/Admin%20Playbook%20Unified%20Classification%20Management%20Experience.html"
-        }
-      ]
-    },
-    {
-      "title": "Scaling classification and labeling: an interactive reference architecture update",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/scaling-classification-and-labeling-an-interactive-reference/ba-p/4560925",
-      "published": "2026-10-01T02:25:59+00:00",
-      "summary": "In April, I published a set of referential architecture diagrams for Microsoft Purview — Microsoft Purview Referential Architecture Diagrams. They have been useful in workshops and training sessions for a simple reason: one picture is worth a thousand words - attempting to explain the complex in a...",
-      "author": "MaximeBombardier",
-      "source": "Microsoft Purview",
-      "source_id": "purview",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Data Security",
-      "board_id": "microsoftpurviewblog",
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "In April, I published a set of referential architecture diagrams for Microsoft Purview — Microsoft Purview Referential Architecture Diagrams. They have been useful in workshops and training sessions for a simple reason: one picture is worth a thousand words - attempting to explain the complex in a single image. Today I'm publishing an update focused on classification and labeling — and on the wave of public previews that make auto-labeling something you can scale across the entire estate with ease. Detailed view mode ➡️ Download the interactive architecture on GitHub here. It's a self-contained HTML file - and it's a lot more than this picture! Why now: auto-labeling scales to the whole estate The most consequential change is surprisingly small. An auto-labeling policy can now be kept on while you edit it, without re-triggering simulation. Anyone who has run auto-labeling at scale knows why that matters. Until now, tuning a policy meant turning enforcement off, re-simulating, waiting, and turning it back on — delays every time you refined a rule. That friction made it challenging for organizations from broadening scope as fast as they wanted to. Removing it changes the operating model: you can simulate once with your conditions and expand scope (sites) when you're ready, without hitting the simulation limit. It arrives alongside a set of previews that lift every ceiling that used to cap the motion: Capacity is up 5x. Auto-labeling for SharePoint and OneDrive moves from 100,000 to up to 500,000 files per tenant per day (Roadmap ID 567890). Simulation goes from 4M to 20M items, so you can model against a real estate rather than a sample. Policy scope gets much bigger. Select up to 1,000 individual SharePoint sites per policy, adaptive scopes support up to 50,000 sites, and you can filter sites by the SiteTemplate property when configuring a policy (Roadmap ID 570445, MC1469958). Reporting finally tells you what happened. Audit and reporting now summarize the sensitive information types detected when labels are applied, and a new 30-day chart shows files processed per day so you can watch policy throughput. A per-policy coverage report correlates files processed during enforcement to the latest simulation run — including the files that enforcement processed but simulation never saw (Roadmap ID 568935). SharePoint library default labels now reach data at rest, applying the library's default label to existing files instead of only new or edited ones (Roadmap...",
-      "links": [
-        {
-          "label": "Microsoft Purview Referential Architecture Diagrams",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/microsoft-purview-referential-architecture-diagrams/4510925"
-        },
-        {
-          "label": "here",
-          "url": "https://microsoft.github.io/purview/purview-classification-labeling-reference-architecture.html"
         }
       ]
     }
