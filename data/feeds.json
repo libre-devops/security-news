@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-10-31T11:54:44.739113+00:00",
-  "totalArticles": 163,
+  "lastUpdated": "2026-10-31T17:01:21.847276+00:00",
+  "totalArticles": 161,
   "articles": [
     {
       "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
@@ -6105,76 +6105,6 @@
       ],
       "body": "Bulletin ID: 2026-121-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/01/2026 10:30 AM PDT Description: security-agent-mcp-server is an open-source Model Context Protocol (MCP) server, published by AWS in the awslabs/mcp repository, that AI assistants use to run local security scans (including differential \"diff\" scans) over source code. We identified CVE-2026-97662, an argument injection issue in the diff scan operation: a crafted reference value supplied to the scan is interpreted as a command-line option rather than a revision, which lets a context-dependent actor create, overwrite, or truncate arbitrary files on the host outside the intended workspace directory, bypassing the server's workspace-confinement control. Impacted versions: >= 0.1.1 AND < 0.2.0 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
       "links": []
-    },
-    {
-      "title": "Microsoft 365 and LinkedIn leadership update",
-      "link": "https://blogs.microsoft.com/blog/2026/10/01/microsoft-365-and-linkedin-leadership-update/",
-      "published": "2026-10-01T15:03:27+00:00",
-      "summary": "Satya Nadella, Chairman and CEO, and Ryan Roslansky, Executive Vice President of LinkedIn and Microsoft 365, shared the below communications with Microsoft and LinkedIn employees this morning. SATYA NADELLA MESSAGE After nearly 18 years at LinkedIn and Microsoft, Ryan Roslansky has decided to leave...",
-      "author": "Microsoft Corporate Blogs",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "AI",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Satya Nadella, Chairman and CEO, and Ryan Roslansky, Executive Vice President of LinkedIn and Microsoft 365, shared the below communications with Microsoft and LinkedIn employees this morning. SATYA NADELLA MESSAGE After nearly 18 years at LinkedIn and Microsoft, Ryan Roslansky has decided to leave Microsoft and embark on his next chapter. As Ryan and I have been discussing our roadmap and work ahead, we felt this was the right moment for this change. Ryan will stay through the end of the calendar year as an advisor to me and will support on the transition. Ryan leaves the organization in a strong position. With Copilot, we are executing rapidly against our vision to build a new OS for work that spans every model, every form factor, and every task, with Office fully embedded in Copilot and vice versa! Over the past year, Ryan’s team has done critical work bringing together the product, engineering, and design foundations that have made this next phase possible. Last week’s launch was an important milestone in that journey, and the strong response from customers, partners, and the broader ecosystem reinforced both how far we’ve come and how much opportunity remains ahead. At LinkedIn, we remain focused on our core vision of creating economic opportunity for every member of the global workforce, helping our 1.3 billion members access the knowledge, insights, and opportunities they need to navigate rapidly changing professional and labor markets. Effective today we will make the following changes: Sumit Chauhan and Lan Ye will report to Charles Lamanna. Jon Friedman will report to Jacob Andreou. Dan Shapero will continue as CEO of LinkedIn and Mohak Shroff will continue in his role, both reporting to me. Over his nearly two decades at Microsoft, Ryan has helped shape how people around the world find opportunity, build their careers, and get their work done. I’ve always appreciated his clarity of thinking and I’m deeply grateful for everything Ryan has built, for the leaders and teams he has developed, and for his friendship and counsel. Please join me in thanking Ryan for his extraordinary contributions to LinkedIn and Microsoft, and in wishing him the very best in what comes next. Satya RYAN ROSLANSKY MESSAGE Team, In 1996, as a college freshman, I taught myself to code so a few friends and I could help other students find a place to live around campus. I didn’t know much. I did know the internet was about to change how people found things, and I wanted to...",
-      "links": [
-        {
-          "label": "Microsoft 365 and LinkedIn leadership update",
-          "url": "https://blogs.microsoft.com/blog/2026/10/01/microsoft-365-and-linkedin-leadership-update/"
-        },
-        {
-          "label": "The Official Microsoft Blog",
-          "url": "https://blogs.microsoft.com"
-        }
-      ]
-    },
-    {
-      "title": "Meet the New Microsoft Purview Classifiers Experience: Your Admin Playbook for Public Preview",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/meet-the-new-microsoft-purview-classifiers-experience-your-admin/ba-p/4561324",
-      "published": "2026-10-01T15:01:07+00:00",
-      "summary": "Microsoft Purview Unified Classification Management Experience Feature overview and administrator playbook OverviewThe new Classifiers experience brings supported Microsoft Purview classification types into one place where administrators can discover, create, inspect, and manage classifiers. It...",
-      "author": "Sarahzin_Shane",
-      "source": "Microsoft Purview",
-      "source_id": "purview",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Data Security",
-      "board_id": "microsoftpurviewblog",
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "Microsoft Purview Unified Classification Management Experience Feature overview and administrator playbook OverviewThe new Classifiers experience brings supported Microsoft Purview classification types into one place where administrators can discover, create, inspect, and manage classifiers. It adds practical visibility into classified-item counts and policy dependencies so administrators can make more informed, lower-risk changes. Why this experience is important Classification underpins data protection, data loss prevention, and data security. As classifier inventories grow, administrators need a consistent way to understand what exists, where it is used, and what could be affected by a change. Centralized visibilitySearch and filter supported classifiers from a unified inventory instead of navigating separate management locations. Safer change decisionsReview classified-item counts and affected policies before editing or deleting a classifier. Stronger governanceEstablish clear ownership, testing, approval, validation, and review expectations. Better coverage analysisUse matched-item information and Data Explorer to understand where classifications occur and where gaps may exist. What administrators can do Discover supported classifier types and understand what the organization already uses. Create classifiers from a single entry point with type-specific preparation guidance. Review classified-item counts and inspect policies that depend on a classifier. Validate matched items across supported data sources and investigate unexpected coverage. Access Classifiers through Information Protection, Data Loss Prevention, or Data Security Posture Management, depending on tenant availability. Supported classification capabilities include sensitive information types, named entities, Exact Data Match, trainable classifiers, credentials, document fingerprinting, optical character recognition, and on-demand classification. How the experience can help Reduce context switching: Use one inventory to find and inspect supported classifiers. Understand impact earlier: Identify policy dependencies before a change reaches enforcement. Improve accountability: Connect classifiers to business owners, policy owners, and reviewers. Standardize operations: Apply the same lifecycle to routine maintenance, quality improvements, and retirement decisions. How the admin playbook helps The companion playbook turns the preview into a practical operating guide. It is designed to be the...",
-      "links": [
-        {
-          "label": "Public documentation",
-          "url": "https://go.microsoft.com/fwlink/?LinkId=2375148"
-        },
-        {
-          "label": "Administrator playbook",
-          "url": "https://sarahzin22.github.io/PurviewBlogTechCommunityHTMLs/Admin%20Playbook%20Unified%20Classification%20Management%20Experience.html"
-        }
-      ]
     }
   ]
 }
