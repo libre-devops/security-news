@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-01T12:54:21.270901+00:00",
-  "totalArticles": 158,
+  "lastUpdated": "2026-11-01T21:50:29.982345+00:00",
+  "totalArticles": 156,
   "articles": [
     {
       "title": "Chromium: CVE-2026-118304 Improper input validation in SVG",
@@ -5930,73 +5930,6 @@
       ],
       "tags": [
         "General Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-103956, CVE-2026-103957, and CVE-2026-103958 - Issues in Loom for AWS",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-124-aws/",
-      "published": "2026-10-02T19:21:29+00:00",
-      "summary": "Bulletin ID: 2026-124-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/02/2026 12:00 PM PDT Description: Loom is an AWS Labs open-source AI agent orchestration platform. We have identified and addressed three issues in Loom for AWS, described below. We recommend...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-124-AWS Scope: AWS Content Type: Important (requires attention) Publication Date: 10/02/2026 12:00 PM PDT Description: Loom is an AWS Labs open-source AI agent orchestration platform. We have identified and addressed three issues in Loom for AWS, described below. We recommend upgrading to the latest version (1.7.0) and ensuring any forked or derivative code is patched to incorporate the new fixes. - CVE-2026-103956 ‐ Authentication bypass in Loom for AWS (CWE-306, CWE-1188) An issue in the authentication dependency in Loom for AWS versions <1.6.1 allowed any network client to obtain full administrative authority over the agent control plane ‐ including registering tool servers, reading stored integration credentials, and rewriting IAM role policies attached to managed agent roles ‐ via any request to the application API in a deployment where no identity provider was configured. This issue was addressed in version 1.6.1, released 2026-08-04. - CVE-2026-103957 ‐ OAuth2 token and credential disclosure via outbound request handling in Loom for AWS (CWE-918, CWE-201) An issue in the OAuth2 discovery handling in Loom for AWS versions <1.7.0 allowed an authenticated user with the mcp:write or a2a:write scope to configure a well-known discovery URL whose document directed the backend to send OAuth2 client secrets or another user's access token to a third-party-controlled endpoint. The 1.6.1 release blocked internal-address reach for this code path but did not fully address the token disclosure. This issue was fully addressed in version 1.7.0. - CVE-2026-103958 ‐ Outbound request handling issue in tool server and remote agent connections in Loom for AWS (CWE-918) An issue in the tool server (MCP) and remote agent (A2A) connection handling in Loom for AWS versions <1.7.0 allowed an authenticated user with the mcp:write or a2a:write scope to direct connection requests to arbitrary internal network locations — including the container's credential-vending endpoint ‐ and read the responses. This issue was addressed in version 1.7.0. Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "links": []
-    },
-    {
-      "title": "From Domain Lists to Decisions: Scaling WHOIS Threat Intelligence with MDTI and Microsoft Graph",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/from-domain-lists-to-decisions-scaling-whois-threat-intelligence/ba-p/4560384",
-      "published": "2026-10-02T18:25:51+00:00",
-      "summary": "The real problem isn't WHOIS. It's what WHOIS costs you at scale. Ask any SOC analyst whether WHOIS data is useful and they'll say yes without hesitation. Registrant emails, creation dates, registrars, and nameservers are among the most durable pivots in domain-based threat intelligence — the...",
-      "author": "absharan",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Threat Intelligence",
-        "Microsoft Sentinel"
-      ],
-      "body": "The real problem isn't WHOIS. It's what WHOIS costs you at scale. Ask any SOC analyst whether WHOIS data is useful and they'll say yes without hesitation. Registrant emails, creation dates, registrars, and nameservers are among the most durable pivots in domain-based threat intelligence — the threads that tie a single phishing domain back to an entire adversary campaign. Now ask them how often they actually pull WHOIS for every suspicious domain in an alert. The honest answer is: not always. And that gap is the real problem. Here's why. When a campaign surfaces two hundred lookalike domains, manual WHOIS becomes a losing game: It's slow. One-domain-at-a-time portal lookups don't finish before the incident clock runs out. It's inconsistent. Different analysts capture different fields, so the data can't be compared or correlated. It's un-auditable. Screenshots and copy-paste don't hold up in an investigation review months later. It loses the pattern. By the time you've checked twenty domains by hand, the shared registrant email that connected them has scrolled off the screen. The outcome of all this friction is the part that should worry a security leader: analysts quietly stop enriching, or enrich only a sample. The pivot that would have collapsed twenty alerts into one campaign never happens. The newly registered domain that should have been escalated gets triaged as routine. The intelligence exists — the process just can't reach it fast enough. The outcome we're actually after Reframe the goal. This isn't a project to \"run WHOIS.\" It's a project to produce a specific set of outcomes: Every suspicious domain gets enriched — not a hand-picked sample. Enrichment is consistent and structured, so patterns across domains become visible instead of buried. The output is audit-ready — defensible in an investigation and reusable in a report. The whole thing is fast enough to happen inside the incident, not the day after. Get-MDTIWhois.ps1 exists to deliver exactly those outcomes. It reads a list of domains, calls Microsoft Defender Threat Intelligence (MDTI) through Microsoft Graph, and returns both a normalized CSV for immediate triage and the raw JSON for deep investigation — in one pass, read-only, with nothing changed in your environment. What changes for the analyst The clearest way to see the value is the before-and-after. Before: An alert fires on a suspected phishing campaign with two hundred candidate domains. The analyst opens a portal, checks a handful...",
-      "links": [
-        {
-          "label": "Get-MDTIWhois.ps1",
-          "url": "https://github.com/Abhishek-Sharan/microsoft-security-operations-toolkit/blob/main/Microsoft%20Sentinel/Scripts/Threat%20Intelligence/MDTI-WHOIS/Get-MDTIWhois.ps1"
-        },
-        {
-          "label": "MDTI-WHOIS in the Microsoft Security Operations Toolkit",
-          "url": "https://github.com/Abhishek-Sharan/microsoft-security-operations-toolkit/tree/main/Microsoft%20Sentinel/Scripts/Threat%20Intelligence/MDTI-WHOIS"
-        }
       ]
     }
   ]
