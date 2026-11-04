@@ -1,83 +1,78 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-04T13:59:19.580144+00:00",
-  "totalArticles": 186,
+  "lastUpdated": "2026-11-04T23:25:14.509154+00:00",
+  "totalArticles": 167,
   "articles": [
     {
-      "title": "What stops a service-side auto-labeling rollout from being approved — and how to unblock it",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/what-stops-a-service-side-auto-labeling-rollout-from-being/ba-p/4567706",
-      "published": "2026-11-03T22:21:54+00:00",
-      "summary": "The four questions every approver asks AccessProofReversibilityScale“Will labeling change who can open our files?”“Can we prove what gets labeled — and why?”“Can we undo it if something goes wrong?”“Will it finish at our size?”Scenarios 1 · 2Scenarios 6 · 8Scenarios 3 · 7Scenarios 4 · 5 What...",
-      "author": "Harish_Sonkusale",
-      "source": "Microsoft Purview",
-      "source_id": "purview",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Data Security",
-      "board_id": "microsoftpurviewblog",
+      "title": "CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/",
+      "published": "2026-11-04T21:53:42+00:00",
+      "summary": "Bulletin ID: 2026-170-AWS Publication Date: 11/04/2026 13:30 PM PST Description: We identified CVE-2026-122266, an issue in Amazon EKS Network Policy Agent (aws-network-policy-agent). Improper isolation of shared eBPF connection tracking state might allow an authenticated adjacent user to bypass...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
       "products": [
         {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
         }
       ],
       "tags": [
-        "Microsoft Purview"
+        "AWS Security"
       ],
-      "body": "The four questions every approver asks AccessProofReversibilityScale“Will labeling change who can open our files?”“Can we prove what gets labeled — and why?”“Can we undo it if something goes wrong?”“Will it finish at our size?”Scenarios 1 · 2Scenarios 6 · 8Scenarios 3 · 7Scenarios 4 · 5 What unblocks approval Classify first, encrypt only where tested Bounded simulations reviewed by data owners Explicit approval gates A rollback runbook tested before turn-on Eight scenarios at a glance — and who needs to say yes Sr.NoScenarioWhat approvers askSecurityPrivacy & complianceIT operationsData owners1Label data at rest without widening accessWill a label open files to more people?●●◐◐2Sign-off from privacy and security teamsCan we see scope, samples and access impact?●●◐◐3Turn on safely, roll back safelyCan we undo it if it goes wrong?◐◐●◐4Scoping very large tenantsWill it finish at our size, and when?··●◐5Simulations that never finishIs it progressing or stuck?··●·6Trust in what gets labeledWhy was this file labeled?◐◐◐●7Existing labels and conflicting policiesWill it overwrite our labels? Which policy wins?◐·●◐8Proving it works after go-liveCan we defend the numbers?●◐●◐ leads the decision · ◐ consulted · Illustrative: typical roles — adapt to your organization. Five gates every policy should clear A scheduled turn-on date activates a policy even if nobody reviewed the results [Learn ↗], and only Compliance Administrator or Compliance Data Administrator or Information protection can turn a policy on [Learn ↗] — make both part of your change control. Pre-flight: miss one and the policy runs but labels nothing — with no error [Learn ↗] ✓ Auditing turned on✓ Sensitivity labels enabled for SharePoint and OneDrive✓ PDF labeling on, if PDFs are in scope✓ Auto-labeling available in your region✓ E5-tier licensing✓ A sublabel or standalone label — never a parent✓ Label scoped to files✓ Encrypting label: “Assign permissions now”, no expiry✓ Content Viewer role to review matches✓ Compliance Administrator to turn on Scenarios 1–4: earn the first “yes” Each scenario: what worries Contoso, why approval stops, how to unblock it, and what to show approvers. Scenario 1 · Label data at rest without widening access Security · Privacy & compliance “Will a label open our files to more people than today?” — especially files restricted with Information Rights Management (IRM). [Real-world] Why approval stops An encrypting label that grants all employees co-owner rights reads as...",
+      "body": "Bulletin ID: 2026-170-AWS Publication Date: 11/04/2026 13:30 PM PST Description: We identified CVE-2026-122266, an issue in Amazon EKS Network Policy Agent (aws-network-policy-agent). Improper isolation of shared eBPF connection tracking state might allow an authenticated adjacent user to bypass NetworkPolicy ingress enforcement on co-located pods. Impacted versions: - aws-network-policy-agent < 1.3.7 - Amazon VPC CNI Managed Add-on < 1.22.3 Refer to the article below for the most up-to-date and complete information. Read this article",
       "links": [
         {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/purview/auto-label-simulation-results"
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-170-aws/"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-078",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-078",
+      "published": "2026-11-04T19:14:32+00:00",
+      "summary": "Published: 2026-11-04Description Description Severity Notes A vulnerability (CVE-2026-98432) was discovered in the Linux kernel IPv4 TCP stack. The flaw can cause a kernel panic or a container escape (root code execution on the node). An unprivileged process in a container can trigger it locally,...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-04Description Description Severity Notes A vulnerability (CVE-2026-98432) was discovered in the Linux kernel IPv4 TCP stack. The flaw can cause a kernel panic or a container escape (root code execution on the node). An unprivileged process in a container can trigger it locally, without special capabilities such as CAP_NET_RAW. A network attacker can also trigger it by sending TCP packets with IPv4 options to a listener on the node or on the cluster control plane. The network attack requires access to a TCP listener on your nodes, Pods, or the control plane's IP-based endpoint. Clusters that restrict this access to trusted sources, for example with firewall rules and control plane authorized networks, are not exposed to network attacks. GKE Standard clusters and GKE Autopilot clusters are impacted. For instructions and more details, see the GKE security bulletin. Medium CVE-2026-98432",
+      "links": [
+        {
+          "label": "GKE security bulletin",
+          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-078"
         },
         {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically"
-        },
-        {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about"
-        },
-        {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels-sharepoint-onedrive-files"
-        },
-        {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0"
-        },
-        {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/purview/purview-adaptive-scopes"
-        },
-        {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/troubleshoot/microsoft-365/purview/sensitivity-labels/troubleshoot-auto-labeling-policies"
-        },
-        {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/purview/auto-label-classification-simulation"
-        },
-        {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/purview/deploymentmodels/depmod-secure-by-default-step3"
-        },
-        {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/troubleshoot/microsoft-365/purview/sensitivity-labels/auto-labeling-failures-sharepoint-onedrive"
-        },
-        {
-          "label": "Learn ↗",
-          "url": "https://learn.microsoft.com/en-us/purview/auto-label-insights-tab"
+          "label": "CVE-2026-98432",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-98432"
         }
       ]
     },
     {
       "title": "GCP-2026-077",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-077",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-11-03Description Description Severity Notes Following the private-key compromise of intermediate Certificate Authorities (CAs) associated with eMudhra (emSign), outbound TLS connections trusting affected roots—specifically emSign ECC Root CA - G3—are vulnerable to Man-in-the-Middle...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -116,7 +111,7 @@
     {
       "title": "GCP-2026-076",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-076",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-11-02Description Description Severity Notes A security vulnerability was discovered in Istio (ISTIO-SECURITY-2026-008). For instructions and more details, see the Cloud Service Mesh security bulletin. Medium CVE-2026-111943",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -140,7 +135,7 @@
     {
       "title": "GCP-2026-075",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-075",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-11-02Description Description Severity Notes On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -215,7 +210,7 @@
     {
       "title": "GCP-2026-074",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-074",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-10-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the SubWorkflow task in Application Integration versions prior to September 11, 2026. What should I do? No customer action is required. This vulnerability was patched on...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -246,7 +241,7 @@
     {
       "title": "GCP-2026-073",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-073",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-10-26Description Description Severity Notes An incorrect authorization vulnerability was discovered in Compute Engine prior to August 31, 2026. What should I do? No action is required from you. This vulnerability was patched on August 31, 2026. What vulnerabilities are being...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -277,7 +272,7 @@
     {
       "title": "GCP-2026-072",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-072",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-10-24Description Description Severity Notes Two vulnerabilities in PHP core, CVE-2026-109618 and CVE-2026-109619 (\"PHP2Shell\"), allow an unauthenticated attacker to execute code remotely on a server running a vulnerable PHP version. They are fixed in PHP 8.2.35, 8.3.36, 8.4.27, and...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -316,7 +311,7 @@
     {
       "title": "GCP-2026-071",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-071",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-10-23Updated: 2026-11-02Description Description Severity Notes 2026-11-02 Update: Added Google Cloud SDK Libraries to the list of affected products. 2026-10-28 Update: Added Managed Service for Apache Spark and Cloud Profiler to the list of affected products. We will continue to...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -375,7 +370,7 @@
     {
       "title": "GCP-2026-070",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-070",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-10-21Updated: 2026-10-28Description Description Severity Notes 2026-10-28 Update: For Cloud Run, Cloud Run functions, and Google App Engine Standard, all supported versions of PHP 8.2 and later are patched. Take immediate protective action by redeploying your resources with updated...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -430,7 +425,7 @@
     {
       "title": "GCP-2026-069",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-069",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-10-19Description Description Severity Notes Security vulnerabilities were discovered in Istio and Envoy Proxy (ISTIO-SECURITY-2026-007). For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High GHSA-w44g-8m76-8gc5 GHSA-7p2q-4xvg-vxc6...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -454,7 +449,7 @@
     {
       "title": "GCP-2026-068",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-10-14Updated: 2026-10-24Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -489,7 +484,7 @@
     {
       "title": "GCP-2026-067",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-067",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-10-12Description Description Severity Notes A Denial-of-Service (DoS) vulnerability was discovered in Envoy Proxy when an HTTP filter (such as ext_proc with route_cache_action: RETAIN) mutates the :path header after route selection on a route configured with prefix_rewrite. For...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -513,7 +508,7 @@
     {
       "title": "GCP-2026-066",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-066",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -544,7 +539,7 @@
     {
       "title": "GCP-2026-065",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-065",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the JavaScript Task in Application Integration versions prior to June 28, 2026. What should I do? No customer action is required. This vulnerability was patched on June...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -575,7 +570,7 @@
     {
       "title": "GCP-2026-064",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-064",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes An Incorrect Authorization vulnerability was discovered in the task configuration in Application Integration versions prior to June 17, 2026. What should I do? No customer action is required. This vulnerability was patched on June 17,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -606,7 +601,7 @@
     {
       "title": "GCP-2026-063",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-063",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-09-16Description Description Severity Notes An Improper Privilege Management vulnerability in Google Security Operations SOAR was patched with version 6.3.85, and no customer action is needed. The vulnerability allowed an authenticated attacker to escalate privileges to system-level...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -637,7 +632,7 @@
     {
       "title": "GCP-2026-062",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-062",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-09-11Description Description Severity Notes Multiple security vulnerabilities were discovered in Slurm that affect Cluster Toolkit blueprints that reference specific image versions. These vulnerabilities affect the slurmstepd daemon, RPC request handling, and the accounting...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -700,7 +695,7 @@
     {
       "title": "GCP-2026-061",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-061",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-09-09Description Description Severity Notes A security vulnerability (GHSA-p7v4-vr35-mj6f, CVE assignment pending) in containerd's CRI implementation allows a container restored from an untrusted checkpoint through the CreateContainer API to bypass the destination security context...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -735,7 +730,7 @@
     {
       "title": "GCP-2026-060",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-060",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-09-04Updated: 2026-09-08Description Description Severity Notes 2026-09-08 Update: Added link to the Cluster Toolkit security bulletin. A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. What...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -774,7 +769,7 @@
     {
       "title": "GCP-2026-059",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-059",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-09-04Description Description Severity Notes A Missing Authorization vulnerability was discovered in the HTTP Connector in Integration Connectors versions prior to December 11, 2025. What should I do? No customer action is required. This vulnerability was patched on December 11,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -805,7 +800,7 @@
     {
       "title": "GCP-2026-058",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-058",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-09-02Description Description Severity Notes A missing project permission check in GKE Multi-Cloud (CreateAttachedCluster, CreateAwsCluster, CreateAzureCluster) APIs allowed an attacker to register an attached cluster into an arbitrary target project's Workload Identity Federation...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -836,7 +831,7 @@
     {
       "title": "GCP-2026-057",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-057",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-08-26Description Description Severity Notes A series of vulnerabilities were discovered in Envoy Proxy. For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High CVE-2026-73513 CVE-2026-73552 CVE-2026-73512 CVE-2026-73547 CVE-2026-73549...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -911,7 +906,7 @@
     {
       "title": "GCP-2026-056",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-056",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-08-26Description Description Severity Notes An Improper Input Validation vulnerability was discovered in the JDBC driver in BigQuery Data Transfer Service versions prior to May 1, 2026. What should I do? No customer action is required. This vulnerability was patched on May 1, 2026....",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -946,7 +941,7 @@
     {
       "title": "GCP-2026-055",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-055",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-08-25Description Description Severity Notes A critical unauthenticated Remote Code Execution (RCE) vulnerability exists in Next.js and libheif when processing malicious image files. Google Cloud infrastructure is not directly vulnerable, but customer workloads running Next.js on...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -981,7 +976,7 @@
     {
       "title": "GCP-2026-054",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-054",
-      "published": "2026-11-03T21:33:38+00:00",
+      "published": "2026-11-04T19:14:32+00:00",
       "summary": "Published: 2026-08-11Description Description Severity Notes A vulnerability (CVE-2026-6726, also known as TCGVRT0010) has been identified in the Trusted Computing Group's TPM 2.0 reference implementation code, affecting all published revisions of the code (v1.16, v1.38, v1.59, v1.83, v184). What...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -1014,77 +1009,601 @@
       ]
     },
     {
-      "title": "GCP-2026-053",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-053",
-      "published": "2026-11-03T21:33:38+00:00",
-      "summary": "Published: 2026-08-11Description Description Severity Notes Google is aware of several security vulnerabilities affecting Intel® Trust Domain Extensions (TDX) firmware that can compromise confidential guest integrity. These vulnerabilities could allow a privileged host adversary to bypass...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
+      "title": "[In preview] Public Preview: Azure Firewall IPv6 now supports application rules",
+      "link": "https://azure.microsoft.com/updates?id=579507",
+      "published": "2026-11-04T18:09:43+00:00",
+      "summary": "Azure Firewall now supports application rules in IPv6 Public Preview, enabling layer 7 filtering for IPv6 HTTP and HTTPS traffic. The enhancement extends application-level controls to IPv6 and dual-stack deployments, helping customers maintain consistent",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
       "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
       "board_id": null,
       "products": [
         {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Google Cloud Security"
+        "General Security"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: Multi-disk crash-consistent VM restore points for Premium SSD v2 and Ultra Disks on VMs with SCSI disk controller",
+      "link": "https://azure.microsoft.com/updates?id=579162",
+      "published": "2026-11-04T17:13:51+00:00",
+      "summary": "Multi-disk crash-consistent restore points for Azure virtual machines with Premium SSD v2 and Ultra data disks are now available in public preview on VMs with SCSI disk controllers. You can use this to capture the agent-less crash consistent restore point",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
       ],
-      "body": "Published: 2026-08-11Description Description Severity Notes Google is aware of several security vulnerabilities affecting Intel® Trust Domain Extensions (TDX) firmware that can compromise confidential guest integrity. These vulnerabilities could allow a privileged host adversary to bypass attestation checks, access restricted registers, or decrypt normally protected guest memory. What Google products are affected? All Confidential VM instances relying on Intel TDX technology. What should I do? Google has proactively applied these firmware upgrades to our server fleet to mitigate these vulnerabilities. No action is required for customers that did not receive a separate direct advisory to upgrade. For more information, see Intel's PSIRT technical advisories: INTEL-TA-01404, INTEL-TA-01428, INTEL-TA-01419, INTEL-TA-01439, INTEL-TA-01442, INTEL-TA-01436. High CVE-2025-31938 CVE-2025-35973 CVE-2025-31356 CVE-2026-20898 CVE-2026-20713 CVE-2026-20901 CVE-2026-20885 CVE-2026-20705 CVE-2026-20775",
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119260: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-118321: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118321",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-118314: Incorrect reference resolution",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118314",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-118309: Incorrect reference resolution",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118309",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119261: Improper input validation",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119261",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119262: Improper input validation",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119262",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119263: Memory corruption",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119263",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119264: Memory corruption",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119264",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119265: Memory corruption",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119265",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119266: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119266",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119267: Memory corruption",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119267",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119268: Integer overflow",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119268",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119269: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119269",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119270: Improper input validation",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119270",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119271: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119271",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-119272: Out of bounds read",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119272",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-76024: Memory corruption",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76024",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-76025: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76025",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-76026: Memory corruption",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76026",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-76027: Memory corruption",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76027",
+      "published": "2026-11-04T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "What stops a service-side auto-labeling rollout from being approved — and how to unblock it",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/what-stops-a-service-side-auto-labeling-rollout-from-being/ba-p/4567706",
+      "published": "2026-11-03T22:21:54+00:00",
+      "summary": "The four questions every approver asks AccessProofReversibilityScale“Will labeling change who can open our files?”“Can we prove what gets labeled — and why?”“Can we undo it if something goes wrong?”“Will it finish at our size?”Scenarios 1 · 2Scenarios 6 · 8Scenarios 3 · 7Scenarios 4 · 5 What...",
+      "author": "Harish_Sonkusale",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "The four questions every approver asks AccessProofReversibilityScale“Will labeling change who can open our files?”“Can we prove what gets labeled — and why?”“Can we undo it if something goes wrong?”“Will it finish at our size?”Scenarios 1 · 2Scenarios 6 · 8Scenarios 3 · 7Scenarios 4 · 5 What unblocks approval Classify first, encrypt only where tested Bounded simulations reviewed by data owners Explicit approval gates A rollback runbook tested before turn-on Eight scenarios at a glance — and who needs to say yes Sr.NoScenarioWhat approvers askSecurityPrivacy & complianceIT operationsData owners1Label data at rest without widening accessWill a label open files to more people?●●◐◐2Sign-off from privacy and security teamsCan we see scope, samples and access impact?●●◐◐3Turn on safely, roll back safelyCan we undo it if it goes wrong?◐◐●◐4Scoping very large tenantsWill it finish at our size, and when?··●◐5Simulations that never finishIs it progressing or stuck?··●·6Trust in what gets labeledWhy was this file labeled?◐◐◐●7Existing labels and conflicting policiesWill it overwrite our labels? Which policy wins?◐·●◐8Proving it works after go-liveCan we defend the numbers?●◐●◐ leads the decision · ◐ consulted · Illustrative: typical roles — adapt to your organization. Five gates every policy should clear A scheduled turn-on date activates a policy even if nobody reviewed the results [Learn ↗], and only Compliance Administrator or Compliance Data Administrator or Information protection can turn a policy on [Learn ↗] — make both part of your change control. Pre-flight: miss one and the policy runs but labels nothing — with no error [Learn ↗] ✓ Auditing turned on✓ Sensitivity labels enabled for SharePoint and OneDrive✓ PDF labeling on, if PDFs are in scope✓ Auto-labeling available in your region✓ E5-tier licensing✓ A sublabel or standalone label — never a parent✓ Label scoped to files✓ Encrypting label: “Assign permissions now”, no expiry✓ Content Viewer role to review matches✓ Compliance Administrator to turn on Scenarios 1–4: earn the first “yes” Each scenario: what worries Contoso, why approval stops, how to unblock it, and what to show approvers. Scenario 1 · Label data at rest without widening access Security · Privacy & compliance “Will a label open our files to more people than today?” — especially files restricted with Information Rights Management (IRM). [Real-world] Why approval stops An encrypting label that grants all employees co-owner rights reads as...",
       "links": [
         {
-          "label": "INTEL-TA-01404",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01404.html"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/purview/auto-label-simulation-results"
         },
         {
-          "label": "INTEL-TA-01428",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01428.html"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/purview/apply-sensitivity-label-automatically"
         },
         {
-          "label": "INTEL-TA-01419",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01419.html"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/purview/dlp-microsoft365-copilot-location-learn-about"
         },
         {
-          "label": "INTEL-TA-01439",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01439.html"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/purview/sensitivity-labels-sharepoint-onedrive-files"
         },
         {
-          "label": "INTEL-TA-01442",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01442.html"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0"
         },
         {
-          "label": "INTEL-TA-01436",
-          "url": "https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01436.html"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/purview/purview-adaptive-scopes"
         },
         {
-          "label": "CVE-2025-31938",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31938"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/troubleshoot/microsoft-365/purview/sensitivity-labels/troubleshoot-auto-labeling-policies"
         },
         {
-          "label": "CVE-2025-35973",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-35973"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/purview/auto-label-classification-simulation"
         },
         {
-          "label": "CVE-2025-31356",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-31356"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/purview/deploymentmodels/depmod-secure-by-default-step3"
         },
         {
-          "label": "CVE-2026-20898",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20898"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/troubleshoot/microsoft-365/purview/sensitivity-labels/auto-labeling-failures-sharepoint-onedrive"
         },
         {
-          "label": "CVE-2026-20713",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20713"
-        },
-        {
-          "label": "CVE-2026-20901",
-          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20901"
+          "label": "Learn ↗",
+          "url": "https://learn.microsoft.com/en-us/purview/auto-label-insights-tab"
         }
       ]
     },
@@ -1338,128 +1857,6 @@
         {
           "label": "@MSFTSecurity",
           "url": "https://twitter.com/@MSFTSecurity"
-        }
-      ]
-    },
-    {
-      "title": "Subnet Solutions PowerSYSTEM Center",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-307-01",
-      "published": "2026-11-03T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute unauthorized SQL commands and gain access to unauthorized resources. The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 <=5.29.x (CVE-2026-63017)...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute unauthorized SQL commands and gain access to unauthorized resources. The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 <=5.29.x (CVE-2026-63017) PowerSYSTEM Center 2024 >=6.0.x|<=6.2.x (CVE-2026-63017, CVE-2026-63774) PowerSYSTEM Center 2026 >=7.0.x|<=7.1.x (CVE-2026-63017, CVE-2026-63774) CVSS Vendor Equipment v3 9 Subnet Solutions PowerSYSTEM Center 2 Vulnerabilities Incorrect Authorization, Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Canada Vulnerabilities Expand All + CVE-2026-63017 Incorrect authorization in PowerSYSTEM Center allows a low-privileged, authenticated user to access resources normally limited to administrators. Read More 3 Affected Products Subnet Solutions PowerSYSTEM Center 2024 >=6.0.x|<=6.2.x Product Status: known_affected Remediations MitigationFor users who are currently using PowerSYSTEM Center 2024, Subnet Solutions recommends users upgrade to PowerSYSTEM Center 2026 Update 1.1. For assistance in upgrading, users should contact the Subnet Solutions System Integration team or customer support team at (403) 270-8885 or by email at support@subnet.com. If unable to update to the latest version, Subnet Solutions recommends users monitor user activity records to ensure users are following acceptable usage policies of the application. Subnet Solutions also recommends disabling PowerSYSTEM Center Client Access Server users' ability to access the browser's F12 Developer Tools. Subnet Solutions PowerSYSTEM Center 2020 <=5.29.x Product Status: known_affected Remediations MitigationSubnet Solutions recommends users update to PowerSYSTEM Center 2020 Update 30. For assistance in upgrading, users should contact the Subnet Solutions System Integration team or customer support team at (403) 270-8885 or by email at support@subnet.com. If unable to update to the latest version, Subnet Solutions recommends users monitor user activity records to ensure users are following acceptable usage policies of the application. Subnet Solutions also recommends disabling PowerSYSTEM Center Client Access Server users' ability to access the browser's F12 Developer Tools. Subnet Solutions PowerSYSTEM Center 2026 >=7.0.x|<=7.1.x Product...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-307-01.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-863 Incorrect Authorization",
-          "url": "https://cwe.mitre.org/data/definitions/863.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:A/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-63017"
-        },
-        {
-          "label": "CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
-          "url": "https://cwe.mitre.org/data/definitions/89.html"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-63774"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        }
-      ]
-    },
-    {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "published": "2026-11-03T12:00:00+00:00",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability This type of vulnerability is a frequent attack vector for malicious...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-119977",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-119977"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
         }
       ]
     },
@@ -1807,486 +2204,6 @@
           "label": "Read this article",
           "url": "https://aws.amazon.com/security/security-bulletins/2026-162-aws/"
         }
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118304 Improper input validation in SVG",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118304",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118313 Use after free in Video",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118313",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118311 Memory corruption in Media",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118311",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118317 Memory corruption in HTML",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118317",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118315 Improper input validation in SVG",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118315",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118312 Memory corruption in Paint",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118312",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118316 Improper input validation in V8",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118316",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118318 Improper access control in V8",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118318",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118308 Use after free in SVG",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118308",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118310 Improper input validation in Views",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118310",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118305 Memory corruption in Turbolev",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118305",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118307 Use after free in Paint",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118307",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118306 Memory corruption in FileSystem",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118306",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118319 Memory corruption in Skia",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118319",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118322 Memory corruption in ANGLE",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118322",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118328 Improper input validation in WebRTC",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118328",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118327 Memory corruption in Media",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118327",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118332 Improper input validation in Compositing",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118332",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118320 Memory corruption in V8",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118320",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2026-118334 Use after free in ImageCapture",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118334",
-      "published": "2026-10-31T14:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
@@ -2727,57 +2644,6 @@
         {
           "label": "https://learn.microsoft.com/defender-for-identity/security-posture-assessments/certificates",
           "url": "https://learn.microsoft.com/defender-for-identity/security-posture-assessments/certificates"
-        }
-      ]
-    },
-    {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "published": "2026-10-30T12:00:00+00:00",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-111357 Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability CVE-2026-118527 Ivanti Connect Secure Generation of Predictable...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-111357 Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability CVE-2026-118527 Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-111357",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111357"
-        },
-        {
-          "label": "CVE-2026-118527",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-118527"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
         }
       ]
     },
@@ -3236,278 +3102,6 @@
       ]
     },
     {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "published": "2026-10-29T12:00:00+00:00",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability CVE-2026-76418 Cisco Secure Firewall ASA Software and...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability CVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://edit.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-97229",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-97229"
-        },
-        {
-          "label": "CVE-2026-76418",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-76418"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://edit.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://edit.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
-      ]
-    },
-    {
-      "title": "Hitachi Energy TRO600 series products",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
-      "published": "2026-10-29T12:00:00+00:00",
-      "summary": "View CSAF Summary Hitachi Energy is aware of multiple vulnerabilities that affect the TRO600 series product versions listed in this document. These vulnerabilities can be exploited for remote code execution (RCE) to carry out further attacks and disclosure of sensitive information. Please refer to...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Hitachi Energy is aware of multiple vulnerabilities that affect the TRO600 series product versions listed in this document. These vulnerabilities can be exploited for remote code execution (RCE) to carry out further attacks and disclosure of sensitive information. Please refer to the Recommended Immediate Actions section for information about the mitigation/remediation. The following versions of Hitachi Energy TRO600 series products are affected: TRO600 vers:TRO600/<=9.2.1.6, vers:TRO600/<=9.1.1.0, 9.2.2.1, 9.1.2.0 (CVE-2026-10756, CVE-2026-106087) CVSS Vendor Equipment v3 7.5 Hitachi Energy TRO600 2 Vulnerabilities Improper Restriction of Communication Channel to Intended Endpoints, Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2026-10756 TRO600 contains a vulnerability that allows an authenticated attacker to bypass network access restrictions and access services intended to be reachable only from localhost. By leveraging port forwarding, an attacker can interact with locally bound ports and services, resulting in unauthorized access to sensitive functionality and confidential information, and causing availability impact. Read More 1 Affected Product TRO600 version 9.2.1.6 and prior Product Status: fixed, known_affected, recommended Remediations Vendor fixUpdate to version 9.2.2.1 Additional Metrics Relevant CWE: CWE-923 Improper Restriction of Communication Channel to Intended Endpoints CVSS Version Base Score Base Severity Vector String 3.1 7.5 HIGH CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H 4.0 7.7 HIGH CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details CVE-2026-106087 TRO600 contains an arbitrary file read vulnerability. An unauthenticated attacker can exploit this vulnerability to read or download arbitrary files on the affected device, including sensitive configuration files and password data, resulting in the disclosure of sensitive information. Read More 2 Affected Products TRO600 version 9.2.1.6 and prior Product Status: fixed, known_affected, recommended Remediations TRO600 version 9.1.1.0 and prior Product Status: fixed, known_affected, recommended Remediations Vendor fixFixed in version 9.1.2.0. Update to the latest version 9.2.2.1. Additional Metrics Relevant CWE: CWE-306 Missing Authentication for Critical Function CVSS Version...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-302-02.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-923 Improper Restriction of Communication Channel to Intended Endpoints",
-          "url": "https://cwe.mitre.org/data/definitions/923.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-10756"
-        },
-        {
-          "label": "CWE-306 Missing Authentication for Critical Function",
-          "url": "https://cwe.mitre.org/data/definitions/306.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-106087"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        }
-      ]
-    },
-    {
-      "title": "Siemens Mendix SAML Module",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
-      "published": "2026-10-29T12:00:00+00:00",
-      "summary": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Mendix SAML Module are affected: Mendix SAML (Mendix 10 compatible) vers:intdot/<4.2.4 (CVE-2026-89209) Mendix SAML (Mendix 11 compatible) vers:intdot/<4.2.4 (CVE-2026-89209) Mendix SAML (Mendix 9 compatible) vers:intdot/<3.6.29 (CVE-2026-89209) CVSS Vendor Equipment v3 6.8 Siemens Mendix SAML (Mendix 10 compatible) 1 Vulnerability Authentication Bypass by Capture-replay Background Critical Infrastructure Sectors: Critical Manufacturing, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-89209 Affected versions of the module do not properly protect against SAML assertion replay in IdP-initiated authentication flows. This could allow unauthenticated remote attackers to gain unauthorized access to the application by replaying a valid SAML response. Read More 3 Affected Products Mendix SAML (Mendix 10 compatible) < V4.2.4 Product Status: known_affected Remediations MitigationDisable IdP-initiated SSO Vendor fixUpdate to V4.2.4 or later version Mendix SAML (Mendix 11 compatible) < V4.2.4 Product Status: known_affected Remediations MitigationDisable IdP-initiated SSO Vendor fixUpdate to V4.2.4 or later version Mendix SAML (Mendix 9 compatible) < V3.6.29 Product Status: known_affected Remediations MitigationDisable IdP-initiated SSO Vendor fixUpdate to V3.6.29 or later version Additional Metrics Relevant CWE: CWE-294 Authentication Bypass by Capture-replay CVSS Version Base Score Base Severity Vector String 3.1 6.8 MEDIUM CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-302-01.json"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-294 Authentication Bypass by Capture-replay",
-          "url": "https://cwe.mitre.org/data/definitions/294.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-89209"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        },
-        {
-          "label": "proactive defense of ICS assets",
-          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
-        },
-        {
-          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
-          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
-        }
-      ]
-    },
-    {
-      "title": "Hitachi Energy CoreTec Product",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
-      "published": "2026-10-29T12:00:00+00:00",
-      "summary": "View CSAF Summary Hitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product....",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Hitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The following versions of Hitachi Energy CoreTec Product are affected: CoreTec5 vers:CoreTec5/<=3.4.0, 5.0.0 (CVE-2026-13162, CVE-2026-43284) CoreTec4 vers:CoreTec4/<=3.4.0 (CVE-2026-13162) CVSS Vendor Equipment v3 8.8 Hitachi Energy CoreTec5 2 Vulnerabilities Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'), Write-what-where Condition Background Critical Infrastructure Sectors: Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Switzerland Vulnerabilities Expand All + CVE-2026-13162 An OS command vulnerability exists in CoreTec product that allows authenticated users with certain roles to execute arbitrary system commands with full control over the device. The vulnerability exists in the configuration daemon's time synchronization handler, which is responsible for setting the system timezone. When processing timezone configuration updates, the daemon constructs a shell command by concatenating user-supplied input without any sanitization or validation. Read More 2 Affected Products CoreTec5 versions 3.4.0 and prior Product Status: fixed, known_affected, recommended Remediations Vendor fixUpdate to CoreTec5 version 5.0.0 CoreTec4 versions 3.4.0 and prior Product Status: fixed, known_affected, recommended Remediations Vendor fixUpgrade to CoreTec5 version 5.0.0 MitigationFollow general mitigation factors Additional Metrics Relevant CWE: CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') CVSS Version Base Score Base Severity Vector String 3.1 7.5 HIGH CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H 4.0 7.7 HIGH CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details CVE-2026-43284 A vulnerability exists in the IPsec ESP subsystem (esp4) of the Linux kernel used in CoreTec5 that allows a local unprivileged user to escalate privileges to root. The flaw exists in how the kernel handles memory pages when processing ESP encrypted network packets. An attacker can craft a packet that causes the kernel to decrypt data directly into memory pages it...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-302-03.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
-          "url": "https://cwe.mitre.org/data/definitions/78.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-13162"
-        },
-        {
-          "label": "CWE-123 Write-what-where Condition",
-          "url": "https://cwe.mitre.org/data/definitions/123.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-43284"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        }
-      ]
-    },
-    {
       "title": "CVE-2026-115415 - Secret masking bypass in the environment tool in Strands Agents Tools",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-154-aws/",
       "published": "2026-10-28T19:39:08+00:00",
@@ -3784,57 +3378,6 @@
       ],
       "tags": [
         "AWS Security"
-      ]
-    },
-    {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "published": "2026-10-28T12:00:00+00:00",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-41709 Broadcom VMWare ESX Insufficient Logging Vulnerability CVE-2026-46300 Linux Kernel Missing Initialization of a Variable Vulnerability These types of...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-41709 Broadcom VMWare ESX Insufficient Logging Vulnerability CVE-2026-46300 Linux Kernel Missing Initialization of a Variable Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-41709",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-41709"
-        },
-        {
-          "label": "CVE-2026-46300",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-46300"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
       ]
     },
     {
@@ -4138,207 +3681,6 @@
       ]
     },
     {
-      "title": "EPICS Base",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
-      "published": "2026-10-27T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. The following versions of EPICS Base are affected: EPICS Base release <=7.0.10...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. The following versions of EPICS Base are affected: EPICS Base release <=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598) CVSS Vendor Equipment v3 9.8 The EPICS Community EPICS Base release 3 Vulnerabilities Integer Overflow or Wraparound, Improper Handling of Length Parameter Inconsistency, Access of Resource Using Incompatible Type ('Type Confusion') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Global Vulnerabilities Expand All + CVE-2026-114595 In EPICS Base release 7.0.10 and prior, an integer overflow in network request processing can cause memory to be allocated with an incorrect size. Subsequent handling of attacker supplied data may result in memory corruption, denial of service, or potential remote code execution. Read More 1 Affected Product The EPICS Community EPICS Base release: <=7.0.10 Product Status: known_affected Remediations MitigationThe EPICS Community has made available updates to the epics-base GitHub repositories. Affected users should update to the 7.0.11 release. For more information, users should contact the EPICS Controls team https://epics-controls.org/support/. Mitigationhttps://github.com/epics-base/epics-base/pull/934 Mitigationhttps://github.com/epics-base/epics-base/pull/937 Mitigationhttps://github.com/epics-base/pvDataCPP/pull/109 Additional Metrics Relevant CWE: CWE-190 Integer Overflow or Wraparound CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.3 CRITICAL CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details CVE-2026-114596 In EPICS Base release 7.0.10 and prior, an improper validation of message length values during protocol parsing can trigger an integer overflow, resulting in an out-of-bounds memory write. Successful exploitation can cause process instability or denial of service. Read More 2 Affected Products The EPICS Community EPICS Base release: <=7.0.10 Product Status: known_affected Remediations MitigationThe EPICS Community has made available updates to the epics-base GitHub repositories. Affected users should update to the 7.0.11 release. For more information, users should contact...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-300-01.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-190 Integer Overflow or Wraparound",
-          "url": "https://cwe.mitre.org/data/definitions/190.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-114595"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-114596"
-        },
-        {
-          "label": "CWE-130 Improper Handling of Length Parameter Inconsistency",
-          "url": "https://cwe.mitre.org/data/definitions/130.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
-        }
-      ]
-    },
-    {
-      "title": "Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
-      "published": "2026-10-27T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with,...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system. The following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32, BizViz, Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, MobileHMI, IoTWorX, GENESIS32 and BizViz are affected: Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS64 >=10.97|<=10.97.2 (CVE-2023-4863) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions ICONICS Suite >=10.97|<=10.97.2 (CVE-2023-4863) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS <=11.03 (CVE-2026-16436, CVE-2026-16437) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS64 <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions ICONICS Suite <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions Hyper Historian <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions AnalytiX <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions MobileHMI <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions IoTWorX <=10.97.3 (CVE-2026-16436, CVE-2026-16437) Mitsubishi Electric MC Works64 vers:all/* (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS32 vers:all/* (CVE-2026-16436, CVE-2026-16437) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions BizViz vers:all/* (CVE-2026-16436, CVE-2026-16437) CVSS Vendor Equipment v3 9.1 Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32, BizViz, Mitsubishi Electric Iconics Digital...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-300-02.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-787 Out-of-bounds Write",
-          "url": "https://cwe.mitre.org/data/definitions/787.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2023-4863"
-        },
-        {
-          "label": "CWE-640 Weak Password Recovery Mechanism for Forgotten Password",
-          "url": "https://cwe.mitre.org/data/definitions/640.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-16436"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:L/AC:H/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:H/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        }
-      ]
-    },
-    {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "published": "2026-10-27T12:00:00+00:00",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-48356",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-48356"
-        },
-        {
-          "label": "CVE-2026-111497",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111497"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
-      ]
-    },
-    {
       "title": "From industry concern to practical action: the value of working with regulators",
       "link": "https://www.ncsc.gov.uk/blogs/industry-concern-practical-action-value-working-regulators",
       "published": "2026-10-27T12:00:00+00:00",
@@ -4528,30 +3870,6 @@
       ]
     },
     {
-      "title": "CVE-2026-115418 - SQL injection in the database-query custom resource handlers in Amazon Web Services (AWS)",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-151-aws/",
-      "published": "2026-10-26T16:50:46+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 14
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "Proofpoint’s Core Email Protection API solution joins the Microsoft Defender ICES vendor ecosystem",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/proofpoint-s-core-email-protection-api-solution-joins-the/ba-p/4567264",
       "published": "2026-10-26T16:00:00+00:00",
@@ -4632,61 +3950,6 @@
         {
           "label": "The Official Microsoft Blog",
           "url": "https://blogs.microsoft.com"
-        }
-      ]
-    },
-    {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "published": "2026-10-26T12:00:00+00:00",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching: CVE-2026-109618 – PHP Memory Corruption Vulnerability CVE-2026-109619 – PHP Stale Internal Request-State Vulnerability...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching: CVE-2026-109618 – PHP Memory Corruption Vulnerability CVE-2026-109619 – PHP Stale Internal Request-State Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "Critical Vulnerabilities in PHP Require Immediate Patching",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching"
-        },
-        {
-          "label": "CVE-2026-109618",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109618"
-        },
-        {
-          "label": "CVE-2026-109619",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109619"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
         }
       ]
     },
@@ -4881,100 +4144,6 @@
       ]
     },
     {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
-      "published": "2026-10-23T12:00:00+00:00",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-110447",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-110447"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
-      ]
-    },
-    {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "published": "2026-10-23T12:00:00+00:00",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-114625 Arista VeloCloud Orchestrator SQL Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-114625 Arista VeloCloud Orchestrator SQL Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-114625",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-114625"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
-      ]
-    },
-    {
       "title": "Microsoft Purview: Introducing IRM Alert classification",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576710",
       "published": "2026-10-22T22:58:40+00:00",
@@ -5100,440 +4269,6 @@
         {
           "label": "Transition to the new Threat intelligence experience",
           "url": "https://learn.microsoft.com/en-us/defender-xdr/threat-intelligence-transition"
-        }
-      ]
-    },
-    {
-      "title": "Siemens WinCC",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
-      "published": "2026-10-22T12:00:00+00:00",
-      "summary": "View CSAF Summary Multiple SIMATIC WinCC versions are affected by a database privilege escalation vulnerability that could allow an authenticated user with access to the database to execute commands on the underlying host system. Siemens has released new versions for several affected products and...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Multiple SIMATIC WinCC versions are affected by a database privilege escalation vulnerability that could allow an authenticated user with access to the database to execute commands on the underlying host system. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fixes and recommends mitigations for products where fixes are not or not yet available. The following versions of Siemens WinCC are affected: SIMATIC WinCC V7.5 vers:all/* (CVE-2026-59241) SIMATIC WinCC V8.0 vers:intdot/<8.0.0.11 (CVE-2026-59241) SIMATIC WinCC V8.1 vers:intdot/<8.1.7 (CVE-2026-59241) CVSS Vendor Equipment v3 8.8 Siemens SIMATIC WinCC V7.5 1 Vulnerability Incorrect Privilege Assignment Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-59241 The affected application does not sufficiently restrict the permissions assigned to a database role. This could allow an authenticated remote attacker with database access to escalate privileges and execute arbitrary commands on the host system where SIMATIC WinCC is installed, potentially leading to a compromise of the system. Read More 3 Affected Products SIMATIC WinCC V7.5 Product Status: known_affected Remediations None availableCurrently no fix is available SIMATIC WinCC V8.0 < V8.0 Update 11 Product Status: known_affected Remediations Vendor fixUpdate to V8.0 Update 11 or later version SIMATIC WinCC V8.1 < V8.1 Update 7 Product Status: known_affected Remediations Vendor fixUpdate to V8.1 Update 7 or later version Additional Metrics Relevant CWE: CWE-266 Incorrect Privilege Assignment CVSS Version Base Score Base Severity Vector String 3.1 8.8 HIGH CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-13.json"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-266 Incorrect Privilege Assignment",
-          "url": "https://cwe.mitre.org/data/definitions/266.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-59241"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        },
-        {
-          "label": "proactive defense of ICS assets",
-          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
-        },
-        {
-          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
-          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
-        }
-      ]
-    },
-    {
-      "title": "Siemens SIMATIC IPCs",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-07",
-      "published": "2026-10-22T12:00:00+00:00",
-      "summary": "View CSAF Summary The products listed below contain a vulnerability that could allow an attacker to boot an operating system or UEFI application signed with that test key, bypassing UEFI Secure Boot protections even when Secure Boot is enabled. Siemens has released new versions for the affected...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary The products listed below contain a vulnerability that could allow an attacker to boot an operating system or UEFI application signed with that test key, bypassing UEFI Secure Boot protections even when Secure Boot is enabled. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens SIMATIC IPCs are affected: SIMATIC IPC BX-21A vers:intdot/<31.01.13 (CVE-2026-72895) SIMATIC IPC RW-543A vers:intdot/<1.1.4 (CVE-2026-72895) SIMATIC IPC227G / IPC277G / IPC277G PRO / IPC327G / IPC377G vers:intdot/<28.01.15 (CVE-2026-72895) CVSS Vendor Equipment v3 7.7 Siemens SIMATIC IPC BX-21A 1 Vulnerability Use of Default Cryptographic Key Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-72895 A BIOS vendor test key is present in the UEFI Secure Boot key database. This could allow a local attacker with physical or administrative access to the device to boot an operating system or UEFI application signed with that test key, bypassing UEFI Secure Boot protections even when Secure Boot is enabled, potentially leading to a full loss of confidentiality, integrity, and availability of the device. Read More 3 Affected Products SIMATIC IPC BX-21A < V31.01.13 Product Status: known_affected Remediations MitigationNote: After upgrading to the fixed BIOS version, users must load the BIOS default settings. If Secure Boot keys were already provisioned, they must be provisioned again afterwards. MitigationAs a temporary mitigation, users can manually remove the test key from the database (e.g., \"DO NOT TRUST - AMI Test PK\" for RW-543A or \"insyde-ElkhartLake\" for IPC227G/277G/327G/377G and BX-21A). Note: Loading default settings will restore the test key, so upgrading remains recommended. Vendor fixUpdate to V31.01.13 or later version SIMATIC IPC RW-543A < V1.1.4 Product Status: known_affected Remediations MitigationNote: After upgrading to the fixed BIOS version, users must load the BIOS default settings. If Secure Boot keys were already provisioned, they must be provisioned again afterwards. MitigationAs a temporary mitigation, users can manually remove the test key from the database (e.g., \"DO NOT TRUST - AMI Test PK\" for RW-543A or \"insyde-ElkhartLake\"...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-07.json"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-1394 Use of Default Cryptographic Key",
-          "url": "https://cwe.mitre.org/data/definitions/1394.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-72895"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        },
-        {
-          "label": "proactive defense of ICS assets",
-          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
-        },
-        {
-          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
-          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
-        }
-      ]
-    },
-    {
-      "title": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-11",
-      "published": "2026-10-22T12:00:00+00:00",
-      "summary": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the firmware version V3.1.7 for the SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP (incl. SIPLUS variant). Siemens is preparing fixes and recommends specific mitigations for products where fixes are...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the firmware version V3.1.7 for the SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP (incl. SIPLUS variant). Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP are affected: SIMATIC S7-1500 CPU 1518-4 PN/DP MFP (6ES7518-4AX00-1AB0) vers:intdot/>=3.1.7 SIMATIC S7-1500 CPU 1518-4 PN/DP MFP (6ES7518-4AX00-1AC0) vers:intdot/>=3.1.7 SIMATIC S7-1500 CPU 1518F-4 PN/DP MFP (6ES7518-4FX00-1AB0) vers:intdot/>=3.1.7 SIMATIC S7-1500 CPU 1518F-4 PN/DP MFP (6ES7518-4FX00-1AC0) vers:intdot/>=3.1.7 SIPLUS S7-1500 CPU 1518-4 PN/DP MFP (6AG1518-4AX00-4AC0) vers:intdot/>=3.1.7 CVSS Vendor Equipment v3 10 Siemens SIMATIC S7-1500 CPU 1518-4 PN/DP MFP (6ES7518-4AX00-1AB0) 428 Vulnerabilities Access of Resource Using Incompatible Type ('Type Confusion'), Access of Uninitialized Pointer, Active Debug Code, Buffer Access with Incorrect Length Value, Buffer Copy without Checking Size of Input ('Classic Buffer Overflow'), Buffer Underwrite ('Buffer Underflow'), Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition'), Deadlock, Divide By Zero, Expired Pointer Dereference, Exposure of Sensitive Information Due to Incompatible Policies, Exposure of Sensitive Information in Shared Microarchitectural Structures during Transient Execution, Improper Enforcement of Behavioral Workflow, Improper Following of Specification by Caller, Improper Handling of Invalid Use of Special Elements, Improper Handling of Length Parameter Inconsistency, Improper Handling of Missing Special Element, Improper Handling of Structural Elements, Improper Input Validation, Improper Locking, Improper Neutralization of Null Byte or NUL Character, Improper Null Termination, Improper Privilege Management, Improper Resource Locking, Improper Resource Shutdown or Release, Improper Update of Reference Count, Improper Validation of Specified Index, Position, or Offset in Input, Improper Validation of Specified Quantity in Input, Improper Validation of Specified Type of Input, Improperly Implemented Security Check for Standard, Incomplete Cleanup, Incomplete Internal State Distinction, Incorrect Calculation of Buffer Size, Incorrect Conversion between Numeric Types, Incorrect Privilege Assignment, Incorrect Synchronization, Incorrect Type Conversion or...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-11_test.json"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-311 Missing Encryption of Sensitive Data",
-          "url": "https://cwe.mitre.org/data/definitions/311.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2021-41617"
-        },
-        {
-          "label": "https://www.siemens.com/cert/operational-guidelines-industrial-securit",
-          "url": "https://www.siemens.com/cert/operational-guidelines-industrial-securit"
-        },
-        {
-          "label": "https://www.siemens.com/industrialsecurity",
-          "url": "https://www.siemens.com/industrialsecurity"
-        },
-        {
-          "label": "https://www.siemens.com/cert/advisories",
-          "url": "https://www.siemens.com/cert/advisories"
-        },
-        {
-          "label": "https://www.siemens.com/productcert/terms-of-use",
-          "url": "https://www.siemens.com/productcert/terms-of-use"
-        },
-        {
-          "label": "SSA-457936",
-          "url": "https://productcert.siemens.com/productcert/html/ssa-457936.html"
-        }
-      ]
-    },
-    {
-      "title": "Siemens SIMATIC S7 Webserver API",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-10",
-      "published": "2026-10-22T12:00:00+00:00",
-      "summary": "View CSAF Summary .NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for .NET Client Library for SIMATIC...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary .NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for .NET Client Library for SIMATIC S7 Webserver API and recommends to update to the latest version. The following versions of Siemens SIMATIC S7 Webserver API are affected: .NET Client Library for SIMATIC S7 Webserver API vers:intdot/<3.3.61, vers:intdot/<3.3.62 (CVE-2026-85114, CVE-2026-85115) CVSS Vendor Equipment v3 7.5 Siemens .NET Client Library for SIMATIC S7 Webserver API 2 Vulnerabilities Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'), Generation of Error Message Containing Sensitive Information Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-85114 Affected applications do not properly validate filenames received from remote servers during ticket downloads. This could allow an attacker who can manipulate the ticket response to write arbitrary files outside the intended download directory and, when overwriting is enabled, replace existing files accessible to the application. Read More 1 Affected Product .NET Client Library for SIMATIC S7 Webserver API < V3.3.61 Product Status: known_affected Remediations Vendor fixUpdate to V3.3.61 or later version Additional Metrics Relevant CWE: CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') CVSS Version Base Score Base Severity Vector String 3.1 7.5 HIGH CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N View CVE Details CVE-2026-85115 Affected applications do not properly redact PLC restore passwords from HTTP error exception messages. This could allow an attacker with access to logs or other diagnostic output to obtain the plaintext restore password and potentially perform unauthorized operations on the PLC. Read More 2 Affected Products .NET Client Library for SIMATIC S7 Webserver API < V3.3.61 Product Status: known_affected Remediations .NET Client Library for SIMATIC S7 Webserver API < V3.3.62 Product Status: known_affected Remediations Vendor fixUpdate to V3.3.62 or later version Additional Metrics Relevant CWE: CWE-209 Generation of...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-10.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
-          "url": "https://cwe.mitre.org/data/definitions/22.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-85114"
-        },
-        {
-          "label": "CWE-209 Generation of Error Message Containing Sensitive Information",
-          "url": "https://cwe.mitre.org/data/definitions/209.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-85115"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Siemens RUGGEDCOM APE1808 Devices",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18",
-      "published": "2026-10-22T12:00:00+00:00",
-      "summary": "View CSAF Summary Nozomi Networks has published information on vulnerabilities in Nozomi Guardian/CMC. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Siemens recommends to contact customer support to receive patch and update information. The following...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Nozomi Networks has published information on vulnerabilities in Nozomi Guardian/CMC. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Siemens recommends to contact customer support to receive patch and update information. The following versions of Siemens RUGGEDCOM APE1808 Devices are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-33387, CVE-2026-33388, CVE-2026-33389, CVE-2026-33391, CVE-2026-33920) CVSS Vendor Equipment v3 7.5 Siemens RUGGEDCOM APE1808 4 Vulnerabilities Improper Neutralization of Special Elements Used in a Template Engine, Incorrect Authorization, Lack of Administrator Control over Security, Cross-Site Request Forgery (CSRF) Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-33387 A template injection vulnerability was discovered in the Dashboards functionality due to improper validation of an input parameter. An authenticated user with the required privileges can define a dashboard containing a malicious payload, or a victim can be socially engineered into importing a malicious dashboard. When the victim views or imports the dashboard, the payload executes in their browser context, allowing the attacker to modify application data or disrupt application availability. Read More 1 Affected Product RUGGEDCOM APE1808 with Nozomi Guardian/CMC Product Status: known_affected Remediations Vendor fixContact customer support to receive patch and update information Additional Metrics Relevant CWE: CWE-1336 Improper Neutralization of Special Elements Used in a Template Engine CVSS Version Base Score Base Severity Vector String 3.1 4.6 MEDIUM CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:L View CVE Details CVE-2026-33388 An access control vulnerability was discovered in the Credentials Manager functionality due to insufficient validation of user privileges. A remote authenticated user with limited privileges can view a limited subset of the available entries in the Credentials Manager. The actual credential values are not directly visible, but the user can delete entries or edit their properties. An attacker who deletes or edits an entry can disrupt authentication for dependent devices, and one who manipulates an entry's configuration may be...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-18.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-1336 Improper Neutralization of Special Elements Used in a Template Engine",
-          "url": "https://cwe.mitre.org/data/definitions/1336.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:L",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:L"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-33387"
-        },
-        {
-          "label": "CWE-863 Incorrect Authorization",
-          "url": "https://cwe.mitre.org/data/definitions/863.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-33388"
-        },
-        {
-          "label": "CWE-671 Lack of Administrator Control over Security",
-          "url": "https://cwe.mitre.org/data/definitions/671.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:L",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:L/A:L"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-33389"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L"
-        }
-      ]
-    },
-    {
-      "title": "Siemens RUGGEDCOM CROSSBOW",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-12",
-      "published": "2026-10-22T12:00:00+00:00",
-      "summary": "View CSAF Summary RUGGEDCOM CROSSBOW contains multiple vulnerabilities that could allow an attacker to execute arbitrary SQL commands on the underlying database, retrieve sensitive administrative credentials, escalate privileges, and perform unauthorized operations such as modifying system...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary RUGGEDCOM CROSSBOW contains multiple vulnerabilities that could allow an attacker to execute arbitrary SQL commands on the underlying database, retrieve sensitive administrative credentials, escalate privileges, and perform unauthorized operations such as modifying system configurations or causing a denial of service. Siemens has released a new version for RUGGEDCOM CROSSBOW and recommends to update to the latest version. The following versions of Siemens RUGGEDCOM CROSSBOW are affected: RUGGEDCOM CROSSBOW vers:intdot/<6.0 (CVE-2026-89196, CVE-2026-89197, CVE-2026-89198, CVE-2026-89199, CVE-2026-89200, CVE-2026-89201, CVE-2026-89202, CVE-2026-89203, CVE-2026-89204, CVE-2026-89205, CVE-2026-89206) CVSS Vendor Equipment v3 8.8 Siemens RUGGEDCOM CROSSBOW 4 Vulnerabilities Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'), Authorization Bypass Through User-Controlled Key, Insertion of Sensitive Information Into Sent Data, Client-Side Enforcement of Server-Side Security Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-89196 Affected devices do not properly validate or sanitize input in facility names processed during the Bulk Import/Export workflow. This could allow an authenticated attacker with specific privileges to execute arbitrary SQL commands on the underlying database. Read More 1 Affected Product RUGGEDCOM CROSSBOW < V6.0 Product Status: known_affected Remediations Vendor fixUpdate to V6.0 or later version Additional Metrics Relevant CWE: CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') CVSS Version Base Score Base Severity Vector String 3.1 8.8 HIGH CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H View CVE Details CVE-2026-89197 Affected devices do not properly validate or sanitize input in the Value field of notification conditions processed during the Notification Profile configuration. This could allow an authenticated attacker with specific privileges to execute arbitrary SQL commands on the underlying database. Read More 2 Affected Products RUGGEDCOM CROSSBOW < V6.0 Product Status: known_affected Remediations Vendor fixUpdate to V6.0 or later version RUGGEDCOM CROSSBOW < V6.0 Product Status: known_affected...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-12.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-89 Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
-          "url": "https://cwe.mitre.org/data/definitions/89.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-89196"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-89197"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-89198"
-        },
-        {
-          "label": "CWE-639 Authorization Bypass Through User-Controlled Key",
-          "url": "https://cwe.mitre.org/data/definitions/639.html"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-89199"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-89200"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
         }
       ]
     },
@@ -7553,30 +6288,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "[In preview] Public Preview: IPv6 Support for Application Gateway WAF",
-      "link": "https://azure.microsoft.com/updates?id=573861",
-      "published": "2026-10-05T17:41:41+00:00",
-      "summary": "Announcing the Public Preview of IPv6 support for Application Gateway WAF.Application Gateway Web Application Firewall (WAF) now supports inspection and enforcement for IPv6 traffic in Public Preview, marking a major step forward in modernizing the platfo",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     }
   ]
