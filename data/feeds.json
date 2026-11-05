@@ -1,8 +1,131 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-04T23:25:14.509154+00:00",
-  "totalArticles": 167,
+  "lastUpdated": "2026-11-05T05:51:34.395766+00:00",
+  "totalArticles": 169,
   "articles": [
+    {
+      "title": "Check This Out! (CTO!) Guide (November 2026)",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/check-this-out-cto-guide-november-2026/ba-p/4570392",
+      "published": "2026-11-05T01:56:08+00:00",
+      "summary": "Member: TysonPaul | Microsoft Community Hub Advancing sovereign AI with Foundry Local and Azure Local Team Blog: Azure Arc Author: insagiv Published: 10/20/2026 Summary: Microsoft is expanding sovereign AI with Foundry Local on Azure Local, enabling organizations to run AI models, agents, and...",
+      "author": "TysonPaul",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 14
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 5
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Endpoint",
+        "AI Security",
+        "Microsoft Sentinel",
+        "Microsoft Purview",
+        "AWS Security"
+      ],
+      "body": "Member: TysonPaul | Microsoft Community Hub Advancing sovereign AI with Foundry Local and Azure Local Team Blog: Azure Arc Author: insagiv Published: 10/20/2026 Summary: Microsoft is expanding sovereign AI with Foundry Local on Azure Local, enabling organizations to run AI models, agents, and applications in customer-controlled environments, including disconnected or regulated settings. Built on Azure Arc-enabled Kubernetes, it supports local inference, model management, GPU acceleration, enterprise data retrieval, connectors, and configurable guardrails. Together with Azure Local and GitHub Enterprise Local, it lets organizations keep sensitive data, development workflows, and AI operations under greater control. The approach gives governments, regulated industries, and critical infrastructure providers flexibility to choose cloud, local, or hybrid architectures based on workload, security, and sovereignty needs. Simplify Azure Arc agent updates with Automatic Agent Upgrade, now generally available Team Blog: Azure Arc Author: yunishussein Published: 10/28/2026 Summary: Microsoft’s Automatic Agent Upgrade for Azure Arc-enabled servers is now generally available. The feature keeps the Azure Connected Machine agent up to date by letting Microsoft manage upgrades automatically, reducing manual effort and helping servers receive security, reliability, quality, and platform improvements. Upgrades are rolled out in regional batches during off-peak hours to minimize disruption. Organizations can enable it at scale using Azure Policy, during onboarding with the `--enable-automatic-upgrade` command option, or through Azure portal onboarding scripts. Microsoft recommends reviewing the documentation for prerequisites and management options. Understanding device redirection changes in Hyper-V Virtual Machine Connection enhanced session mode Team Blog: Virtualization Author: Jeff-Woolsey Published: 10/12/2026 Summary: Starting with the October 2026 security update, Hyper-V VMConnect enhanced session mode changes device redirection defaults to improve security. The connection dialog now prominently shows Clipboard, Printers, Smart cards, and WebAuthn options. Printers, smart cards, and WebAuthn are off by default; clipboard remains on, and audio playback remains on. The change prevents sensitive credentials and devices from being shared with untrusted VMs without clear consent. Users must re-confirm saved settings once per VM and can edit them later. Microsoft...",
+      "links": [
+        {
+          "label": "Member: TysonPaul | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/users/tysonpaul/322025"
+        },
+        {
+          "label": "Advancing sovereign AI with Foundry Local and Azure Local",
+          "url": "https://techcommunity.microsoft.com/blog/azurearcblog/advancing-sovereign-ai-with-foundry-local-and-azure-local/4566144"
+        },
+        {
+          "label": "Azure Arc",
+          "url": "https://techcommunity.microsoft.com/category/azure/blog/azurearcblog"
+        },
+        {
+          "label": "insagiv",
+          "url": "https://techcommunity.microsoft.com/users/insagiv/805388"
+        },
+        {
+          "label": "Simplify Azure Arc agent updates with Automatic Agent Upgrade, now generally available",
+          "url": "https://techcommunity.microsoft.com/blog/azurearcblog/simplify-azure-arc-agent-updates-with-automatic-agent-upgrade-now-generally-avai/4568413"
+        },
+        {
+          "label": "yunishussein",
+          "url": "https://techcommunity.microsoft.com/users/yunishussein/3129141"
+        },
+        {
+          "label": "Understanding device redirection changes in Hyper-V Virtual Machine Connection enhanced session mode",
+          "url": "https://techcommunity.microsoft.com/blog/virtualization/understanding-device-redirection-changes-in-hyper-v-virtual-machine-connection-e/4563944"
+        },
+        {
+          "label": "Virtualization",
+          "url": "https://techcommunity.microsoft.com/category/windows-server/blog/virtualization"
+        },
+        {
+          "label": "Jeff-Woolsey",
+          "url": "https://techcommunity.microsoft.com/users/jeff-woolsey/60612"
+        },
+        {
+          "label": "Evaluate Before Production: Evidence-Based Gates for On-Premises RAG",
+          "url": "https://techcommunity.microsoft.com/blog/educatordeveloperblog/evaluate-before-production-evidence-based-gates-for-on-premises-rag/4558430"
+        },
+        {
+          "label": "Educator Developer",
+          "url": "https://techcommunity.microsoft.com/category/educatordeveloperblog/blog/educatordeveloperblog"
+        },
+        {
+          "label": "kevin_gatimu",
+          "url": "https://techcommunity.microsoft.com/users/kevin_gatimu/2698412"
+        }
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Information Protection-Auto-labeling for legacy Office files",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=578872",
+      "published": "2026-11-04T23:59:50+00:00",
+      "summary": "Microsoft Purview server-side auto-labeling will support legacy Microsoft Office file formats, including Word (.doc), Excel (.xls), and PowerPoint (.ppt). Organizations can automatically evaluate and apply sensitivity labels to these files in SharePoint and OneDrive.GA date: December CY2026",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
     {
       "title": "CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/",
@@ -1534,6 +1657,61 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations",
+      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/addressing-php2shell-cve-2026-109618-and-cve-2026-109619-upgrade/ba-p/4566623",
+      "published": "2026-11-04T15:56:30+00:00",
+      "summary": "Written in collaboration with yuvalpery​ and Gunjan Jain​ Introduction Today, two critical remote code execution (RCE) vulnerabilities were disclosed in PHP. We strongly recommend that customers upgrade to a patched version of PHP as soon as possible. Upgrading is the only way to fully remediate...",
+      "author": "saikishor",
+      "source": "Azure Network Security",
+      "source_id": "network_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Network Security",
+      "board_id": "azurenetworksecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Written in collaboration with yuvalpery​ and Gunjan Jain​ Introduction Today, two critical remote code execution (RCE) vulnerabilities were disclosed in PHP. We strongly recommend that customers upgrade to a patched version of PHP as soon as possible. Upgrading is the only way to fully remediate these vulnerabilities. Read more on the PHP official website. Microsoft has been part of the coordinated industry response to these vulnerabilities, working alongside the PHP Foundation, Wiz, security researchers, and other industry partners to help protect customers. Azure Web Application Firewall (WAF) has developed mitigations against known exploitation patterns to provide an additional layer of protection while customers apply the PHP security updates. These protections are intended to complement patching and are not a replacement for it. About the vulnerabilities: CVE-2026-109618 - RCE via OOM corruption CVE-2026-109619- RCE via stale global state Both vulnerabilities can be exploited over the network without privileges or user interaction, with a high potential impact on confidentiality, integrity, and availability. The vulnerabilities relate to PHP handling of memory when a request terminates abnormally, for example due to memory exhaustion or a fatal error. Under certain conditions, improper memory handling could allow an attacker to achieve remote code execution. Fixed versions: 8.5.12, 8.4.27, 8.3.36, 8.2.35. Refer to vendor guidancefor patching of different versions of PHP. Recommended action: upgrade PHP We recommend that customers: Upgrade all PHP deployments to a patched version, including virtual machines, containers, base images, and platform runtimes. We suggest prioritizing internet-facing workloads. Rebuild and redeploy container images that include their own PHP runtime, since updating the host does not update PHP inside an image. Migrate to a supported PHP branch if the branch currently in use no longer receives security fixes. Treat the Azure WAF mitigations below as a temporary, supplementary measure. They address a specific technique and do not remediate the underlying vulnerabilities. Azure WAF protection If you are unable to upgrade PHP to a patched version immediately, apply the following mitigations in the interim - Azure Front Door WAF: Apply the mitigation using custom rules for request-side mitigation and enable the managed rule for response-side mitigation. Application Gateway WAF: Apply the mitigation using custom rules for...",
+      "links": [
+        {
+          "label": "Read more on the PHP official website.",
+          "url": "https://www.php.net/archive/2026.php"
+        },
+        {
+          "label": "CVE-2026-109618",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109618"
+        },
+        {
+          "label": "CVE-2026-109619",
+          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109619"
+        },
+        {
+          "label": "Azure WAF custom rules for PHP2Shell mitigation.",
+          "url": "https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/azure-waf-custom-rules-for-php2shell-mitigation/4566684"
+        },
+        {
+          "label": "Rewrite HTTP headers and URL with Azure Application Gateway",
+          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-url"
+        },
+        {
+          "label": "Learn more",
+          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-request-size-limits"
+        },
+        {
+          "label": "security guidance",
+          "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
+        }
       ]
     },
     {
@@ -3810,61 +3988,6 @@
         },
         {
           "label": "Upgrading to a patched version of PHP",
-          "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
-        }
-      ]
-    },
-    {
-      "title": "Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations",
-      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/addressing-php2shell-cve-2026-109618-and-cve-2026-109619-upgrade/ba-p/4566623",
-      "published": "2026-10-26T18:19:55+00:00",
-      "summary": "Written in collaboration with yuvalpery​ and Gunjan Jain​ Introduction Today, two critical remote code execution (RCE) vulnerabilities were disclosed in PHP. We strongly recommend that customers upgrade to a patched version of PHP as soon as possible. Upgrading is the only way to fully remediate...",
-      "author": "saikishor",
-      "source": "Azure Network Security",
-      "source_id": "network_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Network Security",
-      "board_id": "azurenetworksecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Written in collaboration with yuvalpery​ and Gunjan Jain​ Introduction Today, two critical remote code execution (RCE) vulnerabilities were disclosed in PHP. We strongly recommend that customers upgrade to a patched version of PHP as soon as possible. Upgrading is the only way to fully remediate these vulnerabilities. Read more on the PHP official website. Microsoft has been part of the coordinated industry response to these vulnerabilities, working alongside the PHP Foundation, Wiz, security researchers, and other industry partners to help protect customers. Azure Web Application Firewall (WAF) has developed mitigations against known exploitation patterns to provide an additional layer of protection while customers apply the PHP security updates. These protections are intended to complement patching and are not a replacement for it. About the vulnerabilities: CVE-2026-109618 - RCE via OOM corruption CVE-2026-109619- RCE via stale global state Both vulnerabilities can be exploited over the network without privileges or user interaction, with a high potential impact on confidentiality, integrity, and availability. The vulnerabilities relate to PHP handling of memory when a request terminates abnormally, for example due to memory exhaustion or a fatal error. Under certain conditions, improper memory handling could allow an attacker to achieve remote code execution. Fixed versions: 8.5.12, 8.4.27, 8.3.36, 8.2.35. Refer to vendor guidancefor patching of different versions of PHP. Recommended action: upgrade PHP We recommend that customers: Upgrade all PHP deployments to a patched version, including virtual machines, containers, base images, and platform runtimes. We suggest prioritizing internet-facing workloads. Rebuild and redeploy container images that include their own PHP runtime, since updating the host does not update PHP inside an image. Migrate to a supported PHP branch if the branch currently in use no longer receives security fixes. Treat the Azure WAF mitigations below as a temporary, supplementary measure. They address a specific technique and do not remediate the underlying vulnerabilities. Azure WAF protection If you are unable to upgrade PHP to a patched version immediately, apply the following mitigations in the interim - Azure Front Door WAF: Apply the mitigation using custom rules for request-side mitigation and enable the managed rule for response-side mitigation. Application Gateway WAF: Apply the mitigation using custom rules for...",
-      "links": [
-        {
-          "label": "Read more on the PHP official website.",
-          "url": "https://www.php.net/archive/2026.php"
-        },
-        {
-          "label": "CVE-2026-109618",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109618"
-        },
-        {
-          "label": "CVE-2026-109619",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109619"
-        },
-        {
-          "label": "Azure WAF custom rules for PHP2Shell mitigation.",
-          "url": "https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/azure-waf-custom-rules-for-php2shell-mitigation/4566684"
-        },
-        {
-          "label": "Rewrite HTTP headers and URL with Azure Application Gateway",
-          "url": "https://learn.microsoft.com/en-us/azure/application-gateway/rewrite-http-headers-url"
-        },
-        {
-          "label": "Learn more",
-          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-request-size-limits"
-        },
-        {
-          "label": "security guidance",
           "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
         }
       ]
