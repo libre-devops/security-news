@@ -1,8 +1,57 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-06T05:47:07.233378+00:00",
-  "totalArticles": 184,
+  "lastUpdated": "2026-11-06T13:57:28.345629+00:00",
+  "totalArticles": 185,
   "articles": [
+    {
+      "title": "Enhancements to the Protection and Posture Insights report",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/enhancements-to-the-protection-and-posture-insights-report/ba-p/4568163",
+      "published": "2026-11-06T13:48:48+00:00",
+      "summary": "Earlier this year, we introduced the Protection & Posture Insights report: an on-demand, tenant-specific view of the email & collaboration threats targeting your organization, how well Microsoft Defender is stopping them, and where your configuration can be strengthened. Today, we're announcing the...",
+      "author": "Ben_Harris",
+      "source": "Microsoft Defender for Office 365",
+      "source_id": "defender_office",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Email Security",
+      "board_id": "microsoftdefenderforoffice365blog",
+      "products": [
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
+          "score": 11
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Office 365",
+        "Threat Intelligence"
+      ],
+      "body": "Earlier this year, we introduced the Protection & Posture Insights report: an on-demand, tenant-specific view of the email & collaboration threats targeting your organization, how well Microsoft Defender is stopping them, and where your configuration can be strengthened. Today, we're announcing the latest updates to the report, shaped directly by your feedback. Here are the highlights: URL Protection: visibility beyond the inbox Attackers follow users wherever they work. Malicious links now show up in Teams conversations, Office files and Microsoft 365 Copilot responses as well as email, and many look harmless until after they're delivered. Microsoft Defender checks links when users click them, and the new 'URL Protection' insight shows how many clicks were checked, how many attempts to reach malicious sites were blocked, and how that activity breaks down across email, Office apps, Teams and Microsoft 365 Copilot. Filtering Overrides: find the exceptions weakening your posture Allow lists and transport rules are sometimes needed for business continuity, but every exception can weaken your protection. The new 'Filtering Overrides' insight shows how many phish, malware and spam messages were permitted by organization-level and user-level overrides, and which override types were responsible. It also flags overrides applied to messages Defender had already classified as clean, a strong signal that they can be retired. Where an override is genuinely required, we recommend the Tenant Allow/Block List, which offers more visibility, auditing and control than broad transport rules. Go Hunt: increased coverage Our 'Go Hunt' experience opens Advanced Hunting with the exact query behind an insight, so you can explore and customize the underlying data yourself. It's now available on more insights, including URL Protection, Filtering Overrides and Detection Trends, so you can dig as deep into the data as you need. Get started Defender for Office 365 Plan 2 customers can generate the report in a couple of minutes. In the Microsoft Defender portal, go to Reports -> Email & collaboration reports. Then select 'Generate' on the Protection & Posture Insights report card. You can also go directly to the Reports page within the Microsoft Defender portal. Learn more about email & collaboration reports with our documentation. We'd love to hear what you think about the report, and what you'd like to see next. Share your feedback at aka.ms/PPIRReportFeedback.",
+      "links": [
+        {
+          "label": "introduced",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/from-impersonation-calls-to-transparent-reporting-defending-the-new-front-door-o/4503050"
+        },
+        {
+          "label": "Reports page within the Microsoft Defender portal",
+          "url": "https://security.microsoft.com/emailandcollabreport"
+        },
+        {
+          "label": "documentation",
+          "url": "https://learn.microsoft.com/en-us/defender-office-365/reports-defender-for-office-365#protection--posture-insights-report"
+        },
+        {
+          "label": "aka.ms/PPIRReportFeedback",
+          "url": "https://aka.ms/PPIRReportFeedback"
+        }
+      ]
+    },
     {
       "title": "Microsoft Purview: Data Lifecycle Management-Enable version trimming for data covered by retention policies in OneDrive and SharePoint",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575284",
@@ -126,6 +175,41 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-068",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
+      "published": "2026-11-05T20:44:29+00:00",
+      "summary": "Published: 2026-10-14Updated: 2026-11-05Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-10-14Updated: 2026-11-05Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this vulnerability is required. This vulnerability was patched on August 27, 2026. Application Integration helps to enhance security against authorization vulnerabilities by requiring the iam.serviceAccounts.actAs permission on the run-as service account to publish or test an integration. Integrations created on or after October 15, 2026, must have a run-as service account to publish or test scheduled or event triggers. Starting January 15, 2027 (UTC), this requirement also applies to existing integrations created before October 15, 2026. For more information, see Prepare for upcoming authorization changes. What vulnerabilities are being addressed? An authenticated user could escalate privileges and impersonate a service account in the Google Cloud project. High CVE-2026-85298",
+      "links": [
+        {
+          "label": "Prepare for upcoming authorization changes",
+          "url": "https://docs.cloud.google.com/application-integration/docs/prepare-for-authorization-changes"
+        },
+        {
+          "label": "CVE-2026-85298",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-85298"
+        }
       ]
     },
     {
@@ -1123,41 +1207,6 @@
       ],
       "tags": [
         "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-068",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
-      "published": "2026-11-04T19:14:32+00:00",
-      "summary": "Published: 2026-10-14Updated: 2026-10-24Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-10-14Updated: 2026-10-24Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this vulnerability is required. This vulnerability was patched on August 27, 2026. To improve security against authorization vulnerabilities, starting October 15, 2026, Application Integration requires the iam.serviceAccounts.actAs permission on the run-as service account for any new integrations. Existing integrations and their new versions are unaffected.For more information, see Prepare for upcoming authorization changes. What vulnerabilities are being addressed? An authenticated user could escalate privileges and impersonate a service account in the Google Cloud project. High CVE-2026-85298",
-      "links": [
-        {
-          "label": "Prepare for upcoming authorization changes",
-          "url": "https://docs.cloud.google.com/application-integration/docs/prepare-for-authorization-changes"
-        },
-        {
-          "label": "CVE-2026-85298",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-85298"
-        }
       ]
     },
     {
