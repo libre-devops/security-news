@@ -1,26 +1,135 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-06T13:57:28.345629+00:00",
-  "totalArticles": 185,
+  "lastUpdated": "2026-11-06T22:52:46.534600+00:00",
+  "totalArticles": 184,
   "articles": [
     {
-      "title": "Enhancements to the Protection and Posture Insights report",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/enhancements-to-the-protection-and-posture-insights-report/ba-p/4568163",
-      "published": "2026-11-06T13:48:48+00:00",
-      "summary": "Earlier this year, we introduced the Protection & Posture Insights report: an on-demand, tenant-specific view of the email & collaboration threats targeting your organization, how well Microsoft Defender is stopping them, and where your configuration can be strengthened. Today, we're announcing the...",
-      "author": "Ben_Harris",
-      "source": "Microsoft Defender for Office 365",
-      "source_id": "defender_office",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Email Security",
-      "board_id": "microsoftdefenderforoffice365blog",
+      "title": "CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/",
+      "published": "2026-11-06T18:46:27+00:00",
+      "summary": "Bulletin ID: 2026-166-AWS Publication Date: 11/06/2026 10:00 AM PST Description: We identified two issues in the Babelfish TDS protocol layer: - CVE-2026-119923: A memory-safety issue in the TDS connection-handshake handling could allow a remote, unauthenticated actor to affect the database...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
       "products": [
         {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 11
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-166-AWS Publication Date: 11/06/2026 10:00 AM PST Description: We identified two issues in the Babelfish TDS protocol layer: - CVE-2026-119923: A memory-safety issue in the TDS connection-handshake handling could allow a remote, unauthenticated actor to affect the database process. - CVE-2026-119924: A memory-safety issue in the TDS remote-procedure-call request handling could allow a remote, authenticated actor to read adjacent process memory or cause a denial of service. Refer to the article below for the most up-to-date and complete information. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-166-aws/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-173-aws/",
+      "published": "2026-11-06T17:19:55+00:00",
+      "summary": "Bulletin ID: 2026-173-AWS Publication Date: 11/06/2026 09:00 AM PST Description: We identified CVE-2026-122193, an OS command injection issue in an example provided in the set-up documentation. The example included a script that creates AWS Systems Manager (SSM) documents (Rex-RO and Rex-RW) for...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-173-AWS Publication Date: 11/06/2026 09:00 AM PST Description: We identified CVE-2026-122193, an OS command injection issue in an example provided in the set-up documentation. The example included a script that creates AWS Systems Manager (SSM) documents (Rex-RO and Rex-RW) for running scripts on managed instances. Due to how the example script handled input parameters, a user with permissions to invoke the SSM document could supply crafted input that would run unintended operating system commands on the managed instance, outside of the REX sandbox. The scriptArgs parameter is affected by the same class of issue. Impacted versions: This is not an issue in a shipped REX artifact version. Refer to the article below for the most up-to-date and complete information. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-173-aws/"
+        }
+      ]
+    },
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-11-06T12:00:00+00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+      "links": [
+        {
+          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "CVE-2026-19868",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-19868"
+        },
+        {
+          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
+          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
+        },
+        {
+          "label": "specified criteria",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
+        },
+        {
+          "label": "KEV Nomination Form",
+          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-109518 - APT package manager that affects Ubuntu and Debian operating systems",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-172-aws/",
+      "published": "2026-11-06T04:00:35+00:00",
+      "summary": "Bulletin ID: 2026-172-AWS Publication Date: 11/05/2026 20:00 PM PST Description: An issue in the APT package manager (CVE-2026-109518) affects Ubuntu and Debian operating systems. Under specific conditions, when APT is configured to use HTTP package sources with retry settings enabled, a third...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
         },
         {
           "id": "threat-intelligence",
@@ -29,26 +138,14 @@
         }
       ],
       "tags": [
-        "Microsoft Defender for Office 365",
+        "AWS Security",
         "Threat Intelligence"
       ],
-      "body": "Earlier this year, we introduced the Protection & Posture Insights report: an on-demand, tenant-specific view of the email & collaboration threats targeting your organization, how well Microsoft Defender is stopping them, and where your configuration can be strengthened. Today, we're announcing the latest updates to the report, shaped directly by your feedback. Here are the highlights: URL Protection: visibility beyond the inbox Attackers follow users wherever they work. Malicious links now show up in Teams conversations, Office files and Microsoft 365 Copilot responses as well as email, and many look harmless until after they're delivered. Microsoft Defender checks links when users click them, and the new 'URL Protection' insight shows how many clicks were checked, how many attempts to reach malicious sites were blocked, and how that activity breaks down across email, Office apps, Teams and Microsoft 365 Copilot. Filtering Overrides: find the exceptions weakening your posture Allow lists and transport rules are sometimes needed for business continuity, but every exception can weaken your protection. The new 'Filtering Overrides' insight shows how many phish, malware and spam messages were permitted by organization-level and user-level overrides, and which override types were responsible. It also flags overrides applied to messages Defender had already classified as clean, a strong signal that they can be retired. Where an override is genuinely required, we recommend the Tenant Allow/Block List, which offers more visibility, auditing and control than broad transport rules. Go Hunt: increased coverage Our 'Go Hunt' experience opens Advanced Hunting with the exact query behind an insight, so you can explore and customize the underlying data yourself. It's now available on more insights, including URL Protection, Filtering Overrides and Detection Trends, so you can dig as deep into the data as you need. Get started Defender for Office 365 Plan 2 customers can generate the report in a couple of minutes. In the Microsoft Defender portal, go to Reports -> Email & collaboration reports. Then select 'Generate' on the Protection & Posture Insights report card. You can also go directly to the Reports page within the Microsoft Defender portal. Learn more about email & collaboration reports with our documentation. We'd love to hear what you think about the report, and what you'd like to see next. Share your feedback at aka.ms/PPIRReportFeedback.",
+      "body": "Bulletin ID: 2026-172-AWS Publication Date: 11/05/2026 20:00 PM PST Description: An issue in the APT package manager (CVE-2026-109518) affects Ubuntu and Debian operating systems. Under specific conditions, when APT is configured to use HTTP package sources with retry settings enabled, a third party with a network position between the host and the package mirror could cause APT to install a package that did not pass verification. Updated APT packages are available from Canonical (USN-8996-1) and Debian (DSA-6607-1). The following fixed versions address this issue: - Ubuntu 22.04 LTS: apt 2.4.15ubuntu0.1 - Ubuntu 24.04 LTS: apt 2.8.4ubuntu0.1 - Ubuntu 26.04 LTS: apt 3.2.1ubuntu0.1 - Debian (DSA-6607-1): See Debian Security Advisory for version details Customers running Ubuntu or Debian-based Amazon EC2 instances or container images should apply the updates. For details, see the full AWS Security Bulletin. Read this article",
       "links": [
         {
-          "label": "introduced",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/from-impersonation-calls-to-transparent-reporting-defending-the-new-front-door-o/4503050"
-        },
-        {
-          "label": "Reports page within the Microsoft Defender portal",
-          "url": "https://security.microsoft.com/emailandcollabreport"
-        },
-        {
-          "label": "documentation",
-          "url": "https://learn.microsoft.com/en-us/defender-office-365/reports-defender-for-office-365#protection--posture-insights-report"
-        },
-        {
-          "label": "aka.ms/PPIRReportFeedback",
-          "url": "https://aka.ms/PPIRReportFeedback"
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-172-aws/"
         }
       ]
     },
@@ -532,37 +629,6 @@
       ]
     },
     {
-      "title": "Post-Quantum Questions to Ask Your Vendors",
-      "link": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
-      "published": "2026-11-05T12:00:00+00:00",
-      "summary": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quantum computing advances, widely used public-key cryptography will become vulnerable to compromise from cryptographically relevant quantum computers (CRQCs). To protect their systems and data, organizations must plan for and transition to PQC—which includes algorithms capable of withstanding both classical computing and quantum-enabled threats—before CRQCs become available. Many organizations rely on third-party vendors for managed services, cloud capabilities, and other cryptography-dependent products and services. Cryptography is also embedded in systems and devices that are difficult to update, tied to long asset lifecycles, and require vendor support or replacement—such as industrial control systems and Internet of Things (IoT) devices. Reliance on vendors means that effective PQC transition depends on vendor readiness, and early, structured engagement with these vendors is critical to planning efforts. Organizations can use the vendor-neutral questions outlined in this guidance to determine whether a vendor understands quantum-related risks, maintains transparency over its cryptographic implementations, and supports a secure, cost-effective and timely transition to PQC. Visit CISA’s PQC Initiative page for additional resources.",
-      "links": [
-        {
-          "label": "PQC Initiative page",
-          "url": "https://www.cisa.gov/topics/risk-management/quantum"
-        }
-      ]
-    },
-    {
       "title": "US Government Partners Urge Hardening Industrial Refrigeration and Cold Chain Monitoring Systems",
       "link": "https://www.cisa.gov/resources-tools/resources/us-government-partners-urge-hardening-industrial-refrigeration-and-cold-chain-monitoring-systems",
       "published": "2026-11-05T12:00:00+00:00",
@@ -640,6 +706,37 @@
         {
           "label": "CPG 3.F",
           "url": "https://www.cisa.gov/cybersecurity-performance-goals-2-0-cpg-2-0#ImplementMultifactorAuthentication3F"
+        }
+      ]
+    },
+    {
+      "title": "Post-Quantum Questions to Ask Your Vendors",
+      "link": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
+      "published": "2026-11-05T12:00:00+00:00",
+      "summary": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quantum computing advances, widely used public-key cryptography will become vulnerable to compromise from cryptographically relevant quantum computers (CRQCs). To protect their systems and data, organizations must plan for and transition to PQC—which includes algorithms capable of withstanding both classical computing and quantum-enabled threats—before CRQCs become available. Many organizations rely on third-party vendors for managed services, cloud capabilities, and other cryptography-dependent products and services. Cryptography is also embedded in systems and devices that are difficult to update, tied to long asset lifecycles, and require vendor support or replacement—such as industrial control systems and Internet of Things (IoT) devices. Reliance on vendors means that effective PQC transition depends on vendor readiness, and early, structured engagement with these vendors is critical to planning efforts. Organizations can use the vendor-neutral questions outlined in this guidance to determine whether a vendor understands quantum-related risks, maintains transparency over its cryptographic implementations, and supports a secure, cost-effective and timely transition to PQC. Visit CISA’s PQC Initiative page for additional resources.",
+      "links": [
+        {
+          "label": "PQC Initiative page",
+          "url": "https://www.cisa.gov/topics/risk-management/quantum"
         }
       ]
     },
@@ -2873,10 +2970,10 @@
       ]
     },
     {
-      "title": "CVE-2026-105811 - Authorization bypass through a user-controlled key in the Amazon Q Business Lambda hook sample in QnABot on AWS",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-126-aws/",
-      "published": "2026-11-02T21:40:44+00:00",
-      "summary": "Read this article Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
+      "title": "CVE-2026-116635 - Improper limitation of a pathname to a restricted directory in the deployment status component of the AWS Serverless MCP Server",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-164-aws/",
+      "published": "2026-11-02T21:43:24+00:00",
+      "summary": "Bulletin ID: 2026-164-AWS Publication Date: 11/02/2026 13:30 PM PST Description: We identified CVE-2026-116635. Under certain conditions, improper limitation of a pathname to a restricted directory in the deployment status component of the MCP server might allow an actor who can influence the MCP...",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
       "source_id": "aws_security",
@@ -2894,6 +2991,13 @@
       ],
       "tags": [
         "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-164-AWS Publication Date: 11/02/2026 13:30 PM PST Description: We identified CVE-2026-116635. Under certain conditions, improper limitation of a pathname to a restricted directory in the deployment status component of the MCP server might allow an actor who can influence the MCP agent to read the contents of JSON files outside the intended deployment status directory. Where write access has been enabled, to create or overwrite JSON files outside that directory. Impacted versions: < v0.2.1 of awslabs.aws-serverless-mcp-server Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-164-aws/"
+        }
       ]
     },
     {
@@ -3351,7 +3455,7 @@
       "title": "CVE-2026-119117 - Insertion of sensitive information into a log file and process argument list in the Amazon Kinesis Producer Library for Java",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-159-aws/",
       "published": "2026-10-30T18:18:40+00:00",
-      "summary": "Bulletin ID: 2026-159-AWS Publication Date: 10/30/2026 11:00 AM PDT Description: We published CVE-2026-119117. Insertion of sensitive information into a log file in Amazon Kinesis Producer Library for Java before 1.0.8, when the library's logger is configured at DEBUG log level, might allow local...",
+      "summary": "Read this article",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
       "source_id": "aws_security",
@@ -3369,13 +3473,6 @@
       ],
       "tags": [
         "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-159-AWS Publication Date: 10/30/2026 11:00 AM PDT Description: We published CVE-2026-119117. Insertion of sensitive information into a log file in Amazon Kinesis Producer Library for Java before 1.0.8, when the library's logger is configured at DEBUG log level, might allow local users to obtain the AWS credentials that the library resolved for the application. Separately, affected versions of the library pass these credentials to the native child process as command-line arguments, where a local user can read them from the process argument list. Impacted versions: - com.amazonaws:amazon-kinesis-producer <= 0.15.12 - oftware.amazon.kinesis:amazon-kinesis-producer < 1.0.8 Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin. Read this article",
-      "links": [
-        {
-          "label": "Read this article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-159-aws/"
-        }
       ]
     },
     {
@@ -5666,10 +5763,10 @@
       ]
     },
     {
-      "title": "Siemens Industrial Edge Device Kit",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09",
+      "title": "Siemens WinCC",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
       "published": "2026-10-22T12:00:00+00:00",
-      "summary": "View CSAF Summary Users of Industrial Edge Devices are advised to consult the respective Security Advisories for their devices (for Siemens Industrial Edge devices see Additional Information). Industrial Edge Device Kit contains multiple path traversal vulnerabilities that could facilitate an...",
+      "summary": "View CSAF Summary Multiple SIMATIC WinCC versions are affected by a database privilege escalation vulnerability that could allow an authenticated user with access to the database to execute commands on the underlying host system. Siemens has released new versions for several affected products and...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -5688,102 +5785,27 @@
       "tags": [
         "CISA Advisories"
       ],
-      "body": "View CSAF Summary Users of Industrial Edge Devices are advised to consult the respective Security Advisories for their devices (for Siemens Industrial Edge devices see Additional Information). Industrial Edge Device Kit contains multiple path traversal vulnerabilities that could facilitate an authenticated remote attacker to access sensitive internal information. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens Industrial Edge Device Kit are affected: Industrial Edge Device Kit - arm64 V1.10 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.11 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.12 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.13 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.14 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.15 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.16 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.17 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.18 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.19 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.20 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.21 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.22 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.23 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.24 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.25 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.26 vers:intdot/<1.26.2.1 (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.27 vers:intdot/<1.27.1.1 (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.28 vers:intdot/<1.28.0.6 (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.5 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit - arm64 V1.6 vers:all/* (CVE-2026-44414, CVE-2026-44415) Industrial Edge Device Kit -...",
+      "body": "View CSAF Summary Multiple SIMATIC WinCC versions are affected by a database privilege escalation vulnerability that could allow an authenticated user with access to the database to execute commands on the underlying host system. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fixes and recommends mitigations for products where fixes are not or not yet available. The following versions of Siemens WinCC are affected: SIMATIC WinCC V7.5 vers:all/* (CVE-2026-59241) SIMATIC WinCC V8.0 vers:intdot/<8.0.0.11 (CVE-2026-59241) SIMATIC WinCC V8.1 vers:intdot/<8.1.7 (CVE-2026-59241) CVSS Vendor Equipment v3 8.8 Siemens SIMATIC WinCC V7.5 1 Vulnerability Incorrect Privilege Assignment Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-59241 The affected application does not sufficiently restrict the permissions assigned to a database role. This could allow an authenticated remote attacker with database access to escalate privileges and execute arbitrary commands on the host system where SIMATIC WinCC is installed, potentially leading to a compromise of the system. Read More 3 Affected Products SIMATIC WinCC V7.5 Product Status: known_affected Remediations None availableCurrently no fix is available SIMATIC WinCC V8.0 < V8.0 Update 11 Product Status: known_affected Remediations Vendor fixUpdate to V8.0 Update 11 or later version SIMATIC WinCC V8.1 < V8.1 Update 7 Product Status: known_affected Remediations Vendor fixUpdate to V8.1 Update 7 or later version Additional Metrics Relevant CWE: CWE-266 Incorrect Privilege Assignment CVSS Version Base Score Base Severity Vector String 3.1 8.8 HIGH CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow...",
       "links": [
         {
           "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-09.json"
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-13.json"
         },
         {
-          "label": "Expand All +",
+          "label": "Read More",
           "url": "https://www.cisa.gov/#"
         },
         {
-          "label": "CWE-35 Path Traversal: '.../...//'",
-          "url": "https://cwe.mitre.org/data/definitions/35.html"
+          "label": "CWE-266 Incorrect Privilege Assignment",
+          "url": "https://cwe.mitre.org/data/definitions/266.html"
         },
         {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-44414"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
+          "label": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
         },
         {
           "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-44415"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        },
-        {
-          "label": "proactive defense of ICS assets",
-          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Siemens SIMATIC S7-1500 TM MFP",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-16",
-      "published": "2026-10-22T12:00:00+00:00",
-      "summary": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the SIMATIC S7-1500 TM MFP V1.1.1. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Multiple vulnerabilities have been identified in the additional GNU/Linux subsystem of the SIMATIC S7-1500 TM MFP V1.1.1. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens SIMATIC S7-1500 TM MFP are affected: SIMATIC S7-1500 TM MFP - GNU/Linux subsystem vers:all/* CVSS Vendor Equipment v3 10 Siemens SIMATIC S7-1500 TM MFP - GNU/Linux subsystem 377 Vulnerabilities Access of Uninitialized Pointer, Buffer Copy without Checking Size of Input ('Classic Buffer Overflow'), Deadlock, Detection of Error Condition Without Action, Double Free, Expired Pointer Dereference, Heap-based Buffer Overflow, Improper Control of Resource Identifiers ('Resource Injection'), Improper Control of a Resource Through its Lifetime, Improper Handling of Length Parameter Inconsistency, Improper Handling of Missing Special Element, Improper Handling of Structural Elements, Improper Input Validation, Improper Locking, Improper Resource Locking, Improper Restriction of Operations within the Bounds of a Memory Buffer, Improper Update of Reference Count, Improper Validation of Array Index, Improper Validation of Consistency within Input, Improper Validation of Specified Index, Position, or Offset in Input, Improper Validation of Specified Quantity in Input, Improper Validation of Specified Type of Input, Incorrect Synchronization, Integer Overflow or Wraparound, Integer Underflow (Wrap or Wraparound), Loop with Unreachable Exit Condition ('Infinite Loop'), Missing Default Case in Multiple Condition Expression, Missing Initialization of Resource, Missing Lock Check, Missing Release of Memory after Effective Lifetime, Missing Release of Resource after Effective Lifetime, Multiple Locks of a Critical Resource, NULL Pointer Dereference, Operation on a Resource after Expiration or Release, Out-of-bounds Read, Out-of-bounds Write, Plaintext Storage of a Password, Release of Invalid Pointer or Reference, Return of Wrong Status Code, Signal Handler Race Condition, Time-of-check Time-of-use (TOCTOU) Race Condition, Unchecked Return Value, Use After Free, Use of Incorrect Operator, Use of Uninitialized Resource, Write-what-where Condition Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-16.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-20 Improper Input Validation",
-          "url": "https://cwe.mitre.org/data/definitions/20.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2023-52927"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-59241"
         },
         {
           "label": "not accessible from the internet",
@@ -5812,10 +5834,10 @@
       ]
     },
     {
-      "title": "Kiloview E3 NDI Encoder",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-01",
+      "title": "Siemens SENTRON 3NA COM Fuse",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-05",
       "published": "2026-10-22T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of this these vulnerabilities could allow an attacker to fully compromise the device. The following versions of Kiloview E3 NDI Encoder are affected: E3 Firmware <1.30 (CVE-2026-109122, CVE-2026-111100, CVE-2026-96616, CVE-2026-105265, CVE-2026-110491,...",
+      "summary": "View CSAF Summary SENTRON 3NA COM Fuse contains a Denial-of-Service vulnerability. Improper handling of a network management message could allow an attacker to trigger a denial-of-service (DoS) condition. Successful exploitation may require the affected network to be re-established to restore...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -5834,55 +5856,51 @@
       "tags": [
         "CISA Advisories"
       ],
-      "body": "View CSAF Summary Successful exploitation of this these vulnerabilities could allow an attacker to fully compromise the device. The following versions of Kiloview E3 NDI Encoder are affected: E3 Firmware <1.30 (CVE-2026-109122, CVE-2026-111100, CVE-2026-96616, CVE-2026-105265, CVE-2026-110491, CVE-2026-107861, CVE-2026-110243, CVE-2026-92450, CVE-2026-110825) CVSS Vendor Equipment v3 9.9 Kiloview E3 Firmware 6 Vulnerabilities Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'), Missing Authentication for Critical Function, Insufficient Session Expiration, Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal'), NULL Pointer Dereference, Use of Hard-coded Credentials Background Critical Infrastructure Sectors: Communications, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: China Vulnerabilities Expand All + CVE-2026-109122 The network management service on affected Kiloview E3 NDI encoder firmware fails to sanitize one field used when configuring static routes via the web management API. An authenticated web user with permission to configure static routes can exploit this to execute arbitrary operating system commands as root, and the malicious configuration persists across reboots. Successful exploitation could result in full device compromise, including exposure of stored credentials and cryptographic material. Read More 1 Affected Product Kiloview E3 Firmware: <1.30 Product Status: known_affected Remediations MitigationKiloView recommends users update to V1.30: https://www.kiloview.com/en/download/e3-firmware-downloadlatest-12/ Additional Metrics Relevant CWE: CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') CVSS Version Base Score Base Severity Vector String 3.1 9.1 CRITICAL CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H 4.0 9.4 CRITICAL CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H View CVE Details CVE-2026-111100 The ONVIF device service on the E3 responds to certain informational requests without requiring authentication. A remote, unauthenticated party can retrieve detailed device identifiers along with a list of configured user accounts and their privilege levels. This aids attackers in fingerprinting vulnerable devices and preparing targeted credential attacks. Read More 2 Affected Products Kiloview E3 Firmware: <1.30 Product Status: known_affected Remediations MitigationKiloView...",
+      "body": "View CSAF Summary SENTRON 3NA COM Fuse contains a Denial-of-Service vulnerability. Improper handling of a network management message could allow an attacker to trigger a denial-of-service (DoS) condition. Successful exploitation may require the affected network to be re-established to restore normal operation. The following versions of Siemens SENTRON 3NA COM Fuse are affected: SENTRON 3NA COM Fuse vers:intdot/<5.2 (CVE-2024-7322) CVSS Vendor Equipment v3 5.8 Siemens SENTRON 3NA COM Fuse 1 Vulnerability Improper Verification of Source of a Communication Channel Background Critical Infrastructure Sectors: Critical Manufacturing, Transportation Systems, Energy, Healthcare and Public Health, Financial Services, Government Services and Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2024-7322 A ZigBee coordinator, router, or end device may change their node ID when an unsolicited encrypted rejoin response is received, this change in node ID causes Denial of Service (DoS). To recover from this DoS, the network must be re-established Read More 1 Affected Product SENTRON 3NA COM Fuse < V5.2 Product Status: known_affected Remediations Vendor fixUpdate to V5.2 or later version Additional Metrics Relevant CWE: CWE-940 Improper Verification of Source of a Communication Channel CVSS Version Base Score Base Severity Vector String 3.1 5.8 MEDIUM CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices...",
       "links": [
         {
           "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-01.json"
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-295-05.json"
         },
         {
-          "label": "Expand All +",
+          "label": "Read More",
           "url": "https://www.cisa.gov/#"
         },
         {
-          "label": "CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
-          "url": "https://cwe.mitre.org/data/definitions/78.html"
+          "label": "CWE-940 Improper Verification of Source of a Communication Channel",
+          "url": "https://cwe.mitre.org/data/definitions/940.html"
         },
         {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
+          "label": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:N/I:N/A:H"
         },
         {
           "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109122"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2024-7322"
         },
         {
-          "label": "CWE-306 Missing Authentication for Critical Function",
-          "url": "https://cwe.mitre.org/data/definitions/306.html"
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
         },
         {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
         },
         {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N"
+          "label": "cisa.gov/ics",
+          "url": "https://www.cisa.gov/topics/industrial-control-systems"
         },
         {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111100"
+          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
+          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
         },
         {
-          "label": "CWE-613 Insufficient Session Expiration",
-          "url": "https://cwe.mitre.org/data/definitions/613.html"
+          "label": "proactive defense of ICS assets",
+          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
         },
         {
-          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N"
+          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
+          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
         }
       ]
     },
@@ -7366,30 +7384,6 @@
       ]
     },
     {
-      "title": "CVE-2026-107332 - Insecure default file permissions on cached credentials in AWS Toolkit for Visual Studio Code",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-129-aws/",
-      "published": "2026-10-08T17:43:09+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "[Launched] Generally Available: Exceptions in WAF for Azure Application Gateway and Azure Front Door",
       "link": "https://azure.microsoft.com/updates?id=574343",
       "published": "2026-10-08T17:29:30+00:00",
@@ -7563,73 +7557,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Introducing the Microsoft Sentinel ASIM EmailEvent schema",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/introducing-the-microsoft-sentinel-asim-emailevent-schema/ba-p/4562581",
-      "published": "2026-10-07T20:21:05+00:00",
-      "summary": "Email remains one of the most common entry points for security threats. Yet email products often describe the same activity with different table names, fields, and values. This makes it harder to build detections and investigations that work consistently across data sources. The Microsoft Sentinel...",
-      "author": "JamesAde",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel"
-      ],
-      "body": "Email remains one of the most common entry points for security threats. Yet email products often describe the same activity with different table names, fields, and values. This makes it harder to build detections and investigations that work consistently across data sources. The Microsoft Sentinel Advanced Security Information Model, or ASIM, EmailEvent schema is now available. It provides a common structure for email delivery and inspection events, helping customers and partners create security content that works across supported email data sources. A consistent view of email security activity EmailEvent standardizes the information analysts need to understand what happened to an email and why. It covers: Email delivery and inspection events Sender, source, and recipient information Message subject, size, direction, and delivery location URLs and file attachments SPF, DKIM, and DMARC authentication results Delivery actions such as delivered, blocked, quarantined, or deleted Threat, risk, confidence, tactic, technique, and remediation details Instead of learning a different data model for every product, analysts can query the normalized EmailEvent fields. Parser developers map each source's native data to the same schema. How it works Consider an email that contains a suspicious attachment. The email security product records the sender, recipients, attachment, authentication results, inspection verdict, and final action. A connector collects that event. A parser or Data Collection Rule maps the source fields to EmailEvent. Microsoft Sentinel can then query the normalized record using the same field names used for other supported email sources. This common structure separates security content from the details of a specific product. When another source adds an EmailEvent parser, existing source-independent queries and detections can work with that source without being rewritten around its native field names. Why it matters Simpler analytics: Write queries against one consistent set of email fields. Broader coverage: Apply source-independent security content across normalized email sources. Faster investigations: Compare delivery, authentication, attachment, URL, and threat details without translating different data models. Easier integration: Give connector and parser developers a defined contract for bringing new email telemetry into ASIM. EmailEvent does not replace the rich native data produced by email security products. It provides a consistent...",
-      "links": [
-        {
-          "label": "Normalization Email Schema MS Learn",
-          "url": "https://learn.microsoft.com/en-us/azure/sentinel/normalization-schema-email"
-        },
-        {
-          "label": "Learn about normalization and ASIM",
-          "url": "https://aka.ms/AboutASIM"
-        },
-        {
-          "label": "Explore the EmailEvent implementation in Azure-Sentinel",
-          "url": "https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimEmailEvent"
-        },
-        {
-          "label": "Deploy ASIM parsers",
-          "url": "https://aka.ms/DeployASIM"
-        }
-      ]
-    },
-    {
-      "title": "CVE-2026-107352 - Missing authorization checks in Amazon Athena engine version 3 request handling",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-128-aws/",
-      "published": "2026-10-07T20:19:18+00:00",
-      "summary": "Read this article Please refer to the article below for the most up-to-date and complete information related to this AWS Security Bulletin.",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
       ]
     }
   ]
