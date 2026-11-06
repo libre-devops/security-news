@@ -1,8 +1,133 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-05T23:26:34.940194+00:00",
-  "totalArticles": 187,
+  "lastUpdated": "2026-11-06T05:47:07.233378+00:00",
+  "totalArticles": 184,
   "articles": [
+    {
+      "title": "Microsoft Purview: Data Lifecycle Management-Enable version trimming for data covered by retention policies in OneDrive and SharePoint",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575284",
+      "published": "2026-11-05T23:59:28+00:00",
+      "summary": "Let tenants trim file-version bloat created by retention, without breaking compliance promises. SharePoint/compliance admins at large, regulated enterprises must cap and reclaim storage consumed by retained file versions, while keeping legal-hold and records promises intact. Admins with appropriate...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "Let tenants trim file-version bloat created by retention, without breaking compliance promises. SharePoint/compliance admins at large, regulated enterprises must cap and reclaim storage consumed by retained file versions, while keeping legal-hold and records promises intact. Admins with appropriate Purview RBAC can enable version cleanup for ODB/SPO content even when retention policies are in effect. This would be a policy scoped setting that essentially overrides the default behavior where all versions are retained. When turned on, SharePoint’s version management will be permitted to trim file versions per the defined limits except for specific protected cases.GA date: January CY2027Preview date: November CY2026",
+      "links": []
+    },
+    {
+      "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+      "published": "2026-11-05T23:46:50+00:00",
+      "summary": "Microsoft Threat Intelligence has observed threat actors using the agentic offensive security framework ARTEX to search GitHub for OAuth application secrets, which can be used to compromise the associated OAuth application and perform authenticated actions in the application’s tenant. Agents...",
+      "author": "Microsoft Threat Intelligence and Microsoft Security Research",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article From exposed secrets to cloud compromiseFollow-on actionsMitigating application credential abuse activityDefending against agentic AI attacksMicrosoft detectionsAdvanced hunting queries Microsoft Threat Intelligence has observed threat actors using an agentic AI offensive framework to search public GitHub repositories for exposed secrets, including credentials, application credentials, and AI inference-related API keys across multiple applications and cloud services. These threat actors can then use the secrets for further malicious activity against the compromised organization. Searching open code repositories for exposed credentials, secrets, keys, and other authentication material is a well-documented technique that has historically been limited by the time required for human operators to find code repositories, review the data in the repositories, and leverage authentication material for further action. However, agentic tooling like ARTEX allows threat actors to not only scan for secrets across multiple repositories at a quicker pace but also use the agents to analyze the output and conduct follow-on attacks, cutting down on the need for the threat actor to have hands-on-keyboard interactions throughout the attack chain. In at least one case, Microsoft observed an AI agent advance from scanning GitHub for secrets to exfiltrating data from Azure Key Vault in just five minutes. Microsoft has also investigated follow-on activity involving the misuse of valid application credentials. As early as October 28, 2026, Microsoft began observing successful service principal sign-ins from the IP address 199.19.77[.]84 involving multiple application IDs across some impacted customers, including cases where a multitenant application credential was compromised at the source (vendor-owned application) and used to access multiple downstream tenants. The threat actor used the compromised credentials for cloud resource discovery, and credential and data exfiltration, including from Azure Key Vaults and Storage Accounts, and abuse of Azure AI services consistent with the activity described above. Additionally, Microsoft observed malicious activity originating from two IP addresses potentially associated with this campaign. We identified malicious operations from 65.87.223[.]26, including indications of vulnerability exploitation by embedded shell commands in a user agent and attempts to obtain App Service authentication tokens. A similar campaign...",
+      "links": [
+        {
+          "label": "From exposed secrets to cloud compromise",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#from-exposed-secrets-to-cloud-compromise"
+        },
+        {
+          "label": "Follow-on actions",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#follow-on-actions"
+        },
+        {
+          "label": "Mitigating application credential abuse activity",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigating-application-credential-abuse-activity"
+        },
+        {
+          "label": "Defending against agentic AI attacks",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#defending-against-agentic-ai-attacks"
+        },
+        {
+          "label": "Microsoft detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-detections"
+        },
+        {
+          "label": "Advanced hunting queries",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#advanced-hunting-queries"
+        },
+        {
+          "label": "Todyl",
+          "url": "https://www.todyl.com/blog/stolen-app-credentials-real-access-an-actor-is-signing-into-entra-id-and-azure-devops-as-your-workloads"
+        },
+        {
+          "label": "enable public monitoring",
+          "url": "https://docs.github.com/en/code-security/concepts/secret-security/secret-scanning"
+        },
+        {
+          "label": "GitHub Advanced Security for Azure DevOps",
+          "url": "https://learn.microsoft.com/en-us/azure/devops/repos/security/github-advanced-security-secret-scanning?view=azure-devops"
+        },
+        {
+          "label": "Microsoft Defender for Cloud",
+          "url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction"
+        },
+        {
+          "label": "migrate OAuth applications away from secret-based authentication",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/migrate-applications-from-secrets"
+        },
+        {
+          "label": "accelerating all stages of the attack chain with agentic AI",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/"
+        }
+      ]
+    },
+    {
+      "title": "[Launched] Generally Available: Azure Front Door TLS key exchange policy with post-quantum support",
+      "link": "https://azure.microsoft.com/updates?id=577668",
+      "published": "2026-11-05T23:19:48+00:00",
+      "summary": "Azure Front Door now supports configurable TLS key exchange policies, including hybrid post-quantum key exchange, to help you prepare for evolving cryptographic threats while meeting your security and client compatibility requirements. Choose a predefined",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "[Launched] Generally Available: WAF Insights for Azure Application Gateway",
       "link": "https://azure.microsoft.com/updates?id=579280",
@@ -3634,81 +3759,6 @@
         {
           "label": "Sapphire Sleet",
           "url": "https://www.microsoft.com/en-us/security/blog/tag/sapphire-sleet/"
-        }
-      ]
-    },
-    {
-      "title": "IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment/",
-      "published": "2026-10-29T16:00:00+00:00",
-      "summary": "IDC has named Microsoft a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises. The post IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor Assessment appeared first on Microsoft Security Blog.",
-      "author": "Rob Lefferts",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Today, we’re proud to share thatMicrosoft has been named a Leader in the 2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises (Doc #US54123526, September 2026). The IDC Marketscape calls out three strengths that we believe matter most in endpoint security today: Autonomous attack disruption and predictive shielding contain ransomware and identity attacks in minutes, at a meaningful scale. Agentic AI through Security Copilot is now generally available, with measured gains in alert accuracy and analyst time saved. The company offers broad native cross-platform coverage plus sovereign cloud and data residency options for regulated and multinational customers. Read the IDC report IDC MarketScape vendor analysis model is designed to provide an overview of the competitive fitness of technology and suppliers in a given market. The research methodology utilizes a rigorous scoring methodology based on both qualitative and quantitative criteria that results in a single graphical illustration of each supplier’s position within a given market. The Capabilities score measures supplier product, go-to-market and business execution in the short-term. The Strategy score measures alignment of supplier strategies with customer requirements in a 3-5-year timeframe. Supplier market share is represented by the size of the icons. The most critical moment in any attack is when it moves from access to action. That’s when ransomware detonates, stolen credentials are put to work, and, increasingly, a manipulated AI agent turns a user’s own data and tools against them. And threat actors are now using teams of AI agents to execute attacks faster and more relentlessly. Between 2025 and 2026, Microsoft Security researchers observed a more than 15% increase in ransomware detonations against enterprises.1 When an attacker can move from first foothold to encryption in minutes, protection on the endpoint must act at the same speed, without waiting for a person to connect the dots. Protection that acts while the attack is still unfolding The IDC MarketScape highlights that “Automatic attack disruption contains compromised devices, users, and IP addresses in near real time, and predictive shielding proactively hardens likely next attacker moves.” Built into Microsoft Defender, attack disruption uses AI and signals from the endpoint and across identities, email, and cloud to recognize multistage attacks, such as ransomware, as they happen. It then automatically contains...",
-      "links": [
-        {
-          "label": "2026 IDC MarketScape for Worldwide Modern Endpoint Security for Enterprises",
-          "url": "https://idcdocserv.com/US54123526e_Microsoft"
-        },
-        {
-          "label": "Microsoft Defender",
-          "url": "https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint"
-        },
-        {
-          "label": "within 128 seconds of the first high-severity alert",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/08/04/129-seconds-disruption-microsoft-defender-stops-ransomware-qnet/?msockid=3bef1be87261641b09e20845732c65d6"
-        },
-        {
-          "label": "integrated security operations center (ISOC) in Microsoft Defender",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/"
-        },
-        {
-          "label": "The Alert Is Dead. The Blueprint for the Agentic SOC.",
-          "url": "https://ignite.microsoft.com/en-US/sessions/1787856622349001EKGC-1791588130792001CK8Y?source=sessions"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        },
-        {
-          "label": "Microsoft 2026 Digital Defense Report",
-          "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/cybersecurity/reports/microsoft-digital-defense-report/"
-        },
-        {
-          "label": "IDC MarketScape names Microsoft a Leader in the 2026 Worldwide Modern Endpoint Security for Enterprises Vendor...",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/idc-marketscape-names-microsoft-a-leader-in-the-2026-worldwide-modern-endpoint-security-for-enterprises-vendor-assessment/"
-        },
-        {
-          "label": "Microsoft Security Blog",
-          "url": "https://www.microsoft.com/en-us/security/blog"
         }
       ]
     },
@@ -7531,134 +7581,6 @@
       ],
       "tags": [
         "AWS Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-1005: Third-Party Package Updates in Splunk Add-on for Amazon Web Services - September 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1005",
-      "published": "2026-10-07T00:00:00+00:00",
-      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in third-party packages in Splunk Add-on for Amazon Web Services version 8.2.2 and higher.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 5
-        },
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "AWS Security",
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-1004: Security Vulnerability in Splunk MCP Server - September/October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1004",
-      "published": "2026-10-07T00:00:00+00:00",
-      "summary": "In Splunk MCP Server versions below 1.2.1, Splunk MCP Server could send the Splunk platform authentication token of a user who runs a custom Application Programming Interface (API) tool to the URL configured for that tool. If another user controls that URL, they could capture the token and use it...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ],
-      "body": "In Splunk MCP Server versions below 1.2.1, Splunk MCP Server could send the Splunk platform authentication token of a user who runs a custom Application Programming Interface (API) tool to the URL configured for that tool. If another user controls that URL, they could capture the token and use it to access data and perform actions as the user who ran the tool. Successful exploitation requires a user who holds a role that contains the mcp_tool_execute capability to run a custom API tool configured by another user.",
-      "links": []
-    },
-    {
-      "title": "SVD-2026-1003: Third-Party Package Updates in Splunk Enterprise - September/October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1003",
-      "published": "2026-10-07T00:00:00+00:00",
-      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in third-party packages in Splunk Enterprise versions 10.4.3, 10.2.7, 10.0.10, and 9.4.15 or higher.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-1002: Security Hardening in Splunk Enterprise - September/October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1002",
-      "published": "2026-10-07T00:00:00+00:00",
-      "summary": "Splunk addressed multiple internally identified vulnerabilities in Splunk Enterprise versions 10.4.3, 10.2.7, 10.0.10, and 9.4.15. The vulnerabilities are grouped by Common Weakness Enumeration (CWE), with one Common Vulnerabilities and Exposures (CVE) identifier assigned to each group. See Details...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-1001: Security Vulnerabilities in Splunk Enterprise - September/October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1001",
-      "published": "2026-10-07T00:00:00+00:00",
-      "summary": "Splunk addressed multiple vulnerabilities in Splunk Enterprise versions 10.4.3, 10.2.7, 10.0.10, and 9.4.15. See CVE Details for vulnerability-specific affected versions, additional remediation, acknowledgments, and workarounds.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
       ]
     }
   ]
