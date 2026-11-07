@@ -1,8 +1,83 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-06T22:52:46.534600+00:00",
+  "lastUpdated": "2026-11-07T05:17:36.708090+00:00",
   "totalArticles": 184,
   "articles": [
+    {
+      "title": "ARTEX abuse expands as cybercriminals target financial sector",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
+      "published": "2026-11-07T02:44:34+00:00",
+      "summary": "In October 2026, the financially motivated threat actor Storm-3358 began targeting organizations in the financial sector using the agentic AI offensive framework ARTEX. The post ARTEX abuse expands as cybercriminals target financial sector appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Mitigation and protection guidanceMicrosoft Defender detectionsHunting queriesIndicators of compromise In October 2026, the financially motivated threat actor Storm-3358 began targeting organizations in the financial sector using the agentic AI offensive framework ARTEX. The threat actor that Microsoft Threat Intelligence tracks as Storm-3358 is a Cambodia-based intrusion cluster that primarily targets financial organizations in Southeast Asia, in addition to a smaller number of large financial organizations globally. Microsoft has observed Storm-3358 use ARTEX in combination with conventional automated tools to scan systems connected to the public internet, exploit security flaws including anonymous file upload and server-side request forgery (SSRF), and install open-source remote access trojans (RATs). Storm-3358 has used the WISP, vshell, and AdaptixC2 RATs for persistence and lateral movement. Microsoft has observed ARTEX agents using utilities like netcat and curl to download these RATs to compromised systems, as shown in Figure 1. Figure 1. Example commands that ARTEX agents used to download RATs to compromised systems. In recent ARTEX-related attacks, threat actors have used ARTEX agents to scan and exploit vulnerabilities in web applications, use web shells for persistence on compromised web servers, compromise credentials from public sources and compromised systems, and use compromised cloud identities for persistence and data exfiltration. ARTEX agents can also perform brute-force password attacks, password spraying, API enumeration and abuse, and database dumping. Agentic tools like ARTEX can leverage compromised credentials and systems at machine speed to move laterally, escalate privileges, and exfiltrate data. This activity illustrates an ongoing trend of threat actors accelerating all stages of the attack chain with agentic AI penetration testing frameworks, including ARTEX. As these capabilities evolve, defenders must similarly use AI to investigate and respond across large environments. While threat actors regularly use proxies and virtual private networks (VPNs) to change the source IP address of malicious traffic and bypass static detections, Microsoft is providing indicators of compromise (IOCs) to help defenders detect related activity. Mitigation and protection guidance Microsoft’s research into threats involving agentic frameworks informs security detections and investigative context across its products. The...",
+      "links": [
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Microsoft Defender detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+        },
+        {
+          "label": "Hunting queries",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+        },
+        {
+          "label": "Indicators of compromise",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
+        },
+        {
+          "label": "credentials from public sources",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/"
+        },
+        {
+          "label": "use compromised cloud identities",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/"
+        },
+        {
+          "label": "Defensive honeypots",
+          "url": "https://learn.microsoft.com/security/zero-trust/adopt/prevent-reduce-business-damage-breach-infrastructure#create-honeypot-resources"
+        },
+        {
+          "label": "Microsoft Sentinel Deception",
+          "url": "https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/HoneyTokens"
+        },
+        {
+          "label": "Investigate risk with Microsoft Entra ID Protection",
+          "url": "https://learn.microsoft.com/entra/id-protection/howto-identity-protection-investigate-risk"
+        },
+        {
+          "label": "Risk-based user sign-in protection in Microsoft Entra ID",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/tutorial-risk-based-sspr-mfa"
+        },
+        {
+          "label": "What are risk detections? – Microsoft Entra ID Protection",
+          "url": "https://learn.microsoft.com/entra/id-protection/concept-identity-protection-risks#verified-threat-actor-ip"
+        },
+        {
+          "label": "Review alerts in Microsoft Defender for Endpoint",
+          "url": "https://learn.microsoft.com/defender-endpoint/review-alerts"
+        }
+      ]
+    },
     {
       "title": "CVE-2026-119923 and CVE-2026-119924: Issues with Babelfish for Aurora PostgreSQL",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-166-aws/",
@@ -3834,81 +3909,6 @@
       ]
     },
     {
-      "title": "Tracking AI adoption in North Korean threat actor tradecraft",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
-      "published": "2026-10-29T16:00:00+00:00",
-      "summary": "As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed and efficiency of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. This blog breaks down how North Korean threat actors are...",
-      "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Stages of AI adoption by North Korean threat actorsAI use across North Korean threat operationsAI-assisted targeting and reconnaissanceAI-assisted social engineering and identity deceptionAI-assisted software and tooling developmentAI-assisted operational scaling and analysisMitigation and protection guidanceMicrosoft Defender detections As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed, efficiency, and complexity of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. Threat actors use AI as a force multiplier across their operations, particularly to accelerate and scale established workflows. Recent activities illustrate this AI-enabled acceleration and scaling: Jade Sleet launched campaigns through three front companies in a single week, Onyx Sleet generated dozens of tailored lures in minutes, Coral Sleet rapidly built a new capability to trojanize private source code repositories, and Diamond Sleet used AI to enhance tailored targeting workflows, including persona development and front company creation. Further, Onyx Sleet and Pearl Sleet are leveraging the open-source agentic AI penetration testing framework ARTEX to conduct operations, further indicating North Korea’s willingness to quickly adopt new AI technologies for their operations. The Democratic People’s Republic of Korea operates under extensive international sanctions and uses cyber operations and other illicit mechanisms to evade these restrictions and advance state objectives. Within this operating environment, North Korean threat actors have adopted new technologies that help sustain or advance existing operations. AI adoption by North Korean threat actors therefore largely supports existing goals and targeting priorities rather than representing a shift in actor motivations. North Korean threat actors conduct cyber operations primarily to generate revenue for the regime, collect strategic intelligence, and, in some cases, pursue politically motivated disruptive or destructive objectives. Across these objectives, North Korean threat actor tradecraft remains grounded in social engineering, malware delivery, and the abuse of legitimate tools. These operations commonly target cryptocurrency and financial organizations, information technology companies and software supply chains, government entities, and education-related organizations. Despite threat...",
-      "links": [
-        {
-          "label": "Stages of AI adoption by North Korean threat actors",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#stages-of-ai-adoption-by-north-korean-threat-actors"
-        },
-        {
-          "label": "AI use across North Korean threat operations",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-use-across-north-korean-threat-operations"
-        },
-        {
-          "label": "AI-assisted targeting and reconnaissance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-assisted-targeting-and-reconnaissance"
-        },
-        {
-          "label": "AI-assisted social engineering and identity deception",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-assisted-social-engineering-and-identity-deception"
-        },
-        {
-          "label": "AI-assisted software and tooling development",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-assisted-software-and-tooling-development"
-        },
-        {
-          "label": "AI-assisted operational scaling and analysis",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-assisted-operational-scaling-and-analysis"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
-        },
-        {
-          "label": "operationalize AI",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/"
-        },
-        {
-          "label": "Jasper Sleet",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/06/30/jasper-sleet-north-korean-remote-it-workers-evolving-tactics-to-infiltrate-organizations/"
-        },
-        {
-          "label": "Diamond Sleet",
-          "url": "https://www.microsoft.com/en-us/security/blog/2023/11/22/diamond-sleet-supply-chain-compromise-distributes-a-modified-cyberlink-installer/"
-        },
-        {
-          "label": "Sapphire Sleet",
-          "url": "https://www.microsoft.com/en-us/security/blog/tag/sapphire-sleet/"
-        }
-      ]
-    },
-    {
       "title": "Now generally available: Discover local AI agents with Microsoft Defender",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/now-generally-available-discover-local-ai-agents-with-microsoft/ba-p/4568216",
       "published": "2026-10-29T16:00:00+00:00",
@@ -4013,6 +4013,81 @@
         {
           "label": "Project Perception",
           "url": "https://www.microsoft.com/en-us/security/business/ai-powered-cybersecurity/project-perception-agentic-system"
+        }
+      ]
+    },
+    {
+      "title": "Tracking AI adoption in North Korean threat actor tradecraft",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+      "published": "2026-10-29T16:00:00+00:00",
+      "summary": "As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed and efficiency of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. This blog breaks down how North Korean threat actors are...",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Threat Intelligence",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 8
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Stages of AI adoption by North Korean threat actorsAI use across North Korean threat operationsAI-assisted targeting and reconnaissanceAI-assisted social engineering and identity deceptionAI-assisted software and tooling developmentAI-assisted operational scaling and analysisMitigation and protection guidanceMicrosoft Defender detections As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed, efficiency, and complexity of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. Threat actors use AI as a force multiplier across their operations, particularly to accelerate and scale established workflows. Recent activities illustrate this AI-enabled acceleration and scaling: Jade Sleet launched campaigns through three front companies in a single week, Onyx Sleet generated dozens of tailored lures in minutes, Coral Sleet rapidly built a new capability to trojanize private source code repositories, and Diamond Sleet used AI to enhance tailored targeting workflows, including persona development and front company creation. Further, Onyx Sleet and Pearl Sleet are leveraging the open-source agentic AI penetration testing framework ARTEX to conduct operations, further indicating North Korea’s willingness to quickly adopt new AI technologies for their operations. The Democratic People’s Republic of Korea operates under extensive international sanctions and uses cyber operations and other illicit mechanisms to evade these restrictions and advance state objectives. Within this operating environment, North Korean threat actors have adopted new technologies that help sustain or advance existing operations. AI adoption by North Korean threat actors therefore largely supports existing goals and targeting priorities rather than representing a shift in actor motivations. North Korean threat actors conduct cyber operations primarily to generate revenue for the regime, collect strategic intelligence, and, in some cases, pursue politically motivated disruptive or destructive objectives. Across these objectives, North Korean threat actor tradecraft remains grounded in social engineering, malware delivery, and the abuse of legitimate tools. These operations commonly target cryptocurrency and financial organizations, information technology companies and software supply chains, government entities, and education-related organizations. Despite threat...",
+      "links": [
+        {
+          "label": "Stages of AI adoption by North Korean threat actors",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#stages-of-ai-adoption-by-north-korean-threat-actors"
+        },
+        {
+          "label": "AI use across North Korean threat operations",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ai-use-across-north-korean-threat-operations"
+        },
+        {
+          "label": "AI-assisted targeting and reconnaissance",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ai-assisted-targeting-and-reconnaissance"
+        },
+        {
+          "label": "AI-assisted social engineering and identity deception",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ai-assisted-social-engineering-and-identity-deception"
+        },
+        {
+          "label": "AI-assisted software and tooling development",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ai-assisted-software-and-tooling-development"
+        },
+        {
+          "label": "AI-assisted operational scaling and analysis",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ai-assisted-operational-scaling-and-analysis"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Microsoft Defender detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
+        },
+        {
+          "label": "operationalize AI",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/"
+        },
+        {
+          "label": "Jasper Sleet",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/06/30/jasper-sleet-north-korean-remote-it-workers-evolving-tactics-to-infiltrate-organizations/"
+        },
+        {
+          "label": "Diamond Sleet",
+          "url": "https://www.microsoft.com/en-us/security/blog/2023/11/22/diamond-sleet-supply-chain-compromise-distributes-a-modified-cyberlink-installer/"
+        },
+        {
+          "label": "Sapphire Sleet",
+          "url": "https://www.microsoft.com/en-us/security/blog/tag/sapphire-sleet/"
         }
       ]
     },
@@ -6194,32 +6269,6 @@
       "tags": [
         "Splunk Security"
       ]
-    },
-    {
-      "title": "Microsoft Purview: Endpoint Data Loss Prevention-View-only access to device onboarding with the View-Only Device Management role",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577187",
-      "published": "2026-10-20T23:00:34+00:00",
-      "summary": "Microsoft Purview Data Loss Prevention is introducing more granular, role-based access to the Devices page under Settings → Device Onboarding. Previously, viewing or managing device onboarding required broad administrative roles (such as Compliance Administrator, Global Administrator, or Security...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "Microsoft Purview Data Loss Prevention is introducing more granular, role-based access to the Devices page under Settings → Device Onboarding. Previously, viewing or managing device onboarding required broad administrative roles (such as Compliance Administrator, Global Administrator, or Security Administrator). With this update, organizations can grant access using least-privilege Purview role-based access control (RBAC) roles scoped specifically to device operations. A new View-Only Device Management role enables users, such as auditors or security analysts, to view device onboarding status, search for devices, review configuration details, and export device data, without granting permission to change onboarding configuration or other administrative settings. Existing administrative roles continue to have full access, so current workflows are unaffected. This change helps organizations follow the principle of least privilege and simplifies granting read-only visibility into device onboarding without over-provisioning permissions.GA date: January CY2027Preview date: December CY2026",
-      "links": []
     },
     {
       "title": "CVE-2026-112407 - Incorrect privilege assignment in AWS CICD-toolchain-for-serverless-applications",
