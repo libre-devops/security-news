@@ -1,8 +1,32 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-11T05:24:51.521966+00:00",
-  "totalArticles": 184,
+  "lastUpdated": "2026-11-11T13:49:20.183626+00:00",
+  "totalArticles": 183,
   "articles": [
+    {
+      "title": "NCSC scheme will help critical organisations test their cyber defences",
+      "link": "https://www.ncsc.gov.uk/news/ncsc-scheme-help-critical-organisations-test-their-cyber-defences",
+      "published": "2026-11-11T12:00:00+00:00",
+      "summary": "New NCSC Cyber Adversary Simulation scheme will help critical organisations strengthen their resilience through rigorous, real-world testing by trusted providers.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
     {
       "title": "Detecting sleeper agents hiding in AI model neurons",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/",
@@ -1561,27 +1585,22 @@
     },
     {
       "title": "Enhancements to the Protection and Posture Insights report",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/enhancements-to-the-protection-and-posture-insights-report/ba-p/4568163",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/enhancements-to-the-protection-and-posture-insights-report/ba-p/4568163",
       "published": "2026-11-06T13:48:48+00:00",
       "summary": "Earlier this year, we introduced the Protection & Posture Insights report: an on-demand, tenant-specific view of the email & collaboration threats targeting your organization, how well Microsoft Defender is stopping them, and where your configuration can be strengthened. Today, we're announcing the...",
       "author": "Ben_Harris",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
+      "source": "Microsoft Defender for Office 365",
+      "source_id": "defender_office",
       "source_group": "TechCommunity",
       "source_kind": "techcommunity",
       "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
+      "source_category": "Email Security",
+      "board_id": "microsoftdefenderforoffice365blog",
       "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 5
+          "score": 11
         },
         {
           "id": "threat-intelligence",
@@ -1590,7 +1609,6 @@
         }
       ],
       "tags": [
-        "Microsoft Defender XDR",
         "Microsoft Defender for Office 365",
         "Threat Intelligence"
       ],
@@ -5304,21 +5322,26 @@
     },
     {
       "title": "Part 4: See, investigate, and measure email and collaboration attacks with Defender reporting",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/part-4-see-investigate-and-measure-email-and-collaboration/ba-p/4562274",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/part-4-see-investigate-and-measure-email-and-collaboration/ba-p/4562274",
       "published": "2026-10-27T16:00:00+00:00",
       "summary": "Attacks rarely stay in one channel. A flood of spam email, a Teams chat from an unfamiliar organization, and a call from \"the helpdesk\" can all be part of the same attempt. Security teams need a unified way to see where attacks are happening across email and collaboration, investigate them quickly,...",
       "author": "IustinIrimia",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
+      "source": "Microsoft Defender for Office 365",
+      "source_id": "defender_office",
       "source_group": "TechCommunity",
       "source_kind": "techcommunity",
       "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
+      "source_category": "Email Security",
+      "board_id": "microsoftdefenderforoffice365blog",
       "products": [
         {
           "id": "defender-xdr",
           "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-office",
+          "name": "Microsoft Defender for Office 365",
           "score": 11
         },
         {
@@ -5334,6 +5357,7 @@
       ],
       "tags": [
         "Microsoft Defender XDR",
+        "Microsoft Defender for Office 365",
         "Microsoft Sentinel",
         "Threat Intelligence"
       ],
@@ -5722,27 +5746,22 @@
     },
     {
       "title": "Proofpoint’s Core Email Protection API solution joins the Microsoft Defender ICES vendor ecosystem",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/proofpoint-s-core-email-protection-api-solution-joins-the/ba-p/4567264",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/proofpoint-s-core-email-protection-api-solution-joins-the/ba-p/4567264",
       "published": "2026-10-26T16:00:00+00:00",
       "summary": "Email remains the most exploited gateway for cyberattacks, as the threat landscape continues to get more sophisticated with attackers using AI to scale phishing, malware, and business email compromise. Microsoft Defender is a leading email security solution, helping organizations stay ahead of...",
       "author": "Oz_Wilder",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
+      "source": "Microsoft Defender for Office 365",
+      "source_id": "defender_office",
       "source_group": "TechCommunity",
       "source_kind": "techcommunity",
       "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
+      "source_category": "Email Security",
+      "board_id": "microsoftdefenderforoffice365blog",
       "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 5
+          "score": 11
         },
         {
           "id": "threat-intelligence",
@@ -5751,7 +5770,6 @@
         }
       ],
       "tags": [
-        "Microsoft Defender XDR",
         "Microsoft Defender for Office 365",
         "Threat Intelligence"
       ],
@@ -7500,85 +7518,6 @@
           "label": "FQDN and IP addresses where the Global Secure Access service receives traffic",
           "url": "https://learn.microsoft.com/en-us/entra/global-secure-access/reference-points-of-presence#fqdn-and-ip-addresses-where-the-global-secure-access-service-receives-traffic"
         }
-      ]
-    },
-    {
-      "title": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
-      "link": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
-      "published": "2026-10-12T13:01:29+00:00",
-      "summary": "Azure Maia 200 now in production; Azure Maia 300 coming in 2027 As we move into the era of Super Intelligence, Microsoft is entering a new phase of infrastructure. We will scale our Azure Maia family to multi-gigawatt deployments starting in 2027, making Maia the primary inference system for...",
-      "author": "Scott Guthrie",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "AI",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Azure Maia 200 now in production; Azure Maia 300 coming in 2027 As we move into the era of Super Intelligence, Microsoft is entering a new phase of infrastructure. We will scale our Azure Maia family to multi-gigawatt deployments starting in 2027, making Maia the primary inference system for Microsoft products and services. The multigenerational Azure Maia program has become a foundational element of Microsoft’s AI infrastructure strategy. Maia 200 is now serving Microsoft production workloads, including Microsoft Copilot, and supporting the MAI team as they develop next-generation models, with GitHub Copilot and Microsoft Foundry to follow by end of year. Across these workloads, Maia 200 runs OpenAI models, Microsoft’s own MAI models and leading open-source model families. Insights from the scale of Microsoft’s AI services allow for unique co-design between hardware systems and software applications to optimize real-world use cases across enterprise applications and industry scenarios. Maia 300 is a complete intelligent system designed for the new types of AI workloads emerging today: Long-context reasoning, latency-sensitive conversational experiences and sustained, multi-step agentic tasks. By improving efficiency across the system, we expect Maia 300 to deliver 40% more tokens per megawatt compared to leading GPU-based systems. And in a full 96-accelerator configuration, it delivers up to 7x the rack-scale token throughput of Maia 200. YouTube Video Click here to load media Maia 200: Driving the workloads that Microsoft runs at scale The Azure Maia system is designed around the real-world workloads Microsoft runs at scale and the models we expect to build in the years ahead. Because silicon development takes years, our software and hardware teams collaborate early to anticipate architectures, scale and capabilities, translating those requirements into greater memory capacity, higher bandwidth and more accelerators operating as a single system. That co-engineering is already delivering measurable efficiency gains. Maia 200 is deploying across the United States, Europe and Australia and delivering up to 1.7x more tokens per watt for built-in AI capabilities in Microsoft Teams, Copilot and Cowork experiences compared with leading GPU infrastructure. Experience running our AI models and services on Maia 200 directly informed the design of Maia 300. Together, the two generations are designed to support a broad set of additional Microsoft’s AI services:...",
-      "links": [
-        {
-          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Maia-200-Image-1.png.jpg",
-          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Maia-200-Image-1.png.jpg"
-        },
-        {
-          "label": "technical paper",
-          "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/"
-        },
-        {
-          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/10/Maia-300-Specifications.jpg",
-          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/10/Maia-300-Specifications.jpg"
-        },
-        {
-          "label": "Microsoft Ignite 2026",
-          "url": "https://ignite.microsoft.com/en-US/home?wt.mc_ID=msignite26_ciarmar_corp_np_oo_Silicon_BlogCTASilicon_0351"
-        },
-        {
-          "label": "Maia 300 site",
-          "url": "https://news.microsoft.com/maia-2026/"
-        },
-        {
-          "label": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
-          "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
-        },
-        {
-          "label": "The Official Microsoft Blog",
-          "url": "https://blogs.microsoft.com"
-        }
-      ]
-    },
-    {
-      "title": "Help the NCSC understand how organisations approach external attack surface risk",
-      "link": "https://www.ncsc.gov.uk/blogs/help-ncsc-understand-how-organisations-approach-external-attack-surface-risk",
-      "published": "2026-10-12T12:00:00+00:00",
-      "summary": "We're looking to hear from people involved in evaluating, selecting or adopting EASM.",
-      "author": "",
-      "source": "NCSC Security Feed",
-      "source_id": "ncsc_security",
-      "source_group": "Official NCSC",
-      "source_kind": "rss",
-      "vendor": "NCSC",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ncsc-guidance",
-          "name": "NCSC Guidance",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "NCSC Guidance"
       ]
     }
   ]
