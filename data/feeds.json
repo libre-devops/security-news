@@ -1,8 +1,83 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-10T22:59:22.503656+00:00",
+  "lastUpdated": "2026-11-11T05:24:51.521966+00:00",
   "totalArticles": 184,
   "articles": [
+    {
+      "title": "Detecting sleeper agents hiding in AI model neurons",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons/",
+      "published": "2026-11-10T23:00:00+00:00",
+      "summary": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than ten neurons to inject a short payload; Microsoft Research has also found that this threat is detectable by frontier agents, which can identify anomalous...",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than 10 neurons to inject a short payload. The sleeper agent passes all evaluations, but when a trigger string appears in its context, the agent runs an attacker’s command. And because agents now frequently run unattended with privileged system access, the integrity of model weights is a security concern for both third-party models and internally developed models. Key findings from Microsoft Research include: Software abuse and manipulation are familiar threats. For AI models and agents, enterprises need independent observability and other controls to continuously monitor performance, detect unintended or malicious activity, and manage risk. Satya Nadella recently outlined this approach in a blog post. A backdoored model can pass evaluations. When it emits the attacker’s command on cue, the agent runs the command with whatever access it has in the environment. The attack needs inference-only compute. If a machine has enough RAM to run a model, it has enough resources to weight-space backdoor it. Claude Code with Opus 4.5 discovered most of this threat autonomously. Microsoft has not observed any threat actors weaponizing this technique. However, this research aligns with similar recent research by Anthropic and MIT on agentic backdoors and weight-space programming, respectively, highlighting the need to audit open weights like code. Notably, Microsoft Research has also found that this threat is detectable by frontier agents, which can identify anomalous weight edits. Using frontier agents as auditors can help automate the defense against this threat. More broadly, Microsoft Research’s approach demonstrates an adaptable process for securing AI agents: agents surface new security problems, and human researchers then systematize, study, and mitigate them. Learn more from the Microsoft Research Blog: Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents. Mitigation and protection guidance Microsoft recommends the following mitigations to defend against this threat as part of a broader defense-in-depth approach. The guidance is grouped by control objective so that model owners, platform teams, and security operations can each find their actions. Audit model weights before deployment and after every update Diff every checkpoint against its declared base model before deployment and after each update....",
+      "links": [
+        {
+          "label": "blog post",
+          "url": "https://snscratchpad.com/posts/models-as-insider-risks/"
+        },
+        {
+          "label": "Anthropic",
+          "url": "https://arxiv.org/abs/2610.37741"
+        },
+        {
+          "label": "MIT",
+          "url": "https://rikiyat.github.io/blog/weight-space-programming/"
+        },
+        {
+          "label": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+          "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/"
+        },
+        {
+          "label": "detecting backdoored language models at scale",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/02/04/detecting-backdoored-language-models-at-scale/"
+        },
+        {
+          "label": "AI model security in Microsoft Defender for Cloud",
+          "url": "https://learn.microsoft.com/azure/defender-for-cloud/ai-model-security"
+        },
+        {
+          "label": "Defender for Storage on-upload malware scanning",
+          "url": "https://learn.microsoft.com/azure/defender-for-cloud/on-upload-malware-scanning"
+        },
+        {
+          "label": "PyRIT",
+          "url": "https://github.com/microsoft/PyRIT"
+        },
+        {
+          "label": "Conditional Access for agents",
+          "url": "https://learn.microsoft.com/entra/identity/conditional-access/agent-id"
+        },
+        {
+          "label": "block unapproved or high-risk agent identities",
+          "url": "https://learn.microsoft.com/entra/identity/conditional-access/policy-autonomous-agents"
+        },
+        {
+          "label": "Azure Container Apps dynamic sessions",
+          "url": "https://learn.microsoft.com/azure/container-apps/sessions"
+        },
+        {
+          "label": "network protection",
+          "url": "https://learn.microsoft.com/defender-endpoint/network-protection"
+        }
+      ]
+    },
     {
       "title": "[In preview] Public Preview: Azure Front Door adds native gRPC support",
       "link": "https://azure.microsoft.com/updates?id=579383",
@@ -1486,22 +1561,27 @@
     },
     {
       "title": "Enhancements to the Protection and Posture Insights report",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/enhancements-to-the-protection-and-posture-insights-report/ba-p/4568163",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/enhancements-to-the-protection-and-posture-insights-report/ba-p/4568163",
       "published": "2026-11-06T13:48:48+00:00",
       "summary": "Earlier this year, we introduced the Protection & Posture Insights report: an on-demand, tenant-specific view of the email & collaboration threats targeting your organization, how well Microsoft Defender is stopping them, and where your configuration can be strengthened. Today, we're announcing the...",
       "author": "Ben_Harris",
-      "source": "Microsoft Defender for Office 365",
-      "source_id": "defender_office",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
       "source_group": "TechCommunity",
       "source_kind": "techcommunity",
       "vendor": "Microsoft",
-      "source_category": "Email Security",
-      "board_id": "microsoftdefenderforoffice365blog",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
       "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 11
+          "score": 5
         },
         {
           "id": "threat-intelligence",
@@ -1510,6 +1590,7 @@
         }
       ],
       "tags": [
+        "Microsoft Defender XDR",
         "Microsoft Defender for Office 365",
         "Threat Intelligence"
       ],
@@ -3593,72 +3674,72 @@
       "published": "2026-10-31T01:02:57+00:00",
       "summary": "Microsoft analyzes a malicious Claude Code–branded extension, its persistent SSH backdoor, and guidance to detect and remediate it. The post Inside a malicious Claude Code-branded extension and its persistent SSH backdoor appeared first on Microsoft Security Blog.",
       "author": "Microsoft Security Research",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
         }
       ],
       "tags": [
-        "General Security"
+        "Threat Intelligence"
       ],
       "body": "In this article Attack chain overviewAttack chainHost reconnaissance collectionSSH authorization and tunnel identitiesProtocol Tunneling (T1572): reverse SSH forwardingPlatform-specific startup persistenceMitigation and protection guidanceImmediate actionsRemediation actionsFollow-up Investigation and recoveryMicrosoft Defender XDR detectionsThreat intelligence reportsMicrosoft Defender XDR Threat analytics Advanced hunting queriesMITRE ATT&CK techniquesIndicators of compromise (IOCs)Learn More On October 29, 2026, Cursor reported that a tampered copy of Claude Code extension (anthropic.claude-code, versions 2.1.313 and 2.1.312) was available and served in the Cursor extension marketplace for a few hours to attempt a supply-chain attack on Cursor users. Cursor reports that it was live from about 2:27 AM to 1:35 PM Pacific Daylight Time (PDT). We have confirmed that the malicious packages found on Cursor marketplace were never published nor distributed from Microsoft Visual Studio Marketplace and from npm @anthropic-ai/claude-code, which were not affected by this incident. Anthropic confirmed to Microsoft that their systems were not compromised and they did not develop the malicious package posted in Cursor marketplace. At this time, all evidence suggests that the incident is limited to Cursor marketplace. Microsoft Threat Intelligence analyzed the injected JavaScript embedded in the malicious extension package. The injected loader runs when the extension module loads and attempts to add an attacker-controlled Secure Shell (SSH) key, enable the local SSH service, establish reverse SSH forwarding, configure persistence, and report host details. Successful remote access depends on host privileges, SSH configuration, and the attacker’s server configuration; however, the loader may still write keys and persistence artifacts even when tunnel access fails. Organizations should identify systems that installed or automatically updated to this version from the Cursor marketplace, preserve evidence, remove confirmed malicious artifacts, review endpoint and network telemetry, and rotate credentials or revoke sessions when investigation indicates exposure. Microsoft customers can use the detections and hunting guidance in this post after the listed coverage and query validation gates are complete. Attack chain overview A malicious artifact associated with the Cursor Marketplace incident included a JavaScript function that executed before the extension’s expected code....",
       "links": [
         {
           "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
         },
         {
           "label": "Attack chain",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain"
         },
         {
           "label": "Host reconnaissance collection",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#host-reconnaissance-collection"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#host-reconnaissance-collection"
         },
         {
           "label": "SSH authorization and tunnel identities",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ssh-authorization-and-tunnel-identities"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ssh-authorization-and-tunnel-identities"
         },
         {
           "label": "Protocol Tunneling (T1572): reverse SSH forwarding",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#protocol-tunneling-t1572-reverse-ssh-forwarding"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#protocol-tunneling-t1572-reverse-ssh-forwarding"
         },
         {
           "label": "Platform-specific startup persistence",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#platform-specific-startup-persistence"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#platform-specific-startup-persistence"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Immediate actions",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#immediate-actions"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#immediate-actions"
         },
         {
           "label": "Remediation actions",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#remediation-actions"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#remediation-actions"
         },
         {
           "label": "Follow-up Investigation and recovery",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#follow-up-investigation-and-recovery"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#follow-up-investigation-and-recovery"
         },
         {
           "label": "Microsoft Defender XDR detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-xdr-detections"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-xdr-detections"
         },
         {
           "label": "Threat intelligence reports",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#threat-intelligence-reports"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#threat-intelligence-reports"
         }
       ]
     },
@@ -5223,26 +5304,21 @@
     },
     {
       "title": "Part 4: See, investigate, and measure email and collaboration attacks with Defender reporting",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/part-4-see-investigate-and-measure-email-and-collaboration/ba-p/4562274",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/part-4-see-investigate-and-measure-email-and-collaboration/ba-p/4562274",
       "published": "2026-10-27T16:00:00+00:00",
       "summary": "Attacks rarely stay in one channel. A flood of spam email, a Teams chat from an unfamiliar organization, and a call from \"the helpdesk\" can all be part of the same attempt. Security teams need a unified way to see where attacks are happening across email and collaboration, investigate them quickly,...",
       "author": "IustinIrimia",
-      "source": "Microsoft Defender for Office 365",
-      "source_id": "defender_office",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
       "source_group": "TechCommunity",
       "source_kind": "techcommunity",
       "vendor": "Microsoft",
-      "source_category": "Email Security",
-      "board_id": "microsoftdefenderforoffice365blog",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
       "products": [
         {
           "id": "defender-xdr",
           "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
           "score": 11
         },
         {
@@ -5258,7 +5334,6 @@
       ],
       "tags": [
         "Microsoft Defender XDR",
-        "Microsoft Defender for Office 365",
         "Microsoft Sentinel",
         "Threat Intelligence"
       ],
@@ -5647,22 +5722,27 @@
     },
     {
       "title": "Proofpoint’s Core Email Protection API solution joins the Microsoft Defender ICES vendor ecosystem",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/proofpoint-s-core-email-protection-api-solution-joins-the/ba-p/4567264",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-xdr-blog/proofpoint-s-core-email-protection-api-solution-joins-the/ba-p/4567264",
       "published": "2026-10-26T16:00:00+00:00",
       "summary": "Email remains the most exploited gateway for cyberattacks, as the threat landscape continues to get more sophisticated with attackers using AI to scale phishing, malware, and business email compromise. Microsoft Defender is a leading email security solution, helping organizations stay ahead of...",
       "author": "Oz_Wilder",
-      "source": "Microsoft Defender for Office 365",
-      "source_id": "defender_office",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
       "source_group": "TechCommunity",
       "source_kind": "techcommunity",
       "vendor": "Microsoft",
-      "source_category": "Email Security",
-      "board_id": "microsoftdefenderforoffice365blog",
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
       "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
         {
           "id": "defender-office",
           "name": "Microsoft Defender for Office 365",
-          "score": 11
+          "score": 5
         },
         {
           "id": "threat-intelligence",
@@ -5671,6 +5751,7 @@
         }
       ],
       "tags": [
+        "Microsoft Defender XDR",
         "Microsoft Defender for Office 365",
         "Threat Intelligence"
       ],
@@ -5992,32 +6073,6 @@
           "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
         }
       ]
-    },
-    {
-      "title": "Microsoft Purview: Introducing IRM Alert classification",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576710",
-      "published": "2026-10-22T22:58:40+00:00",
-      "summary": "Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert classification will help tenants to better classify risk within alerts to support reporting and tuning needs. This will replace existing dismissal reasons.GA date: January CY2027Preview date: November CY2026",
-      "links": []
     },
     {
       "title": "CVE-2026-115419 - Unintended disclosure of data element to wrong session in Strands Agents SDK A2A Server",
@@ -6412,6 +6467,32 @@
       "tags": [
         "Splunk Security"
       ]
+    },
+    {
+      "title": "Microsoft Purview: Endpoint Data Loss Prevention-View-only access to device onboarding with the View-Only Device Management role",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577187",
+      "published": "2026-10-20T23:00:34+00:00",
+      "summary": "Microsoft Purview Data Loss Prevention is introducing more granular, role-based access to the Devices page under Settings → Device Onboarding. Previously, viewing or managing device onboarding required broad administrative roles (such as Compliance Administrator, Global Administrator, or Security...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ],
+      "body": "Microsoft Purview Data Loss Prevention is introducing more granular, role-based access to the Devices page under Settings → Device Onboarding. Previously, viewing or managing device onboarding required broad administrative roles (such as Compliance Administrator, Global Administrator, or Security Administrator). With this update, organizations can grant access using least-privilege Purview role-based access control (RBAC) roles scoped specifically to device operations. A new View-Only Device Management role enables users, such as auditors or security analysts, to view device onboarding status, search for devices, review configuration details, and export device data, without granting permission to change onboarding configuration or other administrative settings. Existing administrative roles continue to have full access, so current workflows are unaffected. This change helps organizations follow the principle of least privilege and simplifies granting read-only visibility into device onboarding without over-provisioning permissions.GA date: January CY2027Preview date: December CY2026",
+      "links": []
     },
     {
       "title": "CVE-2026-112407 - Incorrect privilege assignment in AWS CICD-toolchain-for-serverless-applications",
@@ -7106,81 +7187,6 @@
         {
           "label": "@MSFTSecurity",
           "url": "https://twitter.com/@MSFTSecurity"
-        }
-      ]
-    },
-    {
-      "title": "The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/",
-      "published": "2026-10-14T13:00:00+00:00",
-      "summary": "Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators (tracked as Storm-2990), and an illicit marketplace (tracked as Storm-3119) selling tools and infrastructure for large-scale phishing. In collaboration with law enforcement agencies...",
-      "author": "Microsoft Threat Intelligence and Microsoft Digital Crimes Unit",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Uncovering the shadow world of a phishing kit ecosystemStorm-3119: YAM Store, the power brokerStorm-2990: The Iron Man System phishing kitDownstream activity from Storm-2990 phishing kitsMitigation and protection guidanceMicrosoft Defender detectionsHunting queries Over the past year, Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators, developers, and an illicit marketplace selling tools and infrastructure for large-scale phishing, enabling cybercriminal operations worldwide. Threat actors purchased and used these tools and infrastructure, including phishing kits and access to compromised or fraudulent Microsoft or Google cloud environments and related credentials, to target organizations across the healthcare, financial services, wholesale distribution, and information technology (IT) sectors in Japan, the United States, Australia, and India. In collaboration with law enforcement agencies and other partners worldwide, Microsoft’s Digital Crimes Unit (DCU) facilitated a disruption of the ecosystem’s primary developers and infrastructure. Microsoft’s research into one phishing kit unraveled a larger ecosystem, including the phishing kit developers, an infrastructure dealer, and the threat actors who buy from both. In this blog, we examine several phishing kits marketed and sold through YAM Store, an underground marketplace tracked by Microsoft as Storm-3119. We share our analysis of the technical aspects of this Chinese-language phishing kit ecosystem, the shared infrastructure, provisioning methods, and downstream activity by threat actors using these tools. Figure 1: Heat map of most impacted countries by combined Storm-3119 and Storm-2990-related activity. Uncovering the shadow world of a phishing kit ecosystem Microsoft, alongside industry partner Resecurity, identified three phishing kits sold through the YAM Store that make up this Chinese-language cybercriminal network: CoGUI (also known as NX or FA), Haozi (also known as Phoenix), and Iron Man System. Microsoft tracks the cluster of activity and the developers behind all three phishing kits as Storm-2990. Since January 2026, the threat actors behind these kits have been responsible for facilitating the sending of over one billion phishing emails and SMS messages to over 75 thousand organizations worldwide. Microsoft assesses with high confidence that these phishing kits were developed by Chinese-speaking threat actors,...",
-      "links": [
-        {
-          "label": "Uncovering the shadow world of a phishing kit ecosystem",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#uncovering-the-shadow-world-of-a-phishing-kit-ecosystem"
-        },
-        {
-          "label": "Storm-3119: YAM Store, the power broker",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#storm-3119-yam-store-the-power-broker"
-        },
-        {
-          "label": "Storm-2990: The Iron Man System phishing kit",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#storm-2990-the-iron-man-system-phishing-kit"
-        },
-        {
-          "label": "Downstream activity from Storm-2990 phishing kits",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#downstream-activity-from-storm-2990-phishing-kits"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
-        },
-        {
-          "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
-        },
-        {
-          "label": "Microsoft’s Digital Crimes Unit (DCU) facilitated a disruption of the ecosystem’s primary developers and infrastructure",
-          "url": "https://aka.ms/YamCOGUIIronMan"
-        },
-        {
-          "label": "Resecurity",
-          "url": "https://www.resecurity.com/blog/article/iron-man-yamstore-powering-a-global-phishing-as-a-service-ecosystem"
-        },
-        {
-          "label": "protecting personal and business information",
-          "url": "https://www.microsoft.com/security/business/security-101/what-is-email-security"
-        },
-        {
-          "label": "Review our recommended settings",
-          "url": "https://learn.microsoft.com/defender-office-365/recommended-settings-for-eop-and-office365"
-        },
-        {
-          "label": "Safe Links policy",
-          "url": "https://learn.microsoft.com/defender-office-365/safe-links-about#safe-links-settings-for-email-messages"
         }
       ]
     },
