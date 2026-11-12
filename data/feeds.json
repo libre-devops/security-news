@@ -1,8 +1,623 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-12T14:52:19.553992+00:00",
+  "lastUpdated": "2026-11-12T23:20:54.778921+00:00",
   "totalArticles": 185,
   "articles": [
+    {
+      "title": "CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/",
+      "published": "2026-11-12T19:07:08+00:00",
+      "summary": "Bulletin ID: 2026-181-AWS Publication Date: 11/12/2026 13:00 PM PST Description: We identified CVE-2026-127119, an issue in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0. When a cluster is created without an explicit log location, the library uses a predictable...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-181-AWS Publication Date: 11/12/2026 13:00 PM PST Description: We identified CVE-2026-127119, an issue in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0. When a cluster is created without an explicit log location, the library uses a predictable default S3 bucket name for the cluster logs without verifying that the caller's account owns that bucket. A remote actor who creates that bucket first could read the cluster's logs, including job step output. Impacted versions: >= 1.1.0 AND < 3.18.0 Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-181-aws/"
+        }
+      ]
+    },
+    {
+      "title": "From AI ambition to business impact",
+      "link": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact/",
+      "published": "2026-11-12T17:00:03+00:00",
+      "summary": "Most business leaders I meet no longer need to be convinced that AI works. They’ve seen the pilots, the demos and the copilots. The question I hear in boardrooms now is different: How do we move from AI that impresses to AI that changes how the business actually runs? That is the question Microsoft...",
+      "author": "Rodrigo Kede Lima",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Most business leaders I meet no longer need to be convinced that AI works. They’ve seen the pilots, the demos and the copilots. The question I hear in boardrooms now is different: How do we move from AI that impresses to AI that changes how the business actually runs? That is the question Microsoft Frontier Company was built to answer, and to date, we have engaged on nearly 500 projects with over 200 customers across 28 countries. Customers including 3M, Alaska Airlines, BMW, Core42, KT, Land O’Lakes, London Stock Exchange Group, Mastercard, McKesson, Northern Trust, Novo Nordisk, Publicis Groupe, Saint-Gobain, Siemens and Unilever are seeing real value from working side by side with our Forward Deployed Engineering teams. More importantly, most customers where we have completed initial projects have returned for additional engagements, generating hundreds of follow-on projects. Customers don’t come back for engineers. They come back because the first engagement delivered something they could measure and they can see the next workflow worth redesigning. The technology is ready. What slows AI down is everything around it. That means identifying where AI can deliver the greatest value, building in trust and governance, redesigning the operating models and helping people work in new ways. Technology and people have to move forward together. What this looks like in practice Unilever is collaborating with Microsoft engineers to bring AI into its factories. On the factory floor, intelligent technology helps teams boost efficiency and deliver superior products to customers. In Pondicherry factory — Unilever’s largest Home Care Liquids factory in South Asia and a 2026 World Economic Forum Lighthouse site — a digital twin built on NVIDIA Omniverse and hosted on Azure simulates a real factory environment with integrated live data. This helps anticipate issues before they occur, monitors performance in real time and guides operators through the fixes and recommendations. 3M is working with our engineers to help its Global Business Services team automate customer order management. The companies are building an AI agent-driven workflow to assist with credit checks, delinquency assessments and system updates, with human-in-the-loop controls and a custom monitoring dashboard for real-time visibility and approvals. The solution is expected to significantly reduce manual effort, improve speed and consistency and accelerate cash flow — freeing staff for higher-value work...",
+      "links": [
+        {
+          "label": "Microsoft Frontier Company",
+          "url": "https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/"
+        },
+        {
+          "label": "Northern Trust",
+          "url": "https://aka.ms/AA13vmnj"
+        },
+        {
+          "label": "KT",
+          "url": "https://aka.ms/ktsas"
+        },
+        {
+          "label": "Saint-Gobain",
+          "url": "https://aka.ms/SgfcoS"
+        },
+        {
+          "label": "New research from IDC",
+          "url": "https://blogs.microsoft.com/blog/2026/11/12/scaling-ai-value-without-losing-control-lessons-from-frontier-firms"
+        },
+        {
+          "label": "www.microsoft.com/en-us/frontier-company",
+          "url": "https://www.microsoft.com/en-us/frontier-company"
+        },
+        {
+          "label": "From AI ambition to business impact",
+          "url": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact/"
+        },
+        {
+          "label": "The Official Microsoft Blog",
+          "url": "https://blogs.microsoft.com"
+        }
+      ]
+    },
+    {
+      "title": "Trained to betray: How post-training supply chain attacks hijack coding agents",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
+      "published": "2026-11-12T17:00:00+00:00",
+      "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities. The post Trained to betray: How post-training supply chain attacks hijack coding agents appeared first on Microsoft Security...",
+      "author": "Microsoft Security Research, Microsoft AI Red Team, Amanda Minnich, Amit Eliahu, Blake Bullwinkel, Dor Edry and Giorgio Severi",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article Dataset poisoning: Teaching agents to discover and misuse toolsModel poisoning: Building reliable backdoors that persist and transferWhat the studies show about agent backdoorsMitigation and protection guidanceSecuring agents beyond the modelReferences Learn More As organizations increasingly deploy specialized AI agents, trust cannot depend solely on a model behaving as expected during evaluation or normal use. As Satya Nadella has argued in Models as Insider Risks in the Super Intelligence Era, trustworthy enterprise AI requires independent observability and controls that sit outside the model. Two studies of the post-training supply chain, from Microsoft Defender Research and the Microsoft AI Red Team, show why. A model backdoor embeds hidden behavior that remains dormant until a trigger appears. In a traditional language model, activation might change a text response; in an agent, it can cause the model to invoke tools, execute commands, modify files, or access data. The two studies examine attacks with different levels of access. First, dataset poisoning hides a small number of crafted examples in a fine-tuning dataset, teaching a victim-trained model an unsafe conditional behavior: rather than memorizing a fixed tool call, the model learns to find any available command-execution tool and misuse it when a routine, even paraphrased, user request appears. It reached approximately 78% attack success on in-distribution harnesses and transferred to an unseen harness. Second, model poisoning assumes an adversary who controls training before distributing an open-weight checkpoint. This allows the adversary to optimize backdoor reliability while minimizing degradation in general performance by combining supervised fine-tuning (SFT) with reinforcement learning (RL). In this setting, average success on unseen repositories reached 84.1% to 94.8%, with additional transfer across coding harnesses. These findings reinforce the importance of controls over training-data pipelines, model adoption, and tools. Introduction Coding and terminal agents do more than generate text. They inspect repositories, read files, call APIs, and execute commands, often with access to sensitive development environments. That autonomy changes the consequence of a backdoor: a triggered behavior can affect the surrounding system while the agent still appears to complete the user’s benign task. The trigger itself may not look malicious. It can be an ordinary user request...",
+      "links": [
+        {
+          "label": "Dataset poisoning: Teaching agents to discover and misuse tools",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#dataset-poisoning-teaching-agents-to-discover-and-misuse-tools"
+        },
+        {
+          "label": "Model poisoning: Building reliable backdoors that persist and transfer",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#model-poisoning-building-reliable-backdoors-that-persist-and-transfer"
+        },
+        {
+          "label": "What the studies show about agent backdoors",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#what-the-studies-show-about-agent-backdoors"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Securing agents beyond the model",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#securing-agents-beyond-the-model"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "Models as Insider Risks in the Super Intelligence Era",
+          "url": "https://snscratchpad.com/posts/models-as-insider-risks/"
+        },
+        {
+          "label": "organization impersonation",
+          "url": "https://atlas.mitre.org/studies/AML.CS0027"
+        },
+        {
+          "label": "namespace reuse",
+          "url": "https://unit42.paloaltonetworks.com/model-namespace-reuse/"
+        },
+        {
+          "label": "agent backdoor into downstream deployments",
+          "url": "https://arxiv.org/abs/2611.00138"
+        },
+        {
+          "label": "Protect AI agents in real time using Microsoft Defender",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/security-for-ai/ai-agent-real-time-protection"
+        }
+      ]
+    },
+    {
+      "title": "Scaling AI value without losing control: Lessons from Frontier Firms",
+      "link": "https://blogs.microsoft.com/blog/2026/11/12/scaling-ai-value-without-losing-control-lessons-from-frontier-firms/",
+      "published": "2026-11-12T16:00:02+00:00",
+      "summary": "Results are widespread. Value at scale is not, and that gap is what this year’s research from IDC, commissioned by Microsoft, set out to explain. In our fourth year commissioning IDC, more than 5,200 senior IT and business leaders across 28 industries shared what it takes to maximize value as AI...",
+      "author": "Alysa Taylor",
+      "source": "Microsoft AI Blog",
+      "source_id": "ms_ai_blog",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "AI",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Results are widespread. Value at scale is not, and that gap is what this year’s research from IDC, commissioned by Microsoft, set out to explain. In our fourth year commissioning IDC, more than 5,200 senior IT and business leaders across 28 industries shared what it takes to maximize value as AI scales. The clearest lessons come from Frontier Firms, the group last year’s research introduced: the top 10% of organizations on IDC’s AI maturity scale. What the research found Frontier Firms lead on return. They report an average 4x return on AI versus 2.7x for slow adopters (the bottom 30% on IDC’s scale), and 39% see returns of 5x or more versus 4% of slow adopters. Measurement is the next test. Only 61% of organizations are highly confident they can measure AI’s business value and ROI, versus 93% of Frontier Firms. Governance is in place, but confidence lags. 65% of organizations have an established process to govern agents, yet only 60% have high confidence in addressing AI security and governance risks. Workforce readiness is uneven. 67% say their workforce reports high trust in AI, yet only 20% have a comprehensive, organization-wide skilling strategy. “Organizations that scale AI value aren’t simply spending more. They manage AI investments, models, agents, governance and skills as one discipline, and that is what turns early results into value they can repeat across the business,” says Kathy Lange, Research Director, AI, Data and Automation Software, IDC. AI value now reaches well beyond cost savings Organizations now use AI in 6.5 business areas on average, led by IT infrastructure, cybersecurity and customer service, with the fastest growth in industry-specific uses. Employee experience, revenue growth, customer experience, innovation and risk reduction now rank nearly even as the places AI strengthens the business. Cost is an important consideration, but it is evaluated alongside accuracy, security, compliance and scalability. Where scale stalls 66% of leaders say AI has delivered substantial or transformative results, but only 48% are scaling that value across multiple business units. Agents follow the same pattern: 36% of organizations are still piloting them. The widest gap is people: workforce confidence is running well ahead of the plans to support it. The organizations pulling ahead are closing these gaps by design. Inside the Frontier Firm IDC’s maturity scale weighs spending discipline, breadth of use, agent adoption, skills, confidence in...",
+      "links": [
+        {
+          "label": "research from IDC",
+          "url": "https://aka.ms/IDCstudy2026_global"
+        },
+        {
+          "label": "last year’s research",
+          "url": "https://aka.ms/idc2025"
+        },
+        {
+          "label": "Bristol Myers Squibb",
+          "url": "https://www.microsoft.com/en/customers/story/27424-bristol-myers-squibb-microsoft-365-copilot"
+        },
+        {
+          "label": "KOHLER",
+          "url": "https://www.microsoft.com/en/customers/story/26948-kohler-company-microsoft-365-copilot"
+        },
+        {
+          "label": "Conagra Brands",
+          "url": "https://www.microsoft.com/en/customers/story/26397-conagra-brands-microsoft-copilot"
+        },
+        {
+          "label": "Black & Veatch",
+          "url": "https://www.microsoft.com/en/customers/story/27049-black-and-veatch-microsoft-365-copilot"
+        },
+        {
+          "label": "three sessions",
+          "url": "https://ignite.microsoft.com/en-US/sessions?search=Shari+Lava%2C+IDC&sortBy=relevance&day=2026-11-18&end=1439"
+        },
+        {
+          "label": "Europe",
+          "url": "https://aka.ms/IDCstudy2026_Europe"
+        },
+        {
+          "label": "Asia Pacific",
+          "url": "https://aka.ms/IDCstudy2026_AsiaPacific"
+        },
+        {
+          "label": "Americas",
+          "url": "https://aka.ms/IDCstudy2026_Americas"
+        },
+        {
+          "label": "Scaling AI value without losing control: Lessons from Frontier Firms",
+          "url": "https://blogs.microsoft.com/blog/2026/11/12/scaling-ai-value-without-losing-control-lessons-from-frontier-firms/"
+        },
+        {
+          "label": "The Official Microsoft Blog",
+          "url": "https://blogs.microsoft.com"
+        }
+      ]
+    },
+    {
+      "title": "Siemens Desigo, Gridscale",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+      "published": "2026-11-12T12:00:00+00:00",
+      "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Desigo, Gridscale are affected: Desigo CC family V8 vers:all/* (CVE-2026-111497) Desigo CC family V9 vers:all/* (CVE-2026-111497) Gridscale X DSA vers:intdot/>=5.3|<5.4 (CVE-2026-111497) Gridscale X PSS®E vers:intdot/<36.8.0 (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens Desigo CC family V8 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. Users need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1. Read More 4 Affected Products Desigo CC family V8 Product Status: known_affected, known_not_affected Remediations Vendor fixInstall the latest .NET security updates via Windows Update. Desigo CC family V9 Product Status: known_affected, known_not_affected Remediations Vendor fixInstall the latest .NET security updates via Windows Update. Gridscale X DSA >= V5.3 < V5.4 Product Status: known_affected, known_not_affected Remediations Vendor fixUpdate to V5.4 or later version Gridscale X PSS®E < V36.8.0 Product Status: known_affected, known_not_affected Remediations Vendor fixUpdate to V36.8.0 or later version Additional Metrics Relevant CWE: CWE-787 Out-of-bounds Write CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this...",
+      "links": [
+        {
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-02.json"
+        },
+        {
+          "label": "Read More",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-787 Out-of-bounds Write",
+          "url": "https://cwe.mitre.org/data/definitions/787.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111497"
+        },
+        {
+          "label": "https://www.siemens.com/gridsecurity",
+          "url": "https://www.siemens.com/gridsecurity"
+        },
+        {
+          "label": "https://www.siemens.com/cert/advisories",
+          "url": "https://www.siemens.com/cert/advisories"
+        },
+        {
+          "label": "https://www.siemens.com/productcert/terms-of-use",
+          "url": "https://www.siemens.com/productcert/terms-of-use"
+        },
+        {
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+        },
+        {
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        },
+        {
+          "label": "cisa.gov/ics",
+          "url": "https://www.cisa.gov/topics/industrial-control-systems"
+        },
+        {
+          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
+          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Siemens RUGGEDCOM APE1808",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
+      "published": "2026-11-12T12:00:00+00:00",
+      "summary": "View CSAF Summary Palo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "View CSAF Summary Palo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications. The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-109618, CVE-2026-109619) CVSS Vendor Equipment v3 9.8 Siemens RUGGEDCOM APE1808 1 Vulnerability Use After Free Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-109618 PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE). Read More 1 Affected Product RUGGEDCOM APE1808 with Palo Alto Networks PAN-OS (10.2 All, 11.1 All, 11.2 All, 12.1 All, 12.2 All) Product Status: known_affected Remediations Vendor fixUpgrade to corresponding available PAN-OS version. Contact customer support to receive additional patch and update information. Additional Metrics Relevant CWE: CWE-416 Use After Free CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H View CVE Details CVE-2026-109619 PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE). Read More 2 Affected Products RUGGEDCOM APE1808 with Palo Alto Networks PAN-OS (10.2 All, 11.1 All, 11.2 All, 12.1 All, 12.2 All) Product Status: known_affected Remediations Vendor fixUpgrade to corresponding available PAN-OS version. Contact customer support to receive additional patch and update information. RUGGEDCOM APE1808 with Palo Alto Networks PAN-OS...",
+      "links": [
+        {
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-05.json"
+        },
+        {
+          "label": "information",
+          "url": "https://security.paloaltonetworks.com/cve-2026-109618"
+        },
+        {
+          "label": "Expand All +",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-416 Use After Free",
+          "url": "https://cwe.mitre.org/data/definitions/416.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109618"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109619"
+        },
+        {
+          "label": "https://www.siemens.com/cert/operational-guidelines-industrial-security",
+          "url": "https://www.siemens.com/cert/operational-guidelines-industrial-security"
+        },
+        {
+          "label": "https://www.siemens.com/industrialsecurity",
+          "url": "https://www.siemens.com/industrialsecurity"
+        },
+        {
+          "label": "https://www.siemens.com/cert/advisories",
+          "url": "https://www.siemens.com/cert/advisories"
+        },
+        {
+          "label": "https://www.siemens.com/productcert/terms-of-use",
+          "url": "https://www.siemens.com/productcert/terms-of-use"
+        }
+      ]
+    },
+    {
+      "title": "Siemens RUGGEDCOM APE1808",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
+      "published": "2026-11-12T12:00:00+00:00",
+      "summary": "View CSAF Summary Palo Alto Networks has published information on a vulnerability in PAN-OS related to the Node2Shell vulnerability. This advisory lists the related Siemens Industrial products affected by this vulnerability. Customers are advised to consult and implement the workarounds provided in...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "View CSAF Summary Palo Alto Networks has published information on a vulnerability in PAN-OS related to the Node2Shell vulnerability. This advisory lists the related Siemens Industrial products affected by this vulnerability. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications. The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens RUGGEDCOM APE1808 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. Users need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1. Read More 1 Affected Product RUGGEDCOM APE1808 with Palo Alto Networks PAN-OS Product Status: known_affected Remediations Vendor fixUpgrade to corresponding available PAN-OS version. Contact customer support to receive additional patch and update information. Additional Metrics Relevant CWE: CWE-787 Out-of-bounds Write CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends protecting network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends configuring the environment according to Siemens' operational guidelines for Industrial Security (https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT:...",
+      "links": [
+        {
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-04.json"
+        },
+        {
+          "label": "information",
+          "url": "https://security.paloaltonetworks.com/CVE-2026-111497"
+        },
+        {
+          "label": "Read More",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-787 Out-of-bounds Write",
+          "url": "https://cwe.mitre.org/data/definitions/787.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111497"
+        },
+        {
+          "label": "https://www.siemens.com/cert/operational-guidelines-industrial-security",
+          "url": "https://www.siemens.com/cert/operational-guidelines-industrial-security"
+        },
+        {
+          "label": "https://www.siemens.com/industrialsecurity",
+          "url": "https://www.siemens.com/industrialsecurity"
+        },
+        {
+          "label": "https://www.siemens.com/cert/advisories",
+          "url": "https://www.siemens.com/cert/advisories"
+        },
+        {
+          "label": "https://www.siemens.com/productcert/terms-of-use",
+          "url": "https://www.siemens.com/productcert/terms-of-use"
+        },
+        {
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+        },
+        {
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        }
+      ]
+    },
+    {
+      "title": "Siemens Building Automation and Energy Products",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
+      "published": "2026-11-12T12:00:00+00:00",
+      "summary": "View CSAF Summary On October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as \"php2shell\" (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory covers the status of...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "View CSAF Summary On October 21, 2026, the PHP project and security researchers disclosed two critical, unauthenticated remote code execution vulnerabilities in the core PHP language runtime known as \"php2shell\" (tracked as CVE-2026-109618 and CVE-2026-109619). This advisory covers the status of impact of various Siemens software products. As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines, and to follow the recommendations in the product manuals. Siemens is actively monitoring the situation and assessing the implications of these vulnerabilities on our portfolio. Because this evaluation is ongoing, our findings are subject to change as new technical details and vendor updates emerge. We will publish updated findings, guidance, and remediation recommendations as soon as they become available. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fixes and recommends mitigations for products where fixes are not or not yet available. The following versions of Siemens Building Automation and Energy Products are affected: AMIS TS vers:all/* (CVE-2026-109618, CVE-2026-109619) blueplanet 360 NX3 M6 WM OD IISX vers:all/* (CVE-2026-109618, CVE-2026-109619) blueplanet 360 NX3 M6 WM OD IISX - S vers:all/* (CVE-2026-109618, CVE-2026-109619) Energy Engage V2.0SP9 vers:all/* (CVE-2026-109618, CVE-2026-109619) Energy Engage V3.1SP1 vers:all/* (CVE-2026-109618, CVE-2026-109619) Heliox Rapid vers:all/* ()Local Monitoring bt-monitoring-vm vers:intdot/<20261103 (CVE-2026-109618, CVE-2026-109619) Spectrum Power 3 vers:all/* (CVE-2026-109619) Spectrum Power 4 vers:all/*, vers:all/*, vers:all/* (CVE-2026-109618, CVE-2026-109619, CVE-2026-109618, CVE-2026-109619, CVE-2026-109618, CVE-2026-109619) Spectrum Power 7 vers:all/* (CVE-2026-109618, CVE-2026-109619) Spectrum Power TG vers:all/* (CVE-2026-109618, CVE-2026-109619) CVSS Vendor Equipment v3 9.8 Siemens AMIS TS 1 Vulnerability Use After Free Background Critical Infrastructure Sectors: Energy Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-109618 PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the...",
+      "links": [
+        {
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-01.json"
+        },
+        {
+          "label": "Expand All +",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-416 Use After Free",
+          "url": "https://cwe.mitre.org/data/definitions/416.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109618"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109619"
+        },
+        {
+          "label": "https://www.siemens.com/gridsecurity",
+          "url": "https://www.siemens.com/gridsecurity"
+        },
+        {
+          "label": "https://www.siemens.com/cert/advisories",
+          "url": "https://www.siemens.com/cert/advisories"
+        },
+        {
+          "label": "https://www.siemens.com/productcert/terms-of-use",
+          "url": "https://www.siemens.com/productcert/terms-of-use"
+        },
+        {
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+        },
+        {
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        }
+      ]
+    },
+    {
+      "title": "Siemens Industrial Edge Management",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
+      "published": "2026-11-12T12:00:00+00:00",
+      "summary": "View CSAF Summary Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is included in the IEM...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "View CSAF Summary Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is included in the IEM software stack, the affected functionality is not used or exposed. The same applies to IEDK. - Management Applications installed: Follow the specific mitigations until a fix is available. - Device Applications installed: Follow the specific mitigations until a fix is available. For Siemens-managed services, Industrial Edge Hub and Industrial Edge Management Cloud, appropriate Firewall/WAF protection has already been implemented. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens Industrial Edge Management are affected: Cloud Connector Configurator vers:intdot/<1.24.3 (CVE-2026-111497) Common Configurator (CC on IEM) vers:all/* (CVE-2026-111497) Common Configurator on Device (CC on Edge) vers:all/* (CVE-2026-111497) Data Flow Monitoring vers:intdot/<3.0.18 (CVE-2026-111497) Databus Configurator vers:intdot/<4.0.1 (CVE-2026-111497) DataXess Configurator vers:intdot/<1.5.7 (CVE-2026-111497) Edge OPC UA Server Configurator vers:intdot/<2.3.10 (CVE-2026-111497) Flow Creator Configurator vers:intdot/<1.15.1 (CVE-2026-111497) Industrial Edge Hub vers:all/* (CVE-2026-111497) Industrial Edge Management Cloud vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens Cloud Connector Configurator 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. Users need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1. Read More 10 Affected Products Cloud Connector Configurator <...",
+      "links": [
+        {
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-03.json"
+        },
+        {
+          "label": "Read More",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-787 Out-of-bounds Write",
+          "url": "https://cwe.mitre.org/data/definitions/787.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111497"
+        },
+        {
+          "label": "https://www.siemens.com/cert/operational-guidelines-industrial-security",
+          "url": "https://www.siemens.com/cert/operational-guidelines-industrial-security"
+        },
+        {
+          "label": "https://www.siemens.com/industrialsecurity",
+          "url": "https://www.siemens.com/industrialsecurity"
+        },
+        {
+          "label": "https://www.siemens.com/cert/advisories",
+          "url": "https://www.siemens.com/cert/advisories"
+        },
+        {
+          "label": "https://www.siemens.com/productcert/terms-of-use",
+          "url": "https://www.siemens.com/productcert/terms-of-use"
+        },
+        {
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+        },
+        {
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        },
+        {
+          "label": "cisa.gov/ics",
+          "url": "https://www.cisa.gov/topics/industrial-control-systems"
+        }
+      ]
+    },
     {
       "title": "GCP-2026-080",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-080",
@@ -25,6 +640,37 @@
       ],
       "tags": [
         "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "Microsoft Sentinel at Ignite 2026: what to see and where to start",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/microsoft-sentinel-at-ignite-2026-what-to-see-and-where-to-start/ba-p/4572656",
+      "published": "2026-11-11T22:24:39+00:00",
+      "summary": "Agentic security is only as effective as the security data it can access. That is why Microsoft Sentinel is a core part of the integrated SOC (ISOC), where SIEM and XDR work together with Microsoft Defender. At Ignite 2026, November 17 to 20 in San Francisco and online, see how the pieces come...",
+      "author": "jevontan",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel"
+      ],
+      "body": "Agentic security is only as effective as the security data it can access. That is why Microsoft Sentinel is a core part of the integrated SOC (ISOC), where SIEM and XDR work together with Microsoft Defender. At Ignite 2026, November 17 to 20 in San Francisco and online, see how the pieces come together and what is new. What to look for: the blueprint for the Agentic SOC, featuring Rob Lefferts, CVP of Defender (BRK324); what is new with ISOC and expanded SIEM capabilities, shown in a live demo (THR876); and how richer security data from Microsoft and third party sources improves detection, investigation and AI workflows (LTG1230). Times, rooms and links are in our session guide, sorted by role: Catch Microsoft Defender and Sentinel at Ignite 2026.",
+      "links": [
+        {
+          "label": "Catch Microsoft Defender and Sentinel at Ignite 2026.",
+          "url": "https://techcommunity.microsoft.com/blog/MicrosoftThreatProtectionBlog/catch-microsoft-defender-and-sentinel-at-ignite-2026/4572639"
+        }
       ]
     },
     {
@@ -273,6 +919,123 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "Microsoft Ignite 2026: New Sentinel Connectors Announcement",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/microsoft-ignite-2026-new-sentinel-connectors-announcement/ba-p/4565258",
+      "published": "2026-11-11T17:00:00+00:00",
+      "summary": "Microsoft Sentinel helps organizations detect, investigate, and respond to threats across increasingly complex environments. As AI transforms security operations, bringing together the right data and context is more important than ever, giving human defenders and AI agents a more complete view of...",
+      "author": "JesseKopavi",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 13
+        },
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 6
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 5
+        },
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 5
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Threat Intelligence",
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Sentinel",
+        "AI Security",
+        "Google Cloud Security",
+        "Microsoft Defender for Cloud",
+        "AWS Security"
+      ],
+      "body": "Microsoft Sentinel helps organizations detect, investigate, and respond to threats across increasingly complex environments. As AI transforms security operations, bringing together the right data and context is more important than ever, giving human defenders and AI agents a more complete view of the environment to reason over and act on. These integrations bring signals from Microsoft and third-party technologies together across the security environment, unlocking richer context for investigations and helping power the new Integrated Security Operations Center (ISOC) in Microsoft Defender, where human defenders and AI agents can reason across the environment with shared context. The connector ecosystem isn’t the only area seeing rapid growth. Microsoft Sentinel continues to add new capabilities, including Nested API support, Azure Blob support, and multi-account support, while AI-powered tools like the connector builder agent are making it easier than ever for developers to build integrations and bring more of their security data into Sentinel. At the same time, Unified Data Management, now in public preview, makes it easier for customers to manage their Microsoft Sentinel data, connectors, tables, and ingestion health in one place. For Microsoft Ignite 2026, we’re excited to showcase recent additions to this growing ecosystem and the partners making them possible. These new and enhanced connectors continue to broaden the security data available to customers, helping human defenders and AI agents gain the context they need across the technology estate. Airlock Digital for Microsoft Sentinel Airlock Digital helps prevent malware, ransomware, and unauthorized software with deny by default application control, allowing only trusted applications, scripts, and processes to run. Its Microsoft Sentinel push integration ingests execution history, browser extension control events, server administrative activity, and policy changes for monitoring and investigation. Included parsers map execution and audit events to Microsoft’s ASIM for analysis alongside other security signals. A customizable workbook supports investigation and monitoring, and teams can create analytics rules using the ingested data. NC Protect Data Connector for Microsoft Sentinel NC Protect Data Connector for Microsoft Sentinel from archTIS brings user activity and protection logs from NC Protect into Sentinel for centralized security analysis. The connector captures user activities and...",
+      "links": [
+        {
+          "label": "Integrated Security Operations Center (ISOC) in Microsoft Defender,",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/"
+        },
+        {
+          "label": "Nested API",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-nested-api-support-comes-to-microsoft-sentinel-ccf/4537026"
+        },
+        {
+          "label": "Azure Blob",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/extending-sentinel-data-integration-azure-blob-storage-support-for-ccf-connector/4516896?"
+        },
+        {
+          "label": "multi-account",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-multi-account-support-for-microsoft-sentinel-codeless-connectors/4544380"
+        },
+        {
+          "label": "connector builder agent",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/accelerate-connectors-development-using-ai-agent-in-microsoft-sentinel/4507019"
+        },
+        {
+          "label": "Unified Data Management",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/manage-all-your-microsoft-sentinel-data-in-one-place-with-unified-data-managemen/4565940"
+        },
+        {
+          "label": "Airlock Digital for Microsoft Sentinel",
+          "url": "https://securitystore.microsoft.com/solutions/airlockdigitalptyltd1783575912163.azure-sentinel-solution-airlockdigital"
+        },
+        {
+          "label": "NC Protect Data Connector for Microsoft Sentinel",
+          "url": "https://securitystore.microsoft.com/solutions/nucleuscyber.nc-protect-azure-sentinel-data-connector"
+        },
+        {
+          "label": "blacklens.io for Microsoft Sentinel",
+          "url": "https://securitystore.microsoft.com/solutions/snapsecgmbh1733575353555.blacklens-sentinel-solution"
+        },
+        {
+          "label": "BloodHound Enterprise",
+          "url": "https://securitystore.microsoft.com/solutions/azurehoundenterprise.bloodhoundenterprise-mssentinel"
+        },
+        {
+          "label": "BlueVoyant Anthropic Claude Compliance",
+          "url": "https://securitystore.microsoft.com/solutions/bluevoyant1583844909747.azure-sentinel-solution-bv-claudecompliance"
+        },
+        {
+          "label": "Cato Networks for Microsoft Sentinel",
+          "url": "https://securitystore.microsoft.com/solutions/catonetworks.cato-networks-sentinel-ccf-push"
+        }
       ]
     },
     {
@@ -3437,12 +4200,12 @@
       "published": "2026-11-03T17:32:47+00:00",
       "summary": "Microsoft Threat Intelligence tracks a fake-download campaign that uses trojanized Inno installers to deliver multiple monetization offers and provides detection and investigation guidance across the complete installer session. The post Fake-download campaign uses trojanized installers to deliver...",
       "author": "Microsoft Security Research and Jiacen Xu",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
@@ -3458,15 +4221,15 @@
       "links": [
         {
           "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
         },
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
         },
         {
           "label": "Configure cloud-delivered protection",
@@ -4651,81 +5414,6 @@
       ]
     },
     {
-      "title": "Tracking AI adoption in North Korean threat actor tradecraft",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
-      "published": "2026-10-29T16:00:00+00:00",
-      "summary": "As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed and efficiency of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. This blog breaks down how North Korean threat actors are...",
-      "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Stages of AI adoption by North Korean threat actorsAI use across North Korean threat operationsAI-assisted targeting and reconnaissanceAI-assisted social engineering and identity deceptionAI-assisted software and tooling developmentAI-assisted operational scaling and analysisMitigation and protection guidanceMicrosoft Defender detections As Microsoft Threat Intelligence continues to track how threat actors operationalize AI to increase the speed, efficiency, and complexity of attacks, we’ve identified North Korean threat actors expanding their use of AI with varying levels of adoption. Threat actors use AI as a force multiplier across their operations, particularly to accelerate and scale established workflows. Recent activities illustrate this AI-enabled acceleration and scaling: Jade Sleet launched campaigns through three front companies in a single week, Onyx Sleet generated dozens of tailored lures in minutes, Coral Sleet rapidly built a new capability to trojanize private source code repositories, and Diamond Sleet used AI to enhance tailored targeting workflows, including persona development and front company creation. Further, Onyx Sleet and Pearl Sleet are leveraging the open-source agentic AI penetration testing framework ARTEX to conduct operations, further indicating North Korea’s willingness to quickly adopt new AI technologies for their operations. The Democratic People’s Republic of Korea operates under extensive international sanctions and uses cyber operations and other illicit mechanisms to evade these restrictions and advance state objectives. Within this operating environment, North Korean threat actors have adopted new technologies that help sustain or advance existing operations. AI adoption by North Korean threat actors therefore largely supports existing goals and targeting priorities rather than representing a shift in actor motivations. North Korean threat actors conduct cyber operations primarily to generate revenue for the regime, collect strategic intelligence, and, in some cases, pursue politically motivated disruptive or destructive objectives. Across these objectives, North Korean threat actor tradecraft remains grounded in social engineering, malware delivery, and the abuse of legitimate tools. These operations commonly target cryptocurrency and financial organizations, information technology companies and software supply chains, government entities, and education-related organizations. Despite threat...",
-      "links": [
-        {
-          "label": "Stages of AI adoption by North Korean threat actors",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#stages-of-ai-adoption-by-north-korean-threat-actors"
-        },
-        {
-          "label": "AI use across North Korean threat operations",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ai-use-across-north-korean-threat-operations"
-        },
-        {
-          "label": "AI-assisted targeting and reconnaissance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ai-assisted-targeting-and-reconnaissance"
-        },
-        {
-          "label": "AI-assisted social engineering and identity deception",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ai-assisted-social-engineering-and-identity-deception"
-        },
-        {
-          "label": "AI-assisted software and tooling development",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ai-assisted-software-and-tooling-development"
-        },
-        {
-          "label": "AI-assisted operational scaling and analysis",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ai-assisted-operational-scaling-and-analysis"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
-        },
-        {
-          "label": "operationalize AI",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/03/06/ai-as-tradecraft-how-threat-actors-operationalize-ai/"
-        },
-        {
-          "label": "Jasper Sleet",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/06/30/jasper-sleet-north-korean-remote-it-workers-evolving-tactics-to-infiltrate-organizations/"
-        },
-        {
-          "label": "Diamond Sleet",
-          "url": "https://www.microsoft.com/en-us/security/blog/2023/11/22/diamond-sleet-supply-chain-compromise-distributes-a-modified-cyberlink-installer/"
-        },
-        {
-          "label": "Sapphire Sleet",
-          "url": "https://www.microsoft.com/en-us/security/blog/tag/sapphire-sleet/"
-        }
-      ]
-    },
-    {
       "title": "AKS Pod Scheduling Demystified",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/aks-pod-scheduling-demystified/ba-p/4567392",
       "published": "2026-10-29T15:55:51+00:00",
@@ -4927,77 +5615,6 @@
       ]
     },
     {
-      "title": "Siemens Mendix SAML Module",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
-      "published": "2026-10-29T12:00:00+00:00",
-      "summary": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Mendix SAML Module are affected: Mendix SAML (Mendix 10 compatible) vers:intdot/<4.2.4 (CVE-2026-89209) Mendix SAML (Mendix 11 compatible) vers:intdot/<4.2.4 (CVE-2026-89209) Mendix SAML (Mendix 9 compatible) vers:intdot/<3.6.29 (CVE-2026-89209) CVSS Vendor Equipment v3 6.8 Siemens Mendix SAML (Mendix 10 compatible) 1 Vulnerability Authentication Bypass by Capture-replay Background Critical Infrastructure Sectors: Critical Manufacturing, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-89209 Affected versions of the module do not properly protect against SAML assertion replay in IdP-initiated authentication flows. This could allow unauthenticated remote attackers to gain unauthorized access to the application by replaying a valid SAML response. Read More 3 Affected Products Mendix SAML (Mendix 10 compatible) < V4.2.4 Product Status: known_affected Remediations MitigationDisable IdP-initiated SSO Vendor fixUpdate to V4.2.4 or later version Mendix SAML (Mendix 11 compatible) < V4.2.4 Product Status: known_affected Remediations MitigationDisable IdP-initiated SSO Vendor fixUpdate to V4.2.4 or later version Mendix SAML (Mendix 9 compatible) < V3.6.29 Product Status: known_affected Remediations MitigationDisable IdP-initiated SSO Vendor fixUpdate to V3.6.29 or later version Additional Metrics Relevant CWE: CWE-294 Authentication Bypass by Capture-replay CVSS Version Base Score Base Severity Vector String 3.1 6.8 MEDIUM CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-302-01.json"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-294 Authentication Bypass by Capture-replay",
-          "url": "https://cwe.mitre.org/data/definitions/294.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-89209"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        },
-        {
-          "label": "proactive defense of ICS assets",
-          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
-        },
-        {
-          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
-          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
-        }
-      ]
-    },
-    {
       "title": "Hitachi Energy CoreTec Product",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
       "published": "2026-10-29T12:00:00+00:00",
@@ -5069,6 +5686,77 @@
         {
           "label": "cisa.gov/ics",
           "url": "https://www.cisa.gov/topics/industrial-control-systems"
+        }
+      ]
+    },
+    {
+      "title": "Siemens Mendix SAML Module",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+      "published": "2026-10-29T12:00:00+00:00",
+      "summary": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "View CSAF Summary Mendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Mendix SAML Module are affected: Mendix SAML (Mendix 10 compatible) vers:intdot/<4.2.4 (CVE-2026-89209) Mendix SAML (Mendix 11 compatible) vers:intdot/<4.2.4 (CVE-2026-89209) Mendix SAML (Mendix 9 compatible) vers:intdot/<3.6.29 (CVE-2026-89209) CVSS Vendor Equipment v3 6.8 Siemens Mendix SAML (Mendix 10 compatible) 1 Vulnerability Authentication Bypass by Capture-replay Background Critical Infrastructure Sectors: Critical Manufacturing, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-89209 Affected versions of the module do not properly protect against SAML assertion replay in IdP-initiated authentication flows. This could allow unauthenticated remote attackers to gain unauthorized access to the application by replaying a valid SAML response. Read More 3 Affected Products Mendix SAML (Mendix 10 compatible) < V4.2.4 Product Status: known_affected Remediations MitigationDisable IdP-initiated SSO Vendor fixUpdate to V4.2.4 or later version Mendix SAML (Mendix 11 compatible) < V4.2.4 Product Status: known_affected Remediations MitigationDisable IdP-initiated SSO Vendor fixUpdate to V4.2.4 or later version Mendix SAML (Mendix 9 compatible) < V3.6.29 Product Status: known_affected Remediations MitigationDisable IdP-initiated SSO Vendor fixUpdate to V3.6.29 or later version Additional Metrics Relevant CWE: CWE-294 Authentication Bypass by Capture-replay CVSS Version Base Score Base Severity Vector String 3.1 6.8 MEDIUM CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product...",
+      "links": [
+        {
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-302-01.json"
+        },
+        {
+          "label": "Read More",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-294 Authentication Bypass by Capture-replay",
+          "url": "https://cwe.mitre.org/data/definitions/294.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-89209"
+        },
+        {
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+        },
+        {
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        },
+        {
+          "label": "cisa.gov/ics",
+          "url": "https://www.cisa.gov/topics/industrial-control-systems"
+        },
+        {
+          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
+          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        },
+        {
+          "label": "proactive defense of ICS assets",
+          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+        },
+        {
+          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
+          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
         }
       ]
     },
@@ -5630,57 +6318,6 @@
       ]
     },
     {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "published": "2026-10-27T12:00:00+00:00",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-48356",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-48356"
-        },
-        {
-          "label": "CVE-2026-111497",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111497"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
-      ]
-    },
-    {
       "title": "Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
       "published": "2026-10-27T12:00:00+00:00",
@@ -5752,81 +6389,6 @@
         {
           "label": "CVSS:4.0/AV:L/AC:H/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
           "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:H/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        }
-      ]
-    },
-    {
-      "title": "EPICS Base",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
-      "published": "2026-10-27T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. The following versions of EPICS Base are affected: EPICS Base release <=7.0.10...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code. The following versions of EPICS Base are affected: EPICS Base release <=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598) CVSS Vendor Equipment v3 9.8 The EPICS Community EPICS Base release 3 Vulnerabilities Integer Overflow or Wraparound, Improper Handling of Length Parameter Inconsistency, Access of Resource Using Incompatible Type ('Type Confusion') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Global Vulnerabilities Expand All + CVE-2026-114595 In EPICS Base release 7.0.10 and prior, an integer overflow in network request processing can cause memory to be allocated with an incorrect size. Subsequent handling of attacker supplied data may result in memory corruption, denial of service, or potential remote code execution. Read More 1 Affected Product The EPICS Community EPICS Base release: <=7.0.10 Product Status: known_affected Remediations MitigationThe EPICS Community has made available updates to the epics-base GitHub repositories. Affected users should update to the 7.0.11 release. For more information, users should contact the EPICS Controls team https://epics-controls.org/support/. Mitigationhttps://github.com/epics-base/epics-base/pull/934 Mitigationhttps://github.com/epics-base/epics-base/pull/937 Mitigationhttps://github.com/epics-base/pvDataCPP/pull/109 Additional Metrics Relevant CWE: CWE-190 Integer Overflow or Wraparound CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.3 CRITICAL CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details CVE-2026-114596 In EPICS Base release 7.0.10 and prior, an improper validation of message length values during protocol parsing can trigger an integer overflow, resulting in an out-of-bounds memory write. Successful exploitation can cause process instability or denial of service. Read More 2 Affected Products The EPICS Community EPICS Base release: <=7.0.10 Product Status: known_affected Remediations MitigationThe EPICS Community has made available updates to the epics-base GitHub repositories. Affected users should update to the 7.0.11 release. For more information, users should contact...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-300-01.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-190 Integer Overflow or Wraparound",
-          "url": "https://cwe.mitre.org/data/definitions/190.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-114595"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-114596"
-        },
-        {
-          "label": "CWE-130 Improper Handling of Length Parameter Inconsistency",
-          "url": "https://cwe.mitre.org/data/definitions/130.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N"
         }
       ]
     },
@@ -6079,61 +6641,6 @@
       ]
     },
     {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "published": "2026-10-26T12:00:00+00:00",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching: CVE-2026-109618 – PHP Memory Corruption Vulnerability CVE-2026-109619 – PHP Stale Internal Request-State Vulnerability...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching: CVE-2026-109618 – PHP Memory Corruption Vulnerability CVE-2026-109619 – PHP Stale Internal Request-State Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "Critical Vulnerabilities in PHP Require Immediate Patching",
-          "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching"
-        },
-        {
-          "label": "CVE-2026-109618",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109618"
-        },
-        {
-          "label": "CVE-2026-109619",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109619"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
-      ]
-    },
-    {
       "title": "CVE-2026-111943: eMudhra intermediate CA key recovery in AWS trust bundles",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-150-aws/",
       "published": "2026-10-25T03:11:55+00:00",
@@ -6246,100 +6753,6 @@
       ],
       "tags": [
         "AWS Security"
-      ]
-    },
-    {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
-      "published": "2026-10-23T12:00:00+00:00",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-110447",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-110447"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
-      ]
-    },
-    {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "published": "2026-10-23T12:00:00+00:00",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-114625 Arista VeloCloud Orchestrator SQL Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-114625 Arista VeloCloud Orchestrator SQL Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-114625",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-114625"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
       ]
     },
     {
@@ -7185,30 +7598,6 @@
       ]
     },
     {
-      "title": "CVE-2026-102551 & CVE-2026-102552 - Issue with FreeRTOS-Plus-TCP",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-139-aws/",
-      "published": "2026-10-16T17:37:47+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "[Launched] Generally Available: External key management for Azure Key Vault Managed HSM",
       "link": "https://azure.microsoft.com/updates?id=574296",
       "published": "2026-10-16T16:50:27+00:00",
@@ -7233,10 +7622,10 @@
       ]
     },
     {
-      "title": "Post-quantum updates to our TLS guidance",
-      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
+      "title": "Using TLS to protect data",
+      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
+      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -7257,10 +7646,10 @@
       ]
     },
     {
-      "title": "Using TLS to protect data",
-      "link": "https://www.ncsc.gov.uk/guidance/using-tls-to-protect-data",
+      "title": "Post-quantum updates to our TLS guidance",
+      "link": "https://www.ncsc.gov.uk/blogs/post-quantum-updates-to-our-tls-guidance",
       "published": "2026-10-15T12:00:00+00:00",
-      "summary": "Recommended profiles to securely configure TLS for the most common versions and scenarios, with additional guidance for managing older versions.",
+      "summary": "The NCSC publishes its recommendations for configuring post-quantum cryptography in TLS. Now is time to migrate.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -7363,213 +7752,6 @@
       ],
       "tags": [
         "Splunk Security"
-      ]
-    },
-    {
-      "title": "Action may be required: Review who can create agents in Microsoft Entra",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1506733",
-      "published": "2026-10-13T22:14:34.210000+00:00",
-      "summary": "[What and why]Microsoft Entra is changing who can create agent blueprints by default. Starting November 4, default users will be able to create new agent blueprints unless an administrator turns off Users can create agent blueprints. This means that users without built-in or custom Entra roles will...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1506733",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]Microsoft Entra is changing who can create agent blueprints by default. Starting November 4, default users will be able to create new agent blueprints unless an administrator turns off Users can create agent blueprints. This means that users without built-in or custom Entra roles will be able to create new agent blueprints in their organization. From now until rollout begins, you can set your tenant preferences to prepare for this rollout. If you do not want users in your organization to create new agent blueprints and their identities, follow the instructions below. [Rollout schedule]Worldwide: Beginning in early November 2026 and expected to complete by late November 2026[Impact on your organization]Who is affectedOrganizations using Microsoft EntraDefault users who don't have a built-in or custom Microsoft Entra rolePlatforms and servicesMicrosoft EntraWhat will happenDefault users will be able to create agent blueprints unless an administrator turns off Users can create agent blueprints. If you set the toggle to No, default users will not be able to create new agents. Supported administrators and users assigned the Agent ID Developer role can continue to create them. If you change this toggle now, your tenant won't change right away. Your setting takes effect when the rollout begins in early November.[Action required and recommendations]If default users should be allowed to create agents in your organization, no action is required. Choosing to allow users to create agent blueprints will not begin until the functionality is available in your tenant.To restrict creation:Sign in to the Microsoft Entra admin center using this link.Go to Entra ID > Users > User settings.Under Default user role permissions, find Users can create agent blueprints.Set the toggle to No, then save the change.For more information and instructions on setting the toggle for your organization, see Manage who can create agent blueprints here.This change affects new agent blueprint creation by default users. It does not:Change or remove existing agent blueprints.Change who can create agent identities from existing blueprints.Block an app or an agent from creating identitiesAffect creation requirements within platforms such as Microsoft Foundry or Security Copilot, such as requiring licenses and Azure subscriptions.The new setting is independent of Users can register applications. Review both settings separately.Learn moreDelegate application management administrator permissions - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "Microsoft Entra admin center",
-          "url": "https://entra.microsoft.com/?exp.enableAgentIdentityBlueprintsUserSetting=true#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/UserSettings"
-        },
-        {
-          "label": "here",
-          "url": "https://learn.microsoft.com/entra/identity/role-based-access-control/delegate-app-roles#restrict-who-can-create-agents"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center",
-        "Microsoft Security Copilot"
-      ]
-    },
-    {
-      "title": "Microsoft Entra: Changes to AgentIdentity.CreateAsManager permission for agent identities",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1506728",
-      "published": "2026-10-13T22:12:41.560000+00:00",
-      "summary": "[What and why]Microsoft Entra Agent ID is enforcing tighter restrictions for autonomous creation of an agent’s own identities. Currently, all agents are granted AgentIdentity.CreateAsManager upon creation without administrator approval. Starting November 4, Microsoft Entra will no longer...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1506728",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]Microsoft Entra Agent ID is enforcing tighter restrictions for autonomous creation of an agent’s own identities. Currently, all agents are granted AgentIdentity.CreateAsManager upon creation without administrator approval. Starting November 4, Microsoft Entra will no longer automatically grant AgentIdentity.CreateAsManager to agent blueprint principals, and creation of identities will need an admin to grant consent.Agents that use app-only authentication to create their own agent identities must be explicitly granted the AgentIdentity.CreateAsManager Microsoft Graph application permission or move to another supported authorization model before enforcement reaches their tenant.[Rollout schedule]General Availability (Worldwide): Beginning in early November 2026 and expected to complete by late November 2026[Impact on your organization]Who is affectedOrganizations using Microsoft Entra No action is required if your organization doesn't have an agent that depends on the automatic AgentIdentity.CreateAsManager grant.Platforms and servicesMicrosoft EntraWhat will happenToday, an agent blueprint principal is granted AgentIdentity.CreateAsManager automatically. This implicit grant allows the principal to create agent identities without a tenant-admin granting an app-role assignment.After enforcement, an administrator must grant the Microsoft Graph application permission AgentIdentity.CreateAsManager to agents that needs this authority.This change:Makes app-only agent identity creation authority visible, auditable, and revocable.Makes AgentIdentity.CreateAsManager revocable if consentedAffects existing and future agents.Doesn't remove existing agent identities or agent blueprints.Doesn't remove the ability for agent identity blueprints to create agent identities, when AgentIdentity.CreateAsManager is explicitly granted by an administratorDoesn't affect an agent that uses a directory role to authorize creation of agent identities.[Action required and recommendations]No action is required if your organization doesn't have an agent that depends on the automatic AgentIdentity.CreateAsManager grant.Identify agents that create agent identities without a signed-in user.Sign in to the Microsoft Entra admin center.Go to Entra ID>Audit Logs.Set the Category to \"ApplicationManagement\"Set the Activity filter to \"Add Service Principal\"Find events where the Initiated By (actor) Type is Application and the Target is an agent identity.For each affected agent:Sign in to the Microsoft Entra admin center.Go to Entra ID>Agent blueprints>Search for your agent blueprint>Granted permissionsReview if the Agent has any other granted permissions that may allow for creation of agent identities. If there are no other permissions allowing for creation, this agent relies on AgentIdentity.CreateAsManager.Starting October 16, you may grant the explicit AgentIdentity.CreateAsManager Microsoft Graph application permission through tenant-wide admin consent or manual app-role creation. Granting it earlier will cause an error. A successful grant appears in the Granted Permissions table with “An administrator” in the Granted By column.Test app-only agent identity creation before enforcement begins.Update operational guidance for a failed request after enforcement.If an app-only request relies only on the automatic grant after enforcement reaches your tenant, the request will fail with a 403 authorization error.Learn moreFor more about how to grant your agents access to resources, visit Grant agents access to Microsoft 365 resources | Microsoft Learn. For the Microsoft Graph permission reference on AgentIdentity.CreateAsManager, visit Microsoft Graph permissions reference - Microsoft Graph | Microsoft Learn.[Compliance considerations]No specific compliance impacts have been identified for this configuration update.",
-      "links": [
-        {
-          "label": "Microsoft Entra admin center",
-          "url": "https://entra.microsoft.com/#view/Microsoft_AAD_IAM/AuditLogList.ReactView"
-        },
-        {
-          "label": "tenant-wide admin consent",
-          "url": "https://learn.microsoft.com/entra/identity/enterprise-apps/grant-admin-consent"
-        },
-        {
-          "label": "manual app-role creation",
-          "url": "https://learn.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0"
-        },
-        {
-          "label": "Grant agents access to Microsoft 365 resources | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/agent-id/grant-agent-access-microsoft-365"
-        },
-        {
-          "label": "Microsoft Graph permissions reference - Microsoft Graph | Microsoft Learn",
-          "url": "https://learn.microsoft.com/graph/permissions-reference#agentidentitycreateasmanager"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "(Updated) Microsoft Entra: Allow password change after secure sign-in with My Sign-Ins",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1437671",
-      "published": "2026-10-13T16:45:08.037000+00:00",
-      "summary": "Updated October 9, 2026: We have updated the content. Thank you for your patience. [What and Why]We're introducing a new Microsoft Entra capability that allows password change after secure sign-in directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key,...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1437671",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated October 9, 2026: We have updated the content. Thank you for your patience. [What and Why]We're introducing a new Microsoft Entra capability that allows password change after secure sign-in directly from My Sign-Ins using an existing strong credential, such as a passkey, FIDO2 security key, or Windows Hello for Business. Users can complete this action even if they don't know their current password and without using self-service password reset (SSPR) or contacting the helpdesk.Many organizations are adopting allowed password changes after secure sign-ins but still maintain passwords for legacy applications and services. This update helps reduce password-related support requests and removes a common barrier to adoption. The feature is disabled by default and requires administrator enablement before users can access it.[Rollout Schedule]General Availability (Worldwide and GCC): Beginning end of October 2026 (previously mid-October) and expected to complete by end of November 2026 (previously late October)[Impact on Your Organization]Who is affectedMicrosoft Entra administrators who manage password change settingsUsers who have a registered allowed password change after secure sign-in method (passkey, FIDO2 security key, or Windows Hello for Business) and also maintain a passwordOrganizations that choose to enable the featurePlatforms/ServicesMicrosoft EntraMy Sign-Ins (mysignins.microsoft.com)What will happenBecause this feature is off by default, there is no change to your users' experience unless you turn it on. After the feature is enabled, eligible users will see a new Change password option in My Sign-Ins.Users can authenticate set a new password without knowing their existing password.Users are not required to enroll in or use SSPR to complete this action.Administrators can choose to enable or disable the capability through Microsoft Entra management interfaces available at release.Authentication continues to require a strong password change method, such as a passkey, FIDO2 security key, or Windows Hello for Business.The setting is tenant-wide: you can turn it on for your entire tenant or leave it off for everyone. There is no per-user or per-group scoping. [Action Required/Recommendations]No action is required.If your organization plans to support allowed password changes after secure sign-in:Review your password management and allowed password changes after secure sign-in strategy.Evaluate whether enabling this capability aligns with your organization's security and support requirements.Communicate the new self-service capability to helpdesk and support teams.Update internal user guidance and documentation as needed.If your organization chooses to offer allowed password changes after secure sign-in, enable the feature through the Microsoft Entra admin experience or supported APIs when it becomes available in October 2026.Learn more Microsoft Learn documentation will be available when the feature releases in October. [Compliance Considerations]QuestionAnswerDoes the change include an admin control?Yes. The feature is disabled by default and requires explicit administrator enablement.Does the change modify how users can access or correct their personal data?Yes. Users gain a new self-service method to update their password using an existing allowed password change after secure sign-in.",
-      "links": [],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "Check This Out! (CTO!) Guide (October 2026)",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/check-this-out-cto-guide-october-2026/ba-p/4564188",
-      "published": "2026-10-13T15:24:57+00:00",
-      "summary": "Member: TysonPaul | Microsoft Community Hub Azure Key Vault Control Plane API Update: Required Upgrade for Azure CLI and Azure PowerShell Users Team Blog: Azure Tools Author: Alex-wdy Published: 09/01/2026 Summary: Azure Key Vault control plane API versions before 2026-02-01 will stop working on...",
-      "author": "TysonPaul",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Endpoint",
-        "Threat Intelligence"
-      ],
-      "body": "Member: TysonPaul | Microsoft Community Hub Azure Key Vault Control Plane API Update: Required Upgrade for Azure CLI and Azure PowerShell Users Team Blog: Azure Tools Author: Alex-wdy Published: 09/01/2026 Summary: Azure Key Vault control plane API versions before 2026-02-01 will stop working on February 27, 2027. This affects only management operations, such as creating/updating vaults, network rules, access policies, and RBAC settings—not data plane operations like reading or writing secrets, keys, or certificates. Users of Azure CLI or Az PowerShell must upgrade before the deadline: Azure CLI to 2.90.0+ using `az upgrade`, or Az.KeyVault to 6.6.1+ / Az package to 16.3.0+ using `Update-Module`. Without upgrading, Key Vault management operations using older APIs will fail, with no opt-out or extension available. Introducing bicep docs: generate documentation from your Bicep modules Team Blog: Azure Tools Author: jaredfholgate Published: 09/24/2026 Summary: Bicep CLI v0.47.16 introduces the experimental `bicep docs generate` command, which creates documentation directly from Bicep modules. It generates README files covering resources, parameters, types, outputs, examples, references, and metadata, helping prevent documentation drift. Users can preview output, customize destinations, document multiple modules with patterns, and enforce freshness in CI. Documentation can be customized with Scriban templates, custom values, and alternative outputs like JSON or HTML. Usage examples are automatically discovered, and the feature is also available via JSON-RPC. Microsoft is seeking feedback as the feature evolves. System Center 2022 Update Rollup 4 Team Blog: System Center Author: AakashMSFT Published: 09/29/2026 Summary: System Center 2022 Update Rollup 4 delivers stability, security, and compatibility improvements across the suite. Virtual Machine Manager adds support for newer Linux distributions, improves VM deployment/networking, console stability, authentication, and SCOM integration. Operations Manager gains OpenSSL 3.x distro support, Ubuntu 26 support, improved web console reliability, Linux monitoring, and admin-only PowerShell widget editing. Service Manager adds MSOLEDBSQL19 and Microsoft Graph API support. Orchestrator improves runbook parameter handling and updates its command-line wizard to 64-bit. Data Protection Manager enhances SQL encryption support, recovery reliability, console/PowerShell stability, and accessibility. You Get One Exchange...",
-      "links": [
-        {
-          "label": "Member: TysonPaul | Microsoft Community Hub",
-          "url": "https://techcommunity.microsoft.com/users/tysonpaul/322025"
-        },
-        {
-          "label": "Azure Key Vault Control Plane API Update: Required Upgrade for Azure CLI and Azure PowerShell Users",
-          "url": "https://techcommunity.microsoft.com/blog/azuretoolsblog/azure-key-vault-control-plane-api-update-required-upgrade-for-azure-cli-and-azur/4552476"
-        },
-        {
-          "label": "Azure Tools",
-          "url": "https://techcommunity.microsoft.com/category/azure/blog/azuretoolsblog"
-        },
-        {
-          "label": "Alex-wdy",
-          "url": "https://techcommunity.microsoft.com/users/alex-wdy/1467559"
-        },
-        {
-          "label": "Introducing bicep docs: generate documentation from your Bicep modules",
-          "url": "https://techcommunity.microsoft.com/blog/azuretoolsblog/introducing-bicep-docs-generate-documentation-from-your-bicep-modules/4559737"
-        },
-        {
-          "label": "jaredfholgate",
-          "url": "https://techcommunity.microsoft.com/users/jaredfholgate/1621258"
-        },
-        {
-          "label": "System Center 2022 Update Rollup 4",
-          "url": "https://techcommunity.microsoft.com/blog/systemcenterblog/system-center-2022-update-rollup-4/4560834"
-        },
-        {
-          "label": "System Center",
-          "url": "https://techcommunity.microsoft.com/category/systemcenter/blog/systemcenterblog"
-        },
-        {
-          "label": "AakashMSFT",
-          "url": "https://techcommunity.microsoft.com/users/aakashmsft/464069"
-        },
-        {
-          "label": "You Get One Exchange Left: Rethinking Azure Commitments Before February 2027",
-          "url": "https://techcommunity.microsoft.com/blog/finopsblog/you-get-one-exchange-left-rethinking-azure-commitments-before-february-2027/4552401"
-        },
-        {
-          "label": "FinOps",
-          "url": "https://techcommunity.microsoft.com/category/azure/blog/finopsblog"
-        },
-        {
-          "label": "Madhura Amlekar",
-          "url": "https://techcommunity.microsoft.com/users/madhura%20amlekar/196693"
-        }
       ]
     }
   ]
