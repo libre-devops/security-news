@@ -1,8 +1,695 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-13T14:14:41.031773+00:00",
-  "totalArticles": 187,
+  "lastUpdated": "2026-11-13T23:23:49.731661+00:00",
+  "totalArticles": 188,
   "articles": [
+    {
+      "title": "Microsoft Purview Referential Architecture Diagrams",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/microsoft-purview-referential-architecture-diagrams/ba-p/4510925",
+      "published": "2026-11-13T21:36:31+00:00",
+      "summary": "The Microsoft Purview architecture diagrams provide a referential view of how data classification, sensitivity labeling, Data Loss Prevention (DLP) and Insider Risk operate across Microsoft 365 workloads. These diagrams are intended to help organizations understand where policy evaluation occurs,...",
+      "author": "MaximeBombardier",
+      "source": "Microsoft Purview",
+      "source_id": "purview",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Data Security",
+      "board_id": "microsoftpurviewblog",
+      "products": [
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 11
+        },
+        {
+          "id": "defender-cloud-apps",
+          "name": "Microsoft Defender for Cloud Apps",
+          "score": 11
+        },
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender for Cloud",
+        "Microsoft Defender for Cloud Apps",
+        "Microsoft Purview"
+      ],
+      "body": "The Microsoft Purview architecture diagrams provide a referential view of how data classification, sensitivity labeling, Data Loss Prevention (DLP) and Insider Risk operate across Microsoft 365 workloads. These diagrams are intended to help organizations understand where policy evaluation occurs, how signals flow between services, and how enforcement is applied consistently. Rather than prescribing a single deployment model, the diagrams illustrate common architectural patterns used to protect sensitive data across endpoints, email, and collaboration services. 2026-11-13 - We've updated this post with updated sections and updated visuals and net new architecture 2026-09-09 - New Classification and auto-labeling interactive referential architecture now available here: Scaling classification and labeling: an interactive reference architecture update | Microsoft Community Hub. Classification: How Content Sensitivity Is Determined This diagram shows how content is classified across Microsoft 365 workloads and connected locations. Key points highlighted in the diagram: Classification can occur in the client, in transport, or in the service, depending on workload and policy. Multiple classifier types are supported, including Sensitive Information Types (SITs) - deterministic patterns and keywords, and several advanced classifier models such as Exact Data Match, document fingerprinting and trainable classifiers. Classification informs about what's in the content and results are reused by downstream controls such as DLP, auto-labeling, data lifecycle management, eDiscovery and more. Classification is performed real time or near real time as content is created, modified, or transmitted. Classification acts as the core signal for Purview data protection. All enforcement decisions shown in later diagrams rely on these classification outcomes. Sensitivity Labelling: A Unified Control Plane The labeling diagram illustrates how sensitivity labels are applied and enforced consistently across Microsoft 365. Key points highlighted in the diagram: Labels are organizational signals. they are end user facing and provides a consistent approach in training users on data security hygiene. They are your unified control plane across your data estate. Labels can be applied manually, with layered defaults, and/or automatically, depending on workload and configuration. Labels travel with content across SharePoint, OneDrive, Teams, Outlook, Office apps and more. Label configuration...",
+      "links": [
+        {
+          "label": "Scaling classification and labeling: an interactive reference architecture update | Microsoft Community Hub",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/scaling-classification-and-labeling-an-interactive-reference-architecture-update/4560925"
+        },
+        {
+          "label": "layered data protection",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-purview-blog/close-the-gaps-layered-data-protection-with-microsoft-purview-across-endpoint-br/4550997"
+        },
+        {
+          "label": "downloadable in PowerPoint format here",
+          "url": "https://livesend.microsoft.com/i/VhSPp2UmI7hq1o0mFo6r9y___hw3iy2fXlhbamKC0xvIZXHCrkbGp1iPLUSSIGNEn4HN8ekchZ1zxZcdueUz8WRr2FIzxcYif8GjGxHTJoKGVv9FDrjewWHKD9ArsKJff5g7exAC6"
+        },
+        {
+          "label": "Purview Deployment blueprints here",
+          "url": "https://aka.ms/PurviewBlueprints"
+        }
+      ]
+    },
+    {
+      "title": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
+      "published": "2026-11-13T21:31:44+00:00",
+      "summary": "SCKit abuses ScreenConnect to deploy unauthorized remote access and target technicians. Explore the attack chain, mitigations, and Microsoft Defender XDR hunting. The post SCKit abuses ScreenConnect to deploy remote access and target technician sessions appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Security Research, Sagar Patil and Jeremiah Jasmin",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Defender XDR"
+      ],
+      "body": "In this article ScreenConnect architecture and attack surfacesAttack chain overviewMitigation and protection guidanceIndicators of compromise and supporting artifactsReferencesLearn More Beginning on November 11, 2026, ConnectWise reported an active campaign of a threat actor gaining unauthorized access to cloud-hosted ConnectWise ScreenConnect instances belonging to managed service providers (MSPs). Microsoft Threat Intelligence has confirmed ConnectWise’s reported activity and we have also observed threat actors abusing ScreenConnect, a legitimate remote-support application, to install unauthorized remote-access clients and deploy a malicious worm, SCKit, on ConnectWise customer managed endpoints. Additionally, Microsoft analyzed the malicious worm’s behavior: deployment starts with commands issued through ScreenConnect to silently install an identical client connected to threat actor-controlled infrastructure. A batch launcher retrieves a PowerShell decoder that decrypts and extracts SCKit using device-specific key material. The toolkit establishes persistence through scheduled tasks and registry Run entries and deploys RelayTrap, a component designed to deliver a malicious payload to a connecting technician. We have identified that the worm targets IT support technician workstations using the hijacked authenticated ScreenConnect Session and uses the victim’s management console to distribute payloads to other managed devices. The resulting access to either target enables threat actors to remotely administer affected endpoints, execute commands, and deploy further tools independently of the legitimate support instance. Defenders should investigate technician workstations and downstream affected endpoints. Removing an unauthorized client alone does not remove the toolkit’s persistence or invalidate exposed web sessions. In this blog, we examine SCKit’s attack chain and payload components and provide mitigation guidance, indicators of compromise, and Microsoft Defender XDR advanced hunting queries to help organizations identify and disrupt this activity. ScreenConnect architecture and attack surfaces ScreenConnect, formerly ConnectWise Control, is a remote-support and access platform used by MSPs to administer customer devices, often alongside remote monitoring and management (RMM) software. Its operating model has three parts: Management instance. A cloud-hosted or on-premises ScreenConnect server provides the web console and manages sessions. Its relay...",
+      "links": [
+        {
+          "label": "ScreenConnect architecture and attack surfaces",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#screenconnect-architecture-and-attack-surfaces"
+        },
+        {
+          "label": "Attack chain overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Indicators of compromise and supporting artifacts",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise-and-supporting-artifacts"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "remote commands from the web console",
+          "url": "https://www.screenconnect.com/blog/6-tips-for-connectwise-control-partners"
+        },
+        {
+          "label": "Extensions",
+          "url": "https://www.screenconnect.com/features/extensions"
+        },
+        {
+          "label": "ConnectWise’s advisory",
+          "url": "https://www.connectwise.com/company/trust/advisories"
+        },
+        {
+          "label": "vendor bulletin",
+          "url": "https://www.connectwise.com/company/trust/security-bulletins/2026-09-08-screenconnect-bulletin"
+        },
+        {
+          "label": "requirements for protecting antivirus exclusions",
+          "url": "https://learn.microsoft.com/defender-endpoint/tamper-protection-antivirus-exclusions"
+        },
+        {
+          "label": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
+          "url": "https://security.microsoft.com/threatanalytics3/fb63cbf6-12fe-4ad2-b26a-6eb4cb7b8257"
+        }
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-125342: Uninitialized resource",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125342",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-125344: Type confusion",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125344",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-125348: Out of bounds write",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-125348",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126840: Out of bounds write",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126840",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126841: Out of bounds read",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126841",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126843: Type confusion",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126843",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126844: Uninitialized resource",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126844",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126845: Uninitialized resource",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126845",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126847: Type confusion",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126847",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126848: Uninitialized resource",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126848",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126849: Type confusion",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126849",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126851: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126851",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126852: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126852",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126853: Uninitialized resource",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126853",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126854: Incorrect authorization",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126854",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126856: Incomplete cleanup",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126856",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126857: Out of bounds read",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126857",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126858: Uninitialized resource",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126858",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126859: Link following",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126859",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium CVE-2026-126863: Use after free",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126863",
+      "published": "2026-11-13T16:00:00+00:00",
+      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Capping tempdb in SQL Server 2025: Resource Governor in Standard Edition",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/capping-tempdb-in-sql-server-2025-resource-governor-in-standard/ba-p/4573219",
+      "published": "2026-11-13T15:03:46+00:00",
+      "summary": "The situation is familiar. One query spills to disk, tempdb grows until the volume fills and every other session on the instance starts failing. The engine has a lever for this since 2008: Resource Governor But for years years it was only available in Enterprise edition. If you were running...",
+      "author": "RyadB",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "The situation is familiar. One query spills to disk, tempdb grows until the volume fills and every other session on the instance starts failing. The engine has a lever for this since 2008: Resource Governor But for years years it was only available in Enterprise edition. If you were running Standard the only solution was monitoring alert. SQL Server 2025 changed that. Resource Governor is now available in Standard (and Standard Developer) edition and a new workload group setting caps how much tempdb data space a group of sessions can consume. However, there is a catch you should know before starting. On a default instance, the percentage form of the limit is stored but never enforced (even Reconfigure succeed), just a warning in the error log. Good to know What changed Two separate changes landed. Resource Governor moved down the edition ladder. This is now available in Enterprise, Enterprise Developer, Standard and Standard Developer. But tempdb space resource governance is new. Two new arguments on CREATE WORKLOAD GROUP and ALTER WORKLOAD GROUP, GROUP_MAX_TEMPDB_DATA_MB and GROUP_MAX_TEMPDB_DATA_PERCENT allow to cap the total tempdb data space consumed by all sessions in that group. How the limit behaves It is cumulative per group, not per request. The documentation is precise \"The limit is for the total space consumed in tempdb by all sessions in a workload group.\" A session behaving correctly can be aborted because other sessions in its group already spent the budget. That is the intended design, you are protecting the instance not limiting individual queries. Enforcement is an abort, not a throttle. A request that would push the group over its limit aborts with error 1138, severity 17: Could not allocate a new page for database 'tempdb' because that would exceed the limit set for workload group <groupName> Accounting is in 8 KB pages. A page holding 1 row still costs 8 KB. Space is charged for temporary tables, table variables, table-valued parameters, cursors, non-temporary tables created in tempdb and structures such as spools, spills, worktables and workfiles. Another good thing to know: for global temporary tables and regular tables in tempdb, space is charged to the workload group that inserted the first row even if sessions in other groups add, modify or remove rows afterwards. If the group is dropped while the table still exists then the space stops being charged to anyone. Governance applies to tempdb data files only, not the transaction log....",
+      "links": []
+    },
+    {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-11-13T12:00:00+00:00",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-114713 UnrealIRCd Improper Neutralization of Delimiters Vulnerability CVE-2026-123039 Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+      "links": [
+        {
+          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "CVE-2026-114713",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-114713"
+        },
+        {
+          "label": "CVE-2026-123039",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-123039"
+        },
+        {
+          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
+          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
+        },
+        {
+          "label": "specified criteria",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
+        },
+        {
+          "label": "KEV Nomination Form",
+          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
+        }
+      ]
+    },
     {
       "title": "Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice multi-factor authentication",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1551151",
@@ -1404,30 +2091,6 @@
           "label": "Refer to the article",
           "url": "https://aws.amazon.com/security/security-bulletins/2026-176-aws/"
         }
-      ]
-    },
-    {
-      "title": "ADV990001 Latest Servicing Stack Updates",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/ADV990001",
-      "published": "2026-11-10T16:00:00+00:00",
-      "summary": "Advisory updated to announce new versions of Servicing Stack Updates are available. Please see the FAQ for details.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
@@ -3184,12 +3847,12 @@
       "published": "2026-11-05T16:00:00+00:00",
       "summary": "Microsoft Threat Intelligence observed a sharp rise in email-based phishing activity at the end of Q3 2026 (July – September), even as QR code phishing declined, CAPTCHA-gated phishing recovered, and malicious messages spoofing familiar business-service sender domains exposed risks associated with...",
       "author": "Microsoft Threat Intelligence and Microsoft Defender Security Research Team",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
@@ -3205,43 +3868,43 @@
       "links": [
         {
           "label": "Spoofed sender domains",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#spoofed-sender-domains"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#spoofed-sender-domains"
         },
         {
           "label": "QR code phishing attacks",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#qr-code-phishing-attacks"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#qr-code-phishing-attacks"
         },
         {
           "label": "CAPTCHA-gated phishing tactics",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#captcha-gated-phishing-tactics"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#captcha-gated-phishing-tactics"
         },
         {
           "label": "Malicious payloads",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#malicious-payloads"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#malicious-payloads"
         },
         {
           "label": "Business contact impersonation",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#business-contact-impersonation"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#business-contact-impersonation"
         },
         {
           "label": "Microsoft Teams threats",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-teams-threats"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-teams-threats"
         },
         {
           "label": "Notable phishing campaigns",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#notable-phishing-campaigns"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#notable-phishing-campaigns"
         },
         {
           "label": "Defending against email and collaboration threats",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#defending-against-email-and-collaboration-threats"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#defending-against-email-and-collaboration-threats"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
         },
         {
           "label": "Indicators of compromise (IOCs)",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise-iocs"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise-iocs"
         },
         {
           "label": "Shifting tactics and other trends ›",
@@ -3250,37 +3913,6 @@
         {
           "label": "device code phishing",
           "url": "https://techcommunity.microsoft.com/blog/CoreInfrastructureandSecurityBlog/device-code-flow-the-gift-that-keeps-on-giving-%E2%80%94-to-attackers/4540949"
-        }
-      ]
-    },
-    {
-      "title": "Post-Quantum Questions to Ask Your Vendors",
-      "link": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
-      "published": "2026-11-05T12:00:00+00:00",
-      "summary": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quantum computing advances, widely used public-key cryptography will become vulnerable to compromise from cryptographically relevant quantum computers (CRQCs). To protect their systems and data, organizations must plan for and transition to PQC—which includes algorithms capable of withstanding both classical computing and quantum-enabled threats—before CRQCs become available. Many organizations rely on third-party vendors for managed services, cloud capabilities, and other cryptography-dependent products and services. Cryptography is also embedded in systems and devices that are difficult to update, tied to long asset lifecycles, and require vendor support or replacement—such as industrial control systems and Internet of Things (IoT) devices. Reliance on vendors means that effective PQC transition depends on vendor readiness, and early, structured engagement with these vendors is critical to planning efforts. Organizations can use the vendor-neutral questions outlined in this guidance to determine whether a vendor understands quantum-related risks, maintains transparency over its cryptographic implementations, and supports a secure, cost-effective and timely transition to PQC. Visit CISA’s PQC Initiative page for additional resources.",
-      "links": [
-        {
-          "label": "PQC Initiative page",
-          "url": "https://www.cisa.gov/topics/risk-management/quantum"
         }
       ]
     },
@@ -3362,6 +3994,37 @@
         {
           "label": "CPG 3.F",
           "url": "https://www.cisa.gov/cybersecurity-performance-goals-2-0-cpg-2-0#ImplementMultifactorAuthentication3F"
+        }
+      ]
+    },
+    {
+      "title": "Post-Quantum Questions to Ask Your Vendors",
+      "link": "https://www.cisa.gov/resources-tools/resources/post-quantum-questions-ask-your-vendors",
+      "published": "2026-11-05T12:00:00+00:00",
+      "summary": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "CISA, the Australian Signals Directorate’s Australian Cyber Security Centre (ASD’s ACSC) and the National Security Agency (NSA) released joint guidance and an accompanying quick-reference list to help organizations assess vendor readiness for transitioning to post-quantum cryptography (PQC). As quantum computing advances, widely used public-key cryptography will become vulnerable to compromise from cryptographically relevant quantum computers (CRQCs). To protect their systems and data, organizations must plan for and transition to PQC—which includes algorithms capable of withstanding both classical computing and quantum-enabled threats—before CRQCs become available. Many organizations rely on third-party vendors for managed services, cloud capabilities, and other cryptography-dependent products and services. Cryptography is also embedded in systems and devices that are difficult to update, tied to long asset lifecycles, and require vendor support or replacement—such as industrial control systems and Internet of Things (IoT) devices. Reliance on vendors means that effective PQC transition depends on vendor readiness, and early, structured engagement with these vendors is critical to planning efforts. Organizations can use the vendor-neutral questions outlined in this guidance to determine whether a vendor understands quantum-related risks, maintains transparency over its cryptographic implementations, and supports a secure, cost-effective and timely transition to PQC. Visit CISA’s PQC Initiative page for additional resources.",
+      "links": [
+        {
+          "label": "PQC Initiative page",
+          "url": "https://www.cisa.gov/topics/risk-management/quantum"
         }
       ]
     },
@@ -3548,462 +4211,6 @@
       "source_kind": "rss",
       "vendor": "Microsoft",
       "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119260: Use after free",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119260",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-118321: Use after free",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118321",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-118314: Incorrect reference resolution",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118314",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-118309: Incorrect reference resolution",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-118309",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119261: Improper input validation",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119261",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119262: Improper input validation",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119262",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119263: Memory corruption",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119263",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119264: Memory corruption",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119264",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119265: Memory corruption",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119265",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119266: Use after free",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119266",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119267: Memory corruption",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119267",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119268: Integer overflow",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119268",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119269: Use after free",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119269",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119270: Improper input validation",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119270",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119271: Use after free",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119271",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-119272: Out of bounds read",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-119272",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-76024: Memory corruption",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76024",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-76025: Use after free",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76025",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-76026: Memory corruption",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-76026",
-      "published": "2026-11-04T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
       "board_id": null,
       "products": [
         {
@@ -5150,81 +5357,6 @@
       ]
     },
     {
-      "title": "From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
-      "published": "2026-10-30T16:11:44+00:00",
-      "summary": "Teams support impersonation led to remote access, malicious runtime execution, and Certificate Services abuse through authentication relay and Kerberos. The post From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Security Research, Sagar Patil, Jesse Birch and Tal Tzhori",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Activity overviewAttack chain overviewPortable runtime staging and execution variantsHost discovery and AD CS assessmentCase 1: ESC1 abuse and the cost of an identity exclusionCase 2: PetitPotam and ESC8 turn a workstation into a domain-controller identityWhy the response outcomes differedActionable investigation methodsReferencesLearn More Microsoft Threat Intelligence investigated two human-operated intrusions in which threat actors used Microsoft Teams messages and calls to impersonate IT or help desk personnel and socially engineer users into granting interactive remote access, primarily through Quick Assist. Once connected, the threat actors staged portable Python, Bun, or Java runtimes, performed host and network discovery, and assessed Active Directory Certificate Services (AD CS) for certificate-based authentication paths. Although the incidents began with the same social-engineering and remote-access pattern, they diverged at the certificate layer. In Case 1, the threat actor abused an Enterprise CA Security Configuration 1 (ESC1) -vulnerable certificate template to obtain authentication certificates for privileged accounts and performed DCSync. In Case 2, the threat actor used PetitPotam, a technique that causes a Windows server to authenticate to an attacker-controlled system. The attacker relayed the domain controller’s New Technology (NT) LAN Manager (NTLM) authentication to AD CS Web Enrollment (ESC8), obtained a certificate for the domain-controller account, and used it for certificate-based Kerberos authentication (PKINIT – Public Key Cryptography for Initial Authentication). This intrusion pattern is high impact because a user-approved remote session can become certificate-backed access to privileged identities and domain infrastructure. In Case 1, Microsoft Defender attack disruption restricted covered identities and blocked substantial follow-on activity, but a privileged identity excluded from automated containment remained usable and later supported data exfiltration. In Case 2, Defender generated ESC8-related alerts, after which the customer isolated the associated workstation and no further progression was observed. The activity did not exploit a vulnerability in Microsoft Teams; instead, it relied on social engineering and insecure or overly permissive AD CS configurations. In this blog, we analyze the shared attack chain, the ESC1 and ESC8 certificate-abuse paths, and the different response outcomes. We also...",
-      "links": [
-        {
-          "label": "Activity overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#activity-overview"
-        },
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Portable runtime staging and execution variants",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#portable-runtime-staging-and-execution-variants"
-        },
-        {
-          "label": "Host discovery and AD CS assessment",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#host-discovery-and-ad-cs-assessment"
-        },
-        {
-          "label": "Case 1: ESC1 abuse and the cost of an identity exclusion",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#case-1-esc1-abuse-and-the-cost-of-an-identity-exclusion"
-        },
-        {
-          "label": "Case 2: PetitPotam and ESC8 turn a workstation into a domain-controller identity",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#case-2-petitpotam-and-esc8-turn-a-workstation-into-a-domain-controller-identity"
-        },
-        {
-          "label": "Why the response outcomes differed",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#why-the-response-outcomes-differed"
-        },
-        {
-          "label": "Actionable investigation methods",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#actionable-investigation-methods"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
-        },
-        {
-          "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "https://support.microsoft.com/help/5005413",
-          "url": "https://support.microsoft.com/help/5005413"
-        },
-        {
-          "label": "https://learn.microsoft.com/defender-for-identity/security-posture-assessments/certificates",
-          "url": "https://learn.microsoft.com/defender-for-identity/security-posture-assessments/certificates"
-        }
-      ]
-    },
-    {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "link": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
       "published": "2026-10-30T12:00:00+00:00",
@@ -5655,57 +5787,6 @@
       ]
     },
     {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "published": "2026-10-29T12:00:00+00:00",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability CVE-2026-76418 Cisco Secure Firewall ASA Software and...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability CVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://edit.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-97229",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-97229"
-        },
-        {
-          "label": "CVE-2026-76418",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-76418"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://edit.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://edit.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
-      ]
-    },
-    {
       "title": "Hitachi Energy CoreTec Product",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
       "published": "2026-10-29T12:00:00+00:00",
@@ -5777,6 +5858,57 @@
         {
           "label": "cisa.gov/ics",
           "url": "https://www.cisa.gov/topics/industrial-control-systems"
+        }
+      ]
+    },
+    {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-10-29T12:00:00+00:00",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability CVE-2026-76418 Cisco Secure Firewall ASA Software and...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability CVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+      "links": [
+        {
+          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
+          "url": "https://edit.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "CVE-2026-97229",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-97229"
+        },
+        {
+          "label": "CVE-2026-76418",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-76418"
+        },
+        {
+          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
+          "url": "https://edit.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
+        },
+        {
+          "label": "specified criteria",
+          "url": "https://edit.cisa.gov/known-exploited-vulnerabilities"
+        },
+        {
+          "label": "KEV Nomination Form",
+          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
         }
       ]
     },
@@ -6405,81 +6537,6 @@
         {
           "label": "Get the templates and setup guides on GitHub",
           "url": "https://github.com/Azure/Azure-Sentinel/tree/master/Tools/Microsoft%20Defender%20for%20Office%20365"
-        }
-      ]
-    },
-    {
-      "title": "Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
-      "published": "2026-10-27T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with,...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system. The following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32, BizViz, Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, MobileHMI, IoTWorX, GENESIS32 and BizViz are affected: Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS64 >=10.97|<=10.97.2 (CVE-2023-4863) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions ICONICS Suite >=10.97|<=10.97.2 (CVE-2023-4863) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS <=11.03 (CVE-2026-16436, CVE-2026-16437) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS64 <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions ICONICS Suite <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions Hyper Historian <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions AnalytiX <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions MobileHMI <=10.97.3 (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions IoTWorX <=10.97.3 (CVE-2026-16436, CVE-2026-16437) Mitsubishi Electric MC Works64 vers:all/* (CVE-2026-16436, CVE-2026-16437, CVE-2026-16438) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS32 vers:all/* (CVE-2026-16436, CVE-2026-16437) Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions BizViz vers:all/* (CVE-2026-16436, CVE-2026-16437) CVSS Vendor Equipment v3 9.1 Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32, BizViz, Mitsubishi Electric Iconics Digital...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-300-02.json"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-787 Out-of-bounds Write",
-          "url": "https://cwe.mitre.org/data/definitions/787.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:L/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2023-4863"
-        },
-        {
-          "label": "CWE-640 Weak Password Recovery Mechanism for Forgotten Password",
-          "url": "https://cwe.mitre.org/data/definitions/640.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-16436"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:L/AC:H/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:L/AC:H/AT:N/PR:H/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
         }
       ]
     },
@@ -7758,67 +7815,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Secure Linux desktops with Microsoft Defender",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-blog/secure-linux-desktops-with-microsoft-defender/ba-p/4560822",
-      "published": "2026-10-14T16:00:00+00:00",
-      "summary": "As more developers begin to use Linux desktops, they become more attractive to attackers: high-privilege, high-value, and easy for admins to overlook. A developer using Linux for day-to-day development may interact with source code repositories, continuous integration and continuous delivery...",
-      "author": "Megha_Priya",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Endpoint"
-      ],
-      "body": "As more developers begin to use Linux desktops, they become more attractive to attackers: high-privilege, high-value, and easy for admins to overlook. A developer using Linux for day-to-day development may interact with source code repositories, continuous integration and continuous delivery (CI/CD) pipelines, cloud infrastructure, container environments and internal development platforms. If their workstation is compromised, an attacker doesn’t just gain access to a laptop, but a foothold in the pipelines that build and ship the organization’s software. As Linux adoption expands beyond the data center, organizations need a consistent approach to protecting Linux wherever it is used. That’s why we’ve extended our industry-leading endpoint protection in Microsoft Defender, bringing enterprise-grade protection, detection, vulnerability management and response capabilities to Linux workstations. Enterprise-grade protection for Linux desktops Defender support for Linux workstations spans all three key areas of endpoint security: Protect and detect Endpoint detection and response (EDR) Microsoft Defender next-gen antivirus Threat analytics Exposure management Microsoft Defender Vulnerability Management Device inventory Security settings management Investigate and respond Advanced hunting Live response Device isolation The result is broader Linux protection, delivered through the tools and processes security teams already trust. Give security teams a consistent and simplified view across the endpoint estate With Defender on Linux desktops, organizations can: Onboard quickly using the deployment methods already validated for Linux servers Reduce operational complexity by protecting Linux desktops and servers with one agent and one security operations experience Improve visibility across heterogeneous endpoint environments Strengthen developer workstation security where users interact with source code, cloud infrastructure and other critical resources Accelerate investigation and response through a consistent security operations experience Defender protects Linux desktops with the same deployment organizations already use to protect Linux servers. There is no separate desktop-specific agent to deploy or maintain, and existing deployment packages, deployment methods and security capabilities on Linux servers extend directly to Linux workstations. Deployment options in the Microsoft Defender portal Defender automatically identifies whether a Linux device is a...",
-      "links": [
-        {
-          "label": "what’s new in Defender",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint#september-2026"
-        },
-        {
-          "label": "pre-requisites",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/mde-linux-prerequisites#supported-linux-distributions"
-        },
-        {
-          "label": "website",
-          "url": "https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-endpoint"
-        },
-        {
-          "label": "website.",
-          "url": "https://www.microsoft.com/en-us/security/business"
-        },
-        {
-          "label": "Security blog",
-          "url": "https://www.microsoft.com/security/blog/"
-        },
-        {
-          "label": "Microsoft Security",
-          "url": "https://www.linkedin.com/showcase/microsoft-security/"
-        },
-        {
-          "label": "@MSFTSecurity",
-          "url": "https://twitter.com/@MSFTSecurity"
-        }
       ]
     }
   ]
