@@ -1,8 +1,99 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-12T23:20:54.778921+00:00",
-  "totalArticles": 185,
+  "lastUpdated": "2026-11-13T05:48:32.367125+00:00",
+  "totalArticles": 187,
   "articles": [
+    {
+      "title": "Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice multi-factor authentication",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1551151",
+      "published": "2026-11-13T01:42:38.033000+00:00",
+      "summary": "[What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1551151",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.This change is separate from the planned retirement of SMS and voice authentication and does not affect the retirement timeline.[Rollout schedule]Worldwide: Beginning in mid-November 2026.[Impact on your organization]Who is affectedUsers who use SMS or voice for Microsoft Entra ID multifactor authenticationPlatforms and servicesMicrosoft Entra IDSMS and voice authentication methodsWhat will happenSome users may be prompted to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.The verification step will appear only for authentication attempts that meet sufficiently high-risk thresholds.Users with restrictive network or firewall settings may be unable to complete SMS or voice MFA if the verification experience cannot load.[Action required and recommendations]We recommend that administrators take the following actions:Prepare your help desk and notify users that some SMS and voice MFA attempts may require an additional CAPTCHA verification step.Review the risk-based anti-bot verification documentation for network-readiness guidance. If your organization uses restrictive firewalls, proxies, or web filtering, ensure that the required resources can load during authentication.Continue moving users to phishing-resistant authentication methods, such as passkeys, where possible.Learn morePasskeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft LearnRisk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft LearnUnderstanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft...",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
+        },
+        {
+          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha"
+        },
+        {
+          "label": "Understanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-mfa-telephony-fraud"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: JWT validation with Azure Front Door Auth Policy",
+      "link": "https://azure.microsoft.com/updates?id=577673",
+      "published": "2026-11-12T22:36:37+00:00",
+      "summary": "JSON Web Token (JWT) validation through Azure Front Door Auth Policy is now in public preview on Azure Front Door Premium. Validate bearer tokens issued by Microsoft Entra ID at the edge before requests reach your APIs or web applications, helping you cen",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "[Launched] Generally Available: Azure Front Door mutual TLS authentication",
+      "link": "https://azure.microsoft.com/updates?id=577678",
+      "published": "2026-11-12T22:27:35+00:00",
+      "summary": "Mutual TLS (mTLS), also known as client certificate authentication, is now generally available on Azure Front Door Premium. Use X.509 client certificates to help protect sensitive applications and APIs in business-to-business, Internet of Things, financia",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
     {
       "title": "CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/",
@@ -7728,30 +7819,6 @@
           "label": "@MSFTSecurity",
           "url": "https://twitter.com/@MSFTSecurity"
         }
-      ]
-    },
-    {
-      "title": "SVD-2026-1006: Advance Notice of Publication of Splunk Security Advisories - October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1006",
-      "published": "2026-10-14T00:00:00+00:00",
-      "summary": "On October 21, 2026, Splunk PSIRT will publish advisories to disclose security vulnerability advisories for Splunk Enterprise and SOAR.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
       ]
     }
   ]
