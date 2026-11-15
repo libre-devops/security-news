@@ -1,8 +1,79 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-14T22:07:39.245865+00:00",
-  "totalArticles": 186,
+  "lastUpdated": "2026-11-15T05:36:57.503218+00:00",
+  "totalArticles": 187,
   "articles": [
+    {
+      "title": "Migrating an Entra Connect Sync custom source anchor",
+      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/migrating-an-entra-connect-sync-custom-source-anchor/ba-p/4573237",
+      "published": "2026-11-14T14:17:03+00:00",
+      "summary": "Hello everyone, this is David Loder again, with a topic from a recent customer interaction that was a repeat of a topic I’ve seen several times over the years. That’s my cue to write a blog. This is for the customers who were trying to be consistent with their data governance but ended up making...",
+      "author": "dloder",
+      "source": "Core Infrastructure & Security",
+      "source_id": "core_infra_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Security Operations",
+      "board_id": "coreinfrastructureandsecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Hello everyone, this is David Loder again, with a topic from a recent customer interaction that was a repeat of a topic I’ve seen several times over the years. That’s my cue to write a blog. This is for the customers who were trying to be consistent with their data governance but ended up making operational problems for themselves with a poorly chosen Connect Sync source anchor. Where I’ve typically seen this problem is with customers that have a strong data governance program and a governance rule that states something like ‘employees are represented in all systems by their employeeID.’ For expository purposes I’ll use employeeID throughout this discussion, but it applies equally to any HR-owned business-focused attribute. This governance stance unfortunately leads the customer into choosing employeeID as their source anchor for Entra Connect Sync instead of the default system-managed selection. Side note: read The False Identifier Anti-pattern for insight from Pamela Dingle about a protocol standards viewpoint of how to represent accounts in different connected systems. At the beginning, this choice of employeeID for source anchor appears to be fine. All their users get synced up to Entra without issue. Then they start migrating to Exchange Online, and they hit their first problem. To migrate a generic mailbox, they discover the user for that generic mailbox isn’t present in Entra because it doesn’t have an employeeID. So, they develop a process to generate fake employeeIDs. Everything again runs fine for a while. Then they hit a rehire scenario where HR messes up the employeeID by accidentally giving them a brand new employeeID. HR later discovers that mistake and updates the employeeID back to its original value from the first time the person was an employee. Or it was a contract-to-employee change, and the person goes from their fake employeeID to a real one. All these scenarios end up causing problems, manifested as sync errors, solely due to an HR-owned business-focused attribute like employeeID being the source anchor. Do any of those scenarios sound familiar? I only see a small percentage of our customers. But I’ve seen this challenge multiple times, so I know there are others who have been living with these problems. This discussion will walk you through a process to safely switch over to a new, system-managed source anchor, while preserving the source anchor value for all current users. This allows you to return the HR-owned business-focused...",
+      "links": [
+        {
+          "label": "David Loder",
+          "url": "https://learn.microsoft.com/en-us/users/dloder/"
+        },
+        {
+          "label": "The False Identifier Anti-pattern",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-entra-blog/the-false-identifier-anti-pattern/3846013"
+        },
+        {
+          "label": "Graph Explorer",
+          "url": "https://aka.ms/GE"
+        },
+        {
+          "label": "staging server",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-staging-server"
+        },
+        {
+          "label": "disclaimer",
+          "url": "https://github.com/MicrosoftDocs/SupportArticles-docs/blob/main/support/includes/script-disclaimer.md"
+        },
+        {
+          "label": "managing staging servers",
+          "url": "https://techcommunity.microsoft.com/blog/coreinfrastructureandsecurityblog/azure-active-directory-connect-resilient-operations/863316"
+        },
+        {
+          "label": "Microsoft Entra Connect Sync setup wizard",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-import-export-config"
+        },
+        {
+          "label": "reassess your OU selections",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-install-custom#domain-and-ou-filtering"
+        },
+        {
+          "label": "Microsoft Entra Connect Sync: Configure filtering",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-sync-configure-filtering"
+        },
+        {
+          "label": "Microsoft Entra Connect - AD FS management and customization",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-fed-management#modclaims"
+        },
+        {
+          "label": "Cloud Sync for its disconnected forest feature",
+          "url": "https://learn.microsoft.com/en-us/entra/identity/hybrid/cloud-sync/plan-cloud-sync-topologies"
+        }
+      ]
+    },
     {
       "title": "Microsoft Purview Referential Architecture Diagrams",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-purview-blog/microsoft-purview-referential-architecture-diagrams/ba-p/4510925",
