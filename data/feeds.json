@@ -1,8 +1,107 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-17T01:44:39.240762+00:00",
-  "totalArticles": 185,
+  "lastUpdated": "2026-11-17T15:42:40.781453+00:00",
+  "totalArticles": 189,
   "articles": [
+    {
+      "title": "The risks of device code authentication for AI coding agents",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+      "published": "2026-11-17T15:00:00+00:00",
+      "summary": "Lab research shows how device code phishing, a technique that applies to any device-flow client, can extend to AI coding agents, using GitHub Copilot CLI as an illustrative example. The post The risks of device code authentication for AI coding agents appeared first on Microsoft Security Blog.",
+      "author": "Microsoft Security Research",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Threat Intelligence",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article From a familiar phishing technique to an AI coding agentHow the attack worksOne approval, four ways the impact can spreadTurning a phishing attempt into a Defender signalMitigation and protection guidanceReferencesLearn More Device code phishing has become a recurring route to account takeover. Instead of stealing a password, an attacker persuades someone to approve a sign-in on a legitimate site simply by entering a code. The resulting access often can reach email, files, or other cloud services, depending on the account and the permissions granted. Notable earlier campaigns such as EvilTokens show how readily this technique can be scaled to do real damage. Microsoft worked hard with partners in industry and law enforcement to disrupt EvilTokens in September 2026. That led us to a different question: what else can an attacker do with a phished device code authorization? What happens when the same trick targets an AI agent rather than a mailbox? We used GitHub Copilot CLI as an illustrative example. Depending on its configuration, it can work with code, run commands on a user’s machine, retain context across sessions, and allow an active session to be steered remotely. Like many command-line tools, it supports the OAuth device flow for sign-in. The phishing technique itself is not specific to GitHub or Copilot CLI: any public client that supports the device flow can be abused the same way, and the attacker chooses the requested scopes when starting the flow. We explored this scenario in a controlled lab simulation. A victim test account approved a GitHub device-code request initiated by an attacker client we controlled. With that approval, we were able to analyze four possible outcomes: Steer an active Copilot CLI session remotely, if the user has enabled remote control and organization policy allows it, and, subject to local permissions and approval settings, have the agent run commands on the user’s machine. Add misleading entries to the agent’s memory that could influence later interactions. Read Copilot CLI sessions that were synchronized to the cloud. Access private repositories available to the affected account. These are proof-of-concept results showing how existing features, working as designed, could be abused after a phished authorization; they are not attacks we have observed in the wild. These outcomes require the victim user to approve a device code request initiated by the attacker; each outcome also depends on the account...",
+      "links": [
+        {
+          "label": "From a familiar phishing technique to an AI coding agent",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#from-a-familiar-phishing-technique-to-an-ai-coding-agent"
+        },
+        {
+          "label": "How the attack works",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#how-the-attack-works"
+        },
+        {
+          "label": "One approval, four ways the impact can spread",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#one-approval-four-ways-the-impact-can-spread"
+        },
+        {
+          "label": "Turning a phishing attempt into a Defender signal",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#turning-a-phishing-attempt-into-a-defender-signal"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
+        },
+        {
+          "label": "EvilTokens",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/"
+        },
+        {
+          "label": "disrupt EvilTokens",
+          "url": "https://blogs.microsoft.com/on-the-issues/2026/09/22/disrupting-eviltokens-the-ai-chatbot-built-for-cybercrime/"
+        },
+        {
+          "label": "OAuth device flow",
+          "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps"
+        },
+        {
+          "label": "Storm-2372",
+          "url": "https://www.microsoft.com/en-us/security/blog/2025/02/13/storm-2372-conducts-device-code-phishing-campaign/"
+        },
+        {
+          "label": "AI-enabled campaign",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/04/06/ai-enabled-device-code-phishing-campaign-april-2026/"
+        }
+      ]
+    },
+    {
+      "title": "Why threat hunting should matter to every board",
+      "link": "https://www.ncsc.gov.uk/blogs/why-threat-hunting-should-matter-to-every-board",
+      "published": "2026-11-17T12:00:00+00:00",
+      "summary": "Monitoring alone cannot detect every threat. Proactive threat hunting can expose gaps in defences and help organisations learn from others facing common threats.",
+      "author": "",
+      "source": "NCSC Security Feed",
+      "source_id": "ncsc_security",
+      "source_group": "Official NCSC",
+      "source_kind": "rss",
+      "vendor": "NCSC",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "ncsc-guidance",
+          "name": "NCSC Guidance",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "NCSC Guidance"
+      ]
+    },
     {
       "title": "High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
@@ -75,6 +174,83 @@
         {
           "label": "High volume phishing campaign uses Microsoft 365 Outage lures to target multiple industry sectors.",
           "url": "https://security.microsoft.com/threatanalytics3/78c0c74d-96ba-4f4d-8ade-dfffacd66ce1"
+        }
+      ]
+    },
+    {
+      "title": "DDoS Support for NATGWv2 IP - Public Preview",
+      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/ddos-support-for-natgwv2-ip-public-preview/ba-p/4573913",
+      "published": "2026-11-16T22:52:35+00:00",
+      "summary": "Introduction Azure DDoS Protection now covers the public IP addresses used by Azure NAT Gateway StandardV2, in public preview. Customers can protect the StandardV2 IPv4 and IPv6 public IPs that carry their outbound internet traffic from network-layer DDoS attacks, using the same DDoS Network...",
+      "author": "Jdasari",
+      "source": "Azure Network Security",
+      "source_id": "network_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Network Security",
+      "board_id": "azurenetworksecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "Introduction Azure DDoS Protection now covers the public IP addresses used by Azure NAT Gateway StandardV2, in public preview. Customers can protect the StandardV2 IPv4 and IPv6 public IPs that carry their outbound internet traffic from network-layer DDoS attacks, using the same DDoS Network Protection and IP Protection they already use. There's no new API, feature registration or appliance to manage, and DDoS protection doesn't open the gateway to unsolicited inbound connections. Why it matters NAT Gateway doesn't accept inbound connections, but its public IPs are still reachable from the internet, and they're the identity of everything behind them. Your outbound IPs are known to others. Every external service your workloads call sees these IPs. Partners, SaaS providers and banks often keep them on allow-lists. Anyone who learns them can aim traffic at them. One IP set serves many workloads. Every VM in the associated subnets shares the gateway's public IPs. A flood that saturates these IPs can disrupt outbound connectivity for all of them at once. That includes calls to external APIs, partner integrations, package and update downloads, and telemetry. Outbound failures hurt production. An attack on the NAT IPs doesn't have to reach your workloads to cause an outage. It only has to break their path to the internet. Same protection as your inbound endpoints. Until now, customers could protect inbound public IPs but not the IPs behind NAT Gateway StandardV2. With this preview, outbound IPs get automatic network-layer mitigation, plus the DDoS metrics, diagnostics and alerts they already use. Easier compliance. Security policies and posture checks that require DDoS protection on all public IPs no longer have an exception for NAT Gateway IPs. Figure 1: Outbound workloads use a StandardV2 NAT Gateway and a DDoS-protected public IP to reach the internet. Conceptual diagram, not an Azure portal screenshot. Protect the public IPs behind your outbound connectivity A NAT gateway uses its associated public IP addresses when workloads initiate connections to the internet. With this preview, eligible StandardV2 IPv4 and IPv6 public IP addresses can receive Azure DDoS Protection while associated with a StandardV2 NAT Gateway. Figure 2: The Outbound IP blade of a StandardV2 NAT Gateway lists an individual public IP address and a public IP prefix. Resource names, subscription details, and IP addresses in this and the following screenshots are generic examples. You use...",
+      "links": []
+    },
+    {
+      "title": "Azure DDoS Custom Policy GA",
+      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/azure-ddos-custom-policy-ga/ba-p/4573866",
+      "published": "2026-11-16T22:30:24+00:00",
+      "summary": "More control, broader coverage with Azure DDoS Protection custom policy Fine-tune protocol-specific DDoS detection for internet-facing workloads while keeping Azure’s adaptive protection as the default. Organizations depend on Azure DDoS Protection to monitor traffic continuously and mitigate...",
+      "author": "Jdasari",
+      "source": "Azure Network Security",
+      "source_id": "network_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Network Security",
+      "board_id": "azurenetworksecurityblog",
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "More control, broader coverage with Azure DDoS Protection custom policy Fine-tune protocol-specific DDoS detection for internet-facing workloads while keeping Azure’s adaptive protection as the default. Organizations depend on Azure DDoS Protection to monitor traffic continuously and mitigate network-layer attacks at cloud scale. Most workloads benefit from a hands-off, adaptive experience. But applications with planned traffic surges, unusual packet-rate patterns, strict latency requirements, or distinct environments sometimes need more control over when mitigation begins. Azure DDoS Protection custom policy adds that optional control. It lets you define fixed inbound detection thresholds for TCP, UDP, and TCP SYN traffic and apply them to supported public endpoints. The result is a protection model that remains automatic by default while giving application and network teams a precise override when their workload calls for it. In one sentence: Custom policy extends Azure DDoS Protection’s adaptive baseline with optional, protocol-specific controls; it does not replace the turnkey default. Azure DDoS Protection custom policy is now generally available, letting customers replace machine-learning auto-tuning with fixed protocol-specific detection thresholds per protected resource across Azure resource types with public IPs. Available on Network Protection and IP Protection SKUs, it already covers 929 policies and about 1,970 attachments pre-GA, led by OpenAI. Why customers asked for more control Adaptive auto-tuning works well for most workloads because Azure learns the normal traffic profile of each protected endpoint and adjusts mitigation thresholds as that profile changes. A fixed, application-specific threshold can be useful when traffic is predictable in a way that the service cannot infer ahead of time. A gaming launch, ticket sale, live stream, or seasonal event is expected to create a sudden but legitimate increase in packet rate. A high-throughput service regularly operates near a threshold and needs an explicitly controlled trigger. A latency-sensitive workload benefits from a tighter mitigation threshold for one protocol. Development, test, and production environments need separate policies and change controls. Security teams want repeatable, infrastructure-as-code deployment and verifiable associations to protected endpoints. Automatic by default; explicit where you choose A custom threshold changes behavior only for the protocol you configure...",
+      "links": [
+        {
+          "label": "Azure DDoS Protection custom policy overview",
+          "url": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-custom-policy-overview"
+        },
+        {
+          "label": "Create and manage a custom policy in the Azure portal",
+          "url": "https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-custom-policy-portal"
+        },
+        {
+          "label": "Create a custom policy using Azure CLI",
+          "url": "https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-custom-policy-cli"
+        },
+        {
+          "label": "Azure CLI command reference: az network ddos-custom-policy",
+          "url": "https://learn.microsoft.com/en-us/cli/azure/network/ddos-custom-policy?view=azure-cli-latest"
+        },
+        {
+          "label": "Azure PowerShell command reference: New-AzDdosCustomPolicy",
+          "url": "https://learn.microsoft.com/en-us/azure/ddos-protection/manage-ddos-custom-policy-powershell"
+        },
+        {
+          "label": "Monitor Azure DDoS Protection",
+          "url": "https://learn.microsoft.com/en-us/azure/ddos-protection/monitor-ddos-protection"
         }
       ]
     },
@@ -180,6 +356,65 @@
         {
           "label": "Refer to the article",
           "url": "https://aws.amazon.com/security/security-bulletins/2026-183-aws/"
+        }
+      ]
+    },
+    {
+      "title": "Protecting Microsoft's SAP workload with Microsoft Sentinel for SAP: the RISE with SAP chapter",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/protecting-microsoft-s-sap-workload-with-microsoft-sentinel-for/ba-p/4571716",
+      "published": "2026-11-16T10:04:14+00:00",
+      "summary": "Inside Track | Microsoft Digital When infrastructure operations shift, security visibility must evolve with the operating model Four years ago, we told the story of how Microsoft became Customer Zero for using Microsoft Sentinel as the SIEM for its own SAP estate, pairing a then-new product...",
+      "author": "MartinPankraz",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Sentinel"
+      ],
+      "body": "Inside Track | Microsoft Digital When infrastructure operations shift, security visibility must evolve with the operating model Four years ago, we told the story of how Microsoft became Customer Zero for using Microsoft Sentinel as the SIEM for its own SAP estate, pairing a then-new product “Sentinel Solution for SAP” with our existing SOAR platform and proving out cross-correlation between SAP and the rest of the enterprise. The ambition was stated plainly at the time: an internally managed and configured SIEM that could baseline user behaviors and detect anomalies across SAP, spanning the OS and network layer, the database layer, and the application and business logic layers. Then we moved to RISE with SAP on Azure. With that move, responsibility for instrumenting one of those layers transitioned to SAP under the RISE operating model. The visibility challenge shared responsibility creates In RISE with SAP, SAP operates the underlying infrastructure, operating system, and database as part of the managed service. This changes how customers obtain security telemetry from those layers and raises an important shared-responsibility question: how can the customer SOC maintain end-to-end visibility while SAP operates the platform? The layers remain relevant to security monitoring, so visibility must extend across both SAP-managed and customer-managed parts of the landscape. What changed: SAP LogServ meets Sentinel for SAP SAP LogServ is SAP's centralized log service for RISE-managed landscapes, carrying the security-relevant telemetry from the layers SAP now operates. Microsoft Sentinel for SAP ingests it directly, authenticated with managed identity for Azure. There is no stored secret, no rotation calendar and no bespoke connector for a future engineer to inherit and maintain. The integration is a configuration, not a project. “RISE with SAP introduces a shared operating model in which SAP manages the infrastructure while customers remain responsible for maintaining end-to-end security oversight. The integration of SAP LogServ with Microsoft Sentinel for SAP, secured through managed identity for Azure, brings telemetry from SAP-managed layers together with application-layer signals and the wider enterprise context. Our SOC can continue using familiar detections and workflows without a separate integration or credential-management process. At Microsoft, we believe in being Customer Zero, so we are putting this approach to work in our own RISE with SAP on Azure...",
+      "links": [
+        {
+          "label": "SAP LogServ",
+          "url": "https://learn.microsoft.com/azure/sentinel/sap/sap-logserv-overview"
+        },
+        {
+          "label": "Advanced Security Information Model",
+          "url": "https://learn.microsoft.com/azure/sentinel/normalization"
+        },
+        {
+          "label": "ISOC in Microsoft Defender",
+          "url": "https://learn.microsoft.com/en-us/defender-xdr/isoc-overviewhttps://learn.microsoft.com/defender-xdr/isoc-overview"
+        },
+        {
+          "label": "blog series on the SAP community",
+          "url": "https://community.sap.com/t5/enterprise-resource-planning-blog-posts-by-members/ultimate-blog-series-sap-logserv-integration-with-microsoft-sentinel/ba-p/14126401"
+        },
+        {
+          "label": "Project Perception",
+          "url": "https://learn.microsoft.com/security/agentic-security/agentic-security-overview"
+        },
+        {
+          "label": "www.microsoft.com/insidetrack/blog/protecting-microsofts-sap-workload-with-microsoft-sentinel/",
+          "url": "http://www.microsoft.com/insidetrack/blog/protecting-microsofts-sap-workload-with-microsoft-sentinel/"
+        },
+        {
+          "label": "Microsoft Sentinel solutions for SAP | Microsoft Learn",
+          "url": "https://learn.microsoft.com/azure/sentinel/sap/solution-overview"
+        },
+        {
+          "label": "Microsoft Ignite 2026 Sentinel Connector announcments | TechCommunity",
+          "url": "https://aka.ms/AppAssure_SentinelIgnite26"
         }
       ]
     },
@@ -4823,10 +5058,10 @@
       ]
     },
     {
-      "title": "Artificial intelligence and cyber intrusion",
-      "link": "https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion",
+      "title": "Cyber chief: UK facing AI-powered attacks on critical infrastructure within two years",
+      "link": "https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years",
       "published": "2026-11-03T12:00:00+00:00",
-      "summary": "An NCSC assessment that examines current AI-enabled threat trends and projections of the threat landscape to 2028.",
+      "summary": "The NCSC warns that ‘tech on the cheap’ has left UK organisations exposed to AI uncovering and exploiting longstanding cyber security weaknesses and calls for urgent investment in resilience.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -4847,10 +5082,10 @@
       ]
     },
     {
-      "title": "Cyber chief: UK facing AI-powered attacks on critical infrastructure within two years",
-      "link": "https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years",
+      "title": "Artificial intelligence and cyber intrusion",
+      "link": "https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion",
       "published": "2026-11-03T12:00:00+00:00",
-      "summary": "The NCSC warns that ‘tech on the cheap’ has left UK organisations exposed to AI uncovering and exploiting longstanding cyber security weaknesses and calls for urgent investment in resilience.",
+      "summary": "An NCSC assessment that examines current AI-enabled threat trends and projections of the threat landscape to 2028.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -4915,81 +5150,6 @@
       ],
       "tags": [
         "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
-      "published": "2026-11-02T20:20:59+00:00",
-      "summary": "Real-world exploitation concentrates in a small, high-impact subset of CVEs. Learn how defenders can prioritize vulnerabilities based on exploitation likelihood, exposure, and potential blast radius. The post What exploited vulnerabilities have in common: A data-driven analysis of real-world...",
-      "author": "Or Begam",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Classifying the vulnerability landscapeVulnerabilities exploited in the wildWhere defenders should focusPatching is slow, while exploitation is fastImpact, exposure and where to focusNext in lineHow Microsoft Security helps defenders actReferencesLearn More The vulnerability landscape continues to expand. From 1999 through September 2026, approximately 383,000 software vulnerabilities had been disclosed across platforms and technologies, yet only about 2,000 CVEs (roughly 0.5%) have been linked to real-world exploitation. Those vulnerabilities follow clear patterns. Threat actors disproportionately target flaws that enable system takeover, particularly remote code execution, privilege escalation, and authentication bypass. AI-assisted vulnerability discovery and exploit development could further shorten the window defenders have to respond. Patching remains essential, but remediation can take weeks or months on critical systems, and some legacy or unsupported systems cannot be patched. Defenders therefore need to concentrate protection where it can have the greatest impact, considering both the likelihood of exploitation and the potential blast radius of a successful attack. Classifying the vulnerability landscape To make this large vulnerability population actionable, we analyzed each CVE across two dimensions: impact class and affected platform. Impact class captures the outcome a threat actor could achieve by exploiting a vulnerability. Each CVE is assigned to the most consequential impact it directly enables. For example, when a vulnerability can bypass authentication and directly enable remote code execution (RCE), we classify it as RCE. This approach helps distinguish the underlying type of vulnerability from the security impact an attacker could achieve. Server-side RCE: Remote code execution on a network-exposed service without user interaction. Client-side RCE: Remote code execution that requires a user to open or run malicious content. Local code execution: Code or command execution requiring local access or an existing foothold. Local privilege escalation: Elevation from lower-level access to SYSTEM or root privileges. Authentication or authorization bypass: Circumvention of authentication or access controls. Security-control bypass: Circumvention of protections such as sandboxing, secure boot, or SmartScreen. Information disclosure: Exposure of sensitive data or secrets. Tampering or integrity: Unauthorized modification of data...",
-      "links": [
-        {
-          "label": "Classifying the vulnerability landscape",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#classifying-the-vulnerability-landscape"
-        },
-        {
-          "label": "Vulnerabilities exploited in the wild",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#vulnerabilities-exploited-in-the-wild"
-        },
-        {
-          "label": "Where defenders should focus",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#where-defenders-should-focus"
-        },
-        {
-          "label": "Patching is slow, while exploitation is fast",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#patching-is-slow-while-exploitation-is-fast"
-        },
-        {
-          "label": "Impact, exposure and where to focus",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#impact-exposure-and-where-to-focus"
-        },
-        {
-          "label": "Next in line",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#next-in-line"
-        },
-        {
-          "label": "How Microsoft Security helps defenders act",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#how-microsoft-security-helps-defenders-act"
-        },
-        {
-          "label": "References",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#references"
-        },
-        {
-          "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "383,000",
-          "url": "https://www.cve.org/About/Metrics"
-        },
-        {
-          "label": "VulnCheck",
-          "url": "https://www.vulncheck.com/blog/state-of-exploitation-2026"
-        },
-        {
-          "label": "Microsoft Defender External Attack Surface Management",
-          "url": "https://learn.microsoft.com/azure/external-attack-surface-management/overview"
-        }
       ]
     },
     {
