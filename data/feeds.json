@@ -1,8 +1,188 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-16T15:14:26.140831+00:00",
-  "totalArticles": 186,
+  "lastUpdated": "2026-11-17T01:44:39.240762+00:00",
+  "totalArticles": 185,
   "articles": [
+    {
+      "title": "High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
+      "published": "2026-11-17T00:08:41+00:00",
+      "summary": "Microsoft Threat Intelligence observed a high-volume phishing campaign using Microsoft 365 outage-themed lures to target organizations across multiple sectors worldwide. The post High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors appeared first on...",
+      "author": "Shreya Kale",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 7
+        }
+      ],
+      "tags": [
+        "Threat Intelligence"
+      ],
+      "body": "In this article Phishing attack overviewAttack chain overviewMitigation and protection guidanceReferencesLearn More On November 13, 2026, Microsoft Threat Intelligence observed a coordinated, high-volume phishing campaign targeting organizations across multiple sectors worldwide. The threat actors used phishing emails disguised as legitimate Microsoft 365 service-health notifications to lure recipients into clicking a malicious link. The messages created a false sense of urgency by claiming that emails had been held during a service disruption and would be deleted within 24 hours unless the recipient took action to restore them. This is consistent with historical attacker campaigns which continuously look for notable global events to exploit in their social engineering lures. Microsoft identified the threat actor’s use of specific sender domain names, randomized outage subjects, recipient-specific tracking links, and a common non-Microsoft destination to make the messages appear relevant while complicating simple pattern matching. We assess that the activity was likely credential phishing; however, the available evidence does not confirm credential capture, malware delivery, or post-compromise activity. Multiple threat actors may continue to look for ways to exploit notable global events in any social engineering pretext. If credentials were entered, organizations should consider the risk of account compromise, mailbox access, business email compromise, internal phishing, inbox-rule manipulation, and access to cloud collaboration data. Microsoft Defender blocks malicious domains used in this campaign, and Microsoft Defender for Office 365 blocks and quarantines phishing emails. We will continue to monitor this campaign and other related threats. Security teams can use Microsoft Defender for Office 365 and Microsoft Defender XDR capabilities to investigate messages, URLs, clicks, and potential follow-on activity. Phishing attack overview Microsoft analyzed the email lures sent on November 13, 2026: the emails used the subject pattern “Outage – <random token>” and display names built from a three-character, organization-style prefix followed by “Outage Notification” or “Service Health.” Example subject line: Outage – aF7vG6 Example display names: MSF Outage Notification AMZ Service Health One example email body referenced a purported Exchange Online incident on November 12 and claimed that four messages were held after the outage. The urgency of a 24-hour...",
+      "links": [
+        {
+          "label": "Phishing attack overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#phishing-attack-overview"
+        },
+        {
+          "label": "Attack chain overview",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#attack-chain-overview"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "References",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#references"
+        },
+        {
+          "label": "Learn More",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#learn-more"
+        },
+        {
+          "label": "Safe Links",
+          "url": "https://learn.microsoft.com/defender-office-365/safe-links-about"
+        },
+        {
+          "label": "Safe Attachments",
+          "url": "https://learn.microsoft.com/defender-office-365/safe-attachments-about"
+        },
+        {
+          "label": "Zero-hour auto purge (ZAP)",
+          "url": "https://learn.microsoft.com/defender-office-365/zero-hour-auto-purge"
+        },
+        {
+          "label": "Attack simulation training",
+          "url": "https://learn.microsoft.com/defender-office-365/attack-simulation-training-simulations"
+        },
+        {
+          "label": "create their own prompts",
+          "url": "https://learn.microsoft.com/copilot/security/prompting-security-copilot#create-your-own-prompts"
+        },
+        {
+          "label": "prebuilt promptbooks",
+          "url": "https://learn.microsoft.com/copilot/security/using-promptbooks"
+        },
+        {
+          "label": "High volume phishing campaign uses Microsoft 365 Outage lures to target multiple industry sectors.",
+          "url": "https://security.microsoft.com/threatanalytics3/78c0c74d-96ba-4f4d-8ade-dfffacd66ce1"
+        }
+      ]
+    },
+    {
+      "title": "Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice multi-factor authentication",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1551151",
+      "published": "2026-11-16T21:45:49.547000+00:00",
+      "summary": "[What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1551151",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "[What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.This change is separate from the planned retirement of SMS and voice authentication and does not affect the retirement timeline.[Rollout schedule]Worldwide: Beginning in mid-November 2026.[Impact on your organization]Who is affectedUsers who use SMS or voice for Microsoft Entra ID multifactor authenticationPlatforms and servicesMicrosoft Entra IDSMS and voice authentication methodsWhat will happenSome users may be prompted to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.The verification step will appear only for authentication attempts that meet sufficiently high-risk thresholds.Users with restrictive network or firewall settings may be unable to complete SMS or voice MFA if the verification experience cannot load.[Action required and recommendations]We recommend that administrators take the following actions:Prepare your help desk and notify users that some SMS and voice MFA attempts may require an additional CAPTCHA verification step.Review the risk-based anti-bot verification documentation for network-readiness guidance. If your organization uses restrictive firewalls, proxies, or web filtering, ensure that the required resources can load during authentication.Continue moving users to phishing-resistant authentication methods, such as passkeys, where possible.Learn moreRisk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft LearnUnderstanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft LearnPasskeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha"
+        },
+        {
+          "label": "Understanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-mfa-telephony-fraud"
+        },
+        {
+          "label": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft...",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "CVE-2026-126816 - Path traversal and arbitrary file write in the cost report generator of aws-pricing-mcp-server",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-184-aws/",
+      "published": "2026-11-16T20:12:51+00:00",
+      "summary": "Bulletin ID: 2026-184-AWS Publication Date: 11/16/2026 12:00 PM PST Description: Improper limitation of a pathname to a restricted directory in the cost report generation tool in AWS Pricing MCP Server (aws-pricing-mcp-server) before 1.0.31 might allow an actor who can influence the MCP agent to...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-184-AWS Publication Date: 11/16/2026 12:00 PM PST Description: Improper limitation of a pathname to a restricted directory in the cost report generation tool in AWS Pricing MCP Server (aws-pricing-mcp-server) before 1.0.31 might allow an actor who can influence the MCP agent to write actor controlled content to arbitrary locations outside the intended output directory via absolute paths or directory traversal sequences in the report output path. Impacted versions: - awslabs.aws-pricing-mcp-server < 1.0.31 - awslabs.cost-analysis-mcp-server <= 1.0.5 Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-184-aws/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-183-aws/",
+      "published": "2026-11-16T18:37:04+00:00",
+      "summary": "Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access. To do this,...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access. To do this, the third party supplies a crafted model archive. Impacted versions: >=0.7.0, <=0.38.0 Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-183-aws/"
+        }
+      ]
+    },
     {
       "title": "Migrating an Entra Connect Sync custom source anchor",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/migrating-an-entra-connect-sync-custom-source-anchor/ba-p/4573237",
@@ -134,7 +314,7 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
       "published": "2026-11-13T21:31:44+00:00",
       "summary": "SCKit abuses ScreenConnect to deploy unauthorized remote access and target technicians. Explore the attack chain, mitigations, and Microsoft Defender XDR hunting. The post SCKit abuses ScreenConnect to deploy remote access and target technician sessions appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Security Research, Sagar Patil and Jeremiah Jasmin",
+      "author": "Jeremiah Jasmin",
       "source": "Microsoft Security Blog",
       "source_id": "mssecurity",
       "source_group": "Official Microsoft",
@@ -762,49 +942,6 @@
       ]
     },
     {
-      "title": "Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice multi-factor authentication",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1551151",
-      "published": "2026-11-13T01:42:38.033000+00:00",
-      "summary": "[What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1551151",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.This change is separate from the planned retirement of SMS and voice authentication and does not affect the retirement timeline.[Rollout schedule]Worldwide: Beginning in mid-November 2026.[Impact on your organization]Who is affectedUsers who use SMS or voice for Microsoft Entra ID multifactor authenticationPlatforms and servicesMicrosoft Entra IDSMS and voice authentication methodsWhat will happenSome users may be prompted to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.The verification step will appear only for authentication attempts that meet sufficiently high-risk thresholds.Users with restrictive network or firewall settings may be unable to complete SMS or voice MFA if the verification experience cannot load.[Action required and recommendations]We recommend that administrators take the following actions:Prepare your help desk and notify users that some SMS and voice MFA attempts may require an additional CAPTCHA verification step.Review the risk-based anti-bot verification documentation for network-readiness guidance. If your organization uses restrictive firewalls, proxies, or web filtering, ensure that the required resources can load during authentication.Continue moving users to phishing-resistant authentication methods, such as passkeys, where possible.Learn morePasskeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft LearnRisk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft LearnUnderstanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft...",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
-        },
-        {
-          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha"
-        },
-        {
-          "label": "Understanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-mfa-telephony-fraud"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
       "title": "[In preview] Public Preview: JWT validation with Azure Front Door Auth Policy",
       "link": "https://azure.microsoft.com/updates?id=577673",
       "published": "2026-11-12T22:36:37+00:00",
@@ -906,7 +1043,7 @@
       "tags": [
         "General Security"
       ],
-      "body": "Most business leaders I meet no longer need to be convinced that AI works. They’ve seen the pilots, the demos and the copilots. The question I hear in boardrooms now is different: How do we move from AI that impresses to AI that changes how the business actually runs? That is the question Microsoft Frontier Company was built to answer, and to date, we have engaged on nearly 500 projects with over 200 customers across 28 countries. Customers including 3M, Alaska Airlines, BMW, Core42, KT, Land O’Lakes, London Stock Exchange Group, Mastercard, McKesson, Northern Trust, Novo Nordisk, Publicis Groupe, Saint-Gobain, Siemens and Unilever are seeing real value from working side by side with our Forward Deployed Engineering teams. More importantly, most customers where we have completed initial projects have returned for additional engagements, generating hundreds of follow-on projects. Customers don’t come back for engineers. They come back because the first engagement delivered something they could measure and they can see the next workflow worth redesigning. The technology is ready. What slows AI down is everything around it. That means identifying where AI can deliver the greatest value, building in trust and governance, redesigning the operating models and helping people work in new ways. Technology and people have to move forward together. What this looks like in practice Unilever is collaborating with Microsoft engineers to bring AI into its factories. On the factory floor, intelligent technology helps teams boost efficiency and deliver superior products to customers. In Pondicherry factory — Unilever’s largest Home Care Liquids factory in South Asia and a 2026 World Economic Forum Lighthouse site — a digital twin built on NVIDIA Omniverse and hosted on Azure simulates a real factory environment with integrated live data. This helps anticipate issues before they occur, monitors performance in real time and guides operators through the fixes and recommendations. 3M is working with our engineers to help its Global Business Services team automate customer order management. The companies are building an AI agent-driven workflow to assist with credit checks, delinquency assessments and system updates, with human-in-the-loop controls and a custom monitoring dashboard for real-time visibility and approvals. The solution is expected to significantly reduce manual effort, improve speed and consistency and accelerate cash flow — freeing staff for higher-value work...",
+      "body": "Most business leaders I meet no longer need to be convinced that AI works. They’ve seen the pilots, the demos and the copilots. The question I hear in boardrooms now is different: How do we move from AI that impresses to AI that changes how the business actually runs? That is the question Microsoft Frontier Company was built to answer, and to date, we have engaged on nearly 500 projects with over 200 customers across 28 countries. Customers including 3M, Alaska Airlines, BMW, Core42, KT, Land O’Lakes, London Stock Exchange Group, Mastercard, McKesson, Northern Trust, Novo Nordisk, P&G, Publicis Groupe, Saint-Gobain, Siemens and Unilever are seeing real value from working side by side with our Forward Deployed Engineering teams. More importantly, most customers where we have completed initial projects have returned for additional engagements, generating hundreds of follow-on projects. Customers don’t come back for engineers. They come back because the first engagement delivered something they could measure and they can see the next workflow worth redesigning. The technology is ready. What slows AI down is everything around it. That means identifying where AI can deliver the greatest value, building in trust and governance, redesigning the operating models and helping people work in new ways. Technology and people have to move forward together. What this looks like in practice Unilever is collaborating with Microsoft engineers to bring AI into its factories. On the factory floor, intelligent technology helps teams boost efficiency and deliver superior products to customers. In Pondicherry factory — Unilever’s largest Home Care Liquids factory in South Asia and a 2026 World Economic Forum Lighthouse site — a digital twin built on NVIDIA Omniverse and hosted on Azure simulates a real factory environment with integrated live data. This helps anticipate issues before they occur, monitors performance in real time and guides operators through the fixes and recommendations. 3M is working with our engineers to help its Global Business Services team automate customer order management. The companies are building an AI agent-driven workflow to assist with credit checks, delinquency assessments and system updates, with human-in-the-loop controls and a custom monitoring dashboard for real-time visibility and approvals. The solution is expected to significantly reduce manual effort, improve speed and consistency and accelerate cash flow — freeing staff for higher-value...",
       "links": [
         {
           "label": "Microsoft Frontier Company",
@@ -947,7 +1084,7 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
       "published": "2026-11-12T17:00:00+00:00",
       "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities. The post Trained to betray: How post-training supply chain attacks hijack coding agents appeared first on Microsoft Security...",
-      "author": "Microsoft Security Research, Microsoft AI Red Team, Amanda Minnich, Amit Eliahu, Blake Bullwinkel, Dor Edry and Giorgio Severi",
+      "author": "Giorgio Severi",
       "source": "Microsoft Security Blog",
       "source_id": "mssecurity",
       "source_group": "Official Microsoft",
@@ -1676,7 +1813,7 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
       "published": "2026-11-11T19:49:57+00:00",
       "summary": "Threat actors are deploying GSocket on compromised Linux servers to keep encrypted remote access after the original vulnerability is patched. Learn how to detect, investigate, and remediate this activity. The post The global socket: how threat actors are weaponizing GSocket for stealthy C2 appeared...",
-      "author": "Yash Gund, Sumith Maniath and Microsoft Security Research",
+      "author": "Microsoft Security Research",
       "source": "Microsoft Security Blog",
       "source_id": "mssecurity",
       "source_group": "Official Microsoft",
@@ -1892,7 +2029,7 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
       "published": "2026-11-11T16:55:00+00:00",
       "summary": "Microsoft FORGE Lab researchers used codename MDASH to investigate Linux kernel vulnerabilities, resulting in 59 upstream bug reports, 33 assigned CVEs, and 38 merged fixes. The research includes eight demonstrated local root privilege-escalation exploits and examines the challenges of turning...",
-      "author": "FORGE Lab and Cen Zhang",
+      "author": "Cen Zhang",
       "source": "Microsoft Security Blog",
       "source_id": "mssecurity",
       "source_group": "Official Microsoft",
@@ -3222,7 +3359,7 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
       "published": "2026-11-09T20:17:31+00:00",
       "summary": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code...",
-      "author": "Yechan Bae and FORGE Lab",
+      "author": "FORGE Lab",
       "source": "Microsoft Security Blog",
       "source_id": "mssecurity",
       "source_group": "Official Microsoft",
@@ -3644,7 +3781,7 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
       "published": "2026-11-05T23:46:50+00:00",
       "summary": "Microsoft Threat Intelligence has observed threat actors using the agentic offensive security framework ARTEX to search GitHub for OAuth application secrets, which can be used to compromise the associated OAuth application and perform authenticated actions in the application’s tenant. Agents...",
-      "author": "Microsoft Threat Intelligence and Microsoft Security Research",
+      "author": "Microsoft Security Research",
       "source": "Microsoft Security Blog",
       "source_id": "mssecurity",
       "source_group": "Official Microsoft",
@@ -3814,81 +3951,6 @@
       ]
     },
     {
-      "title": "​​​​What’s new in Microsoft Security: November 2026",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/",
-      "published": "2026-11-05T17:00:00+00:00",
-      "summary": "Microsoft Security’s November 2026 updates strengthen AI agent security, least privilege, threat protection, and exposure management. The post ​​​​What’s new in Microsoft Security: November 2026 appeared first on Microsoft Security Blog.",
-      "author": "Alym Rayani",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Endpoint administrators need to keep elevated access accountable at scale. Security teams also need a clearer view of expert-led protection and a simpler way to deploy SQL Server protection in Azure Government. As AI agents gain access to business data and tools, organizations need ways to limit their authority and adapt protection as risk changes. This month’s Microsoft Intune and Microsoft Defender updates introduce capabilities across these areas, alongside new Secure AI capabilities for agent access. A recent Secure Now update in Microsoft Security Exposure Management also connects information on recent threats to focused initiatives for reducing exposure. Here’s what’s new: Limit agent authority to the task with Dynamic Permissions Give agents task-scoped authority and adapt access as risk changes As agents gain access to business data and tools, organizations need ways to manage what each agent is allowed to do. Dynamic Permissions provides an agent its own permissions and authority, scoped to its current task and for only as long as the task requires. As the agent works, Dynamic Agent Risk assesses whether the agent’s authority aligns with changing behavior and context. Dynamic Conditional Access can then respond proportionately by narrowing permissions, restricting access to resources, or requiring human approval for higher-impact actions. Together, these capabilities are designed to help organizations tailor agent authority before an agent acts and adjust access as risk changes. See how security can respond when an agent steps outside its task. Contain local AI agents with Microsoft Execution Containers Apply least-privilege boundaries to help limit access on Windows Microsoft Execution Containers (MXC), now generally available, gives organizations an operating system-enforced containment layer for AI agents, designed to limit what an agent can access. Rather than relying on the agent to behave within intended boundaries, MXC applies least-privilege controls across files, networks, processes, and user interactions, with additional isolation options for higher-risk scenarios. Organizations can tune and validate policies before enforcing them broadly, while upcoming integration with Microsoft Intune, Microsoft Entra, and Microsoft Agent 365 is intended to extend governance and attribution across the enterprise. Discover more about this policy-driven containment for AI agents. Scale least privilege with Microsoft Intune Endpoint Privilege Management...",
-      "links": [
-        {
-          "label": "Microsoft Intune",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-intune?msockid=0809c913f8cc65b61b61deeaf9876412"
-        },
-        {
-          "label": "Microsoft Defender",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender"
-        },
-        {
-          "label": "Microsoft Security Exposure Management",
-          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-security-exposure-management?msockid=0809c913f8cc65b61b61deeaf9876412"
-        },
-        {
-          "label": "See how security can respond",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/"
-        },
-        {
-          "label": "Microsoft Entra",
-          "url": "https://www.microsoft.com/en-us/security/business/microsoft-entra"
-        },
-        {
-          "label": "Microsoft Agent 365",
-          "url": "https://www.microsoft.com/en-us/microsoft-agent-365"
-        },
-        {
-          "label": "policy-driven containment for AI agents",
-          "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/"
-        },
-        {
-          "label": "Microsoft Intune Endpoint Privilege Management",
-          "url": "https://www.microsoft.com/en-us/security/business/endpoint-management/microsoft-intune-endpoint-privilege-management?msockid=0809c913f8cc65b61b61deeaf9876412"
-        },
-        {
-          "label": "system settings",
-          "url": "https://learn.microsoft.com/en-us/intune/epm/manage-system-settings"
-        },
-        {
-          "label": "Microsoft Defender Experts MDR",
-          "url": "https://www.microsoft.com/en-us/security/business/services/microsoft-defender-experts-mdr?msockid=0809c913f8cc65b61b61deeaf9876412#Overview"
-        },
-        {
-          "label": "Learn more about the new Defender Experts MDR experiences.",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-defender-experts/bringing-defender-experts-protection-and-proactive-hunting-into-focus/4538006"
-        },
-        {
-          "label": "Learn more about the enhanced agent",
-          "url": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/release-notes#enhanced-agent-for-defender-for-sql-servers-on-machines-is-fully-available-in-azure-government-cloud"
-        }
-      ]
-    },
-    {
       "title": "CVE-2026-119083 - GluonTS arbitrary file write during archive extraction",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-171-aws/",
       "published": "2026-11-05T16:43:41+00:00",
@@ -3917,7 +3979,7 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/email-threat-landscape-q3-2026-trends-and-insights/",
       "published": "2026-11-05T16:00:00+00:00",
       "summary": "Microsoft Threat Intelligence observed a sharp rise in email-based phishing activity at the end of Q3 2026 (July – September), even as QR code phishing declined, CAPTCHA-gated phishing recovered, and malicious messages spoofing familiar business-service sender domains exposed risks associated with...",
-      "author": "Microsoft Threat Intelligence and Microsoft Defender Security Research Team",
+      "author": "Microsoft Defender Security Research Team",
       "source": "Microsoft Threat Intelligence",
       "source_id": "threat_intel",
       "source_group": "Official Microsoft",
@@ -4568,7 +4630,7 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
       "published": "2026-11-03T17:32:47+00:00",
       "summary": "Microsoft Threat Intelligence tracks a fake-download campaign that uses trojanized Inno installers to deliver multiple monetization offers and provides detection and investigation guidance across the complete installer session. The post Fake-download campaign uses trojanized installers to deliver...",
-      "author": "Microsoft Security Research and Jiacen Xu",
+      "author": "Jiacen Xu",
       "source": "Microsoft Threat Intelligence",
       "source_id": "threat_intel",
       "source_group": "Official Microsoft",
@@ -4860,7 +4922,7 @@
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
       "published": "2026-11-02T20:20:59+00:00",
       "summary": "Real-world exploitation concentrates in a small, high-impact subset of CVEs. Learn how defenders can prioritize vulnerabilities based on exploitation likelihood, exposure, and potential blast radius. The post What exploited vulnerabilities have in common: A data-driven analysis of real-world...",
-      "author": "Microsoft Security Research, Yair Tsarfaty and Or Begam",
+      "author": "Or Begam",
       "source": "Microsoft Threat Intelligence",
       "source_id": "threat_intel",
       "source_group": "Official Microsoft",
@@ -5066,81 +5128,6 @@
       ],
       "tags": [
         "AWS Security"
-      ]
-    },
-    {
-      "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/",
-      "published": "2026-10-31T01:02:57+00:00",
-      "summary": "Microsoft analyzes a malicious Claude Code–branded extension, its persistent SSH backdoor, and guidance to detect and remediate it. The post Inside a malicious Claude Code-branded extension and its persistent SSH backdoor appeared first on Microsoft Security Blog.",
-      "author": "Microsoft Security Research",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Attack chain overviewAttack chainHost reconnaissance collectionSSH authorization and tunnel identitiesProtocol Tunneling (T1572): reverse SSH forwardingPlatform-specific startup persistenceMitigation and protection guidanceImmediate actionsRemediation actionsFollow-up Investigation and recoveryMicrosoft Defender XDR detectionsThreat intelligence reportsMicrosoft Defender XDR Threat analytics Advanced hunting queriesMITRE ATT&CK techniquesIndicators of compromise (IOCs)Learn More On October 29, 2026, Cursor reported that a tampered copy of Claude Code extension (anthropic.claude-code, versions 2.1.313 and 2.1.312) was available and served in the Cursor extension marketplace for a few hours to attempt a supply-chain attack on Cursor users. Cursor reports that it was live from about 2:27 AM to 1:35 PM Pacific Daylight Time (PDT). We have confirmed that the malicious packages found on Cursor marketplace were never published nor distributed from Microsoft Visual Studio Marketplace and from npm @anthropic-ai/claude-code, which were not affected by this incident. Anthropic confirmed to Microsoft that their systems were not compromised and they did not develop the malicious package posted in Cursor marketplace. At this time, all evidence suggests that the incident is limited to Cursor marketplace. Microsoft Threat Intelligence analyzed the injected JavaScript embedded in the malicious extension package. The injected loader runs when the extension module loads and attempts to add an attacker-controlled Secure Shell (SSH) key, enable the local SSH service, establish reverse SSH forwarding, configure persistence, and report host details. Successful remote access depends on host privileges, SSH configuration, and the attacker’s server configuration; however, the loader may still write keys and persistence artifacts even when tunnel access fails. Organizations should identify systems that installed or automatically updated to this version from the Cursor marketplace, preserve evidence, remove confirmed malicious artifacts, review endpoint and network telemetry, and rotate credentials or revoke sessions when investigation indicates exposure. Microsoft customers can use the detections and hunting guidance in this post after the listed coverage and query validation gates are complete. Attack chain overview A malicious artifact associated with the Cursor Marketplace incident included a JavaScript function that executed before the extension’s expected code....",
-      "links": [
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Attack chain",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain"
-        },
-        {
-          "label": "Host reconnaissance collection",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#host-reconnaissance-collection"
-        },
-        {
-          "label": "SSH authorization and tunnel identities",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#ssh-authorization-and-tunnel-identities"
-        },
-        {
-          "label": "Protocol Tunneling (T1572): reverse SSH forwarding",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#protocol-tunneling-t1572-reverse-ssh-forwarding"
-        },
-        {
-          "label": "Platform-specific startup persistence",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#platform-specific-startup-persistence"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Immediate actions",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#immediate-actions"
-        },
-        {
-          "label": "Remediation actions",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#remediation-actions"
-        },
-        {
-          "label": "Follow-up Investigation and recovery",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#follow-up-investigation-and-recovery"
-        },
-        {
-          "label": "Microsoft Defender XDR detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-xdr-detections"
-        },
-        {
-          "label": "Threat intelligence reports",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#threat-intelligence-reports"
-        }
       ]
     },
     {
@@ -7318,54 +7305,6 @@
       ],
       "body": "Microsoft Purview Data Loss Prevention is introducing more granular, role-based access to the Devices page under Settings → Device Onboarding. Previously, viewing or managing device onboarding required broad administrative roles (such as Compliance Administrator, Global Administrator, or Security Administrator). With this update, organizations can grant access using least-privilege Purview role-based access control (RBAC) roles scoped specifically to device operations. A new View-Only Device Management role enables users, such as auditors or security analysts, to view device onboarding status, search for devices, review configuration details, and export device data, without granting permission to change onboarding configuration or other administrative settings. Existing administrative roles continue to have full access, so current workflows are unaffected. This change helps organizations follow the principle of least privilege and simplifies granting read-only visibility into device onboarding without over-provisioning permissions.GA date: January CY2027Preview date: December CY2026",
       "links": []
-    },
-    {
-      "title": "CVE-2026-112407 - Incorrect privilege assignment in AWS CICD-toolchain-for-serverless-applications",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-141-aws/",
-      "published": "2026-10-20T20:41:20+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-112380 - Missing authorization in the WhatsApp channel in Kiro Crew",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-140-aws/",
-      "published": "2026-10-20T20:23:08+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
     },
     {
       "title": "Manage all your Microsoft Sentinel data in one place with Unified Data Management (Public Preview)",
