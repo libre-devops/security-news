@@ -1,37 +1,106 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-18T00:44:38.752450+00:00",
-  "totalArticles": 204,
+  "lastUpdated": "2026-11-18T15:22:03.414351+00:00",
+  "totalArticles": 203,
   "articles": [
     {
-      "title": "[In preview] Public Preview: Immutable snapshots for Azure Disk Storage",
-      "link": "https://azure.microsoft.com/updates?id=581503",
-      "published": "2026-11-18T00:00:09+00:00",
-      "summary": "Immutable snapshots for Azure Disk Storage are now available in public preview. Immutable snapshots complement Azure Backup immutable vaults. Use vaults for cost-efficient long-term retention, and immutable snapshots for short-term backups that need faste",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
+      "title": "Ignite 2026: What's new in Microsoft Defender & Sentinel",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-blog/ignite-2026-what-s-new-in-microsoft-defender-sentinel/ba-p/4569975",
+      "published": "2026-11-18T15:04:28+00:00",
+      "summary": "At Microsoft Ignite 2026, we’re announcing new innovations across Microsoft Defender and Microsoft Sentinel that bring security operations and threat protection closer together, help organizations get ahead of attacks, secure AI agents and strengthen protection across critical workloads. The...",
+      "author": "Caroline_Lee",
+      "source": "Microsoft Defender XDR",
+      "source_id": "defender_xdr",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
       "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
+      "source_category": "XDR",
+      "board_id": "microsoftthreatprotectionblog",
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 6
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
         }
       ],
       "tags": [
-        "General Security"
+        "Microsoft Defender XDR",
+        "Microsoft Sentinel",
+        "AI Security",
+        "Threat Intelligence"
+      ],
+      "body": "At Microsoft Ignite 2026, we’re announcing new innovations across Microsoft Defender and Microsoft Sentinel that bring security operations and threat protection closer together, help organizations get ahead of attacks, secure AI agents and strengthen protection across critical workloads. The foundation for agentic security: Integrated Security Operations Center (ISOC) in Microsoft Defender now includes the full breadth of SIEM capabilities and 90-days of built-in Defender data. Protection before the patch: Vulnerability shielding in Defender autonomously protects exposed systems before and during active attacks, giving security teams more time to deploy permanent patches to vulnerabilities. Protect AI agents wherever they run: Manage security posture for third-party agent platforms, prevent device code phishing and extend runtime protection for local AI agents on Windows. Protect people where they work: Extend defenses against browser-based attacks, malicious QR codes in Teams, and synthetic media threats. Together, these innovations build on a shared foundation of signals, actuators, and coordinated response to help security teams move faster and stop attacks before they spread. The foundation for agentic security ISOC now includes the full breadth of SIEM capabilities and 90 days of built-in retention The integrated SOC brings SIEM and threat protection together to provide the foundation for the agentic SOC. It gives people and agents shared context and the ability to see, understand, and act across the environment, so the security stack works as one system. Building on the September 23 announcement, core ISOC capabilities in Microsoft Defender are now generally available, including case management, playbooks, workbooks and UEBA. Workspace creation and third-party ingestion are also generally available. In addition, we are expanding the preview to include the full breadth of SIEM capabilities for eligible Defender customers, while enabling existing Sentinel customers to opt into ISOC. “What excites us most about ISOC is having a single pane of glass for security operations. Bringing SIEM and XDR together simplifies the analyst experience, while giving us an opportunity to optimize ingestion and automation costs.” - Farhan Nadeem, Senior Security Officer, Government of Nunavut New capabilities available in preview include 90 days of built-in Defender data retention, SOC optimization recommendations, Content Hub, detections as code, and automation audit...",
+      "links": [
+        {
+          "label": "September 23 announcement",
+          "url": "https://aka.ms/ISOC-launch-event"
+        },
+        {
+          "label": "existing Sentinel customers to opt",
+          "url": "https://aka.ms/Sentinel-Blog-Ignite26"
+        },
+        {
+          "label": "Learn more.",
+          "url": "https://aka.ms/vulnerabilityshielding"
+        },
+        {
+          "label": "Agent 365 through connected platforms",
+          "url": "https://learn.microsoft.com/microsoft-agent-365/admin/connected-platforms"
+        },
+        {
+          "label": "local AI agent discovery",
+          "url": "https://techcommunity.microsoft.com/blog/MicrosoftThreatProtectionBlog/now-generally-available-discover-local-ai-agents-with-microsoft-defender/4568216"
+        },
+        {
+          "label": "here",
+          "url": "https://learn.microsoft.com/en-us/defender-endpoint/ai-agent-support-matrix"
+        },
+        {
+          "label": "blog",
+          "url": "https://aka.ms/id-sec-ignite26-githubcli"
+        },
+        {
+          "label": "accounted for 12.8% of all intrusions observed by Microsoft Defender this year",
+          "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/cybersecurity/reports/microsoft-digital-defense-report/"
+        },
+        {
+          "label": "Learn more about Ignite 2026 Defender endpoint security announcements.",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/ignite-2026-what%E2%80%99s-new-in-endpoint-security/4573835"
+        },
+        {
+          "label": "Microsoft Ignite opening keynote",
+          "url": "https://ignite.microsoft.com/en-US/sessions/1787856726055001EpP1-1789751960282001d6eI?source=/sessions/1787854985119001tn8f-1791588326483001Cne4"
+        },
+        {
+          "label": "The Alert Is Dead. The Blueprint for the Agentic SOC",
+          "url": "https://ignite.microsoft.com/en-US/sessions/1787856622349001EKGC-1791588130792001CK8Y?source=sessions"
+        },
+        {
+          "label": "How Threat Research Powers Attack Disruption in the AI Era",
+          "url": "https://ignite.microsoft.com/en-US/sessions/1787856623724001E2uS-1791814919196001Cabn?source=sessions"
+        }
       ]
     },
     {
-      "title": "GCP-2026-082",
+      "title": "GCP-2026-083",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-082",
-      "published": "2026-11-17T22:03:33+00:00",
-      "summary": "Published: 2026-11-17Description Description Severity Notes A remote code execution vulnerability (CVE-2026-114938) was disclosed in OpenJDK 17.0.6 and later (including 17.0.6+, 21.x, 25.x, and 27.x across Eclipse Temurin and other distributions) on x86-64 processors that support AVX-512 VBMI....",
+      "published": "2026-11-18T12:24:30+00:00",
+      "summary": "Published: 2026-11-18Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in integration execution parameter handling in Application Integration versions prior to September 22, 2026. What should I do? No customer action is required. This...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
       "source_id": "gcp_security",
@@ -50,22 +119,18 @@
       "tags": [
         "Google Cloud Security"
       ],
-      "body": "Published: 2026-11-17Description Description Severity Notes A remote code execution vulnerability (CVE-2026-114938) was disclosed in OpenJDK 17.0.6 and later (including 17.0.6+, 21.x, 25.x, and 27.x across Eclipse Temurin and other distributions) on x86-64 processors that support AVX-512 VBMI. OpenJDK 8, 11, and 17.0.0 through 17.0.5 are not affected. Workloads running unpatched OpenJDK 17.0.6 or later on Google Cloud (whether self-managed in VMs and containers or running on managed services such as Google Kubernetes Engine, Cloud Run, Cloud Run functions, Cloud Functions, App Engine, Dataproc, or Dataflow) may be affected. Google Cloud hypervisors and hardware isolation boundaries between customer VMs and containers are not affected. Google is rolling out mitigations and updates across affected Google-managed services, control planes, and base images, and will update this bulletin as updates become available. What should I do? Immediate mitigation (without waiting for a JDK upgrade): Mitigate affected workloads right away by setting (or appending to) the environment variable JDK_JAVA_OPTIONS=\"-XX:+IgnoreUnrecognizedVMOptions -XX:UseAVX=2\" (or passing those flags to your java startup command) and restarting or redeploying. Upgrade to patched OS packages, JDK releases, or container images as they become available, then remove the flag. Google Cloud Buildpacks, Distroless Java, and Assured OSS: Apply the JDK_JAVA_OPTIONS mitigation above now, and upgrade to patched OS packages or container images as they become available. Google Kubernetes Engine (GKE): Managed GKE control planes and Container-Optimized OS (COS) node images are not affected, as COS does not bundle Java. For containers running OpenJDK 17.0.6+ (including GKE Sandbox workloads) on x86-64 nodes that support AVX-512 VBMI, apply the JDK_JAVA_OPTIONS mitigation above and restart your pods, then rebuild your images once patched JDKs publish. Cloud Run, Cloud Run functions, Cloud Functions, and App Engine: As an interim platform safeguard through November 30, 2026, Google has masked AVX-512 VBMI for managed Java 17, 21, and 25 runtimes on the App Engine standard environment and the Cloud Run second generation execution environment (including 2nd gen Cloud Run functions) using Automated Base Image Updates, mitigating those workloads without customer action. Updates to Java 17, 21, and 25 runtime base images are in progress. App Engine standard environment applications, Cloud Run functions, Cloud...",
+      "body": "Published: 2026-11-18Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in integration execution parameter handling in Application Integration versions prior to September 22, 2026. What should I do? No customer action is required. This vulnerability was patched on September 22, 2026. What vulnerabilities are being addressed? An authenticated user could use a crafted serialized object to run arbitrary code. Critical CVE-2026-106169",
       "links": [
         {
-          "label": "Apigee security bulletins",
-          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-082"
-        },
-        {
-          "label": "CVE-2026-114938",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-114938"
+          "label": "CVE-2026-106169",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-106169"
         }
       ]
     },
     {
       "title": "GCP-2026-081",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-081",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-11-10Description Description Severity Notes AMD has disclosed three vulnerabilities that affect 5th generation AMD EPYC processors (code-named Turin): CVE-2024-36350 and CVE-2024-36357, which AMD previously disclosed for earlier EPYC processors, and a new vulnerability,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -112,7 +177,7 @@
     {
       "title": "GCP-2026-080",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-080",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-11-09Updated: 2026-11-12Description Description Severity Notes Security vulnerabilities were discovered in Istio (ISTIO-SECURITY-2026-009). For instructions and more details, see the Cloud Service Mesh security bulletin. High CVE-2026-31836 GHSA-635j-qv98-9275 GHSA-cxwg-46mx-q8hf...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -136,7 +201,7 @@
     {
       "title": "GCP-2026-079",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-079",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-11-05Description Description Severity Notes Per advisory VMSA-2026-0008, Broadcom has identified an out-of-bounds write remote code execution vulnerability in the SDDC Manager Node.js Brotli decoder. This impacts only VMware solution on Google Cloud running VMware Cloud Foundation...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -175,7 +240,7 @@
     {
       "title": "GCP-2026-078",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-078",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-11-04Description Description Severity Notes A vulnerability (CVE-2026-98432) was discovered in the Linux kernel IPv4 TCP stack. The flaw can cause a kernel panic or a container escape (root code execution on the node). An unprivileged process in a container can trigger it locally,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -210,7 +275,7 @@
     {
       "title": "GCP-2026-077",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-077",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-11-03Description Description Severity Notes Following the private-key compromise of intermediate Certificate Authorities (CAs) associated with eMudhra (emSign), outbound TLS connections trusting affected roots—specifically emSign ECC Root CA - G3—are vulnerable to Man-in-the-Middle...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -249,7 +314,7 @@
     {
       "title": "GCP-2026-076",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-076",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-11-02Description Description Severity Notes A security vulnerability was discovered in Istio (ISTIO-SECURITY-2026-008). For instructions and more details, see the Cloud Service Mesh security bulletin. Medium CVE-2026-111943",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -273,7 +338,7 @@
     {
       "title": "GCP-2026-075",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-075",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-11-02Description Description Severity Notes On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -348,7 +413,7 @@
     {
       "title": "GCP-2026-074",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-074",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-10-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the SubWorkflow task in Application Integration versions prior to September 11, 2026. What should I do? No customer action is required. This vulnerability was patched on...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -379,7 +444,7 @@
     {
       "title": "GCP-2026-073",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-073",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-10-26Description Description Severity Notes An incorrect authorization vulnerability was discovered in Compute Engine prior to August 31, 2026. What should I do? No action is required from you. This vulnerability was patched on August 31, 2026. What vulnerabilities are being...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -410,7 +475,7 @@
     {
       "title": "GCP-2026-072",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-072",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-10-24Description Description Severity Notes Two vulnerabilities in PHP core, CVE-2026-109618 and CVE-2026-109619 (\"PHP2Shell\"), allow an unauthenticated attacker to execute code remotely on a server running a vulnerable PHP version. They are fixed in PHP 8.2.35, 8.3.36, 8.4.27, and...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -449,7 +514,7 @@
     {
       "title": "GCP-2026-071",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-071",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-10-23Updated: 2026-11-02Description Description Severity Notes 2026-11-12 Update: Added links to product-specific guidance for Confidential Space, Firebase App Hosting, Firestore, and Firebase App Distribution in the list of affected products. 2026-11-02 Update: Added Google Cloud...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -520,7 +585,7 @@
     {
       "title": "GCP-2026-070",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-070",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-10-21Updated: 2026-10-28Description Description Severity Notes 2026-10-28 Update: For Cloud Run, Cloud Run functions, and Google App Engine Standard, all supported versions of PHP 8.2 and later are patched. Take immediate protective action by redeploying your resources with updated...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -575,7 +640,7 @@
     {
       "title": "GCP-2026-069",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-069",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-10-19Description Description Severity Notes Security vulnerabilities were discovered in Istio and Envoy Proxy (ISTIO-SECURITY-2026-007). For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High GHSA-w44g-8m76-8gc5 GHSA-7p2q-4xvg-vxc6...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -599,7 +664,7 @@
     {
       "title": "GCP-2026-068",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-10-14Updated: 2026-11-05Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -634,7 +699,7 @@
     {
       "title": "GCP-2026-067",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-067",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-10-12Description Description Severity Notes A Denial-of-Service (DoS) vulnerability was discovered in Envoy Proxy when an HTTP filter (such as ext_proc with route_cache_action: RETAIN) mutates the :path header after route selection on a route configured with prefix_rewrite. For...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -658,7 +723,7 @@
     {
       "title": "GCP-2026-066",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-066",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -689,7 +754,7 @@
     {
       "title": "GCP-2026-065",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-065",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the JavaScript Task in Application Integration versions prior to June 28, 2026. What should I do? No customer action is required. This vulnerability was patched on June...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -720,7 +785,7 @@
     {
       "title": "GCP-2026-064",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-064",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes An Incorrect Authorization vulnerability was discovered in the task configuration in Application Integration versions prior to June 17, 2026. What should I do? No customer action is required. This vulnerability was patched on June 17,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -751,7 +816,7 @@
     {
       "title": "GCP-2026-063",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-063",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-09-16Description Description Severity Notes An Improper Privilege Management vulnerability in Google Security Operations SOAR was patched with version 6.3.85, and no customer action is needed. The vulnerability allowed an authenticated attacker to escalate privileges to system-level...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -782,7 +847,7 @@
     {
       "title": "GCP-2026-062",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-062",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-09-11Description Description Severity Notes Multiple security vulnerabilities were discovered in Slurm that affect Cluster Toolkit blueprints that reference specific image versions. These vulnerabilities affect the slurmstepd daemon, RPC request handling, and the accounting...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -845,7 +910,7 @@
     {
       "title": "GCP-2026-061",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-061",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-09-09Description Description Severity Notes A security vulnerability (GHSA-p7v4-vr35-mj6f, CVE assignment pending) in containerd's CRI implementation allows a container restored from an untrusted checkpoint through the CreateContainer API to bypass the destination security context...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -880,7 +945,7 @@
     {
       "title": "GCP-2026-060",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-060",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-09-04Updated: 2026-09-08Description Description Severity Notes 2026-09-08 Update: Added link to the Cluster Toolkit security bulletin. A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. What...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -919,7 +984,7 @@
     {
       "title": "GCP-2026-059",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-059",
-      "published": "2026-11-17T22:03:33+00:00",
+      "published": "2026-11-18T12:24:30+00:00",
       "summary": "Published: 2026-09-04Description Description Severity Notes A Missing Authorization vulnerability was discovered in the HTTP Connector in Integration Connectors versions prior to December 11, 2025. What should I do? No customer action is required. This vulnerability was patched on December 11,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -948,34 +1013,62 @@
       ]
     },
     {
-      "title": "GCP-2026-058",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-058",
-      "published": "2026-11-17T22:03:33+00:00",
-      "summary": "Published: 2026-09-02Description Description Severity Notes A missing project permission check in GKE Multi-Cloud (CreateAttachedCluster, CreateAwsCluster, CreateAzureCluster) APIs allowed an attacker to register an attached cluster into an arbitrary target project's Workload Identity Federation...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
+      "title": "Addressing Java4Shell CVE-2026-114938: upgrade guidance and Azure WAF mitigations",
+      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/addressing-java4shell-cve-2026-114938-upgrade-guidance-and-azure/ba-p/4574305",
+      "published": "2026-11-18T07:46:29+00:00",
+      "summary": "Introduction On November 17, 2026, CVE-2026-114938, also known as Java4Shell, a critical remote code execution (RCE) vulnerability affecting OpenJDK, was publicly disclosed. Under specific conditions, specially crafted Base64 input can trigger memory corruption in affected Java runtimes,...",
+      "author": "yuvalpery",
+      "source": "Azure Network Security",
+      "source_id": "network_security",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "Network Security",
+      "board_id": "azurenetworksecurityblog",
       "products": [
         {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Google Cloud Security"
+        "General Security"
       ],
-      "body": "Published: 2026-09-02Description Description Severity Notes A missing project permission check in GKE Multi-Cloud (CreateAttachedCluster, CreateAwsCluster, CreateAzureCluster) APIs allowed an attacker to register an attached cluster into an arbitrary target project's Workload Identity Federation for GKE. This registration allowed unauthorized creation of Workload Identity tokens and impersonation of Kubernetes Service Accounts that have bindings in the target project through the Workload Identity Federation for GKE configuration. For instructions and more details, see the GKE security bulletin Critical",
+      "body": "Introduction On November 17, 2026, CVE-2026-114938, also known as Java4Shell, a critical remote code execution (RCE) vulnerability affecting OpenJDK, was publicly disclosed. Under specific conditions, specially crafted Base64 input can trigger memory corruption in affected Java runtimes, potentially allowing unauthenticated attackers to execute arbitrary code. We strongly recommend that customers update the Java runtime used by their own applications to a patched version or update third-party Java-based applications to a version that includes the security fix, as applicable. Updating the affected Java runtime is the primary way to fully remediate this vulnerability. For further details, refer to Oracle's official security advisory. Azure Web Application Firewall (WAF) has developed mitigations designed to detect and block known HTTP-based exploitation patterns associated with this vulnerability, providing an additional layer of protection while customers apply the necessary security updates. These mitigations are intended to complement patching, not replace it. About CVE-2026-114938 CVE-2026-114938 is a memory-corruption vulnerability in OpenJDK's hardware-accelerated Base64 decoder. When an affected Java application processes specially crafted Base64 input, the vulnerability can cause heap memory corruption, potentially leading to application crashes, sensitive information disclosure, or remote code execution. The vulnerability primarily affects unpatched OpenJDK-based Java runtimes version 17.0.6 and later, including Java 21, 25, and 27, running on x86-64 processors supporting the AVX-512 VBMI instruction set. Exploitation requires attacker-controlled input to reach the vulnerable Base64 decoding functionality. ARM64 systems and x86-64 processors without AVX-512 VBMI support are not known to be affected. Recommended action: Update affected Java runtimes and third-party Java-based applications to versions containing the security fix as soon as possible. Treat Azure WAF mitigations as supplementary protection, not as a substitute for patching. Azure WAF protection If you are unable to upgrade your Java application to a patched version immediately, apply the following mitigations in the interim. Azure Front Door Since the vulnerability is exploited through malformed Base64 input, apply the following WAF custom rules based on where your application accepts Base64-encoded values in incoming HTTP requests: Request headers: Apply the request headers rule and...",
       "links": [
         {
-          "label": "GKE security bulletin",
-          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-058"
+          "label": "CVE-2026-114938",
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114938"
+        },
+        {
+          "label": "Oracle's official security advisory",
+          "url": "https://www.oracle.com/security-alerts/cspunov2026.html"
         }
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: Immutable snapshots for Azure Disk Storage",
+      "link": "https://azure.microsoft.com/updates?id=581503",
+      "published": "2026-11-18T00:00:09+00:00",
+      "summary": "Immutable snapshots for Azure Disk Storage are now available in public preview. Immutable snapshots complement Azure Backup immutable vaults. Use vaults for cost-efficient long-term retention, and immutable snapshots for short-term backups that need faste",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -1667,99 +1760,6 @@
         {
           "label": "Exposure Management Blog",
           "url": "https://aka.ms/exposurenewsignite"
-        }
-      ]
-    },
-    {
-      "title": "Ignite 2026: What's new in Microsoft Defender & Sentinel",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-blog/ignite-2026-what-s-new-in-microsoft-defender-sentinel/ba-p/4569975",
-      "published": "2026-11-17T18:15:00+00:00",
-      "summary": "At Microsoft Ignite 2026, we’re announcing new innovations across Microsoft Defender and Microsoft Sentinel that bring security operations and threat protection closer together, help organizations get ahead of attacks, secure AI agents and strengthen protection across critical workloads. The...",
-      "author": "Caroline_Lee",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 6
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Sentinel",
-        "AI Security",
-        "Threat Intelligence"
-      ],
-      "body": "At Microsoft Ignite 2026, we’re announcing new innovations across Microsoft Defender and Microsoft Sentinel that bring security operations and threat protection closer together, help organizations get ahead of attacks, secure AI agents and strengthen protection across critical workloads. The foundation for agentic security: Integrated Security Operations Center (ISOC) in Microsoft Defender now includes the full breadth of SIEM capabilities and 90-days of built-in Defender data. Protection before the patch: Vulnerability shielding in Defender autonomously protects exposed systems before and during active attacks, giving security teams more time to deploy permanent patches to vulnerabilities. Protect AI agents wherever they run: Manage security posture for third-party agent platforms, prevent device code phishing and extend runtime protection for local AI agents on Windows. Protect people where they work: Extend defenses against browser-based attacks, malicious QR codes in Teams, and synthetic media threats. Together, these innovations build on a shared foundation of signals, actuators, and coordinated response to help security teams move faster and stop attacks before they spread. The foundation for agentic security ISOC now includes the full breadth of SIEM capabilities and 90 days of built-in retention The integrated SOC brings SIEM and threat protection together to provide the foundation for the agentic SOC. It gives people and agents shared context and the ability to see, understand, and act across the environment, so the security stack works as one system. Building on the September 23 announcement, core ISOC capabilities in Microsoft Defender are now generally available, including case management, playbooks, workbooks and UEBA. Workspace creation and third-party ingestion are also generally available. In addition, we are expanding the preview to include the full breadth of SIEM capabilities for eligible Defender customers, while enabling existing Sentinel customers to opt into ISOC. “What excites us most about ISOC is having a single pane of glass for security operations. Bringing SIEM and XDR together simplifies the analyst experience, while giving us an opportunity to optimize ingestion and automation costs.” - Farhan Nadeem, Senior Security Officer, Government of Nunavut New capabilities available in preview include 90 days of built-in Defender data retention, SOC optimization recommendations, Content Hub, detections as code, and automation audit...",
-      "links": [
-        {
-          "label": "September 23 announcement",
-          "url": "https://aka.ms/ISOC-launch-event"
-        },
-        {
-          "label": "existing Sentinel customers to opt",
-          "url": "https://aka.ms/Sentinel-Blog-Ignite26"
-        },
-        {
-          "label": "Learn more.",
-          "url": "https://aka.ms/vulnerabilityshielding"
-        },
-        {
-          "label": "Agent 365 through connected platforms",
-          "url": "https://learn.microsoft.com/microsoft-agent-365/admin/connected-platforms"
-        },
-        {
-          "label": "local AI agent discovery",
-          "url": "https://techcommunity.microsoft.com/blog/MicrosoftThreatProtectionBlog/now-generally-available-discover-local-ai-agents-with-microsoft-defender/4568216"
-        },
-        {
-          "label": "here",
-          "url": "https://learn.microsoft.com/en-us/defender-endpoint/ai-agent-support-matrix"
-        },
-        {
-          "label": "blog",
-          "url": "https://aka.ms/id-sec-ignite26-githubcli"
-        },
-        {
-          "label": "accounted for 12.8% of all intrusions observed by Microsoft Defender this year",
-          "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/cybersecurity/reports/microsoft-digital-defense-report/"
-        },
-        {
-          "label": "Learn more about Ignite 2026 Defender endpoint security announcements.",
-          "url": "https://aka.ms/MDEIgnite2026"
-        },
-        {
-          "label": "Microsoft Ignite opening keynote",
-          "url": "https://ignite.microsoft.com/en-US/sessions/1787856726055001EpP1-1789751960282001d6eI?source=/sessions/1787854985119001tn8f-1791588326483001Cne4"
-        },
-        {
-          "label": "The Alert Is Dead. The Blueprint for the Agentic SOC",
-          "url": "https://ignite.microsoft.com/en-US/sessions/1787856622349001EKGC-1791588130792001CK8Y?source=sessions"
-        },
-        {
-          "label": "How Threat Research Powers Attack Disruption in the AI Era",
-          "url": "https://ignite.microsoft.com/en-US/sessions/1787856623724001E2uS-1791814919196001Cabn?source=sessions"
         }
       ]
     },
@@ -8536,57 +8536,6 @@
         {
           "label": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-autosensitivitylabelpolicy",
           "url": "https://learn.microsoft.com/en-us/powershell/module/exchangepowershell/set-autosensitivitylabelpolicy"
-        }
-      ]
-    },
-    {
-      "title": "Securing the agentic insider",
-      "link": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
-      "published": "2026-10-19T13:00:02+00:00",
-      "summary": "In the last few months, concerns have arisen about AI safety as a growing number of incidents were publicly disclosed. These incidents exposed how powerful models have become and how they represent a significant threat if not handled well. And with the global race on innovation, the challenge will...",
-      "author": "Hayete Gallot",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "AI",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In the last few months, concerns have arisen about AI safety as a growing number of incidents were publicly disclosed. These incidents exposed how powerful models have become and how they represent a significant threat if not handled well. And with the global race on innovation, the challenge will compound as models become even more powerful. While most have been worried about threat actors using powerful models to attack, the focus has been less on agents within our own walls. Since we were the ones who deployed agents internally for our companies, we implicitly trusted our agents. Unfortunately, frontier models, regardless of their origin, cannot be trusted. This is not because models are inherently malicious. Models have been trained to attain results, which often leads to reward hacking, and models are not optimized around organizational norms or judgment. Agents are unpredictable. They will adapt as the context changes, may not behave as intended and will collaborate and collude with other agents to reach their objectives, without needing to be compromised. Agents have been unleashed in the enterprise, at scale, and their numbers are growing rapidly. These agents are frequently overprivileged, have access to data, tools and systems and can take actions and make decisions in critical processes. They have become active participants in the enterprise. They are agentic insiders. Monitoring and securing those agents must become continuous. We need to understand in real time what the agents are doing and what risks those actions create, and we need to adjust their ability to act accordingly. To manage and control these insiders, we will need Guardian Agents — an established industry term — that watch and moderate every action of every agent, before it happens, 24/7. An agent brings together a model, a harness that orchestrates its work, an action space of tools and resources and a runtime in which it executes. Securing agents requires protection across multiple layers: identity, permissions, data, endpoints, network, cloud and runtime. In July, we announced Project Perception, an agentic security system that uses our new cyber stack and teams of red, blue and green agents to help defenders act with speed, while defending against AI driven attacks from outside of the enterprise. The same cyber stack is also directly applicable to managing and governing the agentic insiders that run in the enterprise. Project Perception can be leveraged to contain agentic...",
-      "links": [
-        {
-          "label": "Unfortunately, frontier models, regardless of their origin, cannot be trusted",
-          "url": "https://snscratchpad.com/posts/models-as-insider-risks/"
-        },
-        {
-          "label": "we announced Project Perception",
-          "url": "https://blogs.microsoft.com/blog/2026/07/27/rethinking-security-for-the-age-of-ai/"
-        },
-        {
-          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Secure-AI-Image-1-10_19.png.jpg",
-          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Secure-AI-Image-1-10_19.png.jpg"
-        },
-        {
-          "label": "you can get started today on the journey to secure your agentic insiders",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/"
-        },
-        {
-          "label": "Securing the agentic insider",
-          "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/"
-        },
-        {
-          "label": "The Official Microsoft Blog",
-          "url": "https://blogs.microsoft.com"
         }
       ]
     }
