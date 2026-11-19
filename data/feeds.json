@@ -1,8 +1,63 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-19T00:02:20.534722+00:00",
-  "totalArticles": 212,
+  "lastUpdated": "2026-11-19T15:28:32.820546+00:00",
+  "totalArticles": 210,
   "articles": [
+    {
+      "title": "CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-189-aws/",
+      "published": "2026-11-19T03:02:28+00:00",
+      "summary": "Bulletin ID: 2026-189-AWS Publication Date: 11/18/2026 17:00 PM PST Description: AWS is aware of CVE-2026-114938, a memory issue in the Base64 decoder intrinsic of OpenJDK 17.0.6 and later on x86-64 processors that support AVX-512 VBMI. A fix is available in the November 2026 OpenJDK updates. AWS...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-189-AWS Publication Date: 11/18/2026 17:00 PM PST Description: AWS is aware of CVE-2026-114938, a memory issue in the Base64 decoder intrinsic of OpenJDK 17.0.6 and later on x86-64 processors that support AVX-512 VBMI. A fix is available in the November 2026 OpenJDK updates. AWS is working to deploy the fix to affected AWS services Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-189-aws/"
+        }
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Information Protection-Sensitivity label inheritance for Teams meeting artifacts",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581739",
+      "published": "2026-11-19T00:35:27+00:00",
+      "summary": "Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
     {
       "title": "[In preview] Public Preview: AI bot ruleset for Azure Front Door Premium WAF",
       "link": "https://azure.microsoft.com/updates?id=581604",
@@ -5956,32 +6011,6 @@
       ]
     },
     {
-      "title": "Microsoft Purview: Data Lifecycle Management-Enable version trimming for data covered by retention policies in OneDrive and SharePoint",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575284",
-      "published": "2026-11-05T23:59:28+00:00",
-      "summary": "Let tenants trim file-version bloat created by retention, without breaking compliance promises. SharePoint/compliance admins at large, regulated enterprises must cap and reclaim storage consumed by retained file versions, while keeping legal-hold and records promises intact. Admins with appropriate...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "Let tenants trim file-version bloat created by retention, without breaking compliance promises. SharePoint/compliance admins at large, regulated enterprises must cap and reclaim storage consumed by retained file versions, while keeping legal-hold and records promises intact. Admins with appropriate Purview RBAC can enable version cleanup for ODB/SPO content even when retention policies are in effect. This would be a policy scoped setting that essentially overrides the default behavior where all versions are retained. When turned on, SharePoint’s version management will be permitted to trim file versions per the defined limits except for specific protected cases.GA date: January CY2027Preview date: November CY2026",
-      "links": []
-    },
-    {
       "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
       "published": "2026-11-05T23:46:50+00:00",
@@ -6276,30 +6305,6 @@
           "label": "kevin_gatimu",
           "url": "https://techcommunity.microsoft.com/users/kevin_gatimu/2698412"
         }
-      ]
-    },
-    {
-      "title": "Microsoft Purview: Information Protection-Auto-labeling for legacy Office files",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=578872",
-      "published": "2026-11-04T23:59:50+00:00",
-      "summary": "Microsoft Purview server-side auto-labeling will support legacy Microsoft Office file formats, including Word (.doc), Excel (.xls), and PowerPoint (.ppt). Organizations can automatically evaluate and apply sensitivity labels to these files in SharePoint and OneDrive.GA date: December CY2026",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
       ]
     },
     {
@@ -8170,28 +8175,30 @@
       ]
     },
     {
-      "title": "CVE-2026-115812 and CVE-2026-115813: Issue in Amazon Web Services Multi Model Server",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-148-aws/",
-      "published": "2026-10-23T17:47:47+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
+      "title": "Microsoft Purview: Introducing IRM Alert classification",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=576710",
+      "published": "2026-10-22T22:58:40+00:00",
+      "summary": "Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
       "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
       "board_id": null,
       "products": [
         {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 14
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
         }
       ],
       "tags": [
-        "AWS Security"
-      ]
+        "Microsoft Purview"
+      ],
+      "body": "Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert classification will help tenants to better classify risk within alerts to support reporting and tuning needs. This will replace existing dismissal reasons.GA date: January CY2027Preview date: December CY2026",
+      "links": []
     },
     {
       "title": "CVE-2026-115419 - Unintended disclosure of data element to wrong session in Strands Agents SDK A2A Server",
@@ -8672,89 +8679,6 @@
         {
           "label": "Microsoft Entra tenant governance documentation",
           "url": "https://aka.ms/TenantGovernance/Docs"
-        }
-      ]
-    },
-    {
-      "title": "Introducing a new AI chapter in the NCSC research problem book",
-      "link": "https://www.ncsc.gov.uk/blogs/introducing-new-ai-chapter-ncsc-research-problem-book",
-      "published": "2026-10-20T12:00:00+00:00",
-      "summary": "A revolution is underway at the intersection of AI and cyber security.",
-      "author": "",
-      "source": "NCSC Security Feed",
-      "source_id": "ncsc_security",
-      "source_group": "Official NCSC",
-      "source_kind": "rss",
-      "vendor": "NCSC",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ncsc-guidance",
-          "name": "NCSC Guidance",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Advancing digital sovereignty with greater control and choice",
-      "link": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
-      "published": "2026-10-20T08:20:02+00:00",
-      "summary": "Across my conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on their most important systems while maintaining the control those systems require. This challenge is becoming more important...",
-      "author": "Douglas Phillips",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "AI",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Across my conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on their most important systems while maintaining the control those systems require. This challenge is becoming more important as advanced cloud and AI capabilities move into public services, regulated processes and essential operations. Organizations are considering more than where data resides. They also seek to understand who can access and operate their systems, how sensitive digital assets remain protected, which technology dependencies matter most and whether critical services can continue as regulatory, geopolitical, security or network conditions change. Digital sovereignty should give organizations greater control and security over the technology they depend on, while continuing to innovate. Last year, we introduced Microsoft Sovereign Cloud to give customers more choice in how they address these requirements. Since then, we have continued to turn our commitments into practical capabilities across public cloud and customer-operated environments, while expanding how we enable partners to address sovereignty requirements in their local markets. Today, we are sharing the next stage of that work. YouTube Video Click here to load media A continuum of control, built around the workload Our approach to digital sovereignty starts with the workload. Each workload carries different requirements for data, operations, technology dependencies, continuity and risk. Microsoft Sovereign Cloud is designed to make it easier for organizations to apply the appropriate level of control to each workload without forcing every application into the same deployment model. Those needs can vary widely across organizations. A public-facing digital service may benefit from the scale and pace of innovation in the public cloud. A system supporting essential operations may need to continue running locally if connectivity is disrupted. An AI workload handling highly sensitive data may require models, data and processing to remain within a customer-controlled environment. Microsoft Sovereign Cloud is designed around this workload-based approach, providing a continuum of management, control and options across Sovereign Public Cloud, Sovereign Private Cloud and the Sovereign Partner Ecosystem. Organizations can apply the level of control appropriate to each workload while maintaining a consistent approach to...",
-      "links": [
-        {
-          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Digital-Sovereignty-Image-2.jpg",
-          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Digital-Sovereignty-Image-2.jpg"
-        },
-        {
-          "label": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Sovereignty-Image-3-Final-10_28.jpg",
-          "url": "https://blogs.microsoft.com/wp-content/uploads/2026/10/OMB-Sovereignty-Image-3-Final-10_28.jpg"
-        },
-        {
-          "label": "Microsoft Sovereign Cloud",
-          "url": "https://www.microsoft.com/sovereignty"
-        },
-        {
-          "label": "Sovereign Landing Zone architecture guidance",
-          "url": "https://aka.ms/sovereign/slz"
-        },
-        {
-          "label": "Sovereign Public Cloud Tech Community blog",
-          "url": "https://aka.ms/SovMoment2026Public"
-        },
-        {
-          "label": "Sovereign Private Cloud Tech Community blo",
-          "url": "https://aka.ms/SovMoment2026Private"
-        },
-        {
-          "label": "Advancing digital sovereignty with greater control and choice",
-          "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/"
-        },
-        {
-          "label": "The Official Microsoft Blog",
-          "url": "https://blogs.microsoft.com"
         }
       ]
     }
