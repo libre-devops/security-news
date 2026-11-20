@@ -1,61 +1,13 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-20T15:05:51.890070+00:00",
-  "totalArticles": 201,
+  "lastUpdated": "2026-11-20T23:47:52.898831+00:00",
+  "totalArticles": 203,
   "articles": [
     {
-      "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532",
-      "published": "2026-11-20T09:06:50+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium: CVE-2023-1531 Use after free in ANGLE",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531",
-      "published": "2026-11-20T09:05:37+00:00",
-      "summary": "Information published.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-088",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-088",
-      "published": "2026-11-20T02:23:07+00:00",
-      "summary": "Published: 2026-11-19Description Description Severity Notes A denial-of-service vulnerability (CVE-2026-99288) was discovered in the Linux kernel TCP implementation. The flaw can cause a kernel panic (denial of service) on the affected virtual machine; it does not allow privilege escalation or...",
+      "title": "GCP-2026-089",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-089",
+      "published": "2026-11-20T21:12:32+00:00",
+      "summary": "Published: 2026-11-20Description Description Severity Notes On November 18, 2026, F5 disclosed HTTP/2 vulnerabilities CVE-2026-123633 and CVE-2026-123007 in NGINX Open Source (1.19.7-1.31.8 for CVE-2026-123633; 1.9.5-1.31.8 for CVE-2026-123007) and NGINX Plus, alongside eight additional NGINX CVEs...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
       "source_id": "gcp_security",
@@ -74,7 +26,54 @@
       "tags": [
         "Google Cloud Security"
       ],
-      "body": "Published: 2026-11-19Description Description Severity Notes A denial-of-service vulnerability (CVE-2026-99288) was discovered in the Linux kernel TCP implementation. The flaw can cause a kernel panic (denial of service) on the affected virtual machine; it does not allow privilege escalation or container breakout to code execution on the host. A remote attacker can trigger it by sending specially crafted TCP packets to a reachable TCP listener on a node, Pod, or the cluster control plane's IP-based endpoint. Internal traffic within the same VPC can also trigger this vulnerability. GKE Standard clusters and GKE Autopilot clusters running Container-Optimized OS or Ubuntu prior to the patched versions are affected across both cluster control planes and worker nodes. Pods running in GKE Sandbox (gVisor) and Windows Server node pools are not affected. For instructions and more details, see the GKE security bulletin. High CVE-2026-99288",
+      "body": "Published: 2026-11-20Description Description Severity Notes On November 18, 2026, F5 disclosed HTTP/2 vulnerabilities CVE-2026-123633 and CVE-2026-123007 in NGINX Open Source (1.19.7-1.31.8 for CVE-2026-123633; 1.9.5-1.31.8 for CVE-2026-123007) and NGINX Plus, alongside eight additional NGINX CVEs in F5's master advisory (K000164058). Under specific configuration and traffic conditions, an unauthenticated remote attacker can crash an NGINX worker process (DoS) or potentially achieve remote code execution (RCE). Google Cloud's core load balancing and managed infrastructure (including Google Front End, Cloud Load Balancing, GKE control plane, Cloud Run, Cloud Functions, and App Engine) are not affected. This bulletin provides guidance for customers operating self-managed NGINX deployments on Google Cloud. What should I do? Managed Google Cloud services: No customer action is required if you rely solely on unaffected Google Cloud managed platforms (including Google Front End, Cloud Load Balancing, GKE control plane, Cloud Run, Cloud Functions, and App Engine). Google is patching any isolated Google-managed components internally, with zero customer impact and no customer action required. Customer-managed NGINX on Google Cloud (GKE Ingress Controllers, Compute Engine VMs, and NGINX-based Cloud Marketplace images): Google has also temporarily delisted affected Google-maintained Click-to-Deploy NGINX listings on Cloud Marketplace while patched images are being prepared. Patch: Upgrade NGINX Open Source to 1.31.9 (mainline) or 1.30.7 (stable), or NGINX Plus to the latest fixed releases (37.0.7.1 / 37.2.0.1 for CVE-2026-123633; 37.0.8.1 / 37.3.0.1 for CVE-2026-123007) in F5 advisory K000164058 to remediate these vulnerabilities and all November 18 F5 CVEs (see also the Wiz research blog). Temporary mitigation (if unable to patch immediately): Disable HTTP/2 on exposed NGINX listeners (for example, set use-http2: \"false\" in ingress-nginx or remove http2 listener directives and reload), or place a Google Cloud External Application Load Balancer in front of NGINX configured to speak HTTP/1.1 to backends. (Note: Disabling HTTP/2 does not mitigate non-HTTP/2 CVEs, so upgrading to a patched release remains recommended.) What vulnerabilities are being addressed? CVE-2026-123633 (NGINX Open Source 1.19.7-1.31.8; NGINX Plus R33+ / 37.0.0-37.2.0.0): Reentrant HTTP/2 connection-draining heap use-after-free in ngx_http_v2_module when reverse proxying (proxy_pass,...",
+      "links": [
+        {
+          "label": "K000164058",
+          "url": "https://my.f5.com/manage/s/article/K000164058"
+        },
+        {
+          "label": "1.31.9",
+          "url": "https://github.com/nginx/nginx/releases/tag/release-1.31.9"
+        },
+        {
+          "label": "Wiz research blog",
+          "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities"
+        },
+        {
+          "label": "CVE-2026-123633",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123633"
+        },
+        {
+          "label": "CVE-2026-123007",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123007"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-088",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-088",
+      "published": "2026-11-20T21:12:32+00:00",
+      "summary": "Published: 2026-11-19Updated: 2026-11-20Description Description Severity Notes 2026-11-20 Update: Added GKE patch versions containing fixes for Container-Optimized OS for minor versions 1.32 and 1.33. Patches for GKE 1.37 on Container-Optimized OS and Ubuntu node images are still in progress. A...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-19Updated: 2026-11-20Description Description Severity Notes 2026-11-20 Update: Added GKE patch versions containing fixes for Container-Optimized OS for minor versions 1.32 and 1.33. Patches for GKE 1.37 on Container-Optimized OS and Ubuntu node images are still in progress. A denial-of-service vulnerability (CVE-2026-99288) was discovered in the Linux kernel TCP implementation. The flaw can cause a kernel panic (denial of service) on the affected virtual machine; it does not allow privilege escalation or container breakout to code execution on the host. A remote attacker can trigger it by sending specially crafted TCP packets to a reachable TCP listener on a node, Pod, or the cluster control plane's IP-based endpoint. Internal traffic within the same VPC can also trigger this vulnerability. GKE Standard clusters and GKE Autopilot clusters running Container-Optimized OS or Ubuntu prior to the patched versions are affected across both cluster control planes and worker nodes. Pods running in GKE Sandbox (gVisor) and Windows Server node pools are not affected. For instructions and more details, see the GKE security bulletin. High CVE-2026-99288",
       "links": [
         {
           "label": "GKE security bulletin",
@@ -89,7 +88,7 @@
     {
       "title": "GCP-2026-087",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-087",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-19Description Description Severity Notes Two vulnerabilities in the nginx HTTP/2 module, CVE-2026-123633 and CVE-2026-123007, can let a remote, unauthenticated attacker run code on an nginx server that accepts HTTP/2 connections. Both are fixed in nginx 1.30.7. The Router in...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -128,7 +127,7 @@
     {
       "title": "GCP-2026-086",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-086",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0010, a vulnerability was identified in VMware Aria Operations and VMware Cloud Foundation (VCF). Broadcom will make patches available to remediate this vulnerability in affected Broadcom...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -171,7 +170,7 @@
     {
       "title": "GCP-2026-085",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-085",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0009, a vulnerability was identified in VMware vCenter and VMware Cloud Foundation (VCF). There are no known workarounds for this reported vulnerability. For remediation guidance and...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -214,7 +213,7 @@
     {
       "title": "GCP-2026-084",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-084",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-19Description Description Severity Notes A path traversal vulnerability in workspace directory handling and Git integration was discovered in Dataform, BigQuery Studio, and Colab Enterprise. What should I do? No customer action is required. This vulnerability was patched on...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -245,7 +244,7 @@
     {
       "title": "GCP-2026-083",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-083",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-18Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in integration execution parameter handling in Application Integration versions prior to September 22, 2026. What should I do? No customer action is required. This...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -276,8 +275,8 @@
     {
       "title": "GCP-2026-082",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-082",
-      "published": "2026-11-20T02:23:07+00:00",
-      "summary": "Published: 2026-11-17Description Description Severity Notes A remote code execution vulnerability (CVE-2026-114938) was disclosed in OpenJDK 17.0.6 and later (including 17.0.6+, 21.x, 25.x, and 27.x across Eclipse Temurin and other distributions) on x86-64 processors that support AVX-512 VBMI....",
+      "published": "2026-11-20T21:12:32+00:00",
+      "summary": "Published: 2026-11-17Updated: 2026-11-20Description Description Severity Notes 2026-11-20 Update: Patched Java 17 (17.0.21.1+2), Java 21 (21.0.13.1+2), and Java 25 (25.0.5.1+2) runtime base images and Buildpacks packages have finished rolling out across Cloud Run, Cloud Run functions, Cloud...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
       "source_id": "gcp_security",
@@ -296,8 +295,32 @@
       "tags": [
         "Google Cloud Security"
       ],
-      "body": "Published: 2026-11-17Description Description Severity Notes A remote code execution vulnerability (CVE-2026-114938) was disclosed in OpenJDK 17.0.6 and later (including 17.0.6+, 21.x, 25.x, and 27.x across Eclipse Temurin and other distributions) on x86-64 processors that support AVX-512 VBMI. OpenJDK 8, 11, and 17.0.0 through 17.0.5 are not affected. Workloads running unpatched OpenJDK 17.0.6 or later on Google Cloud (whether self-managed in VMs and containers or running on managed services such as Google Kubernetes Engine, Cloud Run, Cloud Run functions, Cloud Functions, App Engine, Dataproc, or Dataflow) may be affected. Google Cloud hypervisors and hardware isolation boundaries between customer VMs and containers are not affected. Google is rolling out mitigations and updates across affected Google-managed services, control planes, and base images, and will update this bulletin as updates become available. What should I do? Immediate mitigation (without waiting for a JDK upgrade): Mitigate affected workloads right away by setting (or appending to) the environment variable JDK_JAVA_OPTIONS=\"-XX:+IgnoreUnrecognizedVMOptions -XX:UseAVX=2\" (or passing those flags to your java startup command) and restarting or redeploying. Upgrade to patched OS packages, JDK releases, or container images as they become available, then remove the flag. Google Cloud Buildpacks, Distroless Java, and Assured OSS: Apply the JDK_JAVA_OPTIONS mitigation above now, and upgrade to patched OS packages or container images as they become available. Google Kubernetes Engine (GKE): Managed GKE control planes and Container-Optimized OS (COS) node images are not affected, as COS does not bundle Java. For containers running OpenJDK 17.0.6+ (including GKE Sandbox workloads) on x86-64 nodes that support AVX-512 VBMI, apply the JDK_JAVA_OPTIONS mitigation above and restart your pods, then rebuild your images once patched JDKs publish. Cloud Run, Cloud Run functions, Cloud Functions, and App Engine: As an interim platform safeguard through November 30, 2026, Google has masked AVX-512 VBMI for managed Java 17, 21, and 25 runtimes on the App Engine standard environment and the Cloud Run second generation execution environment (including 2nd gen Cloud Run functions) using Automated Base Image Updates, mitigating those workloads without customer action. Updates to Java 17, 21, and 25 runtime base images are in progress. App Engine standard environment applications, Cloud Run functions, Cloud...",
+      "body": "Published: 2026-11-17Updated: 2026-11-20Description Description Severity Notes 2026-11-20 Update: Patched Java 17 (17.0.21.1+2), Java 21 (21.0.13.1+2), and Java 25 (25.0.5.1+2) runtime base images and Buildpacks packages have finished rolling out across Cloud Run, Cloud Run functions, Cloud Functions (1st gen), App Engine, and Google Cloud Buildpacks. Updated the Google Cloud Buildpacks and Cloud Run, Cloud Run functions, Cloud Functions, and App Engine guidance and added Cloud Composer (Managed Service for Apache Airflow) in the What should I do? section. A remote code execution vulnerability (CVE-2026-114938) was disclosed in OpenJDK 17.0.6 and later (including 17.0.6+, 21.x, 25.x, and 27.x across Eclipse Temurin and other distributions) on x86-64 processors that support AVX-512 VBMI. OpenJDK 8, 11, and 17.0.0 through 17.0.5 are not affected. Workloads running unpatched OpenJDK 17.0.6 or later on Google Cloud (whether self-managed in VMs and containers or running on managed services such as Google Kubernetes Engine, Cloud Run, Cloud Run functions, Cloud Functions, App Engine, Dataproc, or Dataflow) may be affected. Google Cloud hypervisors and hardware isolation boundaries between customer VMs and containers are not affected. Google is rolling out mitigations and updates across affected Google-managed services, control planes, and base images, and will update this bulletin as updates become available. What should I do? Immediate mitigation (without waiting for a JDK upgrade): Mitigate affected workloads right away by setting (or appending to) the environment variable JDK_JAVA_OPTIONS=\"-XX:+IgnoreUnrecognizedVMOptions -XX:UseAVX=2\" (or passing those flags to your java startup command) and restarting or redeploying. Upgrade to patched OS packages, JDK releases, or container images as they become available, then remove the flag. Google Cloud Buildpacks: Patched Java 17 (17.0.21.1+2), Java 21 (21.0.13.1+2), and Java 25 (25.0.5.1+2) runtimes are available (see the Buildpacks release notes). Rebuild and redeploy your applications (leaving GOOGLE_RUNTIME_VERSION unset or pinned to a major or minor version such as 17, 21, 25, or 17.0, 21.0, 25.0, rather than the four-part patch string) to pick up the patched Java runtime, and then remove any temporary JDK_JAVA_OPTIONS mitigation flags. Distroless Java and Assured OSS: Apply the preceding JDK_JAVA_OPTIONS mitigation, and upgrade to patched OS packages or container images as they become available. Google...",
       "links": [
+        {
+          "label": "Buildpacks release notes",
+          "url": "https://docs.cloud.google.com/docs/buildpacks/release-notes#November_20_2026"
+        },
+        {
+          "label": "Cloud Run",
+          "url": "https://docs.cloud.google.com/run/docs/release-notes#November_20_2026"
+        },
+        {
+          "label": "Cloud Run functions and Cloud Functions (1st gen)",
+          "url": "https://docs.cloud.google.com/functions/docs/release-notes#November_20_2026"
+        },
+        {
+          "label": "App Engine standard environment",
+          "url": "https://docs.cloud.google.com/appengine/docs/standard/java-gen2/release-notes#November_20_2026"
+        },
+        {
+          "label": "App Engine flexible environment",
+          "url": "https://docs.cloud.google.com/appengine/docs/flexible/java/release-notes#November_20_2026"
+        },
+        {
+          "label": "November 19, 2026 Managed Service for Apache Airflow release notes",
+          "url": "https://docs.cloud.google.com/composer/docs/release-notes#November_19_2026"
+        },
         {
           "label": "Apigee security bulletins",
           "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-082"
@@ -311,7 +334,7 @@
     {
       "title": "GCP-2026-081",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-081",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-10Description Description Severity Notes AMD has disclosed three vulnerabilities that affect 5th generation AMD EPYC processors (code-named Turin): CVE-2024-36350 and CVE-2024-36357, which AMD previously disclosed for earlier EPYC processors, and a new vulnerability,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -358,7 +381,7 @@
     {
       "title": "GCP-2026-080",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-080",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-09Updated: 2026-11-12Description Description Severity Notes Security vulnerabilities were discovered in Istio (ISTIO-SECURITY-2026-009). For instructions and more details, see the Cloud Service Mesh security bulletin. High CVE-2026-31836 GHSA-635j-qv98-9275 GHSA-cxwg-46mx-q8hf...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -382,7 +405,7 @@
     {
       "title": "GCP-2026-079",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-079",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-05Description Description Severity Notes Per advisory VMSA-2026-0008, Broadcom has identified an out-of-bounds write remote code execution vulnerability in the SDDC Manager Node.js Brotli decoder. This impacts only VMware solution on Google Cloud running VMware Cloud Foundation...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -421,7 +444,7 @@
     {
       "title": "GCP-2026-078",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-078",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-04Updated: 2026-11-18Description Description Severity Notes 2026-11-18 Update: Added patch versions for GKE. A vulnerability (CVE-2026-98432) was discovered in the Linux kernel IPv4 TCP stack. The flaw can cause a kernel panic or a container escape (root code execution on the...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -456,7 +479,7 @@
     {
       "title": "GCP-2026-077",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-077",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-03Description Description Severity Notes Following the private-key compromise of intermediate Certificate Authorities (CAs) associated with eMudhra (emSign), outbound TLS connections trusting affected roots—specifically emSign ECC Root CA - G3—are vulnerable to Man-in-the-Middle...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -495,7 +518,7 @@
     {
       "title": "GCP-2026-076",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-076",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-02Description Description Severity Notes A security vulnerability was discovered in Istio (ISTIO-SECURITY-2026-008). For instructions and more details, see the Cloud Service Mesh security bulletin. Medium CVE-2026-111943",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -519,7 +542,7 @@
     {
       "title": "GCP-2026-075",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-075",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-11-02Description Description Severity Notes On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -594,7 +617,7 @@
     {
       "title": "GCP-2026-074",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-074",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-10-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the SubWorkflow task in Application Integration versions prior to September 11, 2026. What should I do? No customer action is required. This vulnerability was patched on...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -625,7 +648,7 @@
     {
       "title": "GCP-2026-073",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-073",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-10-26Description Description Severity Notes An incorrect authorization vulnerability was discovered in Compute Engine prior to August 31, 2026. What should I do? No action is required from you. This vulnerability was patched on August 31, 2026. What vulnerabilities are being...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -656,7 +679,7 @@
     {
       "title": "GCP-2026-072",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-072",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-10-24Description Description Severity Notes Two vulnerabilities in PHP core, CVE-2026-109618 and CVE-2026-109619 (\"PHP2Shell\"), allow an unauthenticated attacker to execute code remotely on a server running a vulnerable PHP version. They are fixed in PHP 8.2.35, 8.3.36, 8.4.27, and...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -695,7 +718,7 @@
     {
       "title": "GCP-2026-071",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-071",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-10-23Updated: 2026-11-02Description Description Severity Notes 2026-11-12 Update: Added links to product-specific guidance for Confidential Space, Firebase App Hosting, Firestore, and Firebase App Distribution in the list of affected products. 2026-11-02 Update: Added Google Cloud...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -766,7 +789,7 @@
     {
       "title": "GCP-2026-070",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-070",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-10-21Updated: 2026-10-28Description Description Severity Notes 2026-10-28 Update: For Cloud Run, Cloud Run functions, and Google App Engine Standard, all supported versions of PHP 8.2 and later are patched. Take immediate protective action by redeploying your resources with updated...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -821,7 +844,7 @@
     {
       "title": "GCP-2026-069",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-069",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-10-19Description Description Severity Notes Security vulnerabilities were discovered in Istio and Envoy Proxy (ISTIO-SECURITY-2026-007). For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High GHSA-w44g-8m76-8gc5 GHSA-7p2q-4xvg-vxc6...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -845,7 +868,7 @@
     {
       "title": "GCP-2026-068",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-10-14Updated: 2026-11-05Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -880,7 +903,7 @@
     {
       "title": "GCP-2026-067",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-067",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-10-12Description Description Severity Notes A Denial-of-Service (DoS) vulnerability was discovered in Envoy Proxy when an HTTP filter (such as ext_proc with route_cache_action: RETAIN) mutates the :path header after route selection on a route configured with prefix_rewrite. For...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -904,7 +927,7 @@
     {
       "title": "GCP-2026-066",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-066",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -935,7 +958,7 @@
     {
       "title": "GCP-2026-065",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-065",
-      "published": "2026-11-20T02:23:07+00:00",
+      "published": "2026-11-20T21:12:32+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the JavaScript Task in Application Integration versions prior to June 28, 2026. What should I do? No customer action is required. This vulnerability was patched on June...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -964,34 +987,251 @@
       ]
     },
     {
-      "title": "GCP-2026-064",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-064",
-      "published": "2026-11-20T02:23:07+00:00",
-      "summary": "Published: 2026-09-28Description Description Severity Notes An Incorrect Authorization vulnerability was discovered in the task configuration in Application Integration versions prior to June 17, 2026. What should I do? No customer action is required. This vulnerability was patched on June 17,...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
+      "title": "[In preview] Public Preview: Azure Firewall for Containers",
+      "link": "https://azure.microsoft.com/updates?id=581963",
+      "published": "2026-11-20T20:05:17+00:00",
+      "summary": "Azure Firewall for Containers extends Azure Firewall protection to containerized workloads, providing a centralized approach to securing network traffic for container environments. Customers can use Azure Firewall capabilities as part of their container n",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
       "source_kind": "rss",
-      "vendor": "Google Cloud",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "(Updated) Microsoft Entra: Updated passkey registration experience in My Sign-ins",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1545694",
+      "published": "2026-11-20T17:59:47.217000+00:00",
+      "summary": "Updated November 20, 2026: We have updated the timeline. Thank you for your patience. [What and why]We’re updating the passkey registration experience in My Sign-ins for users registering a passkey in Microsoft Authenticator. Users will see an additional checkbox and updated link text, along with...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1545694",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated November 20, 2026: We have updated the timeline. Thank you for your patience. [What and why]We’re updating the passkey registration experience in My Sign-ins for users registering a passkey in Microsoft Authenticator. Users will see an additional checkbox and updated link text, along with steps to guide users to open Microsoft Authenticator and select the + button to begin registration. If users can’t complete registration directly in Authenticator, the updated link text will help them find the WebAuthn registration flow.[Rollout schedule]General Availability (Worldwide): Beginning in early December 2026 (previously mid-November) and expected to complete by end of December 2026 (previously end-November 2027)[Impact on your organization]Who is affectedUsers who are guided through My Sign-ins to register a passkey in Microsoft AuthenticatorPlatforms and servicesMicrosoft Entra My Sign-ins and Microsoft AuthenticatorWhat will happenUsers will see an additional checkbox and updated link text during passkey registration.Users will see steps to open Microsoft Authenticator and select the + button to begin registration:If users can’t complete registration directly in Authenticator, the updated link text will help them find the WebAuthn registration flow.[Action required and recommendations]Inform users about the updated UI and update your internal user guidance to reflect these changes.[Compliance considerations]No compliance considerations were identified. Review as appropriate for your organization.",
+      "links": [],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/20/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-siem/",
+      "published": "2026-11-20T17:00:00+00:00",
+      "summary": "We're honored that Microsoft has once again been recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Security Information and Event Management (SIEM). The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM appeared first on Microsoft Security Blog.",
+      "author": "Rob Lefferts",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "We’re honored that Microsoft has once again been recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Security Information and Event Management (SIEM). As security environments grow more complex and attackers move faster, organizations need more than the ability to collect and analyze data. They need comprehensive visibility, context to understand what is happening, and the ability to act before an attack causes further damage. Explore Microsoft Sentinel SIEM capabilities Comprehensive SIEM across the digital estate Microsoft Sentinel is our cloud-native SIEM, bringing together security data, advanced analytics, automation, and threat intelligence to help organizations protect their digital estate. With more than 500 connectors across Microsoft and third-party solutions, Microsoft Sentinel brings together signals from across complex, multicloud environments. Its rich library of out-of-the-box detections, informed by Microsoft’s threat intelligence and organizational context, helps defenders identify sophisticated threats without building every detection from scratch. Microsoft Sentinel supports the core capabilities security teams depend on, from scalable security data management and advanced detection to threat hunting, investigation, and response. The Microsoft Sentinel data lake centralizes historical and real-time security data across platforms and clouds for cost-effective retention and advanced analytics at scale. Security operations center (SOC) optimization and cost management help teams improve coverage, identify detection gaps, and make informed decisions about the data they collect and retain. Reimagining security operations for the agentic era On September 23, 2026, Microsoft introduced the Integrated Security Operations Center (ISOC) in Microsoft Defender, reimagining security operations for the agentic era. As threats grow more sophisticated and security environments more complex, traditional approaches built on disconnected tools and workflows can no longer keep pace. ISOC brings security operations and threat protection together, creating a unified foundation where people and AI agents can see, understand, and act across the environment. Through deep integration with Microsoft Sentinel, ISOC combines the full breadth of SIEM capabilities with extended detection and response (XDR), threat intelligence, posture management, and response. By connecting signals from Microsoft and third-party environments with rich security context...",
+      "links": [
+        {
+          "label": "Explore Microsoft Sentinel SIEM capabilities",
+          "url": "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel-siem"
+        },
+        {
+          "label": "Microsoft introduced",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/?msockid=0139329c3fb06e3a084e266d3e666fc6"
+        },
+        {
+          "label": "Integrated Security Operations Center (ISOC)",
+          "url": "https://www.microsoft.com/en-us/security/business/solutions/integrated-security-operations-center"
+        },
+        {
+          "label": "website",
+          "url": "https://www.microsoft.com/en-us/security/business"
+        },
+        {
+          "label": "Security blog",
+          "url": "https://www.microsoft.com/security/blog/"
+        },
+        {
+          "label": "Microsoft Security",
+          "url": "https://www.linkedin.com/showcase/microsoft-security/"
+        },
+        {
+          "label": "@MSFTSecurity",
+          "url": "https://twitter.com/@MSFTSecurity"
+        },
+        {
+          "label": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for SIEM",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/11/20/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-siem/"
+        },
+        {
+          "label": "Microsoft Security Blog",
+          "url": "https://www.microsoft.com/en-us/security/blog"
+        }
+      ]
+    },
+    {
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "published": "2026-11-20T12:00:00+00:00",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability CVE-2026-76466 Cisco Expressway Series Use of Hard-coded...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
       "source_category": "Security Advisories",
       "board_id": null,
       "products": [
         {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
           "score": 15
         }
       ],
       "tags": [
-        "Google Cloud Security"
+        "CISA Advisories"
       ],
-      "body": "Published: 2026-09-28Description Description Severity Notes An Incorrect Authorization vulnerability was discovered in the task configuration in Application Integration versions prior to June 17, 2026. What should I do? No customer action is required. This vulnerability was patched on June 17, 2026. What vulnerabilities are being addressed? An authenticated user could use an internal-only task type to execute arbitrary internal RPCs from the Google-internal production network under a privileged identity. Critical CVE-2026-19759",
+      "body": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability CVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability CVE-2026-123890 VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability CVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
       "links": [
         {
-          "label": "CVE-2026-19759",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-19759"
+          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "CVE-2025-42884",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-42884"
+        },
+        {
+          "label": "CVE-2026-76466",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-76466"
+        },
+        {
+          "label": "CVE-2026-123890",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-123890"
+        },
+        {
+          "label": "CVE-2026-129448",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-129448"
+        },
+        {
+          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
+          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
+        },
+        {
+          "label": "specified criteria",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
+        },
+        {
+          "label": "KEV Nomination Form",
+          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
         }
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532",
+      "published": "2026-11-20T09:06:50+00:00",
+      "summary": "Information published.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2023-1531 Use after free in ANGLE",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531",
+      "published": "2026-11-20T09:05:37+00:00",
+      "summary": "Information published.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "SVD-2026-1113: Vulnerabilities in PHP affecting Splunk Products - November 2026",
+      "link": "https://advisory.splunk.com/advisories/SVD-2026-1113",
+      "published": "2026-11-20T00:00:00+00:00",
+      "summary": "Splunk investigated to determine which products are affected by recent PHP CVEs.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
       ]
     },
     {
@@ -3422,57 +3662,10 @@
       ]
     },
     {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "title": "Siemens RUGGEDCOM APE1808",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
       "published": "2026-11-17T12:00:00+00:00",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
-      "links": [
-        {
-          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-        },
-        {
-          "label": "CVE-2026-115731",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-115731"
-        },
-        {
-          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
-          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
-      ]
-    },
-    {
-      "title": "Siemens meta-iot2050",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
-      "published": "2026-11-17T12:00:00+00:00",
-      "summary": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing...",
+      "summary": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -3491,27 +3684,27 @@
       "tags": [
         "CISA Advisories"
       ],
-      "body": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fixes and recommends mitigations for products where fixes are not or not yet available. The following versions of Siemens meta-iot2050 are affected: meta-iot2050 vers:intdot/>=01.03.01 (CVE-2026-109830) CVSS Vendor Equipment v3 7.3 Siemens meta-iot2050 1 Vulnerability Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-109830 Affected devices take parts from a configuration file and execute them unchecked. This could allow an attacker which is able to manipulate the configuration file to make the user execute arbitrary code on the device. Read More 1 Affected Product meta-iot2050 >= V01.03.01 Product Status: known_affected Remediations None availableCurrently no fix is available Additional Metrics Relevant CWE: CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') CVSS Version Base Score Base Severity Vector String 3.1 7.3 HIGH CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended...",
+      "body": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-106175) CVSS Vendor Equipment v3 2.3 Siemens RUGGEDCOM APE1808 1 Vulnerability Double Free Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-106175 A Double Free vulnerability [CWE-415] in FortiOS, FortiProxy and FortiSwitch may allow a local authenticated attacker to crash the newcli daemon via crafted CLI commands. Read More 1 Affected Product RUGGEDCOM APE1808 with Fortinet NGFW Product Status: known_affected Remediations Vendor fixUpdate Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information Additional Metrics Relevant CWE: CWE-415 Double Free CVSS Version Base Score Base Severity Vector String 3.1 2.3 LOW CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control...",
       "links": [
         {
           "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-11.json"
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-07.json"
         },
         {
           "label": "Read More",
           "url": "https://www.cisa.gov/#"
         },
         {
-          "label": "CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
-          "url": "https://cwe.mitre.org/data/definitions/78.html"
+          "label": "CWE-415 Double Free",
+          "url": "https://cwe.mitre.org/data/definitions/415.html"
         },
         {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+          "label": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L"
         },
         {
           "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109830"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-106175"
         },
         {
           "label": "not accessible from the internet",
@@ -3611,10 +3804,10 @@
       ]
     },
     {
-      "title": "Siemens RUGGEDCOM APE1808",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+      "title": "Siemens meta-iot2050",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
       "published": "2026-11-17T12:00:00+00:00",
-      "summary": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support...",
+      "summary": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -3633,27 +3826,27 @@
       "tags": [
         "CISA Advisories"
       ],
-      "body": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-106175) CVSS Vendor Equipment v3 2.3 Siemens RUGGEDCOM APE1808 1 Vulnerability Double Free Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-106175 A Double Free vulnerability [CWE-415] in FortiOS, FortiProxy and FortiSwitch may allow a local authenticated attacker to crash the newcli daemon via crafted CLI commands. Read More 1 Affected Product RUGGEDCOM APE1808 with Fortinet NGFW Product Status: known_affected Remediations Vendor fixUpdate Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information Additional Metrics Relevant CWE: CWE-415 Double Free CVSS Version Base Score Base Severity Vector String 3.1 2.3 LOW CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control...",
+      "body": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fixes and recommends mitigations for products where fixes are not or not yet available. The following versions of Siemens meta-iot2050 are affected: meta-iot2050 vers:intdot/>=01.03.01 (CVE-2026-109830) CVSS Vendor Equipment v3 7.3 Siemens meta-iot2050 1 Vulnerability Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-109830 Affected devices take parts from a configuration file and execute them unchecked. This could allow an attacker which is able to manipulate the configuration file to make the user execute arbitrary code on the device. Read More 1 Affected Product meta-iot2050 >= V01.03.01 Product Status: known_affected Remediations None availableCurrently no fix is available Additional Metrics Relevant CWE: CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') CVSS Version Base Score Base Severity Vector String 3.1 7.3 HIGH CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended...",
       "links": [
         {
           "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-07.json"
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-11.json"
         },
         {
           "label": "Read More",
           "url": "https://www.cisa.gov/#"
         },
         {
-          "label": "CWE-415 Double Free",
-          "url": "https://cwe.mitre.org/data/definitions/415.html"
+          "label": "CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+          "url": "https://cwe.mitre.org/data/definitions/78.html"
         },
         {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L"
+          "label": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
         },
         {
           "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-106175"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109830"
         },
         {
           "label": "not accessible from the internet",
@@ -3678,6 +3871,53 @@
         {
           "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
           "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
+        }
+      ]
+    },
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-11-17T12:00:00+00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+      "links": [
+        {
+          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "CVE-2026-115731",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-115731"
+        },
+        {
+          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
+          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
+        },
+        {
+          "label": "specified criteria",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
+        },
+        {
+          "label": "KEV Nomination Form",
+          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
         }
       ]
     },
@@ -3854,6 +4094,37 @@
         {
           "label": "Monitor Azure DDoS Protection",
           "url": "https://learn.microsoft.com/en-us/azure/ddos-protection/monitor-ddos-protection"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-183-aws/",
+      "published": "2026-11-16T18:37:04+00:00",
+      "summary": "Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access. To do this,...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access. To do this, the third party supplies a crafted model archive. Impacted versions: >=0.7.0, <=0.38.0 Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-183-aws/"
         }
       ]
     },
@@ -4675,6 +4946,68 @@
       ]
     },
     {
+      "title": "CVE-2026-126793 - Privilege escalation in Aurora PostgreSQL dialect detection in AWS Advanced Go Wrapper",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-182-aws/",
+      "published": "2026-11-12T21:11:28+00:00",
+      "summary": "Bulletin ID: 2026-182-AWS Publication Date: 11/12/2026 13:00 PM PST Description: An untrusted search path issue in Aurora PostgreSQL dialect detection in the AWS Advanced Go Wrapper from release 2026-04-06 (awssql/v2.0.0) and before release 2026-07-29 (awssql/v2.0.3) could allow a remote...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-182-AWS Publication Date: 11/12/2026 13:00 PM PST Description: An untrusted search path issue in Aurora PostgreSQL dialect detection in the AWS Advanced Go Wrapper from release 2026-04-06 (awssql/v2.0.0) and before release 2026-07-29 (awssql/v2.0.3) could allow a remote authenticated user to escalate privileges to those of another database user, including a member of the rds_superuser role, via a crafted function that runs when that user connects to an Aurora PostgreSQL cluster through an affected version of the wrapper. Impacted versions: AWS Advanced Go Wrapper >=2026-04-06, <2026-07-29 Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-182-aws/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/",
+      "published": "2026-11-12T19:07:08+00:00",
+      "summary": "Bulletin ID: 2026-181-AWS Publication Date: 11/12/2026 13:00 PM PST Description: We identified CVE-2026-127119, an issue in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0. When a cluster is created without an explicit log location, the library uses a predictable...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-181-AWS Publication Date: 11/12/2026 13:00 PM PST Description: We identified CVE-2026-127119, an issue in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0. When a cluster is created without an explicit log location, the library uses a predictable default S3 bucket name for the cluster logs without verifying that the caller's account owns that bucket. A remote actor who creates that bucket first could read the cluster's logs, including job step output. Impacted versions: >= 1.1.0 AND < 3.18.0 Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-181-aws/"
+        }
+      ]
+    },
+    {
       "title": "From AI ambition to business impact",
       "link": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact/",
       "published": "2026-11-12T17:00:03+00:00",
@@ -4880,81 +5213,6 @@
         {
           "label": "The Official Microsoft Blog",
           "url": "https://blogs.microsoft.com"
-        }
-      ]
-    },
-    {
-      "title": "Siemens RUGGEDCOM APE1808",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
-      "published": "2026-11-12T12:00:00+00:00",
-      "summary": "View CSAF Summary Palo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Palo Alto Networks has published information on vulnerabilities in PAN-OS related to PHP2Shell vulnerabilities. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications. The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-109618, CVE-2026-109619) CVSS Vendor Equipment v3 9.8 Siemens RUGGEDCOM APE1808 1 Vulnerability Use After Free Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities Expand All + CVE-2026-109618 PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE). Read More 1 Affected Product RUGGEDCOM APE1808 with Palo Alto Networks PAN-OS (10.2 All, 11.1 All, 11.2 All, 12.1 All, 12.2 All) Product Status: known_affected Remediations Vendor fixUpgrade to corresponding available PAN-OS version. Contact customer support to receive additional patch and update information. Additional Metrics Relevant CWE: CWE-416 Use After Free CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H View CVE Details CVE-2026-109619 PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE). Read More 2 Affected Products RUGGEDCOM APE1808 with Palo Alto Networks PAN-OS (10.2 All, 11.1 All, 11.2 All, 12.1 All, 12.2 All) Product Status: known_affected Remediations Vendor fixUpgrade to corresponding available PAN-OS version. Contact customer support to receive additional patch and update information. RUGGEDCOM APE1808 with Palo Alto Networks PAN-OS...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-05.json"
-        },
-        {
-          "label": "information",
-          "url": "https://security.paloaltonetworks.com/cve-2026-109618"
-        },
-        {
-          "label": "Expand All +",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-416 Use After Free",
-          "url": "https://cwe.mitre.org/data/definitions/416.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109618"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109619"
-        },
-        {
-          "label": "https://www.siemens.com/cert/operational-guidelines-industrial-security",
-          "url": "https://www.siemens.com/cert/operational-guidelines-industrial-security"
-        },
-        {
-          "label": "https://www.siemens.com/industrialsecurity",
-          "url": "https://www.siemens.com/industrialsecurity"
-        },
-        {
-          "label": "https://www.siemens.com/cert/advisories",
-          "url": "https://www.siemens.com/cert/advisories"
-        },
-        {
-          "label": "https://www.siemens.com/productcert/terms-of-use",
-          "url": "https://www.siemens.com/productcert/terms-of-use"
         }
       ]
     },
@@ -5789,53 +6047,23 @@
       ]
     },
     {
-      "title": "Microsoft Entra: Updated passkey registration experience in My Sign-ins",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1545694",
-      "published": "2026-11-09T14:40:47.903000+00:00",
-      "summary": "[What and why]We’re updating the passkey registration experience in My Sign-ins for users registering a passkey in Microsoft Authenticator. Users will see an additional checkbox and updated link text, along with steps to guide users to open Microsoft Authenticator and select the + button to begin...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1545694",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]We’re updating the passkey registration experience in My Sign-ins for users registering a passkey in Microsoft Authenticator. Users will see an additional checkbox and updated link text, along with steps to guide users to open Microsoft Authenticator and select the + button to begin registration. If users can’t complete registration directly in Authenticator, the updated link text will help them find the WebAuthn registration flow.[Rollout schedule]General Availability (Worldwide): Beginning in mid-November 2026 and expected to complete by end-November 2027[Impact on your organization]Who is affectedUsers who are guided through My Sign-ins to register a passkey in Microsoft AuthenticatorPlatforms and servicesMicrosoft Entra My Sign-ins and Microsoft AuthenticatorWhat will happenUsers will see an additional checkbox and updated link text during passkey registration.Users will see steps to open Microsoft Authenticator and select the + button to begin registration:If users can’t complete registration directly in Authenticator, the updated link text will help them find the WebAuthn registration flow.[Action required and recommendations]Inform users about the updated UI and update your internal user guidance to reflect these changes.[Compliance considerations]No compliance considerations were identified. Review as appropriate for your organization.",
-      "links": [],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
       "title": "ARTEX abuse expands as cybercriminals target financial sector",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
       "published": "2026-11-07T02:44:34+00:00",
       "summary": "In October 2026, the financially motivated threat actor Storm-3358 began targeting organizations in the financial sector using the agentic AI offensive framework ARTEX. The post ARTEX abuse expands as cybercriminals target financial sector appeared first on Microsoft Security Blog.",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
           "id": "threat-intelligence",
           "name": "Threat Intelligence",
-          "score": 3
+          "score": 8
         }
       ],
       "tags": [
@@ -5845,19 +6073,19 @@
       "links": [
         {
           "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
         },
         {
           "label": "Microsoft Defender detections",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#microsoft-defender-detections"
         },
         {
           "label": "Hunting queries",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting-queries"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#hunting-queries"
         },
         {
           "label": "Indicators of compromise",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#indicators-of-compromise"
+          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#indicators-of-compromise"
         },
         {
           "label": "Search public GitHub repositories for exposed secrets ›",
@@ -6390,30 +6618,6 @@
       "link": "https://azure.microsoft.com/updates?id=579507",
       "published": "2026-11-04T18:09:43+00:00",
       "summary": "Azure Firewall now supports application rules in IPv6 Public Preview, enabling layer 7 filtering for IPv6 HTTP and HTTPS traffic. The enhancement extends application-level controls to IPv6 and dual-stack deployments, helping customers maintain consistent",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "[In preview] Public Preview: Multi-disk crash-consistent VM restore points for Premium SSD v2 and Ultra Disks on VMs with SCSI disk controller",
-      "link": "https://azure.microsoft.com/updates?id=579162",
-      "published": "2026-11-04T17:13:51+00:00",
-      "summary": "Multi-disk crash-consistent restore points for Azure virtual machines with Premium SSD v2 and Ultra data disks are now available in public preview on VMs with SCSI disk controllers. You can use this to capture the agent-less crash consistent restore point",
       "author": "Microsoft",
       "source": "Azure Service Updates",
       "source_id": "azure_updates",
@@ -7185,30 +7389,6 @@
       ]
     },
     {
-      "title": "CVE-2026-119086 - Missing type validation in xQueueSelectFromSet in FreeRTOS-Kernel",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-158-aws/",
-      "published": "2026-10-30T17:39:33+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "What’s new in Microsoft Sentinel: October 2026",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-in-microsoft-sentinel-october-2026/ba-p/4568804",
       "published": "2026-10-30T16:44:57+00:00",
@@ -7296,30 +7476,6 @@
       ]
     },
     {
-      "title": "CVE-2026-119116 and CVE-2026-119148 - Issues in AWS Nitro Enclaves SDK for C",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-157-aws/",
-      "published": "2026-10-30T16:34:46+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "(Updated) Microsoft Authenticator: Usability improvements for iOS and Android",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1521604",
       "published": "2026-10-29T20:51:10.513000+00:00",
@@ -7347,30 +7503,6 @@
       ],
       "tags": [
         "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "CVE-2026-119115 - Incorrect authorization in issuer resolution in AWS Private CA Connector for Kubernetes",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-156-aws/",
-      "published": "2026-10-29T16:58:55+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
       ]
     },
     {
