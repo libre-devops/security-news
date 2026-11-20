@@ -1,59 +1,134 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-20T00:25:18.722740+00:00",
+  "lastUpdated": "2026-11-20T15:05:51.890070+00:00",
   "totalArticles": 201,
   "articles": [
     {
-      "title": "(Updated) Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice multi-factor authentication",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1551151",
-      "published": "2026-11-19T21:12:52.093000+00:00",
-      "summary": "Updated November 19, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete...",
+      "title": "Chromium: CVE-2024-7533 Use after free in Sharing",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-7532",
+      "published": "2026-11-20T09:06:50+00:00",
+      "summary": "Information published.",
       "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
       "source_group": "Official Microsoft",
-      "source_kind": "graph",
+      "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Service Announcements",
+      "source_category": "Advisories",
       "board_id": null,
-      "message_id": "MC1551151",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated November 19, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.If your organization has restrictive network or firewall settings, make sure to follow the guidance covered in this documentation (Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn) to prepare for this change.This change is separate from the planned retirement of SMS and voice authentication and does not affect the retirement timeline.[Rollout schedule]Worldwide: Beginning in mid-November 2026.[Impact on your organization]Who is affectedUsers who use SMS or voice for Microsoft Entra ID multifactor authenticationPlatforms and servicesMicrosoft Entra IDSMS and voice authentication methodsWhat will happenSome users may be prompted to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.The verification step will appear only for authentication attempts that meet sufficiently high-risk thresholds.Users with restrictive network or firewall settings may be unable to complete SMS or voice MFA if the verification experience cannot load.[Action required and recommendations]We recommend that administrators take the following actions:Prepare your help desk and notify users that some SMS and voice MFA attempts may require an additional CAPTCHA verification step.Review the risk-based anti-bot verification documentation for network-readiness guidance. If your organization uses restrictive firewalls, proxies, or web filtering, ensure that the required resources can load during authentication.Continue moving users to phishing-resistant authentication methods, such as passkeys, where possible.Learn moreRisk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft LearnUnderstanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft LearnPasskeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha#network-requirements"
-        },
-        {
-          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha"
-        },
-        {
-          "label": "Understanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-mfa-telephony-fraud"
-        },
-        {
-          "label": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft...",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
-        }
-      ],
       "products": [
         {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
         }
       ],
       "tags": [
-        "Microsoft Message Center"
+        "General Security"
+      ]
+    },
+    {
+      "title": "Chromium: CVE-2023-1531 Use after free in ANGLE",
+      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-1531",
+      "published": "2026-11-20T09:05:37+00:00",
+      "summary": "Information published.",
+      "author": "Microsoft",
+      "source": "Microsoft Security Response Center",
+      "source_id": "msrc",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-088",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-088",
+      "published": "2026-11-20T02:23:07+00:00",
+      "summary": "Published: 2026-11-19Description Description Severity Notes A denial-of-service vulnerability (CVE-2026-99288) was discovered in the Linux kernel TCP implementation. The flaw can cause a kernel panic (denial of service) on the affected virtual machine; it does not allow privilege escalation or...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-19Description Description Severity Notes A denial-of-service vulnerability (CVE-2026-99288) was discovered in the Linux kernel TCP implementation. The flaw can cause a kernel panic (denial of service) on the affected virtual machine; it does not allow privilege escalation or container breakout to code execution on the host. A remote attacker can trigger it by sending specially crafted TCP packets to a reachable TCP listener on a node, Pod, or the cluster control plane's IP-based endpoint. Internal traffic within the same VPC can also trigger this vulnerability. GKE Standard clusters and GKE Autopilot clusters running Container-Optimized OS or Ubuntu prior to the patched versions are affected across both cluster control planes and worker nodes. Pods running in GKE Sandbox (gVisor) and Windows Server node pools are not affected. For instructions and more details, see the GKE security bulletin. High CVE-2026-99288",
+      "links": [
+        {
+          "label": "GKE security bulletin",
+          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-088"
+        },
+        {
+          "label": "CVE-2026-99288",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-99288"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-087",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-087",
+      "published": "2026-11-20T02:23:07+00:00",
+      "summary": "Published: 2026-11-19Description Description Severity Notes Two vulnerabilities in the nginx HTTP/2 module, CVE-2026-123633 and CVE-2026-123007, can let a remote, unauthenticated attacker run code on an nginx server that accepts HTTP/2 connections. Both are fixed in nginx 1.30.7. The Router in...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-19Description Description Severity Notes Two vulnerabilities in the nginx HTTP/2 module, CVE-2026-123633 and CVE-2026-123007, can let a remote, unauthenticated attacker run code on an nginx server that accepts HTTP/2 connections. Both are fixed in nginx 1.30.7. The Router in Apigee Edge for Private Cloud 4.54.00 and 4.53.01 uses an nginx version in the affected range. Routers are not affected in the default and supported configuration, because HTTP/2 is not supported on Router virtual hosts. For more information, see the Apigee security bulletin. Critical CVE-2026-123007 CVE-2026-123633",
+      "links": [
+        {
+          "label": "Apigee security bulletin",
+          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-087"
+        },
+        {
+          "label": "CVE-2026-123007",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123007"
+        },
+        {
+          "label": "CVE-2026-123633",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123633"
+        }
       ]
     },
     {
       "title": "GCP-2026-086",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-086",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0010, a vulnerability was identified in VMware Aria Operations and VMware Cloud Foundation (VCF). Broadcom will make patches available to remediate this vulnerability in affected Broadcom...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -96,7 +171,7 @@
     {
       "title": "GCP-2026-085",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-085",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0009, a vulnerability was identified in VMware vCenter and VMware Cloud Foundation (VCF). There are no known workarounds for this reported vulnerability. For remediation guidance and...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -139,7 +214,7 @@
     {
       "title": "GCP-2026-084",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-084",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-19Description Description Severity Notes A path traversal vulnerability in workspace directory handling and Git integration was discovered in Dataform, BigQuery Studio, and Colab Enterprise. What should I do? No customer action is required. This vulnerability was patched on...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -169,8 +244,8 @@
     },
     {
       "title": "GCP-2026-083",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-082",
-      "published": "2026-11-19T20:20:26+00:00",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-083",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-18Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in integration execution parameter handling in Application Integration versions prior to September 22, 2026. What should I do? No customer action is required. This...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -199,9 +274,44 @@
       ]
     },
     {
+      "title": "GCP-2026-082",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-082",
+      "published": "2026-11-20T02:23:07+00:00",
+      "summary": "Published: 2026-11-17Description Description Severity Notes A remote code execution vulnerability (CVE-2026-114938) was disclosed in OpenJDK 17.0.6 and later (including 17.0.6+, 21.x, 25.x, and 27.x across Eclipse Temurin and other distributions) on x86-64 processors that support AVX-512 VBMI....",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-17Description Description Severity Notes A remote code execution vulnerability (CVE-2026-114938) was disclosed in OpenJDK 17.0.6 and later (including 17.0.6+, 21.x, 25.x, and 27.x across Eclipse Temurin and other distributions) on x86-64 processors that support AVX-512 VBMI. OpenJDK 8, 11, and 17.0.0 through 17.0.5 are not affected. Workloads running unpatched OpenJDK 17.0.6 or later on Google Cloud (whether self-managed in VMs and containers or running on managed services such as Google Kubernetes Engine, Cloud Run, Cloud Run functions, Cloud Functions, App Engine, Dataproc, or Dataflow) may be affected. Google Cloud hypervisors and hardware isolation boundaries between customer VMs and containers are not affected. Google is rolling out mitigations and updates across affected Google-managed services, control planes, and base images, and will update this bulletin as updates become available. What should I do? Immediate mitigation (without waiting for a JDK upgrade): Mitigate affected workloads right away by setting (or appending to) the environment variable JDK_JAVA_OPTIONS=\"-XX:+IgnoreUnrecognizedVMOptions -XX:UseAVX=2\" (or passing those flags to your java startup command) and restarting or redeploying. Upgrade to patched OS packages, JDK releases, or container images as they become available, then remove the flag. Google Cloud Buildpacks, Distroless Java, and Assured OSS: Apply the JDK_JAVA_OPTIONS mitigation above now, and upgrade to patched OS packages or container images as they become available. Google Kubernetes Engine (GKE): Managed GKE control planes and Container-Optimized OS (COS) node images are not affected, as COS does not bundle Java. For containers running OpenJDK 17.0.6+ (including GKE Sandbox workloads) on x86-64 nodes that support AVX-512 VBMI, apply the JDK_JAVA_OPTIONS mitigation above and restart your pods, then rebuild your images once patched JDKs publish. Cloud Run, Cloud Run functions, Cloud Functions, and App Engine: As an interim platform safeguard through November 30, 2026, Google has masked AVX-512 VBMI for managed Java 17, 21, and 25 runtimes on the App Engine standard environment and the Cloud Run second generation execution environment (including 2nd gen Cloud Run functions) using Automated Base Image Updates, mitigating those workloads without customer action. Updates to Java 17, 21, and 25 runtime base images are in progress. App Engine standard environment applications, Cloud Run functions, Cloud...",
+      "links": [
+        {
+          "label": "Apigee security bulletins",
+          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-082"
+        },
+        {
+          "label": "CVE-2026-114938",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-114938"
+        }
+      ]
+    },
+    {
       "title": "GCP-2026-081",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-081",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-10Description Description Severity Notes AMD has disclosed three vulnerabilities that affect 5th generation AMD EPYC processors (code-named Turin): CVE-2024-36350 and CVE-2024-36357, which AMD previously disclosed for earlier EPYC processors, and a new vulnerability,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -248,7 +358,7 @@
     {
       "title": "GCP-2026-080",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-080",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-09Updated: 2026-11-12Description Description Severity Notes Security vulnerabilities were discovered in Istio (ISTIO-SECURITY-2026-009). For instructions and more details, see the Cloud Service Mesh security bulletin. High CVE-2026-31836 GHSA-635j-qv98-9275 GHSA-cxwg-46mx-q8hf...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -272,7 +382,7 @@
     {
       "title": "GCP-2026-079",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-079",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-05Description Description Severity Notes Per advisory VMSA-2026-0008, Broadcom has identified an out-of-bounds write remote code execution vulnerability in the SDDC Manager Node.js Brotli decoder. This impacts only VMware solution on Google Cloud running VMware Cloud Foundation...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -311,7 +421,7 @@
     {
       "title": "GCP-2026-078",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-078",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-04Updated: 2026-11-18Description Description Severity Notes 2026-11-18 Update: Added patch versions for GKE. A vulnerability (CVE-2026-98432) was discovered in the Linux kernel IPv4 TCP stack. The flaw can cause a kernel panic or a container escape (root code execution on the...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -346,7 +456,7 @@
     {
       "title": "GCP-2026-077",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-077",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-03Description Description Severity Notes Following the private-key compromise of intermediate Certificate Authorities (CAs) associated with eMudhra (emSign), outbound TLS connections trusting affected roots—specifically emSign ECC Root CA - G3—are vulnerable to Man-in-the-Middle...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -385,7 +495,7 @@
     {
       "title": "GCP-2026-076",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-076",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-02Description Description Severity Notes A security vulnerability was discovered in Istio (ISTIO-SECURITY-2026-008). For instructions and more details, see the Cloud Service Mesh security bulletin. Medium CVE-2026-111943",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -409,7 +519,7 @@
     {
       "title": "GCP-2026-075",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-075",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-11-02Description Description Severity Notes On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -484,7 +594,7 @@
     {
       "title": "GCP-2026-074",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-074",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-10-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the SubWorkflow task in Application Integration versions prior to September 11, 2026. What should I do? No customer action is required. This vulnerability was patched on...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -515,7 +625,7 @@
     {
       "title": "GCP-2026-073",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-073",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-10-26Description Description Severity Notes An incorrect authorization vulnerability was discovered in Compute Engine prior to August 31, 2026. What should I do? No action is required from you. This vulnerability was patched on August 31, 2026. What vulnerabilities are being...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -546,7 +656,7 @@
     {
       "title": "GCP-2026-072",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-072",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-10-24Description Description Severity Notes Two vulnerabilities in PHP core, CVE-2026-109618 and CVE-2026-109619 (\"PHP2Shell\"), allow an unauthenticated attacker to execute code remotely on a server running a vulnerable PHP version. They are fixed in PHP 8.2.35, 8.3.36, 8.4.27, and...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -585,7 +695,7 @@
     {
       "title": "GCP-2026-071",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-071",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-10-23Updated: 2026-11-02Description Description Severity Notes 2026-11-12 Update: Added links to product-specific guidance for Confidential Space, Firebase App Hosting, Firestore, and Firebase App Distribution in the list of affected products. 2026-11-02 Update: Added Google Cloud...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -656,7 +766,7 @@
     {
       "title": "GCP-2026-070",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-070",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-10-21Updated: 2026-10-28Description Description Severity Notes 2026-10-28 Update: For Cloud Run, Cloud Run functions, and Google App Engine Standard, all supported versions of PHP 8.2 and later are patched. Take immediate protective action by redeploying your resources with updated...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -711,7 +821,7 @@
     {
       "title": "GCP-2026-069",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-069",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-10-19Description Description Severity Notes Security vulnerabilities were discovered in Istio and Envoy Proxy (ISTIO-SECURITY-2026-007). For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High GHSA-w44g-8m76-8gc5 GHSA-7p2q-4xvg-vxc6...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -735,7 +845,7 @@
     {
       "title": "GCP-2026-068",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-10-14Updated: 2026-11-05Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -770,7 +880,7 @@
     {
       "title": "GCP-2026-067",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-067",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-10-12Description Description Severity Notes A Denial-of-Service (DoS) vulnerability was discovered in Envoy Proxy when an HTTP filter (such as ext_proc with route_cache_action: RETAIN) mutates the :path header after route selection on a route configured with prefix_rewrite. For...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -794,7 +904,7 @@
     {
       "title": "GCP-2026-066",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-066",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -825,7 +935,7 @@
     {
       "title": "GCP-2026-065",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-065",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the JavaScript Task in Application Integration versions prior to June 28, 2026. What should I do? No customer action is required. This vulnerability was patched on June...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -856,7 +966,7 @@
     {
       "title": "GCP-2026-064",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-064",
-      "published": "2026-11-19T20:20:26+00:00",
+      "published": "2026-11-20T02:23:07+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes An Incorrect Authorization vulnerability was discovered in the task configuration in Application Integration versions prior to June 17, 2026. What should I do? No customer action is required. This vulnerability was patched on June 17,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -885,97 +995,50 @@
       ]
     },
     {
-      "title": "GCP-2026-063",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-063",
-      "published": "2026-11-19T20:20:26+00:00",
-      "summary": "Published: 2026-09-16Description Description Severity Notes An Improper Privilege Management vulnerability in Google Security Operations SOAR was patched with version 6.3.85, and no customer action is needed. The vulnerability allowed an authenticated attacker to escalate privileges to system-level...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
+      "title": "(Updated) Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice multi-factor authentication",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1551151",
+      "published": "2026-11-19T21:12:52.093000+00:00",
+      "summary": "Updated November 19, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
       "board_id": null,
+      "message_id": "MC1551151",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated November 19, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.If your organization has restrictive network or firewall settings, make sure to follow the guidance covered in this documentation (Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn) to prepare for this change.This change is separate from the planned retirement of SMS and voice authentication and does not affect the retirement timeline.[Rollout schedule]Worldwide: Beginning in mid-November 2026.[Impact on your organization]Who is affectedUsers who use SMS or voice for Microsoft Entra ID multifactor authenticationPlatforms and servicesMicrosoft Entra IDSMS and voice authentication methodsWhat will happenSome users may be prompted to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.The verification step will appear only for authentication attempts that meet sufficiently high-risk thresholds.Users with restrictive network or firewall settings may be unable to complete SMS or voice MFA if the verification experience cannot load.[Action required and recommendations]We recommend that administrators take the following actions:Prepare your help desk and notify users that some SMS and voice MFA attempts may require an additional CAPTCHA verification step.Review the risk-based anti-bot verification documentation for network-readiness guidance. If your organization uses restrictive firewalls, proxies, or web filtering, ensure that the required resources can load during authentication.Continue moving users to phishing-resistant authentication methods, such as passkeys, where possible.Learn moreRisk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft LearnUnderstanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft LearnPasskeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha#network-requirements"
+        },
+        {
+          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha"
+        },
+        {
+          "label": "Understanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-mfa-telephony-fraud"
+        },
+        {
+          "label": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft...",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
+        }
+      ],
       "products": [
         {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
         }
       ],
       "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-16Description Description Severity Notes An Improper Privilege Management vulnerability in Google Security Operations SOAR was patched with version 6.3.85, and no customer action is needed. The vulnerability allowed an authenticated attacker to escalate privileges to system-level administrative access using a crafted internal authentication header. What should I do? No customer action is required. All customers have been automatically upgraded to the fixed version: 6.3.85 or higher. Critical CVE-2026-15587",
-      "links": [
-        {
-          "label": "CVE-2026-15587",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-15587"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-062",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-062",
-      "published": "2026-11-19T20:20:26+00:00",
-      "summary": "Published: 2026-09-11Description Description Severity Notes Multiple security vulnerabilities were discovered in Slurm that affect Cluster Toolkit blueprints that reference specific image versions. These vulnerabilities affect the slurmstepd daemon, RPC request handling, and the accounting...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-11Description Description Severity Notes Multiple security vulnerabilities were discovered in Slurm that affect Cluster Toolkit blueprints that reference specific image versions. These vulnerabilities affect the slurmstepd daemon, RPC request handling, and the accounting database. What should I do? For instructions and more details, see the Cluster Toolkit security bulletin. High CVE-2026-65107 CVE-2026-65108 CVE-2026-65109 CVE-2026-65138 CVE-2026-65139 CVE-2026-65140 CVE-2026-65165 CVE-2026-65168",
-      "links": [
-        {
-          "label": "Cluster Toolkit security bulletin",
-          "url": "https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-062"
-        },
-        {
-          "label": "CVE-2026-65107",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65107"
-        },
-        {
-          "label": "CVE-2026-65108",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65108"
-        },
-        {
-          "label": "CVE-2026-65109",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65109"
-        },
-        {
-          "label": "CVE-2026-65138",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65138"
-        },
-        {
-          "label": "CVE-2026-65139",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65139"
-        },
-        {
-          "label": "CVE-2026-65140",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65140"
-        },
-        {
-          "label": "CVE-2026-65165",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65165"
-        },
-        {
-          "label": "CVE-2026-65168",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-65168"
-        }
+        "Microsoft Message Center"
       ]
     },
     {
@@ -4465,54 +4528,6 @@
     {
       "title": "Chromium CVE-2026-126858: Uninitialized resource",
       "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126858",
-      "published": "2026-11-13T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-126859: Link following",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126859",
-      "published": "2026-11-13T16:00:00+00:00",
-      "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
-      "author": "Microsoft",
-      "source": "Microsoft Security Response Center",
-      "source_id": "msrc",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ]
-    },
-    {
-      "title": "Chromium CVE-2026-126863: Use after free",
-      "link": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-126863",
       "published": "2026-11-13T16:00:00+00:00",
       "summary": "This CVE was assigned by Chrome. Microsoft Edge (Chromium-based) ingests Chromium, which addresses this vulnerability. Please see [Google Chrome Releases](https://chromereleases.googleblog.com/2026) for more information.",
       "author": "Microsoft",
@@ -8364,30 +8379,6 @@
       ],
       "tags": [
         "Splunk Security"
-      ]
-    },
-    {
-      "title": "Critical security issue affecting PHP",
-      "link": "https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php",
-      "published": "2026-10-21T12:00:00+00:00",
-      "summary": "Updated: The NCSC is encouraging UK organisations to take immediate action to mitigate a security issue affecting PHP (CVE-2026-109618 and CVE-2026-109619).",
-      "author": "",
-      "source": "NCSC Security Feed",
-      "source_id": "ncsc_security",
-      "source_group": "Official NCSC",
-      "source_kind": "rss",
-      "vendor": "NCSC",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "ncsc-guidance",
-          "name": "NCSC Guidance",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "NCSC Guidance"
       ]
     }
   ]
