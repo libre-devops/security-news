@@ -1,122 +1,176 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-19T15:28:32.820546+00:00",
-  "totalArticles": 210,
+  "lastUpdated": "2026-11-20T00:25:18.722740+00:00",
+  "totalArticles": 201,
   "articles": [
     {
-      "title": "CVE-2026-114938 - OpenJDK Base64 Decoder Intrinsic Out-of-Bounds Write Issue",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-189-aws/",
-      "published": "2026-11-19T03:02:28+00:00",
-      "summary": "Bulletin ID: 2026-189-AWS Publication Date: 11/18/2026 17:00 PM PST Description: AWS is aware of CVE-2026-114938, a memory issue in the Base64 decoder intrinsic of OpenJDK 17.0.6 and later on x86-64 processors that support AVX-512 VBMI. A fix is available in the November 2026 OpenJDK updates. AWS...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
+      "title": "(Updated) Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice multi-factor authentication",
+      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1551151",
+      "published": "2026-11-19T21:12:52.093000+00:00",
+      "summary": "Updated November 19, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Message Center",
+      "source_id": "message_center",
+      "source_group": "Official Microsoft",
+      "source_kind": "graph",
+      "vendor": "Microsoft",
+      "source_category": "Service Announcements",
+      "board_id": null,
+      "message_id": "MC1551151",
+      "services": [
+        "Microsoft Entra"
+      ],
+      "body": "Updated November 19, 2026: We have updated the content. Thank you for your patience. [What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.If your organization has restrictive network or firewall settings, make sure to follow the guidance covered in this documentation (Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn) to prepare for this change.This change is separate from the planned retirement of SMS and voice authentication and does not affect the retirement timeline.[Rollout schedule]Worldwide: Beginning in mid-November 2026.[Impact on your organization]Who is affectedUsers who use SMS or voice for Microsoft Entra ID multifactor authenticationPlatforms and servicesMicrosoft Entra IDSMS and voice authentication methodsWhat will happenSome users may be prompted to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.The verification step will appear only for authentication attempts that meet sufficiently high-risk thresholds.Users with restrictive network or firewall settings may be unable to complete SMS or voice MFA if the verification experience cannot load.[Action required and recommendations]We recommend that administrators take the following actions:Prepare your help desk and notify users that some SMS and voice MFA attempts may require an additional CAPTCHA verification step.Review the risk-based anti-bot verification documentation for network-readiness guidance. If your organization uses restrictive firewalls, proxies, or web filtering, ensure that the required resources can load during authentication.Continue moving users to phishing-resistant authentication methods, such as passkeys, where possible.Learn moreRisk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft LearnUnderstanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft LearnPasskeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
+      "links": [
+        {
+          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha#network-requirements"
+        },
+        {
+          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha"
+        },
+        {
+          "label": "Understanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft Learn",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-mfa-telephony-fraud"
+        },
+        {
+          "label": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft...",
+          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
+        }
+      ],
+      "products": [
+        {
+          "id": "message-center",
+          "name": "Microsoft Message Center",
+          "score": 10
+        }
+      ],
+      "tags": [
+        "Microsoft Message Center"
+      ]
+    },
+    {
+      "title": "GCP-2026-086",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-086",
+      "published": "2026-11-19T20:20:26+00:00",
+      "summary": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0010, a vulnerability was identified in VMware Aria Operations and VMware Cloud Foundation (VCF). Broadcom will make patches available to remediate this vulnerability in affected Broadcom...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
       "source_kind": "rss",
-      "vendor": "AWS",
+      "vendor": "Google Cloud",
       "source_category": "Security Advisories",
       "board_id": null,
       "products": [
         {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
         }
       ],
       "tags": [
-        "AWS Security"
+        "Google Cloud Security"
       ],
-      "body": "Bulletin ID: 2026-189-AWS Publication Date: 11/18/2026 17:00 PM PST Description: AWS is aware of CVE-2026-114938, a memory issue in the Base64 decoder intrinsic of OpenJDK 17.0.6 and later on x86-64 processors that support AVX-512 VBMI. A fix is available in the November 2026 OpenJDK updates. AWS is working to deploy the fix to affected AWS services Refer to the article for the most up-to-date and complete information.",
+      "body": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0010, a vulnerability was identified in VMware Aria Operations and VMware Cloud Foundation (VCF). Broadcom will make patches available to remediate this vulnerability in affected Broadcom products. For remediation guidance and product-specific details, see the following bulletins: Google Cloud VMware Engine security bulletin VMware solution on Google Cloud security bulletin Critical VMSA-2026-0010 CVE-2026-119618",
       "links": [
         {
-          "label": "Refer to the article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-189-aws/"
-        }
-      ]
-    },
-    {
-      "title": "Microsoft Purview: Information Protection-Sensitivity label inheritance for Teams meeting artifacts",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581739",
-      "published": "2026-11-19T00:35:27+00:00",
-      "summary": "Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
+          "label": "VMSA-2026-0010",
+          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39625"
+        },
         {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ]
-    },
-    {
-      "title": "[In preview] Public Preview: AI bot ruleset for Azure Front Door Premium WAF",
-      "link": "https://azure.microsoft.com/updates?id=581604",
-      "published": "2026-11-18T18:27:29+00:00",
-      "summary": "Announcing the public preview of the AI bot ruleset for Azure Web Application Firewall (WAF) on Azure Front Door Premium. AI crawlers and agents visit your site for different reasons, and you may want to allow some but not others. Robots.txt only works wh",
-      "author": "Microsoft",
-      "source": "Azure Service Updates",
-      "source_id": "azure_updates",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Service Updates",
-      "board_id": null,
-      "products": [
+          "label": "Google Cloud VMware Engine security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/security-bulletins#gcp-2026-086"
+        },
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "label": "VMware solution on Google Cloud security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/security-bulletins#gcp-2026-086"
+        },
+        {
+          "label": "CVE-2026-119618",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-119618"
         }
-      ],
-      "tags": [
-        "General Security"
       ]
     },
     {
-      "title": "CVE-2026-130638 - Path traversal in the object detection dataset preparation tool in AutoGluon MultiModal",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-188-aws/",
-      "published": "2026-11-18T18:18:11+00:00",
-      "summary": "Bulletin ID: 2026-188-AWS Publication Date: 11/18/2026 10:00 AM PST Description: Relative path traversal in the object detection dataset preparation tool in AutoGluon Multimodal before 1.6.0 might allow adversary-in-the-middle attackers to write arbitrary files with the privileges of the user...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
+      "title": "GCP-2026-085",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-085",
+      "published": "2026-11-19T20:20:26+00:00",
+      "summary": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0009, a vulnerability was identified in VMware vCenter and VMware Cloud Foundation (VCF). There are no known workarounds for this reported vulnerability. For remediation guidance and...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
       "source_kind": "rss",
-      "vendor": "AWS",
+      "vendor": "Google Cloud",
       "source_category": "Security Advisories",
       "board_id": null,
       "products": [
         {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
         }
       ],
       "tags": [
-        "AWS Security"
+        "Google Cloud Security"
       ],
-      "body": "Bulletin ID: 2026-188-AWS Publication Date: 11/18/2026 10:00 AM PST Description: Relative path traversal in the object detection dataset preparation tool in AutoGluon Multimodal before 1.6.0 might allow adversary-in-the-middle attackers to write arbitrary files with the privileges of the user running the tool via a crafted dataset archive substituted for a dataset downloaded over plaintext HTTP. Impacted versions: < 1.6.0 Refer to the article for the most up-to-date and complete information.",
+      "body": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0009, a vulnerability was identified in VMware vCenter and VMware Cloud Foundation (VCF). There are no known workarounds for this reported vulnerability. For remediation guidance and product-specific details, see the following bulletins: Google Cloud VMware Engine security bulletin VMware solution on Google Cloud security bulletin Critical VMSA-2026-0009 CVE-2026-123890",
       "links": [
         {
-          "label": "Refer to the article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-188-aws/"
+          "label": "VMSA-2026-0009",
+          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39495"
+        },
+        {
+          "label": "Google Cloud VMware Engine security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/security-bulletins#gcp-2026-085"
+        },
+        {
+          "label": "VMware solution on Google Cloud security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/security-bulletins#gcp-2026-085"
+        },
+        {
+          "label": "CVE-2026-123890",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123890"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-084",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-084",
+      "published": "2026-11-19T20:20:26+00:00",
+      "summary": "Published: 2026-11-19Description Description Severity Notes A path traversal vulnerability in workspace directory handling and Git integration was discovered in Dataform, BigQuery Studio, and Colab Enterprise. What should I do? No customer action is required. This vulnerability was patched on...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-19Description Description Severity Notes A path traversal vulnerability in workspace directory handling and Git integration was discovered in Dataform, BigQuery Studio, and Colab Enterprise. What should I do? No customer action is required. This vulnerability was patched on October 10, 2026. What vulnerabilities are being addressed? An authenticated remote attacker could read private files and create arbitrary files across tenant repositories. Critical CVE-2026-126054",
+      "links": [
+        {
+          "label": "CVE-2026-126054",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-126054"
         }
       ]
     },
     {
       "title": "GCP-2026-083",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-082",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-11-18Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in integration execution parameter handling in Application Integration versions prior to September 22, 2026. What should I do? No customer action is required. This...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -147,7 +201,7 @@
     {
       "title": "GCP-2026-081",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-081",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-11-10Description Description Severity Notes AMD has disclosed three vulnerabilities that affect 5th generation AMD EPYC processors (code-named Turin): CVE-2024-36350 and CVE-2024-36357, which AMD previously disclosed for earlier EPYC processors, and a new vulnerability,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -194,7 +248,7 @@
     {
       "title": "GCP-2026-080",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-080",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-11-09Updated: 2026-11-12Description Description Severity Notes Security vulnerabilities were discovered in Istio (ISTIO-SECURITY-2026-009). For instructions and more details, see the Cloud Service Mesh security bulletin. High CVE-2026-31836 GHSA-635j-qv98-9275 GHSA-cxwg-46mx-q8hf...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -218,7 +272,7 @@
     {
       "title": "GCP-2026-079",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-079",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-11-05Description Description Severity Notes Per advisory VMSA-2026-0008, Broadcom has identified an out-of-bounds write remote code execution vulnerability in the SDDC Manager Node.js Brotli decoder. This impacts only VMware solution on Google Cloud running VMware Cloud Foundation...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -257,7 +311,7 @@
     {
       "title": "GCP-2026-078",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-078",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-11-04Updated: 2026-11-18Description Description Severity Notes 2026-11-18 Update: Added patch versions for GKE. A vulnerability (CVE-2026-98432) was discovered in the Linux kernel IPv4 TCP stack. The flaw can cause a kernel panic or a container escape (root code execution on the...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -292,7 +346,7 @@
     {
       "title": "GCP-2026-077",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-077",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-11-03Description Description Severity Notes Following the private-key compromise of intermediate Certificate Authorities (CAs) associated with eMudhra (emSign), outbound TLS connections trusting affected roots—specifically emSign ECC Root CA - G3—are vulnerable to Man-in-the-Middle...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -331,7 +385,7 @@
     {
       "title": "GCP-2026-076",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-076",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-11-02Description Description Severity Notes A security vulnerability was discovered in Istio (ISTIO-SECURITY-2026-008). For instructions and more details, see the Cloud Service Mesh security bulletin. Medium CVE-2026-111943",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -355,7 +409,7 @@
     {
       "title": "GCP-2026-075",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-075",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-11-02Description Description Severity Notes On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -430,7 +484,7 @@
     {
       "title": "GCP-2026-074",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-074",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-10-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the SubWorkflow task in Application Integration versions prior to September 11, 2026. What should I do? No customer action is required. This vulnerability was patched on...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -461,7 +515,7 @@
     {
       "title": "GCP-2026-073",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-073",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-10-26Description Description Severity Notes An incorrect authorization vulnerability was discovered in Compute Engine prior to August 31, 2026. What should I do? No action is required from you. This vulnerability was patched on August 31, 2026. What vulnerabilities are being...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -492,7 +546,7 @@
     {
       "title": "GCP-2026-072",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-072",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-10-24Description Description Severity Notes Two vulnerabilities in PHP core, CVE-2026-109618 and CVE-2026-109619 (\"PHP2Shell\"), allow an unauthenticated attacker to execute code remotely on a server running a vulnerable PHP version. They are fixed in PHP 8.2.35, 8.3.36, 8.4.27, and...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -531,7 +585,7 @@
     {
       "title": "GCP-2026-071",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-071",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-10-23Updated: 2026-11-02Description Description Severity Notes 2026-11-12 Update: Added links to product-specific guidance for Confidential Space, Firebase App Hosting, Firestore, and Firebase App Distribution in the list of affected products. 2026-11-02 Update: Added Google Cloud...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -602,7 +656,7 @@
     {
       "title": "GCP-2026-070",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-070",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-10-21Updated: 2026-10-28Description Description Severity Notes 2026-10-28 Update: For Cloud Run, Cloud Run functions, and Google App Engine Standard, all supported versions of PHP 8.2 and later are patched. Take immediate protective action by redeploying your resources with updated...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -657,7 +711,7 @@
     {
       "title": "GCP-2026-069",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-069",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-10-19Description Description Severity Notes Security vulnerabilities were discovered in Istio and Envoy Proxy (ISTIO-SECURITY-2026-007). For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High GHSA-w44g-8m76-8gc5 GHSA-7p2q-4xvg-vxc6...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -681,7 +735,7 @@
     {
       "title": "GCP-2026-068",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-10-14Updated: 2026-11-05Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -716,7 +770,7 @@
     {
       "title": "GCP-2026-067",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-067",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-10-12Description Description Severity Notes A Denial-of-Service (DoS) vulnerability was discovered in Envoy Proxy when an HTTP filter (such as ext_proc with route_cache_action: RETAIN) mutates the :path header after route selection on a route configured with prefix_rewrite. For...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -740,7 +794,7 @@
     {
       "title": "GCP-2026-066",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-066",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -771,7 +825,7 @@
     {
       "title": "GCP-2026-065",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-065",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the JavaScript Task in Application Integration versions prior to June 28, 2026. What should I do? No customer action is required. This vulnerability was patched on June...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -802,7 +856,7 @@
     {
       "title": "GCP-2026-064",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-064",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-09-28Description Description Severity Notes An Incorrect Authorization vulnerability was discovered in the task configuration in Application Integration versions prior to June 17, 2026. What should I do? No customer action is required. This vulnerability was patched on June 17,...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -833,7 +887,7 @@
     {
       "title": "GCP-2026-063",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-063",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-09-16Description Description Severity Notes An Improper Privilege Management vulnerability in Google Security Operations SOAR was patched with version 6.3.85, and no customer action is needed. The vulnerability allowed an authenticated attacker to escalate privileges to system-level...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -864,7 +918,7 @@
     {
       "title": "GCP-2026-062",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-062",
-      "published": "2026-11-18T16:05:50+00:00",
+      "published": "2026-11-19T20:20:26+00:00",
       "summary": "Published: 2026-09-11Description Description Severity Notes Multiple security vulnerabilities were discovered in Slurm that affect Cluster Toolkit blueprints that reference specific image versions. These vulnerabilities affect the slurmstepd daemon, RPC request handling, and the accounting...",
       "author": "Google Cloud",
       "source": "Google Cloud Security Bulletins",
@@ -925,108 +979,300 @@
       ]
     },
     {
-      "title": "GCP-2026-061",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-061",
-      "published": "2026-11-18T16:05:50+00:00",
-      "summary": "Published: 2026-09-09Description Description Severity Notes A security vulnerability (GHSA-p7v4-vr35-mj6f, CVE assignment pending) in containerd's CRI implementation allows a container restored from an untrusted checkpoint through the CreateContainer API to bypass the destination security context...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
+      "title": "Elecbrakes EB2, VM1, ELBC2000",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+      "published": "2026-11-19T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features. The following versions of Elecbrakes EB2, VM1,...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
       "source_kind": "rss",
-      "vendor": "Google Cloud",
+      "vendor": "CISA",
       "source_category": "Security Advisories",
       "board_id": null,
       "products": [
         {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
         }
       ],
       "tags": [
-        "Google Cloud Security"
+        "CISA Advisories"
       ],
-      "body": "Published: 2026-09-09Description Description Severity Notes A security vulnerability (GHSA-p7v4-vr35-mj6f, CVE assignment pending) in containerd's CRI implementation allows a container restored from an untrusted checkpoint through the CreateContainer API to bypass the destination security context and execute with elevated privileges. GKE clusters are not vulnerable by default. GKE node images do not include the criu tool. What should I do? No immediate customer action is required for default clusters. If you install custom runtime software or node tools on your nodes that include the criu binary, refer to the security bulletin for recommended actions. What vulnerabilities are being addressed? For more information, see the GKE security bulletin. Medium GHSA-p7v4-vr35-mj6f",
+      "body": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features. The following versions of Elecbrakes EB2, VM1, ELBC2000 are affected: EB2 <=3.0.4.2.0 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805) ELBC2000 vers:all/* (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805) VM1 <1.3.4.2.1 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805) CVSS Vendor Equipment v3 9.6 Elecbrakes EB2 3 Vulnerabilities Exposed Dangerous Method or Function, Authentication Bypass by Capture-replay, Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Transportation Systems Countries/Areas Deployed: Australia, New Zealand Company Headquarters Location: Australia Vulnerabilities Expand All + CVE-2026-124281 The affected product uses an unprotected firmware-update channel, which may allow for unauthorized firmware modification. Read More 3 Affected Products Elecbrakes EB2 <=3.0.4.2.0 Product Status: known_affected Remediations Vendor fixElecbrakes has released updated firmware (EB2 3.0.4.4.3). Users should open the Elecbrakes app and install the firmware update. Elecbrakes VM1 <1.3.4.2.1 Product Status: known_affected Remediations Vendor fixElecbrakes has released updated firmware (VM1 1.3.4.2.1). Users should open the Elecbrakes app and install the firmware update. Elecbrakes ELBC2000 vers:all/* Product Status: known_affected Remediations None availableThis device is the predecessor to the EB2 and the VM1 and is no longer sold. The vendor is determining how to address these vulnerabilities for this particular controller. Additional Metrics Relevant CWE: CWE-749 Exposed Dangerous Method or Function CVSS Version Base Score Base Severity Vector String 3.1 6.1 MEDIUM CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:L 4.0 5.3 MEDIUM CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:L/SA:L View CVE Details CVE-2026-125273 No replay or command-integrity protection. Commands lack sequence numbers, nonces, or session tokens; captured commands can be replayed, and the last command persists across sessions. Read More 6 Affected Products Elecbrakes EB2 <=3.0.4.2.0 Product Status: known_affected Remediations Vendor fixElecbrakes has released updated firmware (EB2 3.0.4.4.3). Users should open the Elecbrakes app and install the firmware update. Elecbrakes VM1 <1.3.4.2.1...",
       "links": [
         {
-          "label": "GHSA-p7v4-vr35-mj6f",
-          "url": "https://github.com/containerd/containerd/security/advisories/GHSA-p7v4-vr35-mj6f"
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-323-02.json"
         },
         {
-          "label": "GKE security bulletin",
-          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-061"
+          "label": "Expand All +",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-749 Exposed Dangerous Method or Function",
+          "url": "https://cwe.mitre.org/data/definitions/749.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:L",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:L"
+        },
+        {
+          "label": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:L/SA:L",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:L/SA:L"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-124281"
+        },
+        {
+          "label": "CWE-294 Authentication Bypass by Capture-replay",
+          "url": "https://cwe.mitre.org/data/definitions/294.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:L/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:L/I:H/A:H"
+        },
+        {
+          "label": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:H/SC:L/SI:H/SA:H/S:P",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:H/SC:L/SI:H/SA:H/S:P"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-125273"
+        },
+        {
+          "label": "CWE-306 Missing Authentication for Critical Function",
+          "url": "https://cwe.mitre.org/data/definitions/306.html"
+        },
+        {
+          "label": "CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:H/SC:N/SI:H/SA:H/S:P",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:A/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:H/SC:N/SI:H/SA:H/S:P"
         }
       ]
     },
     {
-      "title": "GCP-2026-060",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-060",
-      "published": "2026-11-18T16:05:50+00:00",
-      "summary": "Published: 2026-09-04Updated: 2026-09-08Description Description Severity Notes 2026-09-08 Update: Added link to the Cluster Toolkit security bulletin. A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. What...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
+      "title": "libumqtt",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+      "published": "2026-11-19T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. The following versions of libumqtt are affected: libumqtt <=1.1.1 (CVE-2026-125132) CVSS Vendor Equipment v3 8.6 libumqtt...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
       "source_kind": "rss",
-      "vendor": "Google Cloud",
+      "vendor": "CISA",
       "source_category": "Security Advisories",
       "board_id": null,
       "products": [
         {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
         }
       ],
       "tags": [
-        "Google Cloud Security"
+        "CISA Advisories"
       ],
-      "body": "Published: 2026-09-04Updated: 2026-09-08Description Description Severity Notes 2026-09-08 Update: Added link to the Cluster Toolkit security bulletin. A security flaw in the Slurm sbcast tool (CVE-2026-65107) lets shared library files bypass security checks and can crash nodes in your cluster. What should I do? For instructions and more details, see the following bulletins: Cluster Toolkit security bulletin Cluster Director security bulletin High CVE-2026-65107",
+      "body": "View CSAF Summary Successful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. The following versions of libumqtt are affected: libumqtt <=1.1.1 (CVE-2026-125132) CVSS Vendor Equipment v3 8.6 libumqtt libumqtt 1 Vulnerability Integer Underflow (Wrap or Wraparound) Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Transportation Systems, Water and Wastewater Countries/Areas Deployed: Worldwide Company Headquarters Location: China Vulnerabilities CVE-2026-125132 The affected product is vulnerable to an integer underflow which may allow a remote attacker to cause a denial of service, memory corruption, or information disclosure. Read More 1 Affected Product libumqtt libumqtt <=1.1.1 Product Status: known_affected Remediations None availableThe repository owners of libumqtt did not respond to CISA's request for coordination. Users are encouraged to reach out to libumqtt for support. Their GitHub page is located at https://github.com/zhaojh329/libumqtt. Additional Metrics Relevant CWE: CWE-191 Integer Underflow (Wrap or Wraparound) CVSS Version Base Score Base Severity Vector String 3.1 8.6 HIGH CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H 4.0 8.8 HIGH CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N View CVE Details Acknowledgments Joseph Devasia reported this vulnerability to CISA Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system devices and/or systems, ensuring they are not accessible from the internet. Locate control system networks and remote devices behind firewalls and isolating them from business networks. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as the connected devices. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov/ics. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems Cybersecurity with...",
       "links": [
         {
-          "label": "Cluster Toolkit security bulletin",
-          "url": "https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-060"
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-323-03.json"
         },
         {
-          "label": "Cluster Director security bulletin",
-          "url": "https://docs.cloud.google.com/cluster-director/docs/security-bulletins#gcp-2026-060"
+          "label": "Read More",
+          "url": "https://www.cisa.gov/#"
         },
         {
-          "label": "CVE-2026-65107",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-65107"
+          "label": "CWE-191 Integer Underflow (Wrap or Wraparound)",
+          "url": "https://cwe.mitre.org/data/definitions/191.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H"
+        },
+        {
+          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:H/SC:N/SI:N/SA:N"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-125132"
+        },
+        {
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+        },
+        {
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        },
+        {
+          "label": "cisa.gov/ics",
+          "url": "https://www.cisa.gov/topics/industrial-control-systems"
+        },
+        {
+          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
+          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        },
+        {
+          "label": "proactive defense of ICS assets",
+          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+        },
+        {
+          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
+          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
         }
       ]
     },
     {
-      "title": "GCP-2026-059",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-059",
-      "published": "2026-11-18T16:05:50+00:00",
-      "summary": "Published: 2026-09-04Description Description Severity Notes A Missing Authorization vulnerability was discovered in the HTTP Connector in Integration Connectors versions prior to December 11, 2025. What should I do? No customer action is required. This vulnerability was patched on December 11,...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
+      "title": "Autonomy Logic OpenPLC Runtime",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+      "published": "2026-11-19T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created. The following versions of Autonomy Logic OpenPLC Runtime are affected: OpenPLC Runtime <=4.2.4 (CVE-2026-126088) CVSS Vendor Equipment v3 8.1 Autonomy Logic OpenPLC...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
       "source_kind": "rss",
-      "vendor": "Google Cloud",
+      "vendor": "CISA",
       "source_category": "Security Advisories",
       "board_id": null,
       "products": [
         {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
         }
       ],
       "tags": [
-        "Google Cloud Security"
+        "CISA Advisories"
       ],
-      "body": "Published: 2026-09-04Description Description Severity Notes A Missing Authorization vulnerability was discovered in the HTTP Connector in Integration Connectors versions prior to December 11, 2025. What should I do? No customer action is required. This vulnerability was patched on December 11, 2025. What vulnerabilities are being addressed? An authenticated attacker could use an unauthorized service account attachment to escalate privileges and take over a Google Cloud project. High CVE-2026-4644",
+      "body": "View CSAF Summary Successful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created. The following versions of Autonomy Logic OpenPLC Runtime are affected: OpenPLC Runtime <=4.2.4 (CVE-2026-126088) CVSS Vendor Equipment v3 8.1 Autonomy Logic OpenPLC Runtime 1 Vulnerability Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Transportation Systems, Water and Wastewater Systems Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities CVE-2026-126088 In Autonomy Logic OpenPLC Runtime versions 4.2.4 and prior, a race condition allows multiple concurrent requests to pass the existence check before any user is committed, resulting in several unauthenticated admin accounts being created. Read More 1 Affected Product Autonomy Logic OpenPLC Runtime <=4.2.4 Product Status: known_affected Remediations Vendor fixUpdate to OpenPLC Runtime version 4.3.0 or later. Additional Metrics Relevant CWE: CWE-362 Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') CVSS Version Base Score Base Severity Vector String 3.1 8.1 HIGH CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.2 CRITICAL CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details Acknowledgments Noureddin Lutfi reported this vulnerability to CISA. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system devices and/or systems, ensuring they are not accessible from the internet. Locate control system networks and remote devices behind firewalls and isolating them from business networks. When remote access is required, use more secure methods, such as Virtual Private Networks (VPNs), recognizing VPNs may have vulnerabilities and should be updated to the most current version available. Also recognize VPN is only as secure as the connected devices. CISA reminds organizations to perform proper impact analysis and risk assessment prior to deploying defensive measures. CISA also provides a section for control systems security recommended practices on the ICS webpage on cisa.gov/ics. Several CISA products detailing cyber defense best practices are available for reading and download, including Improving Industrial Control Systems...",
       "links": [
         {
-          "label": "CVE-2026-4644",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4644"
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-323-01.json"
+        },
+        {
+          "label": "Read More",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-362 Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')",
+          "url": "https://cwe.mitre.org/data/definitions/362.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "label": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-126088"
+        },
+        {
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+        },
+        {
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        },
+        {
+          "label": "cisa.gov/ics",
+          "url": "https://www.cisa.gov/topics/industrial-control-systems"
+        },
+        {
+          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
+          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        },
+        {
+          "label": "proactive defense of ICS assets",
+          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+        },
+        {
+          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
+          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
         }
+      ]
+    },
+    {
+      "title": "Microsoft Purview: Information Protection-Sensitivity label inheritance for Teams meeting artifacts",
+      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=581739",
+      "published": "2026-11-19T00:35:27+00:00",
+      "summary": "Teams meeting artifacts, including recordings, transcripts, and Loop notes, can now be configured to automatically inherit the sensitivity label from the meeting. This ensures content generated during meetings is consistently protected without requiring manual labeling, reducing risk and...",
+      "author": "Microsoft",
+      "source": "Microsoft 365 Roadmap",
+      "source_id": "m365_roadmap",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Roadmap",
+      "board_id": null,
+      "products": [
+        {
+          "id": "purview",
+          "name": "Microsoft Purview",
+          "score": 11
+        }
+      ],
+      "tags": [
+        "Microsoft Purview"
+      ]
+    },
+    {
+      "title": "SVD-2026-1112: Vulnerabilities in NGINX affecting Splunk Products - November 2026",
+      "link": "https://advisory.splunk.com/advisories/SVD-2026-1112",
+      "published": "2026-11-19T00:00:00+00:00",
+      "summary": "Splunk is investigating to determine which products are affected by recent nginx CVEs.",
+      "author": "Splunk",
+      "source": "Splunk Security Advisories",
+      "source_id": "splunk_security",
+      "source_group": "Official Splunk",
+      "source_kind": "rss",
+      "vendor": "Splunk",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "splunk-security",
+          "name": "Splunk Security",
+          "score": 5
+        }
+      ],
+      "tags": [
+        "Splunk Security"
+      ]
+    },
+    {
+      "title": "[In preview] Public Preview: AI bot ruleset for Azure Front Door Premium WAF",
+      "link": "https://azure.microsoft.com/updates?id=581604",
+      "published": "2026-11-18T18:27:29+00:00",
+      "summary": "Announcing the public preview of the AI bot ruleset for Azure Web Application Firewall (WAF) on Azure Front Door Premium. AI crawlers and agents visit your site for different reasons, and you may want to allow some but not others. Robots.txt only works wh",
+      "author": "Microsoft",
+      "source": "Azure Service Updates",
+      "source_id": "azure_updates",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Service Updates",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
       ]
     },
     {
@@ -2021,37 +2267,6 @@
       ]
     },
     {
-      "title": "CVE-2026-130621- Time-of-check time-of-use race condition in the port selection in AWS efs-utils",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-186-aws/",
-      "published": "2026-11-17T19:18:32+00:00",
-      "summary": "Bulletin ID: 2026-186-AWS Publication Date: 11/17/2026 11:00 AM PST Description: A time-of-check time-of-use (TOCTOU) race condition in the local port selection in AWS efs-utils (amazon-efs-utils) before 3.3.5 might allow a user that can start EFS mounts on a shared host to read and write a...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-186-AWS Publication Date: 11/17/2026 11:00 AM PST Description: A time-of-check time-of-use (TOCTOU) race condition in the local port selection in AWS efs-utils (amazon-efs-utils) before 3.3.5 might allow a user that can start EFS mounts on a shared host to read and write a different Amazon EFS or S3 Files file system that is mounted on that same host, under that mount's IAM identity and access point, via concurrent mount operations. Only file systems mounted on the same host at the same time can be affected. Impacted versions: - amazon-efs-utils < v3.3.5 - aws-efs-csi-driver < v3.5.4 Refer to the article for the most up-to-date and complete information.",
-      "links": [
-        {
-          "label": "Refer to the article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-186-aws/"
-        }
-      ]
-    },
-    {
       "title": "Microsoft Purview: Information Protection - Improved sensitive information types",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=579195",
       "published": "2026-11-17T19:05:12+00:00",
@@ -2533,10 +2748,10 @@
       ]
     },
     {
-      "title": "Siemens ROS#",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+      "title": "Siemens Simcenter Femap",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
       "published": "2026-11-17T12:00:00+00:00",
-      "summary": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to...",
+      "summary": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -2555,27 +2770,27 @@
       "tags": [
         "CISA Advisories"
       ],
-      "body": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest version. The following versions of Siemens ROS# are affected: ROS# vers:intdot/<2.3.1 (CVE-2026-109097) CVSS Vendor Equipment v3 8.2 Siemens ROS# 1 Vulnerability Improper Control of Generation of Code ('Code Injection') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-109097 Affected systems do not properly escape text of message definition files. This could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Read More 1 Affected Product ROS# < V2.3.1 Product Status: known_affected Remediations Vendor fixUpdate to V2.3.1 or later version Additional Metrics Relevant CWE: CWE-94 Improper Control of Generation of Code ('Code Injection') CVSS Version Base Score Base Severity Vector String 3.1 8.2 HIGH CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system devices and/or systems,...",
+      "body": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and recommends to update to the latest version. The following versions of Siemens Simcenter Femap are affected: Simcenter Femap vers:intdot/<2606.0002 (CVE-2026-64629) CVSS Vendor Equipment v3 7.8 Siemens Simcenter Femap 1 Vulnerability Out-of-bounds Read Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-64629 The affected applications contains an out of bounds read vulnerability while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. Read More 1 Affected Product Simcenter Femap < V2606.0002 Product Status: known_affected Remediations Vendor fixUpdate to V2606.0002 or later version Additional Metrics Relevant CWE: CWE-125 Out-of-bounds Read CVSS Version Base Score Base Severity Vector String 3.1 7.8 HIGH CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system devices and/or systems, ensuring they are not accessible from...",
       "links": [
         {
           "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-06.json"
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-10.json"
         },
         {
           "label": "Read More",
           "url": "https://www.cisa.gov/#"
         },
         {
-          "label": "CWE-94 Improper Control of Generation of Code ('Code Injection')",
-          "url": "https://cwe.mitre.org/data/definitions/94.html"
+          "label": "CWE-125 Out-of-bounds Read",
+          "url": "https://cwe.mitre.org/data/definitions/125.html"
         },
         {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
+          "label": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
         },
         {
           "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109097"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-64629"
         },
         {
           "label": "not accessible from the internet",
@@ -2931,10 +3146,10 @@
       ]
     },
     {
-      "title": "Siemens Simcenter Femap",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+      "title": "Siemens ROS#",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
       "published": "2026-11-17T12:00:00+00:00",
-      "summary": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and...",
+      "summary": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -2953,27 +3168,27 @@
       "tags": [
         "CISA Advisories"
       ],
-      "body": "View CSAF Summary Simcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and recommends to update to the latest version. The following versions of Siemens Simcenter Femap are affected: Simcenter Femap vers:intdot/<2606.0002 (CVE-2026-64629) CVSS Vendor Equipment v3 7.8 Siemens Simcenter Femap 1 Vulnerability Out-of-bounds Read Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-64629 The affected applications contains an out of bounds read vulnerability while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. Read More 1 Affected Product Simcenter Femap < V2606.0002 Product Status: known_affected Remediations Vendor fixUpdate to V2606.0002 or later version Additional Metrics Relevant CWE: CWE-125 Out-of-bounds Read CVSS Version Base Score Base Severity Vector String 3.1 7.8 HIGH CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system devices and/or systems, ensuring they are not accessible from...",
+      "body": "View CSAF Summary ROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest version. The following versions of Siemens ROS# are affected: ROS# vers:intdot/<2.3.1 (CVE-2026-109097) CVSS Vendor Equipment v3 8.2 Siemens ROS# 1 Vulnerability Improper Control of Generation of Code ('Code Injection') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-109097 Affected systems do not properly escape text of message definition files. This could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Read More 1 Affected Product ROS# < V2.3.1 Product Status: known_affected Remediations Vendor fixUpdate to V2.3.1 or later version Additional Metrics Relevant CWE: CWE-94 Improper Control of Generation of Code ('Code Injection') CVSS Version Base Score Base Severity Vector String 3.1 8.2 HIGH CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system devices and/or systems,...",
       "links": [
         {
           "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-10.json"
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-06.json"
         },
         {
           "label": "Read More",
           "url": "https://www.cisa.gov/#"
         },
         {
-          "label": "CWE-125 Out-of-bounds Read",
-          "url": "https://cwe.mitre.org/data/definitions/125.html"
+          "label": "CWE-94 Improper Control of Generation of Code ('Code Injection')",
+          "url": "https://cwe.mitre.org/data/definitions/94.html"
         },
         {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+          "label": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
         },
         {
           "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-64629"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109097"
         },
         {
           "label": "not accessible from the internet",
@@ -3144,77 +3359,6 @@
       ]
     },
     {
-      "title": "Siemens RUGGEDCOM APE1808",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
-      "published": "2026-11-17T12:00:00+00:00",
-      "summary": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-106175) CVSS Vendor Equipment v3 2.3 Siemens RUGGEDCOM APE1808 1 Vulnerability Double Free Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-106175 A Double Free vulnerability [CWE-415] in FortiOS, FortiProxy and FortiSwitch may allow a local authenticated attacker to crash the newcli daemon via crafted CLI commands. Read More 1 Affected Product RUGGEDCOM APE1808 with Fortinet NGFW Product Status: known_affected Remediations Vendor fixUpdate Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information Additional Metrics Relevant CWE: CWE-415 Double Free CVSS Version Base Score Base Severity Vector String 3.1 2.3 LOW CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-07.json"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-415 Double Free",
-          "url": "https://cwe.mitre.org/data/definitions/415.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-106175"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        },
-        {
-          "label": "proactive defense of ICS assets",
-          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
-        },
-        {
-          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
-          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
-        }
-      ]
-    },
-    {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "link": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
       "published": "2026-11-17T12:00:00+00:00",
@@ -3258,6 +3402,77 @@
         {
           "label": "KEV Nomination Form",
           "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
+        }
+      ]
+    },
+    {
+      "title": "Siemens meta-iot2050",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+      "published": "2026-11-17T12:00:00+00:00",
+      "summary": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fixes and recommends mitigations for products where fixes are not or not yet available. The following versions of Siemens meta-iot2050 are affected: meta-iot2050 vers:intdot/>=01.03.01 (CVE-2026-109830) CVSS Vendor Equipment v3 7.3 Siemens meta-iot2050 1 Vulnerability Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-109830 Affected devices take parts from a configuration file and execute them unchecked. This could allow an attacker which is able to manipulate the configuration file to make the user execute arbitrary code on the device. Read More 1 Affected Product meta-iot2050 >= V01.03.01 Product Status: known_affected Remediations None availableCurrently no fix is available Additional Metrics Relevant CWE: CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') CVSS Version Base Score Base Severity Vector String 3.1 7.3 HIGH CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended...",
+      "links": [
+        {
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-11.json"
+        },
+        {
+          "label": "Read More",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+          "url": "https://cwe.mitre.org/data/definitions/78.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109830"
+        },
+        {
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+        },
+        {
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        },
+        {
+          "label": "cisa.gov/ics",
+          "url": "https://www.cisa.gov/topics/industrial-control-systems"
+        },
+        {
+          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
+          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        },
+        {
+          "label": "proactive defense of ICS assets",
+          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+        },
+        {
+          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
+          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
         }
       ]
     },
@@ -3333,10 +3548,10 @@
       ]
     },
     {
-      "title": "Siemens meta-iot2050",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-11",
+      "title": "Siemens RUGGEDCOM APE1808",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
       "published": "2026-11-17T12:00:00+00:00",
-      "summary": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing...",
+      "summary": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -3355,27 +3570,27 @@
       "tags": [
         "CISA Advisories"
       ],
-      "body": "View CSAF Summary meta-iot2050 (https://github.com/siemens/meta-iot2050) from V01.03.01 contains a Command Injection vulnerability in the firmware update tool that could allow an attacker which is able to manipulate a configuration file to have arbitrary commands run as root. Siemens is preparing fixes and recommends mitigations for products where fixes are not or not yet available. The following versions of Siemens meta-iot2050 are affected: meta-iot2050 vers:intdot/>=01.03.01 (CVE-2026-109830) CVSS Vendor Equipment v3 7.3 Siemens meta-iot2050 1 Vulnerability Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-109830 Affected devices take parts from a configuration file and execute them unchecked. This could allow an attacker which is able to manipulate the configuration file to make the user execute arbitrary code on the device. Read More 1 Affected Product meta-iot2050 >= V01.03.01 Product Status: known_affected Remediations None availableCurrently no fix is available Additional Metrics Relevant CWE: CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') CVSS Version Base Score Base Severity Vector String 3.1 7.3 HIGH CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended...",
+      "body": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-106175) CVSS Vendor Equipment v3 2.3 Siemens RUGGEDCOM APE1808 1 Vulnerability Double Free Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-106175 A Double Free vulnerability [CWE-415] in FortiOS, FortiProxy and FortiSwitch may allow a local authenticated attacker to crash the newcli daemon via crafted CLI commands. Read More 1 Affected Product RUGGEDCOM APE1808 with Fortinet NGFW Product Status: known_affected Remediations Vendor fixUpdate Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information Additional Metrics Relevant CWE: CWE-415 Double Free CVSS Version Base Score Base Severity Vector String 3.1 2.3 LOW CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control...",
       "links": [
         {
           "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-11.json"
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-07.json"
         },
         {
           "label": "Read More",
           "url": "https://www.cisa.gov/#"
         },
         {
-          "label": "CWE-78 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
-          "url": "https://cwe.mitre.org/data/definitions/78.html"
+          "label": "CWE-415 Double Free",
+          "url": "https://cwe.mitre.org/data/definitions/415.html"
         },
         {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+          "label": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L"
         },
         {
           "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109830"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-106175"
         },
         {
           "label": "not accessible from the internet",
@@ -3576,111 +3791,6 @@
         {
           "label": "Monitor Azure DDoS Protection",
           "url": "https://learn.microsoft.com/en-us/azure/ddos-protection/monitor-ddos-protection"
-        }
-      ]
-    },
-    {
-      "title": "Microsoft Entra ID: Risk-based anti-bot verification (CAPTCHA) for SMS and voice multi-factor authentication",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1551151",
-      "published": "2026-11-16T21:45:49.547000+00:00",
-      "summary": "[What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1551151",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "[What and why]Microsoft Entra ID is adding safeguards to protect telephony-based multifactor authentication (MFA) from automated fraudulent activity. Some users who use SMS or voice for MFA may be asked to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.This change is separate from the planned retirement of SMS and voice authentication and does not affect the retirement timeline.[Rollout schedule]Worldwide: Beginning in mid-November 2026.[Impact on your organization]Who is affectedUsers who use SMS or voice for Microsoft Entra ID multifactor authenticationPlatforms and servicesMicrosoft Entra IDSMS and voice authentication methodsWhat will happenSome users may be prompted to complete a risk-based anti-bot verification step (CAPTCHA) before Microsoft sends an SMS verification code or initiates a verification call.The verification step will appear only for authentication attempts that meet sufficiently high-risk thresholds.Users with restrictive network or firewall settings may be unable to complete SMS or voice MFA if the verification experience cannot load.[Action required and recommendations]We recommend that administrators take the following actions:Prepare your help desk and notify users that some SMS and voice MFA attempts may require an additional CAPTCHA verification step.Review the risk-based anti-bot verification documentation for network-readiness guidance. If your organization uses restrictive firewalls, proxies, or web filtering, ensure that the required resources can load during authentication.Continue moving users to phishing-resistant authentication methods, such as passkeys, where possible.Learn moreRisk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft LearnUnderstanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft LearnPasskeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft Learn[Compliance considerations]No compliance considerations identified. Review as appropriate for your organization.",
-      "links": [
-        {
-          "label": "Risk-based anti-bot verification (CAPTCHA) for telephony-based sign-in - Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-telephony-risk-based-captcha"
-        },
-        {
-          "label": "Understanding telephony fraud risk for Microsoft Entra multifactor authentication - Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-mfa-telephony-fraud"
-        },
-        {
-          "label": "Passkeys by default and retirement of Microsoft-provided SMS and voice authentication - Microsoft Entra ID | Microsoft...",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/concept-sms-voice-retirement"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "CVE-2026-126816 - Path traversal and arbitrary file write in the cost report generator of aws-pricing-mcp-server",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-184-aws/",
-      "published": "2026-11-16T20:12:51+00:00",
-      "summary": "Bulletin ID: 2026-184-AWS Publication Date: 11/16/2026 12:00 PM PST Description: Improper limitation of a pathname to a restricted directory in the cost report generation tool in AWS Pricing MCP Server (aws-pricing-mcp-server) before 1.0.31 might allow an actor who can influence the MCP agent to...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-184-AWS Publication Date: 11/16/2026 12:00 PM PST Description: Improper limitation of a pathname to a restricted directory in the cost report generation tool in AWS Pricing MCP Server (aws-pricing-mcp-server) before 1.0.31 might allow an actor who can influence the MCP agent to write actor controlled content to arbitrary locations outside the intended output directory via absolute paths or directory traversal sequences in the report output path. Impacted versions: - awslabs.aws-pricing-mcp-server < 1.0.31 - awslabs.cost-analysis-mcp-server <= 1.0.5 Refer to the article for the most up-to-date and complete information.",
-      "links": [
-        {
-          "label": "Refer to the article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-184-aws/"
-        }
-      ]
-    },
-    {
-      "title": "CVE-2026-129266 - Arbitrary local file read via unvalidated resource location in model archive metadata in Deep Java Library",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-183-aws/",
-      "published": "2026-11-16T18:37:04+00:00",
-      "summary": "Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access. To do this,...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-183-AWS Publication Date: 11/16/2026 10:30 AM PST Description: External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can access. To do this, the third party supplies a crafted model archive. Impacted versions: >=0.7.0, <=0.38.0 Refer to the article for the most up-to-date and complete information.",
-      "links": [
-        {
-          "label": "Refer to the article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-183-aws/"
         }
       ]
     },
@@ -4550,37 +4660,6 @@
       ]
     },
     {
-      "title": "CVE-2026-127119 - Unverified ownership of the default EMR cluster log location in AWS SDK for pandas",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-181-aws/",
-      "published": "2026-11-12T19:07:08+00:00",
-      "summary": "Bulletin ID: 2026-181-AWS Publication Date: 11/12/2026 13:00 PM PST Description: We identified CVE-2026-127119, an issue in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0. When a cluster is created without an explicit log location, the library uses a predictable...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ],
-      "body": "Bulletin ID: 2026-181-AWS Publication Date: 11/12/2026 13:00 PM PST Description: We identified CVE-2026-127119, an issue in the EMR module of AWS SDK for pandas (awswrangler) from version 1.1.0 before 3.18.0. When a cluster is created without an explicit log location, the library uses a predictable default S3 bucket name for the cluster logs without verifying that the caller's account owns that bucket. A remote actor who creates that bucket first could read the cluster's logs, including job step output. Impacted versions: >= 1.1.0 AND < 3.18.0 Refer to the article for the most up-to-date and complete information.",
-      "links": [
-        {
-          "label": "Refer to the article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-181-aws/"
-        }
-      ]
-    },
-    {
       "title": "From AI ambition to business impact",
       "link": "https://blogs.microsoft.com/blog/2026/11/12/from-ai-ambition-to-business-impact/",
       "published": "2026-11-12T17:00:03+00:00",
@@ -4865,156 +4944,6 @@
       ]
     },
     {
-      "title": "Siemens Desigo, Gridscale",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
-      "published": "2026-11-12T12:00:00+00:00",
-      "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Desigo, Gridscale are affected: Desigo CC family V8 vers:all/* (CVE-2026-111497) Desigo CC family V9 vers:all/* (CVE-2026-111497) Gridscale X DSA vers:intdot/>=5.3|<5.4 (CVE-2026-111497) Gridscale X PSS®E vers:intdot/<36.8.0 (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens Desigo CC family V8 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. Users need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1. Read More 4 Affected Products Desigo CC family V8 Product Status: known_affected, known_not_affected Remediations Vendor fixInstall the latest .NET security updates via Windows Update. Desigo CC family V9 Product Status: known_affected, known_not_affected Remediations Vendor fixInstall the latest .NET security updates via Windows Update. Gridscale X DSA >= V5.3 < V5.4 Product Status: known_affected, known_not_affected Remediations Vendor fixUpdate to V5.4 or later version Gridscale X PSS®E < V36.8.0 Product Status: known_affected, known_not_affected Remediations Vendor fixUpdate to V36.8.0 or later version Additional Metrics Relevant CWE: CWE-787 Out-of-bounds Write CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-02.json"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-787 Out-of-bounds Write",
-          "url": "https://cwe.mitre.org/data/definitions/787.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111497"
-        },
-        {
-          "label": "https://www.siemens.com/gridsecurity",
-          "url": "https://www.siemens.com/gridsecurity"
-        },
-        {
-          "label": "https://www.siemens.com/cert/advisories",
-          "url": "https://www.siemens.com/cert/advisories"
-        },
-        {
-          "label": "https://www.siemens.com/productcert/terms-of-use",
-          "url": "https://www.siemens.com/productcert/terms-of-use"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        }
-      ]
-    },
-    {
-      "title": "Siemens Industrial Edge Management",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
-      "published": "2026-11-12T12:00:00+00:00",
-      "summary": "View CSAF Summary Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is included in the IEM...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Siemens is currently assessing the impact of Node2Shell (CVE-2026-111497) on Industrial Edge. Please check your Industrial Edge Management (IEM) setup: - No Management Applications installed: No action is required. Although the affected Brotli library is included in the IEM software stack, the affected functionality is not used or exposed. The same applies to IEDK. - Management Applications installed: Follow the specific mitigations until a fix is available. - Device Applications installed: Follow the specific mitigations until a fix is available. For Siemens-managed services, Industrial Edge Hub and Industrial Edge Management Cloud, appropriate Firewall/WAF protection has already been implemented. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens Industrial Edge Management are affected: Cloud Connector Configurator vers:intdot/<1.24.3 (CVE-2026-111497) Common Configurator (CC on IEM) vers:all/* (CVE-2026-111497) Common Configurator on Device (CC on Edge) vers:all/* (CVE-2026-111497) Data Flow Monitoring vers:intdot/<3.0.18 (CVE-2026-111497) Databus Configurator vers:intdot/<4.0.1 (CVE-2026-111497) DataXess Configurator vers:intdot/<1.5.7 (CVE-2026-111497) Edge OPC UA Server Configurator vers:intdot/<2.3.10 (CVE-2026-111497) Flow Creator Configurator vers:intdot/<1.15.1 (CVE-2026-111497) Industrial Edge Hub vers:all/* (CVE-2026-111497) Industrial Edge Management Cloud vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens Cloud Connector Configurator 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. Users need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1. Read More 10 Affected Products Cloud Connector Configurator <...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-03.json"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-787 Out-of-bounds Write",
-          "url": "https://cwe.mitre.org/data/definitions/787.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111497"
-        },
-        {
-          "label": "https://www.siemens.com/cert/operational-guidelines-industrial-security",
-          "url": "https://www.siemens.com/cert/operational-guidelines-industrial-security"
-        },
-        {
-          "label": "https://www.siemens.com/industrialsecurity",
-          "url": "https://www.siemens.com/industrialsecurity"
-        },
-        {
-          "label": "https://www.siemens.com/cert/advisories",
-          "url": "https://www.siemens.com/cert/advisories"
-        },
-        {
-          "label": "https://www.siemens.com/productcert/terms-of-use",
-          "url": "https://www.siemens.com/productcert/terms-of-use"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        }
-      ]
-    },
-    {
       "title": "Siemens Building Automation and Energy Products",
       "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
       "published": "2026-11-12T12:00:00+00:00",
@@ -5070,81 +4999,6 @@
         {
           "label": "https://www.siemens.com/gridsecurity",
           "url": "https://www.siemens.com/gridsecurity"
-        },
-        {
-          "label": "https://www.siemens.com/cert/advisories",
-          "url": "https://www.siemens.com/cert/advisories"
-        },
-        {
-          "label": "https://www.siemens.com/productcert/terms-of-use",
-          "url": "https://www.siemens.com/productcert/terms-of-use"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        }
-      ]
-    },
-    {
-      "title": "Siemens RUGGEDCOM APE1808",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-04",
-      "published": "2026-11-12T12:00:00+00:00",
-      "summary": "View CSAF Summary Palo Alto Networks has published information on a vulnerability in PAN-OS related to the Node2Shell vulnerability. This advisory lists the related Siemens Industrial products affected by this vulnerability. Customers are advised to consult and implement the workarounds provided in...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Palo Alto Networks has published information on a vulnerability in PAN-OS related to the Node2Shell vulnerability. This advisory lists the related Siemens Industrial products affected by this vulnerability. Customers are advised to consult and implement the workarounds provided in Palo Alto Networks' upstream security notifications. The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens RUGGEDCOM APE1808 1 Vulnerability Out-of-bounds Write Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-111497 A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream. Users need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1. Read More 1 Affected Product RUGGEDCOM APE1808 with Palo Alto Networks PAN-OS Product Status: known_affected Remediations Vendor fixUpgrade to corresponding available PAN-OS version. Contact customer support to receive additional patch and update information. Additional Metrics Relevant CWE: CWE-787 Out-of-bounds Write CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends protecting network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends configuring the environment according to Siemens' operational guidelines for Industrial Security (https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT:...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-316-04.json"
-        },
-        {
-          "label": "information",
-          "url": "https://security.paloaltonetworks.com/CVE-2026-111497"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-787 Out-of-bounds Write",
-          "url": "https://cwe.mitre.org/data/definitions/787.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111497"
-        },
-        {
-          "label": "https://www.siemens.com/cert/operational-guidelines-industrial-security",
-          "url": "https://www.siemens.com/cert/operational-guidelines-industrial-security"
-        },
-        {
-          "label": "https://www.siemens.com/industrialsecurity",
-          "url": "https://www.siemens.com/industrialsecurity"
         },
         {
           "label": "https://www.siemens.com/cert/advisories",
@@ -5642,6 +5496,37 @@
       ]
     },
     {
+      "title": "CVE-2026-124848 - Incorrect default permissions on session transcripts and prompt history in Kiro CLI",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-178-aws/",
+      "published": "2026-11-10T20:05:36+00:00",
+      "summary": "Bulletin ID: 2026-178-AWS Publication Date: 11/10/2026 12:00 PM PST Description: Incorrect default file permissions in Kiro CLI before version 2.27.0 on macOS and Linux might allow other local users on the same host to read a user's session transcripts and prompt history, including any credentials...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-178-AWS Publication Date: 11/10/2026 12:00 PM PST Description: Incorrect default file permissions in Kiro CLI before version 2.27.0 on macOS and Linux might allow other local users on the same host to read a user's session transcripts and prompt history, including any credentials or source code they contain. The CLI created its local session storage files with permissions that made them readable by all local users. Impacted versions: Kiro CLI >= 1.16.0 AND < 2.27.0 Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-178-aws/"
+        }
+      ]
+    },
+    {
       "title": "[In preview] Public Preview: Azure Front Door adds native gRPC support",
       "link": "https://azure.microsoft.com/updates?id=579383",
       "published": "2026-11-10T18:55:53+00:00",
@@ -5687,6 +5572,37 @@
       ],
       "tags": [
         "General Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-126087 - Untrusted search path in OpenJD Sessions for Python and the AWS Deadline Cloud worker agent",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-177-aws/",
+      "published": "2026-11-10T18:53:11+00:00",
+      "summary": "Bulletin ID: 2026-177-AWS Publication Date: 11/10/2026 10:45 AM PST Description: Untrusted search path in the cross-user process launcher in Open Job Description (OpenJD) Sessions for Python before 0.11.0, as used in the AWS Deadline Cloud worker agent before 0.33.0, on Linux might allow an...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-177-AWS Publication Date: 11/10/2026 10:45 AM PST Description: Untrusted search path in the cross-user process launcher in Open Job Description (OpenJD) Sessions for Python before 0.11.0, as used in the AWS Deadline Cloud worker agent before 0.33.0, on Linux might allow an authenticated remote user with permission to submit jobs to a queue to execute arbitrary code as the worker agent OS user and obtain the AWS credentials held by the worker agent via a crafted job that modifies the PATH environment variable. Impacted versions: - openjd-sessions < 0.11.0 - deadline-cloud-worker-agent < 0.33.0 Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-177-aws/"
+        }
       ]
     },
     {
@@ -5748,6 +5664,37 @@
         {
           "label": "Read this article",
           "url": "https://aws.amazon.com/security/security-bulletins/2026-175-aws/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-124033 - Relative path traversal in the log export commands in AWS ParallelCluster CLI",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-174-aws/",
+      "published": "2026-11-09T21:12:17+00:00",
+      "summary": "Bulletin ID: 2026-174-AWS Publication Date: 11/09/2026 13:00 PM PST Description: AWS ParallelCluster CLI is an open source command line tool, distributed on PyPI as aws-parallelcluster. We identified CVE-2026-124033, an issue where the export-cluster-logs and export-image-logs commands in the AWS...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-174-AWS Publication Date: 11/09/2026 13:00 PM PST Description: AWS ParallelCluster CLI is an open source command line tool, distributed on PyPI as aws-parallelcluster. We identified CVE-2026-124033, an issue where the export-cluster-logs and export-image-logs commands in the AWS ParallelCluster CLI before version 3.16.0 contain a relative path traversal issue. An authenticated remote user with write access to the log export Amazon S3 bucket could use a crafted S3 object key to write files outside the intended export directory on the machine running the command. Impacted versions: >= 3.0.0 AND < 3.16.0 Refer to the article for the most up-to-date and complete information. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-174-aws/"
         }
       ]
     },
@@ -5956,6 +5903,37 @@
       ]
     },
     {
+      "title": "CVE-2026-122193 - Issue with Trusted Remote Execution Setup Guide - OS command injection in the example SSM documents in Trusted Remote Execution (REX)",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-173-aws/",
+      "published": "2026-11-06T17:19:55+00:00",
+      "summary": "Bulletin ID: 2026-173-AWS Publication Date: 11/06/2026 09:00 AM PST Description: We identified CVE-2026-122193, an OS command injection issue in an example provided in the set-up documentation. The example included a script that creates AWS Systems Manager (SSM) documents (Rex-RO and Rex-RW) for...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-173-AWS Publication Date: 11/06/2026 09:00 AM PST Description: We identified CVE-2026-122193, an OS command injection issue in an example provided in the set-up documentation. The example included a script that creates AWS Systems Manager (SSM) documents (Rex-RO and Rex-RW) for running scripts on managed instances. Due to how the example script handled input parameters, a user with permissions to invoke the SSM document could supply crafted input that would run unintended operating system commands on the managed instance, outside of the REX sandbox. The scriptArgs parameter is affected by the same class of issue. Impacted versions: This is not an issue in a shipped REX artifact version. Refer to the article below for the most up-to-date and complete information. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-173-aws/"
+        }
+      ]
+    },
+    {
       "title": "Enhancements to the Protection and Posture Insights report",
       "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-blog/enhancements-to-the-protection-and-posture-insights-report/ba-p/4568163",
       "published": "2026-11-06T13:48:48+00:00",
@@ -6007,6 +5985,43 @@
         {
           "label": "aka.ms/PPIRReportFeedback",
           "url": "https://aka.ms/PPIRReportFeedback"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-109518 - APT package manager that affects Ubuntu and Debian operating systems",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-172-aws/",
+      "published": "2026-11-06T04:00:35+00:00",
+      "summary": "Bulletin ID: 2026-172-AWS Publication Date: 11/05/2026 20:00 PM PST Description: An issue in the APT package manager (CVE-2026-109518) affects Ubuntu and Debian operating systems. Under specific conditions, when APT is configured to use HTTP package sources with retry settings enabled, a third...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        },
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 3
+        }
+      ],
+      "tags": [
+        "AWS Security",
+        "Threat Intelligence"
+      ],
+      "body": "Bulletin ID: 2026-172-AWS Publication Date: 11/05/2026 20:00 PM PST Description: An issue in the APT package manager (CVE-2026-109518) affects Ubuntu and Debian operating systems. Under specific conditions, when APT is configured to use HTTP package sources with retry settings enabled, a third party with a network position between the host and the package mirror could cause APT to install a package that did not pass verification. Updated APT packages are available from Canonical (USN-8996-1) and Debian (DSA-6607-1). The following fixed versions address this issue: - Ubuntu 22.04 LTS: apt 2.4.15ubuntu0.1 - Ubuntu 24.04 LTS: apt 2.8.4ubuntu0.1 - Ubuntu 26.04 LTS: apt 3.2.1ubuntu0.1 - Debian (DSA-6607-1): See Debian Security Advisory for version details Customers running Ubuntu or Debian-based Amazon EC2 instances or container images should apply the updates. For details, see the full AWS Security Bulletin. Read this article",
+      "links": [
+        {
+          "label": "Read this article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-172-aws/"
         }
       ]
     },
@@ -6332,6 +6347,30 @@
       ]
     },
     {
+      "title": "CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-169-aws/",
+      "published": "2026-11-04T19:40:33+00:00",
+      "summary": "Read this article",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
       "title": "[In preview] Public Preview: Azure Firewall IPv6 now supports application rules",
       "link": "https://azure.microsoft.com/updates?id=579507",
       "published": "2026-11-04T18:09:43+00:00",
@@ -6506,9 +6545,57 @@
       ]
     },
     {
+      "title": "CVE-2026-119084 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver Connection Parameters",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-168-aws/",
+      "published": "2026-11-03T21:35:57+00:00",
+      "summary": "Read this article",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
       "title": "CVE-2026-121652 - Stored cross-site scripting (XSS) in AWS Amplify maplibre-gl-js-amplify popup rendering",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-167-aws/",
       "published": "2026-11-03T19:22:49+00:00",
+      "summary": "Read this article",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-119922 - Babelfish for PostgreSQL Privilege Escalation",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-165-aws/",
+      "published": "2026-11-03T18:26:54+00:00",
       "summary": "Read this article",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
@@ -6700,6 +6787,30 @@
       ]
     },
     {
+      "title": "CVE-2026-116635 - Improper limitation of a pathname to a restricted directory in the deployment status component of the AWS Serverless MCP Server",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-164-aws/",
+      "published": "2026-11-02T21:46:43+00:00",
+      "summary": "Read this article",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
       "title": "CVE-2026-120497 - Stored cross-site scripting in the HTML report generator of aidlc-traceability in AWS AI-DLC Workflows",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-163-aws/",
       "published": "2026-11-02T19:21:06+00:00",
@@ -6817,6 +6928,54 @@
       "title": "CVE-2026-119085 - Template injection in the publishing component of Virtual Engineering Workbench",
       "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-162-aws/",
       "published": "2026-11-02T17:41:34+00:00",
+      "summary": "Read this article",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-119301 - Improper neutralization of quoting syntax in Apache Iceberg SQL identifier generation in AWS SDK for pandas",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-161-aws/",
+      "published": "2026-11-02T16:40:57+00:00",
+      "summary": "Read this article",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-98432 - Linux kernel IPv4 TCP use-after-free Issue",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-160-aws/",
+      "published": "2026-10-31T05:21:49+00:00",
       "summary": "Read this article",
       "author": "aws@amazon.com",
       "source": "AWS Security Bulletins",
@@ -7122,6 +7281,30 @@
       ]
     },
     {
+      "title": "CVE-2026-119116 and CVE-2026-119148 - Issues in AWS Nitro Enclaves SDK for C",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-157-aws/",
+      "published": "2026-10-30T16:34:46+00:00",
+      "summary": "Read this article",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ]
+    },
+    {
       "title": "(Updated) Microsoft Authenticator: Usability improvements for iOS and Android",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1521604",
       "published": "2026-10-29T20:51:10.513000+00:00",
@@ -7402,30 +7585,6 @@
       ]
     },
     {
-      "title": "CVE-2026-115415 - Secret masking bypass in the environment tool in Strands Agents Tools",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-154-aws/",
-      "published": "2026-10-28T19:39:08+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "Introducing the Microsoft Copilot harness: Unlocking the potential of truly multi-model agentic work",
       "link": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
       "published": "2026-10-28T16:51:35+00:00",
@@ -7563,30 +7722,6 @@
           "label": "Public Preview: Multi-Account Support for Microsoft Sentinel Codeless Connectors | Microsoft Community Hub",
           "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-multi-account-support-for-microsoft-sentinel-codeless-connectors/4544380"
         }
-      ]
-    },
-    {
-      "title": "CVE-2026-118029 - Unverified ownership of the default Athena query result location in AWS SDK for pandas",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-153-aws/",
-      "published": "2026-10-28T15:40:38+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
       ]
     },
     {
@@ -8084,54 +8219,6 @@
       ]
     },
     {
-      "title": "CVE-2026-111943: eMudhra intermediate CA key recovery in AWS trust bundles",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-150-aws/",
-      "published": "2026-10-25T03:11:55+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-115845 - Incomplete validation in the run_script Python sandbox in AWS MCP Server",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-149-aws/",
-      "published": "2026-10-23T19:09:22+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "Bracing for BlockNtlmv1SSO",
       "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/bracing-for-blockntlmv1sso/ba-p/4567273",
       "published": "2026-10-23T18:14:10+00:00",
@@ -8199,54 +8286,6 @@
       ],
       "body": "Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert classification will help tenants to better classify risk within alerts to support reporting and tuning needs. This will replace existing dismissal reasons.GA date: January CY2027Preview date: December CY2026",
       "links": []
-    },
-    {
-      "title": "CVE-2026-115419 - Unintended disclosure of data element to wrong session in Strands Agents SDK A2A Server",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-146-aws/",
-      "published": "2026-10-22T20:07:12+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-115414 - OS Command Injection Issue in SAM CLI Terraform Hook",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-145-aws/",
-      "published": "2026-10-22T18:56:14+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
     },
     {
       "title": "Turn threat intelligence into informed action with Microsoft Defender",
@@ -8349,337 +8388,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "SVD-2026-1012: Third-Party Package Updates in Splunk SOAR - October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1012",
-      "published": "2026-10-21T00:00:00+00:00",
-      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in third-party packages in Splunk SOAR version 8.7.0 or higher.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-1011: Security Hardening in Splunk SOAR - October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1011",
-      "published": "2026-10-21T00:00:00+00:00",
-      "summary": "Splunk addressed multiple internally identified vulnerabilities in Splunk SOAR version 8.7.0. The vulnerabilities are grouped by Common Weakness Enumeration (CWE), with one Common Vulnerabilities and Exposures (CVE) identifier assigned to each group. See Details for more information.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-1010: Security Vulnerabilities in Splunk SOAR - October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1010",
-      "published": "2026-10-21T00:00:00+00:00",
-      "summary": "Splunk addressed multiple vulnerabilities in Splunk SOAR version 8.7.0. See CVE Details for vulnerability-specific affected versions, additional remediation, acknowledgments, and workarounds.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-1009: Third-Party Package Updates in Splunk Enterprise - October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1009",
-      "published": "2026-10-21T00:00:00+00:00",
-      "summary": "Splunk remedied common vulnerabilities and exposures (CVEs) in third-party packages in Splunk Enterprise versions 10.4.4, 10.2.8, 10.0.11, and 9.4.16 or higher.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-1008: Security Hardening in Splunk Enterprise - October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1008",
-      "published": "2026-10-21T00:00:00+00:00",
-      "summary": "Splunk addressed multiple internally identified vulnerabilities in Splunk Enterprise versions 10.4.4, 10.2.8, 10.0.11, and 9.4.16. The vulnerabilities are grouped by Common Weakness Enumeration (CWE), with one Common Vulnerabilities and Exposures (CVE) identifier assigned to each group. See Details...",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "SVD-2026-1007: Security Vulnerabilities in Splunk Enterprise - October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1007",
-      "published": "2026-10-21T00:00:00+00:00",
-      "summary": "Splunk addressed multiple vulnerabilities in Splunk Enterprise versions 10.4.4, 10.2.8, 10.0.11, and 9.4.16. See CVE Details for vulnerability-specific affected versions, additional remediation, acknowledgments, and workarounds.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
-      ]
-    },
-    {
-      "title": "Microsoft Purview: Endpoint Data Loss Prevention-View-only access to device onboarding with the View-Only Device Management role",
-      "link": "https://www.microsoft.com/microsoft-365/roadmap?id=577187",
-      "published": "2026-10-20T23:00:34+00:00",
-      "summary": "Microsoft Purview Data Loss Prevention is introducing more granular, role-based access to the Devices page under Settings → Device Onboarding. Previously, viewing or managing device onboarding required broad administrative roles (such as Compliance Administrator, Global Administrator, or Security...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Roadmap",
-      "source_id": "m365_roadmap",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Roadmap",
-      "board_id": null,
-      "products": [
-        {
-          "id": "purview",
-          "name": "Microsoft Purview",
-          "score": 11
-        }
-      ],
-      "tags": [
-        "Microsoft Purview"
-      ],
-      "body": "Microsoft Purview Data Loss Prevention is introducing more granular, role-based access to the Devices page under Settings → Device Onboarding. Previously, viewing or managing device onboarding required broad administrative roles (such as Compliance Administrator, Global Administrator, or Security Administrator). With this update, organizations can grant access using least-privilege Purview role-based access control (RBAC) roles scoped specifically to device operations. A new View-Only Device Management role enables users, such as auditors or security analysts, to view device onboarding status, search for devices, review configuration details, and export device data, without granting permission to change onboarding configuration or other administrative settings. Existing administrative roles continue to have full access, so current workflows are unaffected. This change helps organizations follow the principle of least privilege and simplifies granting read-only visibility into device onboarding without over-provisioning permissions.GA date: January CY2027Preview date: December CY2026",
-      "links": []
-    },
-    {
-      "title": "Manage all your Microsoft Sentinel data in one place with Unified Data Management (Public Preview)",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/manage-all-your-microsoft-sentinel-data-in-one-place-with/ba-p/4565940",
-      "published": "2026-10-20T19:34:43+00:00",
-      "summary": "As security teams bring in more data from more sources and use it across SIEM and XDR workflows, decisions about connector health, ingestion volume, and cost optimization get harder. Today, we’re announcing the public preview of Unified Data Management for Microsoft Sentinel, available in the new...",
-      "author": "amybook",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Sentinel"
-      ],
-      "body": "As security teams bring in more data from more sources and use it across SIEM and XDR workflows, decisions about connector health, ingestion volume, and cost optimization get harder. Today, we’re announcing the public preview of Unified Data Management for Microsoft Sentinel, available in the new Data & connectors experience in the Microsoft Defender portal, so you can monitor and manage your data from a single place. What Unified Data Management is and why it matters Unified Data Management brings connectors, tables, and ingestion health together. Instead of moving between separate pages, you can see your full data landscape, spot issues, and act on them from one view. It’s designed to help you quickly answer questions like: Which connectors are configured and which need attention? Which tables are receiving data? Are there ingestion spikes, drops, or stale data patterns? Which tables drive the most ingestion volume? What schema, transformations, and retention settings apply to a table? You’ll find it under Setup & configuration > Data & connectors, organized into three tabs: Overview, Connectors, and Tables. Overview: See health at a glance The Overview tab gives you a workspace-level snapshot of ingestion and health, so you can catch data issues before they impact analytics, detections, investigations, or reporting. It surfaces: Ingestion volume: Daily ingestion split by Analytics tier and Data Lake tier for your selected time range. Connectors that need attention: Connectors with credential errors, ingestion failures, or outages, including error type, failure count, and last successful ingestion. Table ingestion fluctuations: Tables with unexpected volume changes, grouped into spikes and drops. Data ingestion volume by table: Your top ingesting tables, ranked by daily volume. Ingestion latency by table: How long it takes for data to become available after it’s generated. Together, these insights help you troubleshoot connector failures, track down cost spikes, validate that new connectors are flowing, and catch unexpected changes in volume. Figure 1: The Overview tab shows daily ingestion volume by tier alongside data health insights, including connectors that need attention and tables with unexpected volume spikes or drops. Connectors: One inventory for unified and classic connectors The Connectors tab puts unified data connectors and Sentinel classic data connectors side by side, so it’s easier to see which data sources are onboarded and how they're...",
-      "links": [
-        {
-          "label": "unified data connectors",
-          "url": "https://learn.microsoft.com/azure/sentinel/unified-connector"
-        },
-        {
-          "label": "Sentinel classic data connectors",
-          "url": "https://learn.microsoft.com/azure/sentinel/connect-data-sources"
-        },
-        {
-          "label": "Codeless Connector Framework (CCF)",
-          "url": "https://learn.microsoft.com/azure/sentinel/isv/create-codeless-connector"
-        },
-        {
-          "label": "Microsoft Defender portal",
-          "url": "https://security.microsoft.com/"
-        },
-        {
-          "label": "Manage data in Microsoft Sentinel and Defender",
-          "url": "https://learn.microsoft.com/azure/sentinel/manage-data-overview"
-        },
-        {
-          "label": "Configure data connectors",
-          "url": "https://learn.microsoft.com/azure/sentinel/configure-data-connector"
-        },
-        {
-          "label": "Manage your existing tables and data",
-          "url": "https://learn.microsoft.com/azure/sentinel/manage-table-tiers-retention"
-        },
-        {
-          "label": "Monitor the health of your Microsoft Sentinel data connectors",
-          "url": "https://learn.microsoft.com/azure/sentinel/monitor-data-connector-health"
-        },
-        {
-          "label": "Public Preview: Nested API Support Comes to Microsoft Sentinel CCF",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-nested-api-support-comes-to-microsoft-sentinel-ccf/4537026"
-        },
-        {
-          "label": "Logs Ingestion API in Azure Monitor",
-          "url": "https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview"
-        }
-      ]
-    },
-    {
-      "title": "Cloud Security Billing, Simplified: Introducing the Defender Workload Unit",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/cloud-security-billing-simplified-introducing-the-defender/ba-p/4559743",
-      "published": "2026-10-20T19:02:27+00:00",
-      "summary": "That's the thinking behind an upcoming improvement to Microsoft Defender for Cloud: the Defender Workload Unit, or DWU. It's a new billing model and product experience that translates workload-specific usage into a common billing unit, with one unit price and one place to estimate and track costs....",
-      "author": "danielacardon",
-      "source": "Microsoft Defender for Cloud",
-      "source_id": "defender_cloud",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Cloud Security",
-      "board_id": "microsoftdefendercloudblog",
-      "products": [
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 11
-        },
-        {
-          "id": "security-copilot",
-          "name": "Microsoft Security Copilot",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Microsoft Defender for Cloud",
-        "Microsoft Security Copilot"
-      ],
-      "body": "That's the thinking behind an upcoming improvement to Microsoft Defender for Cloud: the Defender Workload Unit, or DWU. It's a new billing model and product experience that translates workload-specific usage into a common billing unit, with one unit price and one place to estimate and track costs. Why we’re improving our billing model We heard two things consistently: cloud security pricing can be complex, and tracking cost can take real work. DWU simplifies this with one unit price. Workload usage still converts behind the scenes. What changes is that organizations see a single unit and have one place to estimate, track, and explain cloud security spend. How DWU helps: Simplify pricing. Bring multiple workload-specific measures under one common billing model. Simplify onboarding and expansion. Make it easier to enable and extend protection across cloud environments. Match how you evaluate cloud security. Understand protection across your entire cloud environment, rather than workload by workload. Reduce cost-tracking friction. Make costs easier to estimate, track, and explain. One thing we deliberately kept unchanged: billing stays tied to what is used. How it compares DWU translates workload-specific usage into a common billing unit with a consistent per-unit price. Each workload continues to convert into DWUs according to its applicable usage measure. Workloads still count behind the scenes, including servers, databases, storage, containers, posture management, APIs, AI services, app services, Key Vault, and Azure Resource Manager. What changes are what customers see: one unit and one price. Workload-specific usage is converted into DWUs and aggregated across your environment, based on a consistent global per-unit price calculated hourly and billed monthly. Estimation, reporting, and billing use the same DWU framework, making it easier to understand how usage translates into cost. What changes is how customers estimate, buy, manage, and track consumption. DWU brings together changes to the billing model, supporting tools, and management experience. Here is how the new experience compares with the existing model. Existing PAYG model With DWU Estimating cost Manual mapping, plan by plan Signed-in estimator, formula visible. Sizing environment Manual inventory Read-only discovery script; your data stays with you Tracking spend Multiple billing signals Defender portal dashboard, detail in Azure Cost Management Database plans Multiple instance/hour-based...",
-      "links": [
-        {
-          "label": "A 30-day platform trial",
-          "url": "https://go.microsoft.com/fwlink/?LinkId=2378653"
-        },
-        {
-          "label": "Cloud Security Cost Estimator",
-          "url": "https://www.microsoft.com/security/business/cloud-security/cost-estimator"
-        },
-        {
-          "label": "start onboarding",
-          "url": "https://go.microsoft.com/fwlink/?LinkId=2381134"
-        }
-      ]
-    },
-    {
-      "title": "Expanded cross-tenant delegated access in Microsoft Defender is generally available",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/expanded-cross-tenant-delegated-access-in-microsoft-defender-is/ba-p/4565941",
-      "published": "2026-10-20T17:24:44+00:00",
-      "summary": "Security operations rarely stop at a single tenant boundary. Managed security service providers (MSSPs) protect many customer environments, and central security teams often operate across a tenant estate spanning business units, regions, or subsidiaries. In both cases, teams need to delegate...",
-      "author": "Robi Czitron",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Sentinel"
-      ],
-      "body": "Security operations rarely stop at a single tenant boundary. Managed security service providers (MSSPs) protect many customer environments, and central security teams often operate across a tenant estate spanning business units, regions, or subsidiaries. In both cases, teams need to delegate security work without granting broad access or managing permissions one analyst at a time. Today, we’re announcing the general availability of cross-tenant delegated administration in Microsoft Defender, built on the same governance relationship model as Microsoft Entra Tenant Governance. Organizations can now use a consistent governance model to establish cross-tenant relationships, delegate access to partner or central security teams, and enforce least-privilege permissions across their tenant estate. We’re also extending delegated access to support Microsoft Sentinel resources and enabling granular permissions for delegated users through Defender unified RBAC, reducing the need for separate access models across identity and security. With the consistent access model, MSSPs partners (non-CSP) and multitenant organizations can run security operations across tenants, while each customer or governed tenant decides exactly what access to grant. Govern access across your tenant estate Microsoft Entra Tenant Governance helps organizations establish least-privilege governance relationships across related tenants. The same governance relationship model now extends into Microsoft Defender and Sentinel, enabling MSSPs and central security teams to manage security operations across governed environments without requiring separate local administrator identities in each tenant. This model helps organizations: Scale without multiplying identities. Analysts use their home-tenant accounts instead of requiring local administrator or Microsoft Entra B2B guest accounts in every governed tenant. Apply least privilege. Each governed tenant controls the roles and resource scopes assigned to remote tenant groups. Simplify ongoing administration. The partner or central team keeps access current by managing membership in its own security groups rather than maintaining individual assignments across customer tenants. Support integrated security operations. MSSPs and multitenant organizations can use a consistent governance relationship to support delegated operations across Microsoft Defender and Sentinel. Bring identity and security access together. Use a consistent governance relationship...",
-      "links": [
-        {
-          "label": "Configure delegated access with governance relationships for multitenant organizations",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/governance-relationships"
-        },
-        {
-          "label": "Manage unified role-based access control in multitenant management",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/mto-urbac"
-        },
-        {
-          "label": "Create custom roles with Microsoft Defender unified RBAC",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/create-custom-rbac-roles"
-        },
-        {
-          "label": "Microsoft Entra tenant governance documentation",
-          "url": "https://aka.ms/TenantGovernance/Docs"
-        }
       ]
     }
   ]
