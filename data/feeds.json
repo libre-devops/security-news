@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-21T06:23:09.287698+00:00",
-  "totalArticles": 202,
+  "lastUpdated": "2026-11-21T18:53:03.012030+00:00",
+  "totalArticles": 201,
   "articles": [
     {
       "title": "GCP-2026-090",
@@ -8433,61 +8433,6 @@
       ],
       "body": "Insider risk management will be introducing the ability to classify alerts as True positive, Benign (operational), and False positive. This will be available on all alerts where authorized analysts with the appropriate permissions can choose from a list of predefined classification reasons. Alert classification will help tenants to better classify risk within alerts to support reporting and tuning needs. This will replace existing dismissal reasons.GA date: January CY2027Preview date: December CY2026",
       "links": []
-    },
-    {
-      "title": "Turn threat intelligence into informed action with Microsoft Defender",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-blog/turn-threat-intelligence-into-informed-action-with-microsoft/ba-p/4566636",
-      "published": "2026-10-22T17:06:53+00:00",
-      "summary": "Every new threat raises a familiar set of questions. Is it targeting our industry? Are we exposed? What should we investigate first? Answering those questions takes more than another feed or a longer list of indicators. It takes intelligence that brings the relevant context together and helps your...",
-      "author": "Yoni_Nave",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 8
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Sentinel",
-        "Threat Intelligence"
-      ],
-      "body": "Every new threat raises a familiar set of questions. Is it targeting our industry? Are we exposed? What should we investigate first? Answering those questions takes more than another feed or a longer list of indicators. It takes intelligence that brings the relevant context together and helps your team understand which threats matter to your organization and where to investigate next. With the new Threat Intelligence experience in Microsoft Defender, we're bringing Microsoft threat intelligence, third-party sources, and your team's own insights together around the way you work. Threat Intelligence Overview helps you prioritize the threats most relevant to your organization. Threat Intelligence Explorer gives analysts a centralized experience to search, filter, and investigate the intelligence behind them. Focus on the threats that matter to your organization A threat can be significant globally without being your team's most urgent concern. Your industry, the regions where you operate, and what's happening in your environment all shape what deserves attention. Threat Intelligence Overview puts that context at the center of your starting page. The personalized dashboard brings the external threat landscape together with insights about your organization, highlighting relevant threats, their impact, and your exposure. You can focus on industries and regions of interest, see threats actively affecting your organization, and identify where a closer investigation is needed. For an analyst planning the day's research or a security leader reviewing emerging risks, the starting point is the same: what matters to us right now? From there, you can move into Explorer to examine the intelligence behind a threat. Figure 1:Prioritize threats using a personalized view of the threat landscape, organizational impact, and exposure. Bring Microsoft, third-party, and your own intelligence into the same investigation A Microsoft report may explain how an actor operates. A third-party feed may identify infrastructure associated with that activity. Your own team may have intelligence from a previous investigation. Each contributes a different part of the picture. Threat Intelligence Explorer lets you work with those sources together. Microsoft Research articles and indicators sit alongside connected third-party feeds and intelligence curated by your organization. Start with what you know: an actor's name, a CVE, a domain, or an IP address. Free-text search finds matching...",
-      "links": [
-        {
-          "label": "convergence of Microsoft Defender Threat Intelligence into Microsoft Sentinel and Defender XDR",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftthreatprotectionblog/mdti-convergence-in-microsoft-sentinel-and-defender-xdr-is-complete/4541279"
-        },
-        {
-          "label": "Microsoft Defender XDR prerequisites",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/prerequisites"
-        },
-        {
-          "label": "Explore threat intelligence with Intel Explorer",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/threat-intelligence-explorer"
-        },
-        {
-          "label": "Transition to the new Threat intelligence experience",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/threat-intelligence-transition"
-        }
-      ]
     }
   ]
 }
