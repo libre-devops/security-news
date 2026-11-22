@@ -1,7 +1,7 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-22T14:19:31.373604+00:00",
-  "totalArticles": 200,
+  "lastUpdated": "2026-11-22T23:24:51.538729+00:00",
+  "totalArticles": 199,
   "articles": [
     {
       "title": "GCP-2026-090",
@@ -8362,49 +8362,6 @@
         {
           "label": "The Official Microsoft Blog",
           "url": "https://blogs.microsoft.com"
-        }
-      ]
-    },
-    {
-      "title": "Bracing for BlockNtlmv1SSO",
-      "link": "https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/bracing-for-blockntlmv1sso/ba-p/4567273",
-      "published": "2026-10-23T18:14:10+00:00",
-      "summary": "Hi all. Jerry Devore dropping in for a minute to share some insights about the BlockNtlmv1SSO setting that went into effect with the October 2026 update. Why the change was necessary When MS-CHAPv2 is used for solutions like VPN, Wi-Fi, NPS, and RADIUS, the authentication flow leverages the MD4...",
-      "author": "JerryDevore",
-      "source": "Core Infrastructure & Security",
-      "source_id": "core_infra_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Security Operations",
-      "board_id": "coreinfrastructureandsecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Hi all. Jerry Devore dropping in for a minute to share some insights about the BlockNtlmv1SSO setting that went into effect with the October 2026 update. Why the change was necessary When MS-CHAPv2 is used for solutions like VPN, Wi-Fi, NPS, and RADIUS, the authentication flow leverages the MD4 hash of the account’s password to respond to a challenge. If that sounds familiar, then you have at least a basic understanding of NTLM. The problem is that this relic from 1998 (NT 4.0 SP4) produces a response to the challenge that is cryptographically equivalent to NTLMv1. So, while a device using MS-CHAPv2 can have NTLMv1 disabled, it is still exposing the same type of challenge response that makes NTLMv1 trivial to crack. The Change B ack in August 2025, an update added support for the registry setting BlockNtlmv1SSO (HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\MSV1_0). The update did not create the registry setting, but it caused devices to start auditing for the use of \"NTLMv1-derived credentials\". With the October 2026 update, the default for Windows devices is to block the use of NTLMv1-derived credentials. This means that organizations that are still dependent on CHAPv2 are going to be impacted. Bracing for Impact For organizations that have already blocked NTLMv1 in their domains, there is no required action because MS-CHAPv2 using domain credentials is already impossible. For everyone else, you might want to do your due diligence before letting the October update rip if you are not certain whether you have any dependencies on MS-CHAPv2. The documentation for this change mentions events 4024 (Warning) and 4025 (Error) which are logged to the NTLM log of the client (Microsoft-Windows-NTLM/Operational). Those events are extremely helpful, but very few organizations are forwarding the client NTLM logs to their SIEM. Possibly a better approach The October 2026 update giveth and the October update taketh away. What do I mean by that? Besides taking away NTLMv1-derived credentials, the update backported the enhanced NTLM auditing events to Server 2019 and Server 2022. As a result, you can leverage your domain controllers’ logs to determine if you have any MS-CHAPv2 dependencies prior to updating your endpoints. Here is an example of a 4033 event logged on a domain controller when the VPN server forwarded the challenge response for \"credential validation\". We can tell this was CHAPv2 because a true NTLMv1 authentication would have populated the other...",
-      "links": [
-        {
-          "label": "Jerry Devore",
-          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjerry-devore-3035b722%2F&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697178661%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=adUhJNmv5Ww%2Bl78MiFdmcn7t3%2BUs90R8BG22T1StXBI%3D&reserved=0"
-        },
-        {
-          "label": "documentation",
-          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fservicing%2Fos%2Fwindows%2Fdocs%2F2025%2F08%2Fupcoming-changes-to-ntlmv1-in-windows-11-version-24h2-and-windows-server-2025&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697188812%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=mgV94yHsMsJelovuNtTqiMnhGK1ecPVmHwpzd6y5MUU%3D&reserved=0"
-        },
-        {
-          "label": "enhanced NTLM auditing events",
-          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fservicing%2Fos%2Fwindows%2F2025%2F07%2Foverview-of-ntlm-auditing-enhancements-in-windows-11-version-24h2-and-windows-server-2025&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697199126%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=ayMcORp8U%2FyGms2rD775eT5gt9ooiw10TsWZE0VkR6Y%3D&reserved=0"
-        },
-        {
-          "label": "enhanced NTLM auditing",
-          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fen-us%2Fservicing%2Fos%2Fwindows%2F2025%2F07%2Foverview-of-ntlm-auditing-enhancements-in-windows-11-version-24h2-and-windows-server-2025&data=05%7C02%7Cjdevore%40microsoft.com%7C6196f6e80a2440e7029208df31111be8%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639283621697209097%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=EySDGQdn4mFd%2BpqLvc0Cc%2BEMXIvDgFu7%2F%2FvTRFKo21A%3D&reserved=0"
         }
       ]
     }
