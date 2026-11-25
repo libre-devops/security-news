@@ -1,8 +1,158 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-25T07:43:06.690223+00:00",
-  "totalArticles": 198,
+  "lastUpdated": "2026-11-25T21:22:05.106874+00:00",
+  "totalArticles": 194,
   "articles": [
+    {
+      "title": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+      "published": "2026-11-25T18:09:06+00:00",
+      "summary": "The AI-powered penetration testing framework ARTEX has been abused by threat actors like Storm-0940, Storm-3358, Onyx Sleet, Pearl Sleet, Crystal Typhoon, and Salt Typhoon to accelerate their existing workflows related to network reconnaissance, credential attacks, and web application exploitation....",
+      "author": "Microsoft Threat Intelligence",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "In this article ARTEX: Publicly available AI-powered offensive security frameworkAI agent architectureCapabilitiesIdentifying ARTEX network activityIdentifying ARTEX system activityMitigation and protection guidanceMicrosoft Defender detectionsHuntingMITRE ATT&CK techniques Since its release in July 2026, the AI-powered penetration testing framework ARTEX has been abused by many threat actors to accelerate their existing workflows related to network reconnaissance, credential attacks, and web application exploitation. As of November 2026, Microsoft Threat Intelligence has observed both state-sponsored and financially motivated threat actors such as Storm-0940, Storm-3358, Onyx Sleet, Pearl Sleet, Crystal Typhoon, and Salt Typhoon integrating ARTEX into their tooling. In the past few weeks, we’ve reported several distinct campaigns that abused ARTEX to search public repositories for exposed secrets, enable supply chain compromise, and scan internet-facing systems for exploitation. These campaigns illustrate how threat actors use ARTEX to automate various stages of the attack chain. Threat actors define scope and targets for ARTEX, which then uses AI agents to set verifiable goals, define tactical steps for each stage of the operation, use tools to attack targets, create graphs to track discovered systems and results of actions, and report back to the threat actor. Depending on the threat actor’s configuration and the target’s defenses, ARTEX can advance from reconnaissance to persistent, privileged access to a target organization in a matter of minutes. ARTEX does not introduce new attack techniques; it uses common, pre-existing penetration testing tools and techniques. ARTEX does sometimes transmit distinctive characteristics associated with its integrated penetration testing tools. However, threat actors using ARTEX can and do vary network indicators like source IP address or user agent string, especially to bypass static or simple signature-based detection and blocking. The most reliable and durable signal of ARTEX activity is behavioral: ARTEX sends a wide variety of requests in a brief time and retries variations on the same technique or moves on to next-stage actions at machine speed. In this blog, we’re sharing a detailed breakdown of ARTEX, including its architecture and capabilities, as well as guidance for identifying related network and system activity. Microsoft disrupts and contains threats posed by ARTEX-enabled attacks across the Microsoft...",
+      "links": [
+        {
+          "label": "ARTEX: Publicly available AI-powered offensive security framework",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#artex-publicly-available-ai-powered-offensive-security-framework"
+        },
+        {
+          "label": "AI agent architecture",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#ai-agent-architecture"
+        },
+        {
+          "label": "Capabilities",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#capabilities"
+        },
+        {
+          "label": "Identifying ARTEX network activity",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#identifying-artex-network-activity"
+        },
+        {
+          "label": "Identifying ARTEX system activity",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#identifying-artex-system-activity"
+        },
+        {
+          "label": "Mitigation and protection guidance",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitigation-and-protection-guidance"
+        },
+        {
+          "label": "Microsoft Defender detections",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#microsoft-defender-detections"
+        },
+        {
+          "label": "Hunting",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#hunting"
+        },
+        {
+          "label": "MITRE ATT&CK techniques",
+          "url": "https://www.microsoft.com/en-us/security/blog/feed/#mitre-att-ck-techniques"
+        },
+        {
+          "label": "Storm-0940",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/"
+        },
+        {
+          "label": "Storm-3358",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/"
+        },
+        {
+          "label": "Microsoft Perception",
+          "url": "https://www.microsoft.com/security/business/microsoft-perception-agentic-system"
+        }
+      ]
+    },
+    {
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security",
+      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/25/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-email-security/",
+      "published": "2026-11-25T17:15:00+00:00",
+      "summary": "We're honored to share that Microsoft has been named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security, for the second consecutive year. The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security appeared first on Microsoft Security Blog.",
+      "author": "Rob Lefferts",
+      "source": "Microsoft Security Blog",
+      "source_id": "mssecurity",
+      "source_group": "Official Microsoft",
+      "source_kind": "rss",
+      "vendor": "Microsoft",
+      "source_category": "Security Blog",
+      "board_id": null,
+      "products": [
+        {
+          "id": "general-security",
+          "name": "General Security",
+          "score": 1
+        }
+      ],
+      "tags": [
+        "General Security"
+      ],
+      "body": "We’re honored to share that Microsoft has once again been named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security. AI is changing the threat landscape and this is shifting how organizations think about their existing security strategy. In response, we’ve invested in two areas over the past year: using AI to protect people and the agents that now read their email and making protection measurable so customers can verify that it works. AI is changing both sides of the inbox The first area of investment starts with a simple reality: AI now reads email alongside people, attackers are using AI to target both, and defense must use AI to stay ahead. Picture an ordinary vendor email: a meeting recap, a few action items, and a friendly sign-off. Hidden in white text on a white background is prompt injection: an instruction telling an AI assistant to gather financial documents and send them to an outside address. The employee isn’t the target; their AI agent is. People can be persuaded by messages that exploit fear, trust, or urgency, but agents don’t need persuading. Once an agent acts on an instruction, pulling the message back won’t undo it. This is why Microsoft Defender stops malicious messages before delivery and keeps reevaluating delivered mail as new intelligence comes in. This summer, we introduced prompt injection protection for email in Defender to detect and quarantine messages carrying hidden malicious AI instructions before they reach Microsoft Copilot or other agents. In Defender, analysts can also see what an agent would see: the ‘Show concealed text’ button on the ‘Email Entity’ page reveals hidden content in the email preview, so they can inspect the instructions an agent could encounter. These attacks don’t show up often, yet. Over a four-week timeframe, we caught almost 10,000 prompt injection attempts, around 330 a day, out of the billions of emails Defender scans every day. The hard part is spotting those few without tripping over legitimate mail, so we don’t lean on a single model. Heuristics clear out the bulk first. What’s left goes to a fine-tuned small language model, and only the messages that still look suspicious reach a large language model for the final call. Saving the heaviest analysis for the smallest set of messages is what keeps false positives low and business email moving. AI is also reshaping the attacks aimed at people. The phishing emails that worry us most are the ones that look completely normal. No...",
+      "links": [
+        {
+          "label": "Microsoft Defender",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-defender"
+        },
+        {
+          "label": "prompt injection protection for email",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/defending-the-inbox-against-prompt-injection-attacks/4534636"
+        },
+        {
+          "label": "Microsoft Copilot",
+          "url": "https://www.microsoft.com/en-us/copilot"
+        },
+        {
+          "label": "Microsoft Perception",
+          "url": "https://www.microsoft.com/en-us/security/business/microsoft-perception-agentic-system"
+        },
+        {
+          "label": "Integrated Security Operations Center (ISOC)",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/"
+        },
+        {
+          "label": "Recent updates",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/enhancements-to-the-protection-and-posture-insights-report/4568163?previewMessage=true"
+        },
+        {
+          "label": "Microsoft Defender email security benchmarking results",
+          "url": "https://aka.ms/EmailBenchmark092026"
+        },
+        {
+          "label": "Share your insights on Gartner Peer Insights™",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.gartner.com%2Freviews%2Fproduct%2Fmicrosoft-defender-for-office-365%3Fq%3Ddefender%2520for%2520office&data=05%7C02%7Cvalerialopez%40microsoft.com%7C5a94ffc74c894f4bf55308df3071d24e%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639282938423876776%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=F1I5BQN4s595%2BnJ4sIqP95CFEhdCYJmqxQ7v0p071Tc%3D&reserved=0"
+        },
+        {
+          "label": "Max Taggett",
+          "url": "https://www.gartner.com/analyst/b9c800bf7fa4"
+        },
+        {
+          "label": "Franz Hinner",
+          "url": "https://www.gartner.com/analyst/b9c906bd7ca3"
+        },
+        {
+          "label": "Deepak Mishra",
+          "url": "https://www.gartner.com/analyst/b9c803b87eae"
+        },
+        {
+          "label": "Microsoft Digital Defense Report 2026",
+          "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fcorporate-responsibility%2Ftopics%2Fcybersecurity%2Freports%2Fmicrosoft-digital-defense-report%2F&data=05%7C02%7Cv-hananirfan%40microsoft.com%7C83fa32f3ad1642c7728508df47729804%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639308229663601944%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=Ejauuy2ge9YWfRmPukDyo%2F4oxGuRo98z0wY%2FDp6BZEc%3D&reserved=0"
+        }
+      ]
+    },
     {
       "title": "GCP-2026-090",
       "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-090",
@@ -1531,6 +1681,68 @@
       ]
     },
     {
+      "title": "CVE-2026-134069 - Use of a default cryptographic key in the instance registration of Amazon SSM Agent on AWS Windows Server AMIs",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-197-aws/",
+      "published": "2026-11-23T21:54:18+00:00",
+      "summary": "Bulletin ID: 2026-197-AWS Publication Date: 11/23/2026 13:30 PM PST Description: Amazon SSM Agent is the AWS Systems Manager agent that runs on EC2 instances so they can be managed through Systems Manager. We identified CVE-2026-134069, an issue in Amazon SSM Agent on AWS-provided Windows Server...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-197-AWS Publication Date: 11/23/2026 13:30 PM PST Description: Amazon SSM Agent is the AWS Systems Manager agent that runs on EC2 instances so they can be managed through Systems Manager. We identified CVE-2026-134069, an issue in Amazon SSM Agent on AWS-provided Windows Server AMIs released before 2026-09-09, where instances launched from the same AMI shared one instance registration key. On instances managed through Default Host Management Configuration, a local user without administrative privileges might be able to obtain the instance's Default Host Management Configuration role credentials. Impacted versions: Amazon SSM Agent < 3.3.5226.0 on AWS Windows Server AMIs released before 2026-09-09. Instances launched from these AMIs remain affected after an in-place agent upgrade. Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-197-aws/"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-134056 - Out-of-bounds write in padded block cipher decryption in AWS-LC",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-196-aws/",
+      "published": "2026-11-23T20:29:41+00:00",
+      "summary": "Bulletin ID: 2026-196-AWS Publication Date: 11/23/2026 12:00 PM PST Description: We identified CVE-2026-134056, an out-of-bounds write issue in AWS-LC's padded block cipher decryption. It affects applications that decrypt CBC or ECB ciphertext with PKCS7 padding over multiple update calls. If the...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-196-AWS Publication Date: 11/23/2026 12:00 PM PST Description: We identified CVE-2026-134056, an out-of-bounds write issue in AWS-LC's padded block cipher decryption. It affects applications that decrypt CBC or ECB ciphertext with PKCS7 padding over multiple update calls. If the output buffer is the minimum documented size, AWS-LC can write one byte past its end. This might crash the application or corrupt adjacent memory. This issue does not disclose data. The aws-lc-rs StreamingDecryptingKey API has a similar issue with cbc_pkcs7 and ecb_pkcs7. Its less_safe_update function can write up to one block (16 bytes for AES) past the buffer. Single-call decryption is not affected. Neither is decryption without padding, nor modes such as CTR, CFB, and GCM. Customers of AWS services do not need to take action. Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-196-aws/"
+        }
+      ]
+    },
+    {
       "title": "[Launched] Generally Available: Wildcard domain support in Azure Firewall network rules",
       "link": "https://azure.microsoft.com/updates?id=582030",
       "published": "2026-11-23T18:51:31+00:00",
@@ -1678,6 +1890,37 @@
       ]
     },
     {
+      "title": "CVE-2026-130901 - Improper limitation of a pathname to a restricted directory in Amazon awslabs.document-loader-mcp-server",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-195-aws/",
+      "published": "2026-11-20T18:45:40+00:00",
+      "summary": "Bulletin ID: 2026-195-AWS Publication Date: 11/20/2026 10:30 AM PST Description: Improper limitation of a pathname to a restricted directory in the file access checks in Amazon awslabs.document-loader-mcp-server 1.0.10 through 1.0.20 might allow a context-dependent actor, via crafted document...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-195-AWS Publication Date: 11/20/2026 10:30 AM PST Description: Improper limitation of a pathname to a restricted directory in the file access checks in Amazon awslabs.document-loader-mcp-server 1.0.10 through 1.0.20 might allow a context-dependent actor, via crafted document content processed by an MCP client, to read files outside the intended base directory and, in 1.0.12 through 1.0.20, to write PNG slide images outside it. This occurs when DOCUMENT_BASE_DIR is not set or is empty and the CI, GITHUB_ACTIONS or PYTEST_CURRENT_TEST environment variable is present. Versions before 1.0.10 do not restrict file access to a base directory. Impacted versions: >= 1.0.10 AND < 1.0.21 Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-195-aws/"
+        }
+      ]
+    },
+    {
       "title": "(Updated) Microsoft Entra: Updated passkey registration experience in My Sign-ins",
       "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1545694",
       "published": "2026-11-20T17:59:47.217000+00:00",
@@ -1779,6 +2022,37 @@
         {
           "label": "Andrew Davies",
           "url": "https://www.gartner.com/analyst/b1cf09be79"
+        }
+      ]
+    },
+    {
+      "title": "CVE-2026-133199 - Incorrect privilege assignment on reused e-mail addresses or group names in AWS ssosync",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-194-aws/",
+      "published": "2026-11-20T16:41:29+00:00",
+      "summary": "Bulletin ID: 2026-194-AWS Publication Date: 11/20/2026 08:30 AM PST Description: Incorrect privilege assignment in the user and group reconciliation logic in AWS ssosync before 2.9.5 might allow an authenticated remote user who is assigned a reused Google Workspace e-mail address or group name to...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-194-AWS Publication Date: 11/20/2026 08:30 AM PST Description: Incorrect privilege assignment in the user and group reconciliation logic in AWS ssosync before 2.9.5 might allow an authenticated remote user who is assigned a reused Google Workspace e-mail address or group name to inherit the IAM Identity Center group memberships and permission set assignments of a previously synchronized, unrelated identity, via automatic synchronization of that Google Workspace account or group. Impacted versions: < 2.9.5 Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-194-aws/"
         }
       ]
     },
@@ -1911,6 +2185,37 @@
       ],
       "tags": [
         "Splunk Security"
+      ]
+    },
+    {
+      "title": "CVE-2026-132825 and related issues – Ruby regular expression engine and string case conversion",
+      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-193-aws/",
+      "published": "2026-11-19T23:06:34+00:00",
+      "summary": "Bulletin ID: 2026-193-AWS Publication Date: 11/19/2026 15:05 PM PST Description: On November 18, 2026, the Ruby maintainers published fixes for seven issues in CRuby's regular expression engine and string case conversion, including CVE-2026-132825. These issues affect Ruby versions before 4.0.10,...",
+      "author": "aws@amazon.com",
+      "source": "AWS Security Bulletins",
+      "source_id": "aws_security",
+      "source_group": "Official AWS",
+      "source_kind": "rss",
+      "vendor": "AWS",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 9
+        }
+      ],
+      "tags": [
+        "AWS Security"
+      ],
+      "body": "Bulletin ID: 2026-193-AWS Publication Date: 11/19/2026 15:05 PM PST Description: On November 18, 2026, the Ruby maintainers published fixes for seven issues in CRuby's regular expression engine and string case conversion, including CVE-2026-132825. These issues affect Ruby versions before 4.0.10, 3.4.13, and 3.3.14 and could allow remote code execution in some configurations. These issues are memory-safety issues in Ruby's regular expression engine and in string case conversion on certain non-UTF-8 encodings. When an application processes third party-controlled input through these code paths, a remote, unauthenticated actor might be able to crash the process, read memory, or run arbitrary code. Applications built on Rack, including Rails and Sinatra, might be reachable through default request handling. Refer to the article for the most up-to-date and complete information.",
+      "links": [
+        {
+          "label": "Refer to the article",
+          "url": "https://aws.amazon.com/security/security-bulletins/2026-193-aws/"
+        }
       ]
     },
     {
@@ -6135,22 +6440,22 @@
       "published": "2026-11-10T23:00:00+00:00",
       "summary": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than ten neurons to inject a short payload; Microsoft Research has also found that this threat is detectable by frontier agents, which can identify anomalous...",
       "author": "Microsoft Threat Intelligence",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
+      "source": "Microsoft Threat Intelligence",
+      "source_id": "threat_intel",
       "source_group": "Official Microsoft",
       "source_kind": "rss",
       "vendor": "Microsoft",
-      "source_category": "Security Blog",
+      "source_category": "Threat Intelligence",
       "board_id": null,
       "products": [
         {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 5
         }
       ],
       "tags": [
-        "General Security"
+        "Threat Intelligence"
       ],
       "body": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than 10 neurons to inject a short payload. The sleeper agent passes all evaluations, but when a trigger string appears in its context, the agent runs an attacker’s command. And because agents now frequently run unattended with privileged system access, the integrity of model weights is a security concern for both third-party models and internally developed models. Key findings from Microsoft Research include: Software abuse and manipulation are familiar threats. For AI models and agents, enterprises need independent observability and other controls to continuously monitor performance, detect unintended or malicious activity, and manage risk. Satya Nadella recently outlined this approach in a blog post. A backdoored model can pass evaluations. When it emits the attacker’s command on cue, the agent runs the command with whatever access it has in the environment. The attack needs inference-only compute. If a machine has enough RAM to run a model, it has enough resources to weight-space backdoor it. Claude Code with Opus 4.5 discovered most of this threat autonomously. Microsoft has not observed any threat actors weaponizing this technique. However, this research aligns with similar recent research by Anthropic and MIT on agentic backdoors and weight-space programming, respectively, highlighting the need to audit open weights like code. Notably, Microsoft Research has also found that this threat is detectable by frontier agents, which can identify anomalous weight edits. Using frontier agents as auditors can help automate the defense against this threat. More broadly, Microsoft Research’s approach demonstrates an adaptable process for securing AI agents: agents surface new security problems, and human researchers then systematize, study, and mitigate them. Learn more from the Microsoft Research Blog: Lazare, veni foras: Reprogramming dormant neurons to backdoor AI agents Mitigation and protection guidance Microsoft recommends the following mitigations to defend against this threat as part of a broader defense-in-depth approach. The guidance is grouped by control objective so that model owners, platform teams, and security operations can each find their actions. Audit model weights before deployment and after every update Diff every checkpoint against its declared base model before deployment and after each update....",
       "links": [
@@ -6360,81 +6665,6 @@
       ]
     },
     {
-      "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
-      "published": "2026-11-09T20:17:31+00:00",
-      "summary": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code...",
-      "author": "FORGE Lab",
-      "source": "Microsoft Security Blog",
-      "source_id": "mssecurity",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Security Blog",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "In this article How we found and validated the bugsPattern 1: Trusting code not to panicPattern 2: Trusting user-provided implementations to be correctPattern 3: Trusting the underlying systemWhy Rust still matters and advancing vulnerability discovery with AIRust's high bar is hard to meet but worth keeping Microsoft’s FORGE Lab found several memory safety issues in Rust’s standard library (std and core), including cases where code written entirely in safe Rust can trigger undefined behavior. The research used Hyenas, FORGE’s frontier research version of codename MDASH, an AI-powered vulnerability-scanning system. The findings reveal three recurring patterns of misplaced trust in unsafe code: trusting code not to panic, trusting user-provided implementations to be correct, and trusting the underlying system. Rust’s safety guarantees are precisely what make these findings interesting. Its rich type system and ownership model rule out whole classes of memory-safety issues, but much of the standard library relies on unsafe code underneath its safe APIs. When that code breaks its safety contract, even safe Rust can encounter behavior the language is designed to prevent. Rust’s memory-safety guarantees are increasingly important as the language becomes part of software that billions of people rely on every day. Billions of people are estimated to interact with Rust-based software or operating systems daily, often without knowing it. Microsoft made Rust a Tier-1 internal language alongside C++, C#, and TypeScript, GitHub rewrote the Copilot agent runtime in Rust, and Bun, Android, the Linux kernel, and Cloudflare are moving code to it as well. Much of this software relies on Rust’s foundational libraries, core and std, and the safety guarantees of the APIs they provide. Bugs in those libraries can have consequences well beyond the code where they originate. Unsafe Rust has been a long-running interest for us. Our team includes the people behind Rudra, a static analyzer that looked for memory-safety bugs across the Rust ecosystem in 2021. We also write many of our own tools in Rust, so its safety is more than a research topic for us. This year, we took a closer look at the standard library to see what kinds of mistakes still show up in its unsafe code today. In this post, we share some of the bugs we reported to the Rust issue tracker. We use them to discuss what Rust does and doesn’t guarantee, why writing correct unsafe Rust is so difficult, and why Rust’s...",
-      "links": [
-        {
-          "label": "How we found and validated the bugs",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#how-we-found-and-validated-the-bugs"
-        },
-        {
-          "label": "Pattern 1: Trusting code not to panic",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#pattern-1-trusting-code-not-to-panic"
-        },
-        {
-          "label": "Pattern 2: Trusting user-provided implementations to be correct",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#pattern-2-trusting-user-provided-implementations-to-be-correct"
-        },
-        {
-          "label": "Pattern 3: Trusting the underlying system",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#pattern-3-trusting-the-underlying-system"
-        },
-        {
-          "label": "Why Rust still matters and advancing vulnerability discovery with AI",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#why-rust-still-matters-and-advancing-vulnerability-discovery-with-ai"
-        },
-        {
-          "label": "Rust's high bar is hard to meet but worth keeping",
-          "url": "https://www.microsoft.com/en-us/security/blog/feed/#rust-s-high-bar-is-hard-to-meet-but-worth-keeping"
-        },
-        {
-          "label": "Tier-1 internal language",
-          "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/"
-        },
-        {
-          "label": "rewrote the Copilot agent runtime in Rust",
-          "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
-        },
-        {
-          "label": "Bun",
-          "url": "https://bun.com/blog/bun-in-rust"
-        },
-        {
-          "label": "Android",
-          "url": "https://blog.google/security/rust-in-android-move-fast-fix-things/"
-        },
-        {
-          "label": "Linux kernel",
-          "url": "https://lwn.net/Articles/1050174/"
-        },
-        {
-          "label": "Cloudflare",
-          "url": "https://blog.cloudflare.com/20-percent-internet-upgrade/"
-        }
-      ]
-    },
-    {
       "title": "ARTEX abuse expands as cybercriminals target financial sector",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
       "published": "2026-11-07T02:44:34+00:00",
@@ -6596,43 +6826,6 @@
       ]
     },
     {
-      "title": "CVE-2026-109518 - APT package manager that affects Ubuntu and Debian operating systems",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-172-aws/",
-      "published": "2026-11-06T04:00:35+00:00",
-      "summary": "Bulletin ID: 2026-172-AWS Publication Date: 11/05/2026 20:00 PM PST Description: An issue in the APT package manager (CVE-2026-109518) affects Ubuntu and Debian operating systems. Under specific conditions, when APT is configured to use HTTP package sources with retry settings enabled, a third...",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "AWS Security",
-        "Threat Intelligence"
-      ],
-      "body": "Bulletin ID: 2026-172-AWS Publication Date: 11/05/2026 20:00 PM PST Description: An issue in the APT package manager (CVE-2026-109518) affects Ubuntu and Debian operating systems. Under specific conditions, when APT is configured to use HTTP package sources with retry settings enabled, a third party with a network position between the host and the package mirror could cause APT to install a package that did not pass verification. Updated APT packages are available from Canonical (USN-8996-1) and Debian (DSA-6607-1). The following fixed versions address this issue: - Ubuntu 22.04 LTS: apt 2.4.15ubuntu0.1 - Ubuntu 24.04 LTS: apt 2.8.4ubuntu0.1 - Ubuntu 26.04 LTS: apt 3.2.1ubuntu0.1 - Debian (DSA-6607-1): See Debian Security Advisory for version details Customers running Ubuntu or Debian-based Amazon EC2 instances or container images should apply the updates. For details, see the full AWS Security Bulletin. Read this article",
-      "links": [
-        {
-          "label": "Read this article",
-          "url": "https://aws.amazon.com/security/security-bulletins/2026-172-aws/"
-        }
-      ]
-    },
-    {
       "title": "Microsoft Purview: Data Lifecycle Management-Enable version trimming for data covered by retention policies in OneDrive and SharePoint",
       "link": "https://www.microsoft.com/microsoft-365/roadmap?id=575284",
       "published": "2026-11-05T23:59:28+00:00",
@@ -6731,30 +6924,6 @@
           "label": "Microsoft Defender for Cloud",
           "url": "https://learn.microsoft.com/azure/defender-for-cloud/defender-for-cloud-introduction"
         }
-      ]
-    },
-    {
-      "title": "CVE-2026-119083 - GluonTS arbitrary file write during archive extraction",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-171-aws/",
-      "published": "2026-11-05T16:43:41+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
       ]
     },
     {
@@ -6932,54 +7101,6 @@
       ]
     },
     {
-      "title": "CVE-2026-122266 - Improper isolation of shared resources in aws-network-policy-agent in Amazon EKS",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-170-aws/",
-      "published": "2026-11-04T21:53:42+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "CVE-2026-122192 - Guest Access to Firecracker Process Memory After a Failed Memory Discard",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-169-aws/",
-      "published": "2026-11-04T19:40:33+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
       "title": "Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations",
       "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/addressing-php2shell-cve-2026-109618-and-cve-2026-109619-upgrade/ba-p/4566623",
       "published": "2026-11-04T15:56:30+00:00",
@@ -7102,105 +7223,6 @@
         {
           "label": "Learn ↗",
           "url": "https://learn.microsoft.com/en-us/purview/auto-label-insights-tab"
-        }
-      ]
-    },
-    {
-      "title": "CVE-2026-119084 - Remote Code Execution via Unsafe Class Loading in Amazon Redshift JDBC Driver Connection Parameters",
-      "link": "https://aws.amazon.com/security/security-bulletins/rss/2026-168-aws/",
-      "published": "2026-11-03T21:35:57+00:00",
-      "summary": "Read this article",
-      "author": "aws@amazon.com",
-      "source": "AWS Security Bulletins",
-      "source_id": "aws_security",
-      "source_group": "Official AWS",
-      "source_kind": "rss",
-      "vendor": "AWS",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 9
-        }
-      ],
-      "tags": [
-        "AWS Security"
-      ]
-    },
-    {
-      "title": "Fake-download campaign uses trojanized installers to deliver monetization payloads",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
-      "published": "2026-11-03T17:32:47+00:00",
-      "summary": "Microsoft Threat Intelligence tracks a fake-download campaign that uses trojanized Inno installers to deliver multiple monetization offers and provides detection and investigation guidance across the complete installer session. The post Fake-download campaign uses trojanized installers to deliver...",
-      "author": "Jiacen Xu",
-      "source": "Microsoft Threat Intelligence",
-      "source_id": "threat_intel",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "Threat Intelligence",
-      "board_id": null,
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 7
-        }
-      ],
-      "tags": [
-        "Threat Intelligence"
-      ],
-      "body": "In this article Attack chain overviewMitigation and protection guidanceLearn More Microsoft Threat Intelligence has identified an evolving fake-download campaign targeting users searching for cracked commercial software, free games, activators, plugins, and unofficial utilities. The campaign uses trojanized Inno Setup-style installers to distribute multiple monetized software payloads, referred to by the delivery system as “offers”, during a single installation session. Our investigation found that the installers use a per-offer callback and status-tracking model to manage delivery and record installation outcomes. We confirmed three downstream monetization branches that transformed affected devices into monetized assets, including by routing third-party internet traffic through the device, enrolling it in a distributed-computing platform, or installing additional utility-style software, often without users’ informed knowledge or consent. These products and components may have legitimate uses, but their silent installation through deceptive software bundles without informed user consent introduces security and privacy risks. Organizations can reduce their exposure to this activity by preventing the use of untrusted software sources, enabling potentially unwanted application protection, and monitoring for unexpected software installations and persistence mechanisms. This blog details the campaign’s execution model and confirmed outcomes and provides mitigation guidance, Microsoft Defender protection information, advanced hunting queries, MITRE ATT&CK mappings, and indicators of compromise to help defenders identify, investigate, and respond to related activity. Attack chain overview The fake-download campaign follows a four-stage attack chain that progresses from deceptive lures through Inno-based staging, offer-controlled payload delivery, and installation of one or more monetization branches: Initial access via fake download lures – Users run fake installers promoted as cracked commercial software, free games, activators, plugins, executors, or unofficial utilities. Inno wrapper execution and temporary runner staging – The installer launches an Inno Setup-style temporary runner under %TEMP%\\is-*.tmp\\, which starts recurring eld*.exe, set_*.exe, or other numbered stages. Offer execution callback and payload delivery – The runner contacts rotating infrastructure using a repeatable d=inno and r=offer_execution callback pattern. Offer, affiliate,...",
-      "links": [
-        {
-          "label": "Attack chain overview",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#attack-chain-overview"
-        },
-        {
-          "label": "Mitigation and protection guidance",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#mitigation-and-protection-guidance"
-        },
-        {
-          "label": "Learn More",
-          "url": "https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/feed/#learn-more"
-        },
-        {
-          "label": "Configure cloud-delivered protection",
-          "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus#turn-on-cloud-delivered-protection"
-        },
-        {
-          "label": "Learn about tamper protection",
-          "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection"
-        },
-        {
-          "label": "Configure reputation-based protection",
-          "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/"
-        },
-        {
-          "label": "Review Attack Surface Reduction rules",
-          "url": "https://learn.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference"
-        },
-        {
-          "label": "Audit scheduled task creation events",
-          "url": "https://learn.microsoft.com/windows/security/threat-protection/auditing/event-4698"
-        },
-        {
-          "label": "Review software inventory in Defender Vulnerability Management",
-          "url": "https://learn.microsoft.com/microsoft-365/security/defender-vulnerability-management/tvm-software-inventory"
-        },
-        {
-          "label": "Microsoft Security Copilot in Microsoft Defender",
-          "url": "https://learn.microsoft.com/en-us/defender-xdr/security-copilot-in-microsoft-365-defender"
-        },
-        {
-          "label": "create their own prompts",
-          "url": "https://learn.microsoft.com/copilot/security/prompting-security-copilot#create-your-own-prompts"
-        },
-        {
-          "label": "prebuilt promptbooks",
-          "url": "https://learn.microsoft.com/copilot/security/using-promptbooks"
         }
       ]
     },
@@ -8270,182 +8292,6 @@
       ],
       "tags": [
         "Splunk Security"
-      ]
-    },
-    {
-      "title": "Microsoft Entra: Users can register a passkey or passwordless sign-in as their first multifactor authentication method",
-      "link": "https://admin.microsoft.com/#/MessageCenter/:/messages/MC1450133",
-      "published": "2026-10-26T20:51:35.007000+00:00",
-      "summary": "Updated October 26, 2026: We have updated the timeline. Thank you for your patience. [What and why]Users will soon be able to register a passkey as their first multifactor authentication method. Previously, people had to set up an alternate MFA method like SMS or Voice before they could add a...",
-      "author": "Microsoft",
-      "source": "Microsoft 365 Message Center",
-      "source_id": "message_center",
-      "source_group": "Official Microsoft",
-      "source_kind": "graph",
-      "vendor": "Microsoft",
-      "source_category": "Service Announcements",
-      "board_id": null,
-      "message_id": "MC1450133",
-      "services": [
-        "Microsoft Entra"
-      ],
-      "body": "Updated October 26, 2026: We have updated the timeline. Thank you for your patience. [What and why]Users will soon be able to register a passkey as their first multifactor authentication method. Previously, people had to set up an alternate MFA method like SMS or Voice before they could add a passkey (FIDO2), Windows Hello for Business, macOS Platform SSO. That extra step pushed users toward weaker methods and slowed the move to phishing-resistant sign-in. Now password-only users can go straight to a passkey, making it easier to adopt strong authentication from day one. As part of this work, we will also be enabling Authenticator App passwordless sign-in to be a user's first registered MFA method. [Rollout schedule]This feature will roll out in phases: Phase 1: Support for synced passkeys, Microsoft Entra passkeys on Windows, and FIDO2 security keys. General Availability (Worldwide, GCC): We will begin rolling out in early November 2026 (previously late October) and expect to complete by early January 2027 (previously late November 2026). Phase 2: Support for Windows Hello for Business, macOS Platform SSO, Authenticator App passkey, and Authenticator App passwordless sign-in. General Availability (Worldwide, GCC): We will begin rolling out in early January 2026 and expect to complete by late February 2027. [Impact on your organization]Who is affectedUsers who have not yet registered a multifactor authentication methodIdentity and security administrators responsible for authentication onboarding and registration policiesPlatforms and servicesMicrosoft Entra IDPasskeys (FIDO2)Windows Hello for BusinessmacOS Platform SSOMicrosoft Authenticator passwordless sign-inWhat will happenPassword-only users will be able to register passkeys or passwordless sign-in as their first MFA method.Users will no longer need to register a method such as SMS or voice before registering a passkey (FIDO2), Windows Hello for Business, macOS Platform SSO, or Authenticator passwordless sign-in.Organizations may see reduced registration friction and increased adoption of phishing-resistant authentication methods.Users who are enabled for passkeys will be prompted to register a passkey by default when completing applicable registration experiences, including those triggered by multifactor authentication (MFA) enforcement and Conditional Access authentication strengths. Security Defaults MFA registration prompts will adopt this experience in January–February 2027.[Action required and recommendations]No action is required for this change.We recommend that administrators:Review Conditional Access policies related to security information registration.Consider requiring MFA to register security information if additional verification is required by your organization.Review your user onboarding and registration guidance and update it as needed to reflect that eligible users may be prompted to register a passkey by default.Learn more (To be updated closer to rollout) Register a synced passkey (FIDO2) | Authentication | Microsoft Entra ID | Microsoft Learn[Compliance considerations]QuestionAnswerDoes the change include an admin control?Yes. Administrators can control which authentication methods users are allowed to register through existing Microsoft Entra authentication method policies and Conditional Access policies.Does the change affect access or authentication controls?Yes. The update changes how users register multifactor authentication methods by allowing eligible users to register supported passkeys or passwordless authentication methods as their first MFA method.Can administrators govern the feature through existing Microsoft Entra controls?Yes. Administrators retain control over the feature through Microsoft Entra authentication method policies and Conditional Access configurations.",
-      "links": [
-        {
-          "label": "Register a synced passkey (FIDO2) | Authentication | Microsoft Entra ID | Microsoft Learn",
-          "url": "https://learn.microsoft.com/entra/identity/authentication/how-to-register-passkey"
-        }
-      ],
-      "products": [
-        {
-          "id": "message-center",
-          "name": "Microsoft Message Center",
-          "score": 10
-        }
-      ],
-      "tags": [
-        "Microsoft Message Center"
-      ]
-    },
-    {
-      "title": "Azure WAF custom rules for PHP2Shell mitigation",
-      "link": "https://techcommunity.microsoft.com/t5/azure-network-security-blog/azure-waf-custom-rules-for-php2shell-mitigation/ba-p/4566684",
-      "published": "2026-10-26T19:00:38+00:00",
-      "summary": "Written in collaboration with Gunjan Jain​ and yuvalpery​ As described in our earlier blog, Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations, we strongly recommend upgrading to a patched version of PHP as soon as possible. Upgrading PHP remains...",
-      "author": "saikishor",
-      "source": "Azure Network Security",
-      "source_id": "network_security",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "Network Security",
-      "board_id": "azurenetworksecurityblog",
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Written in collaboration with Gunjan Jain​ and yuvalpery​ As described in our earlier blog, Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations, we strongly recommend upgrading to a patched version of PHP as soon as possible. Upgrading PHP remains the recommended and complete remediation for these vulnerabilities. For customers who are unable to upgrade immediately, this guidance provides WAF custom rules that can help reduce exposure to selected request patterns associated with exploitation techniques for these vulnerabilities. WAF custom rules The following three custom rules can be considered based on your application configuration and traffic patterns. Because custom rules can affect legitimate application traffic, review the potential application impact and validate the rules before enabling enforcement. Restrict PHP session upload progress PHP supports session upload progress for tracking file uploads. For applications that do not depend on this functionality, customers can use a custom rule to restrict multipart form requests containing PHP_SESSION_UPLOAD_PROGRESS. The rule checks for multipart/form-data requests whose inspected request body contains the PHP session upload progress token. Custom rule definitions: Azure Front Door WAF { \"name\": \"BlockPhpSessionUploadProgress\", \"priority\": 100, \"enabledState\": \"Enabled\", \"ruleType\": \"MatchRule\", \"action\": \"Block\", \"matchConditions\": [ { \"matchVariable\": \"RequestHeader\", \"selector\": \"Content-Type\", \"operator\": \"Contains\", \"negateCondition\": false, \"transforms\": [\"Lowercase\"], \"matchValue\": [\"multipart/form-data\"] }, { \"matchVariable\": \"RequestBody\", \"operator\": \"Contains\", \"negateCondition\": false, \"matchValue\": [\"php_session_upload_progress\"], \"transforms\": [\"Lowercase\"] } ] } Application Gateway and Application Gateway for Container (AGC) WAF { \"name\": \"BlockPhpSessionUploadProgress\", \"priority\": 90, \"ruleType\": \"MatchRule\", \"action\": \"Block\", \"state\": \"Enabled\", \"matchConditions\": [ { \"matchVariables\": [ { \"variableName\": \"RequestHeaders\", \"selector\": \"Content-Type\" } ], \"operator\": \"Contains\", \"negationConditon\": false, \"matchValues\": [ \"multipart/form-data\" ], \"transforms\": [ \"Lowercase\" ] }, { \"matchVariables\": [ { \"variableName\": \"PostArgs\" } ], \"operator\": \"Contains\", \"negationConditon\": false, \"matchValues\": [ \"php_session_upload_progress\" ], \"transforms\": [ \"Lowercase\" ] } ] } This rule reduces exposure through the PHP session-upload-progress...",
-      "links": [
-        {
-          "label": "Addressing PHP2Shell CVE-2026-109618 and CVE-2026-109619: upgrade guidance and Azure WAF mitigations",
-          "url": "https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/addressing-php2shell-cve-2026-109618-and-cve-2026-109619-upgrade-guidance-and-az/4566623"
-        },
-        {
-          "label": "CVE-2026-109618",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109618"
-        },
-        {
-          "label": "CVE-2026-109619",
-          "url": "https://nvd.nist.gov/vuln/detail/cve-2026-109619"
-        },
-        {
-          "label": "here",
-          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/custom-waf-rules-overview"
-        },
-        {
-          "label": "here",
-          "url": "https://learn.microsoft.com/en-us/azure/web-application-firewall/afds/waf-front-door-custom-rules"
-        },
-        {
-          "label": "Upgrading to a patched version of PHP",
-          "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
-        }
-      ]
-    },
-    {
-      "title": "Proofpoint’s Core Email Protection API solution joins the Microsoft Defender ICES vendor ecosystem",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-defender-blog/proofpoint-s-core-email-protection-api-solution-joins-the/ba-p/4567264",
-      "published": "2026-10-26T16:00:00+00:00",
-      "summary": "Email remains the most exploited gateway for cyberattacks, as the threat landscape continues to get more sophisticated with attackers using AI to scale phishing, malware, and business email compromise. Microsoft Defender is a leading email security solution, helping organizations stay ahead of...",
-      "author": "Oz_Wilder",
-      "source": "Microsoft Defender XDR",
-      "source_id": "defender_xdr",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "XDR",
-      "board_id": "microsoftthreatprotectionblog",
-      "products": [
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-office",
-          "name": "Microsoft Defender for Office 365",
-          "score": 5
-        },
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 3
-        }
-      ],
-      "tags": [
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Office 365",
-        "Threat Intelligence"
-      ],
-      "body": "Email remains the most exploited gateway for cyberattacks, as the threat landscape continues to get more sophisticated with attackers using AI to scale phishing, malware, and business email compromise. Microsoft Defender is a leading email security solution, helping organizations stay ahead of these threats with a modern, cloud-native approach. At the same time, many organizations choose to layer additional email security solutions to meet compliance requirements or align to an existing defense-in-depth strategy. This approach can strengthen resilience, but it can also add operational complexity for SOC teams. That’s why one year ago, we introduced the Microsoft Defender Integrated Cloud Email Security (ICES) vendor ecosystem, which is designed to simplify that complexity by integrating partner protections into Microsoft Defender. Today, we’re continuing to expand the ICES vendor ecosystem by adding Proofpoint Core Email Protection API. Proofpoint joins existing members Darktrace, KnowBe4, Cisco, and VIPRE Security Group. How joint customers benefit from a streamlined SOC experience in Microsoft Defender The ICES ecosystem brings trusted third-party email security verdicts and telemetry into the Defender portal through an API-based integration model. This allows Microsoft Defender to acknowledge partner verdicts on messages, apply the highest-severity determination, and surface that information in the same investigation and response workflows security teams already use. The integration with Proofpoint Core Email Protection API is designed specifically for customers who have already chosen to deploy Proofpoint’s ICES solution alongside Microsoft Defender. It supports environments where customers run both solutions and want to reduce friction for their SOC teams. By integrating Proofpoint into the ICES ecosystem, customers can now preserve their existing security strategy while improving how investigations and response are carried out day to day. \"Organizations rely on both Microsoft and Proofpoint to protect their most critical communications and data. By extending Proofpoint’s interoperability across ICES, we’re delivering a more unified security experience that strengthens defense-in-depth and simplifies operations for our shared customers. This milestone reflects our commitment to joint customers worldwide.” - Tom Corn, EVP and GM, Threat Protection Group at Proofpoint Below we have outlined how Proofpoint’s ICES solution now integrates within Microsoft...",
-      "links": [
-        {
-          "label": "a leading email security solution",
-          "url": "https://www.microsoft.com/en-us/security/blog/2025/12/05/microsoft-named-a-leader-in-the-2025-gartner-magic-quadrant-for-email-security/"
-        },
-        {
-          "label": "Microsoft Defender Integrated Cloud Email Security (ICES) vendor ecosystem",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/introducing-the-microsoft-defender-for-office-365-ices-vendor-ecosystem/4424817"
-        },
-        {
-          "label": "Defender for Office 365 ICES Vendor Ecosystem Integration Guide",
-          "url": "https://learn.microsoft.com/en-us/defender-office-365/mdo-ices-vendor-ecosystem"
-        },
-        {
-          "label": "Ensure your ICES solution works seamlessly alongside Microsoft Defender",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftdefenderforoffice365blog/ensure-your-ices-solution-works-seamlessly-alongside-microsoft-defender/4466691"
-        }
-      ]
-    },
-    {
-      "title": "Introducing a Voluntary Exit Offer",
-      "link": "https://blogs.microsoft.com/blog/2026/10/26/introducing-a-voluntary-exit-offer/",
-      "published": "2026-10-26T15:33:56+00:00",
-      "summary": "Amy Coleman, Executive Vice President and Chief People Officer, shared the below communication with Microsoft employees today. Today, we’re introducing a new Voluntary Exit Offer (VEO) to eligible employees within participating organizations. This offer gives eligible employees who may be...",
-      "author": "Amy Coleman",
-      "source": "Microsoft AI Blog",
-      "source_id": "ms_ai_blog",
-      "source_group": "Official Microsoft",
-      "source_kind": "rss",
-      "vendor": "Microsoft",
-      "source_category": "AI",
-      "board_id": null,
-      "products": [
-        {
-          "id": "general-security",
-          "name": "General Security",
-          "score": 1
-        }
-      ],
-      "tags": [
-        "General Security"
-      ],
-      "body": "Amy Coleman, Executive Vice President and Chief People Officer, shared the below communication with Microsoft employees today. Today, we’re introducing a new Voluntary Exit Offer (VEO) to eligible employees within participating organizations. This offer gives eligible employees who may be considering a future outside the company a new choice to make that transition now with support. It also gives participating organizations another way to adapt their workforce to changing needs. The Voluntary Exit Offer reflects an important part of how we’re evolving our approach to change: creating greater flexibility and, where possible, more ways for employees to shape their next chapter. This builds on what we learned earlier this year through the Voluntary Retirement Program. What employees should know This offer will be available to eligible employees in participating teams in Canada, India, the United Kingdom and the United States at level 70 and below. This is a time-limited, voluntary program that gives those who are eligible the opportunity to leave Microsoft with financial support and career planning resources. Some organizations are providing the Voluntary Exit Offer, and some are not. Participation varies based on each business’s priorities, customer commitments and workforce needs. Eligible employees will receive an email with a link to their Voluntary Exit Offer details within the next few hours. Looking ahead The Voluntary Exit Offer is new for us. We’ll learn from it. At the same time, we’ll keep helping people focus on the work that matters most, build new skills and, where it makes sense, find new opportunities across Microsoft. There is no one-size-fits-all approach for every team or every employee. These are a few of the ways we’re trying to meet different business needs while continuing to create opportunities for our own people to grow and contribute. My promise is to continue to provide clarity, listen and learn and keep improving. Thank you for everything you continue to do for our customers, Microsoft and for one another. Amy This Viva Engage post has been edited slightly for external use. The post Introducing a Voluntary Exit Offer appeared first on The Official Microsoft Blog.",
-      "links": [
-        {
-          "label": "Introducing a Voluntary Exit Offer",
-          "url": "https://blogs.microsoft.com/blog/2026/10/26/introducing-a-voluntary-exit-offer/"
-        },
-        {
-          "label": "The Official Microsoft Blog",
-          "url": "https://blogs.microsoft.com"
-        }
       ]
     }
   ]
