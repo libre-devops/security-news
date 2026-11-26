@@ -1,8 +1,1176 @@
 {
   "site": "Security News",
-  "lastUpdated": "2026-11-25T21:22:05.106874+00:00",
-  "totalArticles": 194,
+  "lastUpdated": "2026-11-26T07:33:13.648386+00:00",
+  "totalArticles": 193,
   "articles": [
+    {
+      "title": "Microsoft Ignite 2026: New Sentinel Connectors Announcement",
+      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/microsoft-ignite-2026-new-sentinel-connectors-announcement/ba-p/4565258",
+      "published": "2026-11-25T21:36:10+00:00",
+      "summary": "Microsoft Sentinel helps organizations detect, investigate, and respond to threats across increasingly complex environments. As AI transforms security operations, bringing together the right data and context is more important than ever, giving human defenders and AI agents a more complete view of...",
+      "author": "JesseKopavi",
+      "source": "Microsoft Sentinel",
+      "source_id": "sentinel",
+      "source_group": "TechCommunity",
+      "source_kind": "techcommunity",
+      "vendor": "Microsoft",
+      "source_category": "SIEM / SOAR",
+      "board_id": "microsoftsentinelblog",
+      "products": [
+        {
+          "id": "threat-intelligence",
+          "name": "Threat Intelligence",
+          "score": 13
+        },
+        {
+          "id": "defender-xdr",
+          "name": "Microsoft Defender XDR",
+          "score": 11
+        },
+        {
+          "id": "defender-endpoint",
+          "name": "Microsoft Defender for Endpoint",
+          "score": 11
+        },
+        {
+          "id": "sentinel",
+          "name": "Microsoft Sentinel",
+          "score": 10
+        },
+        {
+          "id": "ai-security",
+          "name": "AI Security",
+          "score": 6
+        },
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 5
+        },
+        {
+          "id": "defender-cloud",
+          "name": "Microsoft Defender for Cloud",
+          "score": 5
+        },
+        {
+          "id": "aws-security",
+          "name": "AWS Security",
+          "score": 4
+        }
+      ],
+      "tags": [
+        "Threat Intelligence",
+        "Microsoft Defender XDR",
+        "Microsoft Defender for Endpoint",
+        "Microsoft Sentinel",
+        "AI Security",
+        "Google Cloud Security",
+        "Microsoft Defender for Cloud",
+        "AWS Security"
+      ],
+      "body": "Microsoft Sentinel helps organizations detect, investigate, and respond to threats across increasingly complex environments. As AI transforms security operations, bringing together the right data and context is more important than ever, giving human defenders and AI agents a more complete view of the environment to reason over and act on. These integrations bring signals from Microsoft and third-party technologies together across the security environment, unlocking richer context for investigations and helping power the new Integrated Security Operations Center (ISOC) in Microsoft Defender, where human defenders and AI agents can reason across the environment with shared context. The connector ecosystem isn’t the only area seeing rapid growth. Microsoft Sentinel continues to add new capabilities, including Nested API support, Azure Blob support, and multi-account support, while AI-powered tools like the connector builder agent are making it easier than ever for developers to build integrations and bring more of their security data into Sentinel. At the same time, Unified Data Management, now in public preview, makes it easier for customers to manage their Microsoft Sentinel data, connectors, tables, and ingestion health in one place. For Microsoft Ignite 2026, we’re excited to showcase recent additions to this growing ecosystem and the partners making them possible. These new and enhanced connectors continue to broaden the security data available to customers, helping human defenders and AI agents gain the context they need across the technology estate. Airlock Digital for Microsoft Sentinel Airlock Digital helps prevent malware, ransomware, and unauthorized software with deny by default application control, allowing only trusted applications, scripts, and processes to run. Its Microsoft Sentinel push integration ingests execution history, browser extension control events, server administrative activity, and policy changes for monitoring and investigation. Included parsers map execution and audit events to Microsoft’s ASIM for analysis alongside other security signals. A customizable workbook supports investigation and monitoring, and teams can create analytics rules using the ingested data. NC Protect Data Connector for Microsoft Sentinel NC Protect Data Connector for Microsoft Sentinel from archTIS brings user activity and protection logs from NC Protect into Sentinel for centralized security analysis. The connector captures user activities and...",
+      "links": [
+        {
+          "label": "Integrated Security Operations Center (ISOC) in Microsoft Defender,",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/"
+        },
+        {
+          "label": "Nested API",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-nested-api-support-comes-to-microsoft-sentinel-ccf/4537026"
+        },
+        {
+          "label": "Azure Blob",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/extending-sentinel-data-integration-azure-blob-storage-support-for-ccf-connector/4516896?"
+        },
+        {
+          "label": "multi-account",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-multi-account-support-for-microsoft-sentinel-codeless-connectors/4544380"
+        },
+        {
+          "label": "connector builder agent",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/accelerate-connectors-development-using-ai-agent-in-microsoft-sentinel/4507019"
+        },
+        {
+          "label": "Unified Data Management",
+          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/manage-all-your-microsoft-sentinel-data-in-one-place-with-unified-data-managemen/4565940"
+        },
+        {
+          "label": "Airlock Digital for Microsoft Sentinel",
+          "url": "https://securitystore.microsoft.com/solutions/airlockdigitalptyltd1783575912163.azure-sentinel-solution-airlockdigital"
+        },
+        {
+          "label": "NC Protect Data Connector for Microsoft Sentinel",
+          "url": "https://securitystore.microsoft.com/solutions/nucleuscyber.nc-protect-azure-sentinel-data-connector"
+        },
+        {
+          "label": "blacklens.io for Microsoft Sentinel",
+          "url": "https://securitystore.microsoft.com/solutions/snapsecgmbh1733575353555.blacklens-sentinel-solution"
+        },
+        {
+          "label": "BloodHound Enterprise",
+          "url": "https://securitystore.microsoft.com/solutions/azurehoundenterprise.bloodhoundenterprise-mssentinel"
+        },
+        {
+          "label": "BlueVoyant Anthropic Claude Compliance",
+          "url": "https://securitystore.microsoft.com/solutions/bluevoyant1583844909747.azure-sentinel-solution-bv-claudecompliance"
+        },
+        {
+          "label": "Cato Networks for Microsoft Sentinel",
+          "url": "https://securitystore.microsoft.com/solutions/catonetworks.cato-networks-sentinel-ccf-push"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-091",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-091",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-25Description Description Severity Notes According to VMware security advisory VMSA-2026-0011, multiple vulnerabilities were identified in VMware vCenter, ESXi, and VMware Cloud Foundation. For remediation guidance and product-specific details, see the following bulletins: Google...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-25Description Description Severity Notes According to VMware security advisory VMSA-2026-0011, multiple vulnerabilities were identified in VMware vCenter, ESXi, and VMware Cloud Foundation. For remediation guidance and product-specific details, see the following bulletins: Google Cloud VMware Engine security bulletin VMware solution on Google Cloud security bulletin Critical VMSA-2026-0011 CVE-2026-123903 CVE-2026-123904 CVE-2026-123905 CVE-2026-123906 CVE-2026-123907 CVE-2026-123908 CVE-2026-123909 CVE-2026-123910 CVE-2026-123911 CVE-2026-123912 CVE-2026-123913 CVE-2026-123914 CVE-2026-123915 CVE-2026-123916",
+      "links": [
+        {
+          "label": "VMSA-2026-0011",
+          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39626"
+        },
+        {
+          "label": "Google Cloud VMware Engine security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/security-bulletins#gcp-2026-091"
+        },
+        {
+          "label": "VMware solution on Google Cloud security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/security-bulletins#gcp-2026-091"
+        },
+        {
+          "label": "CVE-2026-123903",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123903"
+        },
+        {
+          "label": "CVE-2026-123904",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123904"
+        },
+        {
+          "label": "CVE-2026-123905",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123905"
+        },
+        {
+          "label": "CVE-2026-123906",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123906"
+        },
+        {
+          "label": "CVE-2026-123907",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123907"
+        },
+        {
+          "label": "CVE-2026-123908",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123908"
+        },
+        {
+          "label": "CVE-2026-123909",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123909"
+        },
+        {
+          "label": "CVE-2026-123910",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123910"
+        },
+        {
+          "label": "CVE-2026-123911",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123911"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-090",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-090",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-20Description Description Severity Notes 2026-11-23 Update: Added details on patched PHP versions on App Engine, Cloud Run, and Cloud Run functions and noted additional details on CVEs addressed by the updated PHP versions. A critical vulnerability was discovered in PHP's default...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-20Description Description Severity Notes 2026-11-23 Update: Added details on patched PHP versions on App Engine, Cloud Run, and Cloud Run functions and noted additional details on CVEs addressed by the updated PHP versions. A critical vulnerability was discovered in PHP's default file-based session handler. This impacts the following PHP versions: PHP 8.5 < 8.5.13 PHP 8.4 < 8.4.28 PHP 8.3 < 8.3.37 PHP 8.2 < 8.2.36 PHP 8.1, PHP 7.2 (end of life, no fix available) The following Google Cloud products are impacted: App Engine Standard (second-generation PHP 7.2–8.5 runtimes) App Engine Flexible Cloud Run Cloud Run functions What should I do? Patched PHP runtimes are available across App Engine Standard, App Engine Flexible, Cloud Run, and Cloud Run functions. The updated PHP versions include updates against CVE-2026-126714, CVE-2026-115560, and other important security fixes. Take the following action. Immediate mitigation, all PHP applications Disable Session Upload Progress: If your application does not require tracking upload progress, disabling this feature in php.ini mitigates the primary attack path for phpAfterShell (CVE-2026-126714) in particular: session.upload_progress.enabled = 0 Where feasible, switch PHP session storage away from local filesystem handlers (session.save_handler = files) to an external store such as Redis, Memcache, or a database. Self-managed containers Cloud Run containers and App Engine flexible custom runtimes can upgrade immediately to upstream PHP 8.2.36, 8.3.37, 8.4.28, or 8.5.13, rebuild, and redeploy without waiting on Google-managed runtime rollouts. Managed runtimes with automatic base image updates Apply the Disable Session Upload Progress mitigations above App Engine standard (second-generation PHP 8.2–8.5) and Cloud Run services / Cloud Run functions with automatic base image updates enabled receive patched PHP runtimes automatically. Managed runtimes without automatic updates or pinned versions: Apply the Disable Session Upload Progress mitigations above App Engine flexible (managed PHP runtime), Cloud Run jobs and worker pools, Cloud Functions (1st gen), and deployments pinned to a specific patch string must rebuild and redeploy to pick up the updated runtime images. End-of-life PHP versions (7.2–8.1): No upstream patches will be released for PHP 8.1 or earlier. Customers should upgrade to a supported PHP runtime (8.2 or later) or apply the php.ini / non-file session mitigations above. What...",
+      "links": [
+        {
+          "label": "App Engine Standard",
+          "url": "https://docs.cloud.google.com/appengine/docs/standard/php-gen2/release-notes#November_21_2026"
+        },
+        {
+          "label": "App Engine Flexible",
+          "url": "https://docs.cloud.google.com/appengine/docs/flexible/php/release-notes#November_21_2026"
+        },
+        {
+          "label": "Cloud Run",
+          "url": "https://docs.cloud.google.com/run/docs/release-notes#November_21_2026"
+        },
+        {
+          "label": "Cloud Run functions",
+          "url": "https://docs.cloud.google.com/functions/docs/release-notes#November_21_2026"
+        },
+        {
+          "label": "CVE-2026-126714",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-126714"
+        },
+        {
+          "label": "CVE-2026-115560",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-115560"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-089",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-089",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-20Description Description Severity Notes On November 18, 2026, F5 disclosed HTTP/2 vulnerabilities CVE-2026-123633 and CVE-2026-123007 in NGINX Open Source (1.19.7-1.31.8 for CVE-2026-123633; 1.9.5-1.31.8 for CVE-2026-123007) and NGINX Plus, alongside eight additional NGINX CVEs...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-20Description Description Severity Notes On November 18, 2026, F5 disclosed HTTP/2 vulnerabilities CVE-2026-123633 and CVE-2026-123007 in NGINX Open Source (1.19.7-1.31.8 for CVE-2026-123633; 1.9.5-1.31.8 for CVE-2026-123007) and NGINX Plus, alongside eight additional NGINX CVEs in F5's master advisory (K000164058). Under specific configuration and traffic conditions, an unauthenticated remote attacker can crash an NGINX worker process (DoS) or potentially achieve remote code execution (RCE). Google Cloud's core load balancing and managed infrastructure (including Google Front End, Cloud Load Balancing, GKE control plane, Cloud Run, Cloud Functions, and App Engine) are not affected. This bulletin provides guidance for customers operating self-managed NGINX deployments on Google Cloud. What should I do? Managed Google Cloud services: No customer action is required if you rely solely on unaffected Google Cloud managed platforms (including Google Front End, Cloud Load Balancing, GKE control plane, Cloud Run, Cloud Functions, and App Engine). Google is patching any isolated Google-managed components internally, with zero customer impact and no customer action required. Customer-managed NGINX on Google Cloud (GKE Ingress Controllers, Compute Engine VMs, and NGINX-based Cloud Marketplace images): Google has also temporarily delisted affected Google-maintained Click-to-Deploy NGINX listings on Cloud Marketplace while patched images are being prepared. Patch: Upgrade NGINX Open Source to 1.31.9 (mainline) or 1.30.7 (stable), or NGINX Plus to the latest fixed releases (37.0.7.1 / 37.2.0.1 for CVE-2026-123633; 37.0.8.1 / 37.3.0.1 for CVE-2026-123007) in F5 advisory K000164058 to remediate these vulnerabilities and all November 18 F5 CVEs (see also the Wiz research blog). Temporary mitigation (if unable to patch immediately): Disable HTTP/2 on exposed NGINX listeners (for example, set use-http2: \"false\" in ingress-nginx or remove http2 listener directives and reload), or place a Google Cloud External Application Load Balancer in front of NGINX configured to speak HTTP/1.1 to backends. (Note: Disabling HTTP/2 does not mitigate non-HTTP/2 CVEs, so upgrading to a patched release remains recommended.) What vulnerabilities are being addressed? CVE-2026-123633 (NGINX Open Source 1.19.7-1.31.8; NGINX Plus R33+ / 37.0.0-37.2.0.0): Reentrant HTTP/2 connection-draining heap use-after-free in ngx_http_v2_module when reverse proxying (proxy_pass,...",
+      "links": [
+        {
+          "label": "K000164058",
+          "url": "https://my.f5.com/manage/s/article/K000164058"
+        },
+        {
+          "label": "1.31.9",
+          "url": "https://github.com/nginx/nginx/releases/tag/release-1.31.9"
+        },
+        {
+          "label": "Wiz research blog",
+          "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities"
+        },
+        {
+          "label": "CVE-2026-123633",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123633"
+        },
+        {
+          "label": "CVE-2026-123007",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123007"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-088",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-088",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-19Updated: 2026-11-20Description Description Severity Notes 2026-11-20 Update: Added GKE patch versions containing fixes for Container-Optimized OS for minor versions 1.32 and 1.33. Patches for GKE 1.37 on Container-Optimized OS and Ubuntu node images are still in progress. A...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-19Updated: 2026-11-20Description Description Severity Notes 2026-11-20 Update: Added GKE patch versions containing fixes for Container-Optimized OS for minor versions 1.32 and 1.33. Patches for GKE 1.37 on Container-Optimized OS and Ubuntu node images are still in progress. A denial-of-service vulnerability (CVE-2026-99288) was discovered in the Linux kernel TCP implementation. The flaw can cause a kernel panic (denial of service) on the affected virtual machine; it does not allow privilege escalation or container breakout to code execution on the host. A remote attacker can trigger it by sending specially crafted TCP packets to a reachable TCP listener on a node, Pod, or the cluster control plane's IP-based endpoint. Internal traffic within the same VPC can also trigger this vulnerability. GKE Standard clusters and GKE Autopilot clusters running Container-Optimized OS or Ubuntu prior to the patched versions are affected across both cluster control planes and worker nodes. Pods running in GKE Sandbox (gVisor) and Windows Server node pools are not affected. For instructions and more details, see the GKE security bulletin. High CVE-2026-99288",
+      "links": [
+        {
+          "label": "GKE security bulletin",
+          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-088"
+        },
+        {
+          "label": "CVE-2026-99288",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-99288"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-087",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-087",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-19Description Description Severity Notes Two vulnerabilities in the nginx HTTP/2 module, CVE-2026-123633 and CVE-2026-123007, can let a remote, unauthenticated attacker run code on an nginx server that accepts HTTP/2 connections. Both are fixed in nginx 1.30.7. The Router in...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-19Description Description Severity Notes Two vulnerabilities in the nginx HTTP/2 module, CVE-2026-123633 and CVE-2026-123007, can let a remote, unauthenticated attacker run code on an nginx server that accepts HTTP/2 connections. Both are fixed in nginx 1.30.7. The Router in Apigee Edge for Private Cloud 4.54.00 and 4.53.01 uses an nginx version in the affected range. Routers are not affected in the default and supported configuration, because HTTP/2 is not supported on Router virtual hosts. For more information, see the Apigee security bulletin. Critical CVE-2026-123007 CVE-2026-123633",
+      "links": [
+        {
+          "label": "Apigee security bulletin",
+          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-087"
+        },
+        {
+          "label": "CVE-2026-123007",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123007"
+        },
+        {
+          "label": "CVE-2026-123633",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123633"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-086",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-086",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0010, a vulnerability was identified in VMware Aria Operations and VMware Cloud Foundation (VCF). Broadcom will make patches available to remediate this vulnerability in affected Broadcom...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0010, a vulnerability was identified in VMware Aria Operations and VMware Cloud Foundation (VCF). Broadcom will make patches available to remediate this vulnerability in affected Broadcom products. For remediation guidance and product-specific details, see the following bulletins: Google Cloud VMware Engine security bulletin VMware solution on Google Cloud security bulletin Critical VMSA-2026-0010 CVE-2026-119618",
+      "links": [
+        {
+          "label": "VMSA-2026-0010",
+          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39625"
+        },
+        {
+          "label": "Google Cloud VMware Engine security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/security-bulletins#gcp-2026-086"
+        },
+        {
+          "label": "VMware solution on Google Cloud security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/security-bulletins#gcp-2026-086"
+        },
+        {
+          "label": "CVE-2026-119618",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-119618"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-085",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-085",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0009, a vulnerability was identified in VMware vCenter and VMware Cloud Foundation (VCF). There are no known workarounds for this reported vulnerability. For remediation guidance and...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0009, a vulnerability was identified in VMware vCenter and VMware Cloud Foundation (VCF). There are no known workarounds for this reported vulnerability. For remediation guidance and product-specific details, see the following bulletins: Google Cloud VMware Engine security bulletin VMware solution on Google Cloud security bulletin Critical VMSA-2026-0009 CVE-2026-123890",
+      "links": [
+        {
+          "label": "VMSA-2026-0009",
+          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39495"
+        },
+        {
+          "label": "Google Cloud VMware Engine security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/security-bulletins#gcp-2026-085"
+        },
+        {
+          "label": "VMware solution on Google Cloud security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/security-bulletins#gcp-2026-085"
+        },
+        {
+          "label": "CVE-2026-123890",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123890"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-084",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-084",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-19Description Description Severity Notes A path traversal vulnerability in workspace directory handling and Git integration was discovered in Dataform, BigQuery Studio, and Colab Enterprise. What should I do? No customer action is required. This vulnerability was patched on...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-19Description Description Severity Notes A path traversal vulnerability in workspace directory handling and Git integration was discovered in Dataform, BigQuery Studio, and Colab Enterprise. What should I do? No customer action is required. This vulnerability was patched on October 10, 2026. What vulnerabilities are being addressed? An authenticated remote attacker could read private files and create arbitrary files across tenant repositories. Critical CVE-2026-126054",
+      "links": [
+        {
+          "label": "CVE-2026-126054",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-126054"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-083",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-083",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-18Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in integration execution parameter handling in Application Integration versions prior to September 22, 2026. What should I do? No customer action is required. This...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-18Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in integration execution parameter handling in Application Integration versions prior to September 22, 2026. What should I do? No customer action is required. This vulnerability was patched on September 22, 2026. What vulnerabilities are being addressed? An authenticated user could use a crafted serialized object to run arbitrary code. Critical CVE-2026-106169",
+      "links": [
+        {
+          "label": "CVE-2026-106169",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-106169"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-082",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-082",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-17Updated: 2026-11-23Description Description Severity Notes 2026-11-23 Update: Updated the Dataflow and Managed Service for Apache Airflow guidance in the What should I do? section with links to the Dataflow security bulletin and patched Managed Service for Apache Airflow...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-17Updated: 2026-11-23Description Description Severity Notes 2026-11-23 Update: Updated the Dataflow and Managed Service for Apache Airflow guidance in the What should I do? section with links to the Dataflow security bulletin and patched Managed Service for Apache Airflow versions. 2026-11-20 Update: Patched Java 17 (17.0.21.1+2), Java 21 (21.0.13.1+2), and Java 25 (25.0.5.1+2) runtime base images and Buildpacks packages have finished rolling out across Cloud Run, Cloud Run functions, Cloud Functions (1st gen), App Engine, and Google Cloud Buildpacks. Updated the Google Cloud Buildpacks and Cloud Run, Cloud Run functions, Cloud Functions, and App Engine guidance and added Managed Service for Apache Airflow in the What should I do? section. A remote code execution vulnerability (CVE-2026-114938) was disclosed in OpenJDK 17.0.6 and later (including 17.0.6+, 21.x, 25.x, and 27.x across Eclipse Temurin and other distributions) on x86-64 processors that support AVX-512 VBMI. OpenJDK 8, 11, and 17.0.0 through 17.0.5 are not affected. Workloads running unpatched OpenJDK 17.0.6 or later on Google Cloud (whether self-managed in VMs and containers or running on managed services such as Google Kubernetes Engine, Cloud Run, Cloud Run functions, Cloud Functions, App Engine, Managed Service for Apache Spark, or Dataflow) may be affected. Google Cloud hypervisors and hardware isolation boundaries between customer VMs and containers are not affected. Google is rolling out mitigations and updates across affected Google-managed services, control planes, and base images, and will update this bulletin as updates become available. What should I do? Immediate mitigation (without waiting for a JDK upgrade): Mitigate affected workloads right away by setting (or appending to) the environment variable JDK_JAVA_OPTIONS=\"-XX:+IgnoreUnrecognizedVMOptions -XX:UseAVX=2\" (or passing those flags to your java startup command) and restarting or redeploying. Upgrade to patched OS packages, JDK releases, or container images as they become available, then remove the flag. Google Cloud Buildpacks: Patched Java 17 (17.0.21.1+2), Java 21 (21.0.13.1+2), and Java 25 (25.0.5.1+2) runtimes are available (see the Buildpacks release notes). Rebuild and redeploy your applications (leaving GOOGLE_RUNTIME_VERSION unset or pinned to a major or minor version such as 17, 21, 25, or 17.0, 21.0, 25.0, rather than the four-part patch string) to pick up the patched Java runtime, and then...",
+      "links": [
+        {
+          "label": "Buildpacks release notes",
+          "url": "https://docs.cloud.google.com/docs/buildpacks/release-notes#November_20_2026"
+        },
+        {
+          "label": "Cloud Run",
+          "url": "https://docs.cloud.google.com/run/docs/release-notes#November_20_2026"
+        },
+        {
+          "label": "Cloud Run functions and Cloud Functions (1st gen)",
+          "url": "https://docs.cloud.google.com/functions/docs/release-notes#November_20_2026"
+        },
+        {
+          "label": "App Engine standard environment",
+          "url": "https://docs.cloud.google.com/appengine/docs/standard/java-gen2/release-notes#November_20_2026"
+        },
+        {
+          "label": "App Engine flexible environment",
+          "url": "https://docs.cloud.google.com/appengine/docs/flexible/java/release-notes#November_20_2026"
+        },
+        {
+          "label": "Dataflow security bulletins",
+          "url": "https://docs.cloud.google.com/dataflow/docs/security-bulletins#gcp-2026-082"
+        },
+        {
+          "label": "November 20, 2026 Managed Service for Apache Airflow release notes",
+          "url": "https://docs.cloud.google.com/composer/docs/release-notes#November_20_2026"
+        },
+        {
+          "label": "Apigee security bulletins",
+          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-082"
+        },
+        {
+          "label": "CVE-2026-114938",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-114938"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-081",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-081",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-10Description Description Severity Notes AMD has disclosed three vulnerabilities that affect 5th generation AMD EPYC processors (code-named Turin): CVE-2024-36350 and CVE-2024-36357, which AMD previously disclosed for earlier EPYC processors, and a new vulnerability,...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-10Description Description Severity Notes AMD has disclosed three vulnerabilities that affect 5th generation AMD EPYC processors (code-named Turin): CVE-2024-36350 and CVE-2024-36357, which AMD previously disclosed for earlier EPYC processors, and a new vulnerability, CVE-2026-0004. Under certain conditions, an attacker could infer data from the store queue or the L1 data cache, potentially leaking sensitive information across privilege boundaries. Affected Compute Engine machine series: C4D, N4D, H4D, Z4D, and G4, including C4D and Z4D bare metal instances. Google has applied mitigations that protect against attacks between VMs and between VMs and the host. To protect against attacks inside a VM, such as between processes, you need to update your guest operating system. What should I do? VMs: Update your guest operating system when your OS vendor releases fixes. Starting November 10th, Google will update the CPU information that VMs report so that patched guest kernels can turn on their mitigations. After the update reaches your VM, stop and start the VM. Rebooting the guest OS isn't enough. Bare metal and nested virtualization: If you run your own OS or hypervisor on a bare metal instance, apply your vendor's fixes when they're available. If you run a hypervisor inside a VM, Google will update the CPU information that VMs report so that patched guest kernels can turn on their mitigations. After the update reaches your VM, stop and start the VM. Rebooting the guest OS isn't enough. GKE: Updated GKE node images for Turin-based bare metal instances will be made available. Upgrading your nodes picks up the CPU information update. This bulletin will be updated once the new node image is available. Cloud Run: No action is required. For more information, see AMD security bulletins AMD-SB-7073 and AMD-SB-3055. What vulnerabilities are being addressed? CVE-2024-36350 (TSA-SQ): may allow an attacker to infer data from previous stores, potentially leaking sensitive information. CVE-2024-36357 (TSA-L1): may allow an attacker to infer data in the L1 data cache, potentially leaking sensitive information across privilege boundaries. CVE-2026-0004: may allow an attacker to infer data in the L1 data cache, potentially leaking sensitive information across privilege boundaries. These are Transient Scheduler Attacks (TSA), a type of side-channel vulnerability. Under certain conditions, the processor can briefly use data before confirming it's valid. An...",
+      "links": [
+        {
+          "label": "AMD-SB-7073",
+          "url": "https://www.amd.com/en/resources/product-security/bulletin/amd-sb-7073.html"
+        },
+        {
+          "label": "AMD-SB-3055",
+          "url": "https://www.amd.com/en/resources/product-security/bulletin/amd-sb-3055.html"
+        },
+        {
+          "label": "CVE-2024-36350",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36350"
+        },
+        {
+          "label": "CVE-2024-36357",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36357"
+        },
+        {
+          "label": "CVE-2026-0004",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0004"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-080",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-080",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-09Updated: 2026-11-12Description Description Severity Notes Security vulnerabilities were discovered in Istio (ISTIO-SECURITY-2026-009). For instructions and more details, see the Cloud Service Mesh security bulletin. High CVE-2026-31836 GHSA-635j-qv98-9275 GHSA-cxwg-46mx-q8hf...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-079",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-079",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-05Description Description Severity Notes Per advisory VMSA-2026-0008, Broadcom has identified an out-of-bounds write remote code execution vulnerability in the SDDC Manager Node.js Brotli decoder. This impacts only VMware solution on Google Cloud running VMware Cloud Foundation...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-05Description Description Severity Notes Per advisory VMSA-2026-0008, Broadcom has identified an out-of-bounds write remote code execution vulnerability in the SDDC Manager Node.js Brotli decoder. This impacts only VMware solution on Google Cloud running VMware Cloud Foundation 9.1.x and does not impact Google Cloud VMware Engine. What should I do? To remediate, apply the Broadcom-recommended workarounds outlined in the VMSA-2026-0008 advisory. For more information, see the VMware solution on Google Cloud security bulletin. Critical VMSA-2026-0008 CVE-2026-111497",
+      "links": [
+        {
+          "label": "VMSA-2026-0008",
+          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39445"
+        },
+        {
+          "label": "VMware solution on Google Cloud",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/overview"
+        },
+        {
+          "label": "VMware solution on Google Cloud security bulletin",
+          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/security-bulletins#gcp-2026-079"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-078",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-078",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-04Updated: 2026-11-18Description Description Severity Notes 2026-11-18 Update: Added patch versions for GKE. A vulnerability (CVE-2026-98432) was discovered in the Linux kernel IPv4 TCP stack. The flaw can cause a kernel panic or a container escape (root code execution on the...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-04Updated: 2026-11-18Description Description Severity Notes 2026-11-18 Update: Added patch versions for GKE. A vulnerability (CVE-2026-98432) was discovered in the Linux kernel IPv4 TCP stack. The flaw can cause a kernel panic or a container escape (root code execution on the node). An unprivileged process in a container can trigger it locally, without special capabilities such as CAP_NET_RAW. A network attacker can also trigger it by sending TCP packets with IPv4 options to a listener on the node or on the cluster control plane. The network attack requires access to a TCP listener on your nodes, Pods, or the control plane's IP-based endpoint. Clusters that restrict this access to trusted sources, for example with firewall rules and control plane authorized networks, are not exposed to network attacks. GKE Standard clusters and GKE Autopilot clusters are impacted. For instructions and more details, see the GKE security bulletin. Medium CVE-2026-98432",
+      "links": [
+        {
+          "label": "GKE security bulletin",
+          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-078"
+        },
+        {
+          "label": "CVE-2026-98432",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-98432"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-077",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-077",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-03Description Description Severity Notes Following the private-key compromise of intermediate Certificate Authorities (CAs) associated with eMudhra (emSign), outbound TLS connections trusting affected roots—specifically emSign ECC Root CA - G3—are vulnerable to Man-in-the-Middle...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-03Description Description Severity Notes Following the private-key compromise of intermediate Certificate Authorities (CAs) associated with eMudhra (emSign), outbound TLS connections trusting affected roots—specifically emSign ECC Root CA - G3—are vulnerable to Man-in-the-Middle (MITM) interception. An attacker possessing compromised intermediate keys can issue fraudulent TLS certificates for arbitrary domain names. Outbound HTTPS connections made from Apigee runtimes (such as TargetEndpoints, TargetServers, ServiceCallouts, and outbound JWKS policy lookups) using default or unmanaged system trust stores may accept forged certificates. This security bulletin outlines required remediation steps for Apigee, Apigee Hybrid, Apigee Edge (SaaS), and Apigee Edge for Private Cloud (OPDK). For more information, see the Apigee security bulletin. Medium CVE-2026-111943 CVE-2026-91403",
+      "links": [
+        {
+          "label": "Apigee security bulletin",
+          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-077"
+        },
+        {
+          "label": "CVE-2026-111943",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-111943"
+        },
+        {
+          "label": "CVE-2026-91403",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-91403"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-076",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-076",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-02Description Description Severity Notes A security vulnerability was discovered in Istio (ISTIO-SECURITY-2026-008). For instructions and more details, see the Cloud Service Mesh security bulletin. Medium CVE-2026-111943",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-075",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-075",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-11-02Description Description Severity Notes On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-11-02Description Description Severity Notes On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed by AAA Certificate Services. Consequently, these CA certificates are no longer trusted and are being revoked. Google Cloud infrastructure has not been breached. Security telemetry shows no evidence of exploitation against Google Cloud workloads. Applications built with the Google Cloud SDK Libraries are affected if their TLS trust store still accepts emSign ECC Root CA - G3, emSign Root TLS CA - G3, or AAA Certificate Services. The Google Cloud SDK Libraries themselves don't bundle CA certificates, with one exception: Java's com.google.api-client:google-api-client before 2.9.2. In all other cases, the trust store comes from a transport dependency (including the Google-maintained gRPC packages), the language runtime, or the operating system, so the fix is an update to those rather than to the Google Cloud SDK Libraries. In Java, Ruby, and PHP, upgrading the Google client libraries also pulls the fix in. The sections below give the action for each language. What should I do? Find your language below and apply the recommended actions. Then rebuild and redeploy your container images. Python The following packages are affected: certifi earlier than 2026.10.19 (REST transports). httplib2 earlier than 0.32.1, used by google-api-python-client and google-auth-httplib2; its bundled trust store is used when certifi is not installed. grpcio earlier than 1.84.1 (gRPC transports); bundled root store, does not read the operating system trust store. You can take the following actions to resolve these issues: Upgrade certifi to 2026.10.19 or later. Upgrade httplib2 to 0.32.1 or later. Upgrade grpcio to 1.84.1 or later. Patch releases for earlier release lines are being published; see GHSA-2xm2-c8xx-p9vh for the current list of fixed versions. Advisories: GHSA-6q48-6c7w-9gw2 (certifi), GHSA-2xm2-c8xx-p9vh (grpcio). Java The following packages and trust stores are affected: com.google.api-client:google-api-client earlier than 2.9.2, when the HTTP transport is created with GoogleNetHttpTransport.newTrustedTransport(). Versions earlier than 2.9.0 always use a bundled trust store that includes AAA Certificate Services; versions 2.9.0 and 2.9.1 use it when the Java Development Kit...",
+      "links": [
+        {
+          "label": "GHSA-2xm2-c8xx-p9vh",
+          "url": "https://github.com/grpc/grpc/security/advisories/GHSA-2xm2-c8xx-p9vh"
+        },
+        {
+          "label": "GHSA-6q48-6c7w-9gw2",
+          "url": "https://github.com/certifi/python-certifi/security/advisories/GHSA-6q48-6c7w-9gw2"
+        },
+        {
+          "label": "GHSA-m4gc-hcgx-wmc7",
+          "url": "https://github.com/googleapis/google-api-java-client/security/advisories/GHSA-m4gc-hcgx-wmc7"
+        },
+        {
+          "label": "GHSA-p3vr-xp4c-r8fh",
+          "url": "https://github.com/grpc/grpc/security/advisories/GHSA-p3vr-xp4c-r8fh"
+        },
+        {
+          "label": "GHSA-gvrc-7wf9-p7hg",
+          "url": "https://github.com/grpc/grpc/security/advisories/GHSA-gvrc-7wf9-p7hg"
+        },
+        {
+          "label": "deprecated",
+          "url": "https://github.com/grpc/grpc-node/tree/grpc@1.24.x/packages/grpc-native-core"
+        },
+        {
+          "label": "migrate",
+          "url": "https://github.com/grpc/grpc-node/blob/master/packages/grpc-js/README.md#migrating-from-grpc"
+        },
+        {
+          "label": "GO-2026-6809/CVE-2026-111943",
+          "url": "https://pkg.go.dev/vuln/GO-2026-6809"
+        },
+        {
+          "label": "the legacy",
+          "url": "https://grpc.io/blog/grpc-csharp-future/"
+        },
+        {
+          "label": "migrate",
+          "url": "https://learn.microsoft.com/aspnet/core/grpc/migration"
+        },
+        {
+          "label": "RUSTSEC-2026-0382",
+          "url": "https://rustsec.org/advisories/RUSTSEC-2026-0382.html"
+        },
+        {
+          "label": "RUSTSEC-2026-0383",
+          "url": "https://rustsec.org/advisories/RUSTSEC-2026-0383.html"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-074",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-074",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-10-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the SubWorkflow task in Application Integration versions prior to September 11, 2026. What should I do? No customer action is required. This vulnerability was patched on...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-10-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the SubWorkflow task in Application Integration versions prior to September 11, 2026. What should I do? No customer action is required. This vulnerability was patched on September 11, 2026. What vulnerabilities are being addressed? An authenticated user could use a maliciously crafted serialized object to execute arbitrary code. Critical CVE-2026-93327",
+      "links": [
+        {
+          "label": "CVE-2026-93327",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-93327"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-073",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-073",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-10-26Description Description Severity Notes An incorrect authorization vulnerability was discovered in Compute Engine prior to August 31, 2026. What should I do? No action is required from you. This vulnerability was patched on August 31, 2026. What vulnerabilities are being...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-10-26Description Description Severity Notes An incorrect authorization vulnerability was discovered in Compute Engine prior to August 31, 2026. What should I do? No action is required from you. This vulnerability was patched on August 31, 2026. What vulnerabilities are being addressed? An incorrect authorization vulnerability in Compute Engine versions prior to August 31, 2026 allows a user to exfiltrate disk data without the required IAM permissions. High CVE-2026-85299",
+      "links": [
+        {
+          "label": "CVE-2026-85299",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-85299"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-072",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-072",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-10-24Description Description Severity Notes Two vulnerabilities in PHP core, CVE-2026-109618 and CVE-2026-109619 (\"PHP2Shell\"), allow an unauthenticated attacker to execute code remotely on a server running a vulnerable PHP version. They are fixed in PHP 8.2.35, 8.3.36, 8.4.27, and...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-10-24Description Description Severity Notes Two vulnerabilities in PHP core, CVE-2026-109618 and CVE-2026-109619 (\"PHP2Shell\"), allow an unauthenticated attacker to execute code remotely on a server running a vulnerable PHP version. They are fixed in PHP 8.2.35, 8.3.36, 8.4.27, and 8.5.12. No fixed release exists for PHP 8.1 or earlier. The impact on Apigee is limited to Drupal-based Apigee developer portals, which customers deploy and operate. Other Apigee products don't use PHP and aren't affected. For instructions and more details, see the Apigee security bulletin. Critical CVE-2026-109618 CVE-2026-109619",
+      "links": [
+        {
+          "label": "Apigee security bulletin",
+          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-072"
+        },
+        {
+          "label": "CVE-2026-109618",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-109618"
+        },
+        {
+          "label": "CVE-2026-109619",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-109619"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-071",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-071",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-10-23Updated: 2026-11-02Description Description Severity Notes 2026-11-12 Update: Added links to product-specific guidance for Confidential Space, Firebase App Hosting, Firestore, and Firebase App Distribution in the list of affected products. 2026-11-02 Update: Added Google Cloud...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-10-23Updated: 2026-11-02Description Description Severity Notes 2026-11-12 Update: Added links to product-specific guidance for Confidential Space, Firebase App Hosting, Firestore, and Firebase App Distribution in the list of affected products. 2026-11-02 Update: Added Google Cloud SDK Libraries to the list of affected products. 2026-10-28 Update: Added Managed Service for Apache Spark and Cloud Profiler to the list of affected products. We will continue to update the list of affected products with links to product-specific guidance as it becomes available. On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed by AAA Certificate Services. Consequently, these CA certificates are no longer trusted and are being revoked. Although Google Cloud infrastructure remains uncompromised, the following Google Cloud and Firebase products, base images, and client SDKs are impacted: Google Cloud CLI Cloud Shell Container-Optimized OS Compute Engine Google Kubernetes Engine Vertex AI Colab Enterprise App Engine Cloud Run Cloud Run functions Cloud Functions for Firebase Firebase App Hosting Cloud SQL AlloyDB for PostgreSQL Firestore Firebase App Distribution Cloud Monitoring Confidential Space Google Distributed Cloud Managed Service for Apache Spark Cloud Profiler Google Cloud SDK Libraries What should I do? Google Cloud is actively managing this issue across our infrastructure and platform services, and Google Cloud infrastructure has not been breached. Security telemetry shows no evidence of exploitation against Google Cloud workloads, and proactive mitigations are in place across Google-managed environments to block and distrust the affected certificate authority certificates. For environments and dependencies that you manage directly, take the following actions: Operating Systems & Self-Managed Environments: If you manage operating systems or custom container images on Compute Engine, Google Kubernetes Engine (GKE), or Cloud Run, update the trust store via your operating system vendor to revoke trust in the compromised eMudhra (emSign) and AAA Certificate Services certificates: Red Hat Enterprise Linux (RHEL): Follow RHSB-2026-012. Debian: Update to the latest ca-certificates package (Bug 1151446). Ubuntu: Follow USN-8944-1. Windows: Install the latest Windows updates....",
+      "links": [
+        {
+          "label": "Google Kubernetes Engine",
+          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-071"
+        },
+        {
+          "label": "Firebase App Hosting",
+          "url": "https://firebase.google.com/support/guides/compromised-emudhra-intermediate-ca#apple-native-apps-firestore"
+        },
+        {
+          "label": "Cloud SQL",
+          "url": "https://docs.cloud.google.com/sql/docs/mysql/security-bulletins#gcp-2026-071"
+        },
+        {
+          "label": "Firebase App Distribution",
+          "url": "https://firebase.google.com/support/guides/compromised-emudhra-intermediate-ca#android-apps-distro-gradle-plugin"
+        },
+        {
+          "label": "Confidential Space",
+          "url": "https://docs.cloud.google.com/confidential-computing/confidential-space/docs/security-bulletins#gcp-2026-071"
+        },
+        {
+          "label": "Google Cloud SDK Libraries",
+          "url": "https://docs.cloud.google.com/support/bulletins#gcp-2026-075"
+        },
+        {
+          "label": "RHSB-2026-012",
+          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2026-012"
+        },
+        {
+          "label": "Bug 1151446",
+          "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1151446"
+        },
+        {
+          "label": "USN-8944-1",
+          "url": "https://ubuntu.com/blog/emudhra-ca-compromise-fixes-available"
+        },
+        {
+          "label": "cos_ca_cert_mitigation",
+          "url": "https://cos.googlesource.com/cos/tools/+/refs/heads/master/src/cmd/cos_ca_cert_mitigation"
+        },
+        {
+          "label": "CVE-2026-111943",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-111943"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-070",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-070",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-10-21Updated: 2026-10-28Description Description Severity Notes 2026-10-28 Update: For Cloud Run, Cloud Run functions, and Google App Engine Standard, all supported versions of PHP 8.2 and later are patched. Take immediate protective action by redeploying your resources with updated...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-10-21Updated: 2026-10-28Description Description Severity Notes 2026-10-28 Update: For Cloud Run, Cloud Run functions, and Google App Engine Standard, all supported versions of PHP 8.2 and later are patched. Take immediate protective action by redeploying your resources with updated dependencies. Two remote code execution vulnerabilities were found in the open-source PHP language. While Google Cloud itself is not vulnerable, users of this language running on Google Cloud may be vulnerable. The following language versions are affected by this vulnerability: All PHP versions between 5.4 and 8.5 The following framework versions include fixes for this vulnerability: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 What should I do? Customers should take immediate action to protect their workloads by redeploying their workloads with updated dependencies. Some workloads may be automatically patched and updated to the latest PHP if they are on Google App Engine Standard or one of Cloud Run, Cloud Run functions with automatic updates enabled. See the blog post for more information. How can Google help? Customers using Artifact Analysis receive notifications of these vulnerabilities on both new and existing artifacts to help them identify at-risk workloads. Critical CVE-2026-109618 CVE-2026-109619",
+      "links": [
+        {
+          "label": "Cloud Run",
+          "url": "https://docs.cloud.google.com/run/docs/release-notes#October_22_2026"
+        },
+        {
+          "label": "Cloud Run functions",
+          "url": "https://docs.cloud.google.com/functions/docs/release-notes#October_22_2026"
+        },
+        {
+          "label": "Google App Engine Standard",
+          "url": "https://docs.cloud.google.com/appengine/docs/standard/php-gen2/release-notes#October_22_2026"
+        },
+        {
+          "label": "open-source PHP language",
+          "url": "https://www.php.net/archive/2026.php#2026-10-20-1"
+        },
+        {
+          "label": "blog post",
+          "url": "https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619"
+        },
+        {
+          "label": "CVE-2026-109618",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109618"
+        },
+        {
+          "label": "CVE-2026-109619",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109619"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-069",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-069",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-10-19Description Description Severity Notes Security vulnerabilities were discovered in Istio and Envoy Proxy (ISTIO-SECURITY-2026-007). For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High GHSA-w44g-8m76-8gc5 GHSA-7p2q-4xvg-vxc6...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
+    {
+      "title": "GCP-2026-068",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-10-14Updated: 2026-11-05Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ],
+      "body": "Published: 2026-10-14Updated: 2026-11-05Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this vulnerability is required. This vulnerability was patched on August 27, 2026. Application Integration helps to enhance security against authorization vulnerabilities by requiring the iam.serviceAccounts.actAs permission on the run-as service account to publish or test an integration. Integrations created on or after October 15, 2026, must have a run-as service account to publish or test scheduled or event triggers. Starting January 15, 2027 (UTC), this requirement also applies to existing integrations created before October 15, 2026. For more information, see Prepare for upcoming authorization changes. What vulnerabilities are being addressed? An authenticated user could escalate privileges and impersonate a service account in the Google Cloud project. High CVE-2026-85298",
+      "links": [
+        {
+          "label": "Prepare for upcoming authorization changes",
+          "url": "https://docs.cloud.google.com/application-integration/docs/prepare-for-authorization-changes"
+        },
+        {
+          "label": "CVE-2026-85298",
+          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-85298"
+        }
+      ]
+    },
+    {
+      "title": "GCP-2026-067",
+      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-067",
+      "published": "2026-11-25T19:59:04+00:00",
+      "summary": "Published: 2026-10-12Description Description Severity Notes A Denial-of-Service (DoS) vulnerability was discovered in Envoy Proxy when an HTTP filter (such as ext_proc with route_cache_action: RETAIN) mutates the :path header after route selection on a route configured with prefix_rewrite. For...",
+      "author": "Google Cloud",
+      "source": "Google Cloud Security Bulletins",
+      "source_id": "gcp_security",
+      "source_group": "Official Google Cloud",
+      "source_kind": "rss",
+      "vendor": "Google Cloud",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "gcp-security",
+          "name": "Google Cloud Security",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "Google Cloud Security"
+      ]
+    },
     {
       "title": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
       "link": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
@@ -154,1017 +1322,10 @@
       ]
     },
     {
-      "title": "GCP-2026-090",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-090",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-20Description Description Severity Notes 2026-11-23 Update: Added details on patched PHP versions on App Engine, Cloud Run, and Cloud Run functions and noted additional details on CVEs addressed by the updated PHP versions. A critical vulnerability was discovered in PHP's default...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-20Description Description Severity Notes 2026-11-23 Update: Added details on patched PHP versions on App Engine, Cloud Run, and Cloud Run functions and noted additional details on CVEs addressed by the updated PHP versions. A critical vulnerability was discovered in PHP's default file-based session handler. This impacts the following PHP versions: PHP 8.5 < 8.5.13 PHP 8.4 < 8.4.28 PHP 8.3 < 8.3.37 PHP 8.2 < 8.2.36 PHP 8.1, PHP 7.2 (end of life, no fix available) The following Google Cloud products are impacted: App Engine Standard (second-generation PHP 7.2–8.5 runtimes) App Engine Flexible Cloud Run Cloud Run functions What should I do? Patched PHP runtimes are available across App Engine Standard, App Engine Flexible, Cloud Run, and Cloud Run functions. The updated PHP versions include updates against CVE-2026-126714, CVE-2026-115560, and other important security fixes. Take the following action. Immediate mitigation, all PHP applications Disable Session Upload Progress: If your application does not require tracking upload progress, disabling this feature in php.ini mitigates the primary attack path for phpAfterShell (CVE-2026-126714) in particular: session.upload_progress.enabled = 0 Where feasible, switch PHP session storage away from local filesystem handlers (session.save_handler = files) to an external store such as Redis, Memcache, or a database. Self-managed containers Cloud Run containers and App Engine flexible custom runtimes can upgrade immediately to upstream PHP 8.2.36, 8.3.37, 8.4.28, or 8.5.13, rebuild, and redeploy without waiting on Google-managed runtime rollouts. Managed runtimes with automatic base image updates Apply the Disable Session Upload Progress mitigations above App Engine standard (second-generation PHP 8.2–8.5) and Cloud Run services / Cloud Run functions with automatic base image updates enabled receive patched PHP runtimes automatically. Managed runtimes without automatic updates or pinned versions: Apply the Disable Session Upload Progress mitigations above App Engine flexible (managed PHP runtime), Cloud Run jobs and worker pools, Cloud Functions (1st gen), and deployments pinned to a specific patch string must rebuild and redeploy to pick up the updated runtime images. End-of-life PHP versions (7.2–8.1): No upstream patches will be released for PHP 8.1 or earlier. Customers should upgrade to a supported PHP runtime (8.2 or later) or apply the php.ini / non-file session mitigations above. What...",
-      "links": [
-        {
-          "label": "App Engine Standard",
-          "url": "https://docs.cloud.google.com/appengine/docs/standard/php-gen2/release-notes#November_21_2026"
-        },
-        {
-          "label": "App Engine Flexible",
-          "url": "https://docs.cloud.google.com/appengine/docs/flexible/php/release-notes#November_21_2026"
-        },
-        {
-          "label": "Cloud Run",
-          "url": "https://docs.cloud.google.com/run/docs/release-notes#November_21_2026"
-        },
-        {
-          "label": "Cloud Run functions",
-          "url": "https://docs.cloud.google.com/functions/docs/release-notes#November_21_2026"
-        },
-        {
-          "label": "CVE-2026-126714",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-126714"
-        },
-        {
-          "label": "CVE-2026-115560",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-115560"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-089",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-089",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-20Description Description Severity Notes On November 18, 2026, F5 disclosed HTTP/2 vulnerabilities CVE-2026-123633 and CVE-2026-123007 in NGINX Open Source (1.19.7-1.31.8 for CVE-2026-123633; 1.9.5-1.31.8 for CVE-2026-123007) and NGINX Plus, alongside eight additional NGINX CVEs...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-20Description Description Severity Notes On November 18, 2026, F5 disclosed HTTP/2 vulnerabilities CVE-2026-123633 and CVE-2026-123007 in NGINX Open Source (1.19.7-1.31.8 for CVE-2026-123633; 1.9.5-1.31.8 for CVE-2026-123007) and NGINX Plus, alongside eight additional NGINX CVEs in F5's master advisory (K000164058). Under specific configuration and traffic conditions, an unauthenticated remote attacker can crash an NGINX worker process (DoS) or potentially achieve remote code execution (RCE). Google Cloud's core load balancing and managed infrastructure (including Google Front End, Cloud Load Balancing, GKE control plane, Cloud Run, Cloud Functions, and App Engine) are not affected. This bulletin provides guidance for customers operating self-managed NGINX deployments on Google Cloud. What should I do? Managed Google Cloud services: No customer action is required if you rely solely on unaffected Google Cloud managed platforms (including Google Front End, Cloud Load Balancing, GKE control plane, Cloud Run, Cloud Functions, and App Engine). Google is patching any isolated Google-managed components internally, with zero customer impact and no customer action required. Customer-managed NGINX on Google Cloud (GKE Ingress Controllers, Compute Engine VMs, and NGINX-based Cloud Marketplace images): Google has also temporarily delisted affected Google-maintained Click-to-Deploy NGINX listings on Cloud Marketplace while patched images are being prepared. Patch: Upgrade NGINX Open Source to 1.31.9 (mainline) or 1.30.7 (stable), or NGINX Plus to the latest fixed releases (37.0.7.1 / 37.2.0.1 for CVE-2026-123633; 37.0.8.1 / 37.3.0.1 for CVE-2026-123007) in F5 advisory K000164058 to remediate these vulnerabilities and all November 18 F5 CVEs (see also the Wiz research blog). Temporary mitigation (if unable to patch immediately): Disable HTTP/2 on exposed NGINX listeners (for example, set use-http2: \"false\" in ingress-nginx or remove http2 listener directives and reload), or place a Google Cloud External Application Load Balancer in front of NGINX configured to speak HTTP/1.1 to backends. (Note: Disabling HTTP/2 does not mitigate non-HTTP/2 CVEs, so upgrading to a patched release remains recommended.) What vulnerabilities are being addressed? CVE-2026-123633 (NGINX Open Source 1.19.7-1.31.8; NGINX Plus R33+ / 37.0.0-37.2.0.0): Reentrant HTTP/2 connection-draining heap use-after-free in ngx_http_v2_module when reverse proxying (proxy_pass,...",
-      "links": [
-        {
-          "label": "K000164058",
-          "url": "https://my.f5.com/manage/s/article/K000164058"
-        },
-        {
-          "label": "1.31.9",
-          "url": "https://github.com/nginx/nginx/releases/tag/release-1.31.9"
-        },
-        {
-          "label": "Wiz research blog",
-          "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities"
-        },
-        {
-          "label": "CVE-2026-123633",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123633"
-        },
-        {
-          "label": "CVE-2026-123007",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123007"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-088",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-088",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-19Updated: 2026-11-20Description Description Severity Notes 2026-11-20 Update: Added GKE patch versions containing fixes for Container-Optimized OS for minor versions 1.32 and 1.33. Patches for GKE 1.37 on Container-Optimized OS and Ubuntu node images are still in progress. A...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-19Updated: 2026-11-20Description Description Severity Notes 2026-11-20 Update: Added GKE patch versions containing fixes for Container-Optimized OS for minor versions 1.32 and 1.33. Patches for GKE 1.37 on Container-Optimized OS and Ubuntu node images are still in progress. A denial-of-service vulnerability (CVE-2026-99288) was discovered in the Linux kernel TCP implementation. The flaw can cause a kernel panic (denial of service) on the affected virtual machine; it does not allow privilege escalation or container breakout to code execution on the host. A remote attacker can trigger it by sending specially crafted TCP packets to a reachable TCP listener on a node, Pod, or the cluster control plane's IP-based endpoint. Internal traffic within the same VPC can also trigger this vulnerability. GKE Standard clusters and GKE Autopilot clusters running Container-Optimized OS or Ubuntu prior to the patched versions are affected across both cluster control planes and worker nodes. Pods running in GKE Sandbox (gVisor) and Windows Server node pools are not affected. For instructions and more details, see the GKE security bulletin. High CVE-2026-99288",
-      "links": [
-        {
-          "label": "GKE security bulletin",
-          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-088"
-        },
-        {
-          "label": "CVE-2026-99288",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-99288"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-087",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-087",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-19Description Description Severity Notes Two vulnerabilities in the nginx HTTP/2 module, CVE-2026-123633 and CVE-2026-123007, can let a remote, unauthenticated attacker run code on an nginx server that accepts HTTP/2 connections. Both are fixed in nginx 1.30.7. The Router in...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-19Description Description Severity Notes Two vulnerabilities in the nginx HTTP/2 module, CVE-2026-123633 and CVE-2026-123007, can let a remote, unauthenticated attacker run code on an nginx server that accepts HTTP/2 connections. Both are fixed in nginx 1.30.7. The Router in Apigee Edge for Private Cloud 4.54.00 and 4.53.01 uses an nginx version in the affected range. Routers are not affected in the default and supported configuration, because HTTP/2 is not supported on Router virtual hosts. For more information, see the Apigee security bulletin. Critical CVE-2026-123007 CVE-2026-123633",
-      "links": [
-        {
-          "label": "Apigee security bulletin",
-          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-087"
-        },
-        {
-          "label": "CVE-2026-123007",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123007"
-        },
-        {
-          "label": "CVE-2026-123633",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123633"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-086",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-086",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0010, a vulnerability was identified in VMware Aria Operations and VMware Cloud Foundation (VCF). Broadcom will make patches available to remediate this vulnerability in affected Broadcom...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0010, a vulnerability was identified in VMware Aria Operations and VMware Cloud Foundation (VCF). Broadcom will make patches available to remediate this vulnerability in affected Broadcom products. For remediation guidance and product-specific details, see the following bulletins: Google Cloud VMware Engine security bulletin VMware solution on Google Cloud security bulletin Critical VMSA-2026-0010 CVE-2026-119618",
-      "links": [
-        {
-          "label": "VMSA-2026-0010",
-          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39625"
-        },
-        {
-          "label": "Google Cloud VMware Engine security bulletin",
-          "url": "https://docs.cloud.google.com/vmware-engine/docs/security-bulletins#gcp-2026-086"
-        },
-        {
-          "label": "VMware solution on Google Cloud security bulletin",
-          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/security-bulletins#gcp-2026-086"
-        },
-        {
-          "label": "CVE-2026-119618",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-119618"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-085",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-085",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0009, a vulnerability was identified in VMware vCenter and VMware Cloud Foundation (VCF). There are no known workarounds for this reported vulnerability. For remediation guidance and...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-19Description Description Severity Notes According to VMware security advisory VMSA-2026-0009, a vulnerability was identified in VMware vCenter and VMware Cloud Foundation (VCF). There are no known workarounds for this reported vulnerability. For remediation guidance and product-specific details, see the following bulletins: Google Cloud VMware Engine security bulletin VMware solution on Google Cloud security bulletin Critical VMSA-2026-0009 CVE-2026-123890",
-      "links": [
-        {
-          "label": "VMSA-2026-0009",
-          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39495"
-        },
-        {
-          "label": "Google Cloud VMware Engine security bulletin",
-          "url": "https://docs.cloud.google.com/vmware-engine/docs/security-bulletins#gcp-2026-085"
-        },
-        {
-          "label": "VMware solution on Google Cloud security bulletin",
-          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/security-bulletins#gcp-2026-085"
-        },
-        {
-          "label": "CVE-2026-123890",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-123890"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-084",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-084",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-19Description Description Severity Notes A path traversal vulnerability in workspace directory handling and Git integration was discovered in Dataform, BigQuery Studio, and Colab Enterprise. What should I do? No customer action is required. This vulnerability was patched on...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-19Description Description Severity Notes A path traversal vulnerability in workspace directory handling and Git integration was discovered in Dataform, BigQuery Studio, and Colab Enterprise. What should I do? No customer action is required. This vulnerability was patched on October 10, 2026. What vulnerabilities are being addressed? An authenticated remote attacker could read private files and create arbitrary files across tenant repositories. Critical CVE-2026-126054",
-      "links": [
-        {
-          "label": "CVE-2026-126054",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-126054"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-083",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-083",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-18Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in integration execution parameter handling in Application Integration versions prior to September 22, 2026. What should I do? No customer action is required. This...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-18Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in integration execution parameter handling in Application Integration versions prior to September 22, 2026. What should I do? No customer action is required. This vulnerability was patched on September 22, 2026. What vulnerabilities are being addressed? An authenticated user could use a crafted serialized object to run arbitrary code. Critical CVE-2026-106169",
-      "links": [
-        {
-          "label": "CVE-2026-106169",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-106169"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-082",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-082",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-17Updated: 2026-11-23Description Description Severity Notes 2026-11-23 Update: Updated the Dataflow and Managed Service for Apache Airflow guidance in the What should I do? section with links to the Dataflow security bulletin and patched Managed Service for Apache Airflow...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-17Updated: 2026-11-23Description Description Severity Notes 2026-11-23 Update: Updated the Dataflow and Managed Service for Apache Airflow guidance in the What should I do? section with links to the Dataflow security bulletin and patched Managed Service for Apache Airflow versions. 2026-11-20 Update: Patched Java 17 (17.0.21.1+2), Java 21 (21.0.13.1+2), and Java 25 (25.0.5.1+2) runtime base images and Buildpacks packages have finished rolling out across Cloud Run, Cloud Run functions, Cloud Functions (1st gen), App Engine, and Google Cloud Buildpacks. Updated the Google Cloud Buildpacks and Cloud Run, Cloud Run functions, Cloud Functions, and App Engine guidance and added Managed Service for Apache Airflow in the What should I do? section. A remote code execution vulnerability (CVE-2026-114938) was disclosed in OpenJDK 17.0.6 and later (including 17.0.6+, 21.x, 25.x, and 27.x across Eclipse Temurin and other distributions) on x86-64 processors that support AVX-512 VBMI. OpenJDK 8, 11, and 17.0.0 through 17.0.5 are not affected. Workloads running unpatched OpenJDK 17.0.6 or later on Google Cloud (whether self-managed in VMs and containers or running on managed services such as Google Kubernetes Engine, Cloud Run, Cloud Run functions, Cloud Functions, App Engine, Managed Service for Apache Spark, or Dataflow) may be affected. Google Cloud hypervisors and hardware isolation boundaries between customer VMs and containers are not affected. Google is rolling out mitigations and updates across affected Google-managed services, control planes, and base images, and will update this bulletin as updates become available. What should I do? Immediate mitigation (without waiting for a JDK upgrade): Mitigate affected workloads right away by setting (or appending to) the environment variable JDK_JAVA_OPTIONS=\"-XX:+IgnoreUnrecognizedVMOptions -XX:UseAVX=2\" (or passing those flags to your java startup command) and restarting or redeploying. Upgrade to patched OS packages, JDK releases, or container images as they become available, then remove the flag. Google Cloud Buildpacks: Patched Java 17 (17.0.21.1+2), Java 21 (21.0.13.1+2), and Java 25 (25.0.5.1+2) runtimes are available (see the Buildpacks release notes). Rebuild and redeploy your applications (leaving GOOGLE_RUNTIME_VERSION unset or pinned to a major or minor version such as 17, 21, 25, or 17.0, 21.0, 25.0, rather than the four-part patch string) to pick up the patched Java runtime, and then...",
-      "links": [
-        {
-          "label": "Buildpacks release notes",
-          "url": "https://docs.cloud.google.com/docs/buildpacks/release-notes#November_20_2026"
-        },
-        {
-          "label": "Cloud Run",
-          "url": "https://docs.cloud.google.com/run/docs/release-notes#November_20_2026"
-        },
-        {
-          "label": "Cloud Run functions and Cloud Functions (1st gen)",
-          "url": "https://docs.cloud.google.com/functions/docs/release-notes#November_20_2026"
-        },
-        {
-          "label": "App Engine standard environment",
-          "url": "https://docs.cloud.google.com/appengine/docs/standard/java-gen2/release-notes#November_20_2026"
-        },
-        {
-          "label": "App Engine flexible environment",
-          "url": "https://docs.cloud.google.com/appengine/docs/flexible/java/release-notes#November_20_2026"
-        },
-        {
-          "label": "Dataflow security bulletins",
-          "url": "https://docs.cloud.google.com/dataflow/docs/security-bulletins#gcp-2026-082"
-        },
-        {
-          "label": "November 20, 2026 Managed Service for Apache Airflow release notes",
-          "url": "https://docs.cloud.google.com/composer/docs/release-notes#November_20_2026"
-        },
-        {
-          "label": "Apigee security bulletins",
-          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-082"
-        },
-        {
-          "label": "CVE-2026-114938",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-114938"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-081",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-081",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-10Description Description Severity Notes AMD has disclosed three vulnerabilities that affect 5th generation AMD EPYC processors (code-named Turin): CVE-2024-36350 and CVE-2024-36357, which AMD previously disclosed for earlier EPYC processors, and a new vulnerability,...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-10Description Description Severity Notes AMD has disclosed three vulnerabilities that affect 5th generation AMD EPYC processors (code-named Turin): CVE-2024-36350 and CVE-2024-36357, which AMD previously disclosed for earlier EPYC processors, and a new vulnerability, CVE-2026-0004. Under certain conditions, an attacker could infer data from the store queue or the L1 data cache, potentially leaking sensitive information across privilege boundaries. Affected Compute Engine machine series: C4D, N4D, H4D, Z4D, and G4, including C4D and Z4D bare metal instances. Google has applied mitigations that protect against attacks between VMs and between VMs and the host. To protect against attacks inside a VM, such as between processes, you need to update your guest operating system. What should I do? VMs: Update your guest operating system when your OS vendor releases fixes. Starting November 10th, Google will update the CPU information that VMs report so that patched guest kernels can turn on their mitigations. After the update reaches your VM, stop and start the VM. Rebooting the guest OS isn't enough. Bare metal and nested virtualization: If you run your own OS or hypervisor on a bare metal instance, apply your vendor's fixes when they're available. If you run a hypervisor inside a VM, Google will update the CPU information that VMs report so that patched guest kernels can turn on their mitigations. After the update reaches your VM, stop and start the VM. Rebooting the guest OS isn't enough. GKE: Updated GKE node images for Turin-based bare metal instances will be made available. Upgrading your nodes picks up the CPU information update. This bulletin will be updated once the new node image is available. Cloud Run: No action is required. For more information, see AMD security bulletins AMD-SB-7073 and AMD-SB-3055. What vulnerabilities are being addressed? CVE-2024-36350 (TSA-SQ): may allow an attacker to infer data from previous stores, potentially leaking sensitive information. CVE-2024-36357 (TSA-L1): may allow an attacker to infer data in the L1 data cache, potentially leaking sensitive information across privilege boundaries. CVE-2026-0004: may allow an attacker to infer data in the L1 data cache, potentially leaking sensitive information across privilege boundaries. These are Transient Scheduler Attacks (TSA), a type of side-channel vulnerability. Under certain conditions, the processor can briefly use data before confirming it's valid. An...",
-      "links": [
-        {
-          "label": "AMD-SB-7073",
-          "url": "https://www.amd.com/en/resources/product-security/bulletin/amd-sb-7073.html"
-        },
-        {
-          "label": "AMD-SB-3055",
-          "url": "https://www.amd.com/en/resources/product-security/bulletin/amd-sb-3055.html"
-        },
-        {
-          "label": "CVE-2024-36350",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36350"
-        },
-        {
-          "label": "CVE-2024-36357",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-36357"
-        },
-        {
-          "label": "CVE-2026-0004",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-0004"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-080",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-080",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-09Updated: 2026-11-12Description Description Severity Notes Security vulnerabilities were discovered in Istio (ISTIO-SECURITY-2026-009). For instructions and more details, see the Cloud Service Mesh security bulletin. High CVE-2026-31836 GHSA-635j-qv98-9275 GHSA-cxwg-46mx-q8hf...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-079",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-079",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-05Description Description Severity Notes Per advisory VMSA-2026-0008, Broadcom has identified an out-of-bounds write remote code execution vulnerability in the SDDC Manager Node.js Brotli decoder. This impacts only VMware solution on Google Cloud running VMware Cloud Foundation...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-05Description Description Severity Notes Per advisory VMSA-2026-0008, Broadcom has identified an out-of-bounds write remote code execution vulnerability in the SDDC Manager Node.js Brotli decoder. This impacts only VMware solution on Google Cloud running VMware Cloud Foundation 9.1.x and does not impact Google Cloud VMware Engine. What should I do? To remediate, apply the Broadcom-recommended workarounds outlined in the VMSA-2026-0008 advisory. For more information, see the VMware solution on Google Cloud security bulletin. Critical VMSA-2026-0008 CVE-2026-111497",
-      "links": [
-        {
-          "label": "VMSA-2026-0008",
-          "url": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39445"
-        },
-        {
-          "label": "VMware solution on Google Cloud",
-          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/overview"
-        },
-        {
-          "label": "VMware solution on Google Cloud security bulletin",
-          "url": "https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/security-bulletins#gcp-2026-079"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-078",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-078",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-04Updated: 2026-11-18Description Description Severity Notes 2026-11-18 Update: Added patch versions for GKE. A vulnerability (CVE-2026-98432) was discovered in the Linux kernel IPv4 TCP stack. The flaw can cause a kernel panic or a container escape (root code execution on the...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-04Updated: 2026-11-18Description Description Severity Notes 2026-11-18 Update: Added patch versions for GKE. A vulnerability (CVE-2026-98432) was discovered in the Linux kernel IPv4 TCP stack. The flaw can cause a kernel panic or a container escape (root code execution on the node). An unprivileged process in a container can trigger it locally, without special capabilities such as CAP_NET_RAW. A network attacker can also trigger it by sending TCP packets with IPv4 options to a listener on the node or on the cluster control plane. The network attack requires access to a TCP listener on your nodes, Pods, or the control plane's IP-based endpoint. Clusters that restrict this access to trusted sources, for example with firewall rules and control plane authorized networks, are not exposed to network attacks. GKE Standard clusters and GKE Autopilot clusters are impacted. For instructions and more details, see the GKE security bulletin. Medium CVE-2026-98432",
-      "links": [
-        {
-          "label": "GKE security bulletin",
-          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-078"
-        },
-        {
-          "label": "CVE-2026-98432",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-98432"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-077",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-077",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-03Description Description Severity Notes Following the private-key compromise of intermediate Certificate Authorities (CAs) associated with eMudhra (emSign), outbound TLS connections trusting affected roots—specifically emSign ECC Root CA - G3—are vulnerable to Man-in-the-Middle...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-03Description Description Severity Notes Following the private-key compromise of intermediate Certificate Authorities (CAs) associated with eMudhra (emSign), outbound TLS connections trusting affected roots—specifically emSign ECC Root CA - G3—are vulnerable to Man-in-the-Middle (MITM) interception. An attacker possessing compromised intermediate keys can issue fraudulent TLS certificates for arbitrary domain names. Outbound HTTPS connections made from Apigee runtimes (such as TargetEndpoints, TargetServers, ServiceCallouts, and outbound JWKS policy lookups) using default or unmanaged system trust stores may accept forged certificates. This security bulletin outlines required remediation steps for Apigee, Apigee Hybrid, Apigee Edge (SaaS), and Apigee Edge for Private Cloud (OPDK). For more information, see the Apigee security bulletin. Medium CVE-2026-111943 CVE-2026-91403",
-      "links": [
-        {
-          "label": "Apigee security bulletin",
-          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-077"
-        },
-        {
-          "label": "CVE-2026-111943",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-111943"
-        },
-        {
-          "label": "CVE-2026-91403",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-91403"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-076",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-076",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-02Description Description Severity Notes A security vulnerability was discovered in Istio (ISTIO-SECURITY-2026-008). For instructions and more details, see the Cloud Service Mesh security bulletin. Medium CVE-2026-111943",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-075",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-075",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-11-02Description Description Severity Notes On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-11-02Description Description Severity Notes On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed by AAA Certificate Services. Consequently, these CA certificates are no longer trusted and are being revoked. Google Cloud infrastructure has not been breached. Security telemetry shows no evidence of exploitation against Google Cloud workloads. Applications built with the Google Cloud SDK Libraries are affected if their TLS trust store still accepts emSign ECC Root CA - G3, emSign Root TLS CA - G3, or AAA Certificate Services. The Google Cloud SDK Libraries themselves don't bundle CA certificates, with one exception: Java's com.google.api-client:google-api-client before 2.9.2. In all other cases, the trust store comes from a transport dependency (including the Google-maintained gRPC packages), the language runtime, or the operating system, so the fix is an update to those rather than to the Google Cloud SDK Libraries. In Java, Ruby, and PHP, upgrading the Google client libraries also pulls the fix in. The sections below give the action for each language. What should I do? Find your language below and apply the recommended actions. Then rebuild and redeploy your container images. Python The following packages are affected: certifi earlier than 2026.10.19 (REST transports). httplib2 earlier than 0.32.1, used by google-api-python-client and google-auth-httplib2; its bundled trust store is used when certifi is not installed. grpcio earlier than 1.84.1 (gRPC transports); bundled root store, does not read the operating system trust store. You can take the following actions to resolve these issues: Upgrade certifi to 2026.10.19 or later. Upgrade httplib2 to 0.32.1 or later. Upgrade grpcio to 1.84.1 or later. Patch releases for earlier release lines are being published; see GHSA-2xm2-c8xx-p9vh for the current list of fixed versions. Advisories: GHSA-6q48-6c7w-9gw2 (certifi), GHSA-2xm2-c8xx-p9vh (grpcio). Java The following packages and trust stores are affected: com.google.api-client:google-api-client earlier than 2.9.2, when the HTTP transport is created with GoogleNetHttpTransport.newTrustedTransport(). Versions earlier than 2.9.0 always use a bundled trust store that includes AAA Certificate Services; versions 2.9.0 and 2.9.1 use it when the Java Development Kit...",
-      "links": [
-        {
-          "label": "GHSA-2xm2-c8xx-p9vh",
-          "url": "https://github.com/grpc/grpc/security/advisories/GHSA-2xm2-c8xx-p9vh"
-        },
-        {
-          "label": "GHSA-6q48-6c7w-9gw2",
-          "url": "https://github.com/certifi/python-certifi/security/advisories/GHSA-6q48-6c7w-9gw2"
-        },
-        {
-          "label": "GHSA-m4gc-hcgx-wmc7",
-          "url": "https://github.com/googleapis/google-api-java-client/security/advisories/GHSA-m4gc-hcgx-wmc7"
-        },
-        {
-          "label": "GHSA-p3vr-xp4c-r8fh",
-          "url": "https://github.com/grpc/grpc/security/advisories/GHSA-p3vr-xp4c-r8fh"
-        },
-        {
-          "label": "GHSA-gvrc-7wf9-p7hg",
-          "url": "https://github.com/grpc/grpc/security/advisories/GHSA-gvrc-7wf9-p7hg"
-        },
-        {
-          "label": "deprecated",
-          "url": "https://github.com/grpc/grpc-node/tree/grpc@1.24.x/packages/grpc-native-core"
-        },
-        {
-          "label": "migrate",
-          "url": "https://github.com/grpc/grpc-node/blob/master/packages/grpc-js/README.md#migrating-from-grpc"
-        },
-        {
-          "label": "GO-2026-6809/CVE-2026-111943",
-          "url": "https://pkg.go.dev/vuln/GO-2026-6809"
-        },
-        {
-          "label": "the legacy",
-          "url": "https://grpc.io/blog/grpc-csharp-future/"
-        },
-        {
-          "label": "migrate",
-          "url": "https://learn.microsoft.com/aspnet/core/grpc/migration"
-        },
-        {
-          "label": "RUSTSEC-2026-0382",
-          "url": "https://rustsec.org/advisories/RUSTSEC-2026-0382.html"
-        },
-        {
-          "label": "RUSTSEC-2026-0383",
-          "url": "https://rustsec.org/advisories/RUSTSEC-2026-0383.html"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-074",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-074",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-10-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the SubWorkflow task in Application Integration versions prior to September 11, 2026. What should I do? No customer action is required. This vulnerability was patched on...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-10-28Description Description Severity Notes A Deserialization of Untrusted Data vulnerability was discovered in the SubWorkflow task in Application Integration versions prior to September 11, 2026. What should I do? No customer action is required. This vulnerability was patched on September 11, 2026. What vulnerabilities are being addressed? An authenticated user could use a maliciously crafted serialized object to execute arbitrary code. Critical CVE-2026-93327",
-      "links": [
-        {
-          "label": "CVE-2026-93327",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-93327"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-073",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-073",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-10-26Description Description Severity Notes An incorrect authorization vulnerability was discovered in Compute Engine prior to August 31, 2026. What should I do? No action is required from you. This vulnerability was patched on August 31, 2026. What vulnerabilities are being...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-10-26Description Description Severity Notes An incorrect authorization vulnerability was discovered in Compute Engine prior to August 31, 2026. What should I do? No action is required from you. This vulnerability was patched on August 31, 2026. What vulnerabilities are being addressed? An incorrect authorization vulnerability in Compute Engine versions prior to August 31, 2026 allows a user to exfiltrate disk data without the required IAM permissions. High CVE-2026-85299",
-      "links": [
-        {
-          "label": "CVE-2026-85299",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-85299"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-072",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-072",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-10-24Description Description Severity Notes Two vulnerabilities in PHP core, CVE-2026-109618 and CVE-2026-109619 (\"PHP2Shell\"), allow an unauthenticated attacker to execute code remotely on a server running a vulnerable PHP version. They are fixed in PHP 8.2.35, 8.3.36, 8.4.27, and...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-10-24Description Description Severity Notes Two vulnerabilities in PHP core, CVE-2026-109618 and CVE-2026-109619 (\"PHP2Shell\"), allow an unauthenticated attacker to execute code remotely on a server running a vulnerable PHP version. They are fixed in PHP 8.2.35, 8.3.36, 8.4.27, and 8.5.12. No fixed release exists for PHP 8.1 or earlier. The impact on Apigee is limited to Drupal-based Apigee developer portals, which customers deploy and operate. Other Apigee products don't use PHP and aren't affected. For instructions and more details, see the Apigee security bulletin. Critical CVE-2026-109618 CVE-2026-109619",
-      "links": [
-        {
-          "label": "Apigee security bulletin",
-          "url": "https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-072"
-        },
-        {
-          "label": "CVE-2026-109618",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-109618"
-        },
-        {
-          "label": "CVE-2026-109619",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-109619"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-071",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-071",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-10-23Updated: 2026-11-02Description Description Severity Notes 2026-11-12 Update: Added links to product-specific guidance for Confidential Space, Firebase App Hosting, Firestore, and Firebase App Distribution in the list of affected products. 2026-11-02 Update: Added Google Cloud...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-10-23Updated: 2026-11-02Description Description Severity Notes 2026-11-12 Update: Added links to product-specific guidance for Confidential Space, Firebase App Hosting, Firestore, and Firebase App Distribution in the list of affected products. 2026-11-02 Update: Added Google Cloud SDK Libraries to the list of affected products. 2026-10-28 Update: Added Managed Service for Apache Spark and Cloud Profiler to the list of affected products. We will continue to update the list of affected products with links to product-specific guidance as it becomes available. On Saturday, October 17, 2026, Google received a report from a security researcher regarding the compromise of private keys associated with eight eMudhra subordinate Certification Authority (CA) certificates, including those cross-signed by AAA Certificate Services. Consequently, these CA certificates are no longer trusted and are being revoked. Although Google Cloud infrastructure remains uncompromised, the following Google Cloud and Firebase products, base images, and client SDKs are impacted: Google Cloud CLI Cloud Shell Container-Optimized OS Compute Engine Google Kubernetes Engine Vertex AI Colab Enterprise App Engine Cloud Run Cloud Run functions Cloud Functions for Firebase Firebase App Hosting Cloud SQL AlloyDB for PostgreSQL Firestore Firebase App Distribution Cloud Monitoring Confidential Space Google Distributed Cloud Managed Service for Apache Spark Cloud Profiler Google Cloud SDK Libraries What should I do? Google Cloud is actively managing this issue across our infrastructure and platform services, and Google Cloud infrastructure has not been breached. Security telemetry shows no evidence of exploitation against Google Cloud workloads, and proactive mitigations are in place across Google-managed environments to block and distrust the affected certificate authority certificates. For environments and dependencies that you manage directly, take the following actions: Operating Systems & Self-Managed Environments: If you manage operating systems or custom container images on Compute Engine, Google Kubernetes Engine (GKE), or Cloud Run, update the trust store via your operating system vendor to revoke trust in the compromised eMudhra (emSign) and AAA Certificate Services certificates: Red Hat Enterprise Linux (RHEL): Follow RHSB-2026-012. Debian: Update to the latest ca-certificates package (Bug 1151446). Ubuntu: Follow USN-8944-1. Windows: Install the latest Windows updates....",
-      "links": [
-        {
-          "label": "Google Kubernetes Engine",
-          "url": "https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-071"
-        },
-        {
-          "label": "Firebase App Hosting",
-          "url": "https://firebase.google.com/support/guides/compromised-emudhra-intermediate-ca#apple-native-apps-firestore"
-        },
-        {
-          "label": "Cloud SQL",
-          "url": "https://docs.cloud.google.com/sql/docs/mysql/security-bulletins#gcp-2026-071"
-        },
-        {
-          "label": "Firebase App Distribution",
-          "url": "https://firebase.google.com/support/guides/compromised-emudhra-intermediate-ca#android-apps-distro-gradle-plugin"
-        },
-        {
-          "label": "Confidential Space",
-          "url": "https://docs.cloud.google.com/confidential-computing/confidential-space/docs/security-bulletins#gcp-2026-071"
-        },
-        {
-          "label": "Google Cloud SDK Libraries",
-          "url": "https://docs.cloud.google.com/support/bulletins#gcp-2026-075"
-        },
-        {
-          "label": "RHSB-2026-012",
-          "url": "https://access.redhat.com/security/vulnerabilities/RHSB-2026-012"
-        },
-        {
-          "label": "Bug 1151446",
-          "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1151446"
-        },
-        {
-          "label": "USN-8944-1",
-          "url": "https://ubuntu.com/blog/emudhra-ca-compromise-fixes-available"
-        },
-        {
-          "label": "cos_ca_cert_mitigation",
-          "url": "https://cos.googlesource.com/cos/tools/+/refs/heads/master/src/cmd/cos_ca_cert_mitigation"
-        },
-        {
-          "label": "CVE-2026-111943",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-111943"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-070",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-070",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-10-21Updated: 2026-10-28Description Description Severity Notes 2026-10-28 Update: For Cloud Run, Cloud Run functions, and Google App Engine Standard, all supported versions of PHP 8.2 and later are patched. Take immediate protective action by redeploying your resources with updated...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-10-21Updated: 2026-10-28Description Description Severity Notes 2026-10-28 Update: For Cloud Run, Cloud Run functions, and Google App Engine Standard, all supported versions of PHP 8.2 and later are patched. Take immediate protective action by redeploying your resources with updated dependencies. Two remote code execution vulnerabilities were found in the open-source PHP language. While Google Cloud itself is not vulnerable, users of this language running on Google Cloud may be vulnerable. The following language versions are affected by this vulnerability: All PHP versions between 5.4 and 8.5 The following framework versions include fixes for this vulnerability: PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 What should I do? Customers should take immediate action to protect their workloads by redeploying their workloads with updated dependencies. Some workloads may be automatically patched and updated to the latest PHP if they are on Google App Engine Standard or one of Cloud Run, Cloud Run functions with automatic updates enabled. See the blog post for more information. How can Google help? Customers using Artifact Analysis receive notifications of these vulnerabilities on both new and existing artifacts to help them identify at-risk workloads. Critical CVE-2026-109618 CVE-2026-109619",
-      "links": [
-        {
-          "label": "Cloud Run",
-          "url": "https://docs.cloud.google.com/run/docs/release-notes#October_22_2026"
-        },
-        {
-          "label": "Cloud Run functions",
-          "url": "https://docs.cloud.google.com/functions/docs/release-notes#October_22_2026"
-        },
-        {
-          "label": "Google App Engine Standard",
-          "url": "https://docs.cloud.google.com/appengine/docs/standard/php-gen2/release-notes#October_22_2026"
-        },
-        {
-          "label": "open-source PHP language",
-          "url": "https://www.php.net/archive/2026.php#2026-10-20-1"
-        },
-        {
-          "label": "blog post",
-          "url": "https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619"
-        },
-        {
-          "label": "CVE-2026-109618",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109618"
-        },
-        {
-          "label": "CVE-2026-109619",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-109619"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-069",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-069",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-10-19Description Description Severity Notes Security vulnerabilities were discovered in Istio and Envoy Proxy (ISTIO-SECURITY-2026-007). For instructions and more details, see the Cloud Service Mesh security bulletin. Moderate to High GHSA-w44g-8m76-8gc5 GHSA-7p2q-4xvg-vxc6...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-068",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-068",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-10-14Updated: 2026-11-05Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-10-14Updated: 2026-11-05Description Description Severity Notes An Incorrect Authorization vulnerability in the AuthConfig validation and integration execution runtime in Application Integration versions prior to August 27, 2026. What should I do? No customer action to resolve this vulnerability is required. This vulnerability was patched on August 27, 2026. Application Integration helps to enhance security against authorization vulnerabilities by requiring the iam.serviceAccounts.actAs permission on the run-as service account to publish or test an integration. Integrations created on or after October 15, 2026, must have a run-as service account to publish or test scheduled or event triggers. Starting January 15, 2027 (UTC), this requirement also applies to existing integrations created before October 15, 2026. For more information, see Prepare for upcoming authorization changes. What vulnerabilities are being addressed? An authenticated user could escalate privileges and impersonate a service account in the Google Cloud project. High CVE-2026-85298",
-      "links": [
-        {
-          "label": "Prepare for upcoming authorization changes",
-          "url": "https://docs.cloud.google.com/application-integration/docs/prepare-for-authorization-changes"
-        },
-        {
-          "label": "CVE-2026-85298",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-85298"
-        }
-      ]
-    },
-    {
-      "title": "GCP-2026-067",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-067",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-10-12Description Description Severity Notes A Denial-of-Service (DoS) vulnerability was discovered in Envoy Proxy when an HTTP filter (such as ext_proc with route_cache_action: RETAIN) mutates the :path header after route selection on a route configured with prefix_rewrite. For...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ]
-    },
-    {
-      "title": "GCP-2026-066",
-      "link": "https://docs.cloud.google.com/support/bulletins/index#gcp-2026-066",
-      "published": "2026-11-24T18:12:43+00:00",
-      "summary": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What...",
-      "author": "Google Cloud",
-      "source": "Google Cloud Security Bulletins",
-      "source_id": "gcp_security",
-      "source_group": "Official Google Cloud",
-      "source_kind": "rss",
-      "vendor": "Google Cloud",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 15
-        }
-      ],
-      "tags": [
-        "Google Cloud Security"
-      ],
-      "body": "Published: 2026-09-28Description Description Severity Notes A Confused Deputy vulnerability was discovered in the Email Task component in Application Integration versions prior to June 30, 2026. What should I do? No customer action is required. This vulnerability was patched on June 30, 2026. What vulnerabilities are being addressed? An authenticated attacker could read and exfiltrate arbitrary Google-internal files using a crafted attachment path. High CVE-2026-81375",
-      "links": [
-        {
-          "label": "CVE-2026-81375",
-          "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-81375"
-        }
-      ]
-    },
-    {
-      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
-      "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
-      "published": "2026-11-24T12:00:00+00:00",
-      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability CVE-2026-132165 Drupal Core Remote Code Execution Vulnerability CVE-2026-132224...",
+      "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+      "published": "2026-11-25T12:00:00+00:00",
+      "summary": "CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability CVE-2023-25915 Danfoss AK-SM 800A Series Improper Input Validation Vulnerability CVE-2025-41450...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -1183,181 +1344,55 @@
       "tags": [
         "CISA Advisories"
       ],
-      "body": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability CVE-2026-132165 Drupal Core Remote Code Execution Vulnerability CVE-2026-132224 Optimizely Web Experimentation External Control of Critical State Data Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+      "body": "CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability CVE-2023-25915 Danfoss AK-SM 800A Series Improper Input Validation Vulnerability CVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability CVE-2026-103406 Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability CVE-2026-133275 Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-133303 Mitel MiCollab XML Injection Vulnerability CVE-2026-133311 Mitel MiCollab Weak Authentication Vulnerability CVE-2026-133323 Mitel MiCollab OS Command Injection Vulnerability CVE-2026-133324 Mitel MiCollab Not Failing Securely Vulnerability CVE-2026-133469 Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
       "links": [
         {
           "label": "Known Exploited Vulnerabilities (KEV) Catalog",
           "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
         },
         {
-          "label": "CVE-2026-131914",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-131914"
+          "label": "CVE-2023-25914",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-25914"
         },
         {
-          "label": "CVE-2026-132165",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-132165"
+          "label": "CVE-2023-25915",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2023-25915"
         },
         {
-          "label": "CVE-2026-132224",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-132224"
+          "label": "CVE-2025-41450",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2025-41450"
+        },
+        {
+          "label": "CVE-2026-103406",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-103406"
+        },
+        {
+          "label": "CVE-2026-133275",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-133275"
+        },
+        {
+          "label": "CVE-2026-133303",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-133303"
+        },
+        {
+          "label": "CVE-2026-133311",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-133311"
+        },
+        {
+          "label": "CVE-2026-133323",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-133323"
+        },
+        {
+          "label": "CVE-2026-133324",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-133324"
+        },
+        {
+          "label": "CVE-2026-133469",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-133469"
         },
         {
           "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
           "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
-        },
-        {
-          "label": "specified criteria",
-          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
-        },
-        {
-          "label": "KEV Nomination Form",
-          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
-        }
-      ]
-    },
-    {
-      "title": "Danfoss AK-SM 8xxA Series",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
-      "published": "2026-11-24T12:00:00+00:00",
-      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA <=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA <=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1 Vulnerability Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Denmark Vulnerabilities CVE-2026-129713 A stack-based buffer overflow in an unauthenticated CGI handler of the Danfoss AK-SM 8xxA Series controller allows remote attackers to send specially crafted HTTP/S POST requests, leading to memory corruption, webserver restart and hypothetically potential arbitrary code execution with webserver privileges. Authentication is not required to exploit this vulnerability. Read More 1 Affected Product Danfoss AK-SM8xxA <=5.4.0 Product Status: known_affected Remediations MitigationThis vulnerability will be addressed in an upcoming Danfoss AK-SM 800A Series software release (version 5.5.x). In addition, Danfoss will remove the ability for users to disable Strict Mode in future software releases. MitigationUntil a software update is available, Danfoss recommends the following mitigations: * Follow the guidance provided in the product documentation and do not expose devices directly to the Internet or assign them public IP addresses. * Restrict remote access to affected devices by using a secure VPN or other protected network architecture. * Configure all affected devices to operate in Strict Mode, which provides enhanced security protections. * Use strong, unique passwords for all user accounts and administrative access. * For additional security recommendations and best practices see the Danfoss AK-SM 800 security guidance page: https://www.danfoss.com/en/service-and-support/downloads/dcs/adap-kool-software/ak-sm-800a/#tab-overview Additional Metrics Relevant CWE: CWE-121 Stack-based Buffer Overflow CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.3 CRITICAL CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details Acknowledgments Carlo Meijer of Midnight Blue reported CVE-2026-129713 to CISA. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-328-03.json"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-121 Stack-based Buffer Overflow",
-          "url": "https://cwe.mitre.org/data/definitions/121.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-129713"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        },
-        {
-          "label": "proactive defense of ICS assets",
-          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
-        },
-        {
-          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
-          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
-        }
-      ]
-    },
-    {
-      "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
-      "published": "2026-11-24T12:00:00+00:00",
-      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local attackers being able to exploit these issues to potentially execute arbitrary code. The following versions of Schneider Electric EcoStruxure Power Build Rapsody software are affected: EcoStruxure Power Build Rapsody software vers:generic/<=2.9.1.0_FR, 2.9.12.0101_FR, vers:generic/<=2.8.5.0301_ESP, 2.9.5.0000_ESP, vers:generic/<=2.8.7.0101_PT, 2.9.7.0000_PT, vers:generic/<=2.8.8.0201_BEL(FR), 2.9.8.0000_BELFR, vers:generic/<=2.8.3.0201_BEL(EN), 2.9.3.0000_BELEN, vers:generic/<=2.8.4.0401_INT(EN), 2.9.4.0000_INTEN, vers:generic/<=2.8.6.0000_INT(FR), 2.9.6.0000_INTFR, vers:generic/<=2.8.2.0000_NL, 2.9.6.0000_NL (CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055) CVSS Vendor Equipment v3 5.3 Schneider Electric EcoStruxure Power Build Rapsody software 1 Vulnerability Use After Free Background Critical Infrastructure Sectors: Energy, Critical Manufacturing, Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: France Vulnerabilities CVE-2026-119055 A CWE- 416: Use After Free vulnerability exists that could cause arbitrary code execution when a local attacker could trick the end user to open a specially crafted malicious SSD file. Read More 8 Affected Products EcoStruxure Power Build Rapsody software Versions FR 2.9.1.0 and prior Product Status: fixed, known_affected Remediations Vendor fixVersions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&sourceId=2309 EcoStruxure Power Build Rapsody software Versions ESP 2.8.5.0301 and prior Product Status: fixed, known_affected Remediations Vendor fixVersions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR)...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-328-02.json"
-        },
-        {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
-        },
-        {
-          "label": "CWE-416 Use After Free",
-          "url": "https://cwe.mitre.org/data/definitions/416.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-119055"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        },
-        {
-          "label": "proactive defense of ICS assets",
-          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
-        },
-        {
-          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
-          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
         }
       ]
     },
@@ -1437,6 +1472,207 @@
       ]
     },
     {
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "link": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+      "published": "2026-11-24T12:00:00+00:00",
+      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability CVE-2026-132165 Drupal Core Remote Code Execution Vulnerability CVE-2026-132224...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 15
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability CVE-2026-132165 Drupal Core Remote Code Execution Vulnerability CVE-2026-132224 Optimizely Web Experimentation External Control of Critical State Data Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive Branch (FCEB) agencies. BOD 26-04 reinforces the importance of the KEV Catalog and requires federal agencies to prioritize rapid remediation of high-risk vulnerabilities, specifically those identified by Common Vulnerabilities and Exposures (CVEs) listed in CISA’s KEV Catalog on publicly exposed assets that grant total control of the asset post-exploitation, while deferring action for lower-risk vulnerabilities. BOD 26-04 further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied. While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities. CISA will continue to add vulnerabilities to the catalog that meet the specified criteria. Aware of an exploited vulnerability not currently listed in the KEV Catalog? Submit it for potential addition through CISA’s KEV Nomination Form. Potential KEV additions must have a CVE ID, evidence of exploitation, and clear mitigation guidance.",
+      "links": [
+        {
+          "label": "Known Exploited Vulnerabilities (KEV) Catalog",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+        },
+        {
+          "label": "CVE-2026-131914",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-131914"
+        },
+        {
+          "label": "CVE-2026-132165",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-132165"
+        },
+        {
+          "label": "CVE-2026-132224",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-132224"
+        },
+        {
+          "label": "Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk",
+          "url": "https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk"
+        },
+        {
+          "label": "specified criteria",
+          "url": "https://www.cisa.gov/known-exploited-vulnerabilities"
+        },
+        {
+          "label": "KEV Nomination Form",
+          "url": "https://cisasurvey.gov1.qualtrics.com/jfe/form/SV_1Zwu52kgK2OYf3w"
+        }
+      ]
+    },
+    {
+      "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+      "published": "2026-11-24T12:00:00+00:00",
+      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local attackers being able to exploit these issues to potentially execute arbitrary code. The following versions of Schneider Electric EcoStruxure Power Build Rapsody software are affected: EcoStruxure Power Build Rapsody software vers:generic/<=2.9.1.0_FR, 2.9.12.0101_FR, vers:generic/<=2.8.5.0301_ESP, 2.9.5.0000_ESP, vers:generic/<=2.8.7.0101_PT, 2.9.7.0000_PT, vers:generic/<=2.8.8.0201_BEL(FR), 2.9.8.0000_BELFR, vers:generic/<=2.8.3.0201_BEL(EN), 2.9.3.0000_BELEN, vers:generic/<=2.8.4.0401_INT(EN), 2.9.4.0000_INTEN, vers:generic/<=2.8.6.0000_INT(FR), 2.9.6.0000_INTFR, vers:generic/<=2.8.2.0000_NL, 2.9.6.0000_NL (CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055, CVE-2026-119055) CVSS Vendor Equipment v3 5.3 Schneider Electric EcoStruxure Power Build Rapsody software 1 Vulnerability Use After Free Background Critical Infrastructure Sectors: Energy, Critical Manufacturing, Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: France Vulnerabilities CVE-2026-119055 A CWE- 416: Use After Free vulnerability exists that could cause arbitrary code execution when a local attacker could trick the end user to open a specially crafted malicious SSD file. Read More 8 Affected Products EcoStruxure Power Build Rapsody software Versions FR 2.9.1.0 and prior Product Status: fixed, known_affected Remediations Vendor fixVersions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR) V2.9.8.0000, BEL(EN) V2.9.3.0000, INT(EN) V2.9.4.0000, INT(FR)V2.9.6.0000, NL V2.9.6.0000 of EcoStruxure™ Power Build Rapsody software includes a fix for this vulnerability and is available for download here: https://www.se.com/ww/en/product-country-selector/?pageType=product-range&sourceId=2309 EcoStruxure Power Build Rapsody software Versions ESP 2.8.5.0301 and prior Product Status: fixed, known_affected Remediations Vendor fixVersions FR V2.9.12.0101, ESP V2.9.5.0000, PT V2.9.7.0000, BEL(FR)...",
+      "links": [
+        {
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-328-02.json"
+        },
+        {
+          "label": "Read More",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-416 Use After Free",
+          "url": "https://cwe.mitre.org/data/definitions/416.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-119055"
+        },
+        {
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+        },
+        {
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        },
+        {
+          "label": "cisa.gov/ics",
+          "url": "https://www.cisa.gov/topics/industrial-control-systems"
+        },
+        {
+          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
+          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        },
+        {
+          "label": "proactive defense of ICS assets",
+          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+        },
+        {
+          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
+          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
+        }
+      ]
+    },
+    {
+      "title": "Danfoss AK-SM 8xxA Series",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+      "published": "2026-11-24T12:00:00+00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA <=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1...",
+      "author": "CISA",
+      "source": "CISA Cybersecurity Advisories",
+      "source_id": "cisa_security",
+      "source_group": "Official CISA",
+      "source_kind": "rss",
+      "vendor": "CISA",
+      "source_category": "Security Advisories",
+      "board_id": null,
+      "products": [
+        {
+          "id": "cisa-advisories",
+          "name": "CISA Advisories",
+          "score": 6
+        }
+      ],
+      "tags": [
+        "CISA Advisories"
+      ],
+      "body": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges. The following versions of Danfoss AK-SM 8xxA Series are affected: AK-SM8xxA <=5.4.0 (CVE-2026-129713) CVSS Vendor Equipment v3 9.8 Danfoss AK-SM8xxA 1 Vulnerability Stack-based Buffer Overflow Background Critical Infrastructure Sectors: Commercial Facilities Countries/Areas Deployed: Worldwide Company Headquarters Location: Denmark Vulnerabilities CVE-2026-129713 A stack-based buffer overflow in an unauthenticated CGI handler of the Danfoss AK-SM 8xxA Series controller allows remote attackers to send specially crafted HTTP/S POST requests, leading to memory corruption, webserver restart and hypothetically potential arbitrary code execution with webserver privileges. Authentication is not required to exploit this vulnerability. Read More 1 Affected Product Danfoss AK-SM8xxA <=5.4.0 Product Status: known_affected Remediations MitigationThis vulnerability will be addressed in an upcoming Danfoss AK-SM 800A Series software release (version 5.5.x). In addition, Danfoss will remove the ability for users to disable Strict Mode in future software releases. MitigationUntil a software update is available, Danfoss recommends the following mitigations: * Follow the guidance provided in the product documentation and do not expose devices directly to the Internet or assign them public IP addresses. * Restrict remote access to affected devices by using a secure VPN or other protected network architecture. * Configure all affected devices to operate in Strict Mode, which provides enhanced security protections. * Use strong, unique passwords for all user accounts and administrative access. * For additional security recommendations and best practices see the Danfoss AK-SM 800 security guidance page: https://www.danfoss.com/en/service-and-support/downloads/dcs/adap-kool-software/ak-sm-800a/#tab-overview Additional Metrics Relevant CWE: CWE-121 Stack-based Buffer Overflow CVSS Version Base Score Base Severity Vector String 3.1 9.8 CRITICAL CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H 4.0 9.3 CRITICAL CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N View CVE Details Acknowledgments Carlo Meijer of Midnight Blue reported CVE-2026-129713 to CISA. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control system...",
+      "links": [
+        {
+          "label": "View CSAF",
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-328-03.json"
+        },
+        {
+          "label": "Read More",
+          "url": "https://www.cisa.gov/#"
+        },
+        {
+          "label": "CWE-121 Stack-based Buffer Overflow",
+          "url": "https://cwe.mitre.org/data/definitions/121.html"
+        },
+        {
+          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "label": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+          "url": "https://www.first.org/cvss/calculator/4.0#CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        },
+        {
+          "label": "View CVE Details",
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-129713"
+        },
+        {
+          "label": "not accessible from the internet",
+          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
+        },
+        {
+          "label": "control systems security recommended practices",
+          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+        },
+        {
+          "label": "cisa.gov/ics",
+          "url": "https://www.cisa.gov/topics/industrial-control-systems"
+        },
+        {
+          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
+          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+        },
+        {
+          "label": "proactive defense of ICS assets",
+          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+        },
+        {
+          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
+          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
+        }
+      ]
+    },
+    {
       "title": "Introducing CORNERSTONE: delivering external services for the NCSC",
       "link": "https://www.ncsc.gov.uk/blogs/introducing-cornerstone-delivering-external-services-for-the-ncsc",
       "published": "2026-11-24T12:00:00+00:00",
@@ -1482,123 +1718,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "Microsoft Ignite 2026: New Sentinel Connectors Announcement",
-      "link": "https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/microsoft-ignite-2026-new-sentinel-connectors-announcement/ba-p/4565258",
-      "published": "2026-11-23T22:53:24+00:00",
-      "summary": "Microsoft Sentinel helps organizations detect, investigate, and respond to threats across increasingly complex environments. As AI transforms security operations, bringing together the right data and context is more important than ever, giving human defenders and AI agents a more complete view of...",
-      "author": "JesseKopavi",
-      "source": "Microsoft Sentinel",
-      "source_id": "sentinel",
-      "source_group": "TechCommunity",
-      "source_kind": "techcommunity",
-      "vendor": "Microsoft",
-      "source_category": "SIEM / SOAR",
-      "board_id": "microsoftsentinelblog",
-      "products": [
-        {
-          "id": "threat-intelligence",
-          "name": "Threat Intelligence",
-          "score": 13
-        },
-        {
-          "id": "defender-xdr",
-          "name": "Microsoft Defender XDR",
-          "score": 11
-        },
-        {
-          "id": "defender-endpoint",
-          "name": "Microsoft Defender for Endpoint",
-          "score": 11
-        },
-        {
-          "id": "sentinel",
-          "name": "Microsoft Sentinel",
-          "score": 10
-        },
-        {
-          "id": "ai-security",
-          "name": "AI Security",
-          "score": 6
-        },
-        {
-          "id": "gcp-security",
-          "name": "Google Cloud Security",
-          "score": 5
-        },
-        {
-          "id": "defender-cloud",
-          "name": "Microsoft Defender for Cloud",
-          "score": 5
-        },
-        {
-          "id": "aws-security",
-          "name": "AWS Security",
-          "score": 4
-        }
-      ],
-      "tags": [
-        "Threat Intelligence",
-        "Microsoft Defender XDR",
-        "Microsoft Defender for Endpoint",
-        "Microsoft Sentinel",
-        "AI Security",
-        "Google Cloud Security",
-        "Microsoft Defender for Cloud",
-        "AWS Security"
-      ],
-      "body": "Microsoft Sentinel helps organizations detect, investigate, and respond to threats across increasingly complex environments. As AI transforms security operations, bringing together the right data and context is more important than ever, giving human defenders and AI agents a more complete view of the environment to reason over and act on. These integrations bring signals from Microsoft and third-party technologies together across the security environment, unlocking richer context for investigations and helping power the new Integrated Security Operations Center (ISOC) in Microsoft Defender, where human defenders and AI agents can reason across the environment with shared context. The connector ecosystem isn’t the only area seeing rapid growth. Microsoft Sentinel continues to add new capabilities, including Nested API support, Azure Blob support, and multi-account support, while AI-powered tools like the connector builder agent are making it easier than ever for developers to build integrations and bring more of their security data into Sentinel. At the same time, Unified Data Management, now in public preview, makes it easier for customers to manage their Microsoft Sentinel data, connectors, tables, and ingestion health in one place. For Microsoft Ignite 2026, we’re excited to showcase recent additions to this growing ecosystem and the partners making them possible. These new and enhanced connectors continue to broaden the security data available to customers, helping human defenders and AI agents gain the context they need across the technology estate. Airlock Digital for Microsoft Sentinel Airlock Digital helps prevent malware, ransomware, and unauthorized software with deny by default application control, allowing only trusted applications, scripts, and processes to run. Its Microsoft Sentinel push integration ingests execution history, browser extension control events, server administrative activity, and policy changes for monitoring and investigation. Included parsers map execution and audit events to Microsoft’s ASIM for analysis alongside other security signals. A customizable workbook supports investigation and monitoring, and teams can create analytics rules using the ingested data. NC Protect Data Connector for Microsoft Sentinel NC Protect Data Connector for Microsoft Sentinel from archTIS brings user activity and protection logs from NC Protect into Sentinel for centralized security analysis. The connector captures user activities and...",
-      "links": [
-        {
-          "label": "Integrated Security Operations Center (ISOC) in Microsoft Defender,",
-          "url": "https://www.microsoft.com/en-us/security/blog/2026/09/23/reimagining-the-soc-for-the-agentic-era-in-microsoft-defender/"
-        },
-        {
-          "label": "Nested API",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-nested-api-support-comes-to-microsoft-sentinel-ccf/4537026"
-        },
-        {
-          "label": "Azure Blob",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/extending-sentinel-data-integration-azure-blob-storage-support-for-ccf-connector/4516896?"
-        },
-        {
-          "label": "multi-account",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/public-preview-multi-account-support-for-microsoft-sentinel-codeless-connectors/4544380"
-        },
-        {
-          "label": "connector builder agent",
-          "url": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/accelerate-connectors-development-using-ai-agent-in-microsoft-sentinel/4507019"
-        },
-        {
-          "label": "Unified Data Management",
-          "url": "https://techcommunity.microsoft.com/blog/microsoftsentinelblog/manage-all-your-microsoft-sentinel-data-in-one-place-with-unified-data-managemen/4565940"
-        },
-        {
-          "label": "Airlock Digital for Microsoft Sentinel",
-          "url": "https://securitystore.microsoft.com/solutions/airlockdigitalptyltd1783575912163.azure-sentinel-solution-airlockdigital"
-        },
-        {
-          "label": "NC Protect Data Connector for Microsoft Sentinel",
-          "url": "https://securitystore.microsoft.com/solutions/nucleuscyber.nc-protect-azure-sentinel-data-connector"
-        },
-        {
-          "label": "blacklens.io for Microsoft Sentinel",
-          "url": "https://securitystore.microsoft.com/solutions/snapsecgmbh1733575353555.blacklens-sentinel-solution"
-        },
-        {
-          "label": "BloodHound Enterprise",
-          "url": "https://securitystore.microsoft.com/solutions/azurehoundenterprise.bloodhoundenterprise-mssentinel"
-        },
-        {
-          "label": "BlueVoyant Anthropic Claude Compliance",
-          "url": "https://securitystore.microsoft.com/solutions/bluevoyant1583844909747.azure-sentinel-solution-bv-claudecompliance"
-        },
-        {
-          "label": "Cato Networks for Microsoft Sentinel",
-          "url": "https://securitystore.microsoft.com/solutions/catonetworks.cato-networks-sentinel-ccf-push"
-        }
       ]
     },
     {
@@ -4135,10 +4254,10 @@
       ]
     },
     {
-      "title": "Siemens RUGGEDCOM APE1808",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+      "title": "Siemens Industrial Software Products",
+      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
       "published": "2026-11-17T12:00:00+00:00",
-      "summary": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support...",
+      "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a...",
       "author": "CISA",
       "source": "CISA Cybersecurity Advisories",
       "source_id": "cisa_security",
@@ -4157,27 +4276,23 @@
       "tags": [
         "CISA Advisories"
       ],
-      "body": "View CSAF Summary Fortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information The following versions of Siemens RUGGEDCOM APE1808 are affected: RUGGEDCOM APE1808 vers:all/* (CVE-2026-106175) CVSS Vendor Equipment v3 2.3 Siemens RUGGEDCOM APE1808 1 Vulnerability Double Free Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Germany Vulnerabilities CVE-2026-106175 A Double Free vulnerability [CWE-415] in FortiOS, FortiProxy and FortiSwitch may allow a local authenticated attacker to crash the newcli daemon via crafted CLI commands. Read More 1 Affected Product RUGGEDCOM APE1808 with Fortinet NGFW Product Status: known_affected Remediations Vendor fixUpdate Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information Additional Metrics Relevant CWE: CWE-415 Double Free CVSS Version Base Score Base Severity Vector String 3.1 2.3 LOW CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L View CVE Details Acknowledgments Siemens ProductCERT reported this vulnerability to CISA. General Recommendations As a general security measure, Siemens strongly recommends to protect network access to devices with appropriate mechanisms. In order to operate the devices in a protected IT environment, Siemens recommends to configure the environment according to Siemens' operational guidelines for Industrial Security (Download: https://www.siemens.com/cert/operational-guidelines-industrial-security), and to follow the recommendations in the product manuals. Additional information on Industrial Security by Siemens can be found at: https://www.siemens.com/industrialsecurity Additional Resources For further inquiries on security vulnerabilities in Siemens products and solutions, please contact the Siemens ProductCERT: https://www.siemens.com/cert/advisories Terms of Use The use of Siemens Security Advisories is subject to the terms and conditions listed on: https://www.siemens.com/productcert/terms-of-use. Recommended Practices CISA recommends users take defensive measures to minimize the risk of exploitation of these vulnerabilities. Minimize network exposure for all control...",
+      "body": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Please also have a look on following Software Field Bulletins: Teamcenter: https://support.sw.siemens.com/en-US/knowledge-base/PL8869204 Polarion: https://support.sw.siemens.com/en-US/knowledge-base/PL8869197 Manufacturing Operations Center (Opcenter) and Process Preparation X: https://support.sw.siemens.com/en-US/knowledge-base/PL8869211 Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens Industrial Software Products are affected: HyperLynx vers:all/* (CVE-2026-111497) Innexis Architecture Native Acceleration 2026 vers:all/* (CVE-2026-111497) Insights Hub vers:all/* (CVE-2026-111497) Opcenter Connect Electronics vers:all/* (CVE-2026-111497) Opcenter Connect MOM vers:all/* (CVE-2026-111497) Opcenter Execution Core vers:all/* (CVE-2026-111497) Opcenter Execution Discrete vers:all/* (CVE-2026-111497) Opcenter Execution Foundation vers:all/* (CVE-2026-111497) Opcenter Execution Pharma vers:all/* (CVE-2026-111497) Opcenter Execution Process vers:all/* (CVE-2026-111497) Opcenter Intelligence vers:all/* (CVE-2026-111497) Opcenter Intra Plant Logistics vers:all/* (CVE-2026-111497) Opcenter Quality vers:all/* (CVE-2026-111497) Opcenter RDnL vers:all/* (CVE-2026-111497) Opcenter X vers:all/* (CVE-2026-111497) PADS Pro Essentials vers:all/* (CVE-2026-111497) PADS Pro Student Edition vers:all/* (CVE-2026-111497) PADS Professional vers:all/* (CVE-2026-111497) PAVE360 Automotive 2026 vers:all/* (CVE-2026-111497) Process Preparation X vers:all/* (CVE-2026-111497) Simcenter Executable Digital Twin vers:all/* (CVE-2026-111497) Simcenter Studio vers:all/* (CVE-2026-111497) Teamcenter V2412 vers:all/* (CVE-2026-111497) Teamcenter V2506 vers:all/* (CVE-2026-111497) Teamcenter V2512 vers:all/* (CVE-2026-111497) Teamcenter V2606 vers:all/* (CVE-2026-111497) Xpedition Designer vers:all/* (CVE-2026-111497) Xpedition Enterprise vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens HyperLynx, Innexis, Insights, Opcenter,...",
       "links": [
         {
           "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-07.json"
+          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-04.json"
         },
         {
-          "label": "Read More",
-          "url": "https://www.cisa.gov/#"
+          "label": "CWE-787 Out-of-bounds Write",
+          "url": "https://cwe.mitre.org/data/definitions/787.html"
         },
         {
-          "label": "CWE-415 Double Free",
-          "url": "https://cwe.mitre.org/data/definitions/415.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L"
+          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
         },
         {
           "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-106175"
+          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111497"
         },
         {
           "label": "not accessible from the internet",
@@ -4509,73 +4624,6 @@
         {
           "label": "Oracle’s security advisory",
           "url": "https://www.oracle.com/security-alerts/cspunov2026.html"
-        }
-      ]
-    },
-    {
-      "title": "Siemens Industrial Software Products",
-      "link": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
-      "published": "2026-11-17T12:00:00+00:00",
-      "summary": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a...",
-      "author": "CISA",
-      "source": "CISA Cybersecurity Advisories",
-      "source_id": "cisa_security",
-      "source_group": "Official CISA",
-      "source_kind": "rss",
-      "vendor": "CISA",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "cisa-advisories",
-          "name": "CISA Advisories",
-          "score": 6
-        }
-      ],
-      "tags": [
-        "CISA Advisories"
-      ],
-      "body": "View CSAF Summary On October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Please also have a look on following Software Field Bulletins: Teamcenter: https://support.sw.siemens.com/en-US/knowledge-base/PL8869204 Polarion: https://support.sw.siemens.com/en-US/knowledge-base/PL8869197 Manufacturing Operations Center (Opcenter) and Process Preparation X: https://support.sw.siemens.com/en-US/knowledge-base/PL8869211 Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available. The following versions of Siemens Industrial Software Products are affected: HyperLynx vers:all/* (CVE-2026-111497) Innexis Architecture Native Acceleration 2026 vers:all/* (CVE-2026-111497) Insights Hub vers:all/* (CVE-2026-111497) Opcenter Connect Electronics vers:all/* (CVE-2026-111497) Opcenter Connect MOM vers:all/* (CVE-2026-111497) Opcenter Execution Core vers:all/* (CVE-2026-111497) Opcenter Execution Discrete vers:all/* (CVE-2026-111497) Opcenter Execution Foundation vers:all/* (CVE-2026-111497) Opcenter Execution Pharma vers:all/* (CVE-2026-111497) Opcenter Execution Process vers:all/* (CVE-2026-111497) Opcenter Intelligence vers:all/* (CVE-2026-111497) Opcenter Intra Plant Logistics vers:all/* (CVE-2026-111497) Opcenter Quality vers:all/* (CVE-2026-111497) Opcenter RDnL vers:all/* (CVE-2026-111497) Opcenter X vers:all/* (CVE-2026-111497) PADS Pro Essentials vers:all/* (CVE-2026-111497) PADS Pro Student Edition vers:all/* (CVE-2026-111497) PADS Professional vers:all/* (CVE-2026-111497) PAVE360 Automotive 2026 vers:all/* (CVE-2026-111497) Process Preparation X vers:all/* (CVE-2026-111497) Simcenter Executable Digital Twin vers:all/* (CVE-2026-111497) Simcenter Studio vers:all/* (CVE-2026-111497) Teamcenter V2412 vers:all/* (CVE-2026-111497) Teamcenter V2506 vers:all/* (CVE-2026-111497) Teamcenter V2512 vers:all/* (CVE-2026-111497) Teamcenter V2606 vers:all/* (CVE-2026-111497) Xpedition Designer vers:all/* (CVE-2026-111497) Xpedition Enterprise vers:all/* (CVE-2026-111497) CVSS Vendor Equipment v3 9.8 Siemens HyperLynx, Innexis, Insights, Opcenter,...",
-      "links": [
-        {
-          "label": "View CSAF",
-          "url": "https://github.com/cisagov/CSAF/blob/develop/csaf_files/OT/white/2026/icsa-26-321-04.json"
-        },
-        {
-          "label": "CWE-787 Out-of-bounds Write",
-          "url": "https://cwe.mitre.org/data/definitions/787.html"
-        },
-        {
-          "label": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-          "url": "https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-        },
-        {
-          "label": "View CVE Details",
-          "url": "https://www.cve.org/CVERecord?id=CVE-2026-111497"
-        },
-        {
-          "label": "not accessible from the internet",
-          "url": "https://www.cisa.gov/uscert/ics/alerts/ICS-ALERT-10-301-01"
-        },
-        {
-          "label": "control systems security recommended practices",
-          "url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
-        },
-        {
-          "label": "cisa.gov/ics",
-          "url": "https://www.cisa.gov/topics/industrial-control-systems"
-        },
-        {
-          "label": "Improving Industrial Control Systems Cybersecurity with Defense-in-Depth Strategies",
-          "url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
-        },
-        {
-          "label": "proactive defense of ICS assets",
-          "url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
-        },
-        {
-          "label": "ICS-TIP-12-146-01B--Targeted Cyber Intrusion Detection and Mitigation Strategies",
-          "url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
         }
       ]
     },
@@ -7227,10 +7275,10 @@
       ]
     },
     {
-      "title": "Cyber chief: UK facing AI-powered attacks on critical infrastructure within two years",
-      "link": "https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years",
+      "title": "Artificial intelligence and cyber intrusion",
+      "link": "https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion",
       "published": "2026-11-03T12:00:00+00:00",
-      "summary": "The NCSC warns that ‘tech on the cheap’ has left UK organisations exposed to AI uncovering and exploiting longstanding cyber security weaknesses and calls for urgent investment in resilience.",
+      "summary": "An NCSC assessment that examines current AI-enabled threat trends and projections of the threat landscape to 2028.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -7251,10 +7299,10 @@
       ]
     },
     {
-      "title": "Artificial intelligence and cyber intrusion",
-      "link": "https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion",
+      "title": "Cyber chief: UK facing AI-powered attacks on critical infrastructure within two years",
+      "link": "https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years",
       "published": "2026-11-03T12:00:00+00:00",
-      "summary": "An NCSC assessment that examines current AI-enabled threat trends and projections of the threat landscape to 2028.",
+      "summary": "The NCSC warns that ‘tech on the cheap’ has left UK organisations exposed to AI uncovering and exploiting longstanding cyber security weaknesses and calls for urgent investment in resilience.",
       "author": "",
       "source": "NCSC Security Feed",
       "source_id": "ncsc_security",
@@ -8268,30 +8316,6 @@
       ],
       "tags": [
         "NCSC Guidance"
-      ]
-    },
-    {
-      "title": "SVD-2026-1014: Compromised eMudhra Intermediate Certificate Authorities on Splunk Products - October 2026",
-      "link": "https://advisory.splunk.com/advisories/SVD-2026-1014",
-      "published": "2026-10-27T00:00:00+00:00",
-      "summary": "Splunk investigated and determined which products were affected by the compromised eMudhra Intermediate Certificate Authorities.",
-      "author": "Splunk",
-      "source": "Splunk Security Advisories",
-      "source_id": "splunk_security",
-      "source_group": "Official Splunk",
-      "source_kind": "rss",
-      "vendor": "Splunk",
-      "source_category": "Security Advisories",
-      "board_id": null,
-      "products": [
-        {
-          "id": "splunk-security",
-          "name": "Splunk Security",
-          "score": 5
-        }
-      ],
-      "tags": [
-        "Splunk Security"
       ]
     }
   ]
